@@ -1,0 +1,109 @@
+---
+title: Discover ANC CRM
+description: What the ANC CRM is, who uses it, and what it replaced from Salesforce.
+---
+
+import {Cards, Card} from 'fumadocs-ui/components/card';
+import {BookOpen, Database, Upload, Target, BarChart3, Sparkles} from 'lucide-react';
+
+Welcome to the ANC operator guide. Your resources for running the business in our custom Twenty CRM —
+opportunities, dashboards, Boyka AI, data migration from Salesforce.
+
+<Cards>
+  <Card
+    icon={<BookOpen />}
+    title="Discover ANC CRM"
+    href="/docs/user-guide/capabilities"
+    description="Learn what the ANC CRM is, who uses it, and what replaced Salesforce."
+  />
+  <Card
+    icon={<Database />}
+    title="Data Model"
+    href="/docs/data-model/overview"
+    description="Customize the data model to fit ANC's proposal, venue, and media workflows."
+  />
+  <Card
+    icon={<Upload />}
+    title="Data Migration"
+    href="/docs/data-migration/overview"
+    description="Import and export data via CSV or API. Full Salesforce field map included."
+  />
+</Cards>
+
+## What the CRM is
+
+The ANC CRM is a **custom-built Twenty instance** that replaces our Salesforce org. It lives at:
+
+- **Production:** [crm.ancsports.net](https://crm.ancsports.net)
+- **Alternate:** [abc-twenty.izcgmb.easypanel.host](https://abc-twenty.izcgmb.easypanel.host)
+
+It tracks:
+
+| What | How many |
+|---|---|
+| Companies | 3,730 |
+| People | 19,966 |
+| Opportunities | 8,360 |
+| Revenue splits | 5,160 |
+| Service tickets | 3,900 |
+| Design requests | 20,174 |
+| Venues | 374 |
+
+## Who uses it
+
+| Role | Primary use |
+|---|---|
+| **Jireh Billings** — President, Venue Partnerships | ANC 2026 Company Dashboard, account-level revenue visibility |
+| **Natalia Kovaleva** — Proposal Lead | Estimation & Proposals view, Backlog, Win/Loss by League |
+| **Alexis Ventarola** — Services | Proposal Pipeline, Bid Tracker |
+| **Charlie Dinh** — Finance/Ops | Payments, Backlog, contract status |
+| **Joe Occhipinti** — VP Services | Linked tickets at account level (ops day-to-day stays on the Service Dashboard) |
+
+## The three-vertical model
+
+Everything revenue-related rolls up into three verticals:
+
+| Vertical | Twenty value | What's inside |
+|---|---|---|
+| **Technology** | `TECHNOLOGY` | LED displays, LiveSync hardware/software, portables, products |
+| **Venue Services** | `VENUE_SERVICES` | Service contracts, maintenance, field operations |
+| **Media & Sponsorship** | `MEDIA_SPONSORSHIP` | Ad sales, graphics, content production, feeds |
+
+Salesforce had 5 RecordTypes that mapped to these 3 — the CRM does the roll-up for you.
+
+## Popular topics
+
+<Cards>
+  <Card
+    icon={<Target />}
+    title="Opportunities"
+    href="/docs/user-guide/capabilities/opportunities"
+    description="Pipeline, proposal stage, pricing, revenue splits, team allocations."
+  />
+  <Card
+    icon={<BarChart3 />}
+    title="Dashboards"
+    href="/docs/user-guide/capabilities/dashboards"
+    description="Jireh's ANC 2026 Company Dashboard — widgets, filters, vertical roll-ups."
+  />
+  <Card
+    icon={<Sparkles />}
+    title="Boyka AI Skills"
+    href="/docs/user-guide/capabilities/boyka-skills"
+    description="All 30 skills with copy-pastable example prompts for every scenario."
+  />
+</Cards>
+
+## What's different from Salesforce
+
+- **One CRM, not two apps.** Jireh's dashboard and Natalia's reports live in the same workspace.
+- **Account-centric.** Every ticket, opportunity, person, venue, estimate, and design request surfaces on the Company detail page.
+- **AI built-in.** Boyka (our custom agent) can answer "what's the margin on the Knicks deals this year" in the sidebar without SQL.
+- **No per-seat add-on cost.** Customization doesn't go through Salesforce professional services — it ships from our side.
+
+## Where to go next
+
+- **Using the CRM day-to-day?** Start at [Opportunities](/docs/user-guide/capabilities/opportunities) and [Dashboards](/docs/user-guide/capabilities/dashboards).
+- **Moving data in?** See [Data Migration](/docs/data-migration/overview).
+- **Building against the API?** See [Operators / API Access](/docs/operators/api-access).
+- **Want Boyka to do it for you?** See [Boyka Overview](/docs/user-guide/capabilities/boyka-overview).

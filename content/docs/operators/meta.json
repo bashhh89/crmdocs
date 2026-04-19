@@ -1,0 +1,11 @@
+{
+  "title": "Operators",
+  "defaultOpen": true,
+  "pages": [
+    "overview",
+    "api-access",
+    "rate-limits",
+    "field-ids-reference",
+    "changelog"
+  ]
+}

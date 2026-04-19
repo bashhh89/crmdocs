@@ -1,0 +1,4 @@
+{
+  "title": "Docs",
+  "pages": ["user-guide", "data-model", "data-migration", "operators"]
+}

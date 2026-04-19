@@ -1,0 +1,15 @@
+{
+  "title": "Capabilities",
+  "defaultOpen": false,
+  "pages": [
+    "index",
+    "opportunities",
+    "companies",
+    "people",
+    "dashboards",
+    "views",
+    "boyka-overview",
+    "designer-ai",
+    "boyka-skills"
+  ]
+}

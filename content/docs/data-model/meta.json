@@ -1,0 +1,11 @@
+{
+  "title": "Data Model",
+  "defaultOpen": true,
+  "pages": [
+    "overview",
+    "---Capabilities---",
+    "capabilities",
+    "---How-Tos---",
+    "how-tos"
+  ]
+}

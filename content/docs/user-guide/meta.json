@@ -1,0 +1,11 @@
+{
+  "title": "Discover ANC CRM",
+  "defaultOpen": true,
+  "pages": [
+    "introduction",
+    "---Capabilities---",
+    "capabilities",
+    "---How-Tos---",
+    "how-tos"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Capabilities",
+  "defaultOpen": false,
+  "pages": ["index", "opportunity-fields", "revenue-splits", "team-allocations"]
+}
