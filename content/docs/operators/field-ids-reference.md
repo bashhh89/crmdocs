@@ -5,7 +5,7 @@ description: UUID lookups for dashboard widget filters and scripts.
 
 # Field IDs Reference
 
-Widget filters, GraphQL metadata calls, and Boyka's skills all take field UUIDs. This page is the lookup table.
+Widget filters, GraphQL metadata calls, and Scout's skills all take field UUIDs. This page is the lookup table.
 
 ## Object IDs
 

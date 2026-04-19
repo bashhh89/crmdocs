@@ -1,15 +1,15 @@
 ---
-title: All Boyka Skills (with Example Prompts)
-description: 30 ANC-specific skills Boyka can invoke, each with copy-pastable prompts you can try now.
+title: All Scout Skills (with Example Prompts)
+description: 30 ANC-specific skills Scout can invoke, each with copy-pastable prompts you can try now.
 ---
 
-# All Boyka Skills — with example prompts
+# All Scout Skills — with example prompts
 
-Boyka has 30 skills. Below is **what each one does, when to use it, and prompts you can copy-paste straight into Boyka chat**.
+Scout has 30 skills. Below is **what each one does, when to use it, and prompts you can copy-paste straight into Scout chat**.
 
-Each skill auto-triggers when your prompt matches its intent — you don't need to name the skill. But if Boyka picks the wrong one, you can force it with: *"use the `skill-name` skill"*.
+Each skill auto-triggers when your prompt matches its intent — you don't need to name the skill. But if Scout picks the wrong one, you can force it with: *"use the `skill-name` skill"*.
 
-:::tip How to open Boyka
+:::tip How to open Scout
 Click the **chat bubble** top-right on any CRM page, or open any Opportunity/Company and use the right-hand assistant panel.
 :::
 
@@ -18,7 +18,7 @@ Click the **chat bubble** top-right on any CRM page, or open any Opportunity/Com
 ## Pipeline & deals
 
 ### `anc-copilot` — default routing
-General-purpose. Boyka falls back to this when nothing else matches.
+General-purpose. Scout falls back to this when nothing else matches.
 
 **Try:**
 ```
@@ -422,7 +422,7 @@ compare LG vs Yaham for a 120ft ribbon
 ---
 
 ### `web-browse` — open web lookup
-Boyka fetches a URL or searches the open web.
+Scout fetches a URL or searches the open web.
 
 **Try:**
 ```
@@ -435,7 +435,7 @@ what's the capacity of Allegiant Stadium
 ---
 
 ### `learn` — ingest a new document
-Teaches Boyka about a new document, policy, or contract.
+Teaches Scout about a new document, policy, or contract.
 
 **Try:**
 ```
@@ -462,7 +462,7 @@ find LinkedIn for everyone on the Celtics record without one
 
 ## Forcing a skill
 
-If Boyka picks the wrong skill, tell it directly (use the skill name as plain text — examples below):
+If Scout picks the wrong skill, tell it directly (use the skill name as plain text — examples below):
 
 ```
 use the quick-estimator skill: 4 4mm LED boards 8x4ft each
@@ -474,6 +474,6 @@ with the sow-generator skill, draft a SOW for opportunity 12345
 
 ## Skill IDs (for API / advanced)
 
-- **Boyka agent id:** `c73dcdc4-5b5b-442a-bad2-2b1e50bb1df2`
+- **Scout agent id:** `c73dcdc4-5b5b-442a-bad2-2b1e50bb1df2`
 - **Designer-AI skill id:** `df5f5790-857d-4dc3-adda-239652d8adbb`
 - List all skills: `query { agents { id name prompt } }` against the CRM GraphQL endpoint. See [Operators — API Access](/docs/operators/api-access).

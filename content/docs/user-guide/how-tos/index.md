@@ -10,7 +10,7 @@ Step-by-step recipes for the most common ANC CRM tasks. Everything here is opera
 
 - [**All recipes**](/docs/user-guide/how-tos/all-recipes) — the full list in one page
 - New to the CRM? Read [Discover ANC CRM](/docs/user-guide/introduction) first
-- Want to let Boyka do it for you? See [Boyka Overview](/docs/user-guide/capabilities/boyka-overview)
+- Want to let Scout do it for you? See [Scout Overview](/docs/user-guide/capabilities/scout)
 
 ## Most-used recipes
 

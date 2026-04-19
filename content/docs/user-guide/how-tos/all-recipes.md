@@ -141,13 +141,13 @@ add a widget to ANC 2026 showing pipeline value for TECHNOLOGY vertical with pro
 
 ---
 
-## Assistant (Boyka)
+## Assistant (Scout)
 
 ### How to ask the assistant anything
 Open the chat bubble (top-right) and type naturally. The assistant picks the right skill automatically.
 
 ### How to force a specific skill
-Prefix with: *"use the `skill-name` skill"*. See the [full skill list with example prompts](/docs/user-guide/capabilities/boyka-skills).
+Prefix with: *"use the `skill-name` skill"*. See the [full skill list with example prompts](/docs/user-guide/capabilities/scout-skills).
 
 ### How to generate a design mockup
 ```

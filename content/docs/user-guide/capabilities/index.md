@@ -43,7 +43,7 @@ description: What the CRM can do out of the box and what was built specifically 
 Views tailored to the proposal and executive reporting workflows — see [Views](./views) for the full list and what each one sorts by.
 
 ### Custom AI
-- **Boyka** — 30 ANC-specific skills (pipeline-tracker, rfp-analyzer, sow-generator, designer-ai, ticket-triage, and more)
+- **Scout** — 30 ANC-specific skills (pipeline-tracker, rfp-analyzer, sow-generator, designer-ai, ticket-triage, and more)
 - **Designer AI** — generates venue mockup images in ~20 seconds and auto-creates Design Requests
 
 ### Tab layouts per record

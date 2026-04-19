@@ -12,7 +12,7 @@ description: What shipped and when.
 - **League field added to Opportunity** (mirrors `Company.league`), backfilled ~4,200 opps
 - **2 new proposal views:** Backlog (`1c775cd3`), Win/Loss by League (`6aae4c98`)
 - **Due/completion backfill** — 191 opps got `proposalDueDate`, 336 got `substantialCompletionDate`
-- **Designer AI shipped** — Gemini 3 Pro Image Preview integration, inline-in-chat flow, Boyka skill `designer-ai`
+- **Designer AI shipped** — Gemini 3 Pro Image Preview integration, inline-in-chat flow, Scout skill `designer-ai`
 - **Second dedup pass** — 10 more Company merges (Montana, Bruins, Tigers, Royals, Liverpool FC, Dodgers, Rainiers, Rays, Temple, Nationals)
 
 ## 2026-04-17
@@ -20,7 +20,7 @@ description: What shipped and when.
 - **17 new Opportunity fields** — probability, proposalDueDate, substantialCompletionDate, paidAmount, percentPaid, accountExecutive, accountExecutiveEmail, margin, revenue2026, margin2026, revenue2027, margin2027, proposalStage, priority, pricingComplete, technologyVendorPartner, pricingCompleteDate
 - **11 new dashboard widgets** on ANC 2026 Company Dashboard
 - **2 new proposal views:** Proposal Pipeline, Estimation & Proposals
-- **Boyka custom agent** — 30 ANC-specific skills
+- **Scout custom agent** — 30 ANC-specific skills
 - **Navigation reshuffle** — 18 root / 8 folders → 11 ANC app / 7 folders
 - **Per-user favorites** pinned to sidebar for executive, proposal, and services workflows
 - **607 junk opps soft-deleted** (CUSTOMER + LOST/NO_BID + null dealValue)

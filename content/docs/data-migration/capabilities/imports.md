@@ -93,4 +93,4 @@ After every bulk import:
 
 1. Count via GraphQL: `query { opportunities { totalCount } }`
 2. Spot-check 5 random records via UI
-3. Run Boyka: *"any opportunities with null company in the last 24 hours"* — catches broken links
+3. Run Scout: *"any opportunities with null company in the last 24 hours"* — catches broken links

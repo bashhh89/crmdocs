@@ -31,9 +31,9 @@ This section is for anyone who writes scripts against the CRM, builds integratio
 - **Bulk-reassign records after Company merge:** see [API Access](./api-access)
 - **Add a dashboard widget via API:** see [Field IDs Reference](./field-ids-reference) for filter JSON format
 
-## Working on Boyka skills
+## Working on Scout skills
 
-Boyka's system prompt lives as an `Agent` record. To update:
+Scout's system prompt lives as an `Agent` record. To update:
 
 ```graphql
 mutation {
@@ -43,4 +43,4 @@ mutation {
 }
 ```
 
-Skills are `AgentHandoff` records — same pattern. When you add a new field/view/widget, **update Boyka's prompt** so it knows to use it.
+Skills are `AgentHandoff` records — same pattern. When you add a new field/view/widget, **update Scout's prompt** so it knows to use it.

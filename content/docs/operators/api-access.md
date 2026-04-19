@@ -148,7 +148,7 @@ query {
 }
 ```
 
-List all agents (Boyka):
+List all agents (Scout):
 ```graphql
 query { agents { id name prompt isCustom } }
 ```
