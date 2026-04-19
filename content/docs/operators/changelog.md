@@ -11,6 +11,7 @@ description: Comprehensive record of Twenty CRM migrations, architectural change
 
 ## 2026-04-20
 
+- **Universal CRM Push (Proposal Engine → Twenty)**: Built `universalCrmPush()` — a single function that automatically creates Company + Opportunity in Twenty CRM for any Proposal Engine action. If the Company doesn't exist, it's created (deduped by exact name). If no Opportunity exists, one is auto-created and linked. The `twentyOpportunityId` is persisted back on the Proposal row for instant lookups on future calls. Wired into 5 surfaces: PDF export, Estimator/Excel export, Audit export, Premium SOW generation, and Installation SOW generation. Every time Natalia exports a PDF, generates an SOW, or uploads an Excel, the CRM gets a Note with the artifact link + summary text and a timeline activity event — automatically.
 - **GraphQL Metadata Expansion**: Provisioned `Event Follow-Up Manager` and `Event Coordinator` AI skills into Twenty via `CreateSkill` mutations. System now natively handles event renewals and production checklist generations via Scout.
 - **IDE Automation Synchronized**: Persisted 10 ephemeral AI workflows (including `twenty-app-builder`, `crm-knowledge`, and `twenty-crm`) down to localized VS Code Copilot `.prompt.md` files.
 - **Documentation Subsystem**: Expanded the `scout-skills` definitions in the ANC Docs to spotlight the event operations tier.
