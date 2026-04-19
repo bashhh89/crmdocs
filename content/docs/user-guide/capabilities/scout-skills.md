@@ -477,3 +477,25 @@ with the sow-generator skill, draft a SOW for opportunity 12345
 - **Scout agent id:** `c73dcdc4-5b5b-442a-bad2-2b1e50bb1df2`
 - **Designer-AI skill id:** `df5f5790-857d-4dc3-adda-239652d8adbb`
 - List all skills: `query { agents { id name prompt } }` against the CRM GraphQL endpoint. See [Operators — API Access](/docs/operators/api-access).
+
+<br />
+
+### Event Operations
+
+<CardGroup>
+  <Card title="Event Follow-Up Manager" icon="IconCalendarEvent" href="#">
+    Handles post-event outreach sequences, sponsor renewals, and tracks deals to ensure relationships do not fall through the cracks after an event. 
+    
+    *Try asking:*
+    - "Which event's follow-up should we tackle first?"
+    - "Did we follow up with the sponsors for the LA Coliseum game?"
+  </Card>
+
+  <Card title="Event Coordinator" icon="IconClipboardCheck" href="#">
+    Tracks upcoming Event logistics, generates production checklists, alerts on staffing gaps, and monitors overall activation progression.
+    
+    *Try asking:*
+    - "What's the status of our tech assignments for the MLB All-Star game?"
+    - "Can you review the production checklist for tomorrow's events?"
+  </Card>
+</CardGroup>
