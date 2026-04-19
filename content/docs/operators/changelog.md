@@ -5,6 +5,12 @@ description: What shipped and when.
 
 # Changelog
 
+## 2026-04-20
+
+- **2 new AI skills** added to Twenty CRM: `Event Follow-Up Manager` and `Event Coordinator`.
+- **Docs Update**: Expanded the Scout capabilities documentation to spotlight the Event Operations skills.
+- **VS Code Prompts sync**: Persisted local Claude skills as proper VS Code Copilot `.prompt.md` files.
+
 ## 2026-04-18
 
 - **Team Allocations object** shipped (8 fields, reverse relations on Opportunity + Company)
