@@ -38,9 +38,9 @@ export function AISearchPanelHeader({ className, ...props }: ComponentProps<'div
       {...props}
     >
       <div className="px-3 py-2 flex-1">
-        <p className="text-sm font-medium mb-2">AI Chat</p>
+        <p className="text-sm font-medium mb-2">ANC Assistant</p>
         <p className="text-xs text-fd-muted-foreground">
-          AI can be inaccurate, please verify the answers.
+          Responses are generated using AI and may contain mistakes.
         </p>
       </div>
 
@@ -251,7 +251,7 @@ function Input(props: ComponentProps<'textarea'>) {
 
 const roleName: Record<string, string> = {
   user: 'you',
-  assistant: 'fumadocs',
+  assistant: 'ANC Assistant',
 };
 
 function Message({ message, ...props }: { message: ChatUIMessage } & ComponentProps<'div'>) {
