@@ -476,4 +476,4 @@ with the sow-generator skill, draft a SOW for opportunity 12345
 
 - **Boyka agent id:** `c73dcdc4-5b5b-442a-bad2-2b1e50bb1df2`
 - **Designer-AI skill id:** `df5f5790-857d-4dc3-adda-239652d8adbb`
-- List all skills: `query { agents { id name prompt } }` against the Twenty GraphQL endpoint. See [Operators — API Access](/docs/operators/api-access).
+- List all skills: `query { agents { id name prompt } }` against the CRM GraphQL endpoint. See [Operators — API Access](/docs/operators/api-access).

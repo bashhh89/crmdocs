@@ -5,7 +5,7 @@ description: Step-by-step recipes for every common task in the CRM.
 
 # How-Tos
 
-These are the exact clicks for the tasks people do every week. If a recipe can be done with a Boyka prompt, the prompt is included — just copy-paste.
+Exact clicks for the tasks teams run every week. Where a recipe can be done with an assistant prompt, the prompt is included — just copy-paste.
 
 ---
 
@@ -19,9 +19,9 @@ These are the exact clicks for the tasks people do every week. If a recipe can b
 5. Fill `proposalDueDate`, `businessUnit`, `league`, `accountExecutive`
 6. Save
 
-**Boyka shortcut:**
+**Assistant shortcut:**
 ```
-log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE Natalia
+log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [name]
 ```
 
 ### How to move a deal through the pipeline
@@ -36,7 +36,7 @@ RFP_RECEIVED → SCOPING → BID_SUBMITTED → SHORTLISTED → WON
 2. Toggle `pricingComplete = TRUE`
 3. `pricingCompleteDate` auto-stamps to now
 
-**Why it matters:** Natalia's **Estimation & Proposals** view groups by this flag — it's how she knows what's ready to send.
+**Why it matters:** The **Estimation & Proposals** view groups by this flag — the proposal team uses it to see what's ready to send.
 
 ### How to record per-year revenue
 Two options:
@@ -58,7 +58,7 @@ For advertising deals that spread across multiple teams:
 See [Team Allocations](/docs/data-model/capabilities/team-allocations) for the data model.
 
 ### How to find overdue deals
-**Boyka:**
+**Assistant:**
 ```
 which deals have proposalDueDate in the past and bidStatus is not WON or LOST
 ```
@@ -115,7 +115,7 @@ Use GraphQL `createPeople(data: [...])` in 50-row chunks. See [Data Migration �
 ## Dashboards & views
 
 ### How to switch to the ANC app
-Top-left app switcher → **ANC**. This is where all ANC dashboards and folders live. Jireh's bookmark should include the app path.
+Top-left app switcher → **ANC**. All ANC dashboards and folders live here. Bookmarks should include the app path.
 
 ### How to pin a dashboard to your sidebar
 Open it → click the **star** icon. It goes into your Favorites section at the top.
@@ -134,17 +134,17 @@ Open the view → copy the URL. URLs include the view ID so the recipient lands 
    ```
 4. For numeric: `"operand":"GREATER_THAN_OR_EQUAL","value":"50"` (string-encoded)
 
-**Boyka shortcut:**
+**Assistant shortcut:**
 ```
 add a widget to ANC 2026 showing pipeline value for TECHNOLOGY vertical with probability >= 50
 ```
 
 ---
 
-## Boyka AI
+## Assistant (Boyka)
 
-### How to ask Boyka anything
-Open chat bubble top-right, type naturally. Boyka picks the right skill automatically.
+### How to ask the assistant anything
+Open the chat bubble (top-right) and type naturally. The assistant picks the right skill automatically.
 
 ### How to force a specific skill
 Prefix with: *"use the `skill-name` skill"*. See the [full skill list with example prompts](/docs/user-guide/capabilities/boyka-skills).
@@ -155,7 +155,7 @@ touchdown graphic for Louisville, night game vibe
 ```
 Takes ~20 seconds. A Design Request record is auto-created.
 
-### How to teach Boyka something new
+### How to teach the assistant something new
 ```
 learn this: our default payment terms are 50/50 on projects over $500K
 ```
@@ -178,7 +178,7 @@ See [Data Migration — Salesforce Field Map](/docs/data-migration/capabilities/
 ## Notifications & follow-ups
 
 ### How to get alerted on overdue deals
-(Phase 2 — explicit ask from Jireh.) For now, open Proposal Pipeline daily. Boyka digest in-sidebar is coming.
+Automated overdue alerts are a Phase 2 item. For now, open Proposal Pipeline daily. An in-sidebar assistant digest is in progress.
 
 ### How to assign a task
 On any record, open the **Tasks** tab → **+ New Task** → assign.
@@ -187,7 +187,7 @@ On any record, open the **Tasks** tab → **+ New Task** → assign.
 
 ## When things go wrong
 
-### Boyka returns the wrong skill
+### The assistant picks the wrong skill
 Force it: *"use the `pipeline-tracker` skill: ..."*.
 
 ### A view shows no rows

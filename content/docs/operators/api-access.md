@@ -5,7 +5,7 @@ description: REST and GraphQL, auth, cheat sheets for bulk operations.
 
 # API Access
 
-Twenty exposes REST and GraphQL at the same base. REST is simpler for one-off CRUD; GraphQL is required for bulk operations and metadata.
+The CRM exposes REST and GraphQL at the same base. REST is simpler for one-off CRUD; GraphQL is required for bulk operations and metadata.
 
 ## Endpoints
 
@@ -155,7 +155,7 @@ query { agents { id name prompt isCustom } }
 
 ## Uploading files (multipart)
 
-Twenty's FILES fields take multipart via `uploadFilesFieldFile`:
+FILES fields accept multipart uploads via `uploadFilesFieldFile`:
 
 ```bash
 curl https://crm.ancsports.net/metadata \

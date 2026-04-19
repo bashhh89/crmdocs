@@ -33,7 +33,7 @@ mutation {
 }
 ```
 
-Twenty will auto-generate the column and expose it through REST + GraphQL.
+The CRM auto-generates the column and exposes it through REST + GraphQL.
 
 ## Add a tab to a record detail page
 

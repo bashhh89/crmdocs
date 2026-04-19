@@ -41,7 +41,7 @@ Object ID: `7416ebb0-94d9-4551-bc2e-1991690849c2`
 
 ## Migration
 
-472 allocations migrated from SF's orphan `Revenue_Tracker__c` rows (where the Account didn't match the parent opportunity's Account — ANC's convention for Hankook-style deals). Source: 860 orphan rows total, 537 matched to a Twenty parent opp by name, 372 had per-FY data.
+472 allocations migrated from SF's orphan `Revenue_Tracker__c` rows (where the Account didn't match the parent opportunity's Account — the ANC convention for Hankook-style deals). Source: 860 orphan rows total, 537 matched to a parent opportunity by name, 372 had per-FY data.
 
 ## Creating a new allocation
 

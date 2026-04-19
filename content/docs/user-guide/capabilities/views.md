@@ -1,13 +1,13 @@
 ---
 title: Views
-description: Pre-built table and kanban views — what each one shows and who uses it.
+description: Pre-built table and kanban views — what each one shows and how it's used.
 ---
 
 # Views
 
-Views are saved table/kanban/kalendar configurations. The CRM ships with views built specifically for ANC's workflows.
+Views are saved table, kanban, and calendar configurations. The CRM ships with views built for the workflows teams actually run.
 
-## Proposal & Bid views (Natalia's workflow)
+## Proposal and bid views
 
 | View | Type | What |
 |---|---|---|
@@ -18,20 +18,20 @@ Views are saved table/kanban/kalendar configurations. The CRM ships with views b
 | **Backlog** | Table | WON opps, sort by `substantialCompletionDate` ASC, cols include dealValue, paidAmount, percentPaid |
 | **Win/Loss by League** | Table | `bidStatus IN (WON, LOST, NO_BID)`, grouped by league, `closeDate` DESC |
 
-## Account / Revenue views (Jireh's use)
+## Executive revenue views
 
 | View | What |
 |---|---|
-| **Pipeline by Business Unit** | Table, group by businessUnit |
+| **Pipeline by Business Unit** | Table, grouped by businessUnit |
 | **Revenue Forecast** | Table, forecasted opps ≥ 50% probability |
-| **Top Open Deals** | Table, sort by `dealValue` DESC, exclude WON/LOST/NO_BID |
+| **Top Open Deals** | Table, sorted by `dealValue` DESC, excludes WON/LOST/NO_BID |
 
 ## How to create a view
 
 1. Open any object (Deals, Companies, etc.)
 2. Apply filter + sort + columns
 3. Click "Save as view"
-4. Choose Table / Kanban / Kalendar
+4. Choose Table / Kanban / Calendar
 
 Views can be shared by URL inside the workspace.
 

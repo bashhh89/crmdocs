@@ -11,7 +11,7 @@ Two ways to import: CSV through the UI, or API calls.
 
 1. Open the target object (e.g., Companies)
 2. Right-side **Import** → upload CSV
-3. Map columns to Twenty fields
+3. Map columns to CRM fields
 4. Preview → Import
 
 Best for: one-time data loads, user-driven imports, under 5,000 rows.
@@ -80,7 +80,7 @@ Duplicate Companies are the #1 data-quality issue. Every Person needs a `company
 
 ## Field mapping helpers
 
-For SF → Twenty imports, see the [Salesforce Field Map](./salesforce-field-map) table. Key gotchas:
+For SF → CRM imports, see the [Salesforce Field Map](./salesforce-field-map) table. Key gotchas:
 
 - `businessUnit` has 3 values, SF has 5 RecordTypes — do the roll-up
 - `stage` + `bidStatus` together replace SF's `StageName`

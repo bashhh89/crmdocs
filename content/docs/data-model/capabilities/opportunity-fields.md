@@ -7,7 +7,7 @@ description: Every field on the Opportunity object.
 
 Full field reference. Field IDs are used by dashboard widget filters, GraphQL queries, and bulk scripts.
 
-## Native Twenty fields
+## Native CRM fields
 
 | Field | Type | Purpose |
 |---|---|---|
@@ -22,7 +22,7 @@ Full field reference. Field IDs are used by dashboard widget filters, GraphQL qu
 | Field | Type | Field ID | Notes |
 |---|---|---|---|
 | `probability` | NUMBER | `22d629a5` | 0–100 |
-| `proposalDueDate` | DATE_TIME | `65b6da7e` | Natalia's primary sort |
+| `proposalDueDate` | DATE_TIME | `65b6da7e` | Primary sort for the proposal pipeline |
 | `substantialCompletionDate` | DATE | `f41a1659` | Backlog key date |
 | `paidAmount` | CURRENCY | `c592d989` | Finance |
 | `percentPaid` | NUMBER | `724c5d5a` | |

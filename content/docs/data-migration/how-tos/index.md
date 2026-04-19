@@ -27,7 +27,7 @@ Three-tier matching:
 2. Normalized (strip "LLC", "Inc", etc.)
 3. Manual triage for ambiguous cases
 
-97.7% of SF accounts found a Twenty match during migration. Remaining 2.3% went to a flag-for-review queue.
+97.7% of SF accounts found a match during migration. The remaining 2.3% went to a flag-for-review queue.
 
 ## Merge duplicate Companies after import
 

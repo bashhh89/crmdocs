@@ -11,7 +11,7 @@ An Opportunity is a deal — RFP, sales lead, or budgeted project. It's the most
 
 Two fields drive the lifecycle:
 
-- **`stage`** — the Twenty-native stage (NEW / SCREENING / MEETING / PROPOSAL / CUSTOMER)
+- **`stage`** — the native lifecycle stage (NEW / SCREENING / MEETING / PROPOSAL / CUSTOMER)
 - **`bidStatus`** — ANC's bid flow (RFP_RECEIVED / SCOPING / BID_SUBMITTED / SHORTLISTED / WON / LOST / NO_BID)
 
 In practice the team looks at `bidStatus`. That's what the **Bid Tracker** Kanban runs on.
@@ -21,7 +21,7 @@ In practice the team looks at `bidStatus`. That's what the **Bid Tracker** Kanba
 | Field | What it means |
 |---|---|
 | `dealValue` | What the customer will pay (SF `Sale_Price__c`) |
-| `amount` | What we actually recognized (SF `Actual_Revenue__c`) — Natalia's report source |
+| `amount` | Recognized revenue (SF `Actual_Revenue__c`) — the primary reporting source |
 | `margin` | `amount − cost` |
 | `paidAmount` / `percentPaid` | Finance status |
 
@@ -34,11 +34,11 @@ Deals often split across fiscal years. We track this two ways:
 1. **Flat fields on Opportunity** — `revenue2026`, `margin2026`, `revenue2027`, `margin2027`. Used by dashboard widgets.
 2. **`opportunityRevenueSplit` child records** — full per-FY normalized, with `splitType` (INSTALL / SERVICE / LICENSING / OTHER).
 
-The flat fields are a denormalization for performance — Jireh's dashboard reads them directly instead of grouping child rows. See [Data Model — Revenue Splits](/docs/data-model/capabilities/revenue-splits).
+The flat fields are a denormalization for performance — dashboard widgets read them directly instead of grouping child rows. See [Data Model — Revenue Splits](/docs/data-model/capabilities/revenue-splits).
 
 ## Proposal stage
 
-Natalia's proposal pipeline uses `proposalStage`:
+The proposal pipeline uses `proposalStage`:
 
 | Value | Meaning |
 |---|---|
@@ -55,7 +55,7 @@ And the **Priority** field:
 
 ## Pricing complete flag
 
-`pricingComplete = TRUE` flips `pricingCompleteDate` automatically. When a one-pager is generated from our proposal engine, this should flip. Natalia's **Estimation & Proposals** view groups by this flag so she can see what's ready to send vs. still being priced.
+`pricingComplete = TRUE` flips `pricingCompleteDate` automatically. It should flip as soon as a one-pager is generated from the Proposal Engine. The **Estimation & Proposals** view groups by this flag so the proposal team can see what's ready to send versus still being priced.
 
 ## Linked records
 

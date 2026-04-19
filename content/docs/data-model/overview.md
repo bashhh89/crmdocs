@@ -5,7 +5,7 @@ description: Objects, relations, and how they connect in the ANC CRM.
 
 # Data Model Overview
 
-The CRM runs on Twenty's object model. Every row is a record; every record has an object type; objects relate to each other through typed relations.
+Every row in the CRM is a record; every record has an object type; objects relate to each other through typed relations.
 
 ## Core objects
 
@@ -86,7 +86,7 @@ We flattened some relations for dashboard performance:
 
 - **Per-year revenue + margin** on Opportunity: `revenue2026`, `margin2026`, `revenue2027`, `margin2027` — denormalized from `opportunityRevenueSplit` so dashboard widgets don't have to group.
 - **League on Opportunity** — mirrors Company.league, backfilled from the company. Simpler filtering on opp-level views.
-- **Account Executive as TEXT, not RELATION** — we don't issue Twenty seats for 30+ SF sellers. TEXT field lets bar charts group by name without creating workspaceMembers.
+- **Account Executive as TEXT, not RELATION** — workspace seats aren't issued for every legacy seller. A TEXT field lets bar charts group by name without creating workspace members.
 
 ## When to use child records vs. flat fields
 

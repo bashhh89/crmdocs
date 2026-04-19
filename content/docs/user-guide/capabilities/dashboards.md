@@ -1,15 +1,15 @@
 ---
 title: Dashboards
-description: The ANC 2026 Company Dashboard — Jireh's daily view, widget by widget.
+description: Executive and operational dashboards built into the CRM.
 ---
 
 # Dashboards
 
-The CRM ships with the dashboards Jireh and the team use daily. The centerpiece is the **ANC 2026 Company Dashboard**.
+The CRM ships with the dashboards the leadership and proposal teams use daily. The centerpiece is the **ANC 2026 Company Dashboard**.
 
 ## ANC 2026 — Company Dashboard
 
-This is the dashboard Jireh opens every morning. It's the direct replacement for his Salesforce "Company Performance 2026 by Department" report.
+The primary executive view — the direct replacement for the Salesforce "Company Performance 2026 by Department" report.
 
 **Structure:** 4 tabs — Company Overview · Technology · Venue Services · Media & Sponsorship
 
@@ -21,7 +21,7 @@ This is the dashboard Jireh opens every morning. It's the direct replacement for
 - Top open deals — list
 - Activity trend — line over last 3 months
 
-The 50%-probability filter mirrors SF convention — Jireh explicitly asked for this cutoff.
+The 50%-probability filter is the standard cutoff for qualified pipeline across the workspace.
 
 ## Other dashboards
 
@@ -30,30 +30,30 @@ The 50%-probability filter mirrors SF convention — Jireh explicitly asked for 
 | Pipeline Overview (Last 3 Months) | Recent activity snapshot |
 | Sales Pipeline Analytics | Stage/bidStatus breakdown with time-to-close |
 | Priority Clients Dashboard | Top accounts + open exposure |
-| My Pipeline Dashboard (Current Quarter) | Per-user view for AEs |
+| My Pipeline Dashboard (Current Quarter) | Per-user view for account executives |
 | Activity & Performance Tracker | Wins, losses, conversion rates |
 | Operations Overview | Services + tickets summary |
 
 ## Switching to the ANC app
 
-**Important:** On first login, Twenty defaults to the "Standard" app. To see the ANC-specific dashboards:
+On first login, the workspace defaults to the "Standard" app. To see the ANC-specific dashboards:
 
 1. Top-left app switcher → **ANC**
-2. Dashboards will now appear at the top of the sidebar
+2. Dashboards will appear at the top of the sidebar
 
-If you're sending a direct link to a stakeholder, use the full URL including the app — the dashboards live in the ANC app, not Standard.
+When sharing a direct link, include the full URL with the app path — the dashboards live in the ANC app, not Standard.
 
 ## Favorites
 
-Each user has pinned favorites at the top of their sidebar. Out of the box:
+Each user has pinned favorites at the top of their sidebar. Default assignments:
 
-| User | Pinned |
+| Workspace member | Pinned |
 |---|---|
-| Jireh | ANC 2026 Dashboard · Revenue Forecast · Pipeline by Business Unit · Top Open Deals |
-| Natalia | Estimation & Proposals · Proposal Pipeline · Bid Tracker · ANC 2026 Dashboard |
-| Alexis | Proposal Pipeline · Bid Tracker · Active Pipeline |
+| Executive | ANC 2026 Dashboard · Revenue Forecast · Pipeline by Business Unit · Top Open Deals |
+| Proposal Lead | Estimation & Proposals · Proposal Pipeline · Bid Tracker · ANC 2026 Dashboard |
+| Services | Proposal Pipeline · Bid Tracker · Active Pipeline |
 
-To adjust: go to any dashboard/view → click the star. That's it.
+To adjust: open any dashboard or view and click the star.
 
 ## Adding a new widget
 
@@ -63,4 +63,4 @@ To adjust: go to any dashboard/view → click the star. That's it.
 4. Filter: use JSON-stringified arrays for SELECT values, e.g. `"value":"[\"WON\"]"`
 5. For numeric compare, use string-encoded numbers: `"value":"50"`
 
-See [Operators — Field IDs Reference](/docs/operators/field-ids-reference) for field UUIDs to use in widget filters.
+See [Operators — Field IDs Reference](/docs/operators/field-ids-reference) for field UUIDs used in widget filters.
