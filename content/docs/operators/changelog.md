@@ -9,6 +9,13 @@ description: Comprehensive record of Twenty CRM migrations, architectural change
 > **8,360** Opportunities • **3,730** Companies • **19,966** People • **5,160** Revenue Splits • **3,900** Service Tickets • **20,174** Design Requests.
 > Currently tracking **~$470M** in 2026 pipeline revenue splits (81% volume parity with Salesforce).
 
+## 2026-04-21
+
+- **Probability Matrix Engine (`fix_widgets.py`)**: Designed and shipped a Python-based execution pipeline securely overriding `core."pageLayoutWidget"` deep JSON. Injected `>= 50%` probability filters globally across Jireh's ANC 2026 Dashboard revenue widgets to ensure true weighted pipeline logic.
+- **Venue Event Relational Linkage**: Mapped exact Schema Relations connecting standalone Twenty Service Events to their parent `Company` (`61fc7...`) and `Opportunity` (`0bd86...`).
+- **Data Synchrony Backfill**: Executed safe migration linking 59,912 historic `_venueEvent` rows inside twenty database. Extended `pageLayout` UI tabs so every event correctly resolves physically against its account profile.
+- **Documentation Shipped**: Authored the structural "How It Works" (`how-it-works.mdx`) manual on nested dashboard filtering and relation mapping.
+
 ## 2026-04-20
 
 - **Universal CRM Push (Proposal Engine → Twenty)**: Built `universalCrmPush()` — a single function that automatically creates Company + Opportunity in Twenty CRM for any Proposal Engine action. If the Company doesn't exist, it's created (deduped by exact name). If no Opportunity exists, one is auto-created and linked. The `twentyOpportunityId` is persisted back on the Proposal row for instant lookups on future calls. Wired into 5 surfaces: PDF export, Estimator/Excel export, Audit export, Premium SOW generation, and Installation SOW generation. Every time Natalia exports a PDF, generates an SOW, or uploads an Excel, the CRM gets a Note with the artifact link + summary text and a timeline activity event — automatically.

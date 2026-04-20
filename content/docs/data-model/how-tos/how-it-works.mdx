@@ -1,0 +1,31 @@
+---
+title: "How It Works: Dashboards & Relations"
+description: "Technical overview of how dashboard filters and event relations operate in Twenty CRM."
+---
+
+# How It Works
+
+## Dashboard Widget Filtering
+
+Jireh's "ANC 2026" Dashboard requires granular financial aggregation across distinct opportunity probabilities (often needing `>= 50%` visibility). Because Twenty currently handles dashboard configurations as deep-nested JSON inside the `core."pageLayoutWidget"` table rather than flat columns, standard UI or simple SQL filters can fail to map complex operands like `GREATER_THAN_OR_EQUAL`.
+
+**The Solution:**
+Instead of brute-force SQL string replacement, which risks corrupting the JSON arrays, we utilize a procedural Python mapping process (via `psycopg2`). This securely injects the filter:
+```json
+{
+  "fieldMetadataId": "<probability_field_uuid>",
+  "value": "50",
+  "operand": "GREATER_THAN_OR_EQUAL"
+}
+```
+directly into the `filters` array for any widget computing Gross Margin or Deal Revenue.
+
+## Event to Company & Opportunity Relational Mapping
+
+The Service Dashboard continuously ingests service tickets and game events. To display these events directly on a Company or Opportunity profile in Twenty CRM, we map the properties relationally:
+
+1. **Schema Linkage:** We provisioned two exact Object relations on the `venueEvent` metadata layer:
+   - `company` relation UUID mapping to `61fc7120-440e-4450-8352-49fff1ebb165`
+   - `opportunity` relation UUID mapping to `0bd86693-024f-4d2d-8b83-fdfcd2332617`
+2. **Backfill:** Using these relations, historic events (over 59,000 internal logs) successfully tie their internal `companyId` and `opportunityId` upstream directly into front-end Twenty application views. 
+3. **UI Layout Hooks:** Finally, nested JSON tabs for `Events` are attached under the `core."pageLayout"` settings so the relations physically render alongside Design Requests and SOW records.
