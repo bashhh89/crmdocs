@@ -1,0 +1,44 @@
+---
+title: ANC Service Dashboard
+description: The operational command center for every venue, event, and ticket ANC services.
+---
+
+# ANC Service Dashboard
+
+Live at [services.ancsports.net](https://services.ancsports.net) (internal: `abc-anc-services.izcgmb.easypanel.host`).
+
+The Service Dashboard is where the service side of ANC lives. Everything after a deal is won and installed — keeping the venue running, staffing events, handling tickets, tracking workflow — lives here.
+
+## Who uses it
+
+| Role | What they do here |
+|------|------|
+| **Admins** (leadership) | Configure roles, venues, services, assignment rules |
+| **Tech Support leads** (Chris and team) | Triage tickets, assign technicians, merge duplicates, run reports |
+| **Operations managers** (Joe and team) | Staff events, monitor workflows, track labor budgets |
+| **Technicians** | See assigned events, check in on site, submit game-ready + post-game reports |
+| **Clients (venue-side)** | Report issues via the portal, view live workflow status |
+
+## What it does, at a high level
+
+- **Event management** — every game, concert, or service event at every venue
+- **Staff assignments** — who works what event, workload visibility, labor budget tracking
+- **Venue management** — 200+ venues, their Slack channels, contracted services, installed screens
+- **Ticket system** — issue tracking with SLA, auto-assignment, merge for duplicates, bulk close
+- **Voicemail → ticket** — the Zoom support phone line automatically opens tickets with the recording, transcript, and caller number attached
+- **Workflow tracking** — check-in → game ready → post-game report, with reminders at each stage
+- **Client portal** — per-venue page where clients can see status and open tickets
+- **Reports** — SLA compliance, coverage rate, labor hours, workflow completion
+- **AI diagnostic** — paste a symptom, get a knowledge-base-backed troubleshooting plan
+
+## Relationship to the rest of ANC
+
+- **Proposal Engine** (proposals.anc.com) is where the venue was sold. When a project goes live, the venue, screens, and client record flow in here automatically.
+- **Twenty CRM** (crm.ancsports.net) is the system of record. Every ticket, event status change, and workflow step pushes into Twenty in real time — so the CRM always reflects the operational state.
+
+## Next steps
+
+- [Events](./features/events) — calendar, discovery, assignment
+- [Tickets](./features/tickets) — issue tracking, merge, bulk actions
+- [Voicemail → Ticket](./features/voicemail-to-ticket) — the Zoom phone integration
+- [Roles and Access](./features/roles-and-access) — admin, tech support, manager, technician

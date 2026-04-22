@@ -14,8 +14,16 @@ export function baseOptions(): BaseLayoutProps {
     githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
     links: [
       {
-        text: 'User Guide',
+        text: 'CRM',
         url: '/docs/user-guide/introduction',
+      },
+      {
+        text: 'Proposal Engine',
+        url: '/docs/proposal-engine/introduction',
+      },
+      {
+        text: 'Service Dashboard',
+        url: '/docs/service-dashboard/introduction',
       },
       {
         text: 'Developers',

@@ -1,0 +1,16 @@
+{
+  "title": "Features",
+  "defaultOpen": true,
+  "pages": [
+    "events",
+    "staff-and-assignments",
+    "venues",
+    "tickets",
+    "voicemail-to-ticket",
+    "workflows",
+    "client-portal",
+    "roles-and-access",
+    "ai-assistant",
+    "reports-and-dashboards"
+  ]
+}

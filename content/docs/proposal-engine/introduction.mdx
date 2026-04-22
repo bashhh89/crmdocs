@@ -1,0 +1,43 @@
+---
+title: ANC Proposal Engine
+description: The tool where every ANC Sports proposal, SOW, and installation scope starts and ends.
+---
+
+# ANC Proposal Engine
+
+Live at [proposals.anc.com](https://proposals.anc.com) (internal: `abc-ancapp.izcgmb.easypanel.host`).
+
+The Proposal Engine is where the sales side of ANC lives. Everything that turns a client conversation into a signed deal — pipeline tracking, pricing, estimating, scope of work, installation planning, submittal docs — runs through this tool.
+
+## Who uses it
+
+| Role | What they do here |
+|------|------|
+| **Sales team** (Paul, Jireh, BD team) | Build pipeline, draft proposals, send to clients |
+| **Estimators** (Natalia and team) | Price deals, generate SOWs, handle revisions |
+| **Project managers** | Move won deals into execution — submittals, install plans |
+| **Execs** | Review the pipeline, approve pricing, check win/loss |
+
+## What it does, at a high level
+
+- **Pipeline tracking** — every active, won, and lost opportunity in one place
+- **Estimator** — turns requirements into priced line items; handles revisions and alternates
+- **Proposals** — branded PDFs clients actually receive
+- **Scope of Work (SOW) generation** — AI-assisted installation SOWs and premium SOWs
+- **Project handoff** — when a deal closes, it becomes a Project with submittal tracking and install workflows
+- **RFP Analyzer** — point it at a client's RFP, get a structured response with compliance matrix
+- **Submittal Compiler** — rolls specs, cut sheets, and drawings into the submittal package the installer actually uses
+
+## Relationship to the rest of ANC
+
+- **Twenty CRM** (crm.ancsports.net) is the system of record for Companies, People, and Opportunities. Every PDF, SOW, or Excel export from the Proposal Engine pushes back into Twenty automatically — the Opportunity gets an attachment + a timeline activity. This is the **Universal CRM Push**.
+- **Service Dashboard** (services.ancsports.net) takes over once a deal is won. Venues, screens, and service events all flow from "this was sold" to "this is how we operate it."
+
+In short: proposals start here, land in the CRM, and then flow into the service dashboard when they go live.
+
+## Next steps
+
+- [Pipeline](./features/pipeline) — how the deal list is built and filtered
+- [Estimator](./features/estimator) — the core pricing workflow
+- [SOW generation](./features/sow-generation) — Installation vs Premium SOWs
+- [RFP Analyzer](./features/rfp-analyzer) — automated RFP response drafting

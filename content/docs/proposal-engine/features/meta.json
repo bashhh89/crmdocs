@@ -1,0 +1,15 @@
+{
+  "title": "Features",
+  "defaultOpen": true,
+  "pages": [
+    "pipeline",
+    "estimator",
+    "proposals",
+    "sow-generation",
+    "projects",
+    "rfp-analyzer",
+    "submittal-compiler",
+    "universal-crm-push",
+    "ai-agents"
+  ]
+}

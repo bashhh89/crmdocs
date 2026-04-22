@@ -1,0 +1,5 @@
+{
+  "title": "Service Dashboard",
+  "defaultOpen": true,
+  "pages": ["introduction", "---Features---", "features", "---How-Tos---", "how-tos", "changelog"]
+}

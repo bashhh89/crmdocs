@@ -1,4 +1,15 @@
 {
   "title": "Docs",
-  "pages": ["user-guide", "data-model", "data-migration", "operators"]
+  "pages": [
+    "---ANC CRM---",
+    "user-guide",
+    "data-model",
+    "data-migration",
+    "---Proposal Engine---",
+    "proposal-engine",
+    "---Service Dashboard---",
+    "service-dashboard",
+    "---Developers---",
+    "operators"
+  ]
 }
