@@ -109,3 +109,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI assistant now auto-fills forms, no fake tables**: The AI assistant can now automatically fill in form fields for you, and it will stop producing placeholder table output. This makes data entry faster and keeps the results clean.
 
 - **Proof image previews load faster**: Proof images now stream through our server, so preview thumbnails appear instantly. You’ll no longer wait for images to download before they display.
+
+- **AI form filling and chat table rendering fixed**: We've corrected the AI-powered form so it now fills correctly, and the chat table now displays properly, ensuring smoother interactions.
