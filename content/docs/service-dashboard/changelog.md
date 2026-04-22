@@ -88,3 +88,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Midnight times now display as TBD**: When an event is set for midnight, the calendar now shows “TBD” instead of “12:00 AM”. This removes the misleading exact time and makes it clear the start time is to be determined.
 
 - **Tickets list now auto‑refreshes every 30 seconds**: When you keep the Tickets tab open, the list now refreshes automatically every 30 seconds, so you’ll always see the latest tickets without manually reloading.
+
+- **Multiple Designer & Rep Assignment with AI Update**: You can now assign multiple designers and enterprise representatives to a single design request, enabling collaborative work on the same project. The AI proof generation also uses the latest model, delivering faster and more accurate previews.
+- **Generate Draft button added to design detail view**: A new “Generate Draft” button now appears on the design detail page. Click it to have the system automatically create an AI‑generated draft, exactly as Alexis requested.
