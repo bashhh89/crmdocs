@@ -91,3 +91,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Multiple Designer & Rep Assignment with AI Update**: You can now assign multiple designers and enterprise representatives to a single design request, enabling collaborative work on the same project. The AI proof generation also uses the latest model, delivering faster and more accurate previews.
 - **Generate Draft button added to design detail view**: A new “Generate Draft” button now appears on the design detail page. Click it to have the system automatically create an AI‑generated draft, exactly as Alexis requested.
+
+- **Tickets‑by‑Venue report with drill‑down from Tech view**: You can now generate a tickets‑by‑venue report that shows ticket totals per venue, and from the tickets‑by‑tech screen you can click into a venue to see its detailed tickets.
+- **AI Design Assist now uses GPT‑Image 1.5**: The AI design assist now generates proofs with the GPT‑Image 1.5 model, and using GPT‑Image 2 now requires organization verification.
+- **Per‑job hour logging and client/tech reports**: You can now log hours directly on each design request, and view reports that break down total hours by client and show tickets handled by each technician.
