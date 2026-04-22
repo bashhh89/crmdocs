@@ -67,3 +67,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Proof-share now serves files for Twenty-backed designs**: When you share a design that uses the Twenty backend, any uploaded files are now delivered correctly, so recipients can view or download them without error.
 - **Fix missing stub for Twenty‑only design uploads**: When you upload a proof for a Twenty‑only design, the system now creates the required placeholder automatically, so the upload no longer fails with a “not found” error.
 - **Corrected design request status for new stages UI**: We fixed the design request detail view so the status now aligns with the new stages UI. When you open a design request, the stage information displays correctly, reflecting the current status of the request.
+
+- **Delete tickets directly from the system**: You can now delete tickets you no longer need, making it easy to clean up spam and keep your ticket list tidy.
+- **AI-powered design request search and management**: You can now ask the system to locate design requests, automatically assign a designer, and update design details using AI. This streamlines your workflow by handling these steps with simple commands.
