@@ -82,3 +82,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Filter bar added to walkthroughs list**: You can now narrow down walkthroughs by venue, result, technician, or a custom date range directly from the list view. Just select the desired criteria in the new filter bar to see only the records you need.
 - **Expanded Maintenance Form with Rich Details, Escort, and Asset Link**: The maintenance request form now includes richer detail fields, an escort option, and a direct link to the associated asset. This lets you capture more context and quickly navigate to the asset while submitting a request.
 - **Kanban PATCH fixed; new inventory form launched**: We've fixed the Kanban PATCH so board updates now work correctly, and introduced the Phase‑2 Wave 1 inventory form, letting you submit and manage inventory items directly.
+
+- **Expanded RMA form with new fields**: You can now add a submission contact, provide detailed parts information, select a remit‑to‑stock option, and choose a shipping method directly on the RMA form.
+- **Filter CG designs by designer**: You can now apply a per‑designer filter in the CG designs view, so only the designs created by the selected designer are shown.
+- **Midnight times now display as TBD**: When an event is set for midnight, the calendar now shows “TBD” instead of “12:00 AM”. This removes the misleading exact time and makes it clear the start time is to be determined.
