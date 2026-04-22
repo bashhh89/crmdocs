@@ -35,3 +35,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New admin and public pages added to client portal**: You now have a dedicated admin page to manage your client portal settings, and a public page that external users can view. These pages give you direct control and visibility without needing technical assistance.
 - **Designs from Twenty now load correctly**: You can now view Twenty-backed designs without errors. The system now pulls these designs via REST, so previously missing rows are no longer a problem.
 - **Hours Budget Alert UI and Simulation Added**: You now have a dedicated interface to view and manage hours‑budget alerts, and you can simulate alerts to see how they would trigger before they occur. Adjust thresholds and test alerts instantly from the new UI.
+
+- **Token URLs now work without login**: You can now open a client portal directly using its /portals/<token> link without signing in first. This streamlines access for external users who receive a portal token.
+- **Proof files now support versioning and request workflow**: You can now request a proof and see a version history for each uploaded file. The proof page shows the latest version while letting you access earlier revisions when needed.
+- **Export option added to Print Requests**: You can now export your print request data directly from the system. This makes it easy to download and share request details.
+- **Export print requests now available**: You can now export your print request data straight from the interface. This new export option lets you download the information you need in a convenient format.
