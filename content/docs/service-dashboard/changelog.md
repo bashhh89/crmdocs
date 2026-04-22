@@ -30,3 +30,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Dashboard phase values now correctly recognized**: We fixed the opening checklists dashboard so phase values are properly translated before filtering or saving. This prevents errors and ensures your filters work as expected.
 - **Hours budget alerts now available**: You’ll now receive automatic alerts when a project’s hours budget is exceeded, and you can view each alert’s status directly on the Hours Budgets page.
 - **New 30/60/90 Day Stadium Prep Checklists**: You can now access a dedicated 30/60/90 day stadium preparation module in the Opening Checklists area (when the feature is turned on). This gives you a clear, step‑by‑step view of tasks to complete at each milestone before the stadium opens.
+
+- **Docs updated to show Google Calendar sync removed**: The documentation now reflects that Phase 1 no longer includes Google Calendar synchronization. Users should no longer expect that integration to be available.
+- **New admin and public pages added to client portal**: You now have a dedicated admin page to manage your client portal settings, and a public page that external users can view. These pages give you direct control and visibility without needing technical assistance.
+- **Designs from Twenty now load correctly**: You can now view Twenty-backed designs without errors. The system now pulls these designs via REST, so previously missing rows are no longer a problem.
+- **Hours Budget Alert UI and Simulation Added**: You now have a dedicated interface to view and manage hours‑budget alerts, and you can simulate alerts to see how they would trigger before they occur. Adjust thresholds and test alerts instantly from the new UI.
