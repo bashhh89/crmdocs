@@ -105,3 +105,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI-generated design requests now available**: You can now create design requests that are authored by AI directly in Twenty. The system automatically mirrors a local copy, so you have immediate access to the request in your workspace.
 - **Work-in-Progress banner removed**: I’ve removed the Work‑in‑Progress banner, so the interface is now cleaner and you won’t see that placeholder message anymore.
 - **Full-size inline preview for image proofs**: You can now view image proofs at full size directly within the preview pane, eliminating the need to download or open a separate window.
+
+- **AI assistant now auto-fills forms, no fake tables**: The AI assistant can now automatically fill in form fields for you, and it will stop producing placeholder table output. This makes data entry faster and keeps the results clean.
