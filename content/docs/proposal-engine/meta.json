@@ -1,5 +1,5 @@
 {
   "title": "Proposal Engine",
   "defaultOpen": true,
-  "pages": ["introduction", "---Features---", "features", "---How-Tos---", "how-tos", "changelog"]
+  "pages": ["introduction", "overview", "---Features---", "features", "---How-Tos---", "how-tos", "changelog"]
 }

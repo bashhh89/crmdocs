@@ -2,6 +2,7 @@
   "title": "Docs",
   "pages": [
     "---ANC CRM---",
+    "twenty-crm",
     "user-guide",
     "data-model",
     "data-migration",
