@@ -86,3 +86,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Expanded RMA form with new fields**: You can now add a submission contact, provide detailed parts information, select a remit‑to‑stock option, and choose a shipping method directly on the RMA form.
 - **Filter CG designs by designer**: You can now apply a per‑designer filter in the CG designs view, so only the designs created by the selected designer are shown.
 - **Midnight times now display as TBD**: When an event is set for midnight, the calendar now shows “TBD” instead of “12:00 AM”. This removes the misleading exact time and makes it clear the start time is to be determined.
+
+- **Tickets list now auto‑refreshes every 30 seconds**: When you keep the Tickets tab open, the list now refreshes automatically every 30 seconds, so you’ll always see the latest tickets without manually reloading.
