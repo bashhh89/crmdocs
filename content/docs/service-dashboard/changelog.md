@@ -20,3 +20,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Native proof upload replaces FTP**: You can now upload proof files directly through the system, eliminating the old FTP step. The new upload process is faster and more reliable.
 - **Add new Twenty-backed print request API**: You can now send print requests through the new Twenty-backed API, letting your CRM create and track prints directly without extra steps.
 - **Add new Twenty-backed print request module**: You can now submit and track print requests through the new Twenty‑backed workflow, with fresh pages and API endpoints that let you create, view, and manage prints right from the interface.
+
+- **Proof files now accessible via token‑gated link**: You can now retrieve uploaded proof documents through a secure token‑gated link, making it easy to share proof files without exposing them publicly.
+- **Content Schedule and Parts Ordering modules released**: The new Content Schedule and Parts Ordering modules are now live. You can create and manage content schedules and place parts orders directly in the platform. Just enable the Content Schedule feature in Settings to start using them.
+- **Add filtering and cursor pagination to high‑volume APIs**: You can now apply real filters and use cursor‑based pagination when pulling data from maintenance, time‑entries, and walkthroughs endpoints. This makes it easier to locate specific records and navigate large result sets without overwhelming the system.
