@@ -76,3 +76,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Default password for imported staff set to anc123**: When you import staff members, they’ll now be assigned the default password “anc123” as requested. This lets you log in with that password immediately after the import.
 - **Admins can bulk‑delete tickets from list**: You can now select multiple tickets and delete them all at once from the tickets list, but this action is limited to admin users only.
+
+- **Per-designer dashboards and ad‑hoc Randos flag**: You can now view a dedicated dashboard for each designer, showing only their own design requests. Additionally, the new “randos” flag lets you mark requests for ad‑hoc handling as requested by Alexis.
