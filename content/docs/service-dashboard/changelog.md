@@ -95,3 +95,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Tickets‑by‑Venue report with drill‑down from Tech view**: You can now generate a tickets‑by‑venue report that shows ticket totals per venue, and from the tickets‑by‑tech screen you can click into a venue to see its detailed tickets.
 - **AI Design Assist now uses GPT‑Image 1.5**: The AI design assist now generates proofs with the GPT‑Image 1.5 model, and using GPT‑Image 2 now requires organization verification.
 - **Per‑job hour logging and client/tech reports**: You can now log hours directly on each design request, and view reports that break down total hours by client and show tickets handled by each technician.
+
+- **Inline image previews and AI‑draft badge for proofs**: Proofs now show a thumbnail preview of each image right in the upload list, so you can see what’s there without opening it. Items created by the AI are marked with a clear “AI‑draft” badge, helping you spot them instantly.
+- **Ticket page now correctly reads drill‑down parameters**: The ticket page now pulls drill‑down parameters directly from the URL, ensuring that links and filters work reliably when you navigate to a ticket. This resolves issues where parameters were previously ignored.
+- **Tickets page now loads correctly with search filters**: I fixed the tickets page so it now renders dynamically, ensuring it works when you use search filters. No more blank or error pages when navigating tickets.
