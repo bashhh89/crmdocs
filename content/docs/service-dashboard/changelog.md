@@ -101,3 +101,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Tickets page now loads correctly with search filters**: I fixed the tickets page so it now renders dynamically, ensuring it works when you use search filters. No more blank or error pages when navigating tickets.
 
 - **Drill-down added to Hours‑by‑Client report**: You can now click into a client’s Hours‑by‑Client report to view detailed breakdowns for each project or day. The new drill‑down view lets you explore the data directly within the report page.
+
+- **AI-generated design requests now available**: You can now create design requests that are authored by AI directly in Twenty. The system automatically mirrors a local copy, so you have immediate access to the request in your workspace.
+- **Work-in-Progress banner removed**: I’ve removed the Work‑in‑Progress banner, so the interface is now cleaner and you won’t see that placeholder message anymore.
+- **Full-size inline preview for image proofs**: You can now view image proofs at full size directly within the preview pane, eliminating the need to download or open a separate window.
