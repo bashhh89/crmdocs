@@ -78,3 +78,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Admins can bulk‑delete tickets from list**: You can now select multiple tickets and delete them all at once from the tickets list, but this action is limited to admin users only.
 
 - **Per-designer dashboards and ad‑hoc Randos flag**: You can now view a dedicated dashboard for each designer, showing only their own design requests. Additionally, the new “randos” flag lets you mark requests for ad‑hoc handling as requested by Alexis.
+
+- **Filter bar added to walkthroughs list**: You can now narrow down walkthroughs by venue, result, technician, or a custom date range directly from the list view. Just select the desired criteria in the new filter bar to see only the records you need.
+- **Expanded Maintenance Form with Rich Details, Escort, and Asset Link**: The maintenance request form now includes richer detail fields, an escort option, and a direct link to the associated asset. This lets you capture more context and quickly navigate to the asset while submitting a request.
+- **Kanban PATCH fixed; new inventory form launched**: We've fixed the Kanban PATCH so board updates now work correctly, and introduced the Phase‑2 Wave 1 inventory form, letting you submit and manage inventory items directly.
