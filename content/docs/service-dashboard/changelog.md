@@ -54,3 +54,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Sidebar navigation cleaned up into five sections**: The sidebar now displays five clean sections and removes all WIP badges and duplicate items, making it easier to find what you need.
 
 - **Content schedule API now uses correct field names**: We updated the content schedule endpoints to match Twenty’s actual field names—startDate, endDate, and scheduleClient—so your integrations will now sync correctly without needing manual field mapping.
+
+- **Corrected field names in Parts Orders**: We updated the Parts Orders view to use Twenty's actual field names. Requestor name, email, photo URL, and venue name now appear correctly for users.
+- **Print request amounts now return valid numbers**: We fixed the print‑request API so currency values are unpacked into proper numbers, eliminating $NaN errors and ensuring your reports show accurate amounts.
