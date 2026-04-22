@@ -52,3 +52,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Time entries now show correct hours and dates**: Time entry records now display the actual hours spent and the correct date instead of zeros, so you’ll see accurate work logs.
 - **Kanban lanes now reflect correct status and show all fields**: Designs now land in the proper Kanban lane based on their status, so you’ll see them where you expect. Any previously missing fields are now displayed, giving you a complete view of each design.
 - **Sidebar navigation cleaned up into five sections**: The sidebar now displays five clean sections and removes all WIP badges and duplicate items, making it easier to find what you need.
+
+- **Content schedule API now uses correct field names**: We updated the content schedule endpoints to match Twenty’s actual field names—startDate, endDate, and scheduleClient—so your integrations will now sync correctly without needing manual field mapping.
