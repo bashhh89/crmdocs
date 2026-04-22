@@ -63,3 +63,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Redesigned Design Detail Page with Reactive Stages**: I've rebuilt the design detail page to walk you through each stage, updating instantly as you make changes. The new reactive workflow means you see your edits in real time, so you don't need to refresh the page.
 
 - **Dashboard status now saved as proper STATUS enum**: When you update a design request from the dashboard, the status is now correctly translated into the system’s STATUS_* enum, so the request reflects the right state.
+
+- **Proof-share now serves files for Twenty-backed designs**: When you share a design that uses the Twenty backend, any uploaded files are now delivered correctly, so recipients can view or download them without error.
+- **Fix missing stub for Twenty‑only design uploads**: When you upload a proof for a Twenty‑only design, the system now creates the required placeholder automatically, so the upload no longer fails with a “not found” error.
+- **Corrected design request status for new stages UI**: We fixed the design request detail view so the status now aligns with the new stages UI. When you open a design request, the stage information displays correctly, reflecting the current status of the request.
