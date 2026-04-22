@@ -47,3 +47,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Expose full Twenty fields and normalize status**: You’ll now see all twenty design‑request fields displayed, and status values are standardized so they behave consistently across the system.
 - **RMA status now reflects actual values and all fields displayed**: We've removed the hard‑coded status on RMA records, so you’ll now see the true current status. All twenty data fields are now surfaced, giving you the full details you need.
 - **Walkthroughs now show real venue, technician, and standardized results**: The walkthroughs API now returns the actual venue and the assigned technician, and result values are normalized. This means the data you see in the CRM will be accurate and consistent when reviewing or reporting on walkthroughs.
+
+- **Accurate hours budgets with refined UI**: Hours budgets now use the real contracted hours from Twenty, so the totals you see are accurate. The detail view has been polished for a cleaner, easier‑to‑read layout.
+- **Time entries now show correct hours and dates**: Time entry records now display the actual hours spent and the correct date instead of zeros, so you’ll see accurate work logs.
+- **Kanban lanes now reflect correct status and show all fields**: Designs now land in the proper Kanban lane based on their status, so you’ll see them where you expect. Any previously missing fields are now displayed, giving you a complete view of each design.
+- **Sidebar navigation cleaned up into five sections**: The sidebar now displays five clean sections and removes all WIP badges and duplicate items, making it easier to find what you need.
