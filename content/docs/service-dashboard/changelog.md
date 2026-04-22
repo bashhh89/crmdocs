@@ -57,3 +57,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Corrected field names in Parts Orders**: We updated the Parts Orders view to use Twenty's actual field names. Requestor name, email, photo URL, and venue name now appear correctly for users.
 - **Print request amounts now return valid numbers**: We fixed the print‑request API so currency values are unpacked into proper numbers, eliminating $NaN errors and ensuring your reports show accurate amounts.
+
+- **Design proof upload auto‑advances status and emails client**: When you upload a design proof, the request status advances automatically and an email is sent to the client. No extra steps are required to update the status or trigger the notification.
