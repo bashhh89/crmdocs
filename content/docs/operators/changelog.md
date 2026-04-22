@@ -9,6 +9,16 @@ description: Comprehensive record of Twenty CRM migrations, architectural change
 > **8,360** Opportunities • **3,730** Companies • **19,966** People • **5,160** Revenue Splits • **3,900** Service Tickets • **20,174** Design Requests.
 > Currently tracking **~$470M** in 2026 pipeline revenue splits (81% volume parity with Salesforce).
 
+
+## 2026-04-22
+
+- **Bulk close and merge tickets via checkbox selection**: You can now select multiple tickets with checkboxes and close them all at once, or merge them together in a single step. This bulk action speeds up your workflow and reduces the number of clicks required.
+- **Tickets default to list view; voicemail shows caller number**: When you open the Tickets page, it now opens in list view by default, making it easier to scan multiple tickets. Voicemail entries now include the caller’s phone number, so you can see who called at a glance.
+- **Ticket list no longer crashes during search after voicemail tickets**: You can now search the tickets list without any crashes, even after voicemail tickets have been added.
+- **Cleanup status now displayed in Estimator list**: You can now see a cleanup status column in the estimator list. This lets you quickly identify which estimates are marked for cleanup and track their progress.
+- **Bulk select and delete items in Estimator list**: You can now pick multiple entries in the Estimator list at once and remove them with a single delete action. This streamlines cleanup and saves time when managing large sets of estimates.
+- **Estimator preview now shows helpful empty state**: When you open the estimator preview with no data, you’ll now see a clear, friendly message guiding you on what to do next. This makes it easier to understand why the preview is empty and how to populate it.
+
 ## 2026-04-21
 
 - **Probability Matrix Engine (`fix_widgets.py`)**: Designed and shipped a Python-based execution pipeline securely overriding `core."pageLayoutWidget"` deep JSON. Injected `>= 50%` probability filters globally across Jireh's ANC 2026 Dashboard revenue widgets to ensure true weighted pipeline logic.
