@@ -70,3 +70,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Delete tickets directly from the system**: You can now delete tickets you no longer need, making it easy to clean up spam and keep your ticket list tidy.
 - **AI-powered design request search and management**: You can now ask the system to locate design requests, automatically assign a designer, and update design details using AI. This streamlines your workflow by handling these steps with simple commands.
+
+- **Stop automatic client email on proof upload**: Uploading a proof no longer triggers an automatic email to the client; the first quality check is now handled by Alexis.
+- **Custom notification preferences with daily digests**: We've toned down the noise by stopping immediate check‑in and game‑ready submission alerts. Instead, you'll receive a concise summary of events twice a day at 9 am and 5 pm.
