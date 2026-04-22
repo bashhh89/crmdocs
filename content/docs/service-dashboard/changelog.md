@@ -40,3 +40,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Proof files now support versioning and request workflow**: You can now request a proof and see a version history for each uploaded file. The proof page shows the latest version while letting you access earlier revisions when needed.
 - **Export option added to Print Requests**: You can now export your print request data directly from the system. This makes it easy to download and share request details.
 - **Export print requests now available**: You can now export your print request data straight from the interface. This new export option lets you download the information you need in a convenient format.
+
+- **Walkthrough results now handle missing data safely**: You’ll no longer see errors or broken pages when a walkthrough’s result column is empty—the results display correctly and the view remains stable.
+- **Wrike task titles now visible in Issue column**: You can now see the Wrike task title directly in the Issue column, making it easier to identify tasks at a glance.
