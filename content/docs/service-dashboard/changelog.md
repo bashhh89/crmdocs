@@ -107,3 +107,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Full-size inline preview for image proofs**: You can now view image proofs at full size directly within the preview pane, eliminating the need to download or open a separate window.
 
 - **AI assistant now auto-fills forms, no fake tables**: The AI assistant can now automatically fill in form fields for you, and it will stop producing placeholder table output. This makes data entry faster and keeps the results clean.
+
+- **Proof image previews load faster**: Proof images now stream through our server, so preview thumbnails appear instantly. You’ll no longer wait for images to download before they display.
