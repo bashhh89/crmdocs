@@ -26,3 +26,5 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Currency exchange rates now available**: You can now view and use up‑to‑date currency exchange rates directly in the system, making multi‑currency transactions easier.
 
 - **PDF tax no longer recalculates on zero values**: When you generate a PDF, tax amounts will stay unchanged if the sheet shows zero, eliminating incorrect tax recalculations.
+
+- **Correct currency display for GBP/EUR/CAD pricing**: Pricing documents now show the proper currency—GBP, EUR, or CAD—instead of defaulting to USD. Users will see accurate amounts in the currency that matches their pricing document.
