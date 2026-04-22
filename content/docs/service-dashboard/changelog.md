@@ -61,3 +61,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Design proof upload auto‑advances status and emails client**: When you upload a design proof, the request status advances automatically and an email is sent to the client. No extra steps are required to update the status or trigger the notification.
 
 - **Redesigned Design Detail Page with Reactive Stages**: I've rebuilt the design detail page to walk you through each stage, updating instantly as you make changes. The new reactive workflow means you see your edits in real time, so you don't need to refresh the page.
+
+- **Dashboard status now saved as proper STATUS enum**: When you update a design request from the dashboard, the status is now correctly translated into the system’s STATUS_* enum, so the request reflects the right state.
