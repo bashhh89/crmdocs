@@ -43,3 +43,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Walkthrough results now handle missing data safely**: You’ll no longer see errors or broken pages when a walkthrough’s result column is empty—the results display correctly and the view remains stable.
 - **Wrike task titles now visible in Issue column**: You can now see the Wrike task title directly in the Issue column, making it easier to identify tasks at a glance.
+
+- **Expose full Twenty fields and normalize status**: You’ll now see all twenty design‑request fields displayed, and status values are standardized so they behave consistently across the system.
+- **RMA status now reflects actual values and all fields displayed**: We've removed the hard‑coded status on RMA records, so you’ll now see the true current status. All twenty data fields are now surfaced, giving you the full details you need.
+- **Walkthroughs now show real venue, technician, and standardized results**: The walkthroughs API now returns the actual venue and the assigned technician, and result values are normalized. This means the data you see in the CRM will be accurate and consistent when reviewing or reporting on walkthroughs.
