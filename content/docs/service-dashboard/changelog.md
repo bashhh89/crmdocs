@@ -116,3 +116,5 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI draft image preview now loads correctly**: The AI draft image preview now displays instead of staying blank. You’ll see the generated image as soon as it’s ready, eliminating the previous loading issue.
 
 - **Plan venue signage packages before AI proof generation**: You can now create and schedule signage packages for a venue before generating the AI proof, giving you control to organize and approve signage layouts ahead of time.
+
+- **Deterministic AI Signage Planner with Proof Generation**: You can now generate signage proofs instantly using our new deterministic AI Signage Planner. The added AI agent skill delivers reliable, repeatable signage layouts without guesswork.
