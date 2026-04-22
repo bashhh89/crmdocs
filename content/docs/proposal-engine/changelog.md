@@ -24,3 +24,5 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Unblocked SOW/PDF agents and refreshed AI rules**: You can now use SOW and PDF agents without hitting the authentication wall, and the AI rules have been updated for smoother operation.
 - **Export proposal PDFs from Agent Skill**: You can now generate and download PDF versions of proposals directly from the Agent Skill area in the CRM, making it easier to share and archive proposal details.
 - **Currency exchange rates now available**: You can now view and use up‑to‑date currency exchange rates directly in the system, making multi‑currency transactions easier.
+
+- **PDF tax no longer recalculates on zero values**: When you generate a PDF, tax amounts will stay unchanged if the sheet shows zero, eliminating incorrect tax recalculations.
