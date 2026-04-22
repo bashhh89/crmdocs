@@ -111,3 +111,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Proof image previews load faster**: Proof images now stream through our server, so preview thumbnails appear instantly. You’ll no longer wait for images to download before they display.
 
 - **AI form filling and chat table rendering fixed**: We've corrected the AI-powered form so it now fills correctly, and the chat table now displays properly, ensuring smoother interactions.
+
+- **AI now fills completely blank forms reliably**: The AI assistant now correctly populates fields on forms that are entirely empty, instead of leaving them blank. This makes the auto‑fill feature work right out of the box for new entries.
+- **AI draft image preview now loads correctly**: The AI draft image preview now displays instead of staying blank. You’ll see the generated image as soon as it’s ready, eliminating the previous loading issue.
