@@ -73,3 +73,6 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Stop automatic client email on proof upload**: Uploading a proof no longer triggers an automatic email to the client; the first quality check is now handled by Alexis.
 - **Custom notification preferences with daily digests**: We've toned down the noise by stopping immediate check‑in and game‑ready submission alerts. Instead, you'll receive a concise summary of events twice a day at 9 am and 5 pm.
+
+- **Default password for imported staff set to anc123**: When you import staff members, they’ll now be assigned the default password “anc123” as requested. This lets you log in with that password immediately after the import.
+- **Admins can bulk‑delete tickets from list**: You can now select multiple tickets and delete them all at once from the tickets list, but this action is limited to admin users only.
