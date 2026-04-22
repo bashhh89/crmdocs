@@ -7,6 +7,8 @@ description: The calendar of every game, concert, and service event across every
 
 Every event ANC is working — tonight, this week, three months out — lives on the Events page. Calendar view for visual scanning, list view for bulk work, and a powerful filter bar across both.
 
+![Events list view](/img/screenshots/service-dashboard/02-events-list.png)
+
 ## What you see
 
 - **Calendar view** — day / week / month, color-coded by league

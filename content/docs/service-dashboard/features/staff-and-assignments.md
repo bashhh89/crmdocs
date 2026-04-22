@@ -7,6 +7,8 @@ description: Techs, managers, shift templates, and assignment rules.
 
 ## Staff directory
 
+![Staff directory](/img/screenshots/service-dashboard/07-staff-list.png)
+
 Every technician, manager, and admin has a record in **Staff** (`/staff`). Each record has:
 
 - Name, role, title, email, phone

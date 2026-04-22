@@ -7,6 +7,8 @@ description: Issue tracking with SLA, auto-assignment, merge, and bulk actions.
 
 The ticket system is the core triage surface for tech support. Lives at `/tickets` with list-view by default.
 
+![Tickets list view](/img/screenshots/service-dashboard/03-tickets-list.png)
+
 ## Ticket basics
 
 - **Number** — T-00001 onwards, auto-increment

@@ -28,6 +28,8 @@ Each venue portal has its own AnythingLLM workspace that's pre-loaded with that 
 
 Admins use the **Client Portals** page (`/portals`) to see which venues have portals, get shareable links, and reset tokens if one leaks.
 
+![Client Portals management](/img/screenshots/service-dashboard/08-portals.png)
+
 ## See also
 
 - [Venues](./venues) — where the portal token lives

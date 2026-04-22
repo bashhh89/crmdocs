@@ -7,6 +7,8 @@ description: 200+ venues across college, OOH, and sports — where everything is
 
 Every venue ANC services has a record in **Venues** (`/venues`). List view, card view, and a searchable map (`/venues/map`) are all available.
 
+![Venues list](/img/screenshots/service-dashboard/06-venues-list.png)
+
 ## What's on a venue record
 
 - Name, address, timezone, city/state

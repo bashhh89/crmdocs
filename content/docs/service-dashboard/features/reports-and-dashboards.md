@@ -33,6 +33,8 @@ A strip of critical alerts runs across the dashboard:
 
 ## SLA report
 
+![Reports page](/img/screenshots/service-dashboard/09-reports.png)
+
 `/reports` — SLA compliance metrics across tickets:
 
 - % responded within SLA

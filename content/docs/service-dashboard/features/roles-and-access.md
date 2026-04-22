@@ -50,6 +50,8 @@ From the sidebar, admins and managers can open **Preview Staff View**, pick any 
 
 Any user can open **Account** in the sidebar footer to change their own password — no admin round-trip needed.
 
+![Account & password change](/img/screenshots/service-dashboard/10-account.png)
+
 ## See also
 
 - [Tickets](./tickets) — a lot of the role permission differences show up here
