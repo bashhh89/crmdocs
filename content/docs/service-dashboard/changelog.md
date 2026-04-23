@@ -16,6 +16,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Login page loads reliably during prerender**: The login screen now loads correctly even when the page is pre‑rendered, so you won’t encounter errors accessing the login form.
 - **Resolved workflow deep link errors and Slack flags**: Deep links in the workflow now open correctly and show clear messages when you’re not signed in, while markdown links gracefully fall back if needed. Slack notifications now include an incident flag, making it easier to spot issues at a glance.
 
+- **Slack verification URL handshake fixed**: The Slack integration now correctly validates the verification URL, allowing the handshake to complete without errors. Your Slack-connected workflows will resume normal operation.
+- **Slack AI assistant endpoint with canvas creation**: You can now call the AI assistant from Slack and have it generate a canvas for you directly within the conversation.
 ## 2026-04-22
 
 - **Add new Operations API endpoints**: You can now access the full set of Operations features—designs, requests, budgets, maintenance, RMA, time entries, and walkthroughs—through new API endpoints that can be enabled as needed.
