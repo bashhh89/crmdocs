@@ -23,6 +23,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Daily events digest now sent to multiple channels with header**: You’ll now receive the daily events brief across all your chosen channels, and each digest includes a clear at‑a‑glance header that summarizes the key information.
 - **Venue notes now appear as a feed**: Venue notes are now displayed in a Facebook‑wall‑style feed, letting you view multiple notes in chronological order instead of a single field.
 - **Add free-text internal notes to venue settings**: You can now add free‑text notes to a venue’s settings for internal reference. These notes are saved with the venue and can be viewed or edited whenever you manage a venue.
+- **Venue page UX refined per Stevie's feedback**: The venue page now presents information more clearly and streamlines staff editing, so you can find venue details faster and update staff assignments with fewer clicks. Overall navigation is smoother, reflecting the latest feedback.
 ## 2026-04-22
 
 - **Add new Operations API endpoints**: You can now access the full set of Operations features—designs, requests, budgets, maintenance, RMA, time entries, and walkthroughs—through new API endpoints that can be enabled as needed.
