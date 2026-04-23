@@ -19,6 +19,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Slack verification URL handshake fixed**: The Slack integration now correctly validates the verification URL, allowing the handshake to complete without errors. Your Slack-connected workflows will resume normal operation.
 - **Slack AI assistant endpoint with canvas creation**: You can now call the AI assistant from Slack and have it generate a canvas for you directly within the conversation.
 - **Correct Slack assistant persona and hide UI suggestions**: The Slack assistant now presents the proper persona and no longer displays UI suggestions, giving you a cleaner, more accurate experience when interacting through Slack.
+- **Correct chronological sorting in daily digests**: Daily event digests now sort items in true chronological order, fixing the AM/PM string comparison issue. Operators will see events listed in the proper sequence, eliminating out‑of‑order listings.
+- **Daily events digest now sent to multiple channels with header**: You’ll now receive the daily events brief across all your chosen channels, and each digest includes a clear at‑a‑glance header that summarizes the key information.
 ## 2026-04-22
 
 - **Add new Operations API endpoints**: You can now access the full set of Operations features—designs, requests, budgets, maintenance, RMA, time entries, and walkthroughs—through new API endpoints that can be enabled as needed.
