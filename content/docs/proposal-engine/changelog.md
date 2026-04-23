@@ -10,6 +10,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 <!-- AUTO-ENTRIES-BELOW -->
 
 
+
+## 2026-04-23
+
+- **Resp Matrix PDF readability improvements**: The Resp Matrix PDF now uses a smaller, clearer font, eliminates mid‑sentence line breaks, and shows each header only once, so the document is easier to read and understand.
+
 ## 2026-04-22
 
 - **Cleanup status now visible in estimator list**: You can now see a cleanup status column in the estimator list. This lets you quickly identify which estimators require cleanup, streamlining your workflow.
