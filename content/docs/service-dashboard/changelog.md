@@ -21,6 +21,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Correct Slack assistant persona and hide UI suggestions**: The Slack assistant now presents the proper persona and no longer displays UI suggestions, giving you a cleaner, more accurate experience when interacting through Slack.
 - **Correct chronological sorting in daily digests**: Daily event digests now sort items in true chronological order, fixing the AM/PM string comparison issue. Operators will see events listed in the proper sequence, eliminating out‑of‑order listings.
 - **Daily events digest now sent to multiple channels with header**: You’ll now receive the daily events brief across all your chosen channels, and each digest includes a clear at‑a‑glance header that summarizes the key information.
+- **Venue notes now appear as a feed**: Venue notes are now displayed in a Facebook‑wall‑style feed, letting you view multiple notes in chronological order instead of a single field.
+- **Add free-text internal notes to venue settings**: You can now add free‑text notes to a venue’s settings for internal reference. These notes are saved with the venue and can be viewed or edited whenever you manage a venue.
 ## 2026-04-22
 
 - **Add new Operations API endpoints**: You can now access the full set of Operations features—designs, requests, budgets, maintenance, RMA, time entries, and walkthroughs—through new API endpoints that can be enabled as needed.
