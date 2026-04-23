@@ -18,6 +18,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Slack verification URL handshake fixed**: The Slack integration now correctly validates the verification URL, allowing the handshake to complete without errors. Your Slack-connected workflows will resume normal operation.
 - **Slack AI assistant endpoint with canvas creation**: You can now call the AI assistant from Slack and have it generate a canvas for you directly within the conversation.
+- **Correct Slack assistant persona and hide UI suggestions**: The Slack assistant now presents the proper persona and no longer displays UI suggestions, giving you a cleaner, more accurate experience when interacting through Slack.
 ## 2026-04-22
 
 - **Add new Operations API endpoints**: You can now access the full set of Operations features—designs, requests, budgets, maintenance, RMA, time entries, and walkthroughs—through new API endpoints that can be enabled as needed.
