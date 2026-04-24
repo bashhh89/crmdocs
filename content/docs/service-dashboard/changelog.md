@@ -17,6 +17,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
 
 - **Event feed Slack notifications now work correctly**: Slack alerts for new event feed items are now sent correctly, so you’ll receive timely notifications in your channel.
+- **Delete individual events directly**: You can now delete a single event from the system. Just select the delete option on an event’s page to remove it permanently.
+- **Event feed Slack notifications now work correctly**: Slack alerts for new event feeds are now delivered reliably, so you’ll see updates in your Slack channels as expected.
 ## 2026-04-23
 
 - **Login page loads reliably during prerender**: The login screen now loads correctly even when the page is pre‑rendered, so you won’t encounter errors accessing the login form.
