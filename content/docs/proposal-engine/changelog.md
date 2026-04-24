@@ -18,6 +18,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Corrected grand total in Margin Analysis**: The margin analysis report now displays the correct grand total, so your financial summaries are accurate and reliable.
 
 - **RFP row editing works correctly**: You can now edit rows directly in the RFP preview and see the changes reflected instantly. The previous issue that prevented row updates has been resolved.
+- **Grand Total now updates correctly when adding line items**: When you add new line items to a project, the Grand Total now recalculates instantly and accurately, fixing the previous discrepancy.
 ## 2026-04-23
 
 - **Resp Matrix PDF readability improvements**: The Resp Matrix PDF now uses a smaller, clearer font, eliminates mid‑sentence line breaks, and shows each header only once, so the document is easier to read and understand.
