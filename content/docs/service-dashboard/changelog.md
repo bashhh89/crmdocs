@@ -11,6 +11,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-04-24
+
+- **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
+
 ## 2026-04-23
 
 - **Login page loads reliably during prerender**: The login screen now loads correctly even when the page is pre‑rendered, so you won’t encounter errors accessing the login form.
