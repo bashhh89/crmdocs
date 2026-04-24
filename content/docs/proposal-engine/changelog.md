@@ -17,6 +17,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
 - **Corrected grand total in Margin Analysis**: The margin analysis report now displays the correct grand total, so your financial summaries are accurate and reliable.
 
+- **RFP row editing works correctly**: You can now edit rows directly in the RFP preview and see the changes reflected instantly. The previous issue that prevented row updates has been resolved.
 ## 2026-04-23
 
 - **Resp Matrix PDF readability improvements**: The Resp Matrix PDF now uses a smaller, clearer font, eliminates mid‑sentence line breaks, and shows each header only once, so the document is easier to read and understand.
