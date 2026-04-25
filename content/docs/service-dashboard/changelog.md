@@ -12,6 +12,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-04-25
+
+- **Clarified post‑game ops report submission flow**: The post‑game operations report submission process is now clearer. You’ll see guided prompts that walk you through each step and a confirmation when the report is successfully submitted.
+
 ## 2026-04-24
 
 - **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
