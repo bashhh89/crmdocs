@@ -22,6 +22,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Voicemail ticket UI clarified for easier communication**: The voicemail ticket screen now displays clearer instructions, so you can see exactly how to send and track voicemail communications. The updated wording removes ambiguity and streamlines your workflow.
 - **Email reply composer added to tickets**: You can now write and send email replies right from the ticket screen, making it easier to respond to customers without leaving the platform.
 - **Revamped Client Command Center UI**: The client command center now features a cleaner layout and faster navigation, letting you view and manage client details more efficiently. All key information is displayed up front, so you can take action with fewer clicks.
+- **Improved ticket page spacing for better readability**: I've adjusted the spacing on ticket pages so everything lines up more cleanly. This makes ticket details easier to read on both desktop and mobile devices.
+- **Refined Ticket Support Console Interface**: The ticket support console now looks cleaner and more intuitive. Buttons and fields are better aligned, making it easier to read and act on tickets. Overall navigation feels smoother.
+- **Add photo attachments to tickets**: You can now attach photos to ticket comments, letting you include visual evidence directly in your support tickets. This makes it easier to convey issues and track progress with images.
 ## 2026-04-24
 
 - **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
