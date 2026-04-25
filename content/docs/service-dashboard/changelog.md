@@ -20,6 +20,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Twenty support emails now appear in ticket email tab**: You can now view Twenty support emails directly in the ticket’s email tab, so all related communications are visible in one place.
 - **Improved ticket source and priority handling**: Ticket source and priority fields are now clearer and work more reliably. When you view or create tickets, the correct source is displayed and priority levels are handled consistently.
 - **Voicemail ticket UI clarified for easier communication**: The voicemail ticket screen now displays clearer instructions, so you can see exactly how to send and track voicemail communications. The updated wording removes ambiguity and streamlines your workflow.
+- **Email reply composer added to tickets**: You can now write and send email replies right from the ticket screen, making it easier to respond to customers without leaving the platform.
+- **Revamped Client Command Center UI**: The client command center now features a cleaner layout and faster navigation, letting you view and manage client details more efficiently. All key information is displayed up front, so you can take action with fewer clicks.
 ## 2026-04-24
 
 - **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
