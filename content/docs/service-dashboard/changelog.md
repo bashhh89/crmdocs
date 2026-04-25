@@ -17,6 +17,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Clarified post‑game ops report submission flow**: The post‑game operations report submission process is now clearer. You’ll see guided prompts that walk you through each step and a confirmation when the report is successfully submitted.
 
+- **Twenty support emails now appear in ticket email tab**: You can now view Twenty support emails directly in the ticket’s email tab, so all related communications are visible in one place.
+- **Improved ticket source and priority handling**: Ticket source and priority fields are now clearer and work more reliably. When you view or create tickets, the correct source is displayed and priority levels are handled consistently.
+- **Voicemail ticket UI clarified for easier communication**: The voicemail ticket screen now displays clearer instructions, so you can see exactly how to send and track voicemail communications. The updated wording removes ambiguity and streamlines your workflow.
 ## 2026-04-24
 
 - **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
