@@ -25,6 +25,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Improved ticket page spacing for better readability**: I've adjusted the spacing on ticket pages so everything lines up more cleanly. This makes ticket details easier to read on both desktop and mobile devices.
 - **Refined Ticket Support Console Interface**: The ticket support console now looks cleaner and more intuitive. Buttons and fields are better aligned, making it easier to read and act on tickets. Overall navigation feels smoother.
 - **Add photo attachments to tickets**: You can now attach photos to ticket comments, letting you include visual evidence directly in your support tickets. This makes it easier to convey issues and track progress with images.
+- **Client 360 Command Brief added**: You can now open a client’s 360‑degree command brief from the client page, giving you a concise overview of all key information at a glance.
+- **Compact ticket console layout restored**: I've restored the compact ticket console layout, so you’ll see a tighter view of tickets and gain more screen space while working.
+- **Auto-target email replies to tickets**: When you reply to a ticket email, the system now automatically associates your reply with the correct ticket, eliminating the need to manually select the ticket each time.
 ## 2026-04-24
 
 - **Contracted services visible to all with admin toggle**: You can now see contracted services across the platform, and admins have a new toggle to control whether they’re shown to everyone.
