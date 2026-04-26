@@ -30,6 +30,9 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **New repeat‑clients report endpoint with Excel export**: You can now request the repeat‑clients report through a dedicated API endpoint and receive a ready‑to‑use Excel file generated on the server. This simplifies pulling repeat‑client data for analysis and sharing.
 - **New Account LTV Report API (Excel)**: You can now request an Account Lifetime Value report through the /api/jireh-reports/account-ltv endpoint. The report is delivered as a two‑sheet Excel file using the Hankook style layout.
 - **Simplified repeat‑client report layout**: The repeat‑client report now omits the title, subtitle, and rank column, giving you a cleaner, bare‑bones view.
+- **Corrected account LTV aggregation**: Account Lifetime Value reports now aggregate accurately, eliminating fuzzy mismatches that could skew totals. Users will see consistent LTV figures across all accounts.
+- **LTV section updated with current status and known issues**: The LTV documentation now reflects the current system state and lists three known issues, so you can see the latest information and what to watch out for.
+- **Refresh repeat clients report styling**: The repeat clients report now follows the updated template styling, giving you a cleaner and more consistent view. You’ll notice improved alignment and visual cues that make the data easier to scan.
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
