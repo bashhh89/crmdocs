@@ -12,6 +12,12 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-04-26
+
+- **Product save now returns CRM sync status**: When you save a product, the response now includes a sync status so you can instantly see whether the product was successfully synced with the CRM.
+- **Product updates now auto-sync to Twenty CRM**: Whenever you add or edit a product, the changes are automatically sent to the Twenty CRM, keeping your catalog in sync without any manual steps.
+
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
