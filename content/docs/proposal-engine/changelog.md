@@ -28,6 +28,8 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Jireh Reports API now bypasses middleware**: You can now call the /api/jireh-reports endpoint directly, as it’s been added to the allowed list, so your requests won’t be blocked by middleware.
 - **Added API access for Jireh reports and Twenty Bridge**: You can now call the Jireh reports and Twenty Bridge APIs without authentication barriers, allowing seamless data retrieval.
 - **New repeat‑clients report endpoint with Excel export**: You can now request the repeat‑clients report through a dedicated API endpoint and receive a ready‑to‑use Excel file generated on the server. This simplifies pulling repeat‑client data for analysis and sharing.
+- **New Account LTV Report API (Excel)**: You can now request an Account Lifetime Value report through the /api/jireh-reports/account-ltv endpoint. The report is delivered as a two‑sheet Excel file using the Hankook style layout.
+- **Simplified repeat‑client report layout**: The repeat‑client report now omits the title, subtitle, and rank column, giving you a cleaner, bare‑bones view.
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
