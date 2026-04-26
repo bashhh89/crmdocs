@@ -25,6 +25,9 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Bid status auto-updates on PDF/SOW export**: When you export a PDF or generate a Statement of Work, the opportunity’s bid status now automatically changes to BID_SUBMITTED, so you no longer need to update it manually.
 - **CRM activity logging now updates automatically**: When you add or view activities, the system now automatically pushes those changes to the universal CRM, keeping your records in sync without any extra steps.
 - **Added two Jireh‑style report capabilities**: You can now generate Jireh‑style reports using the two new skills, and workflow #1 has been marked as verified.
+- **Jireh Reports API now bypasses middleware**: You can now call the /api/jireh-reports endpoint directly, as it’s been added to the allowed list, so your requests won’t be blocked by middleware.
+- **Added API access for Jireh reports and Twenty Bridge**: You can now call the Jireh reports and Twenty Bridge APIs without authentication barriers, allowing seamless data retrieval.
+- **New repeat‑clients report endpoint with Excel export**: You can now request the repeat‑clients report through a dedicated API endpoint and receive a ready‑to‑use Excel file generated on the server. This simplifies pulling repeat‑client data for analysis and sharing.
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
