@@ -22,6 +22,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Universal CRM push no longer fails silently**: The CRM push integration now reports success correctly instead of failing without notice. Users will see accurate push status and can trust that data is being transferred.
 - **Product API now syncs to CRM asynchronously**: Product updates now fire‑and‑forget to the CRM, so your workflow continues without waiting for the sync to finish. The CRM will be updated shortly after your change.
 - **Resolved runtime error on linked proposal pages**: The linked proposal pages no longer crash due to a missing identifier. Users can now open and work with linked proposals without encountering the runtime error.
+- **Bid status auto-updates on PDF/SOW export**: When you export a PDF or generate a Statement of Work, the opportunity’s bid status now automatically changes to BID_SUBMITTED, so you no longer need to update it manually.
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
