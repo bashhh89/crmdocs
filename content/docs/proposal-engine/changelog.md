@@ -19,6 +19,8 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Product updates now auto-sync to Twenty CRM**: Whenever you add or edit a product, the changes are automatically sent to the Twenty CRM, keeping your catalog in sync without any manual steps.
 
 - **Add “View in CRM” pill to all proposal pages**: You’ll now see a “View in CRM” pill on every proposal page, letting you jump directly to the associated CRM record with a single click. This speeds up navigation and keeps your workflow in sync.
+- **Universal CRM push no longer fails silently**: The CRM push integration now reports success correctly instead of failing without notice. Users will see accurate push status and can trust that data is being transferred.
+- **Product API now syncs to CRM asynchronously**: Product updates now fire‑and‑forget to the CRM, so your workflow continues without waiting for the sync to finish. The CRM will be updated shortly after your change.
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
