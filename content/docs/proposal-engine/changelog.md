@@ -35,6 +35,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Refresh repeat clients report styling**: The repeat clients report now follows the updated template styling, giving you a cleaner and more consistent view. You’ll notice improved alignment and visual cues that make the data easier to scan.
 - **Zero‑value rows omitted from Account LTV reports**: Account Lifetime Value reports now hide rows with a zero amount, so you see only the meaningful data without empty entries.
 - **Repeat client reports now include won opportunity vertical**: You can now generate repeat client reports that are organized by the vertical of won opportunities, giving you clearer insight into repeat business across different market segments.
+- **Show Won Opportunity Count in Repeat Clients Report**: The Repeat Clients report now displays a count of won opportunities for each client. This lets you see at a glance how many deals have been successfully closed, helping you track performance more efficiently.
 ## 2026-04-24
 
 - **Pricing editor now respects inclusion settings**: The pricing editor now correctly includes or excludes items as intended, fixing the previous mismatch. Users will see accurate pricing calculations when editing.
