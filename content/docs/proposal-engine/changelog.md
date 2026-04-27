@@ -13,6 +13,12 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-04-27
+
+- **Repeat‑clients margin report now includes all records**: The repeat‑clients margin report no longer filters out any records, so you’ll see the full set of data again. The numbers now reflect the complete client activity as before.
+- **Zero-revenue records excluded from repeat-client margin report**: The repeat-client margin report now skips any entries with $0 revenue, so the margin numbers you see are more accurate.
+
 ## 2026-04-26
 
 - **Product save now returns CRM sync status**: When you save a product, the response now includes a sync status so you can instantly see whether the product was successfully synced with the CRM.
