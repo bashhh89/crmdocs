@@ -20,6 +20,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Zero-revenue records excluded from repeat-client margin report**: The repeat-client margin report now skips any entries with $0 revenue, so the margin numbers you see are more accurate.
 
 - **Export repeat‑client data as Excel file**: You can now generate and download an XLSX spreadsheet of repeat‑client information directly from the CRM. Use the new render endpoint to get a ready‑to‑use file for your reports.
+- **Render API now accessible without login**: You can now call the /api/render/* endpoint without authenticating first. This removes the need for a login step, letting integrations fetch rendered content directly.
 ## 2026-04-26
 
 - **Product save now returns CRM sync status**: When you save a product, the response now includes a sync status so you can instantly see whether the product was successfully synced with the CRM.
