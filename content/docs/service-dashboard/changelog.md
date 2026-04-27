@@ -13,6 +13,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-04-27
+
+- **Add repeat‑clients report Slack bot skill**: You can now ask the Jireh Slack bot for a repeat‑clients report, mirroring the Scout experience, directly from your Slack workspace.
+
 ## 2026-04-25
 
 - **Clarified post‑game ops report submission flow**: The post‑game operations report submission process is now clearer. You’ll see guided prompts that walk you through each step and a confirmation when the report is successfully submitted.
