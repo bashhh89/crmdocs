@@ -1,0 +1,173 @@
+---
+title: Getting Started
+description: Your first 30 minutes in the ANC CRM — log in, get oriented, do your first useful thing.
+---
+
+# Getting Started
+
+A practical walkthrough for someone opening the ANC CRM for the first time. By the end of this page you'll have logged in, switched to the right workspace, found your dashboard, used the AI assistant, and logged a real record.
+
+## 1. Log in
+
+1. Go to **[crm.ancsports.net](https://crm.ancsports.net)**
+2. **Sign in with Google** — use your ANC email
+3. If it's your first time, the workspace owner (Ahmad) needs to have invited you. If you see "no workspace found", message Ahmad in Slack with your email.
+
+## 2. Switch to the ANC app
+
+This is the most common stumble for new users.
+
+The CRM has two workspace apps:
+
+- **Standard** — Twenty's default empty starter app
+- **ANC** — every dashboard, view, and folder ANC actually uses
+
+Top-left of the screen is the **app switcher** (it shows the current app name). If it says "Standard", click it and pick **ANC**. The CRM remembers your choice — you only do this once.
+
+> If you bookmark a URL while in the Standard app, the bookmark won't show ANC content. Always copy URLs from inside the ANC app.
+
+## 3. Tour the sidebar
+
+In the ANC app, the left sidebar has:
+
+- **Favorites** (top) — anything you've starred. Empty until you star something.
+- **Workspace** — Companies, People, Opportunities, Tasks, Notes (the standard CRM objects)
+- **Dashboards** — ANC 2026 Company Dashboard, plus any role-specific dashboards
+- **Views** — saved filtered lists. The big ones:
+  - **Bid Tracker** (kanban, by `bidStatus`)
+  - **Proposal Pipeline** (list, sorted by `proposalDueDate`)
+  - **Estimation & Proposals** (Natalia's daily — grouped by `pricingComplete`)
+  - **Backlog** (won deals, sorted by `substantialCompletionDate`)
+  - **Top Open Deals** (sorted by `dealValue`)
+  - **Win/Loss by League**
+- **Settings** (bottom) — only useful for admins
+
+Star anything you'll open daily — it pins to Favorites at the top.
+
+## 4. Open your first dashboard
+
+Click **ANC 2026 Company Dashboard** in the sidebar.
+
+This is the leadership-facing rollup. Eleven widgets matching Jireh's prior Salesforce layout: pipeline value by vertical, win rate, weighted forecast, top accounts, etc.
+
+Things to try:
+- **Hover any chart segment** — exact values appear
+- **Click a widget title** to drill into the underlying records
+- **Switch between fiscal years** using the year filter at the top
+
+If a widget shows a wrong count, the filter on it likely needs a JSON-stringified array (`"[\"WON\"]"`, not `"WON"`). See [How to build a new widget](/docs/user-guide/how-tos/all-recipes#how-to-build-a-new-widget).
+
+## 5. Open an Opportunity
+
+In the sidebar → **Opportunities** → click any row.
+
+You're looking at the deal detail page. It has:
+
+- **Header** — name, value, stage, owner
+- **Tabs along the top** — Notes, Tasks, Files, Activity Timeline
+- **Linked records on the right** — Company, People involved, Revenue Splits, Estimates, Service Tickets, Design Requests
+- **Fields on the right panel** — every field on the Opportunity object. 17 ANC-specific fields were added on top of Twenty's base set (probability, proposalDueDate, paidAmount, accountExecutive, margin, revenue2026, etc.)
+
+Edit any field inline by clicking it.
+
+Full lifecycle and field reference: [Opportunities](/docs/user-guide/capabilities/opportunities).
+
+## 6. Use the AI assistant (Boyka)
+
+Top-right corner — the chat bubble. Click it.
+
+This is **Boyka**, the CRM's named AI agent. It has access to live CRM data and 30 ANC-specific skills. Try asking:
+
+```
+which deals are due this week
+```
+
+```
+margin on Knicks deals this year
+```
+
+```
+top open deals by value, technology vertical only
+```
+
+```
+create a touchdown graphic for Louisville, night game vibe
+```
+
+It picks the right skill automatically. If it picks the wrong one, force it: *"use the `pipeline-tracker` skill: ..."*.
+
+Full skill list with copy-pastable prompts: [Scout Skills](/docs/user-guide/capabilities/scout-skills).
+
+## 7. Log your first record
+
+Pick the flow that matches your role.
+
+### Sales / BD — log a new RFP
+
+1. Sidebar → **Opportunities** → **+ New**
+2. **Search for the company first** — don't create a duplicate
+3. Set:
+   - `name` — short, e.g., "Louisville Athletics — Stadium LED 2026"
+   - `stage` = `PROPOSAL`
+   - `bidStatus` = `RFP_RECEIVED`
+   - `proposalDueDate` — when the response is due
+   - `businessUnit`, `league`, `accountExecutive`
+4. Save
+
+Or just say it to Boyka:
+```
+log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [name]
+```
+
+### Operations — log a new contact
+
+1. Sidebar → **People** → **+ New**
+2. Set `firstName`, `lastName`, `email`, `phone`
+3. **Always link `company`** to an existing Company record
+4. Save
+
+### Anyone — log a meeting note
+
+1. Open the Company or Person it's about
+2. Tabs at the top → **Notes** → **+ New**
+3. Title, body (rich text), save
+
+The note auto-links to the record. It's searchable from the global search at the top of the screen.
+
+## 8. Bookmark the views you'll use daily
+
+For most people that's:
+
+- **Sales:** Bid Tracker (kanban) + Proposal Pipeline
+- **Estimators:** Estimation & Proposals
+- **Leadership:** ANC 2026 Company Dashboard + Top Open Deals
+- **Services:** Backlog + Bid Tracker
+
+Open each → click the **star** icon → it goes into Favorites.
+
+## 9. Keyboard shortcuts
+
+| Shortcut | What |
+|---|---|
+| `/` | Focus the global search |
+| `g + d` | Go to Dashboards |
+| `g + o` | Go to Opportunities |
+| `g + c` | Go to Companies |
+| `g + p` | Go to People |
+| `n` | New record (in any object's list view) |
+| `Esc` | Close modal / panel |
+
+## 10. When something looks wrong
+
+- **Empty page with no familiar dashboards?** → You're on the Standard app. Switch to ANC.
+- **A view shows zero rows?** → A filter has accidentally AND'd to impossible. Remove filters one at a time.
+- **A widget shows the wrong count?** → Filter values must be JSON-stringified. See [Build a widget](/docs/user-guide/how-tos/all-recipes#how-to-build-a-new-widget).
+- **Boyka picked the wrong skill?** → Force it: *"use the `pipeline-tracker` skill: ..."*.
+- **You created a duplicate Company?** → [Merge duplicates](/docs/user-guide/how-tos/all-recipes#how-to-merge-duplicate-companies).
+
+## Where to go next
+
+- **The full how-to library:** [How-Tos](/docs/user-guide/how-tos/all-recipes)
+- **Every Boyka skill with example prompts:** [Scout Skills](/docs/user-guide/capabilities/scout-skills)
+- **The data model:** [Data Model — Overview](/docs/data-model/overview)
+- **API access for integrations:** [Operators — API Access](/docs/operators/api-access)

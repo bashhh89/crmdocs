@@ -1,56 +1,174 @@
 ---
 title: Proposal Engine Overview
-description: Live screenshots of the ANC Proposal Engine workflows used to scope, estimate, and build proposals.
+description: A module-by-module tour of the Proposal Engine — what each surface does, when to use it, and what to do once you're there.
 ---
 
 # Proposal Engine Overview
 
-These screenshots were captured from the live Proposal Engine and show the end-to-end workflow from pipeline intake through proposal assembly.
+A practical tour of every module in the Proposal Engine. Live at **[proposals.anc.com](https://proposals.anc.com)**.
+
+Use this page to figure out *which module* you need; use the [Features](/docs/proposal-engine/features/pipeline) section for the deep-dive on each one.
 
 ## Projects
 
 <img src="/img/screenshots/proposal-engine/01-projects.png" alt="Proposal Engine projects view" />
 
-The Projects view gives Ahmad and the team a live operating table of active proposal work.
+The active operating table for proposal work. Every deal that's been priced or that's in active estimation lands here.
+
+**When to use it:** First thing in the morning — see what's moving, what's blocked, what's waiting on you.
+
+**What you can do:**
+- Filter by stage, owner, due date, vertical
+- Open any project to jump straight into its estimate, SOW, or RFP analysis
+- Bulk-archive stale drafts
+
+**Sidebar tip:** Star the projects you're personally driving — they pin to a Favorites panel for one-click access.
+
+Deep dive: [Projects](/docs/proposal-engine/features/projects)
 
 ## Pipeline
 
 <img src="/img/screenshots/proposal-engine/02-pipeline.png" alt="Proposal Engine pipeline view" />
 
-Pipeline organizes opportunities by stage so the team can see what is moving and what is blocked.
+Every active opportunity grouped by stage. The classic kanban — drag a card across columns to move the deal.
+
+**When to use it:** Pipeline reviews, Monday standups, "what's the realistic win rate this quarter" conversations.
+
+**What you can do:**
+- Drag cards to advance stage
+- Click a card to open its full detail in a side panel
+- Filter by account exec, vertical, league, deal value
+- Group by something other than stage (account exec, owner, vertical)
+
+**This view writes back into Twenty CRM** — the Opportunity in the CRM updates in real time as you move cards here. Same record, two surfaces.
+
+Deep dive: [Pipeline](/docs/proposal-engine/features/pipeline)
 
 ## Estimator
 
 <img src="/img/screenshots/proposal-engine/03-estimator.png" alt="Proposal Engine estimator view" />
 
-Estimator turns scope inputs into labor, margin, and pricing outputs for a working proposal draft.
+The core pricing tool. Take a requirement, turn it into a priced line-item list, ship it as branded Excel or PDF.
+
+**When to use it:** Anytime you're pricing a deal. New estimates, revisions, alternates, comparisons.
+
+**What you can do:**
+- Add line items manually, or chat to the AI: *"give me pricing for a 10-panel 4mm videowall with full install"*
+- Toggle pitch (3.9mm / 2.9mm) and size cards for courtside tables and stanchions — dimensions auto-populate from the product database
+- Save revisions as you iterate; compare any two revisions side-by-side
+- Export as Excel (Univer format — Natalia's preferred) or PDF
+- Every export attaches automatically to the Opportunity in Twenty
+
+**Important:** If the rate card changes, you re-pull current pricing — the estimator never silently overrides what you've already typed.
+
+Deep dive: [Estimator](/docs/proposal-engine/features/estimator)
 
 ## RFP Analyzer
 
 <img src="/img/screenshots/proposal-engine/04-rfp-analyzer.png" alt="Proposal Engine RFP analyzer" />
 
-RFP Analyzer extracts requirements from client documents into a structured proposal starting point.
+Drop a client's RFP document, get back a compliance matrix and a draft response.
+
+**When to use it:** A new client sends you a 40-page RFP on Friday afternoon. Upload it; come back Monday with a pre-filled compliance matrix instead of starting from zero.
+
+**What you can do:**
+- Upload PDF, Word, or Excel
+- AI extracts: scope items, mandatory requirements, evaluation criteria, deadlines
+- For each requirement, the tool proposes an ANC response based on prior winning proposals
+- Output: compliance matrix + first-draft proposal structure
+- Every analysis is saved at `/tools/rfp-analyzer/history/[id]` — revisit later
+
+> The RFP Analyzer is **frozen** as of 2026-04-02 — production-approved, identical behavior required. No edits without explicit approval.
+
+Deep dive: [RFP Analyzer](/docs/proposal-engine/features/rfp-analyzer)
 
 ## SOW Builder
 
 <img src="/img/screenshots/proposal-engine/05-sow-builder.png" alt="Proposal Engine SOW builder" />
 
-SOW Builder lets the team assemble deliverables, assumptions, and scope language in one flow.
+AI-assisted Scope of Work generation. Two flavors — Installation SOW and Premium SOW.
+
+**When to use it:** After pricing is locked, before you send anything to the client.
+
+- **Installation SOW** — for when ANC is doing the install. Site prep, rigging, cable paths, network drops, crew size, timeline, acceptance criteria.
+- **Premium SOW** — for high-touch engagements: AV integration, content production, ongoing service.
+
+**What you can do:**
+- Click "Generate Installation SOW" on any Opportunity with a finalized estimate
+- AI drafts the doc using line items + venue context + uploaded drawings
+- Output is branded PDF + Word (.docx) — both attach to the Opportunity in Twenty automatically
+- Drop a client's existing SOW into `/api/sow/scan` to get back a structured summary of in-scope / out-of-scope / acceptance criteria
+
+Deep dive: [SOW Generation](/docs/proposal-engine/features/sow-generation)
 
 ## Spec Sheets
 
 <img src="/img/screenshots/proposal-engine/06-spec-sheets.png" alt="Proposal Engine spec sheets" />
 
-Spec Sheets centralizes product documentation and output-ready technical pages for proposals.
+The product documentation library — cut sheets, technical specs, output-ready spec pages.
+
+**When to use it:** Building a proposal package; client asks "what are the specs on the LED you're proposing?"; assembling a submittal package.
+
+**What you can do:**
+- Browse all products in the catalog (LED panels, courtside tables, stanchions, controllers, software)
+- Pull the spec sheet for any product into a proposal as a ready-to-print page
+- Add new spec sheets via Admin → Products
+
+The Submittal Compiler pulls from this library when assembling packages — you don't have to manually attach cut sheets.
 
 ## Settings
 
 <img src="/img/screenshots/proposal-engine/07-settings.png" alt="Proposal Engine settings" />
 
-Settings manages the account-level controls that shape how proposals are generated and presented.
+Account-level controls that shape how proposals are generated and presented.
+
+**When to use it:** Onboarding a new team member, updating company branding, swapping the default SOW template, adjusting AI provider keys.
+
+**What you can do:**
+- Manage users and roles
+- Update branding (logo, colors, default header/footer)
+- Swap SOW templates (Premium SOW default, Installation SOW default)
+- Configure AI providers (Gemini, OpenAI, Mercury, Z.AI, NVIDIA — each has its own key format)
+- Set rate card preferences
+
+Most users won't need this. Admins live here.
 
 ## Proposal Detail
 
 <img src="/img/screenshots/proposal-engine/08-proposal-detail.png" alt="Proposal Engine proposal detail view" />
 
-The proposal detail workspace is where scope, builder output, and final edits come together before handoff.
+The detail workspace where scope, builder output, and final edits come together before handoff.
+
+**When to use it:** Final review before a proposal goes out. Last-mile editing — fixing typos, swapping a line item, adjusting commercial terms.
+
+**What you can do:**
+- See the full assembled proposal preview
+- Edit any section inline
+- Generate a fresh PDF when ready
+- Send for internal review (assigns a reviewer, posts in Slack)
+- Mark as "sent" — locks the proposal and stamps the send date
+
+Once a proposal is marked sent, the Universal CRM Push pipeline fires: PDF attached to the Opportunity, timeline activity logged, Slack notification posted.
+
+## How the modules connect
+
+```
+Pipeline  →  Estimator  →  SOW Builder  →  Proposal Detail  →  Sent
+                                                  ↓
+                                          Universal CRM Push
+                                                  ↓
+                                            Twenty CRM
+                                          (PDF + activity)
+```
+
+In parallel:
+- **RFP Analyzer** feeds requirements into the Pipeline (kicks off a new Opportunity if needed)
+- **Spec Sheets** feed line items into the Estimator and assemblies into the Submittal Compiler
+- **Settings** controls branding/templates/AI providers across all modules
+
+## Where to go next
+
+- **First proposal end-to-end:** [Draft a proposal from scratch](/docs/proposal-engine/how-tos#draft-a-proposal-from-scratch)
+- **Inbound RFP:** [Respond to a client's RFP](/docs/proposal-engine/how-tos#respond-to-a-clients-rfp)
+- **AI agents in the engine:** [AI Agents](/docs/proposal-engine/features/ai-agents)
+- **How exports land in Twenty:** [Universal CRM Push](/docs/proposal-engine/features/universal-crm-push)

@@ -1,44 +1,113 @@
 ---
 title: Twenty CRM Overview
-description: Live screenshots of the ANC Twenty CRM workspace used to manage client and pipeline data.
+description: What the ANC CRM is, how to log in, and a tour of every surface you'll actually use.
 ---
 
 # Twenty CRM Overview
 
-These screenshots were captured from the live Twenty CRM workspace and show the core account, pipeline, and collaboration surfaces currently available to the ANC team.
+The ANC CRM is the system of record for every account, contact, deal, and activity at ANC Sports. It replaced Salesforce in April 2026. Live at **[crm.ancsports.net](https://crm.ancsports.net)**.
+
+If you remember one thing: everything is account-centric. Every ticket, opportunity, person, venue, estimate, and design request shows up on the **Company** page for that account. Open the Company, see everything.
+
+## Logging in
+
+1. Go to **[crm.ancsports.net](https://crm.ancsports.net)**
+2. Sign in with your ANC email (Google SSO)
+3. Top-left, the **app switcher** must say **ANC** — not "Standard". If it says Standard, click it and pick **ANC**. All ANC dashboards, views, and folders only show inside the ANC app.
+
+If you land on a blank "Standard" page with no familiar dashboards, that's why. Switch the app once and the CRM remembers it.
 
 ## Companies
 
 <img src="/img/screenshots/twenty-crm/01-companies.png" alt="Twenty CRM companies list" />
 
-Companies is the core account ledger for clients, venues, and relationship context across ANC operations.
+The account ledger — every client, venue, and partner organization. 3,730 records.
+
+**What to do here:**
+- **Search before creating.** Type the name in the search box at the top before clicking "+ New". 20+ duplicates have been merged so far.
+- **Open a Company to see everything.** The detail page has tabs for Opportunities, Revenue Splits, Tickets, Estimates, Design Requests, RFP Analyses, Team Allocations, and Venues. This is the fastest way to answer "what's the full picture on this account?"
+- **Filter by vertical.** The `revenueType` field tags each company as `TECHNOLOGY`, `VENUE_SERVICES`, or `MEDIA_SPONSORSHIP`. Use the column filter in list view.
+- **Bulk-merge duplicates.** Select multiple rows in list view, use the bulk action menu. For programmatic merges, see [Merge duplicate Companies](/docs/user-guide/how-tos/all-recipes#how-to-merge-duplicate-companies).
 
 ## Opportunities
 
 <img src="/img/screenshots/twenty-crm/02-opportunities.png" alt="Twenty CRM opportunities kanban" />
 
-Opportunities gives the sales and delivery team a kanban view of active pipeline work.
+Every deal in flight — RFPs, sales leads, budgeted projects. 8,360 records.
+
+**What to do here:**
+- **Use the kanban for pipeline movement.** Drag cards across columns to advance `bidStatus` (RFP_RECEIVED → SCOPING → BID_SUBMITTED → SHORTLISTED → WON).
+- **Use the list view for bulk work.** Sorting by `proposalDueDate`, exporting to CSV, bulk-editing fields.
+- **The two key fields:** `dealValue` (what the customer pays) and `amount` (recognized revenue). Always set `dealValue` when pricing finalizes; `amount` populates through the proposal flow.
+- **Pricing complete?** Toggle `pricingComplete = TRUE` on the Opportunity. `pricingCompleteDate` auto-stamps. The **Estimation & Proposals** view filters on this flag.
+- **Per-year revenue:** Fill `revenue2026`, `margin2026`, `revenue2027`, `margin2027` directly on the Opportunity, or add child Revenue Split records for detailed breakdowns. Dashboard widgets read the flat fields.
+
+The full lifecycle, fields, and reporting model: [Opportunities](/docs/user-guide/capabilities/opportunities).
 
 ## People
 
 <img src="/img/screenshots/twenty-crm/03-people.png" alt="Twenty CRM people list" />
 
-People tracks client-side and internal contacts tied to accounts and active work.
+Contacts — both client-side and internal. 19,966 records.
+
+**What to do here:**
+- **Always link `company` first.** Don't create a contact floating without an account — the relationship is what makes the CRM useful.
+- **Search by email or phone.** Both are first-class fields, both are indexed.
+- **Bulk-import a contact list.** Use GraphQL `createPeople(data: [...])` in 50-row chunks. See [Imports](/docs/data-migration/capabilities/imports).
+- **Tasks tab on a Person.** Logs every follow-up tied to that contact. Useful for tracking outreach cadence.
 
 ## Tasks
 
 <img src="/img/screenshots/twenty-crm/04-tasks.png" alt="Twenty CRM tasks view" />
 
-Tasks provides the shared activity queue for follow-ups, coordination, and ownership inside CRM.
+The shared activity queue — follow-ups, prep work, hand-offs.
+
+**What to do here:**
+- **+ New Task** from any record. The task auto-links to that record, so you never have orphan tasks.
+- **Assign to a teammate.** They get a notification; the task surfaces in their My Tasks list.
+- **Due date filtering.** The default views split into Today / Upcoming / Overdue. The overdue list is the one you check first thing in the morning.
+- **Mark complete.** Tick the checkbox in list view — no need to open the task.
 
 ## Notes
 
 <img src="/img/screenshots/twenty-crm/05-notes.png" alt="Twenty CRM notes view" />
 
-Notes captures account context and ongoing collaboration history directly in the workspace.
+Long-form context — meeting notes, account history, decision logs.
+
+**What to do here:**
+- **+ New Note** from a Company, Person, or Opportunity. Same auto-linking pattern as Tasks.
+- **Rich text** — headings, bullets, tables, code blocks. Use it for meeting recaps and call summaries.
+- **Search across all notes.** The global search bar at the top searches Note bodies, not just titles.
 
 ## Settings
 
 <img src="/img/screenshots/twenty-crm/06-settings.png" alt="Twenty CRM settings view" />
 
-Settings is where workspace structure, permissions, and object configuration are managed.
+Workspace structure: members, roles, objects, fields, API keys, integrations.
+
+**What to do here:**
+- **Members & Roles** — invite new users, set role-based permissions.
+- **Objects** — add custom objects, custom fields, change pickup options. The CRM auto-generates the columns and exposes them through REST + GraphQL.
+- **API Keys** — generate JWTs for integrations. See [API Access](/docs/operators/api-access).
+- **Custom Skills** — Boyka custom agent skills (the AI assistant's brain). 30 skills wired so far. See [Scout Skills](/docs/user-guide/capabilities/scout-skills).
+
+Most users won't need Settings. Admins (Ahmad, Jireh, Natalia) live in there.
+
+## The AI assistant — Boyka / Scout
+
+The little chat bubble in the top-right is **Boyka** — the CRM's named AI assistant. Click it, type a question, get an answer that pulls from the live CRM data.
+
+Examples it actually answers correctly:
+- *"margin on Knicks deals this year"*
+- *"which deals are due this week"*
+- *"top open deals by value"*
+- *"create a touchdown graphic for Louisville, night vibe"*
+
+Full skill reference: [Scout Skills](/docs/user-guide/capabilities/scout-skills).
+
+## Where to go next
+
+- **First time on the CRM?** Read [Discover ANC CRM](/docs/user-guide/introduction) for the wider picture, then come back.
+- **Ready to log a deal?** [How to log a new RFP](/docs/user-guide/how-tos/all-recipes#how-to-log-a-new-rfp).
+- **Need the data model?** [Data Model — Overview](/docs/data-model/overview).
+- **Building against the API?** [Operators — API Access](/docs/operators/api-access).
