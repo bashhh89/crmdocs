@@ -22,6 +22,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Export repeat‑client data as Excel file**: You can now generate and download an XLSX spreadsheet of repeat‑client information directly from the CRM. Use the new render endpoint to get a ready‑to‑use file for your reports.
 - **Render API now accessible without login**: You can now call the /api/render/* endpoint without authenticating first. This removes the need for a login step, letting integrations fetch rendered content directly.
 - **Render API now accessible without login**: You can now call the /api/render/* endpoints directly without signing in. The system no longer requires authentication for those requests, simplifying your integration workflow.
+- **Pricing status auto-updates for Twenty opportunities in Mirror Mode**: In Mirror Mode, the system now automatically flips the Pricing Complete flag on Twenty opportunities, so you’ll see pricing marked as finished without any manual steps.
 ## 2026-04-26
 
 - **Product save now returns CRM sync status**: When you save a product, the response now includes a sync status so you can instantly see whether the product was successfully synced with the CRM.
