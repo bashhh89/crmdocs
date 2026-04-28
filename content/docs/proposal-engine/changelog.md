@@ -14,6 +14,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-04-28
+
+- **Yaham Direct rate card updated to 04.28.26 prices**: The Yaham Direct rate card now reflects the latest 04.28.26 pricing, so any new quotes or contracts will use the updated rates.
+
 ## 2026-04-27
 
 - **Repeat‑clients margin report now includes all records**: The repeat‑clients margin report no longer filters out any records, so you’ll see the full set of data again. The numbers now reflect the complete client activity as before.
