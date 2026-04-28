@@ -21,6 +21,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **AI proof generation now handles errors gracefully**: When you request an AI proof, the system now catches any errors and returns a clear response instead of breaking. The data model has been updated to support the new AI fields, so the feature works more reliably.
 - **Fixed AI draft error display for users**: I fixed the AI draft error display so you now see a clear, helpful message when the design AI encounters a problem, instead of a broken or confusing screen.
+- **Route design AI drafts through Services API**: You can now send AI‑generated design drafts through the Services API, allowing the system to process and store drafts automatically.
 ## 2026-04-27
 
 - **Add repeat‑clients report Slack bot skill**: You can now ask the Jireh Slack bot for a repeat‑clients report, mirroring the Scout experience, directly from your Slack workspace.
