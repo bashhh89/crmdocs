@@ -14,6 +14,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-04-28
+
+- **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
+
 ## 2026-04-27
 
 - **Add repeat‑clients report Slack bot skill**: You can now ask the Jireh Slack bot for a repeat‑clients report, mirroring the Scout experience, directly from your Slack workspace.
