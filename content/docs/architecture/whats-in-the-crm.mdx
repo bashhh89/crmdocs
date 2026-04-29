@@ -133,8 +133,13 @@ A handful of objects have zero records today. Most are **infrastructure built in
 - **Manufacturers / Rate Cards** — upstream of LED Products; the products carry the data today.
 - **Print Requests / RMA Trackers / Parts** — operational pipelines staged for when the warehouse system connects.
 - **RFP Analyses** — see above. Schema complete with 23 fields + 3 relations. Awaiting the Proposal Engine bridge.
+- **Services** — the **recurring service contracts** object. Fully modeled with Monthly Value, Start Date, End Date, Service Type, Status, "Requires Staffing" flag, and links to Account + Venue. 0 records today. Once contract data flows in, leadership gets a recurring-revenue view per account. See [Recurring Service Contracts](/docs/whats-possible/service-dashboard-upgrades) for the upgrade.
 
 These aren't dead weight — they're scaffolding. As each upgrade in the [What Else Is Possible](/docs/whats-possible) section lands, more of these zeroes turn into live numbers.
+
+## A small sync gap to flag
+
+**Staff Members** has only 2 records in the CRM, but the schema is full (Availability, Certifications, City, Region, Role, plus a Services Dashboard ID field that's the bridge key). The Service Dashboard already has the full staff roster — it just isn't mirrored yet. This is a one-day fix to populate, not a rebuild. Once it lights up, every event on the CRM Events tab will show the right tech assignments, and account managers can see which technicians work each venue without leaving the CRM.
 
 ## How the numbers grew
 

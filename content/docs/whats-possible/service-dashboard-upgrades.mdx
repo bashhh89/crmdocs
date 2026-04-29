@@ -73,7 +73,21 @@ The pattern: operational data → opportunity creation. The Service Dashboard al
 
 ---
 
-## 5. Proactive on-site visit suggestions
+## 5. Recurring service contracts — track them properly
+
+> **The benefit** — leadership sees the recurring-revenue book at a glance, by account.
+>
+> **What we already do** — the CRM has a fully-modeled **Services** object — Monthly Value, Service Type, Start Date, End Date, "Requires Staffing" flag, and links to Account and Venue. The schema is in production, ready to receive data.
+>
+> **What changes** — every recurring service contract at every venue lands as a Services record on the right Account. Open a Company → see every active service, its monthly value, and its expiration. Roll it up to the dashboard: *"Total recurring revenue under contract: $X.X M / month."*
+>
+> **Rough effort** — about a week (mostly importing the existing contract list and wiring renewals to update the End Date).
+
+The biggest blind spot in most service businesses is the recurring book itself — it's known to ops, invisible to leadership. With this in place, the next contract that lapses doesn't lapse silently.
+
+---
+
+## 6. Proactive on-site visit suggestions
 
 > **The benefit** — site visits happen because data says so, not because someone happened to remember.
 >
