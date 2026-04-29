@@ -1,0 +1,116 @@
+---
+title: Data Flow Between the Three Tools
+description: Every automated sync between Proposal Engine, CRM, and Service Dashboard — what triggers each one and the timing.
+---
+
+# Data Flow Between the Three Tools
+
+Every cross-system sync that runs automatically. No manual steps.
+
+## Map at a glance
+
+| Source | Target | Trigger | Latency |
+|---|---|---|---|
+| Proposal Engine | CRM Opportunity | Save proposal / SOW / Excel / PDF | < 5 s |
+| Proposal Engine | CRM Opportunity (Mirror Mode) | One-pager generated | Same call |
+| Proposal Engine | CRM `LedProduct` | Product save or import | < 5 s |
+| Service Dashboard | CRM `ServiceTicket` | Ticket created or updated | ~1 s |
+| Service Dashboard | CRM `venueEvent` | Event created or updated | ~1 s |
+| Service Dashboard | CRM `venueEvent` (workflow status) | Technician check-in / game-ready / post-game | ~1 s |
+| CRM Scout agent | Proposal Engine | User asks Scout to estimate / generate | On demand |
+| CRM Scout agent | Designer AI (Gemini Nano Banana 2) | User asks Scout for an image | ~20 s |
+| Salesforce (read-only) | CRM | One-shot migration + ad-hoc cross-reference | Migration window |
+
+## Proposal Engine → CRM
+
+The Proposal Engine pushes everything it produces into the matching CRM Opportunity. This is the **Universal CRM Push**.
+
+### Triggers
+
+- New estimate created → CRM Opportunity gets the estimate as a child record + timeline activity
+- Excel cost sheet exported → file attached to Opportunity, timeline activity logged
+- Proposal PDF generated → file attached, timeline activity logged
+- SOW generated (Installation or Premium) → file attached, timeline activity logged
+- Mirror Mode one-pager generated → flips the Opportunity's `pricingComplete` boolean to true and stamps `pricingCompleteDate`
+
+### Failure mode
+
+Fire-and-forget. The CRM push runs asynchronously after the local save succeeds. If the CRM is unreachable, the Proposal Engine still saves locally — the operator never sees an error. A retry mechanism catches transient failures.
+
+### Why this matters
+
+Sales never has to "also update the CRM." The CRM record is always fresh after a save. Every artifact ever sent to a client surfaces on the Company page automatically.
+
+## Proposal Engine → CRM (Product Catalog)
+
+The LED product catalog has its own sync path. The Proposal Engine's `ManufacturerProduct` table is the source of truth — every cabinet spec, pixel pitch, weight, and price lives there. The CRM's `LedProduct` object mirrors it.
+
+- Trigger: any save or import in the Proposal Engine's product admin
+- 158 products kept in lockstep as of 2026-04-29
+- Soft-deletes propagate (rag2 `isActive=false` → CRM `isActive=false`)
+- Spec, name, price drift is reconciled on a recurring basis
+
+### Why this matters
+
+Scout (the CRM's AI agent) and the Quick Estimate skill both resolve product lookups against the CRM's `LedProduct` object. If the rag2 catalog and CRM catalog drift, Scout starts giving stale specs. The reconciliation pipeline closes that loop.
+
+## Service Dashboard → CRM
+
+All real-time. End-to-end sync was completed 2026-04-20 — every operational event hits the CRM in about a second.
+
+### Tickets
+
+| Action | Result in CRM |
+|---|---|
+| New ticket opened | CRM `ServiceTicket` created, linked to `Company` and (when applicable) `Opportunity` |
+| Ticket status / priority / assignment / category changed | CRM `ServiceTicket` updated |
+| Ticket resolved | CRM `ServiceTicket` resolution fields populated |
+
+### Events
+
+| Action | Result in CRM |
+|---|---|
+| New event scheduled (auto-discovered or manual) | CRM `venueEvent` created with venue + assigned techs |
+| Event details edited (summary, date, league) | CRM `venueEvent` updated |
+| Event linked to a Company / Opportunity | CRM `venueEvent.company` and `.opportunity` populated |
+
+### Workflow status
+
+| Stage | Result in CRM |
+|---|---|
+| Pending → Checked-in | `venueEvent` workflow status updated |
+| Checked-in → Game-ready | `venueEvent` workflow status updated |
+| Game-ready → Post-game-submitted | `venueEvent` workflow status updated, post-game report attached |
+
+### Failure mode
+
+Fire-and-forget. If the CRM is down, the Service Dashboard still operates normally — the local DB is the source of truth for the operator. A 15-minute cron at `/api/cron/sync-twenty/full` acts as a safety net to backfill any missed sync.
+
+## CRM → AI agents
+
+The CRM's **Scout** agent (renamed from Boyka in April 2026) is the named operator-facing AI. It runs against the CRM's data and is wired with 30 custom skills covering pipeline tracking, RFP analysis, SOW generation, design requests, ticket triage, and more.
+
+Scout reaches into the Proposal Engine for two things:
+
+- **Generating proposal artifacts** — when a user asks Scout to draft an estimate or generate a SOW, Scout calls the matching Proposal Engine endpoint, which then pushes the result back into the Opportunity (closing the loop).
+- **Designer AI** — when a user asks Scout for a design (e.g., "touchdown graphic for Louisville"), Scout invokes the `generate-design-image` logic function which calls Gemini 3 Pro Image Preview and creates a Design Request with the generated image attached.
+
+Scout is also mirrored into Slack as **@ANC** (formerly @OpenClaw). Anything an operator can ask Scout in the CRM, they can ask the @ANC bot in Slack.
+
+## Salesforce (one-way, read-only)
+
+Salesforce is the legacy CRM the team migrated off of. We retain read-only access (`/root/.sf-creds`) for cross-reference during the transition window.
+
+- Initial migration: 8,360 opportunities, 3,730 companies, 5,160 revenue splits, 19,966 people moved into Twenty
+- Ongoing: Salesforce remains queryable via the `salesforce-crm` skill so any "what does SF say about X?" question can be answered
+- No data flows from Twenty back to Salesforce
+
+## What does not auto-sync (yet)
+
+These are gaps to be aware of:
+
+- **Email → Opportunity** (Phase 2 deferred) — replying to a client email doesn't auto-create or update an Opportunity. Manual.
+- **Accounting integration + probability-weighted forecasting** (Phase 2 deferred) — accounting data is not yet pulled into the CRM forecasting widgets.
+- **Service Ticket → Opportunity auto-link** — when a ticket comes in from a venue with an active won Opportunity, the link isn't auto-populated yet. Tickets do link to Companies automatically.
+
+Each of these is on the explicit Phase 2 backlog with a sizing estimate. Status lives in the CRM operator notes.

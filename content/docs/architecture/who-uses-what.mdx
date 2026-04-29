@@ -1,0 +1,78 @@
+---
+title: Who Uses What
+description: A team-by-team and role-by-role map of which ANC tool each person actually opens.
+---
+
+# Who Uses What
+
+A practical map of where each role spends their day.
+
+## By role
+
+| Role | Daily tool | Other tools used |
+|---|---|---|
+| **Jireh — President, Venue Partnerships** | Twenty CRM | none — accounts, dashboards, and reporting all live in CRM |
+| **Joe — VP Services** | Service Dashboard | CRM (read-only — for the linked-tickets-on-Company view) |
+| **Natalia — Proposal Lead** | Twenty CRM (Estimation & Proposals view, daily) | Proposal Engine for the actual estimating + SOWs |
+| **Charlie — Finance/Ops** | Twenty CRM | Salesforce read-only during transition window |
+| **Sales / BD team** | Proposal Engine + CRM | Both — pipeline lives in CRM, deal artifacts come from Proposal Engine |
+| **Estimators** | Proposal Engine | CRM to read account context |
+| **Tech support leads** | Service Dashboard | CRM read-only for account context |
+| **Operations managers** | Service Dashboard | — |
+| **Technicians** | Service Dashboard (mobile) | — |
+| **Clients (venue-side)** | Service Dashboard client portal | — |
+
+## By question
+
+If your job is to answer one of these questions, here's where to go:
+
+| Question | Tool | Surface |
+|---|---|---|
+| What's our pipeline this quarter? | CRM | ANC 2026 Dashboard + Pipeline by Business Unit |
+| What's due to a client this week? | CRM | Estimation & Proposals view |
+| What's our backlog (won deals, unbilled)? | CRM | Backlog view |
+| RFP win rate by league last year? | CRM | Win/Loss by League view |
+| How much did MLB book in 2026? | CRM | ANC 2026 Dashboard widgets |
+| What does this account have going on? | CRM | Open the Company → tabs |
+| Price this RFP | Proposal Engine | RFP Analyzer + Estimator |
+| Generate a proposal PDF | Proposal Engine | Estimator → Generate |
+| Build the install SOW | Proposal Engine | SOW generator (Premium / Installation) |
+| Compile the submittal package | Proposal Engine | Submittal Compiler |
+| Who's covering tonight's game? | Service Dashboard | Events + Staff Assignments |
+| Open ticket for a venue issue | Service Dashboard | Tickets → New (or auto-created from voicemail) |
+| Did the install team file a post-game report? | Service Dashboard | Workflow status |
+| All historical activity for this client | CRM | Company detail page (every artifact + ticket + event surfaces here) |
+
+## By app inside Twenty CRM
+
+The CRM ships with two apps. Pick the right one:
+
+- **ANC app** — the one Ahmad customized for the ANC team. Has the ANC dashboards, custom views, the Scout agent, and the folder structure (Proposals / Venues & Field / Inventory & Hardware / Design & Content / Advertising / Products & Pricing). **This is what 99% of users want.**
+- **Standard app** — the vanilla Twenty layout. Useful only for the platform default views. If you land here on first login, click the app switcher (top-left) and pick **ANC**.
+
+The CRM remembers which app you last used.
+
+## By team's "moment of truth"
+
+Different teams check different things at different beats. If you're staffing the org around the tools, this is the rhythm:
+
+- **Daily** (every morning):
+  - Natalia: Estimation & Proposals view → what's due today
+  - Tech support leads: Service Dashboard → open tickets, SLA at risk
+  - Operations managers: Service Dashboard → tonight's events, staffing gaps
+- **Weekly** (Monday):
+  - Sales: Proposal Pipeline kanban → what's moving
+  - Finance: Backlog view → won deals + payment % unpaid
+- **Monthly** / quarterly:
+  - Jireh: ANC 2026 Dashboard → revenue + margin by vertical
+  - Leadership: Win/Loss by League → RFP performance trend
+
+## When something feels off
+
+| Symptom | Where to look first |
+|---|---|
+| "I sent a proposal but it's not in the CRM" | Proposal Engine — every save pushes to CRM. Open the Opportunity in CRM to confirm. If missing >30s after save, flag to engineering. |
+| "I can't see ANC dashboards" | You're in the Standard app. Switch to ANC. |
+| "My ticket isn't in the CRM" | Service Dashboard ticket sync runs ~1s. If absent after a minute, see [Service Dashboard troubleshooting](/docs/service-dashboard/how-tos). |
+| "The CRM shows stale revenue" | The per-FY rollup runs on opportunity update. If a deal looks stale, edit and save the FY field — rollup refires. |
+| "I can't log in to the CRM on my phone" | Has your account ever logged in via Microsoft SSO? Some accounts were provisioned but never completed the handshake. Use the public invite link to onboard. |
