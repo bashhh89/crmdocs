@@ -34,6 +34,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add reusable Design Request templates**: You can now save a design request as a template and apply it to future requests. This lets you quickly reuse common specifications and speeds up the design workflow.
 - **Admin-only Wrike/Airtable build sections added to sidebar**: Admins now see dedicated Wrike and Airtable build sections in the sidebar, giving them quick access to those integration tools.
 - **Add Duplicate Design Request action**: You can now duplicate an existing design request with a single click, creating a copy that retains all the original details and speeds up reuse.
+- **Venue tree added to Designs left rail**: You can now explore the venue hierarchy directly from the left rail on the Designs page, making it faster to locate and select venues.
+- **Workflow success Slack notifications silenced by default**: Workflow success messages will no longer ping Slack by default, reducing noise. You can still enable them manually if needed.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
