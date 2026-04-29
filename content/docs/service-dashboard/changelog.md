@@ -27,6 +27,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Cleaner layout for events, shifts, and venues**: The operations screens now have a streamlined layout, reducing visual density so you can find information faster. Less scrolling and clearer sections improve your workflow.
 - **Darker Assistant Panel Composer**: The assistant panel composer now has a darker background, giving you a clearer view and reducing eye strain while you work.
 - **Refined Creative Workflow Pages**: We've tightened the creative workflow pages, making it easier to navigate and manage designs, schedules, and print requests. The updated layout streamlines your tasks and reduces extra steps.
+- **Correct AI Draft Request Origin**: I fixed the AI draft request so it now originates from the proper design source. Generating AI proofs works reliably again, eliminating the previous errors you may have seen.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
