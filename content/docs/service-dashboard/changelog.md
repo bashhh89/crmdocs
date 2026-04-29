@@ -31,6 +31,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Wrike‑Airtable Scope page added**: You can now open a dedicated Wrike‑Airtable Scope page to view and manage scope details directly in the system. This provides a single place to see the data synced between Wrike and Airtable.
 - **Playoff games with “(If Necessary)” now appear**: We’ve stopped dropping playoff games that are tagged “(If Necessary)”. Those games will now show up in your feeds and reports.
 - **Ticket list columns are now sortable**: You can now click any ticket column header to sort the list up or down, letting you quickly organize tickets by date, status, or other fields.
+- **Add reusable Design Request templates**: You can now save a design request as a template and apply it to future requests. This lets you quickly reuse common specifications and speeds up the design workflow.
+- **Admin-only Wrike/Airtable build sections added to sidebar**: Admins now see dedicated Wrike and Airtable build sections in the sidebar, giving them quick access to those integration tools.
+- **Add Duplicate Design Request action**: You can now duplicate an existing design request with a single click, creating a copy that retains all the original details and speeds up reuse.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
