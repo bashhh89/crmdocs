@@ -22,6 +22,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Dark theme now uses charcoal tones**: The dark mode has been refreshed with a charcoal color palette, giving the interface a deeper, more professional look when you enable dark theme.
 - **Events toolbar cleaned up for clearer navigation**: I've streamlined the events toolbar, giving you a cleaner layout and making the buttons easier to find. You’ll now access event actions more quickly and with less visual clutter.
+- **Refined dark mode layout on dashboard**: The dashboard’s dark theme now has tighter spacing and a cleaner layout, making information easier to read and navigate. You’ll notice a more polished appearance when using dark mode.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
