@@ -15,6 +15,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-04-29
+
+- **Dashboard now supports dark mode toggle**: You can now switch the dashboard to dark mode using the new toggle. This makes it easier on the eyes in low‑light environments.
+
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
