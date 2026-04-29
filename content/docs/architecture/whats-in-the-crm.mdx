@@ -87,9 +87,30 @@ Below is every object in the CRM today. The "App" column is **Custom** for ANC-b
 | Walkthrough Logs | Custom | 23 | 15,465 |
 | Workflows | Standard | 14 | 0 |
 
+## The CRM has two hubs
+
+Most CRMs have one hub: the account. ANC's has two: the **Company** (the commercial side — who you're selling to, who's paying) and the **Venue** (the physical side — the building, the screens, the events, the on-site work).
+
+Every other record in the system traces back to one of these two hubs — most of the time, both.
+
+Look at the Venue object: 18 different objects link back to it.
+
+| Sales side | Operations side | Physical infrastructure |
+|---|---|---|
+| Deals | Service Tickets | Stations |
+| Estimates | Tasks | Racks |
+| RFP Analyses | Walkthrough Logs (15,465 records) | Rack Devices |
+| | Events | Display Locations |
+| | Staff Members | Parts Orders |
+| | Opening Checklist Items | Services |
+
+That's why the meeting demo flows so naturally. Open a venue → see every deal sold there, every ticket open at it, every walkthrough log against it, every staff member who works it, every screen installed in it. One screen, the whole story.
+
+The 15,465 Walkthrough Logs alone are a multi-year record of every on-site visit — date, time, technician, locations visited, issues found. That's *real* operational depth, not vapor.
+
 ## Records are connected, not isolated
 
-The number of records is only half the story. Every object has **relationships** to other objects — that's what makes the CRM account-centric. Three examples:
+Beyond the two hubs, every record links to a tight web of related records. Three concrete examples:
 
 ### Revenue Splits — 5,160 records, every one tied to a Deal
 
