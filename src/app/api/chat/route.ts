@@ -157,7 +157,7 @@ Be the user's second brain on ANC facts. They are relying on you to catch errors
 
 export async function POST(req: Request) {
   const reqJson = await req.json();
-  const model = process.env.OLLAMA_MODEL ?? 'gpt-oss:120b';
+  const model = process.env.OLLAMA_MODEL ?? 'kimi-k2.5';
 
   const result = streamText({
     model: ollama.chatModel(model),
