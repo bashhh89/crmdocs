@@ -38,9 +38,13 @@ The Service Dashboard is where the service side of ANC lives. Everything after a
 - **Proposal Engine** (proposals.anc.com) is where the venue was sold. When a project goes live, the venue, screens, and client record flow in here automatically.
 - **Twenty CRM** (crm.ancsports.net) is the system of record. Every ticket, event status change, and workflow step pushes into Twenty in real time — so the CRM always reflects the operational state.
 
+For the full architecture picture — how all three tools talk to each other — see **[How the three ANC tools fit together](/docs/architecture)**.
+
 ## Next steps
 
 - [Events](./features/events) — calendar, discovery, assignment
 - [Tickets](./features/tickets) — issue tracking, merge, bulk actions
 - [Voicemail → Ticket](./features/voicemail-to-ticket) — the Zoom phone integration
+- [Workflows](./features/workflows) — check-in → game-ready → post-game state machine
+- [Real-time CRM Sync](./features/crm-sync) — every operational event into the CRM in ~1 s
 - [Roles and Access](./features/roles-and-access) — admin, tech support, manager, technician
