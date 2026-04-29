@@ -87,15 +87,52 @@ Below is every object in the CRM today. The "App" column is **Custom** for ANC-b
 | Walkthrough Logs | Custom | 23 | 15,465 |
 | Workflows | Standard | 14 | 0 |
 
+## Records are connected, not isolated
+
+The number of records is only half the story. Every object has **relationships** to other objects — that's what makes the CRM account-centric. Three examples:
+
+### Revenue Splits — 5,160 records, every one tied to a Deal
+
+Revenue Splits exist so a multi-year deal can be broken down per fiscal year. Every single one of the 5,160 records is connected to its parent Deal. Open a deal → see its splits. Open the dashboard → the same splits drive the per-year revenue widgets.
+
+This is the cross-object plumbing working at scale, in production, today.
+
+### Service Tickets — 3,901 records, connected to 6 different things
+
+A Service Ticket isn't just a row in a list. Every one of the 3,901 tickets in the CRM is linked to up to **six** other objects:
+
+- **Account (Company)** — the client the ticket is about
+- **Deal** — the deal that brought the venue under contract
+- **Venue** — the physical venue where the issue happened
+- **Inventory Asset** — the specific hardware (display, processor, rack)
+- **Person** — the contact who reported it
+- **Event** — the game or event the ticket is tied to
+
+Plus a **"Services Dashboard ID"** field — the key that makes the real-time sync from the Service Dashboard work. When ops opens a ticket on their side, that ID gets written here, and every subsequent update flows through automatically.
+
+That's why opening a Company in the CRM shows you everything happening with the account in one screen — the relations carry the operational story onto the account view automatically.
+
+### RFP Analyses — 23 fields, 3 entity relations, 0 records yet
+
+RFP Analyses is the most interesting empty object. The schema is complete and rich:
+
+**Fields** (23 total) — Filename, Project Name, Client Name, Location, Venue, Budget Range, Project Timeline, Total LED Sq Ft, Page Count, Key Requirements, Extracted Specs (JSON), Specs Found, Relevant Pages, Source, Status, Notes, Proposal Engine ID, plus standard tracking.
+
+**Relations** — links to Account (Company), Deal, and Venue.
+
+Translation: every RFP that arrives could land in the CRM with the deal, the venue, the client, the budget, the requirements, and the extracted specs already populated — all on the right Company page.
+
+What's missing today is one bridge: pushing the Proposal Engine's RFP Analyzer output into this object. Once that's wired (about a week of work), every RFP analysis Natalia runs lands in the CRM automatically — exactly the same pattern as the proposal artifacts that already auto-land. See the [Inbound RFP capture pitch](/docs/whats-possible/proposal-engine-upgrades) for the upgrade.
+
 ## What the empty objects mean
 
-A handful of objects have zero records today. Most of them are **infrastructure built in advance**, ready to populate as the next phase of work lands:
+A handful of objects have zero records today. Most are **infrastructure built in advance**, ready to populate as the next phase of work lands:
 
-- **Ad Campaigns / Ad Channels / Ad Deliverables** — the advertising / sponsorship side. Schema ready; data flowing in starts when sponsorship reporting lights up.
+- **Ad Campaigns / Ad Channels / Ad Deliverables** — the advertising / sponsorship side. Schema ready; data starts flowing when sponsorship reporting lights up.
 - **Estimates / Estimate Lines** — wired for Scout's Quick Estimate skill. Each one Scout produces creates rows here.
 - **Manufacturers / Rate Cards** — upstream of LED Products; the products carry the data today.
 - **Print Requests / RMA Trackers / Parts** — operational pipelines staged for when the warehouse system connects.
-- **RFP Analyses** — the Proposal Engine analyses live there today; the link into the CRM is queued for the next phase.
+- **RFP Analyses** — see above. Schema complete with 23 fields + 3 relations. Awaiting the Proposal Engine bridge.
 
 These aren't dead weight — they're scaffolding. As each upgrade in the [What Else Is Possible](/docs/whats-possible) section lands, more of these zeroes turn into live numbers.
 
