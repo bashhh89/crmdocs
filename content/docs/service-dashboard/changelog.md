@@ -47,6 +47,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI agent can now query NocoDB data**: You can now ask the AI assistant to pull information from NocoDB—list available tables, run queries, or add new rows—directly within your CRM workflow.
 - **Default ahmad-nocodb URL prefilled in Operations**: You’ll now see the default ahmad‑nocodb URL automatically filled in the Operations page, so you can access the service without manually entering it.
 - **Add NocoDB view to Operations page**: You can now open /operations to work with NocoDB, giving you an Airtable‑style interface for managing your data directly within ANC.
+- **Native Operations UI replaces embedded iframe**: You now open the Operations page directly in ANC’s own branded interface, no more embedded iframe. The new UI loads faster and feels smoother, giving you a cleaner experience when managing data.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
