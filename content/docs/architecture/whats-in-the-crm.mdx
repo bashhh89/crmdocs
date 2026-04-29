@@ -158,6 +158,14 @@ A handful of objects have zero records today. Most are **infrastructure built in
 
 These aren't dead weight — they're scaffolding. As each upgrade in the [What Else Is Possible](/docs/whats-possible) section lands, more of these zeroes turn into live numbers.
 
+## A capability we haven't tapped yet — Workflows
+
+The CRM has a **Workflows** object built in (0 records). It's the platform's native automation engine — automated triggers, runs, versions. Today nothing is using it. Every automation we've built so far lives in custom code.
+
+That's actually good news for the [What Else Is Possible](/docs/whats-possible) section. Many of the upgrades there — stuck-deal nudges, renewal alerts, "when a deal moves to BAFO ping the AE in Slack" — can be configured as **native Workflows** without writing code. That drops effort estimates significantly and means non-engineers can adjust them later.
+
+Translation for the meeting: ANC has a powerful automation runtime sitting unused. Whatever we agree to build next, half of it might end up being clicks rather than code.
+
 ## A small sync gap to flag
 
 **Staff Members** has only 2 records in the CRM, but the schema is full (Availability, Certifications, City, Region, Role, plus a Services Dashboard ID field that's the bridge key). The Service Dashboard already has the full staff roster — it just isn't mirrored yet. This is a one-day fix to populate, not a rebuild. Once it lights up, every event on the CRM Events tab will show the right tech assignments, and account managers can see which technicians work each venue without leaving the CRM.
