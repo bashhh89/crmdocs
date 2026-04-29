@@ -39,6 +39,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Venue‑scoped event picker, @‑mentions, and dark‑mode pills in tickets**: When creating or editing a ticket you’ll now see an event picker limited to the current venue, can tag teammates with @‑mentions, and get dark‑mode styled pills for clearer visibility.
 - **Unified ANC logo across all platforms**: All screens now display the unified ANC Services logo, replacing any older ANC branding. This provides a consistent look and feel throughout the system.
 - **Add Sample Packs for Designers**: You can now access Sample Packs – ready‑made collections of design assets – directly from the Designs area. Share a Sample Pack with a simple token link, and view its contents without leaving the platform.
+- **Day-before launch and takedown reminders**: You’ll now get a reminder the day before a content launch or takedown, so you can prepare in advance and avoid missed actions.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
