@@ -37,6 +37,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Venue tree added to Designs left rail**: You can now explore the venue hierarchy directly from the left rail on the Designs page, making it faster to locate and select venues.
 - **Workflow success Slack notifications silenced by default**: Workflow success messages will no longer ping Slack by default, reducing noise. You can still enable them manually if needed.
 - **Venue‑scoped event picker, @‑mentions, and dark‑mode pills in tickets**: When creating or editing a ticket you’ll now see an event picker limited to the current venue, can tag teammates with @‑mentions, and get dark‑mode styled pills for clearer visibility.
+- **Unified ANC logo across all platforms**: All screens now display the unified ANC Services logo, replacing any older ANC branding. This provides a consistent look and feel throughout the system.
+- **Add Sample Packs for Designers**: You can now access Sample Packs – ready‑made collections of design assets – directly from the Designs area. Share a Sample Pack with a simple token link, and view its contents without leaving the platform.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.

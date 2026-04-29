@@ -20,6 +20,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Standardize LED product names to RS and FM**: LED product names have been standardized: items previously labeled ‘HB’ now appear as ‘RS’, and any blank entries are shown as ‘FM’. New LED products will default to ‘RS’.
 
+- **Unified ANC Services logo across all platforms**: The ANC logo is now consistent everywhere you use the system. All screens and communications now display the ANC Services logo, giving a unified brand experience.
 ## 2026-04-28
 
 - **Yaham Direct rate card updated to 04.28.26 prices**: The Yaham Direct rate card now reflects the latest 04.28.26 pricing, so any new quotes or contracts will use the updated rates.
