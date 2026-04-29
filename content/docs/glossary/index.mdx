@@ -1,251 +1,108 @@
 ---
-title: ANC Glossary
-description: Every term, name, acronym, and concept used across the three ANC tools — defined in plain English.
+title: What ANC Is and the Words We Use
+description: Plain-English explanation of ANC and every term you'll hear around here.
 ---
 
-# ANC Glossary
+# What ANC Is and the Words We Use
 
-The single canonical reference for what every ANC term means. Use it to look up what you heard in a meeting, double-check what something does, or fact-check something you're about to say.
+## What ANC is
 
-If you're not sure whether something is correct, the AI Assistant on this site grounds its "is this right?" answers in this glossary plus the rest of the docs.
+ANC is a sports LED integration company. We sell, install, and operate the giant video displays you see at NFL stadiums, NBA arenas, MLB parks, NCAA venues, and the rest. About 375 venues around North America. We design the screens, sell them to the team or the venue, install them, and then keep them running game after game.
 
-Jump to a section:
+Three sides of the business:
 
-- [Tools and systems](#tools-and-systems)
-- [People and roles](#people-and-roles)
-- [The three verticals](#the-three-verticals)
-- [Sales and proposal terms](#sales-and-proposal-terms)
-- [Operations terms](#operations-terms)
-- [CRM objects](#crm-objects)
-- [Key fields you'll see](#key-fields-youll-see)
-- [AI helpers and automation](#ai-helpers-and-automation)
-- [Acronyms](#acronyms)
+- **Technology** — the hardware. LED panels, processors, control rooms, courtside tables, ribbons.
+- **Venue Services** — the people on site. Technicians who run the boards on game day, fix issues, do walkthroughs.
+- **Media / Sponsorship** — the ad side. Selling ad space on the boards, designing the graphics, running the content schedule.
 
----
+## The three tools the team works in
 
-## Tools and systems
+- **Proposal Engine** — proposals.anc.com. Where deals get priced and proposals get built.
+- **CRM** — crm.ancsports.net. The single record of every account, deal, dashboard, and report. Replaced Salesforce in April 2026.
+- **Service Dashboard** — services.ancsports.net. Day-to-day operations: events, tickets, technicians.
 
-**Proposal Engine** — The tool at [proposals.anc.com](https://proposals.anc.com). Pricing deals, generating proposals, building SOWs, responding to RFPs. Sales-side home.
+## The words you'll hear
 
-**CRM** — The tool at [crm.ancsports.net](https://crm.ancsports.net). The system of record for every account, deal, dashboard, and report. Replaced Salesforce in April 2026.
+**Deal** — same as Opportunity. A specific piece of business with a client. Could be a big install ($2M LED scoreboard), a service contract, or an advertising buy.
 
-**Service Dashboard** — The tool at [services.ancsports.net](https://services.ancsports.net). Day-to-day operations: events, tickets, technicians, venue health. Operations-side home.
+**Opportunity** — what the CRM calls a Deal. Same thing.
 
-**Twenty** — The CRM platform ANC's CRM is built on (open-source). When someone says "Twenty," they usually mean the CRM.
+**Account** — a client company. The Hornets, the Brewers, Live Nation. Every deal hangs off an account.
 
-**Scout** — The AI helper inside the CRM. 30 ANC-specific skills, account-aware. Was named "Boyka" until April 2026.
+**Venue** — the physical place. Madison Square Garden, Fenway Park. One account can have multiple venues; one venue belongs to one account.
 
-**@ANC (Slack bot)** — The Slack version of Scout. Same brain, same skills. Anything you can ask Scout in the CRM, you can ask @ANC in Slack.
+**RFP** — Request For Proposal. The client's document asking ANC to bid on work. RFPs come in by email, get analyzed, and turn into a deal.
 
-**ANC Assistant** — The AI helper on this docs site (docs.ancsports.net). Knows the docs deeply; suggests Scout / @ANC for live data.
+**SOW** — Scope of Work. The document defining what ANC will deliver. ANC has two flavors: Premium SOW (the polished one we send clients) and Installation SOW (the technician-facing one).
 
-**Copilot** — The slide-out AI panel inside the Proposal Engine. Helps with quick form changes ("set bond to 3%") and knowledge questions ("what's the difference between Halo and Aura?").
+**BAFO** — Best And Final Offer. Final price before the client decides.
 
-**ANC app vs Standard app** — Two layouts inside the CRM. **ANC** is the customized one with all the ANC dashboards and the Scout helper. **Standard** is the vanilla layout. Most users want ANC. Switch at the top-left app picker.
+**LOI** — Letter Of Intent. Client says "we're going with you" but contract isn't signed yet.
 
----
+**Service** — in ANC's world, "service" means the on-site operations work. A technician showing up to a stadium on game day, running the LED boards, fixing things that break. Different from "service" at most companies — it's not customer-support phone work, it's hands-on venue work.
 
-## People and roles
+**Service Ticket** — an issue raised against a venue. *"Display 3 in section 110 is flickering."* Tracked, assigned, resolved.
 
-**Jireh Billings** — President, Venue Partnerships. Lives in the CRM daily. Wants account-centric views, dashboards by vertical. Decision-maker on the SF migration.
+**Event** — a game, concert, or service event at a venue. ANC has 150,000+ events tracked.
 
-**Natalia Kovaleva** — Proposal Lead. Daily reports are her biggest pain. Lives in the *Estimation & Proposals* view. Owns the proposal queue.
+**Workflow** — the 3-step rhythm for every event needing staffing: tech checks in on site, files game-ready when equipment is checked, files a post-game report when the event ends.
 
-**Joe Occhipinti** — VP Services. Lives in the Service Dashboard, *not* the CRM. CRM only shows him linked tickets at the account level.
+**Walkthrough** — a venue site visit by an ANC tech. Logged with date, time, locations visited, issues found.
 
-**Charlie Dinh** — Finance / Ops. Owns payments and the SF migration ask. Cares about cost-per-change in the CRM.
+**Voicemail-to-Ticket** — when a client calls ANC's support line and leaves a voicemail, a ticket is auto-created within 30 seconds with the recording, transcript, and caller number.
 
-**Account Executive (AE)** — Owns a set of accounts. Sales-side role.
+**Mirror Mode** — the Proposal Engine feature that produces an exact-fidelity Excel-to-PDF proposal. Built because Natalia needed proposals that match her Excel pricing files character-for-character.
 
-**Estimator** — Prices deals in the Proposal Engine. Reports to Natalia.
+**Pricing Complete** — a flag on a deal that flips automatically when the Proposal Engine generates a one-pager. Means the deal is ready to send to the client.
 
-**Tech support lead** — Triages tickets, assigns technicians, runs the Service Dashboard.
+**Bid Status** — where a deal sits in the bid flow: RFP Received → Scoping → Bid Submitted → Shortlisted → Won, Lost, or No Bid. The kanban board the team drags cards across.
 
-**Operations manager** — Staffs events, watches workflow, tracks labor.
+**Stage** — the higher-level lifecycle stage on a deal: New, Screening, Meeting, Proposal, Customer.
 
-**Technician** — Field staff. Checks in on-site, files game-ready, submits post-game.
+**FY** — Fiscal Year. ANC's FY is the calendar year (Jireh's call). Big deals split across years; the CRM tracks revenue per year.
 
----
+**Vertical** — one of the three sides of the business (Technology / Venue Services / Media). Every deal rolls up to a vertical.
 
-## The three verticals
+**Universal CRM Push** — the auto-attach behavior. When the Proposal Engine generates a proposal, SOW, or Excel cost sheet, it automatically appears on the right deal in the CRM. No manual upload.
 
-The CRM rolls every deal up to one of three verticals. This is Jireh's mental model.
+**Real-time CRM Sync** — every ticket, event, or workflow change in the Service Dashboard appears in the CRM in about a second.
 
-**Technology** — LED hardware, LiveSync, portables, products. Hardware-led deals.
+**Scout** — the AI helper inside the CRM. Knows about pipelines, tickets, design requests. 30 ANC-specific skills.
 
-**Venue Services** — Recurring service contracts, on-site ops. Service-led deals.
+**@ANC** — the Slack version of Scout. Same brain, available in any Slack channel.
 
-**Media / Sponsorship** — Ad sales, graphics, content, feeds. Advertising-led deals (the Hankook MLB pattern).
+**ANC Assistant** — the AI on this docs site. Answers from the docs.
 
----
+**Copilot** — the AI panel inside the Proposal Engine that helps with quick changes and product questions.
 
-## Sales and proposal terms
+**Mirror Mode** — see above. The Excel-to-PDF feature.
 
-**Deal** — Same thing as Opportunity. ANC uses "Deal" colloquially.
+**Designer AI** — the image-generation AI inside the CRM. Ask Scout *"touchdown graphic for Louisville,"* get a venue-specific mockup in 20 seconds.
 
-**Opportunity** — A deal in the CRM. About 9,994 of them as of late April 2026.
+## The people you'll hear about
 
-**Stage** — The high-level lifecycle: New → Screening → Meeting → Proposal → Customer.
+- **Jireh Billings** — President, Venue Partnerships. Lives in the CRM dashboards.
+- **Natalia Kovaleva** — Proposal Lead. Owns the proposal queue.
+- **Joe Occhipinti** — VP Services. Lives in the Service Dashboard.
+- **Charlie Dinh** — Finance / Ops. Owns payments.
+- **Account Executive (AE)** — sales-side person who owns a set of accounts.
+- **Estimator** — prices deals in the Proposal Engine.
+- **Tech support lead** — triages tickets, assigns technicians.
+- **Operations manager** — staffs events, tracks labor.
+- **Technician** — field staff, on-site at venues.
 
-**Bid Status** — ANC's bid flow. The Bid Tracker Kanban runs on this. Values: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, No Bid.
+## Acronyms quickfire
 
-**Proposal Stage** — The proposal-pipeline status: RFP, Sales Lead, BAFO, LOI, Existing Client Budget.
-
-**Priority** — Top-of-list flags for the proposal team: Priority 1 RFP, Best And Final, Pricing Complete.
-
-**Pricing Complete** — A flag set automatically when the Proposal Engine generates a one-pager. The deal is ready to send.
-
-**Mirror Mode** — The Proposal Engine feature that produces an exact-fidelity Excel-to-PDF proposal. Natalia's golden rules apply.
-
-**Universal CRM Push** — The behavior where every artifact generated in the Proposal Engine (PDF, SOW, Excel, one-pager) auto-attaches to the matching deal in the CRM. No manual upload.
-
-**Universal CRM Push, the silent-failure fix** — Before April 24, 2026, push failures were silently swallowed. After: every failure logs and is replayable.
-
-**RFP Analyzer** — The Proposal Engine feature that reads an inbound RFP PDF and extracts requirements, pricing, schedules, and drawings. Production-frozen since April 2, 2026 — no edits without explicit approval.
-
-**Estimator** — The Proposal Engine workflow for pricing deals. Includes AI Quick / AI Reason / AI Chat helpers.
-
-**SOW (Scope of Work)** — The document defining what ANC will install or deliver. Two flavors: **Premium SOW** (default since April 3, 2026) and **Installation SOW**.
-
-**Submittal Compiler** — The Proposal Engine tool that rolls specs, cut sheets, and drawings into the submittal package the installer actually uses.
-
-**Intelligence Mode** — A pricing engine inside the Proposal Engine. Built and shipped, currently hidden behind a feature flag pending billing decision.
-
-**Currency FX** — Multi-currency support across the Proposal Engine (USD/CAD/EUR/GBP). Live since April 17, 2026.
-
----
-
-## Operations terms
-
-**Event** — A game, concert, or service event at a venue. About 150,197 of them in the CRM. Sourced from Ticketmaster, EventFinder, or manual add.
-
-**Service Ticket** — An issue raised against a venue. About 3,901 of them in the CRM.
-
-**Voicemail-to-Ticket** — When a client calls the support line and leaves a message, a ticket is auto-created within ~30 seconds with the recording, transcript, and caller number.
-
-**Workflow** (in Service Dashboard) — The 3-step state machine for every event needing staffing: Pending → Checked-in → Game-ready → Post-game submitted.
-
-**Walkthrough Log** — A record of a venue visit: date, time, technician, locations visited, issues found. About 15,465 of them in the CRM.
-
-**Client Portal** — A token-gated public page per venue, where clients can see status and open tickets without an ANC login.
-
-**SLA** — Service Level Agreement. Each ticket has a first-response and resolution deadline based on priority. Critical = 1h response / 4h resolution. Low = 8h / 72h.
-
-**Real-time CRM Sync** — As of April 20, 2026, every ticket / event / workflow change syncs from Service Dashboard to CRM in about a second.
-
----
-
-## CRM objects
-
-The CRM has 53 object types. The high-volume ones:
-
-| Object | Count (April 2026) | What it is |
-|---|---|---|
-| **Account Names** (Companies) | 3,974 | Every client and partner organization |
-| **People** | 20,090 | Every contact at every account |
-| **Deals** (Opportunities) | 9,994 | Every active, won, lost, closed deal |
-| **Events** | 150,197 | Games, concerts, service events |
-| **Service Tickets** | 3,901 | Every issue raised |
-| **Design Requests** | 20,171 | Every graphics / content request |
-| **Designer Time Entries** | 28,014 | Billable hours logged |
-| **Walkthrough Logs** | 15,465 | Venue visits documented |
-| **Revenue Splits** | 5,160 | Per-fiscal-year deal breakdowns |
-| **Team Allocations** | 472 | Per-team breakdowns for advertising deals |
-| **Inventory Assets** | 1,656 | Hardware ANC owns or manages |
-| **Content Schedules** | 2,817 | Programmed graphic content blocks |
-| **LED Products** | 189 | The full product catalog |
-| **Maintenance Logs** | 432 | Service visits recorded |
-| **Venues** | 375 | Physical venue master list |
-
-**Two hubs**: every record traces back to a **Company** (commercial side) or a **Venue** (physical side). Most records link to both.
-
-**Scaffolded objects** — schemas built but not yet populated:
-- **Services** — recurring service contracts (Monthly Value, Service Type, Start/End Date)
-- **Estimates / Estimate Lines** — wired for Scout's Quick Estimate skill
-- **RFP Analyses** — schema ready (23 fields, links to Account/Deal/Venue), awaiting the Proposal Engine bridge
-- **Workflows** — the CRM's native automation engine, unused so far
-
----
-
-## Key fields you'll see
-
-**`pricingComplete`** — Boolean. True when the Proposal Engine has generated a one-pager for the deal.
-
-**`pricingCompleteDate`** — Date stamp set when `pricingComplete` flips to true.
-
-**`bidStatus`** — Where the deal is in the bid flow. See "Bid Status" above.
-
-**`proposalDueDate`** — When the proposal is due to the client.
-
-**`substantialCompletionDate`** — When the work was substantially complete on a won deal.
-
-**`paidAmount` / `percentPaid`** — Finance status on a deal.
-
-**`totalProjectRevenue` / `totalProjectMargin`** — What Salesforce historically said about the deal. Mirror fields kept for cross-reference.
-
-**`amount` (Total Deal Revenue)** — Auto-rollup of revenue2026 + revenue2027 + ... + revenue2030.
-
-**`margin` (Total Deal Margin)** — Auto-rollup of margin2026 through margin2030.
-
-**`league`** — NFL / NBA / MLB / NHL / NCAA / MLS / WNBA / NWSL etc. Inherited from Company.
-
-**`businessUnit`** — TECHNOLOGY / VENUE_SERVICES / MEDIA_SPONSORSHIP. The three-vertical roll-up.
-
-**`assignedEstimatorName`** — Who's pricing the deal.
-
-**`proposalOwner`** — Natalia's role on the deal (the second assigned estimator).
-
-**`Services Dashboard ID`** — The bridge field on Service Tickets, Staff Members, and Venues that links a CRM record to its Service Dashboard counterpart.
-
----
-
-## AI helpers and automation
-
-**Scout's 30 skills** — The CRM-side AI's specialized capabilities. Examples:
-
-- `pipeline-tracker` — open deals at risk
-- `contract-tracker` — backlog + payment status
-- `rfp-analyzer` — parse RFP documents
-- `quick-estimator` — back-of-napkin pricing
-- `sow-generator` — SOW + one-pager
-- `designer-ai` — generate venue mockup images (Gemini Nano Banana Pro 2)
-- `ticket-triage` — categorize new tickets
-- `venue-health-report` — per-venue rollup
-- `failure-pattern-detective` — recurring ticket patterns
-- `inventory-locator` — find parts/assets
-- `event-staffing-assistant` — staff an event
-- `performance-analytics` — team / league breakdowns
-- `ops-daily-digest` — daily summary
-- `product-catalog` — LED product spec lookup
-- (...and 16 more)
-
-The full list lives on the [Scout Skills page](/docs/user-guide/capabilities/scout-skills) with example prompts.
-
-**Designer AI** — Inside the CRM, ask Scout for a graphic and it generates one in ~20 seconds via Gemini 3 Pro Image Preview, attaching the result to a new Design Request.
-
-**LED Diagnostic** — Inside the Service Dashboard, snap a photo of a malfunctioning LED, get a structured diagnosis (issue type, likely cause, suggested fix, urgency).
-
-**Workflows (CRM-native automation)** — The CRM has an unused automation engine. Many of the upgrades in the [What Else Is Possible](/docs/whats-possible) section can be configured here without code.
-
----
-
-## Acronyms
-
-| Term | Meaning |
+| | |
 |---|---|
 | **AE** | Account Executive |
 | **BAFO** | Best And Final Offer |
 | **CMS** | Content Management System |
-| **FY** | Fiscal Year (= calendar year for ANC — Jireh's call) |
+| **FY** | Fiscal Year |
 | **LOI** | Letter Of Intent |
-| **MLS** | Major League Soccer |
+| **MLB / NBA / NCAA / NFL / NHL / MLS / WNBA / NWSL** | The leagues ANC works with |
 | **MSRP** | Manufacturer Suggested Retail Price |
-| **NBA** | National Basketball Association |
-| **NCAA** | National Collegiate Athletic Association |
-| **NFL** | National Football League |
-| **NHL** | National Hockey League |
-| **NWSL** | National Women's Soccer League |
-| **OCR** | Optical Character Recognition (used by RFP Analyzer) |
+| **OCR** | Optical Character Recognition |
 | **RFP** | Request For Proposal |
 | **RFQ** | Request For Quote |
 | **RMA** | Return Merchandise Authorization |
@@ -253,12 +110,5 @@ The full list lives on the [Scout Skills page](/docs/user-guide/capabilities/sco
 | **SLA** | Service Level Agreement |
 | **SOW** | Scope of Work |
 | **SSO** | Single Sign-On |
-| **WNBA** | Women's National Basketball Association |
 
----
-
-## How this page is used
-
-This glossary is searched first by the AI Assistant on this site whenever you ask "what is X?" or "is this correct?" — so the canonical definition stays consistent across every doc and every answer.
-
-If you find a term that's missing or off, flag it. This is the single source of truth.
+That's the language. If you hear something that's not on this page, ask the AI Assistant — it'll tell you what it means.
