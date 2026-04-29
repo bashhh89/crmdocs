@@ -1,5 +1,5 @@
 {
-  "title": "Architecture",
+  "title": "How Things Talk Today",
   "defaultOpen": true,
-  "pages": ["index", "data-flow", "who-uses-what"]
+  "pages": ["index", "whats-in-the-crm", "data-flow", "who-uses-what"]
 }

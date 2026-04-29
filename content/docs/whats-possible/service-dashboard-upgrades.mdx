@@ -1,0 +1,97 @@
+---
+title: Service Dashboard Upgrades
+description: Operations data is already in the CRM. The next moves turn that data into proactive signals — and into pipeline.
+---
+
+# Service Dashboard Upgrades
+
+The Service Dashboard already pushes every ticket, event, and game-day step into the CRM in about a second. That live operational data is gold — and it's mostly being used as a passive history. The next set of upgrades make it work for you.
+
+---
+
+## 1. Predictive maintenance signal
+
+> **The benefit** — catch venues that are starting to slip *before* the client complains.
+>
+> **What we already do** — every ticket syncs into the CRM in real time, tagged by category (hardware, software, content, operational).
+>
+> **What changes** — AI watches the rolling 30-day ticket trend per venue. When tickets start climbing — especially hardware — the venue is flagged for a proactive visit. Account exec gets a Slack ping: *"Brewers are trending up on hardware tickets — schedule a checkup?"*
+>
+> **Rough effort** — about a week.
+
+The same signal can trigger automated outreach: *"It looks like you've had three content issues this month — would you like to schedule a content review with our team?"* Operations data becomes a customer-care signal.
+
+---
+
+## 2. Renewal alerts, automatically
+
+> **The benefit** — no more silent contract expirations.
+>
+> **What we already do** — every deal has a substantial completion date and a contract end date, both filled in.
+>
+> **What changes** — 90 days before a contract ends, the system auto-creates a Renewal opportunity in the deal pipeline, links it to the parent account, and pings the account exec. 30 days before, escalates to the AE's manager.
+>
+> **Rough effort** — about three days.
+
+This is the simplest possible upgrade — a scheduled job watching one date field. But it converts a *known unknown* (which contracts are expiring?) into a *managed pipeline* (every renewal is in flight).
+
+---
+
+## 3. Customer health score per account
+
+> **The benefit** — one number per account that flags risk before it becomes a fire.
+>
+> **What we already do** — tickets, payments, workflow status, and design requests are all linked to the Company.
+>
+> **What changes** — every account gets a composite health score (0-100) updated daily:
+>
+> - Ticket volume vs. baseline (down = good, up = worse)
+> - SLA breach rate (lower = better)
+> - Payment timeliness (% paid on time)
+> - Workflow miss rate (post-game reports filed on time)
+> - Open critical tickets (raw count)
+>
+> Sort the account list by score, lowest first. There's your week.
+>
+> **Rough effort** — about a week.
+
+Every datapoint is already in the CRM. The math is straightforward weighted average. The result: a single column on the account list that surfaces who needs attention, every Monday morning.
+
+---
+
+## 4. Service signals that become upsells
+
+> **The benefit** — operational issues turn into recurring revenue.
+>
+> **What we already do** — tickets are categorized by type (hardware, software, content, operational).
+>
+> **What changes** — when a venue has 5+ content tickets in 30 days, the system auto-suggests a "content management as a service" upsell. When operational tickets spike, suggest an extended service contract. Each suggestion lands as a draft opportunity in the sales pipeline, ready for the AE to qualify.
+>
+> **Rough effort** — about a week.
+
+The pattern: operational data → opportunity creation. The Service Dashboard already creates tickets; this just creates *opportunities* on the same trigger logic.
+
+---
+
+## 5. Proactive on-site visit suggestions
+
+> **The benefit** — site visits happen because data says so, not because someone happened to remember.
+>
+> **What we already do** — every event, ticket, and workflow step is timestamped per venue.
+>
+> **What changes** — AI watches signals and suggests: *"You haven't been to NRG Stadium in 4 months and they had two SLA breaches last week — schedule a visit?"* The suggestion lands in the AE's Monday Slack briefing.
+>
+> **Rough effort** — about a week (combines pieces from health score + Monday briefing).
+
+---
+
+## How these stack
+
+The first three are infrastructure. The last two are products built on that infrastructure.
+
+- (1) Predictive maintenance gets you the trend signal.
+- (2) Renewal alerts ensure no contract slips through.
+- (3) Customer health turns all signals into one number.
+- (4) and (5) translate signals into action — pipeline and visits.
+
+Once (3) is in place, the others get cheaper because the score already exists.

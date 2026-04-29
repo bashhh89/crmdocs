@@ -1,8 +1,9 @@
 {
   "title": "Docs",
   "pages": [
-    "---Start Here---",
+    "---How Things Connect---",
     "architecture",
+    "whats-possible",
     "---ANC CRM---",
     "twenty-crm",
     "user-guide",

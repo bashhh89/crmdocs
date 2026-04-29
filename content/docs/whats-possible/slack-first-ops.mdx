@@ -1,0 +1,112 @@
+---
+title: Slack-first Ops
+description: Pull the work into Slack. Ask the bot anything. Log a ticket from a hallway conversation.
+---
+
+# Slack-first Ops
+
+The team is already in Slack all day. The @ANC bot already exists. The next upgrades pull more of the work *into* Slack so people stop tab-hopping just to log a ticket or check a number.
+
+---
+
+## 1. "@ANC, show me top 5 deals at risk"
+
+> **The benefit** — sales answers a pipeline question in 5 seconds, in Slack, on the phone if needed.
+>
+> **What we already do** — the @ANC Slack bot is wired to all 30 of Scout's CRM skills. Anything you can ask Scout in the CRM works in Slack.
+>
+> **What changes** — expand the skill library so the team can ask in plain English:
+>
+> - *"@ANC, top 5 deals at risk"*
+> - *"@ANC, what's our forecast for NBA this quarter?"*
+> - *"@ANC, who hasn't filed a post-game report this week?"*
+> - *"@ANC, show me Hornets' open tickets"*
+>
+> No CRM tab open. Answer in the channel.
+>
+> **Rough effort** — about a week per major skill area.
+
+The bot infrastructure is fully built. The upgrade is teaching it the questions sales actually asks.
+
+---
+
+## 2. Log a ticket from a hallway conversation
+
+> **The benefit** — tickets get logged the moment problems are mentioned, not later when someone remembers.
+>
+> **What we already do** — voicemails already auto-create tickets. Slack DMs to the bot already work.
+>
+> **What changes** — type in any channel:
+>
+> > *"@ANC fenway has flickering displays in the right field"*
+>
+> A ticket gets created with venue (Fenway), priority (auto-detected from "flickering"), assigned tech (per assignment rule), and a Slack thread the team can discuss in. The ticket also lands in the CRM under Fenway's Company page in about a second.
+>
+> **Rough effort** — about three days.
+
+Same intake pipeline as voicemail. New entry point. The team logs five times more tickets because the friction goes to zero.
+
+---
+
+## 3. Slack-to-deal note
+
+> **The benefit** — meeting notes and client conversations land on the deal automatically.
+>
+> **What we already do** — the universal CRM push attaches every artifact to deals.
+>
+> **What changes** — paste a meeting summary into a Slack thread, then type:
+>
+> > *"@ANC log this on the Hornets deal"*
+>
+> The thread becomes a Note attached to the deal. Activity capture happens without anyone leaving Slack.
+>
+> **Rough effort** — about a week.
+
+The first time someone does this in front of the team, it spreads. Activity capture has been a manual chore forever — making it a one-line Slack command kills the chore.
+
+---
+
+## 4. Approval workflows in Slack
+
+> **The benefit** — approvals (pricing, discounts, scope changes) happen in real time, with a paper trail.
+>
+> **What we already do** — Slack already gets pinged when tickets cross priority thresholds.
+>
+> **What changes** — when an estimator submits a deal at &gt; 50% discount, or with margin below standard, the AE's manager gets a Slack notification with two buttons: *"Approve"* / *"Reject + reason"*. The decision lands as a note on the deal.
+>
+> **Rough effort** — about a week.
+
+Cuts approval cycles from "I'll get back to you tomorrow" to "yes, send it." The paper trail is automatic — every decision is logged on the deal.
+
+---
+
+## 5. Daily ops digest, automatically
+
+> **The benefit** — operations leadership sees the day's risks at the start of every day.
+>
+> **What we already do** — the dashboard already has reminder crons.
+>
+> **What changes** — every morning at 7 a.m., a one-message digest in `#ops-leadership`:
+>
+> > **Today**: 8 events · 24 techs assigned · 3 venues unstaffed
+> > **At risk**: 2 critical tickets past SLA · 1 venue with no event coverage tonight
+> > **Watch**: Charlotte FC has 4 open tickets — health score down to 62
+>
+> No more "did we cover Houston tonight?" — the answer is at the top of Slack at 7 a.m.
+>
+> **Rough effort** — about three days.
+
+Pieces: the data already exists, the cron infrastructure exists, the Slack publishing exists. The new work is composing the message.
+
+---
+
+## How these stack
+
+These build on top of each other naturally:
+
+- (1) Lets the team *ask* Slack things.
+- (2) Lets the team *create* things in Slack.
+- (3) Lets the team *attach* things to deals from Slack.
+- (4) and (5) automate decisions and visibility — the team gets the right info pushed to them, instead of pulling it.
+
+After all five, the dashboards and CRM become the *source of truth* but Slack becomes the *interface*. Fewer tabs, more done.
