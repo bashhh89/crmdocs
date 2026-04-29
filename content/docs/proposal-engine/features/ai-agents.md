@@ -1,108 +1,70 @@
 ---
-title: AI inside the Proposal Engine
-description: The AI stack that powers Copilot, the RFP Analyzer, and the estimator's quick-answer experience.
+title: AI Inside the Proposal Engine
+description: What the AI helps you with — Copilot, the RFP Analyzer, and quick estimates.
 ---
 
-# AI inside the Proposal Engine
+# AI Inside the Proposal Engine
 
-The Proposal Engine uses several AI models, each picked for the job. Some are user-facing (Copilot chat, RFP Analyzer); others are deterministic services that wrap an LLM (intent parsing, OCR).
-
-## The model lineup
-
-| Model | Where it's used | Why this one |
-|---|---|---|
-| **Gemini 2.5 Flash** | RFP Analyzer vision + OCR, Copilot quick actions, intent parsing, vision analysis | Fast, deterministic, strong vision |
-| **GPT-5.4-mini** | RFP Analyzer reasoning passes (extraction confidence, ambiguity resolution) | Reasoning tokens, structured output |
-| **Kimi K2.5** | Copilot chat (knowledge questions, deep reasoning) via AnythingLLM | 200k context, free on Ollama Cloud |
-| **AnythingLLM** | RAG over the knowledge base feeding Copilot | Local, configurable retrieval |
-| **Mistral OCR** | Image classification fallback for RFP drawings | Last-resort when Gemini misclassifies |
+The Proposal Engine has AI built into the workflow, not bolted on the side. Here's where you'll meet it and what each one does for you.
 
 ## The Copilot
 
-The slide-out **Copilot panel** on every proposal page is the most visible AI surface. It does two distinct things, and routes between them based on intent:
+The slide-out **Copilot panel** on every proposal page is the most visible AI surface. It does two different things, automatically picking the right one based on what you ask.
 
-### LOCAL routing (fast UI actions)
+### Quick changes to the form
 
-For requests like *"set the bond to 3%"*, *"change margin to 45%"*, *"swap to Yaham 3.9mm"* — the Copilot:
+For requests like *"set the bond to 3%"*, *"change margin to 45%"*, *"swap to Yaham 3.9mm"* — the Copilot makes the change directly on the proposal. No clicking through menus. The form just updates.
 
-1. Parses intent locally using Gemini 2.5 Flash + regex patterns
-2. Maps the intent to a form action (`setValue('bondRate', 0.03)`)
-3. Executes the change in the active proposal form
+### Knowledge questions
 
-This path is sub-second and doesn't leave the proposal — the form just updates.
+For requests like *"what's the difference between Yaham Halo and Aura?"*, *"what should I use for an outdoor scoreboard?"* — the Copilot answers from the LED Product Knowledge Base, with citations.
 
-### ANYTHINGLLM routing (knowledge questions)
-
-For requests like *"what's the difference between Yaham Halo and Aura?"*, *"what should I use for an outdoor scoreboard?"* — the Copilot routes to AnythingLLM, which RAGs over the LED Product Knowledge Base and answers with citations.
-
-### Where it lives
-
-- UI: `app/components/chat/CopilotPanel.tsx`
-- Router: `services/chat/copilotRouter.ts`
-- Intent parser: `services/chat/intentParser.ts`
-- Action executor: `services/chat/actionExecutor.ts`
-- Routes: `POST /api/copilot/chat`, `POST /api/copilot/stream`, `POST /api/copilot/prompt`
+You don't have to pick which mode — just ask, and the Copilot routes itself.
 
 ## In the Estimator
 
-- **AI Quick** (`/api/estimator/ai-quick`) — type a natural-language requirement, get back a first-pass line-item list
-- **AI Reason** (`/api/estimator/ai-reason`) — on any line item, ask "why is this priced this way?" — the AI explains the math referencing the current rate card
-- **AI Chat** (`/api/estimator/ai-chat`) — open-ended estimating conversations; the AI has the Opportunity context + rate card + prior estimates loaded
+Three AI helpers sit inside the Estimator:
 
-## RFP Analyzer AI pipeline
+- **AI Quick** — type a natural-language requirement (e.g. "10-panel 4mm videowall, full install and commissioning"), get back a first-pass list of line items
+- **AI Reason** — on any line item, ask "why is this priced this way?" and the AI explains the math, referencing the current rate card
+- **AI Chat** — open-ended estimating conversations, with the deal context, rate card, and prior estimates already loaded
 
-The RFP Analyzer is **frozen** at production-approved behavior (2026-04-02). The AI pipeline behind it has multiple passes:
+## RFP Analyzer
 
-1. **Classify** the input PDF — bid form, drawing, schedule, narrative
-2. **Route to extractor**:
-   - Vision (Gemini 2.5 Flash) for visual layouts
-   - Text heuristics for structured docs
-   - Mistral OCR fallback for ambiguous images
-3. **Extract** specs, pricing, display schedules, drawing identifiers
-4. **Cross-check** with a reasoning pass (GPT-5.4-mini) to flag low-confidence extractions
+Drop in a client's RFP PDF. The Analyzer:
 
-The whole pipeline lives in `services/rfp/unified/analyzeRfp.ts`. No edits without explicit approval and a regression test — see the project root CLAUDE.md.
+1. Reads the document (text and images)
+2. Pulls out the requirements, pricing tables, schedules, and drawings
+3. Drafts a structured response with a compliance matrix
+4. Generates a scoping workbook ready to share
 
-## Intelligence Mode (built, currently hidden)
-
-Intelligence Mode is a deterministic margin/pricing engine — it's not technically AI, but it's the brain behind the audit-grade pricing flow:
-
-- Engine: `services/pricing/intelligenceMathEngine.ts`
-- Margin formula: `sellingPrice = cost / (1 - marginPercent)`
-- Four presets: Aggressive (50%), Standard (45%), Premium (40%), Strategic (custom)
-
-The engine is fully built and shipped. The UI is gated behind `FEATURES.INTELLIGENCE_MODE = false` in `lib/featureFlags.ts` — pending billing decision before exposing to operators.
+This was tested across many real ANC RFPs and is locked in production. Every output also lands in the CRM under the deal.
 
 ## Quick estimates from the CRM
 
-Twenty CRM's **Scout** agent has a `quick-estimator` skill. When an operator asks Scout *"give me a back-of-napkin price for a 100-foot ribbon at 6mm"*, Scout:
+Sales can also ask Scout (the CRM's AI helper) for a quick estimate without opening the Proposal Engine at all:
 
-1. Builds an `Estimate` + `EstimateLines` directly in the CRM
-2. Calls `/api/twenty-bridge/export-excel?estimateId=<uuid>` on the Proposal Engine
-3. Returns the rendered scoping workbook to the Scout chat
+> *"Scout, give me a back-of-napkin price for a 100-foot ribbon at 6mm."*
 
-This gives sales a 30-second "ballpark" path that bypasses opening the full Estimator. The detailed proposal still goes through the Proposal Engine's full flow when ready.
+Scout builds the estimate inside the CRM and asks the Proposal Engine to render the cost sheet. The result lands right in chat. The full proposal still happens in the Proposal Engine when ready, but the 30-second ballpark is one Slack message away.
 
-## Currency FX (live since 2026-04-17)
+## Multi-currency
 
-Multi-currency support is live behind `FEATURES.CURRENCY_EXCHANGE_RATE = true`. The Proposal Engine threads currency through six surfaces: wizard, PDF, cost sheet, Excel, margin analysis, rate card. USD/CAD/EUR/GBP all work end-to-end.
+Proposals can be priced in USD, CAD, EUR, or GBP. Pick the currency once at the top of the wizard, and everything threads through — wizard, PDF, cost sheet, Excel, margin, rate card. Live since April 2026.
 
-## What's hidden behind feature flags
+## Things that exist but aren't yet enabled
 
-These features are **built and tested** but not yet exposed to operators (file: `lib/featureFlags.ts`):
+A few capabilities are fully built and tested but waiting on a billing decision before being switched on:
 
-| Feature flag | What it gates |
-|---|---|
-| `INTELLIGENCE_MODE` | Margin presets UI, audit table, P&L breakdown |
-| `DASHBOARD_CHAT` | "Ask Intelligence Core" search bar on the dashboard |
-| `STRATEGIC_MATCH_BADGE` | The "17/20 Strategic Match" audit badge on proposals |
-| `CLIENT_REQUESTS` | Client-side share link portal for change requests |
-| `VERIFICATION_STUDIO` | Excel vs PDF dual-view comparison tool |
+- **Intelligence Mode** — preset margin tiers (Aggressive / Standard / Premium / Strategic) with a full audit table and P&L breakdown
+- **Strategic Match Badge** — a "17/20 Strategic Match" badge on proposals
+- **Client Requests Portal** — a share link so clients can submit change requests directly
+- **Verification Studio** — side-by-side Excel-vs-PDF comparison
 
-Each one can be flipped on per-deploy via env. The decision to expose is product/billing-side, not engineering.
+When Ahmad flips them on, they appear in the workflow with no extra setup needed.
 
 ## See also
 
-- [Estimator](./estimator) — main home of most AI features
-- [RFP Analyzer](./rfp-analyzer) — RFP-specific AI pipeline
-- [Universal CRM Push](./universal-crm-push) — every artifact lands in Twenty
+- [Estimator](./estimator)
+- [RFP Analyzer](./rfp-analyzer)
+- [Everything lands in the CRM automatically](./universal-crm-push)

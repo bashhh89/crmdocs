@@ -1,17 +1,17 @@
 ---
 title: How the Three ANC Tools Fit Together
-description: Proposal Engine, CRM, and Service Dashboard — what each one owns and how they talk to each other.
+description: Proposal Engine, CRM, and Service Dashboard — what each one is for and how they share information.
 ---
 
 # How the Three ANC Tools Fit Together
 
-ANC runs on three connected tools. Each one owns a specific phase of the lifecycle. They share data automatically — nothing has to be retyped between systems.
+ANC runs on three connected tools. Each one is built for a specific part of the business. They share information automatically — nothing has to be retyped between them.
 
-| Tool | URL | What it owns |
+| Tool | URL | What it's for |
 |---|---|---|
-| **Proposal Engine** | [proposals.anc.com](https://proposals.anc.com) | Pricing, estimating, RFPs, SOWs, submittals — every artifact a client receives |
-| **Twenty CRM** | [crm.ancsports.net](https://crm.ancsports.net) | The system of record. Companies, deals, revenue, dashboards, reporting |
-| **Service Dashboard** | [services.ancsports.net](https://services.ancsports.net) | Day-to-day operations — events, tickets, technician workflow, venue health |
+| **Proposal Engine** | [proposals.anc.com](https://proposals.anc.com) | Pricing deals, generating proposals, building SOWs, responding to RFPs |
+| **CRM** | [crm.ancsports.net](https://crm.ancsports.net) | The single record of every account, deal, dashboard, and report |
+| **Service Dashboard** | [services.ancsports.net](https://services.ancsports.net) | Day-to-day operations — events, tickets, technicians, venue health |
 
 ## The lifecycle in one picture
 
@@ -21,21 +21,21 @@ ANC runs on three connected tools. Each one owns a specific phase of the lifecyc
         │     proposals.anc.com   │
         │                         │
         │   Quote → Estimate →    │
-        │   Proposal PDF → SOW    │
+        │   Proposal → SOW        │
         └────────────┬────────────┘
-                     │ pushes every artifact
-                     │ + product catalog
+                     │ everything you generate
+                     │ shows up in the CRM
                      ▼
         ┌─────────────────────────┐
-        │      TWENTY CRM         │◄──────────────┐
+        │           CRM           │◄──────────────┐
         │     crm.ancsports.net   │               │
-        │                         │               │ pushes tickets,
-        │   Companies · Deals     │               │ events, workflow
-        │   Pipeline · Revenue    │               │ status in real time
+        │                         │               │ tickets, events,
+        │   Companies · Deals     │               │ and game-day status
+        │   Pipeline · Revenue    │               │ all show up here
         │   Dashboards · Reports  │               │
         └────────────┬────────────┘               │
                      │ deal won →                 │
-                     │ venue + screens flow into  │
+                     │ venue + screens hand off   │
                      ▼                            │
         ┌─────────────────────────┐               │
         │   SERVICE DASHBOARD     │───────────────┘
@@ -47,7 +47,7 @@ ANC runs on three connected tools. Each one owns a specific phase of the lifecyc
         └─────────────────────────┘
 ```
 
-The CRM sits in the middle. It's the system of record. The other two tools are the **doing surfaces** — the Proposal Engine is where new business is shaped, the Service Dashboard is where existing business is run. Both push their state into the CRM continuously so leadership always sees one truth.
+The CRM sits in the middle. It's the **single source of truth**. The other two tools are where the work actually happens — the Proposal Engine for new business, the Service Dashboard for running existing business. Both push their state into the CRM continuously, so leadership always sees one truth.
 
 ## What each tool answers
 
@@ -58,38 +58,34 @@ The CRM sits in the middle. It's the system of record. The other two tools are t
 | How do I price this RFP? | **Proposal Engine** — Estimator + RFP Analyzer |
 | What are we sending the client tomorrow? | **Proposal Engine** — proposal PDFs, SOWs, submittals |
 | Who's working tonight's game? | **Service Dashboard** — Events + Staff Assignments |
-| Is this venue in trouble? | **Service Dashboard** — Venue page, ticket SLA |
+| Is this venue having issues? | **Service Dashboard** — Venue page, ticket status |
 | Did the install team finish post-game? | **Service Dashboard** — Workflow status |
-| What's every artifact ever sent to this client? | **CRM** — open the Company → Estimates / Proposals / Tickets / Events tabs |
+| What's every artifact ever sent to this client? | **CRM** — open the Company → all the tabs |
 
-## The three flows that keep them in sync
+## How information moves between them
 
-These run automatically — no human paste-buffer required.
+Three flows run automatically. Nobody has to copy anything from one tool to another.
 
-### 1. Proposal Engine → CRM (every save)
+### 1. Proposal Engine → CRM
 
-Every time someone hits save in the Proposal Engine — a new estimate, a regenerated PDF, an Excel export, a SOW — the file plus a timeline activity push into the matching Twenty Opportunity.
+Every time someone generates a proposal, an Excel cost sheet, a SOW, or a one-pager, it appears in the CRM under the right deal — with a timeline note showing who made it and when.
 
-The product catalog also mirrors one-way: rag2 is the source of truth for every LED model, cabinet spec, and price. The CRM's `LedProduct` object is kept in lockstep so Scout (the CRM's AI agent) and the Quick Estimate skill can resolve products to the same data the Proposal Engine uses.
+Sales never has to "also update the CRM."
 
-### 2. Service Dashboard → CRM (real-time)
+### 2. Service Dashboard → CRM
 
-Tickets, events, and workflow transitions write to the CRM within ~1 second. This was deployed end-to-end on 2026-04-20 — every gap is now closed:
+Every ticket, event, and game-day step in the Service Dashboard appears in the CRM within about a second.
 
-- Ticket created or updated → CRM `ServiceTicket`
-- Event created or updated → CRM `venueEvent`
-- Workflow status changes (pending → checked-in → game-ready → post-game) → CRM workflow status
+Joe's operations team keeps using the Service Dashboard as their daily home. The CRM gets the operational truth without forcing them to switch tools.
 
-Joe's operational team continues to use the Service Dashboard as their daily UI. The CRM gets the operational truth without forcing the team to switch tools.
+### 3. CRM → AI helpers
 
-### 3. CRM → AI agents (Scout + Slack bot)
-
-The CRM's `Scout` agent and the **@ANC Slack bot** both reach into the Proposal Engine and Service Dashboard for richer answers — pulling product specs, generating proposals, drafting design images. Anything an operator can ask Scout in the CRM, they can also ask the @ANC bot in Slack.
+The CRM has a built-in AI helper called **Scout**. Scout can answer questions about the pipeline, draft proposals, generate venue mockup images, or pull together a venue health report. The same brain is also available in Slack as **@ANC** — anything you can ask Scout in the CRM, you can ask @ANC in Slack.
 
 ## Where to go next
 
-- **[Data flow](./data-flow)** — every specific integration, what triggers it, and the timing
+- **[Data flow](./data-flow)** — exactly what shows up in each tool, and when
 - **[Who uses what](./who-uses-what)** — by team and by job
-- **[Twenty CRM](/docs/twenty-crm/overview)** — system of record overview
+- **[CRM Overview](/docs/twenty-crm/overview)** — the system of record
 - **[Proposal Engine](/docs/proposal-engine/introduction)** — sales side
 - **[Service Dashboard](/docs/service-dashboard/introduction)** — operations side

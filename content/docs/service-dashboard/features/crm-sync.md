@@ -1,81 +1,46 @@
 ---
-title: Real-time CRM Sync
-description: Every ticket, event, and workflow change in the Service Dashboard pushes to Twenty CRM in about a second.
+title: Everything Shows Up in the CRM Live
+description: Tickets, events, and game-day status appear in the CRM in about a second — automatic, no extra step.
 ---
 
-# Real-time CRM Sync
+# Everything Shows Up in the CRM Live
 
-Joe's operations team works in the Service Dashboard. Leadership works in the CRM. To keep both views truthful without making the ops team switch tools, every operational event syncs to the CRM in about a second.
+Joe's team works in the Service Dashboard. Leadership works in the CRM. To keep both views truthful without forcing the ops team to switch tools, every operational change in the Service Dashboard appears in the CRM in about a second.
 
-This was completed end-to-end on **2026-04-20**. Every gap is closed.
+## What syncs and how fast
 
-## What syncs and when
-
-| Action | CRM target | Latency |
-|---|---|---|
-| Ticket created | `ServiceTicket` (linked to Company, optionally Opportunity) | ~1 s |
-| Ticket updated (status, priority, assignment, category, resolution) | `ServiceTicket` | ~1 s |
-| Event created (auto-discovered or manual) | `venueEvent` (with venue + assigned techs) | ~1 s |
-| Event updated (summary, date, league) | `venueEvent` | ~1 s |
-| Workflow transition (pending → checked-in → game-ready → post-game-submitted) | `venueEvent.workflowStatus` + post-game report | ~1 s |
-| Staff record created or updated | `technician` | ~1 s |
-
-Before 2026-04-20 these only synced via a 15-minute cron — operations were always "up to a quarter hour stale" in the CRM. The push removed that lag.
-
-## How it actually works
-
-- Each route that mutates state (`/api/tickets`, `/api/events/*`, `/api/workflow/[eventId]`, `/api/staff/*`) calls a sync helper after the local write succeeds:
-  - `syncTicketsToTwenty([fresh])`
-  - `syncEventsToTwenty([fresh])`
-  - `syncTechniciansToTwenty([fresh])`
-- The call is **fire-and-forget** — async, non-blocking. The local op completes first; the CRM push runs in the background.
-- The 15-minute cron at `/api/cron/sync-twenty` stays as a safety net — if real-time push misses anything, the cron catches it within 30 minutes (it queries records updated in the last 30m window).
-
-## Failure mode
-
-If the CRM is briefly unreachable, the Service Dashboard **does not block local operations**. The technician finishes their workflow, the ticket gets created, the event saves — locally everything is fine. The CRM gets a stale entry until the next cron sweep.
-
-Errors are logged to `activity_log` so you can audit unmatched venues or rate-limit hits.
-
-## Rate limit handling
-
-Twenty has a 100 requests / 60-second shared rate limit. The sync layer applies:
-
-- 80 req/min self-imposed cap (under the actual limit)
-- 4 retries with exponential backoff
-- Honors `Retry-After` on 429
-- Fails immediately on 4xx (other than 429), retries on 5xx
-
-The 2026-04-27 rate-limit env bump on the CRM service raised the actual ceiling to 1M/min, so the 80/min cap is now generous headroom.
-
-## Venue matching (and a gotcha)
-
-The sync looks up the matching CRM venue by name. This is fuzzy-match, not exact — "Madison Square Garden" matches "Madison Sq Garden" matches "MSG" only if the substring matches.
-
-If a venue exists in the Service Dashboard but not the CRM, the sync silently skips it and logs the unmatched name in `activity_log`. To fix this for a specific venue, fill in the CRM Venue's `servicesId` field (the Service Dashboard venue UUID) — that's the explicit match key that bypasses fuzzy matching.
-
-## Where it lives in the code
-
-- Sync layer: `lib/twenty-sync.ts` (events / tickets / staff) and `lib/twenty-ops.ts` (Twenty-backed objects)
-- Cron safety net: `app/api/cron/sync-twenty/route.ts` (incremental) and `app/api/cron/sync-twenty/full/route.ts` (full resync)
-- Rate limiter: in-memory, per Node process
-
-## Twenty-backed objects (separate path)
-
-Some objects don't live in Postgres on the Service Dashboard side at all — they're stored directly in Twenty and read through a thin proxy. These are gated behind env flags so you can flip them on per-deploy:
-
-| Object | Env flag |
+| When you do this in the Service Dashboard | The CRM shows |
 |---|---|
-| Inventory assets | `TWENTY_BACKED_INVENTORY` |
-| Maintenance logs | `TWENTY_BACKED_MAINTENANCE` |
-| Design requests | `TWENTY_BACKED_DESIGNS` |
-| Designer time entries | `TWENTY_BACKED_TIME_ENTRIES` |
-| (5 more — see `isTwentyBackedEnabled()` in `lib/twenty-ops.ts`) | |
+| Open a new ticket | The ticket on the Company page |
+| Update a ticket — status, priority, assignment, category, resolution | The latest version |
+| Schedule a new event (game, concert, service event) | The event on the Company and on the linked deal |
+| Update an event's date, summary, or league | The latest version |
+| Tech checks in, files game-ready, submits post-game | The live workflow status |
+| Add or update a technician | The matching record |
 
-When a flag is on, the Service Dashboard reads/writes that object directly against Twenty's GraphQL — no local copy.
+Everything above happens in about one second.
+
+## Where it shows up in the CRM
+
+- **Company page → Tickets tab** — every ticket linked to that account
+- **Company page → Events tab** — every game-day or service event at the venue
+- **Deal page → Tickets / Events tab** — same, but scoped to the deal
+- **Dashboards** — operational rollups (open tickets, SLA breaches) read from the same data
+
+Leadership doesn't need to ask the ops team for status — it's already there.
+
+## When the CRM is briefly unavailable
+
+Operations never stop. Tickets still get created, technicians still finish their workflow, events still save. The CRM just briefly shows the older version, and a safety net catches it within a few minutes.
+
+This is a deliberate design choice: the Service Dashboard is what runs the field. The CRM is downstream.
+
+## A note on venue names
+
+The sync looks up the matching CRM venue by name. If a venue is called "Madison Square Garden" in one place and "MSG" in the other, they may not match automatically. If you spot a venue's tickets or events not appearing in the CRM, the fix is on the CRM side: open the venue and fill in its Service Dashboard ID — that's the explicit match key.
 
 ## See also
 
-- [Architecture / Data flow](/docs/architecture/data-flow) — every cross-system sync mapped
-- [Workflows](./workflows) — the state machine that fires sync on each transition
-- [Tickets](./tickets) — what gets pushed when a ticket changes
+- [The bigger picture: how all three tools talk](/docs/architecture)
+- [Workflows](./workflows) — the state machine that fires sync on each step
+- [Tickets](./tickets) — what triggers a sync when a ticket changes
