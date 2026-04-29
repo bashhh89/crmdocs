@@ -43,6 +43,10 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New streamlined login page design**: We've refreshed the login screen with a cleaner layout and larger input fields, making it easier to sign in. You’ll see a more intuitive flow and clearer branding when accessing the system.
 - **Add internal job tags and hours summary**: You can now assign tags to internal jobs and view a consolidated hours summary, giving you clearer insight into internal project time tracking.
 - **Post‑game pings and venue staffing toggle**: You can now receive automatic post‑game notifications and easily enable or disable venue staffing directly from the venue page.
+- **Admin-only NocoDB diagnostic endpoint added**: Admins can now request a NocoDB health report via the diagnostics API. This gives you immediate visibility into NocoDB’s status without leaving the platform.
+- **AI agent can now query NocoDB data**: You can now ask the AI assistant to pull information from NocoDB—list available tables, run queries, or add new rows—directly within your CRM workflow.
+- **Default ahmad-nocodb URL prefilled in Operations**: You’ll now see the default ahmad‑nocodb URL automatically filled in the Operations page, so you can access the service without manually entering it.
+- **Add NocoDB view to Operations page**: You can now open /operations to work with NocoDB, giving you an Airtable‑style interface for managing your data directly within ANC.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
