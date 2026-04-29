@@ -48,6 +48,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Default ahmad-nocodb URL prefilled in Operations**: You’ll now see the default ahmad‑nocodb URL automatically filled in the Operations page, so you can access the service without manually entering it.
 - **Add NocoDB view to Operations page**: You can now open /operations to work with NocoDB, giving you an Airtable‑style interface for managing your data directly within ANC.
 - **Native Operations UI replaces embedded iframe**: You now open the Operations page directly in ANC’s own branded interface, no more embedded iframe. The new UI loads faster and feels smoother, giving you a cleaner experience when managing data.
+- **Switched to Baserow backend for operations**: We've moved our data layer from NocoDB to Baserow, so all table and row actions now run on the new Baserow service. The AI‑powered helpers for creating, listing, and querying tables have been updated, giving you the same functionality under a fully rebrandable, MIT‑licensed platform.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
