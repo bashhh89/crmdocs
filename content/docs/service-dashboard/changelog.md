@@ -42,6 +42,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Day-before launch and takedown reminders**: You’ll now get a reminder the day before a content launch or takedown, so you can prepare in advance and avoid missed actions.
 - **New streamlined login page design**: We've refreshed the login screen with a cleaner layout and larger input fields, making it easier to sign in. You’ll see a more intuitive flow and clearer branding when accessing the system.
 - **Add internal job tags and hours summary**: You can now assign tags to internal jobs and view a consolidated hours summary, giving you clearer insight into internal project time tracking.
+- **Post‑game pings and venue staffing toggle**: You can now receive automatic post‑game notifications and easily enable or disable venue staffing directly from the venue page.
 ## 2026-04-28
 
 - **Add kill switch to control ANC Slack chat assistant**: You can now enable or disable the ANC Slack chat assistant using the new SLACK_ASSISTANT_ENABLED switch, giving you direct control over its activity in Slack.
