@@ -21,6 +21,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
 
+- **Add status picker to new ticket form**: You can now choose a status when creating a new ticket, letting you set its initial state directly from the form.
 ## 2026-04-29
 
 - **Dashboard now supports dark mode toggle**: You can now switch the dashboard to dark mode using the new toggle. This makes it easier on the eyes in low‑light environments.
