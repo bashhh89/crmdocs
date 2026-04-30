@@ -16,6 +16,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-04-30
+
+- **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
+
 ## 2026-04-29
 
 - **Dashboard now supports dark mode toggle**: You can now switch the dashboard to dark mode using the new toggle. This makes it easier on the eyes in low‑light environments.
