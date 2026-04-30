@@ -21,6 +21,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Original ANC logo restored across rag2**: The ANC logo has been reverted to its original design across rag2, so you’ll see the familiar branding again.
 
+- **Import now accepts 'Responsibility Matrix' tab**: You can now import proposals from Excel files that use a sheet named "Responsibility Matrix". The parser recognizes this tab name just like the original one, so your existing workflows continue without change.
 ## 2026-04-29
 
 - **Standardize LED product names to RS and FM**: LED product names have been standardized: items previously labeled ‘HB’ now appear as ‘RS’, and any blank entries are shown as ‘FM’. New LED products will default to ‘RS’.
