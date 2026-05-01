@@ -25,6 +25,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Operations Walkthrough for Issue Flow**: You now have a step‑by‑step walkthrough that guides you through the operations issue flow, making it easier to resolve issues quickly and correctly.
 - **New Airtable‑style Operations Workspace**: We've introduced a brand‑new operations workspace that mimics Airtable's grid layout. You can now view, sort, and edit your operational data in a familiar, spreadsheet‑like interface, making task management faster and more intuitive.
 
+- **Removed legacy field‑ops links and added Airtable‑to‑Baserow migration tool**: We've cleaned up the sidebar by hiding the old field‑ops links, and introduced a new migration utility that lets you transfer data from Airtable to Baserow easily.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
