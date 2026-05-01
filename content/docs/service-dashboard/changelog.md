@@ -27,6 +27,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Removed legacy field‑ops links and added Airtable‑to‑Baserow migration tool**: We've cleaned up the sidebar by hiding the old field‑ops links, and introduced a new migration utility that lets you transfer data from Airtable to Baserow easily.
 - **Airtable to NocoDB v3 migration tool added**: You can now move your Airtable records straight into NocoDB v3 with a single migration step. This makes transitioning to the new database platform faster and hassle‑free.
+- **Dark‑mode kanban works and DELETE venues hidden**: The kanban board now displays correctly in dark mode, and any venues prefixed with “DELETE‑” are automatically hidden from your view.
+- **Operations page now loads Twenty‑ops via iframe**: You now see the Twenty‑ops dashboard when you open Operations, replacing the old view. The legacy NocoDB page is backed up but no longer used.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
