@@ -48,6 +48,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI-powered NocoDB CRUD actions now available**: You can now ask the AI assistant in the ANC ops workspace to count, create, delete, list, query, view schema, and update records in your NocoDB tables. This gives you full CRUD control through simple natural‑language commands.
 - **AI UI actions now relay to NocoDB iframe**: You can now trigger AI‑driven UI commands and have them correctly passed to the NocoDB embedded view, so actions like create, update, or delete are reflected instantly within the iframe.
 - **AI now routes to ops_* skills in Operations**: The AI assistant in the Operations area now directs requests to the appropriate ops_* skill set, giving you more relevant answers and removing the previous “no vision” fallback.
+- **PDF download now returns correct file format**: PDF files are now served correctly, eliminating download errors. You can retrieve PDFs from the API without encountering type‑related issues.
+- **Export NocoDB documents as streamed PDFs**: You can now download a PDF version of any NocoDB document directly from the system. The new PDF export endpoint streams the file to you instantly, so you get the document in PDF format with a single request.
+- **AI-powered document listing and creation**: You can now ask the AI to pull up a list of your documents and to draft new documents on the fly. This makes retrieving and creating paperwork faster and hands‑free.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
