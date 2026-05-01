@@ -33,6 +33,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Operations view now uses NocoDB for Airtable‑style interface**: The Operations iframe has been switched back to NocoDB, giving you the familiar Airtable/Excel‑like feel the team asked for.
 - **Updated branding with new 2026 ANC logos and favicons**: We've refreshed the portal with the latest 2026 ANC brand assets, so you’ll now see new logos and favicons across the interface.
 - **Updated iframe domain to ops.ancsports.net**: We've switched the iframe URL to ops.ancsports.net, so you’ll no longer see the old nocodb domain in the interface.
+- **Enable seamless iframe SSO with same‑origin proxy**: You can now embed the Operations portal in an iframe and log in without extra steps. The /embed-ops URL now proxies to ops.ancsports.net, keeping the same origin so single sign‑on works smoothly.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
