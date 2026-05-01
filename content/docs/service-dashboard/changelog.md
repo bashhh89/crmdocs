@@ -46,6 +46,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Bulk-create NocoDB ops users from staff list**: You can now select staff members in the dashboard and generate NocoDB ops user accounts for them all at once, eliminating the need for manual individual creation.
 - **Push‑notification overlay sidebar and edge‑to‑edge iframe pages**: A new push‑style overlay sidebar is now available, and iframe pages now display full‑width without margins, giving you a cleaner, more immersive view.
 - **AI-powered NocoDB CRUD actions now available**: You can now ask the AI assistant in the ANC ops workspace to count, create, delete, list, query, view schema, and update records in your NocoDB tables. This gives you full CRUD control through simple natural‑language commands.
+- **AI UI actions now relay to NocoDB iframe**: You can now trigger AI‑driven UI commands and have them correctly passed to the NocoDB embedded view, so actions like create, update, or delete are reflected instantly within the iframe.
+- **AI now routes to ops_* skills in Operations**: The AI assistant in the Operations area now directs requests to the appropriate ops_* skill set, giving you more relevant answers and removing the previous “no vision” fallback.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
