@@ -42,6 +42,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New 'mode' field added to unassigned‑24h response**: The unassigned‑24‑hour report now includes a ‘mode’ field, letting you tell whether each count is a forced entry or a normal one.
 - **AI Feed URL Finder pre‑suggests venue schedule links**: When adding a new feed, the system now shows a suggested schedule URL for each of the 41 sports venues. You simply confirm the suggested link, eliminating the need to search for it manually.
 - **Corrected Feed-Finder Save Endpoint to Use PATCH**: Saving changes in the Feed Finder now works correctly because the system uses the proper PATCH request. You’ll no longer encounter errors when updating feed settings.
+- **Desktop sidebar now collapses into overlay**: The desktop sidebar is now hidden by default and opens as an overlay, giving you more screen space. It works the same way on all screen sizes, so you can focus on your data without the sidebar taking up space.
+- **Bulk-create NocoDB ops users from staff list**: You can now select staff members in the dashboard and generate NocoDB ops user accounts for them all at once, eliminating the need for manual individual creation.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
