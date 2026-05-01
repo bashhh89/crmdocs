@@ -51,6 +51,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **PDF download now returns correct file format**: PDF files are now served correctly, eliminating download errors. You can retrieve PDFs from the API without encountering type‑related issues.
 - **Export NocoDB documents as streamed PDFs**: You can now download a PDF version of any NocoDB document directly from the system. The new PDF export endpoint streams the file to you instantly, so you get the document in PDF format with a single request.
 - **AI-powered document listing and creation**: You can now ask the AI to pull up a list of your documents and to draft new documents on the fly. This makes retrieving and creating paperwork faster and hands‑free.
+- **Dark-mode bleed-through on tickets fixed**: I fixed the dark‑mode bleed‑through on the tickets page. Now the UI stays clean and readable in dark mode, with no stray colors.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
