@@ -53,6 +53,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI-powered document listing and creation**: You can now ask the AI to pull up a list of your documents and to draft new documents on the fly. This makes retrieving and creating paperwork faster and hands‑free.
 - **Dark-mode bleed-through on tickets fixed**: I fixed the dark‑mode bleed‑through on the tickets page. Now the UI stays clean and readable in dark mode, with no stray colors.
 - **Dark mode surface color corrected to charcoal**: In dark mode the page background now displays a solid charcoal tone instead of the unintended blue hue, giving a cleaner look.
+- **Session recorder added alongside pageview tracker**: You can now see recorded user sessions in addition to pageview counts, giving you deeper insight into how users navigate your site.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.

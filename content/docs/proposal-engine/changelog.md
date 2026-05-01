@@ -22,6 +22,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **New 2026 ANC brand assets applied to website**: You’ll now see the fresh 2026 ANC branding on the site – updated logos, colors, and graphics everywhere, giving the portal a modern, consistent look.
 
+- **Umami session recorder now tracks user sessions**: You can now view full session recordings alongside the existing pageview data. This gives you a clearer picture of how users move through the site, helping you spot friction points and improve the experience.
 ## 2026-04-30
 
 - **Original ANC logo restored across rag2**: The ANC logo has been reverted to its original design across rag2, so you’ll see the familiar branding again.
