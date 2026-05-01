@@ -17,6 +17,14 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-01
+
+- **Operations workspace now separate from ticketing**: We've split the Operations area from the Ticketing view, giving you a dedicated workspace for operational tasks. You’ll now work in a clean, focused interface without ticketing clutter.
+- **Added documentation for Airtable workspace status format**: I’ve added a clear description of the Airtable workspace status format so you can understand what each status means.
+- **New Operations Walkthrough for Issue Flow**: You now have a step‑by‑step walkthrough that guides you through the operations issue flow, making it easier to resolve issues quickly and correctly.
+- **New Airtable‑style Operations Workspace**: We've introduced a brand‑new operations workspace that mimics Airtable's grid layout. You can now view, sort, and edit your operational data in a familiar, spreadsheet‑like interface, making task management faster and more intuitive.
+
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
