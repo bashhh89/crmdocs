@@ -36,6 +36,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Enable seamless iframe SSO with same‑origin proxy**: You can now embed the Operations portal in an iframe and log in without extra steps. The /embed-ops URL now proxies to ops.ancsports.net, keeping the same origin so single sign‑on works smoothly.
 - **Embed Operations via Direct Iframe**: I removed the broken /embed-ops proxy, so your iframe now points straight to ops.ancsports.net and works as expected.
 - **Removed obstructive “Open in new tab” overlay**: The floating “Open in new tab” overlay has been removed, so it no longer blocks the NocoDB Share button. You can now click Share without any interference.
+- **Reduced Slack notifications for per-action events**: We've turned off the extra Slack pings that were sent for each action, so you’ll only get the essential notifications now.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
