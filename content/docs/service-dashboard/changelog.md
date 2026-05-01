@@ -37,6 +37,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Embed Operations via Direct Iframe**: I removed the broken /embed-ops proxy, so your iframe now points straight to ops.ancsports.net and works as expected.
 - **Removed obstructive “Open in new tab” overlay**: The floating “Open in new tab” overlay has been removed, so it no longer blocks the NocoDB Share button. You can now click Share without any interference.
 - **Reduced Slack notifications for per-action events**: We've turned off the extra Slack pings that were sent for each action, so you’ll only get the essential notifications now.
+- **Venue sync now shows only sports venues**: We've narrowed the venue sync view to sports venues only, so OOH locations no longer appear in the feed URL list. Your dashboard now reflects only the relevant sports venues.
+- **Venue Sync Status Updated – AI Now Covers All Venues**: The dashboard now shows a refreshed venue sync status, and AI discovery automatically includes every venue. The feed URL has been upgraded, so you’ll see more complete and up‑to‑date venue data.
+- **New 'mode' field added to unassigned‑24h response**: The unassigned‑24‑hour report now includes a ‘mode’ field, letting you tell whether each count is a forced entry or a normal one.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
