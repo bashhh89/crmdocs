@@ -26,6 +26,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Airtable‑style Operations Workspace**: We've introduced a brand‑new operations workspace that mimics Airtable's grid layout. You can now view, sort, and edit your operational data in a familiar, spreadsheet‑like interface, making task management faster and more intuitive.
 
 - **Removed legacy field‑ops links and added Airtable‑to‑Baserow migration tool**: We've cleaned up the sidebar by hiding the old field‑ops links, and introduced a new migration utility that lets you transfer data from Airtable to Baserow easily.
+- **Airtable to NocoDB v3 migration tool added**: You can now move your Airtable records straight into NocoDB v3 with a single migration step. This makes transitioning to the new database platform faster and hassle‑free.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
