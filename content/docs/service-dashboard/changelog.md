@@ -41,6 +41,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Venue Sync Status Updated – AI Now Covers All Venues**: The dashboard now shows a refreshed venue sync status, and AI discovery automatically includes every venue. The feed URL has been upgraded, so you’ll see more complete and up‑to‑date venue data.
 - **New 'mode' field added to unassigned‑24h response**: The unassigned‑24‑hour report now includes a ‘mode’ field, letting you tell whether each count is a forced entry or a normal one.
 - **AI Feed URL Finder pre‑suggests venue schedule links**: When adding a new feed, the system now shows a suggested schedule URL for each of the 41 sports venues. You simply confirm the suggested link, eliminating the need to search for it manually.
+- **Corrected Feed-Finder Save Endpoint to Use PATCH**: Saving changes in the Feed Finder now works correctly because the system uses the proper PATCH request. You’ll no longer encounter errors when updating feed settings.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
