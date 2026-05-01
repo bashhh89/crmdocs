@@ -30,6 +30,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Dark‑mode kanban works and DELETE venues hidden**: The kanban board now displays correctly in dark mode, and any venues prefixed with “DELETE‑” are automatically hidden from your view.
 - **Operations page now loads Twenty‑ops via iframe**: You now see the Twenty‑ops dashboard when you open Operations, replacing the old view. The legacy NocoDB page is backed up but no longer used.
 - **Embed mode hides Twenty navigation chrome**: Add ?embed=1 to the Twenty iframe and the navigation bar disappears, giving you a cleaner embedded view.
+- **Operations view now uses NocoDB for Airtable‑style interface**: The Operations iframe has been switched back to NocoDB, giving you the familiar Airtable/Excel‑like feel the team asked for.
+- **Updated branding with new 2026 ANC logos and favicons**: We've refreshed the portal with the latest 2026 ANC brand assets, so you’ll now see new logos and favicons across the interface.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
