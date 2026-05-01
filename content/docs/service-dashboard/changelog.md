@@ -29,6 +29,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Airtable to NocoDB v3 migration tool added**: You can now move your Airtable records straight into NocoDB v3 with a single migration step. This makes transitioning to the new database platform faster and hassle‑free.
 - **Dark‑mode kanban works and DELETE venues hidden**: The kanban board now displays correctly in dark mode, and any venues prefixed with “DELETE‑” are automatically hidden from your view.
 - **Operations page now loads Twenty‑ops via iframe**: You now see the Twenty‑ops dashboard when you open Operations, replacing the old view. The legacy NocoDB page is backed up but no longer used.
+- **Embed mode hides Twenty navigation chrome**: Add ?embed=1 to the Twenty iframe and the navigation bar disappears, giving you a cleaner embedded view.
 ## 2026-04-30
 
 - **Auto-replies now require @-mention in DMs**: From now on, the system only sends an auto‑reply when you @‑mention us in a direct message. Plain “ANC hi” will no longer trigger a response, reducing unwanted messages.
