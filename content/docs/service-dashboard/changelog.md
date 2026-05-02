@@ -23,6 +23,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Umami analytics now link sessions to logged‑in users**: Analytics now associate each Umami session with the currently logged‑in user. This lets you see activity broken down by individual users in your reports.
 
+- **ElevenLabs CRM client lookup webhook added**: You can now call a new webhook to look up client information in ElevenLabs CRM. This lets your automated processes retrieve client details instantly without manual steps.
 ## 2026-05-01
 
 - **Operations workspace now separate from ticketing**: We've split the Operations area from the Ticketing view, giving you a dedicated workspace for operational tasks. You’ll now work in a clean, focused interface without ticketing clutter.
