@@ -26,6 +26,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **ElevenLabs CRM client lookup webhook added**: You can now call a new webhook to look up client information in ElevenLabs CRM. This lets your automated processes retrieve client details instantly without manual steps.
 - **Voice Agent Demo Page Added**: You can now open a dedicated Voice Agent Demo page to see the agent in action. Test voice commands and watch the responses live, giving you a hands‑on feel for how the voice assistant works.
 - **Add ElevenLabs ConvAI widget to Voice Agent demo**: You can now access the ElevenLabs Conversational AI widget directly within the Voice Agent demo, enabling real‑time AI‑driven voice interactions from the interface.
+- **Voice widget now auto‑sends on natural pause**: When you speak into the voice widget, your message is automatically sent after a natural pause, making turn‑taking smoother without needing to press the send button.
+- **Voice widget no longer gets stuck listening**: The voice widget now correctly stops when you tap, so it won’t remain stuck in the “Listening — tap to stop” state.
+- **New Voice Agent system with customizable speech output**: You can now work with Voice Agents that handle ticket creation, account and venue lookups, and staff queries—all through voice. The system supports multiple agents and lets you choose different text‑to‑speech providers for a more natural experience.
 ## 2026-05-01
 
 - **Operations workspace now separate from ticketing**: We've split the Operations area from the Ticketing view, giving you a dedicated workspace for operational tasks. You’ll now work in a clean, focused interface without ticketing clutter.
