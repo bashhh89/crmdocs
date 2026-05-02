@@ -18,6 +18,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-02
+
+- **Umami sessions now linked to logged‑in users**: You’ll now see analytics sessions tied directly to the user who’s logged in, making it easier to track individual activity in Umami.
+
 ## 2026-05-01
 
 - **New 2026 ANC brand assets applied to website**: You’ll now see the fresh 2026 ANC branding on the site – updated logos, colors, and graphics everywhere, giving the portal a modern, consistent look.
