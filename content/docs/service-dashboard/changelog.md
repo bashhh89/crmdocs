@@ -32,6 +32,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Per‑agent LLM model selection and Mercury auto‑discovery**: You can now assign a specific LLM model to each voice agent, giving you precise control over how each agent responds. The system also automatically discovers Mercury services, so you no longer need to set them up manually.
 - **Drag-and-drop files & URLs for voice KB**: You can now add content to a voice agent’s knowledge base by dragging files or entering a URL. The agent will use that information when answering questions, giving you richer, up‑to‑date responses.
 - **New tool permissions tree for voice agents and UI tweaks**: You can now view and manage tool permissions in a clear tree view, Mercury display bugs are fixed, and the navigation bar is hidden for a cleaner experience.
+- **Voice agent can now perform CRM actions**: You can now use the ElevenLabs voice assistant to create companies, contacts, opportunities, and tasks, add notes, look up accounts or people, and update opportunities—all through simple voice commands.
 ## 2026-05-01
 
 - **Operations workspace now separate from ticketing**: We've split the Operations area from the Ticketing view, giving you a dedicated workspace for operational tasks. You’ll now work in a clean, focused interface without ticketing clutter.
