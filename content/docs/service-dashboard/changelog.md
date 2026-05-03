@@ -27,6 +27,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Report Issue Card adds voice and photo**: You can now dictate your issue and attach a photo directly from the report‑issue card, making it faster and easier to capture details.
 - **Voice dictation added to ticket form**: You can now use your microphone to dictate ticket details directly in the form – just click the dictation button and speak.
 - **Four new voice agents integrated with CRM**: You can now launch any of four specialized ElevenLabs voice agents straight from the CRM dashboard. They’re wired to live CRM data, so you can speak to the system and get real‑time responses without leaving the interface.
+- **Ticket attachments now support video, PDF, audio, and Office docs**: You can now attach videos, PDFs, audio files, and Microsoft Office documents directly to tickets. This expands the range of files you can share with your team without needing external links.
 ## 2026-05-02
 
 - **Umami analytics now link sessions to logged‑in users**: Analytics now associate each Umami session with the currently logged‑in user. This lets you see activity broken down by individual users in your reports.
