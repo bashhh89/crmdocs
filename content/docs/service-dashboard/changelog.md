@@ -19,6 +19,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-03
+
+- **Sidebar retains expand/collapse state across pages**: The sidebar now remembers whether you left it expanded or collapsed as you move between pages, so you won’t have to readjust it each time.
+
 ## 2026-05-02
 
 - **Umami analytics now link sessions to logged‑in users**: Analytics now associate each Umami session with the currently logged‑in user. This lets you see activity broken down by individual users in your reports.
