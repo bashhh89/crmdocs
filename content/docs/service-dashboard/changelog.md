@@ -28,6 +28,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Voice agents now display conversation history**: You can now see a full history of your voice‑agent chats, making it easy to review past exchanges and pick up right where you left off.
 - **Post-game reminders now work correctly**: We've corrected the post-game reminder process to use the proper database type, so reminders are now sent reliably after each game.
+- **Venue staffing toggle added; Slack pings retired**: You can now enable or disable staffing for a venue with a simple toggle, and automatic Slack feed notifications have been turned off.
 ## 2026-05-03
 
 - **Sidebar retains expand/collapse state across pages**: The sidebar now remembers whether you left it expanded or collapsed as you move between pages, so you won’t have to readjust it each time.
