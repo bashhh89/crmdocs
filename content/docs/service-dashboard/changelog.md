@@ -37,6 +37,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Slack ticket previews now show full notes**: Slack ticket previews now include the entire note instead of a 200‑character teaser, so you can read the full message directly in Slack.
 - **Slack ticket preview shows full body and card**: When you preview a ticket in Slack, you’ll now see a scannable card and the full ticket body right in the thread reply. This gives you all the details you need without opening the ticket in the app.
 - **New Walkthrough Form in Operations Workspace**: You can now create and submit walkthroughs using the new form in the Operations Workspace, streamlining data entry for your team.
+- **PDF generation, attachments, and asset seed for walkthroughs**: Now you can generate a PDF version of any walkthrough, attach supporting files, and begin with a pre‑loaded Moynihan asset set, making it easier to share and review walkthroughs.
 ## 2026-05-03
 
 - **Sidebar retains expand/collapse state across pages**: The sidebar now remembers whether you left it expanded or collapsed as you move between pages, so you won’t have to readjust it each time.
