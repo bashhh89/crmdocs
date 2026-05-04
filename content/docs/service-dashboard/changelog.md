@@ -20,6 +20,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-04
+
+- **Delete attachments from tickets directly**: You can now remove an attachment from a ticket by clicking the X on its tile. This delete option is available to managers and to the user who originally uploaded the file.
+- **Leadership‑grade voice agent upgrade**: We've upgraded the voice agents to a leadership‑grade level, delivering clearer and faster interactions. New voice‑powered endpoints are now available for account overviews, SLA risk alerts, and staff task management, letting you tap into the enhanced capabilities across your workflows.
+
 ## 2026-05-03
 
 - **Sidebar retains expand/collapse state across pages**: The sidebar now remembers whether you left it expanded or collapsed as you move between pages, so you won’t have to readjust it each time.
