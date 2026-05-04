@@ -31,6 +31,10 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Venue staffing toggle added; Slack pings retired**: You can now enable or disable staffing for a venue with a simple toggle, and automatic Slack feed notifications have been turned off.
 - **Tickets now display full notes directly**: Now you can see the entire note right in the tickets list without having to click to open it.
 - **New venue aliases, searchable dropdowns, list view, and multi-format export**: You can now assign aliases to venues, making them easier to locate across the system. List views and searchable dropdowns let you find events and tickets faster. Exports are available in multiple formats, so you can pull schedule data in the format you need.
+- **Tickets list now displays full notes inline**: When you view the tickets list, the full note is shown directly in the list, so you no longer need to click through to read it.
+- **Add default‑staffing filter chips on Venues page**: You can now filter venues by default‑staffing using new filter chips on the Venues page, making it easier to find venues that match your staffing preferences.
+- **Ticket notes display reverted to previous behavior**: Ticket notes are now shown as before – only a preview appears in the list and you must click to read the full note. The full note no longer appears inline.
+- **Slack ticket previews now show full notes**: Slack ticket previews now include the entire note instead of a 200‑character teaser, so you can read the full message directly in Slack.
 ## 2026-05-03
 
 - **Sidebar retains expand/collapse state across pages**: The sidebar now remembers whether you left it expanded or collapsed as you move between pages, so you won’t have to readjust it each time.
