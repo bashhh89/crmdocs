@@ -35,6 +35,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add default‑staffing filter chips on Venues page**: You can now filter venues by default‑staffing using new filter chips on the Venues page, making it easier to find venues that match your staffing preferences.
 - **Ticket notes display reverted to previous behavior**: Ticket notes are now shown as before – only a preview appears in the list and you must click to read the full note. The full note no longer appears inline.
 - **Slack ticket previews now show full notes**: Slack ticket previews now include the entire note instead of a 200‑character teaser, so you can read the full message directly in Slack.
+- **Slack ticket preview shows full body and card**: When you preview a ticket in Slack, you’ll now see a scannable card and the full ticket body right in the thread reply. This gives you all the details you need without opening the ticket in the app.
 ## 2026-05-03
 
 - **Sidebar retains expand/collapse state across pages**: The sidebar now remembers whether you left it expanded or collapsed as you move between pages, so you won’t have to readjust it each time.
