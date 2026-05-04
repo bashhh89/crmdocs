@@ -32,6 +32,8 @@ With the right role, the assistant takes action:
 - Create a ticket on a venue with a given title and priority
 - Search staff by role or venue
 - Log a walkthrough or maintenance entry
+- Query, count, create, or update rows in the IoT Operations Workspace
+- Draft or update operational workspace documents
 - Move a design request to client review
 - Pull the canned-response library
 - Generate a quick stats summary
@@ -64,5 +66,6 @@ Takes about 2-5 seconds. Use it on the way to the venue or while standing in fro
 ## See also
 
 - [Tickets](./tickets) — the assistant can create tickets for you
+- [IoT Operations Workspace](./iot-operations-workspace) — the assistant can query and update operational tables
 - [Reports and Dashboards](./reports-and-dashboards) — the assistant pulls the same numbers shown there
 - [Everything shows up in the CRM live](./crm-sync) — anything the assistant creates also lands in the CRM in about a second

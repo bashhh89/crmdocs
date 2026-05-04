@@ -61,21 +61,21 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 ## 2026-05-01
 
 - **Operations workspace now separate from ticketing**: We've split the Operations area from the Ticketing view, giving you a dedicated workspace for operational tasks. You’ll now work in a clean, focused interface without ticketing clutter.
-- **Added documentation for Airtable workspace status format**: I’ve added a clear description of the Airtable workspace status format so you can understand what each status means.
+- **Added documentation for operations workspace status format**: I’ve added a clear description of the operations workspace status format so you can understand what each status means.
 - **New Operations Walkthrough for Issue Flow**: You now have a step‑by‑step walkthrough that guides you through the operations issue flow, making it easier to resolve issues quickly and correctly.
-- **New Airtable‑style Operations Workspace**: We've introduced a brand‑new operations workspace that mimics Airtable's grid layout. You can now view, sort, and edit your operational data in a familiar, spreadsheet‑like interface, making task management faster and more intuitive.
+- **New spreadsheet-style Operations Workspace**: We've introduced a brand-new operations workspace with a familiar grid layout. You can now view, sort, and edit your operational data in a spreadsheet-like interface, making task management faster and more intuitive.
 
-- **Removed legacy field‑ops links and added Airtable‑to‑Baserow migration tool**: We've cleaned up the sidebar by hiding the old field‑ops links, and introduced a new migration utility that lets you transfer data from Airtable to Baserow easily.
-- **Airtable to NocoDB v3 migration tool added**: You can now move your Airtable records straight into NocoDB v3 with a single migration step. This makes transitioning to the new database platform faster and hassle‑free.
+- **Removed legacy field-ops links and added operations migration tool**: We've cleaned up the sidebar by hiding the old field-ops links, and introduced a new migration utility that helps transfer operations data into the new workspace.
+- **Airtable to Operations Workspace migration tool added**: You can now move your Airtable records into the Operations Workspace with a single migration step. This makes transitioning to the new platform faster and hassle-free.
 - **Dark‑mode kanban works and DELETE venues hidden**: The kanban board now displays correctly in dark mode, and any venues prefixed with “DELETE‑” are automatically hidden from your view.
-- **Operations page now loads Twenty‑ops via iframe**: You now see the Twenty‑ops dashboard when you open Operations, replacing the old view. The legacy NocoDB page is backed up but no longer used.
+- **Operations page now loads embedded ops workspace**: You now see the embedded operations dashboard when you open Operations, replacing the old view.
 - **Embed mode hides Twenty navigation chrome**: Add ?embed=1 to the Twenty iframe and the navigation bar disappears, giving you a cleaner embedded view.
-- **Operations view now uses NocoDB for Airtable‑style interface**: The Operations iframe has been switched back to NocoDB, giving you the familiar Airtable/Excel‑like feel the team asked for.
+- **Operations view now uses a spreadsheet-style interface**: The Operations view has been switched back to the familiar grid experience the team asked for.
 - **Updated branding with new 2026 ANC logos and favicons**: We've refreshed the portal with the latest 2026 ANC brand assets, so you’ll now see new logos and favicons across the interface.
-- **Updated iframe domain to ops.ancsports.net**: We've switched the iframe URL to ops.ancsports.net, so you’ll no longer see the old nocodb domain in the interface.
+- **Updated operations workspace domain**: We've switched the embedded workspace to ops.ancsports.net, so the interface now uses the proper ANC operations URL.
 - **Enable seamless iframe SSO with same‑origin proxy**: You can now embed the Operations portal in an iframe and log in without extra steps. The /embed-ops URL now proxies to ops.ancsports.net, keeping the same origin so single sign‑on works smoothly.
 - **Embed Operations via Direct Iframe**: I removed the broken /embed-ops proxy, so your iframe now points straight to ops.ancsports.net and works as expected.
-- **Removed obstructive “Open in new tab” overlay**: The floating “Open in new tab” overlay has been removed, so it no longer blocks the NocoDB Share button. You can now click Share without any interference.
+- **Removed obstructive “Open in new tab” overlay**: The floating “Open in new tab” overlay has been removed, so it no longer blocks workspace actions. You can now click Share without any interference.
 - **Reduced Slack notifications for per-action events**: We've turned off the extra Slack pings that were sent for each action, so you’ll only get the essential notifications now.
 - **Venue sync now shows only sports venues**: We've narrowed the venue sync view to sports venues only, so OOH locations no longer appear in the feed URL list. Your dashboard now reflects only the relevant sports venues.
 - **Venue Sync Status Updated – AI Now Covers All Venues**: The dashboard now shows a refreshed venue sync status, and AI discovery automatically includes every venue. The feed URL has been upgraded, so you’ll see more complete and up‑to‑date venue data.
@@ -83,13 +83,13 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI Feed URL Finder pre‑suggests venue schedule links**: When adding a new feed, the system now shows a suggested schedule URL for each of the 41 sports venues. You simply confirm the suggested link, eliminating the need to search for it manually.
 - **Corrected Feed-Finder Save Endpoint to Use PATCH**: Saving changes in the Feed Finder now works correctly because the system uses the proper PATCH request. You’ll no longer encounter errors when updating feed settings.
 - **Desktop sidebar now collapses into overlay**: The desktop sidebar is now hidden by default and opens as an overlay, giving you more screen space. It works the same way on all screen sizes, so you can focus on your data without the sidebar taking up space.
-- **Bulk-create NocoDB ops users from staff list**: You can now select staff members in the dashboard and generate NocoDB ops user accounts for them all at once, eliminating the need for manual individual creation.
+- **Bulk-create operations workspace users from staff list**: You can now select staff members in the dashboard and generate operations workspace accounts for them all at once, eliminating the need for manual individual creation.
 - **Push‑notification overlay sidebar and edge‑to‑edge iframe pages**: A new push‑style overlay sidebar is now available, and iframe pages now display full‑width without margins, giving you a cleaner, more immersive view.
-- **AI-powered NocoDB CRUD actions now available**: You can now ask the AI assistant in the ANC ops workspace to count, create, delete, list, query, view schema, and update records in your NocoDB tables. This gives you full CRUD control through simple natural‑language commands.
-- **AI UI actions now relay to NocoDB iframe**: You can now trigger AI‑driven UI commands and have them correctly passed to the NocoDB embedded view, so actions like create, update, or delete are reflected instantly within the iframe.
+- **AI-powered operations table actions now available**: You can now ask the AI assistant in the ANC ops workspace to count, create, delete, list, query, view schema, and update records in your operations tables. This gives you full table control through simple natural-language commands.
+- **AI UI actions now relay to the operations workspace**: You can now trigger AI-driven UI commands and have them correctly passed to the embedded operations view, so actions like create, update, or delete are reflected instantly.
 - **AI now routes to ops_* skills in Operations**: The AI assistant in the Operations area now directs requests to the appropriate ops_* skill set, giving you more relevant answers and removing the previous “no vision” fallback.
 - **PDF download now returns correct file format**: PDF files are now served correctly, eliminating download errors. You can retrieve PDFs from the API without encountering type‑related issues.
-- **Export NocoDB documents as streamed PDFs**: You can now download a PDF version of any NocoDB document directly from the system. The new PDF export endpoint streams the file to you instantly, so you get the document in PDF format with a single request.
+- **Export operations workspace documents as streamed PDFs**: You can now download a PDF version of any operations workspace document directly from the system. The new PDF export endpoint streams the file to you instantly, so you get the document in PDF format with a single request.
 - **AI-powered document listing and creation**: You can now ask the AI to pull up a list of your documents and to draft new documents on the fly. This makes retrieving and creating paperwork faster and hands‑free.
 - **Dark-mode bleed-through on tickets fixed**: I fixed the dark‑mode bleed‑through on the tickets page. Now the UI stays clean and readable in dark mode, with no stray colors.
 - **Dark mode surface color corrected to charcoal**: In dark mode the page background now displays a solid charcoal tone instead of the unintended blue hue, giving a cleaner look.
@@ -126,12 +126,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New streamlined login page design**: We've refreshed the login screen with a cleaner layout and larger input fields, making it easier to sign in. You’ll see a more intuitive flow and clearer branding when accessing the system.
 - **Add internal job tags and hours summary**: You can now assign tags to internal jobs and view a consolidated hours summary, giving you clearer insight into internal project time tracking.
 - **Post‑game pings and venue staffing toggle**: You can now receive automatic post‑game notifications and easily enable or disable venue staffing directly from the venue page.
-- **Admin-only NocoDB diagnostic endpoint added**: Admins can now request a NocoDB health report via the diagnostics API. This gives you immediate visibility into NocoDB’s status without leaving the platform.
-- **AI agent can now query NocoDB data**: You can now ask the AI assistant to pull information from NocoDB—list available tables, run queries, or add new rows—directly within your CRM workflow.
-- **Default ahmad-nocodb URL prefilled in Operations**: You’ll now see the default ahmad‑nocodb URL automatically filled in the Operations page, so you can access the service without manually entering it.
-- **Add NocoDB view to Operations page**: You can now open /operations to work with NocoDB, giving you an Airtable‑style interface for managing your data directly within ANC.
+- **Admin-only operations diagnostic endpoint added**: Admins can now request an operations workspace health report via the diagnostics API. This gives you immediate visibility into workspace status without leaving the platform.
+- **AI agent can now query operations data**: You can now ask the AI assistant to pull information from the operations workspace, list available tables, run queries, or add new rows directly within your workflow.
+- **Default operations URL prefilled in Operations**: You’ll now see the default operations URL automatically filled in the Operations page, so you can access the service without manually entering it.
+- **Add workspace view to Operations page**: You can now open /operations to work with the Operations Workspace, giving you a spreadsheet-style interface for managing your data directly within ANC.
 - **Native Operations UI replaces embedded iframe**: You now open the Operations page directly in ANC’s own branded interface, no more embedded iframe. The new UI loads faster and feels smoother, giving you a cleaner experience when managing data.
-- **Switched to Baserow backend for operations**: We've moved our data layer from NocoDB to Baserow, so all table and row actions now run on the new Baserow service. The AI‑powered helpers for creating, listing, and querying tables have been updated, giving you the same functionality under a fully rebrandable, MIT‑licensed platform.
+- **Operations data layer updated**: We've updated the operations data layer, so all table and row actions now run through the current Operations Workspace. The AI-powered helpers for creating, listing, and querying tables have been updated with the same functionality.
 - **Improved dark‑mode calendar contrast**: The calendar view in dark mode now has clearer contrast, so you can read event details without straining your eyes. Dark‑mode users will see a cleaner, more legible schedule.
 ## 2026-04-28
 
