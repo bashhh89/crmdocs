@@ -27,6 +27,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
 - **Walkthrough form matches Airtable auto-detect workflow**: You can now fill out the walkthrough form using the same auto‑detect behavior as the Airtable process. The fields and flow are identical, giving you a consistent experience across the Operations Workspace.
 
+- **Add submitter dropdown to walkthrough form**: You can now pick the submitter from a dropdown when filling out a walkthrough in the Operations Workspace. This one‑tap selection speeds up the submission process and reduces manual entry.
 ## 2026-05-04
 
 - **Delete attachments from tickets directly**: You can now remove an attachment from a ticket by clicking the X on its tile. This delete option is available to managers and to the user who originally uploaded the file.
