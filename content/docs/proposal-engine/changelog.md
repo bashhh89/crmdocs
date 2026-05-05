@@ -24,6 +24,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Closed Won Report Can Be Sent Automatically**: You can now trigger a Closed Won report to be sent directly from the Operations Workspace. The latest closed‑won data will be delivered to your inbox without any manual steps.
 
+- **Closed‑Won reports now sent from CRM mailbox**: Closed‑won report emails are now sent from the CRM mailbox, so they arrive directly in your CRM inbox. This makes it easier to track and manage these reports within the Operations Workspace.
 ## 2026-05-02
 
 - **Umami sessions now linked to logged‑in users**: You’ll now see analytics sessions tied directly to the user who’s logged in, making it easier to track individual activity in Umami.
