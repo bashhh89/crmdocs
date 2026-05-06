@@ -62,6 +62,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Multi‑column sorting and record deep‑link in Operations Workspace**: You can now sort the grid by multiple columns at once, the view updates instantly when data changes, and each record has its own deep‑link for quick access.
 - **Walkthroughs show fallback labels for empty sources**: When a walkthrough has no source records, it now displays fallback labels so you still see meaningful information instead of blank fields.
 - **Resolved infinite loading loop in Operations Workspace tables**: I fixed the issue that caused the Operations Workspace table view to get stuck in an endless refresh. Now the table loads normally and you can view and edit records without the page hanging.
+- **New Morning Command Center Analysis Page**: You can now open the Morning Command Center page to see a concise analysis of the latest Operations Workspace data, including key performance metrics and alerts. This quick‑look view helps you prioritize actions at the start of each day.
+- **Morning Command Center AI Skill Added**: I’ve added a new AI skill that lets you get a concise morning briefing from the Command Center. Just ask the AI for the morning update and you’ll receive the latest status, upcoming tasks, and key metrics in the Operations Workspace.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
