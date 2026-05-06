@@ -73,6 +73,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add submitter dropdown to new Walkthrough form**: When you create a new walkthrough, you can now select the submitter from a dropdown list, simplifying the assignment of the correct person.
 - **Guided Asset Checklist Form Walkthrough**: You can now use a guided walkthrough to complete the asset checklist directly in the Operations Workspace, matching the paper checklist experience. This step‑by‑step form helps ensure all required information is captured efficiently.
 - **New client design report and bug fixes**: You can now run the ‘Designs by Client’ report to see all design requests grouped by client, and the recent fixes ensure that design request updates, hour‑budget entries, and existing reports load correctly without errors.
+- **AI assistant hidden; Ops Workspace navigation added**: We've removed the AI assistant from the interface, added a navigation link to the Operations Workspace, and fixed the voice demo so the one‑line prompt now flips back correctly.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
