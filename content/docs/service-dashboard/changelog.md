@@ -61,6 +61,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Increase per-page record limit to 1,000**: You can now view up to 1,000 records on a single page in the Operations Workspace, up from the previous 200.
 - **Multi‑column sorting and record deep‑link in Operations Workspace**: You can now sort the grid by multiple columns at once, the view updates instantly when data changes, and each record has its own deep‑link for quick access.
 - **Walkthroughs show fallback labels for empty sources**: When a walkthrough has no source records, it now displays fallback labels so you still see meaningful information instead of blank fields.
+- **Resolved infinite loading loop in Operations Workspace tables**: I fixed the issue that caused the Operations Workspace table view to get stuck in an endless refresh. Now the table loads normally and you can view and edit records without the page hanging.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
