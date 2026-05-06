@@ -37,6 +37,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add Ops Tables accordion to sidebar**: You’ll now see an “Ops Tables” accordion in the sidebar, giving you quick access to the Operations Workspace pages directly from the native interface.
 - **RMA and Parts now use native DataGrid view**: You’ll now see RMA and Parts records in a native, spreadsheet‑style grid that’s faster and easier to sort, filter, and edit directly in the Operations Workspace.
 - **Switch to native Airtable‑style DataGrid**: We've updated the Operations Workspace to use a native Airtable‑style DataGrid, giving you a smoother, more responsive grid experience when viewing and editing records.
+- **Assistant chat stays open while navigating**: Your assistant chat will now stay open as you move between pages, preserving the conversation so you don’t lose context.
+- **DataGrid view settings now saved per user**: Your DataGrid layouts, column order, and filters are now remembered for each user. When you return to Inventory, Maintenance, Parts, RMA, or Walkthroughs pages, the grid will appear just as you left it. No more reconfiguring the view each session.
+- **Kanban view with drag-and-drop in DataGrid**: You can now switch the DataGrid to a Kanban view and rearrange cards by dragging them, making it easier to organize and prioritize items directly in the Operations Workspace.
+- **Add Gallery view to Data Grid**: You can now toggle the Data Grid to a Gallery view, which displays records as cards in a grid layout. This visual format makes it quicker to scan and compare items at a glance.
+- **Month‑grid calendar view added to DataGrid**: You can now open a month‑grid calendar directly within the DataGrid, letting you see the whole month at a glance and pick dates easily. This makes scheduling and date navigation faster and more intuitive.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
