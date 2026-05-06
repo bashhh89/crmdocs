@@ -67,6 +67,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add high‑priority flag to design requests**: You can now mark a design request as high priority, which pushes it to the top of your queue for faster handling. The flag can be set directly from the design request page or via the API, giving you quick control over urgent work.
 - **Hours Budgets: Crash Fixed and Unlimited Support Added**: You can now open the Hours Budget view without it crashing, and unlimited support is enabled so you’re no longer limited by budget caps.
 - **Add Final Location and Proofs fields to CG Designs**: You can now view and edit the Final Location and Proofs fields on a CG Design record in the Operations Workspace. These new fields let you capture where the design ends up and attach proof documents directly from the CG Designs page.
+- **Add Designer and Design Contractor roles**: You can now assign the Designer and Design Contractor roles to team members. These roles appear in the login and staff pages, granting the appropriate permissions in the Operations Workspace.
+- **Add comment threads to design pages**: You can now start and view comment threads directly on a design, separate from notes. Use the new comment section to discuss specific design elements with your team.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
