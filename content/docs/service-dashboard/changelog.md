@@ -28,6 +28,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
 - **Enhanced AI demo briefing for Services**: I’ve expanded the AI’s demo briefing so it now delivers a concise summary with key highlights and next steps, helping you quickly grasp service demos and act on them.
 
+- **Group rows and lock view in DataGrid**: You can now group items in the DataGrid to organize data by any column, and lock the view to keep your layout stable while you work. This makes it easier to focus on the information you need without accidental changes.
+- **Saved view tabs added to DataGrid**: You can now switch between saved view tabs in the Operations Workspace grid, just like Airtable. Quickly toggle between your preferred column layouts and filters without re‑configuring each time.
+- **Assistant action activity now visible**: You can now view a history of assistant actions directly in the Operations Workspace. This lets you track what the assistant has done and verify its activity.
+- **Inventory now uses Airtable‑style DataGrid**: You can now view and edit inventory items in a familiar spreadsheet‑like grid, making bulk updates faster and easier.
+- **Native Airtable‑style DataGrid for Walkthroughs**: Walkthroughs now display in a spreadsheet‑like grid that you can scroll smoothly and sort. Click a row to open a detailed drawer where you can view and edit the record without leaving the page.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
