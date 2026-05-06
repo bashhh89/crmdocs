@@ -51,6 +51,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI Ops Skills: Draft Updates, Staffing, Venue Health**: You can now ask the Operations Workspace to automatically update client drafts, get staffing recommendations, and receive venue health reports—all powered by AI. These new demo‑ready skills let you streamline routine tasks and gain insights without leaving the platform.
 - **Live inventory data now displayed**: You can now view up‑to‑date inventory counts directly from the Operations Workspace, so the inventory page always reflects the latest stock levels.
 - **Multi‑select enabled in data tables**: You can now pick multiple options within a single cell of the data grid, matching the behavior of the Operations Workspace. This makes tagging and categorizing items faster and more flexible.
+- **Save and reuse custom DataGrid views**: You can now create and save your own DataGrid view layouts directly from the UI, and they’ll be remembered the next time you log in.
+- **Column header menu for sorting, grouping, hiding, filtering**: You can now manage each column directly from its header. Use the new menu to sort, group, hide, or filter data in the grid, giving you quicker control over what you see in the Operations Workspace.
+- **Delete records and navigate linked records**: You can now delete records directly from the Operations Workspace viewer and click linked records to jump to their details. This makes cleaning up data and exploring relationships faster.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
