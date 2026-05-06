@@ -22,6 +22,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-06
+
+- **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
+- **Enhanced AI demo briefing for Services**: I’ve expanded the AI’s demo briefing so it now delivers a concise summary with key highlights and next steps, helping you quickly grasp service demos and act on them.
+
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
