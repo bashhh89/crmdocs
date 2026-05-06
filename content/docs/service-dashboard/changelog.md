@@ -66,6 +66,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Morning Command Center AI Skill Added**: I’ve added a new AI skill that lets you get a concise morning briefing from the Command Center. Just ask the AI for the morning update and you’ll receive the latest status, upcoming tasks, and key metrics in the Operations Workspace.
 - **Add high‑priority flag to design requests**: You can now mark a design request as high priority, which pushes it to the top of your queue for faster handling. The flag can be set directly from the design request page or via the API, giving you quick control over urgent work.
 - **Hours Budgets: Crash Fixed and Unlimited Support Added**: You can now open the Hours Budget view without it crashing, and unlimited support is enabled so you’re no longer limited by budget caps.
+- **Add Final Location and Proofs fields to CG Designs**: You can now view and edit the Final Location and Proofs fields on a CG Design record in the Operations Workspace. These new fields let you capture where the design ends up and attach proof documents directly from the CG Designs page.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
