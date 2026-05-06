@@ -54,6 +54,10 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Save and reuse custom DataGrid views**: You can now create and save your own DataGrid view layouts directly from the UI, and they’ll be remembered the next time you log in.
 - **Column header menu for sorting, grouping, hiding, filtering**: You can now manage each column directly from its header. Use the new menu to sort, group, hide, or filter data in the grid, giving you quicker control over what you see in the Operations Workspace.
 - **Delete records and navigate linked records**: You can now delete records directly from the Operations Workspace viewer and click linked records to jump to their details. This makes cleaning up data and exploring relationships faster.
+- **Bulk row selection and actions bar added**: You can now select multiple rows at once in the Operations Workspace tables and use the new bulk actions bar to apply actions to all selected items in a single step.
+- **Customizable Columns: Drag, Resize, and Reorder Persistently**: You can now drag column edges to resize them and drag whole columns to reorder them in the grid. The layout you create is saved per user, so your preferred view is retained each time you access the Operations Workspace.
+- **Server‑side filtering and sorting now works in DataGrid**: You can now filter and sort records directly in the Operations Workspace DataGrid, and the changes are processed on the server for faster, more reliable results.
+- **Infinite scroll added to DataGrid**: You can now scroll continuously through records in the Operations Workspace data tables, and more rows will load automatically as you reach the bottom, eliminating the need to click pagination controls.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
