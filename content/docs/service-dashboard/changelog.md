@@ -64,6 +64,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Resolved infinite loading loop in Operations Workspace tables**: I fixed the issue that caused the Operations Workspace table view to get stuck in an endless refresh. Now the table loads normally and you can view and edit records without the page hanging.
 - **New Morning Command Center Analysis Page**: You can now open the Morning Command Center page to see a concise analysis of the latest Operations Workspace data, including key performance metrics and alerts. This quick‑look view helps you prioritize actions at the start of each day.
 - **Morning Command Center AI Skill Added**: I’ve added a new AI skill that lets you get a concise morning briefing from the Command Center. Just ask the AI for the morning update and you’ll receive the latest status, upcoming tasks, and key metrics in the Operations Workspace.
+- **Add high‑priority flag to design requests**: You can now mark a design request as high priority, which pushes it to the top of your queue for faster handling. The flag can be set directly from the design request page or via the API, giving you quick control over urgent work.
+- **Hours Budgets: Crash Fixed and Unlimited Support Added**: You can now open the Hours Budget view without it crashing, and unlimited support is enabled so you’re no longer limited by budget caps.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
