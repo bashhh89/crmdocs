@@ -33,6 +33,10 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Assistant action activity now visible**: You can now view a history of assistant actions directly in the Operations Workspace. This lets you track what the assistant has done and verify its activity.
 - **Inventory now uses Airtable‑style DataGrid**: You can now view and edit inventory items in a familiar spreadsheet‑like grid, making bulk updates faster and easier.
 - **Native Airtable‑style DataGrid for Walkthroughs**: Walkthroughs now display in a spreadsheet‑like grid that you can scroll smoothly and sort. Click a row to open a detailed drawer where you can view and edit the record without leaving the page.
+- **Parts Orders now uses Airtable‑style grid**: The Parts Orders page now uses a native Airtable‑style DataGrid, giving you a spreadsheet‑like view where you can sort, filter, and edit orders directly. This makes managing parts orders faster and more intuitive.
+- **Add Ops Tables accordion to sidebar**: You’ll now see an “Ops Tables” accordion in the sidebar, giving you quick access to the Operations Workspace pages directly from the native interface.
+- **RMA and Parts now use native DataGrid view**: You’ll now see RMA and Parts records in a native, spreadsheet‑style grid that’s faster and easier to sort, filter, and edit directly in the Operations Workspace.
+- **Switch to native Airtable‑style DataGrid**: We've updated the Operations Workspace to use a native Airtable‑style DataGrid, giving you a smoother, more responsive grid experience when viewing and editing records.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
