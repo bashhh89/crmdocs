@@ -58,6 +58,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Customizable Columns: Drag, Resize, and Reorder Persistently**: You can now drag column edges to resize them and drag whole columns to reorder them in the grid. The layout you create is saved per user, so your preferred view is retained each time you access the Operations Workspace.
 - **Server‑side filtering and sorting now works in DataGrid**: You can now filter and sort records directly in the Operations Workspace DataGrid, and the changes are processed on the server for faster, more reliable results.
 - **Infinite scroll added to DataGrid**: You can now scroll continuously through records in the Operations Workspace data tables, and more rows will load automatically as you reach the bottom, eliminating the need to click pagination controls.
+- **Increase per-page record limit to 1,000**: You can now view up to 1,000 records on a single page in the Operations Workspace, up from the previous 200.
+- **Multi‑column sorting and record deep‑link in Operations Workspace**: You can now sort the grid by multiple columns at once, the view updates instantly when data changes, and each record has its own deep‑link for quick access.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
