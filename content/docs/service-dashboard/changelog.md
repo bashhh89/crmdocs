@@ -71,6 +71,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add comment threads to design pages**: You can now start and view comment threads directly on a design, separate from notes. Use the new comment section to discuss specific design elements with your team.
 - **Designer and Design Consultant role link sets locked per spec**: The Designer and Design Consultant roles now have their link sets locked to match Alexis’s specification, ensuring consistent access controls for those users.
 - **Add submitter dropdown to new Walkthrough form**: When you create a new walkthrough, you can now select the submitter from a dropdown list, simplifying the assignment of the correct person.
+- **Guided Asset Checklist Form Walkthrough**: You can now use a guided walkthrough to complete the asset checklist directly in the Operations Workspace, matching the paper checklist experience. This step‑by‑step form helps ensure all required information is captured efficiently.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
