@@ -50,6 +50,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Native Issues and Displays pages added**: You can now open Issues and Displays directly in the app, view and edit them through native pages, and manage everything from the Operations Workspace.
 - **AI Ops Skills: Draft Updates, Staffing, Venue Health**: You can now ask the Operations Workspace to automatically update client drafts, get staffing recommendations, and receive venue health reports—all powered by AI. These new demo‑ready skills let you streamline routine tasks and gain insights without leaving the platform.
 - **Live inventory data now displayed**: You can now view up‑to‑date inventory counts directly from the Operations Workspace, so the inventory page always reflects the latest stock levels.
+- **Multi‑select enabled in data tables**: You can now pick multiple options within a single cell of the data grid, matching the behavior of the Operations Workspace. This makes tagging and categorizing items faster and more flexible.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
