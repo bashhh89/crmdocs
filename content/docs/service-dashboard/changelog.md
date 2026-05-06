@@ -44,6 +44,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Month‑grid calendar view added to DataGrid**: You can now open a month‑grid calendar directly within the DataGrid, letting you see the whole month at a glance and pick dates easily. This makes scheduling and date navigation faster and more intuitive.
 - **Ops Tables pinned and auto‑opened in sidebar**: The Operations Workspace is now pinned to the top of the navigation and opens by default, letting you reach it instantly without extra clicks.
 - **Live data view for Walkthroughs**: You can now see the latest 20K+ records from the Operations Workspace directly within Walkthroughs, ensuring the information displayed is always up‑to‑date.
+- **Native view for all Operations Workspace bases and tables**: You can now open any Operations Workspace base or table directly in the Operations Workspace and see the data rendered natively. No extra steps or external links are needed.
+- **AI Tech Support role access corrected**: Tech support users now have proper access to AI features in the Operations Workspace. The permission issue has been resolved, so they can perform their support tasks without interruption.
+- **New native Display Locations page**: You can now open a dedicated Display Locations page inside the app that shows all locations directly from the Operations Workspace, making it easier to view and manage them.
+- **Native Issues and Displays pages added**: You can now open Issues and Displays directly in the app, view and edit them through native pages, and manage everything from the Operations Workspace.
+- **AI Ops Skills: Draft Updates, Staffing, Venue Health**: You can now ask the Operations Workspace to automatically update client drafts, get staffing recommendations, and receive venue health reports—all powered by AI. These new demo‑ready skills let you streamline routine tasks and gain insights without leaving the platform.
+- **Live inventory data now displayed**: You can now view up‑to‑date inventory counts directly from the Operations Workspace, so the inventory page always reflects the latest stock levels.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
