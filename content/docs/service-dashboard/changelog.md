@@ -60,6 +60,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Infinite scroll added to DataGrid**: You can now scroll continuously through records in the Operations Workspace data tables, and more rows will load automatically as you reach the bottom, eliminating the need to click pagination controls.
 - **Increase per-page record limit to 1,000**: You can now view up to 1,000 records on a single page in the Operations Workspace, up from the previous 200.
 - **Multi‑column sorting and record deep‑link in Operations Workspace**: You can now sort the grid by multiple columns at once, the view updates instantly when data changes, and each record has its own deep‑link for quick access.
+- **Walkthroughs show fallback labels for empty sources**: When a walkthrough has no source records, it now displays fallback labels so you still see meaningful information instead of blank fields.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
