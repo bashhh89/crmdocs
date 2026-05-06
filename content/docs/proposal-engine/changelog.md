@@ -25,6 +25,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Closed‑won email grouped by business unit, added data**: Closed‑won notification emails are now organized by business unit, making it easier to see which teams closed deals. The email now includes the opportunity number, direct links to the CRM record, and FY YTD totals for quick reference.
 
+- **LTV report works for zero‑amount migrated accounts**: The Lifetime Value report no longer returns a 404 error when you view Salesforce‑migrated accounts with an amount of zero. You can now open the report for those accounts without interruption.
 ## 2026-05-05
 
 - **Closed Won Report Can Be Sent Automatically**: You can now trigger a Closed Won report to be sent directly from the Operations Workspace. The latest closed‑won data will be delivered to your inbox without any manual steps.

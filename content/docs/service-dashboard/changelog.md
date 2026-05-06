@@ -69,6 +69,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add Final Location and Proofs fields to CG Designs**: You can now view and edit the Final Location and Proofs fields on a CG Design record in the Operations Workspace. These new fields let you capture where the design ends up and attach proof documents directly from the CG Designs page.
 - **Add Designer and Design Contractor roles**: You can now assign the Designer and Design Contractor roles to team members. These roles appear in the login and staff pages, granting the appropriate permissions in the Operations Workspace.
 - **Add comment threads to design pages**: You can now start and view comment threads directly on a design, separate from notes. Use the new comment section to discuss specific design elements with your team.
+- **Designer and Design Consultant role link sets locked per spec**: The Designer and Design Consultant roles now have their link sets locked to match Alexis’s specification, ensuring consistent access controls for those users.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
