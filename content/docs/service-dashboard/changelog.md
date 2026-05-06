@@ -43,6 +43,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add Gallery view to Data Grid**: You can now toggle the Data Grid to a Gallery view, which displays records as cards in a grid layout. This visual format makes it quicker to scan and compare items at a glance.
 - **Month‑grid calendar view added to DataGrid**: You can now open a month‑grid calendar directly within the DataGrid, letting you see the whole month at a glance and pick dates easily. This makes scheduling and date navigation faster and more intuitive.
 - **Ops Tables pinned and auto‑opened in sidebar**: The Operations Workspace is now pinned to the top of the navigation and opens by default, letting you reach it instantly without extra clicks.
+- **Live data view for Walkthroughs**: You can now see the latest 20K+ records from the Operations Workspace directly within Walkthroughs, ensuring the information displayed is always up‑to‑date.
 ## 2026-05-05
 
 - **Auto‑link locations and open issues in walkthroughs**: Walkthroughs now automatically link to the appropriate location and surface any open issues, keeping them in sync with the Operations Workspace.
