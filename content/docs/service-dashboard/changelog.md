@@ -29,6 +29,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Unassigned flag for staffing events + need‑based ranking**: When you view events, only those that still need staff are marked “unassigned”, and the list is automatically ordered by how urgently they need coverage.
 
 - **Add Service Contract Triage & Real‑Hour Ledger**: You can now triage service contracts straight from the Operations Workspace and view a tracking ledger that records the actual hours worked, removing AI‑based guesses.
+- **Service Log Report loads faster and smoother**: I’ve wrapped the Service Log Report page in Suspense, so it now pre‑renders and appears more quickly, giving you a smoother experience when you view reports.
+- **Stats endpoints now always show live data**: Stats pages in the Operations Workspace will now always display the most up‑to‑date numbers, ensuring you see current information without stale caching.
+- **Public Service Transparency Dashboard Added**: You can now access a public transparency dashboard at /transparency/[token] to see real‑time status and key metrics for any service. This gives you immediate insight into service health without needing internal tools.
 ## 2026-05-06
 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
