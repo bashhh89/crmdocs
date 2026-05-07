@@ -37,6 +37,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Market‑grounded estimator and request timeline added**: You can now view a market‑grounded estimate for your projects and track request timelines directly in the dashboard, giving you clearer insight into expected outcomes and progress.
 - **Transparency Dashboard v1.5: Short URLs, Dark Mode, Live Countdown**: You can now share a concise short URL to the transparency view, toggle dark mode for a more comfortable visual experience, and watch a live countdown timer for upcoming events. These enhancements make monitoring quicker and easier.
 - **Timeline now shows actual hours and hides cancelled rows**: In the Operations Workspace timeline, you’ll now see the actual hours worked on shipped items, and any cancelled rows are automatically hidden, giving you a cleaner view of active work.
+- **Transparency Badges, Coverage Strip, and CO Queue**: You’ll now see transparency badges on each service, a coverage strip that visualizes uptime, and a CO queue indicator in the Operations Workspace. Commit cross‑links are also displayed, making it easier to trace changes. These additions give you clearer insight into system health and activity.
 ## 2026-05-06
 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
