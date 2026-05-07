@@ -41,6 +41,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Transparency Wave 1 segmented views**: You can now see Transparency data in four layouts—Overview, Kanban, List, and Stakeholder—so you can pick the view that works best for your workflow.
 - **New Transparency Dashboard with Visual Enhancements**: The Transparency page now shows a hero story, ▲▼ delta indicators, a burndown chart, a live ticker, per‑platform views, gray‑area highlights, and a print button. These additions give you clearer insight into progress and let you export the view.
 - **Filter & sort bar with AI rationale**: You can now filter and sort transparency records using the new bar, and instantly see the AI’s reasoning behind each recommendation.
+- **Contract summary card with month‑over‑month insights**: You now get a contract summary card that highlights key details and shows month‑over‑month changes, plus a cleaner burndown view. The visual polish makes the Operations Workspace easier to read and navigate.
 ## 2026-05-06
 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
