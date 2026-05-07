@@ -39,6 +39,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Timeline now shows actual hours and hides cancelled rows**: In the Operations Workspace timeline, you’ll now see the actual hours worked on shipped items, and any cancelled rows are automatically hidden, giving you a cleaner view of active work.
 - **Transparency Badges, Coverage Strip, and CO Queue**: You’ll now see transparency badges on each service, a coverage strip that visualizes uptime, and a CO queue indicator in the Operations Workspace. Commit cross‑links are also displayed, making it easier to trace changes. These additions give you clearer insight into system health and activity.
 - **Transparency Wave 1 segmented views**: You can now see Transparency data in four layouts—Overview, Kanban, List, and Stakeholder—so you can pick the view that works best for your workflow.
+- **New Transparency Dashboard with Visual Enhancements**: The Transparency page now shows a hero story, ▲▼ delta indicators, a burndown chart, a live ticker, per‑platform views, gray‑area highlights, and a print button. These additions give you clearer insight into progress and let you export the view.
 ## 2026-05-06
 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
