@@ -34,6 +34,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Public Service Transparency Dashboard Added**: You can now access a public transparency dashboard at /transparency/[token] to see real‑time status and key metrics for any service. This gives you immediate insight into service health without needing internal tools.
 - **New Transparency Dashboard Route Added**: You can now open the Transparency Dashboard directly without a token, giving you immediate access to the latest operational insights.
 - **Fixed API routes for runtime services**: We repaired the API endpoints used by the Operations Workspace, so calls to services now succeed without errors.
+- **Market‑grounded estimator and request timeline added**: You can now view a market‑grounded estimate for your projects and track request timelines directly in the dashboard, giving you clearer insight into expected outcomes and progress.
+- **Transparency Dashboard v1.5: Short URLs, Dark Mode, Live Countdown**: You can now share a concise short URL to the transparency view, toggle dark mode for a more comfortable visual experience, and watch a live countdown timer for upcoming events. These enhancements make monitoring quicker and easier.
 ## 2026-05-06
 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
