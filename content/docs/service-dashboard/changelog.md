@@ -23,6 +23,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-07
+
+- **Unassigned flag for staffing events + need‑based ranking**: When you view events, only those that still need staff are marked “unassigned”, and the list is automatically ordered by how urgently they need coverage.
+
 ## 2026-05-06
 
 - **Enhanced starter prompts for Services Assistant**: The Services Assistant now launches with clearer, more helpful starter prompts. This makes it easier for you to start a conversation and get the right information right away.
