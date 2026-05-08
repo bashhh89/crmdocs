@@ -36,6 +36,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Export M&S inventory as Excel file**: You can now download the M&S inventory from the Operations Workspace as an Excel spreadsheet, simplifying review and sharing of stock data.
 - **Add weekly/monthly Won & Forecast report**: You can now pull a weekly or monthly CRM report that mirrors the '2026 Won & Forecast by Business Unit' dashboard right from the Operations Workspace.
 - **Simplified weekly/monthly CRM report**: You’ll now see only Closed Won deals by business unit and activity from the past seven days in the weekly/monthly report. The Pipeline section and full deal list have been removed for a cleaner, more focused view.
+- **Report now includes bid status WON transitions**: The weekly and monthly CRM reports now capture when a bid moves to WON within the activity window, so you’ll see those conversions reflected in your reports.
 ## 2026-05-06
 
 - **Closed‑won email grouped by business unit, added data**: Closed‑won notification emails are now organized by business unit, making it easier to see which teams closed deals. The email now includes the opportunity number, direct links to the CRM record, and FY YTD totals for quick reference.
