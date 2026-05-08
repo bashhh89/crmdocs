@@ -31,6 +31,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **iCal feed parsing now handles webcal URLs, @ separators, and emoji prefixes**: You can now import iCal feeds that use the webcal:// scheme, contain @ separators, or start with emoji prefixes, and they’ll be processed correctly.
 - **Remove away games from event feed and mute new event Slack alerts**: We've stopped pulling in away games, so only home events appear in your feed. The Slack notification that used to fire for every new event is now silent, reducing noise.
+- **Venue links now open in a new tab**: When you click a venue, it now opens in a new browser tab, matching the ticket behavior, so you can keep your current view while exploring venue details.
 ## 2026-05-07
 
 - **Unassigned flag for staffing events + need‑based ranking**: When you view events, only those that still need staff are marked “unassigned”, and the list is automatically ordered by how urgently they need coverage.
