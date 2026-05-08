@@ -34,6 +34,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Automatic Microsoft sign‑in via login URL**: Add ?microsoft=auto to the login page URL and you’ll be signed in automatically, giving you seamless hub‑driven access.
 - **Auto‑generate monthly Nielsen verification tasks**: Each month the system now automatically creates twenty Nielsen verification tasks for every active sponsor‑league pair and links them to the appropriate verification record. These tasks appear directly in the Operations Workspace, so you no longer need to set them up manually.
 - **Export M&S inventory as Excel file**: You can now download the M&S inventory from the Operations Workspace as an Excel spreadsheet, simplifying review and sharing of stock data.
+- **Add weekly/monthly Won & Forecast report**: You can now pull a weekly or monthly CRM report that mirrors the '2026 Won & Forecast by Business Unit' dashboard right from the Operations Workspace.
 ## 2026-05-06
 
 - **Closed‑won email grouped by business unit, added data**: Closed‑won notification emails are now organized by business unit, making it easier to see which teams closed deals. The email now includes the opportunity number, direct links to the CRM record, and FY YTD totals for quick reference.
