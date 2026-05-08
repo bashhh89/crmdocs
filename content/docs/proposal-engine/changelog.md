@@ -31,6 +31,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **AI Console UI refreshed with new Account 360 hero and cleaner layout**: The AI Console now displays a new Account 360 hero view and removes the unused chip grid, giving you a clearer, less cluttered interface.
 - **Entra SSO login and new Operations Hub**: You can now log in with your Entra (Azure AD) credentials, streamlining access to the system. A brand‑new hub page gives you a central place to view and manage your Operations Workspace.
 - **Entra SSO login and new Operations Hub**: You can now sign in using your Entra credentials, and a brand‑new hub provides a single place to launch the Operations Workspace and view key information.
+- **Automatic Microsoft sign‑in via login URL**: Add ?microsoft=auto to the login page URL and you’ll be signed in automatically, giving you seamless hub‑driven access.
 ## 2026-05-06
 
 - **Closed‑won email grouped by business unit, added data**: Closed‑won notification emails are now organized by business unit, making it easier to see which teams closed deals. The email now includes the opportunity number, direct links to the CRM record, and FY YTD totals for quick reference.
