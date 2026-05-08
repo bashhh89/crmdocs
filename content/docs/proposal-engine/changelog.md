@@ -21,6 +21,12 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-08
+
+- **AI Console now shows revenue metrics**: You can now view revenue details—sale price, total project revenue, deal value, and amount—directly in the AI Console, giving you clearer insight into financial performance.
+- **AI Console with Account 360 and AI Narrative**: You can now open the AI Console to see a complete 360‑degree view of any account and receive AI‑generated narratives. The console also lets you search for companies instantly, giving you faster insights for your CRM tasks.
+
 ## 2026-05-06
 
 - **Closed‑won email grouped by business unit, added data**: Closed‑won notification emails are now organized by business unit, making it easier to see which teams closed deals. The email now includes the opportunity number, direct links to the CRM record, and FY YTD totals for quick reference.
