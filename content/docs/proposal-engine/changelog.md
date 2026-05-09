@@ -22,6 +22,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-09
+
+- **Show Reverted-from-WON Deals in Activity Window**: You’ll now see any deals that were moved back from WON status right in the activity window of your weekly or monthly reports. This makes it easy to track reversals without digging into separate logs.
+
 ## 2026-05-08
 
 - **AI Console now shows revenue metrics**: You can now view revenue details—sale price, total project revenue, deal value, and amount—directly in the AI Console, giving you clearer insight into financial performance.

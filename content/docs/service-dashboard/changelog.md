@@ -30,6 +30,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Post-game report now visible in read‑only view**: You can now see the post‑game report content when opening a workflow in read‑only mode, ensuring the information is available without editing.
 
+- **Kanban board for full change-order lifecycle**: You can now see change orders in a Kanban view that follows them from creation to completion. This gives you a clear, visual way to track progress and move orders through each stage directly in the Service Log.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
