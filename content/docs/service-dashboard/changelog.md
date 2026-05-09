@@ -56,6 +56,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live streaming reasoning with markdown rendering**: You can now watch live streaming reasoning directly in the Operations Workspace, and the results are displayed with full markdown formatting for clearer, richer information.
 - **Service Log now uses branded prompt modal**: When you need to enter information in the Service Log, you’ll see our branded Prompt Modal instead of the browser’s default prompt. This provides a consistent look and clearer instructions, making the workflow smoother.
 - **Native prompts exit kanban; modal now global**: When you confirm actions in the Service Contract view, the native prompt now appears outside the kanban board, so it’s always visible. The modal dialog has also been moved to the suite root, giving a consistent display across the Operations Workspace.
+- **Removed outdated Knowledge, Tasks, and Readiness pages**: The Knowledge, Tasks, and Readiness pages have been removed. You’ll no longer see those sections in the portal, preventing dead links and streamlining navigation.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
