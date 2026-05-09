@@ -28,6 +28,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Show Reverted-from-WON Deals in Activity Window**: You’ll now see any deals that were moved back from WON status right in the activity window of your weekly or monthly reports. This makes it easy to track reversals without digging into separate logs.
 
 - **Top 10 2026 Wins by Revenue added to reports**: The weekly and monthly CRM reports now include a "Top 10 2026 Wins by Revenue" section, so you can instantly see the highest‑earning wins for the year.
+- **Weekly/Monthly Report shows BU summary and recent activity**: The weekly and monthly CRM reports now focus on a concise Business Unit summary and include the last seven days of activity for each Jireh. Users will see a cleaner report with the most relevant recent data.
 ## 2026-05-08
 
 - **AI Console now shows revenue metrics**: You can now view revenue details—sale price, total project revenue, deal value, and amount—directly in the AI Console, giving you clearer insight into financial performance.
