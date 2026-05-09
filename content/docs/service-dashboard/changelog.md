@@ -52,6 +52,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Rename "Proposed Change Orders" to "Explore"**: The navigation now labels the section as "Explore" instead of "Proposed Change Orders," giving you a clearer entry point for starting new change orders.
 - **AI now reads live data from all ANC platforms**: Your AI assistant can now pull live data from every ANC platform, giving you up‑to‑date insights across the board. This provides real‑time information in the Operations Workspace without any manual refresh.
 - **Removed placeholders, refreshed Explore colors, enabled CO PDF download**: Placeholders have been removed, the Explore view now displays the correct color scheme, and you can download CO PDFs directly from the Operations Workspace.
+- **In-app modals and SSO-verified actor tracking**: You’ll now see helpful modals appear directly within the Explore view, and any actions you take are recorded against your verified SSO identity, giving you clearer audit trails.
+- **Live streaming reasoning with markdown rendering**: You can now watch live streaming reasoning directly in the Operations Workspace, and the results are displayed with full markdown formatting for clearer, richer information.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
