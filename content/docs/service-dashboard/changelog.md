@@ -42,6 +42,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live warranty countdown on coverage strip**: You now see a live countdown on the coverage strip that shows exactly how much warranty time remains. This lets you quickly know when a device’s warranty will expire without leaving the page.
 - **New left sidebar navigation on dashboard**: I've added a dedicated left‑hand sidebar to the dashboard, giving you quick access to all main sections. Use the new navigation panel to jump between views without scrolling.
 - **Full-height sidebar and tighter change order count**: The sidebar now stretches to the full height of the screen, so you can see all options without scrolling. The change order count in the Operations Workspace is now tighter, giving you a more accurate tally.
+- **New files now displayed in Service Contract pages**: The inbox and service‑log pages now correctly include the new shell and coverage model data, so you’ll see the updated information without any missing entries.
+- **Unified Service Contract Shell with Three‑Bucket Coverage**: You now get a single, streamlined view for service contracts that groups coverage into three distinct buckets. This makes it easier to see and manage your contract coverage directly in the Operations Workspace.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
