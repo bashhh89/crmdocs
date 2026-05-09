@@ -50,6 +50,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live warranty timers added; change-order layout cleaned up**: You’ll now see live countdowns on warranty periods right in the change‑order view, so you can track remaining coverage at a glance. We also removed the extra Dashboard layout from the change‑order page, giving you a cleaner, more focused interface.
 - **Reasoning Accordion Added with Gray Theme**: You can now expand a new Reasoning accordion on the GLM‑5.1 page to see detailed insights, and the interface has switched from a zinc to a softer gray color scheme. The Ollama scope issue is fixed, so related data displays correctly.
 - **Rename "Proposed Change Orders" to "Explore"**: The navigation now labels the section as "Explore" instead of "Proposed Change Orders," giving you a clearer entry point for starting new change orders.
+- **AI now reads live data from all ANC platforms**: Your AI assistant can now pull live data from every ANC platform, giving you up‑to‑date insights across the board. This provides real‑time information in the Operations Workspace without any manual refresh.
+- **Removed placeholders, refreshed Explore colors, enabled CO PDF download**: Placeholders have been removed, the Explore view now displays the correct color scheme, and you can download CO PDFs directly from the Operations Workspace.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
