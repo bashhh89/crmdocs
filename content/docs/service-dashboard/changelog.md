@@ -40,6 +40,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Warranty now 30 days per delivered project**: The warranty period is now 30 days for each delivered project instead of per individual fix. You’ll receive support for a full month after a project is completed.
 - **Add emoji reactions and DM capture to Slack Inbox**: You can now react to Slack messages with emojis and have direct messages automatically appear in the Inbox tab of the kanban view. This makes it easier to track, prioritize, and respond to Slack communications right from your Operations Workspace.
 - **Live warranty countdown on coverage strip**: You now see a live countdown on the coverage strip that shows exactly how much warranty time remains. This lets you quickly know when a device’s warranty will expire without leaving the page.
+- **New left sidebar navigation on dashboard**: I've added a dedicated left‑hand sidebar to the dashboard, giving you quick access to all main sections. Use the new navigation panel to jump between views without scrolling.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
