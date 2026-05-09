@@ -25,6 +25,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-09
+
+- **Post-game report now visible in read‑only view**: You can now see the post‑game report content when opening a workflow in read‑only mode, ensuring the information is available without editing.
+
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
