@@ -58,6 +58,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Native prompts exit kanban; modal now global**: When you confirm actions in the Service Contract view, the native prompt now appears outside the kanban board, so it’s always visible. The modal dialog has also been moved to the suite root, giving a consistent display across the Operations Workspace.
 - **Removed outdated Knowledge, Tasks, and Readiness pages**: The Knowledge, Tasks, and Readiness pages have been removed. You’ll no longer see those sections in the portal, preventing dead links and streamlining navigation.
 - **File uploads and pricing-aware reasoning added**: You can now attach files when submitting a Scope‑IT request, and the system will factor in ANC‑aware pricing posture while generating recommendations.
+- **Rename “New client” to “New project” in Scope‑IT**: The “New client” button is now labeled “New project,” and the portfolio view has been cleaned up for clearer framing.
+- **Add toggle for ANC vs. Greenfield mode**: You can now switch between ANC and Greenfield modes in the Operations Workspace. The toggle lets you view and manage contracts using the workflow that matches your current business context.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
