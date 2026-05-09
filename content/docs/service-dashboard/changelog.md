@@ -33,6 +33,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Kanban board for full change-order lifecycle**: You can now see change orders in a Kanban view that follows them from creation to completion. This gives you a clear, visual way to track progress and move orders through each stage directly in the Service Log.
 - **Retainer math excludes my own pushes and clarifies warranty**: I’ve updated the retainer calculations so my own pushes no longer count toward the total, and cleaned up the warranty wording. You’ll now see more accurate retainer figures and clearer warranty terms.
 - **Retainer Cap Alerts and Payoneer CTAs on Dashboard**: You’ll now see a clear alert when you’re nearing your retainer cap, plus convenient Payoneer call‑to‑action buttons right on the dashboard, so you can address payment limits and take action without leaving the view.
+- **Sticky navigation and collapsible coverage sections**: In the Operations Workspace, the section navigation stays visible as you scroll, coverage clauses can be expanded or collapsed, and internal rows are automatically hidden from all queries for a cleaner view.
+- **Multi‑project boards and corrected warranty calculations**: You can now view and manage service logs for multiple projects on a single board in the Operations Workspace. Warranty totals have been fixed, so the calculated amounts now reflect the correct values.
+- **Auto‑push rows no longer appear in change‑order pools**: We've removed auto‑push rows from the change‑order pools, so the data you see in the Operations Workspace is now cleaner and only shows manually created entries.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
