@@ -41,6 +41,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add emoji reactions and DM capture to Slack Inbox**: You can now react to Slack messages with emojis and have direct messages automatically appear in the Inbox tab of the kanban view. This makes it easier to track, prioritize, and respond to Slack communications right from your Operations Workspace.
 - **Live warranty countdown on coverage strip**: You now see a live countdown on the coverage strip that shows exactly how much warranty time remains. This lets you quickly know when a device’s warranty will expire without leaving the page.
 - **New left sidebar navigation on dashboard**: I've added a dedicated left‑hand sidebar to the dashboard, giving you quick access to all main sections. Use the new navigation panel to jump between views without scrolling.
+- **Full-height sidebar and tighter change order count**: The sidebar now stretches to the full height of the screen, so you can see all options without scrolling. The change order count in the Operations Workspace is now tighter, giving you a more accurate tally.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
