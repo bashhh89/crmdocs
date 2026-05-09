@@ -48,6 +48,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Proposed COs Catalog with Collapsible Sidebar**: You can now explore the Proposed COs catalog, collapse the sidebar to free up screen space, and enjoy a polished platform breakdown view for clearer insights.
 - **Warranty timers displayed and AI scoping enhanced with web search**: You can now see warranty timers right in the Operations Workspace, and AI scoping will include live web search results for more accurate, up‑to‑date recommendations.
 - **Live warranty timers added; change-order layout cleaned up**: You’ll now see live countdowns on warranty periods right in the change‑order view, so you can track remaining coverage at a glance. We also removed the extra Dashboard layout from the change‑order page, giving you a cleaner, more focused interface.
+- **Reasoning Accordion Added with Gray Theme**: You can now expand a new Reasoning accordion on the GLM‑5.1 page to see detailed insights, and the interface has switched from a zinc to a softer gray color scheme. The Ollama scope issue is fixed, so related data displays correctly.
+- **Rename "Proposed Change Orders" to "Explore"**: The navigation now labels the section as "Explore" instead of "Proposed Change Orders," giving you a clearer entry point for starting new change orders.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
