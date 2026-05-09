@@ -46,6 +46,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Unified Service Contract Shell with Three‑Bucket Coverage**: You now get a single, streamlined view for service contracts that groups coverage into three distinct buckets. This makes it easier to see and manage your contract coverage directly in the Operations Workspace.
 - **Enhanced Proposed COS with AI Scope & Transparent Pricing**: You now see Amazon‑style detail on the Proposed COS page, an AI‑generated scope of work, and clear pricing breakdowns. This gives you a more complete view of the service contract before approval.
 - **New Proposed COs Catalog with Collapsible Sidebar**: You can now explore the Proposed COs catalog, collapse the sidebar to free up screen space, and enjoy a polished platform breakdown view for clearer insights.
+- **Warranty timers displayed and AI scoping enhanced with web search**: You can now see warranty timers right in the Operations Workspace, and AI scoping will include live web search results for more accurate, up‑to‑date recommendations.
+- **Live warranty timers added; change-order layout cleaned up**: You’ll now see live countdowns on warranty periods right in the change‑order view, so you can track remaining coverage at a glance. We also removed the extra Dashboard layout from the change‑order page, giving you a cleaner, more focused interface.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
