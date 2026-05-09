@@ -36,6 +36,10 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Sticky navigation and collapsible coverage sections**: In the Operations Workspace, the section navigation stays visible as you scroll, coverage clauses can be expanded or collapsed, and internal rows are automatically hidden from all queries for a cleaner view.
 - **Multi‑project boards and corrected warranty calculations**: You can now view and manage service logs for multiple projects on a single board in the Operations Workspace. Warranty totals have been fixed, so the calculated amounts now reflect the correct values.
 - **Auto‑push rows no longer appear in change‑order pools**: We've removed auto‑push rows from the change‑order pools, so the data you see in the Operations Workspace is now cleaner and only shows manually created entries.
+- **Morning brief added to Inbox**: You’ll now see a concise morning brief when you open the Inbox, giving you an at‑a‑glance summary of today’s key items.
+- **Warranty now 30 days per delivered project**: The warranty period is now 30 days for each delivered project instead of per individual fix. You’ll receive support for a full month after a project is completed.
+- **Add emoji reactions and DM capture to Slack Inbox**: You can now react to Slack messages with emojis and have direct messages automatically appear in the Inbox tab of the kanban view. This makes it easier to track, prioritize, and respond to Slack communications right from your Operations Workspace.
+- **Live warranty countdown on coverage strip**: You now see a live countdown on the coverage strip that shows exactly how much warranty time remains. This lets you quickly know when a device’s warranty will expire without leaving the page.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
