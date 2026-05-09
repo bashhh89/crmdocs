@@ -54,6 +54,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Removed placeholders, refreshed Explore colors, enabled CO PDF download**: Placeholders have been removed, the Explore view now displays the correct color scheme, and you can download CO PDFs directly from the Operations Workspace.
 - **In-app modals and SSO-verified actor tracking**: You’ll now see helpful modals appear directly within the Explore view, and any actions you take are recorded against your verified SSO identity, giving you clearer audit trails.
 - **Live streaming reasoning with markdown rendering**: You can now watch live streaming reasoning directly in the Operations Workspace, and the results are displayed with full markdown formatting for clearer, richer information.
+- **Service Log now uses branded prompt modal**: When you need to enter information in the Service Log, you’ll see our branded Prompt Modal instead of the browser’s default prompt. This provides a consistent look and clearer instructions, making the workflow smoother.
+- **Native prompts exit kanban; modal now global**: When you confirm actions in the Service Contract view, the native prompt now appears outside the kanban board, so it’s always visible. The modal dialog has also been moved to the suite root, giving a consistent display across the Operations Workspace.
 ## 2026-05-08
 
 - **Microsoft SSO and new Operations Hub**: You can now sign in with your Microsoft credentials, and after logging in you’ll be taken to the new hub that brings together all your Operations Workspace tools in one place.
