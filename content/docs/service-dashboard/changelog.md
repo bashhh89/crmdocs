@@ -26,6 +26,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-10
+
+- **Refined Service Contract explore page copy**: I’ve polished the wording on the Service Contract explore page, making it clearer what you see and can do when reviewing contracts.
+
 ## 2026-05-09
 
 - **Post-game report now visible in read‑only view**: You can now see the post‑game report content when opening a workflow in read‑only mode, ensuring the information is available without editing.
