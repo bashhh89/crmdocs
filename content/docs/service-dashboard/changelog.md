@@ -27,6 +27,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-11
+
+- **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
+
 ## 2026-05-10
 
 - **Refined Service Contract explore page copy**: I’ve polished the wording on the Service Contract explore page, making it clearer what you see and can do when reviewing contracts.
