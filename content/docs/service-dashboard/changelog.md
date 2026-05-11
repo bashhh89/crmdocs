@@ -32,6 +32,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
 
+- **Back navigation respects venue context**: The back button on an event now takes you back to the specific venue you came from, and the event page no longer displays incorrect calendar information caused by AI‑generated imports.
 ## 2026-05-10
 
 - **Refined Service Contract explore page copy**: I’ve polished the wording on the Service Contract explore page, making it clearer what you see and can do when reviewing contracts.
