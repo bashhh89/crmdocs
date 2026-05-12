@@ -43,6 +43,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Bulk actions, Library & AI Insights tabs, per‑row comments**: In the Operations Workspace you can now select multiple expense items and delete them at once. The new Library tab lets you browse and manage your documents, and the AI Insights tab offers smart analysis of your receipts. Each receipt row now includes its own comment wall for quick notes and collaboration.
 - **Branded confirmation dialogs for expenses**: You’ll now see a branded ConfirmModal and toast notification when confirming or canceling expense actions, replacing the old browser pop‑up dialogs.
 - **AI Advisor page linked to Operations Workspace**: You can now open the AI Advisor page and receive instant guidance powered by the Operations Workspace. The page is fully connected, so consultants get real‑time AI assistance directly within the app.
+- **Plan‑Mode Prompt and Audit‑Recipe Launcher Added**: You now get an interactive prompt when entering plan mode, guiding you through the next steps. Additionally, you can launch audit recipes directly from the consultant view, streamlining your workflow.
+- **Embedded Operations Workspace with Live Context Sync**: You can now open the full Operations Workspace right inside the consultant view, and any changes you make in ANC are synced instantly, keeping everything up‑to‑date without leaving the interface.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
