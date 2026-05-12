@@ -45,6 +45,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **AI Advisor page linked to Operations Workspace**: You can now open the AI Advisor page and receive instant guidance powered by the Operations Workspace. The page is fully connected, so consultants get real‑time AI assistance directly within the app.
 - **Plan‑Mode Prompt and Audit‑Recipe Launcher Added**: You now get an interactive prompt when entering plan mode, guiding you through the next steps. Additionally, you can launch audit recipes directly from the consultant view, streamlining your workflow.
 - **Embedded Operations Workspace with Live Context Sync**: You can now open the full Operations Workspace right inside the consultant view, and any changes you make in ANC are synced instantly, keeping everything up‑to‑date without leaving the interface.
+- **Context bundles now reference Operations Workspace correctly**: Context bundles now pull data from the Operations Workspace instead of unrelated book information. Your consultant views will show the correct operational details.
+- **Live ANC context now appears in Operations Workspace prompts**: The Operations Workspace now automatically includes the latest ANC context in its system prompts, ensuring consultants always see current information without manual updates.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
