@@ -40,6 +40,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Tabbed Expenses hub with search, filter, sort, and theme toggle**: You now have a tabbed hub in the Expenses section, letting you switch between views instantly. Use the new search, filter, and sort controls to find the exact records you need, and your selections will stay saved. A theme toggle is also available on the Transparency page for a personalized look.
 - **Expense amounts display correctly and KPIs respect active range**: Expense amounts are now returned as proper numbers, so totals and reports show the correct values. KPI metrics now follow the active date range, giving you accurate performance data.
 - **Processing overlay, date-range filter, and drop guard added**: When you work with expenses, a processing overlay now appears to show progress, and you can filter records by selecting a date range. The new drop guard prevents accidental removal of items.
+- **Bulk actions, Library & AI Insights tabs, per‑row comments**: In the Operations Workspace you can now select multiple expense items and delete them at once. The new Library tab lets you browse and manage your documents, and the AI Insights tab offers smart analysis of your receipts. Each receipt row now includes its own comment wall for quick notes and collaboration.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
