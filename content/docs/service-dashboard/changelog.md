@@ -42,6 +42,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Processing overlay, date-range filter, and drop guard added**: When you work with expenses, a processing overlay now appears to show progress, and you can filter records by selecting a date range. The new drop guard prevents accidental removal of items.
 - **Bulk actions, Library & AI Insights tabs, per‑row comments**: In the Operations Workspace you can now select multiple expense items and delete them at once. The new Library tab lets you browse and manage your documents, and the AI Insights tab offers smart analysis of your receipts. Each receipt row now includes its own comment wall for quick notes and collaboration.
 - **Branded confirmation dialogs for expenses**: You’ll now see a branded ConfirmModal and toast notification when confirming or canceling expense actions, replacing the old browser pop‑up dialogs.
+- **AI Advisor page linked to Operations Workspace**: You can now open the AI Advisor page and receive instant guidance powered by the Operations Workspace. The page is fully connected, so consultants get real‑time AI assistance directly within the app.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
