@@ -38,6 +38,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Expenses page with manual entry and edit/delete**: You can now access a dedicated Expenses page from the navigation. From there you can manually add expense records and edit or delete existing entries as needed.
 - **Expenses moved under Service Contracts in navigation**: You’ll now find the Expenses page inside the Service Contracts section, and it’s added to the main navigation for quicker access.
 - **Tabbed Expenses hub with search, filter, sort, and theme toggle**: You now have a tabbed hub in the Expenses section, letting you switch between views instantly. Use the new search, filter, and sort controls to find the exact records you need, and your selections will stay saved. A theme toggle is also available on the Transparency page for a personalized look.
+- **Expense amounts display correctly and KPIs respect active range**: Expense amounts are now returned as proper numbers, so totals and reports show the correct values. KPI metrics now follow the active date range, giving you accurate performance data.
+- **Processing overlay, date-range filter, and drop guard added**: When you work with expenses, a processing overlay now appears to show progress, and you can filter records by selecting a date range. The new drop guard prevents accidental removal of items.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
