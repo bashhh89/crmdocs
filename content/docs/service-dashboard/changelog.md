@@ -36,6 +36,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New receipt drop‑zone in Transparency**: You can now drag‑and‑drop receipts directly onto the Transparency page, storing them instantly in the receipt vault. Uploaded receipts are immediately visible for review and audit within the Operations Workspace.
 - **Link Operational Expenses in Manage Panel**: You now see a link to Operational expenses in the Manage panel, letting you jump straight to the Operations Workspace to review costs.
 - **New Expenses page with manual entry and edit/delete**: You can now access a dedicated Expenses page from the navigation. From there you can manually add expense records and edit or delete existing entries as needed.
+- **Expenses moved under Service Contracts in navigation**: You’ll now find the Expenses page inside the Service Contracts section, and it’s added to the main navigation for quicker access.
+- **Tabbed Expenses hub with search, filter, sort, and theme toggle**: You now have a tabbed hub in the Expenses section, letting you switch between views instantly. Use the new search, filter, and sort controls to find the exact records you need, and your selections will stay saved. A theme toggle is also available on the Transparency page for a personalized look.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
