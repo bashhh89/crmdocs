@@ -33,6 +33,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
 
+- **New receipt drop‑zone in Transparency**: You can now drag‑and‑drop receipts directly onto the Transparency page, storing them instantly in the receipt vault. Uploaded receipts are immediately visible for review and audit within the Operations Workspace.
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
