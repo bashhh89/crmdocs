@@ -28,6 +28,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-12
+
+- **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
+
 ## 2026-05-11
 
 - **Microsoft SSO enabled by default for login**: Microsoft Single Sign‑On is now turned on by default, so you’ll be taken straight to your Microsoft credentials when accessing the Operations Workspace.
