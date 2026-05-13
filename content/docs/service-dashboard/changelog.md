@@ -39,6 +39,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Slack alerts now @mention assigned staff**: When a reminder fires, the Slack notification now automatically @mentions the staff member assigned to the task, so they see the alert right away.
 - **Tabbed Proposal Catalog Added Above Explore**: Now you can see a tabbed proposal catalog right above the Explore experience, letting you quickly browse and select proposals without leaving the page.
 - **Advisor errors displayed and live embed used**: You’ll now see clear error messages from the Advisor when something goes wrong, and the embed now points to the live AnythingLLM version, ensuring up‑to‑date responses.
+- **Polished panel appearance for smoother navigation**: I've refined the panel layout so it looks cleaner and is easier to navigate in the Operations Workspace, helping you find the information you need more quickly.
+- **New Input Panel Added to Operations Workspace**: You can now use the Input Panel to enter data directly in the Operations Workspace, streamlining your workflow.
+- **New UI chip component added**: I added a new chip element to the interface – you can now select and view compact tags directly, making it easier to work with grouped information.
+- **Interactive Plan Builder with Hour Slider**: You can now fine‑tune your plan using a new hour slider in the Plan Builder, and as you set the hours the system will automatically unlock the corresponding perks.
+- **Service contract proposals are now client‑safe**: When you open or submit a service contract proposal, the system now filters the content to ensure only client‑approved information is shown or sent. This protects client data and prevents unsafe details from appearing in the proposal view.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
