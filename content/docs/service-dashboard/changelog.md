@@ -53,6 +53,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Smart auto‑refresh for Transparency page**: The Transparency page now refreshes automatically using a smart auto‑refresh instead of a hard reload. Your view stays stable and you won’t lose context when data updates.
 - **Dashboard now includes Request Intelligence component**: The dashboard now shows the Request Intelligence component, giving you immediate visibility into request insights within the Operations Workspace.
 - **Added confirmation inbox and bucket-aware meter**: You’ll now see a Confirmation Inbox in the Operations Workspace, letting you review and acknowledge transparency events. Meter readings are now bucket‑aware, giving you more accurate usage data. The estimator now produces deterministic results, so predictions are consistent each time.
+- **Inbox actions now correctly update meter display**: When you perform actions in the inbox, the meter refreshes correctly, so the values you see stay accurate. No more unexpected meter flickers after inbox interactions.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
