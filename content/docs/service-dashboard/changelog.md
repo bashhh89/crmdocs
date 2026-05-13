@@ -56,6 +56,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Inbox actions now correctly update meter display**: When you perform actions in the inbox, the meter refreshes correctly, so the values you see stay accurate. No more unexpected meter flickers after inbox interactions.
 - **Transparency view refresh timing improved**: The Transparency screen now refreshes on a consistent 60‑second interval, keeping the view focused on the latest data. Typing pauses are now handled more smoothly, so you’ll see updates without unexpected jumps.
 - **Corrected scope‑it cost calculations**: We fixed the scope‑it calculations so bundle bias, refinement floor, source stripping, and comparables are now applied correctly. Users will see more accurate cost projections in the Operations Workspace.
+- **PDF asset matrix now shows displays and statuses**: The PDF asset matrix now correctly renders both display names and their current statuses, so you can see each asset’s state at a glance.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
