@@ -50,6 +50,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Log IDs now use date-based YY-MM-DD format**: Log entries now display IDs in a YY‑MM‑DD date format, so you can quickly spot the day a log was created.
 - **Full Walkthroughs parity with Operations Workspace**: You can now view and edit walkthrough checklists exactly as they appear in the Operations Workspace. All existing walkthroughs (N1, N7, N8, N9) are fully supported, and new walkthroughs can be created with the same fields and layout.
 - **Ticket, event, and design issues resolved**: Ticket comments now load correctly and time entries show accurate hours. Event pages reflect the updated design without layout glitches, and related actions work smoothly.
+- **Smart auto‑refresh for Transparency page**: The Transparency page now refreshes automatically using a smart auto‑refresh instead of a hard reload. Your view stays stable and you won’t lose context when data updates.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
