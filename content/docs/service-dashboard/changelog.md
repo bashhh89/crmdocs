@@ -47,6 +47,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Service contract navigation restored and public data cleaned**: The Service Contract section is back in the navigation, so you can now find and open contracts again. Public-facing data has been cleaned up, removing any unintended details from what’s displayed.
 - **Hero section refreshed for clearer presentation**: I've refreshed the hero area on the Service Contract page so it looks cleaner and highlights the important details more clearly.
 - **New Nick parity bundle walkthrough**: We've added a new walkthrough for the Nick parity bundle, so you can step through its setup and view its history right within the Operations Workspace.
+- **Log IDs now use date-based YY-MM-DD format**: Log entries now display IDs in a YY‑MM‑DD date format, so you can quickly spot the day a log was created.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
