@@ -44,6 +44,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New UI chip component added**: I added a new chip element to the interface – you can now select and view compact tags directly, making it easier to work with grouped information.
 - **Interactive Plan Builder with Hour Slider**: You can now fine‑tune your plan using a new hour slider in the Plan Builder, and as you set the hours the system will automatically unlock the corresponding perks.
 - **Service contract proposals are now client‑safe**: When you open or submit a service contract proposal, the system now filters the content to ensure only client‑approved information is shown or sent. This protects client data and prevents unsafe details from appearing in the proposal view.
+- **Service contract navigation restored and public data cleaned**: The Service Contract section is back in the navigation, so you can now find and open contracts again. Public-facing data has been cleaned up, removing any unintended details from what’s displayed.
+- **Hero section refreshed for clearer presentation**: I've refreshed the hero area on the Service Contract page so it looks cleaner and highlights the important details more clearly.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
