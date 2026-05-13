@@ -29,6 +29,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **CMS Pricing Picker, Admin, and Banner Enabled**: The CMS Pricing picker, admin controls, and banner are now live. You can now select pricing options directly in the CMS, manage pricing settings, and see the new banner indicating pricing status.
 - **CMS Pricing Module now available via feature flag**: Operators can now configure control‑system pricing directly in the CMS. The new pricing module is gated behind the FEATURES.CMS_PRICING flag, so it can be enabled when ready. This gives you more precise cost control without leaving the Operations Workspace.
 
+- **Strategic Extras option now gated behind feature flag**: Option 3 – Strategic Extras – is hidden in the CMS picker unless the CMS Pricing Strategic feature is enabled. This keeps the picker tidy for users who don’t have that capability turned on.
 ## 2026-05-09
 
 - **Show Reverted-from-WON Deals in Activity Window**: You’ll now see any deals that were moved back from WON status right in the activity window of your weekly or monthly reports. This makes it easy to track reversals without digging into separate logs.
