@@ -29,6 +29,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-13
+
+- **Public dashboard renderer and token API for AnythingLLM**: You can now share dashboards publicly without logging in. A new token API lets the AnythingLLM agent skill securely access data from your Operations Workspace.
+
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
