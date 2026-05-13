@@ -37,6 +37,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Roadmap view with goblin breakdowns per CO**: You can now open the Roadmap view in Explore and see a detailed goblin breakdown for each CO, giving you clearer insight into upcoming work and timelines.
 - **Pivot reports now use ANC revenue and own vendors**: We've updated the consultant pivot recipes so they now reflect ANC revenue and our own vendors, ensuring your reports show the correct figures.
 - **Slack alerts now @mention assigned staff**: When a reminder fires, the Slack notification now automatically @mentions the staff member assigned to the task, so they see the alert right away.
+- **Tabbed Proposal Catalog Added Above Explore**: Now you can see a tabbed proposal catalog right above the Explore experience, letting you quickly browse and select proposals without leaving the page.
+- **Advisor errors displayed and live embed used**: You’ll now see clear error messages from the Advisor when something goes wrong, and the embed now points to the live AnythingLLM version, ensuring up‑to‑date responses.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
