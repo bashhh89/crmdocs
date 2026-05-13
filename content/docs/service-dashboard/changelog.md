@@ -34,6 +34,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Public dashboard renderer and token API for AnythingLLM**: You can now share dashboards publicly without logging in. A new token API lets the AnythingLLM agent skill securely access data from your Operations Workspace.
 
+- **Roadmap view with goblin breakdowns per CO**: You can now open the Roadmap view in Explore and see a detailed goblin breakdown for each CO, giving you clearer insight into upcoming work and timelines.
+- **Pivot reports now use ANC revenue and own vendors**: We've updated the consultant pivot recipes so they now reflect ANC revenue and our own vendors, ensuring your reports show the correct figures.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
