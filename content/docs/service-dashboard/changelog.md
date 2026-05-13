@@ -51,6 +51,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Full Walkthroughs parity with Operations Workspace**: You can now view and edit walkthrough checklists exactly as they appear in the Operations Workspace. All existing walkthroughs (N1, N7, N8, N9) are fully supported, and new walkthroughs can be created with the same fields and layout.
 - **Ticket, event, and design issues resolved**: Ticket comments now load correctly and time entries show accurate hours. Event pages reflect the updated design without layout glitches, and related actions work smoothly.
 - **Smart auto‑refresh for Transparency page**: The Transparency page now refreshes automatically using a smart auto‑refresh instead of a hard reload. Your view stays stable and you won’t lose context when data updates.
+- **Dashboard now includes Request Intelligence component**: The dashboard now shows the Request Intelligence component, giving you immediate visibility into request insights within the Operations Workspace.
+- **Added confirmation inbox and bucket-aware meter**: You’ll now see a Confirmation Inbox in the Operations Workspace, letting you review and acknowledge transparency events. Meter readings are now bucket‑aware, giving you more accurate usage data. The estimator now produces deterministic results, so predictions are consistent each time.
 ## 2026-05-12
 
 - **Reject off-season and junk-title rows on import**: When you import events, any rows that fall outside the current season or contain invalid titles are now automatically rejected, keeping the Operations Workspace free of unwanted data.
