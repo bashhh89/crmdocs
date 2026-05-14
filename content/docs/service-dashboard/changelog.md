@@ -37,6 +37,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Enhanced transparency with larger hero tiles and collapsed inbox**: You’ll now see key numbers up front, larger hero tiles for quicker insight, and the admin inbox is collapsed by default to give you more screen space.
 - **Admins can fully manage approved ledger rows**: Admins now have full create, read, update, and delete capabilities for approved ledger rows in the Operations Workspace. You can add new rows, edit existing entries, or remove rows entirely, giving you complete control over approved data.
+- **Custom Asks promoted to hero CTA**: Custom Asks now appear as a prominent hero call‑to‑action instead of being hidden in the last tab, making them easier to see and use.
+- **Removed duplicate theme toggle from page header**: I removed the extra theme toggle from the page header; you’ll now find the switch only in the sidebar, making the layout cleaner.
+- **Multi‑client tenant management added**: You can now create and manage multiple client tenants directly in the Operations Workspace. An admin manager UI lets you assign roles and control visibility, giving you transparent, scoped access to each tenant’s data.
 ## 2026-05-13
 
 - **Public dashboard renderer and token API for AnythingLLM**: You can now share dashboards publicly without logging in. A new token API lets the AnythingLLM agent skill securely access data from your Operations Workspace.
