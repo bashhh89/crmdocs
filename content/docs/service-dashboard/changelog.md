@@ -30,6 +30,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-14
+
+- **Gate Admin UI added; approve action now works**: You can now manage gates from a new admin screen, and approving a request correctly adds the item, fixing the previous issue.
+
 ## 2026-05-13
 
 - **Public dashboard renderer and token API for AnythingLLM**: You can now share dashboards publicly without logging in. A new token API lets the AnythingLLM agent skill securely access data from your Operations Workspace.
