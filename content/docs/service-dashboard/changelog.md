@@ -36,6 +36,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Gate Admin UI added; approve action now works**: You can now manage gates from a new admin screen, and approving a request correctly adds the item, fixing the previous issue.
 
 - **Enhanced transparency with larger hero tiles and collapsed inbox**: You’ll now see key numbers up front, larger hero tiles for quicker insight, and the admin inbox is collapsed by default to give you more screen space.
+- **Admins can fully manage approved ledger rows**: Admins now have full create, read, update, and delete capabilities for approved ledger rows in the Operations Workspace. You can add new rows, edit existing entries, or remove rows entirely, giving you complete control over approved data.
 ## 2026-05-13
 
 - **Public dashboard renderer and token API for AnythingLLM**: You can now share dashboards publicly without logging in. A new token API lets the AnythingLLM agent skill securely access data from your Operations Workspace.
