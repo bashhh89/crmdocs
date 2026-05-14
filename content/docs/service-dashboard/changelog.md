@@ -40,6 +40,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Custom Asks promoted to hero CTA**: Custom Asks now appear as a prominent hero call‑to‑action instead of being hidden in the last tab, making them easier to see and use.
 - **Removed duplicate theme toggle from page header**: I removed the extra theme toggle from the page header; you’ll now find the switch only in the sidebar, making the layout cleaner.
 - **Multi‑client tenant management added**: You can now create and manage multiple client tenants directly in the Operations Workspace. An admin manager UI lets you assign roles and control visibility, giving you transparent, scoped access to each tenant’s data.
+- **Per‑page maintenance lock for tenants**: Admins can now lock maintenance mode for individual pages, giving users a clear notice when a page is under maintenance.
 ## 2026-05-13
 
 - **Public dashboard renderer and token API for AnythingLLM**: You can now share dashboards publicly without logging in. A new token API lets the AnythingLLM agent skill securely access data from your Operations Workspace.
