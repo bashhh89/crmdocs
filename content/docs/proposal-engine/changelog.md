@@ -30,6 +30,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Rename Short Form Agreement & add Change Order**: The Operations Workspace now lists the Short Form Agreement under its new name, and a new Change Order document type is available. You can create, edit, and share these documents just like any other proposal.
 
 - **Add Change Order # to header and Description of Work table**: You’ll now see the Change Order number displayed in the header and a dedicated Description of Work table in the Operations Workspace, making it easier to track order details.
+- **Correct PDF filenames and report intro for Change Orders**: When you generate a Change Order PDF, the file now uses the proper naming convention and the report’s introductory section matches the standard layout, making the document easier to locate and read.
 ## 2026-05-13
 
 - **CMS Pricing Picker, Admin, and Banner Enabled**: The CMS Pricing picker, admin controls, and banner are now live. You can now select pricing options directly in the CMS, manage pricing settings, and see the new banner indicating pricing status.
