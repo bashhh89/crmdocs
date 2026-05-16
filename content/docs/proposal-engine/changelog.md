@@ -25,6 +25,12 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-16
+
+- **M&S and CMS pricing flags re-enabled**: We've turned the M&S and CMS pricing flags back on, so your quotes and invoices will now reflect the correct rates for those services.
+- **Pricing disabled until payment confirmed**: Pricing for M&S and CMS will no longer appear until the customer's payment is confirmed. This prevents premature charges and ensures only paid orders show pricing.
+
 ## 2026-05-15
 
 - **Rename Short Form Agreement & add Change Order**: The Operations Workspace now lists the Short Form Agreement under its new name, and a new Change Order document type is available. You can create, edit, and share these documents just like any other proposal.
