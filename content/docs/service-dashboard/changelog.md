@@ -31,6 +31,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-17
+
+- **Enable Twenty bridge integration via service middleware**: You can now connect the Twenty bridge through the service middleware, allowing its data to flow directly into the Operations Workspace.
+- **Add Twenty Field Ops Bridge**: You can now route field‑operations data through the new Twenty bridge, enabling seamless integration with the Operations Workspace.
+
 ## 2026-05-14
 
 - **Gate Admin UI added; approve action now works**: You can now manage gates from a new admin screen, and approving a request correctly adds the item, fixing the previous issue.

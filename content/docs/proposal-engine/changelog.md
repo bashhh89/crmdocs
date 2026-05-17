@@ -31,6 +31,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **New API to analyze attachments**: You can now submit an attachment to the Operations Workspace and receive a detailed analysis in JSON format. This makes it easier to extract key data without manual review.
 
+- **PDF download and estimate line sync added**: You can now pull PDFs directly from rag2 and have the estimate lines written back into the Operations Workspace automatically. This keeps your estimates up‑to‑date without any manual copying.
 ## 2026-05-16
 
 - **M&S and CMS pricing flags re-enabled**: We've turned the M&S and CMS pricing flags back on, so your quotes and invoices will now reflect the correct rates for those services.
