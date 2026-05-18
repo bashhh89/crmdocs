@@ -33,6 +33,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Contract modes displayed in header dropdown**: The header dropdown now shows all contract modes, letting you view and select the appropriate mode directly from the main menu. This resolves the previous issue where those options were hidden.
 
 - **Pending scope controls now hidden**: The pending scope controls are no longer displayed, giving you a cleaner interface and preventing accidental changes.
+- **Responsibility Matrix controls are now visible**: You can now see and use the Responsibility Matrix controls in the Operations Workspace, letting you adjust responsibility settings directly.
 ## 2026-05-17
 
 - **New API to analyze attachments**: You can now submit an attachment to the Operations Workspace and receive a detailed analysis in JSON format. This makes it easier to extract key data without manual review.
