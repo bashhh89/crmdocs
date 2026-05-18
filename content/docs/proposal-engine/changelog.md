@@ -38,6 +38,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Interactive Catalog App Now Available**: The Operations Workspace now includes an interactive catalog where you can view, filter, and explore items in real time. This makes finding the right equipment faster and more intuitive.
 - **Premium AI‑powered catalog experience**: The catalog has been rebuilt with AI reasoning and data‑driven evidence, delivering richer product insights and a smoother, premium UI. You’ll now browse items with clearer information and a more responsive design, making it easier to find exactly what you need.
 - **Catalog rebuilt as a standalone consulting-grade page**: The catalog is now a dedicated page built for consulting workflows, giving you a cleaner, focused view of products. You can browse and manage items directly from this page without navigating through other sections, making product lookup faster and easier.
+- **Strategy Narrative Rebuilt with Persona Lanes & AI Scores**: You can now explore strategy narratives organized into persona journey lanes, see AI‑generated scores for each item, and add reactions or comments. The view supports up to 30 items across three linked systems, making it easier to track and collaborate on strategies.
 ## 2026-05-17
 
 - **New API to analyze attachments**: You can now submit an attachment to the Operations Workspace and receive a detailed analysis in JSON format. This makes it easier to extract key data without manual review.
