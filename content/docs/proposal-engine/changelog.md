@@ -34,6 +34,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Pending scope controls now hidden**: The pending scope controls are no longer displayed, giving you a cleaner interface and preventing accidental changes.
 - **Responsibility Matrix controls are now visible**: You can now see and use the Responsibility Matrix controls in the Operations Workspace, letting you adjust responsibility settings directly.
+- **Updated Responsibility Matrix to 2026 Version**: The Responsibility Matrix in the Operations Workspace is now the finalized 2026 version. You’ll see the latest role assignments and duties reflected immediately.
 ## 2026-05-17
 
 - **New API to analyze attachments**: You can now submit an attachment to the Operations Workspace and receive a detailed analysis in JSON format. This makes it easier to extract key data without manual review.
