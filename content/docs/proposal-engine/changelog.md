@@ -36,6 +36,8 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Responsibility Matrix controls are now visible**: You can now see and use the Responsibility Matrix controls in the Operations Workspace, letting you adjust responsibility settings directly.
 - **Updated Responsibility Matrix to 2026 Version**: The Responsibility Matrix in the Operations Workspace is now the finalized 2026 version. You’ll see the latest role assignments and duties reflected immediately.
 - **Interactive Catalog App Now Available**: The Operations Workspace now includes an interactive catalog where you can view, filter, and explore items in real time. This makes finding the right equipment faster and more intuitive.
+- **Premium AI‑powered catalog experience**: The catalog has been rebuilt with AI reasoning and data‑driven evidence, delivering richer product insights and a smoother, premium UI. You’ll now browse items with clearer information and a more responsive design, making it easier to find exactly what you need.
+- **Catalog rebuilt as a standalone consulting-grade page**: The catalog is now a dedicated page built for consulting workflows, giving you a cleaner, focused view of products. You can browse and manage items directly from this page without navigating through other sections, making product lookup faster and easier.
 ## 2026-05-17
 
 - **New API to analyze attachments**: You can now submit an attachment to the Operations Workspace and receive a detailed analysis in JSON format. This makes it easier to extract key data without manual review.
