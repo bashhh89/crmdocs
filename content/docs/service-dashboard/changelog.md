@@ -41,6 +41,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Award points now safe from duplicate awards**: You can now award points through the gamification system without worrying about duplicate awards if the action is triggered more than once. The process is now idempotent, ensuring each user receives points only once per action.
 - **Gamification Phase 3 hooks added to all action flows**: We've wired Phase 3 gamification events into every workflow in the Operations Workspace—checklists, design requests, parts orders, RMA, tickets, walkthroughs, and custom workflows—so your actions now automatically trigger points and badge awards.
 - **Slack celebrations and automated gamification snapshots**: You’ll now receive Slack celebrations for Phase 5 milestones, and the system automatically records weekly and monthly gamification snapshots, keeping your Operations Workspace up‑to‑date.
+- **Future timestamps now displayed correctly in activity feed**: I fixed the profile activity feed so future timestamps no longer break the view. Now you’ll see events in the correct order and timing, even if a timestamp is set ahead of the current time.
+- **Profile page now correctly displays data**: The profile page now handles the API response properly, so staff members can view their gamification information without errors.
+- **New Profile Pages and Clickable Leaderboard Names**: You can now view a personal profile page for each staff member, showing their gamification stats. Leaderboard names are now clickable, taking you straight to that person’s profile. This makes tracking performance and engaging with the game easier.
 ## 2026-05-17
 
 - **Enable Twenty bridge integration via service middleware**: You can now connect the Twenty bridge through the service middleware, allowing its data to flow directly into the Operations Workspace.
