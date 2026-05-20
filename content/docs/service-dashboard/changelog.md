@@ -32,6 +32,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-20
+
+- **Gamification Engine with Leaderboard, Badges, and Activity Feed**: You can now track your gamified progress, see your rank on a live leaderboard, earn and display badges, and view an activity feed directly in the Operations Workspace.
+
 ## 2026-05-17
 
 - **Enable Twenty bridge integration via service middleware**: You can now connect the Twenty bridge through the service middleware, allowing its data to flow directly into the Operations Workspace.
