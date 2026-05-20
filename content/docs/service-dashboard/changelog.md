@@ -40,6 +40,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Prevent duplicate point awards**: Point events are now idempotent, so sending the same event multiple times will only award points once, eliminating duplicate credits for users.
 - **Award points now safe from duplicate awards**: You can now award points through the gamification system without worrying about duplicate awards if the action is triggered more than once. The process is now idempotent, ensuring each user receives points only once per action.
 - **Gamification Phase 3 hooks added to all action flows**: We've wired Phase 3 gamification events into every workflow in the Operations Workspace—checklists, design requests, parts orders, RMA, tickets, walkthroughs, and custom workflows—so your actions now automatically trigger points and badge awards.
+- **Slack celebrations and automated gamification snapshots**: You’ll now receive Slack celebrations for Phase 5 milestones, and the system automatically records weekly and monthly gamification snapshots, keeping your Operations Workspace up‑to‑date.
 ## 2026-05-17
 
 - **Enable Twenty bridge integration via service middleware**: You can now connect the Twenty bridge through the service middleware, allowing its data to flow directly into the Operations Workspace.
