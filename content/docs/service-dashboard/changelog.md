@@ -48,6 +48,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Improved focus handling in ticket email workspace**: We've refined how focus works in the ticket email workspace, so the cursor stays where you expect while composing messages. This makes editing and sending ticket emails smoother and more predictable.
 - **Ticket email fallback now works reliably**: If an email reply to a ticket can’t be delivered, the system now automatically uses the fallback address so you always receive the notification. No more missing updates when the primary email fails.
 - **New HubSpot retirement marketing automation added**: You can now create and schedule retirement marketing campaigns right from the Operations Workspace. The new tools let you manage audience lists, send newsletters, and track opens, clicks, and unsubscribes automatically.
+- **Add Marketing Hub templates and approval workflow**: You can now create and reuse marketing templates right in the Marketing Hub, and set up approval steps for your campaigns. This lets you streamline content creation and ensure all materials are reviewed before they go live.
 ## 2026-05-20
 
 - **Gamification Engine with Leaderboard, Badges, and Activity Feed**: You can now track your gamified progress, see your rank on a live leaderboard, earn and display badges, and view an activity feed directly in the Operations Workspace.
