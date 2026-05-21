@@ -46,6 +46,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Refined ticket email console UI**: The ticket email console now has a cleaner layout and smoother navigation, making it easier for you to view and manage ticket emails.
 - **Resolved email sync errors for service tickets**: Email synchronization for service tickets now works reliably, so you’ll no longer miss updates in the Operations Workspace.
 - **Improved focus handling in ticket email workspace**: We've refined how focus works in the ticket email workspace, so the cursor stays where you expect while composing messages. This makes editing and sending ticket emails smoother and more predictable.
+- **Ticket email fallback now works reliably**: If an email reply to a ticket can’t be delivered, the system now automatically uses the fallback address so you always receive the notification. No more missing updates when the primary email fails.
 ## 2026-05-20
 
 - **Gamification Engine with Leaderboard, Badges, and Activity Feed**: You can now track your gamified progress, see your rank on a live leaderboard, earn and display badges, and view an activity feed directly in the Operations Workspace.
