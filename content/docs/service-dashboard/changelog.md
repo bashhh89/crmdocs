@@ -38,6 +38,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Gamification links removed from sidebar**: I’ve removed the gamification navigation links from the sidebar, giving you a cleaner menu to work with.
 
+- **Admin and External sections hidden from sidebar**: The sidebar no longer displays the Admin and External sections, giving you a cleaner view focused on the tools you actually use.
+- **Client Switchboard removed from sidebar navigation**: I’ve hidden the Client Switchboard from the sidebar, so the navigation menu is now cleaner and less cluttered for you.
 ## 2026-05-20
 
 - **Gamification Engine with Leaderboard, Badges, and Activity Feed**: You can now track your gamified progress, see your rank on a live leaderboard, earn and display badges, and view an activity feed directly in the Operations Workspace.
