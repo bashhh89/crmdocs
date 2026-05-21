@@ -51,6 +51,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add Marketing Hub templates and approval workflow**: You can now create and reuse marketing templates right in the Marketing Hub, and set up approval steps for your campaigns. This lets you streamline content creation and ensure all materials are reviewed before they go live.
 - **View HubSpot form history on People records**: You can now see a person's HubSpot form submission history directly in the Operations Workspace. The system automatically pulls past form entries and attaches them to the corresponding CRM person, giving you a complete view of their interactions.
 - **Email replies stay in the same ticket thread**: Client email replies now attach to the original ticket instead of spawning a new one. This keeps the conversation tidy in the Operations Workspace and prevents duplicate tickets.
+- **Fixed note target fields in Twenty**: The note target fields in the Twenty view now work correctly, so you can add and save notes without errors.
+- **Fixed email lookup for HubSpot form imports**: HubSpot form imports now correctly locate email addresses, ensuring contacts are added without lookup errors.
 ## 2026-05-20
 
 - **Gamification Engine with Leaderboard, Badges, and Activity Feed**: You can now track your gamified progress, see your rank on a live leaderboard, earn and display badges, and view an activity feed directly in the Operations Workspace.
