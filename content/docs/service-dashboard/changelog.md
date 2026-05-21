@@ -49,6 +49,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Ticket email fallback now works reliably**: If an email reply to a ticket can’t be delivered, the system now automatically uses the fallback address so you always receive the notification. No more missing updates when the primary email fails.
 - **New HubSpot retirement marketing automation added**: You can now create and schedule retirement marketing campaigns right from the Operations Workspace. The new tools let you manage audience lists, send newsletters, and track opens, clicks, and unsubscribes automatically.
 - **Add Marketing Hub templates and approval workflow**: You can now create and reuse marketing templates right in the Marketing Hub, and set up approval steps for your campaigns. This lets you streamline content creation and ensure all materials are reviewed before they go live.
+- **View HubSpot form history on People records**: You can now see a person's HubSpot form submission history directly in the Operations Workspace. The system automatically pulls past form entries and attaches them to the corresponding CRM person, giving you a complete view of their interactions.
+- **Email replies stay in the same ticket thread**: Client email replies now attach to the original ticket instead of spawning a new one. This keeps the conversation tidy in the Operations Workspace and prevents duplicate tickets.
 ## 2026-05-20
 
 - **Gamification Engine with Leaderboard, Badges, and Activity Feed**: You can now track your gamified progress, see your rank on a live leaderboard, earn and display badges, and view an activity feed directly in the Operations Workspace.
