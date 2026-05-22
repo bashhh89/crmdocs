@@ -34,6 +34,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-22
+
+- **M&S landing page with team index and navigation**: We've added a new M&S landing page where you can see a full list of teams and use the sidebar to move between sections. This gives you quick, organized access to team information in the Operations Workspace.
+- **New M&S Excel-grid team page added**: You can now open the M&S Excel-grid team page in the Operations Workspace by going to /ms/[companyId]. This view shows the team’s Excel-grid data, making it easier to manage and review.
+
 ## 2026-05-21
 
 - **Gamification links removed from sidebar**: I’ve removed the gamification navigation links from the sidebar, giving you a cleaner menu to work with.
