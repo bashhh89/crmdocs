@@ -35,6 +35,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-24
+
+- **Fixed type error in M&S Teams route**: The Teams section in the Operations Workspace now loads without errors. You can access M&S team data reliably again.
+
 ## 2026-05-22
 
 - **M&S landing page with team index and navigation**: We've added a new M&S landing page where you can see a full list of teams and use the sidebar to move between sections. This gives you quick, organized access to team information in the Operations Workspace.
