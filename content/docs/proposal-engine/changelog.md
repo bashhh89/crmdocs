@@ -28,6 +28,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-25
+
+- **Account LTV export now matches CRM details**: The account LTV export now aligns with the details shown in the CRM, so the data you download will be consistent with what you see in the Operations Workspace.
+
 ## 2026-05-18
 
 - **Contract modes displayed in header dropdown**: The header dropdown now shows all contract modes, letting you view and select the appropriate mode directly from the main menu. This resolves the previous issue where those options were hidden.
