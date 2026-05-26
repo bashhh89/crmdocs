@@ -42,6 +42,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
 - **Dashboard 'Today' filter respects your timezone**: The 'Today' filter on the dashboard now uses your local timezone, so the data you see matches the actual day for your location.
 
+- **Corrected timezone for today’s events in calendar**: The calendar now displays today’s events using the correct local timezone. You’ll see the accurate start times for your activities without any time shift.
 ## 2026-05-24
 
 - **Fixed type error in M&S Teams route**: The Teams section in the Operations Workspace now loads without errors. You can access M&S team data reliably again.
