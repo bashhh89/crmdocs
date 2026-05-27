@@ -37,6 +37,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-27
+
+- **Email-sourced tickets now include email body**: When you create a ticket by emailing, the message content now appears correctly instead of being blank. You’ll see the full email body in the ticket details.
+
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
