@@ -53,6 +53,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Auto-email on Closed/Won opportunities**: When you mark an opportunity as Closed/Won, an email is automatically sent to Krissy, Kirsten, Jireh, and Alexis, keeping them in the loop without any extra steps.
 - **Long email descriptions now truncated with Show More toggle**: Email descriptions in the ticket list are now trimmed to keep the view tidy, and you can click ‘Show more’ to expand any truncated text.
 - **Undo toast replaces confirm on widget delete**: Now when you delete a widget, a toast appears with an Undo button instead of the old confirm popup, letting you quickly reverse the action if you change your mind.
+- **Operations Workspace now loads natively**: The Operations Workspace no longer opens inside an embedded frame. It now loads directly as a native view, giving you a smoother and faster experience when navigating bases.
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
