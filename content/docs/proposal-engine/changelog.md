@@ -35,6 +35,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Add Original Contract Number field**: You can now enter the original contract number when sharing a project. This new field helps you keep contract references organized in the Operations Workspace.
 
 - **Math step reachable again in Mirror Mode**: In Mirror Mode the Math step in the wizard is now reachable again, so you can continue building your workflow without interruption.
+- **Wizard displays Math step correctly**: The proposal wizard no longer skips the Math step. You’ll now see the calculation screen as intended, ensuring your proposals are complete and accurate.
 ## 2026-05-25
 
 - **Account LTV export now matches CRM details**: The account LTV export now aligns with the details shown in the CRM, so the data you download will be consistent with what you see in the Operations Workspace.

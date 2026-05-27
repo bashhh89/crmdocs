@@ -51,6 +51,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Bulk assign designs from dashboard**: You can now select multiple design requests and assign them to a team or user in a single step right from the Design Requests dashboard. This speeds up your workflow when handling many requests at once.
 - **Configurable widget board added to Designs page**: You can now customize the widget board on the Designs page—add, remove, and rearrange widgets to match your workflow, just like Wrike. This gives you a flexible, personalized view of your design assets.
 - **Auto-email on Closed/Won opportunities**: When you mark an opportunity as Closed/Won, an email is automatically sent to Krissy, Kirsten, Jireh, and Alexis, keeping them in the loop without any extra steps.
+- **Long email descriptions now truncated with Show More toggle**: Email descriptions in the ticket list are now trimmed to keep the view tidy, and you can click ‘Show more’ to expand any truncated text.
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
