@@ -47,6 +47,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Print Requests now support comment threads, attachments, and sorting**: You can now add and view a threaded discussion on each print request, attach files to comments, and choose how comments are sorted. This makes collaborating on print jobs clearer and lets you organize feedback the way you prefer.
 - **Assignee filter now includes enterprise contacts**: You can now use the Assignee filter on Design Requests to match enterprise contacts as well as regular users. The filter works just like before, but now shows a broader set of results.
 - **Infinite Reflow for Stacked Layout Cards**: The stacked layout now auto‑fills the grid, so cards reflow endlessly as you add or resize them. You’ll experience a smoother, continuous view without manual adjustments.
+- **Auto-resolve venues from tricode via aliases**: You can now type a venue’s three‑letter code and the system will automatically match it to the correct venue using its known aliases, so design requests are linked to the right location without any manual lookup.
+- **Bulk assign designs from dashboard**: You can now select multiple design requests and assign them to a team or user in a single step right from the Design Requests dashboard. This speeds up your workflow when handling many requests at once.
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
