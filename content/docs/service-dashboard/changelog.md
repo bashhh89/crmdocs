@@ -42,6 +42,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Email-sourced tickets now include email body**: When you create a ticket by emailing, the message content now appears correctly instead of being blank. You’ll see the full email body in the ticket details.
 
+- **Customizable Design Requests Dashboard Layout**: You can now rearrange and personalize the Design Requests dashboard to match your workflow. Adjust columns, resize panels, and save your preferred layout for quicker access.
+- **Correct stale status values and remove duplicate Reply-To header**: Twenty notifications now use the updated status values and emails are sent with a single Reply-To header, so you’ll no longer see duplicate reply addresses.
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
