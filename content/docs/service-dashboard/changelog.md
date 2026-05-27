@@ -49,6 +49,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Infinite Reflow for Stacked Layout Cards**: The stacked layout now auto‑fills the grid, so cards reflow endlessly as you add or resize them. You’ll experience a smoother, continuous view without manual adjustments.
 - **Auto-resolve venues from tricode via aliases**: You can now type a venue’s three‑letter code and the system will automatically match it to the correct venue using its known aliases, so design requests are linked to the right location without any manual lookup.
 - **Bulk assign designs from dashboard**: You can now select multiple design requests and assign them to a team or user in a single step right from the Design Requests dashboard. This speeds up your workflow when handling many requests at once.
+- **Configurable widget board added to Designs page**: You can now customize the widget board on the Designs page—add, remove, and rearrange widgets to match your workflow, just like Wrike. This gives you a flexible, personalized view of your design assets.
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
