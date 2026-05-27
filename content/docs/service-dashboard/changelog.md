@@ -44,6 +44,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Customizable Design Requests Dashboard Layout**: You can now rearrange and personalize the Design Requests dashboard to match your workflow. Adjust columns, resize panels, and save your preferred layout for quicker access.
 - **Correct stale status values and remove duplicate Reply-To header**: Twenty notifications now use the updated status values and emails are sent with a single Reply-To header, so you’ll no longer see duplicate reply addresses.
+- **Print Requests now support comment threads, attachments, and sorting**: You can now add and view a threaded discussion on each print request, attach files to comments, and choose how comments are sorted. This makes collaborating on print jobs clearer and lets you organize feedback the way you prefer.
+- **Assignee filter now includes enterprise contacts**: You can now use the Assignee filter on Design Requests to match enterprise contacts as well as regular users. The filter works just like before, but now shows a broader set of results.
+- **Infinite Reflow for Stacked Layout Cards**: The stacked layout now auto‑fills the grid, so cards reflow endlessly as you add or resize them. You’ll experience a smoother, continuous view without manual adjustments.
 ## 2026-05-26
 
 - **Corrected event day filter timezone for technicians**: The event day filter now respects your local timezone, so technicians see the correct day's events regardless of where they are. This ensures the displayed events match the actual day you’re working on.
