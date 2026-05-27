@@ -29,6 +29,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-27
+
+- **Add Original Contract Number field**: You can now enter the original contract number when sharing a project. This new field helps you keep contract references organized in the Operations Workspace.
+
 ## 2026-05-25
 
 - **Account LTV export now matches CRM details**: The account LTV export now aligns with the details shown in the CRM, so the data you download will be consistent with what you see in the Operations Workspace.
