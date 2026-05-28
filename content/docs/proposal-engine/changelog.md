@@ -30,6 +30,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-05-28
+
+- **Mirror Mode explainer fixed; screen editor empty state set**: The Mirror Mode wizard now correctly explains the math behind the feature, so you’ll see clear guidance when setting it up. The screen editor also shows a helpful empty‑state message, guiding you on how to start a new layout.
+
 ## 2026-05-27
 
 - **Add Original Contract Number field**: You can now enter the original contract number when sharing a project. This new field helps you keep contract references organized in the Operations Workspace.
