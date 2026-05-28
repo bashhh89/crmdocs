@@ -48,6 +48,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Native LinkedIn integration for Signal**: You can now connect your LinkedIn profile directly within Signal, compose and schedule LinkedIn posts from the Operations Workspace, and view LinkedIn as a social channel alongside your other networks.
 - **One‑click Slack DM approvals for marketing signals**: You can now approve or reject marketing signals straight from a Slack direct message with a single click link, making the decision process faster and simpler.
 - **Insights cards and Calendar view added to Signal**: We've added an Insights page that shows key marketing metrics in easy‑to‑read cards, and a Calendar view that lets you browse scheduled activities by date. Both are now accessible from the Signal section of the Operations Workspace.
+- **Users link restored in Team sidebar (admin only)**: Admins now see a Users link under the Team section in the sidebar, giving them quick access to user management.
 ## 2026-05-27
 
 - **Email-sourced tickets now include email body**: When you create a ticket by emailing, the message content now appears correctly instead of being blank. You’ll see the full email body in the ticket details.
