@@ -43,6 +43,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **AI‑native marketing surface launched**: You can now open the /marketing page to work in an AI‑driven marketing workspace. The new canvas lets you compose and edit campaign content, while the sidebar and top bar give quick access to tools, AI suggestions, and publishing controls.
 
+- **Natural‑Language to SQL Audience Builder**: You can now type a plain‑English description of the audience you need, and the builder turns it into a ready‑to‑use filter you can preview and save in the Operations Workspace.
+- **Publish to Slack and Newsletter from Compose canvas**: You can now send your signal drafts directly to Slack channels or the newsletter list right from the Compose canvas, simplifying your outreach workflow.
+- **Native LinkedIn integration for Signal**: You can now connect your LinkedIn profile directly within Signal, compose and schedule LinkedIn posts from the Operations Workspace, and view LinkedIn as a social channel alongside your other networks.
 ## 2026-05-27
 
 - **Email-sourced tickets now include email body**: When you create a ticket by emailing, the message content now appears correctly instead of being blank. You’ll see the full email body in the ticket details.
