@@ -38,6 +38,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-28
+
+- **AI‑native marketing surface launched**: You can now open the /marketing page to work in an AI‑driven marketing workspace. The new canvas lets you compose and edit campaign content, while the sidebar and top bar give quick access to tools, AI suggestions, and publishing controls.
+
 ## 2026-05-27
 
 - **Email-sourced tickets now include email body**: When you create a ticket by emailing, the message content now appears correctly instead of being blank. You’ll see the full email body in the ticket details.
