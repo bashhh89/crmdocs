@@ -39,6 +39,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-05-29
+
+- **Branded email template for report senders**: I’ve added a branded email template for report senders, so the reports you receive now match ANC’s branding and look more professional.
+
 ## 2026-05-28
 
 - **AI‑native marketing surface launched**: You can now open the /marketing page to work in an AI‑driven marketing workspace. The new canvas lets you compose and edit campaign content, while the sidebar and top bar give quick access to tools, AI suggestions, and publishing controls.
