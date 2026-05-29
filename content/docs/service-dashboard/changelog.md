@@ -44,6 +44,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Branded email template for report senders**: I’ve added a branded email template for report senders, so the reports you receive now match ANC’s branding and look more professional.
 
+- **Add secret query param for email webhook auth**: You can now secure the email events webhook by appending a ?secret= token to the URL. The Operations Workspace will verify this token before processing any incoming events.
+- **Email events now processed from batched SendGrid payloads**: We've updated the marketing webhook to correctly handle SendGrid's batched event arrays. Now all email events, even when sent together, will appear in the Operations Workspace without delay.
 ## 2026-05-28
 
 - **AI‑native marketing surface launched**: You can now open the /marketing page to work in an AI‑driven marketing workspace. The new canvas lets you compose and edit campaign content, while the sidebar and top bar give quick access to tools, AI suggestions, and publishing controls.
