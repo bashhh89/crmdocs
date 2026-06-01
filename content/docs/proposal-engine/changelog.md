@@ -37,6 +37,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **New same-page RFP analyzer alias**: You can now open the RFP analyzer on the same page using its new alias, making it faster to review requests without navigating away.
 
 - **Corrected change order totals and rate‑card pricing**: Change order totals now calculate accurately, and the rate‑card workbook reflects the correct pricing. Users will see consistent numbers when reviewing proposals.
+- **Create CRM records from Gate Proposal Engine**: You can now add new CRM records directly from the Gate Proposal Engine, simplifying how proposals are captured in the Operations Workspace.
 ## 2026-05-28
 
 - **Mirror Mode explainer fixed; screen editor empty state set**: The Mirror Mode wizard now correctly explains the math behind the feature, so you’ll see clear guidance when setting it up. The screen editor also shows a helpful empty‑state message, guiding you on how to start a new layout.
