@@ -31,6 +31,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-06-01
+
+- **New same-page RFP analyzer alias**: You can now open the RFP analyzer on the same page using its new alias, making it faster to review requests without navigating away.
+
 ## 2026-05-28
 
 - **Mirror Mode explainer fixed; screen editor empty state set**: The Mirror Mode wizard now correctly explains the math behind the feature, so you’ll see clear guidance when setting it up. The screen editor also shows a helpful empty‑state message, guiding you on how to start a new layout.
