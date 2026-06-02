@@ -40,6 +40,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-02
+
+- **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
+
 ## 2026-05-29
 
 - **Branded email template for report senders**: I’ve added a branded email template for report senders, so the reports you receive now match ANC’s branding and look more professional.
