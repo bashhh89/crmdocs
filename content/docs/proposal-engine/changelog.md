@@ -37,6 +37,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **M&S deal valuation and two‑way Excel sync**: You can now see deal valuations for M&S items directly in the Operations Workspace and sync those values back and forth with Excel, making it easy to update pricing and inventory from your spreadsheets.
 
+- **Export sheet names sanitized for M&S reports**: When you export M&S inventory to Excel, the sheet tabs are now automatically cleaned of illegal characters and duplicate names. This ensures the file opens without errors and each sheet is uniquely labeled.
 ## 2026-06-01
 
 - **New same-page RFP analyzer alias**: You can now open the RFP analyzer on the same page using its new alias, making it faster to review requests without navigating away.
