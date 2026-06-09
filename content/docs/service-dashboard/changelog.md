@@ -41,6 +41,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-09
+
+- **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
+
 ## 2026-06-02
 
 - **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
