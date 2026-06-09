@@ -54,6 +54,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Customer Ticket Portal at /customer**: Customers can now log in to a dedicated portal at /customer, accept invitations, and view or manage their support tickets directly from the web interface. The portal provides a clear overview of open tickets and lets users update their information as needed.
 - **Native Operations Workspace Restored**: The Operations Workspace is back to its original functionality, so you can now view and manage operations data directly as before.
 - **New Dark Theme for Customer Portal**: We've refreshed the Customer Portal with a mission‑control redesign and introduced an isolated dark theme, so you can now work in a darker interface that's easier on the eyes.
+- **Customer portal UI now matches platform theme**: The customer portal’s look and feel have been updated to align with the platform’s theme. Login, dashboard, and ticket pages now display consistent colors and styling, giving you a unified experience across the system.
 ## 2026-06-02
 
 - **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
