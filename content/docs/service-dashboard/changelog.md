@@ -55,6 +55,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Native Operations Workspace Restored**: The Operations Workspace is back to its original functionality, so you can now view and manage operations data directly as before.
 - **New Dark Theme for Customer Portal**: We've refreshed the Customer Portal with a mission‑control redesign and introduced an isolated dark theme, so you can now work in a darker interface that's easier on the eyes.
 - **Customer portal UI now matches platform theme**: The customer portal’s look and feel have been updated to align with the platform’s theme. Login, dashboard, and ticket pages now display consistent colors and styling, giving you a unified experience across the system.
+- **Copilot now returns plain‑text replies**: Copilot in the Operations Workspace now delivers replies as plain text. You’ll see the raw message content without any formatting, making it easier to copy or process the response.
+- **AI Copilot now available in Customer Portal**: I’ve added an AI assistant you can chat with directly in the customer portal, giving you instant answers and guidance without leaving the page.
 ## 2026-06-02
 
 - **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
