@@ -61,6 +61,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Collapsible sidebar, document view, and markdown chat added**: You can now navigate the Customer portal with a collapsible sidebar, view and manage your documents, and chat using markdown formatting. The new layout streamlines access to requests and tickets, while the markdown chat lets you format messages for clearer communication.
 - **Fixed duplicate topbar toggle display**: The top navigation bar now shows a single toggle button and respects responsive layout, eliminating the extra button that previously appeared. Your portal view stays clean across all device sizes.
 - **Displays tab shows venue LED inventory with health overlay**: You can now open the Displays tab in the Customer portal to see each venue’s LED inventory, complete with a health overlay that indicates the status of every unit.
+- **Customer email notifications for staff replies and ticket closure**: Customers will now receive an email whenever a staff member replies to their ticket, and also when the ticket is resolved or closed. This keeps them informed without needing to check the Operations Workspace.
 ## 2026-06-02
 
 - **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
