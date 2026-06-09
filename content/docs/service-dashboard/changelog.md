@@ -58,6 +58,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Copilot now returns plain‑text replies**: Copilot in the Operations Workspace now delivers replies as plain text. You’ll see the raw message content without any formatting, making it easier to copy or process the response.
 - **AI Copilot now available in Customer Portal**: I’ve added an AI assistant you can chat with directly in the customer portal, giving you instant answers and guidance without leaving the page.
 - **Operations now point to confirmed Operations Workspace**: Operations are now routed to the confirmed Operations Workspace. You’ll see all operational data and controls there, replacing the previous view.
+- **Collapsible sidebar, document view, and markdown chat added**: You can now navigate the Customer portal with a collapsible sidebar, view and manage your documents, and chat using markdown formatting. The new layout streamlines access to requests and tickets, while the markdown chat lets you format messages for clearer communication.
 ## 2026-06-02
 
 - **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
