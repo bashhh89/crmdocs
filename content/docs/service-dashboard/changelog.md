@@ -46,6 +46,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
 
+- **Dry‑run verification for content reminders**: You can now run a dry‑run of content reminders to verify they’ll be scheduled correctly before they go live. This gives you confidence that the right content will be sent at the right time in the Operations Workspace.
+- **Weekly reminder log now records correctly**: The weekly content reminder now logs correctly in the Operations Workspace, so you’ll see accurate records of each reminder sent.
 ## 2026-06-02
 
 - **Automatic CRM record creation via proposal webhook**: You can now have the system automatically generate a new entry in the Operations Workspace whenever a gate proposal is received through the webhook.
