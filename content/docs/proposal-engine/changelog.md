@@ -33,6 +33,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-06-10
+
+- **Add Substantial Completion Date and Hidden-Row Safeguard**: You can now set a Substantial Completion Date on projects, and the system will protect hidden rows from accidental changes during reconciliation.
+
 ## 2026-06-04
 
 - **M&S deal valuation and two‑way Excel sync**: You can now see deal valuations for M&S items directly in the Operations Workspace and sync those values back and forth with Excel, making it easy to update pricing and inventory from your spreadsheets.
