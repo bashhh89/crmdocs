@@ -52,6 +52,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Operations Workspace now redirects to Operations Workspace view**: The native table browser has been retired. When you open a table in the Operations Workspace, you’ll be taken to the new Operations Workspace interface embedded in an iframe.
 - **Venue name updated from CG Designs to CG Design**: I've updated the venue name from 'CG Designs' to 'CG Design' as requested. You'll now see the new name everywhere in the system.
 - **Add workflow stage views for CG Designs**: You can now view CG Designs by their workflow stage—Requested, Active, or Completed—so you can quickly see which designs are pending, in progress, or finished.
+- **Long ticket descriptions now truncated cleanly**: Long ticket descriptions are now automatically shortened in the list, keeping the view tidy and making it easier to scan tickets.
 ## 2026-06-09
 
 - **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
