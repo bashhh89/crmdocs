@@ -54,6 +54,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add workflow stage views for CG Designs**: You can now view CG Designs by their workflow stage—Requested, Active, or Completed—so you can quickly see which designs are pending, in progress, or finished.
 - **Long ticket descriptions now truncated cleanly**: Long ticket descriptions are now automatically shortened in the list, keeping the view tidy and making it easier to scan tickets.
 - **Auto‑link open venue issues to Add Visit**: When you create an Add Visit record, any open issues for that venue are now automatically linked, so you can see and track them immediately.
+- **Nightly Wrike sync runs automatically**: Wrike data will now be synchronized each night, keeping the Operations Workspace up‑to‑date automatically until the cutover.
+- **Link Visits to Support Tickets**: You can now connect a customer visit to a support ticket directly from the Operations Workspace, making it easier to track issues tied to specific visits.
 ## 2026-06-09
 
 - **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
