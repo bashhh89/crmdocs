@@ -48,6 +48,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Operations Workspace now expands on large screens**: The Operations Workspace now stretches to fill wider monitors, giving you more room to view designs without scrolling. On large screens you’ll see a broader layout, making it easier to work with multiple design panels.
 - **Final File Location and Proof Link always visible**: You’ll now see the Final File Location and Proof Link fields on every design page without needing to expand them, making it easier to access these details at a glance.
 
+- **Ticket email replies routed to support mailbox**: When a client replies to a ticket email, their response now lands in the monitored support mailbox, so all communications are automatically captured for the Operations Workspace.
 ## 2026-06-09
 
 - **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
