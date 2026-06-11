@@ -49,6 +49,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Final File Location and Proof Link always visible**: You’ll now see the Final File Location and Proof Link fields on every design page without needing to expand them, making it easier to access these details at a glance.
 
 - **Ticket email replies routed to support mailbox**: When a client replies to a ticket email, their response now lands in the monitored support mailbox, so all communications are automatically captured for the Operations Workspace.
+- **Operations Workspace now redirects to Operations Workspace view**: The native table browser has been retired. When you open a table in the Operations Workspace, you’ll be taken to the new Operations Workspace interface embedded in an iframe.
 ## 2026-06-09
 
 - **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
