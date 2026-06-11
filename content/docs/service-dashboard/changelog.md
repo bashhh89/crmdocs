@@ -56,6 +56,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Auto‑link open venue issues to Add Visit**: When you create an Add Visit record, any open issues for that venue are now automatically linked, so you can see and track them immediately.
 - **Nightly Wrike sync runs automatically**: Wrike data will now be synchronized each night, keeping the Operations Workspace up‑to‑date automatically until the cutover.
 - **Link Visits to Support Tickets**: You can now connect a customer visit to a support ticket directly from the Operations Workspace, making it easier to track issues tied to specific visits.
+- **Ticket list view now truncates long descriptions**: Long description text in the ticket list view is now automatically clamped, so you’ll see a concise preview instead of overflowing text, keeping the list tidy and easier to scan.
 ## 2026-06-09
 
 - **Enhanced Creative Workflow Management**: You can now assign team members, upload and download attachments, add comments, and log hours directly on design and content schedule requests. The request pages have been updated to show these details, making it easier to track progress and collaborate in the Operations Workspace.
