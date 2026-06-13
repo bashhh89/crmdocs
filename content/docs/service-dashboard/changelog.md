@@ -43,6 +43,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-13
+
+- **Polished ANC Marketing Newsletter Templates**: We've refined the marketing newsletter templates, delivering cleaner layouts and clearer copy. Your next newsletters will look more professional and be easier to customize.
+- **Respect newsletter opt‑in during marketing sync**: When you run a marketing sync, contacts who have opted in to the CRM newsletter will now be honored, so they won’t receive unwanted newsletter emails.
+
 ## 2026-06-11
 
 - **Operations Workspace now expands on large screens**: The Operations Workspace now stretches to fill wider monitors, giving you more room to view designs without scrolling. On large screens you’ll see a broader layout, making it easier to work with multiple design panels.
