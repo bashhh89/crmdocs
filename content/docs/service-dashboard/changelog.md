@@ -54,6 +54,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Newsletter scheduling works after test sends**: We've corrected the newsletter scheduler so that after you send a test email, the campaign still schedules correctly. You can now run test sends without worrying about breaking the send timeline.
 - **Simplified native social planning workflow**: The social planning workflow in the Operations Workspace is now clearer, with updated screens that guide you through the native steps directly from the dashboard and hub pages.
 - **Polished Marketing Hub command center UI**: We've refined the Marketing Hub command center, cleaning up the layout and streamlining navigation. You’ll now find it quicker to access key controls and manage your campaigns with less effort.
+- **New Layout for Marketing Hub Visual Editor**: I've redesigned the visual editor in Marketing Hub. The new layout makes it easier to arrange and edit campaign elements, giving you a clearer workspace and smoother editing experience.
+- **Visual Newsletter Composer Added to Marketing Hub**: You can now create and edit newsletters using a visual drag‑and‑drop editor right inside the Marketing Hub, previewing the final design before sending it out.
 ## 2026-06-11
 
 - **Operations Workspace now expands on large screens**: The Operations Workspace now stretches to fill wider monitors, giving you more room to view designs without scrolling. On large screens you’ll see a broader layout, making it easier to work with multiple design panels.
