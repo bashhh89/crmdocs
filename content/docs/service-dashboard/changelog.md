@@ -44,6 +44,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-15
+
+- **New ANC Live Command Landing Page**: You can now open the ANC Live Command page in the Operations Workspace. It provides a clear view of live commands and lets you launch them directly from the interface.
+
 ## 2026-06-13
 
 - **Polished ANC Marketing Newsletter Templates**: We've refined the marketing newsletter templates, delivering cleaner layouts and clearer copy. Your next newsletters will look more professional and be easier to customize.
