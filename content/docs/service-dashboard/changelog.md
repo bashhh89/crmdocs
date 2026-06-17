@@ -59,6 +59,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Unified visual output studio experience**: The visual output studio now presents a single, consistent interface across all portals, letting you create and edit proposals with a unified workflow.
 - **Venue Vision studio lane now available**: The portal now includes a Venue Vision studio lane, so you can open and work with venue‑specific information directly from the interface.
 - **Marketing composer now routes through provider pool**: Marketing messages are now sent through the provider pool, giving you more reliable delivery. When you use the composer in the Operations Workspace, your campaigns will be distributed more efficiently.
+- **Updated marketing studio copy to remove placeholder names**: The marketing studio now shows generic copy instead of hard‑coded person names. This gives you a cleaner, more adaptable experience when creating and reviewing campaigns.
 ## 2026-06-15
 
 - **New ANC Live Command Landing Page**: You can now open the ANC Live Command page in the Operations Workspace. It provides a clear view of live commands and lets you launch them directly from the interface.
