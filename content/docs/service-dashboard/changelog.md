@@ -58,6 +58,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live client portal replaces preview mode**: You can now view the full client portal instead of a static preview. All portal pages—approvals, diagnosis, orientation, and reports—are live and interactive, letting you work with real client data directly from the Operations Workspace.
 - **Unified visual output studio experience**: The visual output studio now presents a single, consistent interface across all portals, letting you create and edit proposals with a unified workflow.
 - **Venue Vision studio lane now available**: The portal now includes a Venue Vision studio lane, so you can open and work with venue‑specific information directly from the interface.
+- **Marketing composer now routes through provider pool**: Marketing messages are now sent through the provider pool, giving you more reliable delivery. When you use the composer in the Operations Workspace, your campaigns will be distributed more efficiently.
 ## 2026-06-15
 
 - **New ANC Live Command Landing Page**: You can now open the ANC Live Command page in the Operations Workspace. It provides a clear view of live commands and lets you launch them directly from the interface.
