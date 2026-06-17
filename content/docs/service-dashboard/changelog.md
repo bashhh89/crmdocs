@@ -54,6 +54,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Customer portal setup flow added**: You can now set up a customer portal directly from the Operations Workspace, creating portal users and configuring access in a single streamlined flow. The new endpoint lets integrations provision and manage these users automatically.
 - **Client Portal Builder page now available**: You can now open the Client Portal Builder from the portal menu. This lets you create and customize client portals without leaving the Operations Workspace.
 - **Client portals now use ANC Build Studio**: You can now create and customize client portals through the new ANC Build Studio, providing a smoother, more integrated way to set up portal content directly from the Operations Workspace.
+- **Builder Studio routes and model selector added**: You can now access the Builder Studio directly from the Operations Workspace, start new marketing compositions, and pick from a selection of AI models to generate your content.
 ## 2026-06-15
 
 - **New ANC Live Command Landing Page**: You can now open the ANC Live Command page in the Operations Workspace. It provides a clear view of live commands and lets you launch them directly from the interface.
