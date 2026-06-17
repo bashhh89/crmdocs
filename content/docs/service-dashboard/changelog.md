@@ -51,6 +51,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Add client portal builder for Services**: You can now create and customize client portals right from the Services area, preview them instantly, and share a live link with your customers.
 
 - **Portal assets now accessible via public links**: You can now share portal assets with a public link, allowing anyone with the link to view the asset without logging in.
+- **Customer portal setup flow added**: You can now set up a customer portal directly from the Operations Workspace, creating portal users and configuring access in a single streamlined flow. The new endpoint lets integrations provision and manage these users automatically.
 ## 2026-06-15
 
 - **New ANC Live Command Landing Page**: You can now open the ANC Live Command page in the Operations Workspace. It provides a clear view of live commands and lets you launch them directly from the interface.
