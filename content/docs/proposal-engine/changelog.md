@@ -34,6 +34,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-06-18
+
+- **Excel‑Only Export Hidden in Mirror Mode**: In Mirror Mode the Excel‑Only audit‑workbook export option is no longer displayed, so you won’t see that button by mistake. Use the regular export choices for your data needs.
+
 ## 2026-06-10
 
 - **Add Substantial Completion Date and Hidden-Row Safeguard**: You can now set a Substantial Completion Date on projects, and the system will protect hidden rows from accidental changes during reconciliation.
