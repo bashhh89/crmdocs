@@ -18,6 +18,10 @@ export function baseOptions(): BaseLayoutProps {
         url: '/docs/user-guide/introduction',
       },
       {
+        text: 'Training',
+        url: '/docs/training',
+      },
+      {
         text: 'Proposal Engine',
         url: '/docs/proposal-engine/introduction',
       },
