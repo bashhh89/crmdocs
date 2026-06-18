@@ -52,6 +52,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Polished client portal builder and visual concepts**: The client portal builder UI has been refined for smoother editing and clearer visual options, and new visual concept pages are now available in the marketing hub, giving you a more polished experience when creating and previewing portals.
 
 - **Polish mobile hero on ANC Kinetic**: I polished the mobile hero on the ANC Kinetic view, so you’ll see a cleaner, more engaging first screen with smoother visuals.
+- **Tighter preview layout in embedded portal**: The embedded portal preview now displays items more compactly, so you can see more information at a glance without scrolling.
+- **Portal Builder preview layout fixed**: The preview in the portal builder now displays correctly, so you can see exactly how your portal will look before publishing.
 ## 2026-06-17
 
 - **Add client portal builder for Services**: You can now create and customize client portals right from the Services area, preview them instantly, and share a live link with your customers.
