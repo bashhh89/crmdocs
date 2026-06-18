@@ -1,4 +1,4 @@
 {
   "title": "Venue Services",
-  "pages": ["index"]
+  "pages": ["index", "service-tickets", "the-account-view", "venue-activity", "your-day-to-day"]
 }

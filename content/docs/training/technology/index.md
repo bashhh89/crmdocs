@@ -10,7 +10,10 @@ This track is for everyone on the **Technology** side — LED displays, LiveSync
 ## What you'll learn here
 
 1. **[Your Pipeline](/docs/training/technology/pipeline)** — the views you live in, and moving a deal from lead to won.
-2. **[Estimation & Proposals](/docs/training/technology/estimation-and-proposals)** — what's due this week, proposal stages, and finding your estimates.
+2. **[Estimation & Proposals](/docs/training/technology/estimation-and-proposals)** — the estimation flow and finding your estimates.
+3. **[Managing Your Deals](/docs/training/technology/managing-your-deals)** — stages vs. bid status, won/lost/no-bid, probability, and handoffs.
+4. **[Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates)** — staying ahead of deadlines and marking pricing complete.
+5. **[Reading Your Dashboard](/docs/training/technology/your-dashboard)** — your revenue, margin, forecast, and biggest deals at a glance.
 
 Everything here uses your real Technology deals and views — so you only learn what you'll actually use.
 

@@ -1,19 +1,19 @@
 ---
 title: Leadership
-description: For leadership — cross-vertical dashboards, forecasts, and win/loss at a glance.
+description: For leadership — cross-vertical dashboards, forecasts, win/loss, and one-line answers.
 ---
 
 # Leadership
 
-This track is for leadership — the cross-vertical view of the whole business. Once you've done [Core](/docs/training/core), this focuses on reading the numbers, not entering them.
+This track is for leadership — the cross-vertical view of the whole business. You've done [Core](/docs/training/core); this focuses on **reading the numbers, not entering them.**
 
-## Coming in your track
+## What you'll learn here
 
-- **The company dashboard** — booked revenue, margin, and forecast across all three verticals, with a tab for each.
-- **Forecasts** — pipeline and revenue forecasting at the account and vertical level.
-- **Win/loss** — RFP win rates by league and over time.
-- **Just ask** — getting any of these as a one-line answer from the assistant (*"what's our won revenue this quarter by vertical?"*).
+1. **[The Dashboards](/docs/training/leadership/dashboards)** — pipeline, won, and forecast across the business or by vertical.
+2. **[Forecasting & Pipeline](/docs/training/leadership/forecasting-and-pipeline)** — how the forecast is built, why you can trust it, and filtering to likely deals.
+3. **[Win/Loss](/docs/training/leadership/win-loss)** — RFP win rates by league and over time.
+4. **[Exporting & Asking](/docs/training/leadership/exporting-and-asking-the-assistant)** — pinning what you care about, exporting, and getting any number in one line.
 
-📊 **Lessons are being added here.** In the meantime, [Core](/docs/training/core) covers the basics, and the assistant can already pull most of these numbers on request.
+The big idea: it's all **live**. As the team updates deals, the dashboards and forecasts move with them — so what you're looking at is where things stand right now, not last month's export.
 
-> New to the CRM? Start with [Core — Start Here](/docs/training/core).
+> Haven't done Core yet? Start there first → [Core — Start Here](/docs/training/core)
