@@ -42,6 +42,8 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Deals renamed to Opportunities in CRM**: The CRM now displays the former “Deals” section as “Opportunities.” This label change is applied throughout the live system, so users will see the updated terminology everywhere they work.
 - **Add Training Intake Assessor Bot**: A new Training Intake Assessor Bot is now available. It lets you quickly profile CRM users during training intake and share those profiles with your team directly from the Operations Workspace.
 - **Enhanced Training Intake Bot UI**: The training intake bot now uses an accordion layout, supports markdown formatting, offers suggestion chips, and personalizes its replies, giving you a clearer and more interactive intake experience.
+- **Intake JSON spec updated to preserve structured fields**: The intake endpoint now follows the updated JSON profile spec, ensuring that all structured fields are correctly saved during wrap‑up. Your submitted intake data will retain its full structure.
+- **Intake bot now wraps up faster**: The intake bot now limits the number of dialogue turns and provides a quicker prompt, helping conversations finish promptly instead of dragging on.
 ## 2026-06-10
 
 - **Add Substantial Completion Date and Hidden-Row Safeguard**: You can now set a Substantial Completion Date on projects, and the system will protect hidden rows from accidental changes during reconciliation.
