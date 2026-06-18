@@ -19,7 +19,7 @@ export function baseOptions(): BaseLayoutProps {
       },
       {
         text: 'Training',
-        url: '/docs/training',
+        url: '/academy',
       },
       {
         text: 'Proposal Engine',
