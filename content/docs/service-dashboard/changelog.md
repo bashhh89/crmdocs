@@ -47,6 +47,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-21
+
+- **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
+
 ## 2026-06-18
 
 - **Polished client portal builder and visual concepts**: The client portal builder UI has been refined for smoother editing and clearer visual options, and new visual concept pages are now available in the marketing hub, giving you a more polished experience when creating and previewing portals.
