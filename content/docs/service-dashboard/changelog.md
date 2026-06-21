@@ -53,6 +53,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
 
 - **Live map now shows built‑in US outline**: The live map now displays a built‑in US outline, removing the need for external map tiles. You’ll see the map load instantly and more reliably.
+- **Live showcase now a kinetic cinematic experience**: You can now open the Live page and see a cinematic showcase with smooth kinetic transitions. The new live view gives you an immersive, visually rich experience directly within the Operations Workspace.
 ## 2026-06-18
 
 - **Polished client portal builder and visual concepts**: The client portal builder UI has been refined for smoother editing and clearer visual options, and new visual concept pages are now available in the marketing hub, giving you a more polished experience when creating and previewing portals.
