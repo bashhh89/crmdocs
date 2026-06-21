@@ -57,6 +57,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live page refreshed with new ANC look**: The Live view now runs on a faster engine and has been re‑skinned to match the ANC brand, so you’ll see a smoother, more familiar interface when monitoring live activity.
 - **Live assets now accessible without login**: You can now view live maps and related data without needing to log in. The globe visualization, live‑app script, and geojson files are served directly, so they load instantly in the Operations Workspace.
 - **Scroll‑driven 3D globe story on Live page**: You can now explore the Live page as an immersive, scroll‑driven 3D globe story titled “A night ignites,” with the globe animating as you scroll.
+- **Removed stray 'All Concepts' link from Live page**: The extra 'All Concepts' link on the Live page has been removed, so you’ll no longer see a dead navigation option.
+- **Live view restored with 3D globe for Tonight**: The live feed is back online, and the Tonight act now shows a 3D globe, giving you an updated visual experience.
 ## 2026-06-18
 
 - **Polished client portal builder and visual concepts**: The client portal builder UI has been refined for smoother editing and clearer visual options, and new visual concept pages are now available in the marketing hub, giving you a more polished experience when creating and previewing portals.
