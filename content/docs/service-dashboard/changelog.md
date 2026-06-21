@@ -55,6 +55,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Live map now shows built‑in US outline**: The live map now displays a built‑in US outline, removing the need for external map tiles. You’ll see the map load instantly and more reliably.
 - **Live showcase now a kinetic cinematic experience**: You can now open the Live page and see a cinematic showcase with smooth kinetic transitions. The new live view gives you an immersive, visually rich experience directly within the Operations Workspace.
 - **Live page refreshed with new ANC look**: The Live view now runs on a faster engine and has been re‑skinned to match the ANC brand, so you’ll see a smoother, more familiar interface when monitoring live activity.
+- **Live assets now accessible without login**: You can now view live maps and related data without needing to log in. The globe visualization, live‑app script, and geojson files are served directly, so they load instantly in the Operations Workspace.
+- **Scroll‑driven 3D globe story on Live page**: You can now explore the Live page as an immersive, scroll‑driven 3D globe story titled “A night ignites,” with the globe animating as you scroll.
 ## 2026-06-18
 
 - **Polished client portal builder and visual concepts**: The client portal builder UI has been refined for smoother editing and clearer visual options, and new visual concept pages are now available in the marketing hub, giving you a more polished experience when creating and previewing portals.
