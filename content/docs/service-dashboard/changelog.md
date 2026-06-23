@@ -77,6 +77,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Print proof link fields removed**: We've removed the proof link fields from the print request screen, making the form cleaner and easier for you to use.
 - **Corrected cost field on print requests**: Print request cost values now map correctly, so the amount displayed matches the actual charge. You’ll see accurate pricing on each request.
 - **Print request fields now align with Operations Workspace**: Print request forms now use the same field names and values as the Operations Workspace, so the data you see in ANC matches what’s sent to Wrike. This makes it easier to track and manage print jobs across systems.
+- **Print request list refreshes after changes**: After you add or edit a print request, the Operations Workspace automatically refetches the saved requests so the list always shows the latest information.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
