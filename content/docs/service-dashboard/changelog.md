@@ -64,6 +64,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Embedded Operations Workspace in the app**: You can now access the Operations Workspace directly within the interface via an embedded view, eliminating the need to switch to a separate window.
 - **Editable Project Schedule Workspace Added**: You can now open the Project Schedule workspace, view the timeline, make changes directly, and save them—all within the Operations Workspace.
 - **Project document links added to schedule view**: You can now open related project documents straight from the schedule. The new links take you directly to the documents in the Operations Workspace, making it faster to find the files you need.
+- **Autofill shipping addresses for print requests**: You can now have the shipping address automatically filled in when you create a print request, saving time and reducing manual entry errors.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
