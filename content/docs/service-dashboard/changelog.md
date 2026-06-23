@@ -74,6 +74,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Project assignee view and status change notifications**: You can now see only the assignees scoped to a project and receive automatic notifications whenever a project's status changes.
 - **Hours report now grouped by venue tricode**: You can now see the Hours by Client report organized by venue tricode, so activity is grouped by each location for clearer insight.
 - **Auto‑populate proof links and display locations**: Proof links are now filled in automatically, and the system shows you the exact location of each proof, so you can access them without manual entry.
+- **Print proof link fields removed**: We've removed the proof link fields from the print request screen, making the form cleaner and easier for you to use.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
