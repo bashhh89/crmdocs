@@ -69,6 +69,9 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Venue tricode tagging added to request workflows**: You can now tag venues with their three‑letter codes when creating or managing design and print requests, making it easier to identify locations throughout the workflow.
 - **Design dashboard refined; status columns restored**: We've tightened up the design dashboard layout and brought back the missing status columns, so you can view and manage designs more clearly.
 - **New content schedule templates and streamlined statuses**: You can now create reusable content schedule templates and apply them with a single click, making it faster to set up recurring campaigns. We also removed the old status fields to simplify the scheduling workflow.
+- **All project assignees now visible in previews**: When you open a preview, you’ll now see every assignee attached to the project, not just the primary owner. This gives you a complete view of who’s responsible for each item, making coordination easier.
+- **Assignee notifications now correctly identify recipients**: Assignee notifications now correctly resolve the right user, so you’ll receive alerts as expected without missing any updates.
+- **Project assignee view and status change notifications**: You can now see only the assignees scoped to a project and receive automatic notifications whenever a project's status changes.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
