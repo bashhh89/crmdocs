@@ -75,6 +75,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Hours report now grouped by venue tricode**: You can now see the Hours by Client report organized by venue tricode, so activity is grouped by each location for clearer insight.
 - **Auto‑populate proof links and display locations**: Proof links are now filled in automatically, and the system shows you the exact location of each proof, so you can access them without manual entry.
 - **Print proof link fields removed**: We've removed the proof link fields from the print request screen, making the form cleaner and easier for you to use.
+- **Corrected cost field on print requests**: Print request cost values now map correctly, so the amount displayed matches the actual charge. You’ll see accurate pricing on each request.
+- **Print request fields now align with Operations Workspace**: Print request forms now use the same field names and values as the Operations Workspace, so the data you see in ANC matches what’s sent to Wrike. This makes it easier to track and manage print jobs across systems.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
