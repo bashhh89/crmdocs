@@ -55,6 +55,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Dashboard theme switcher now works correctly**: The theme switcher on your dashboard now functions as expected, letting you toggle between light and dark modes without errors. No more broken UI when changing themes.
 - **Interactive Project Schedule Workspace**: You can now interact directly with the Project Schedule workspace—click, drag, and edit items in place, making it easier to manage schedules without navigating away.
+- **Theme applied earlier for smoother UI**: You’ll now see your chosen theme right away, without the brief default look while the page loads.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
