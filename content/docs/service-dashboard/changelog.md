@@ -66,6 +66,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Project document links added to schedule view**: You can now open related project documents straight from the schedule. The new links take you directly to the documents in the Operations Workspace, making it faster to find the files you need.
 - **Autofill shipping addresses for print requests**: You can now have the shipping address automatically filled in when you create a print request, saving time and reducing manual entry errors.
 - **Print address autofill enabled**: When you print a document, the address fields are now automatically filled in, so you don’t have to enter them manually.
+- **Venue tricode tagging added to request workflows**: You can now tag venues with their three‑letter codes when creating or managing design and print requests, making it easier to identify locations throughout the workflow.
+- **Design dashboard refined; status columns restored**: We've tightened up the design dashboard layout and brought back the missing status columns, so you can view and manage designs more clearly.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
