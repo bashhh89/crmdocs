@@ -59,6 +59,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **New Project Deployment Workspace v3**: You can now use the updated Project Deployment Workspace (v3) to schedule and manage deployments directly from the Operations Workspace.
 - **Submittal Register v4 now available**: The project schedule page now includes Submittal Register version 4. You can submit and track documents using the new layout and fields, streamlining your workflow in the Operations Workspace.
 - **Project Schedule AI Assistant Restored**: You can now use the AI assistant in the Operations Workspace to generate and tweak project schedules, streamlining your planning workflow.
+- **Fixed broken embed link in Operations Workspace**: The embed link in the Operations Workspace now works correctly, so you can open embedded content without errors.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
