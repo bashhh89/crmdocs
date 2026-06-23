@@ -61,6 +61,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Project Schedule AI Assistant Restored**: You can now use the AI assistant in the Operations Workspace to generate and tweak project schedules, streamlining your planning workflow.
 - **Fixed broken embed link in Operations Workspace**: The embed link in the Operations Workspace now works correctly, so you can open embedded content without errors.
 - **Operations Workspace now uses native UI, broken iframe removed**: You’ll see the Operations Workspace rendered with a native interface instead of the old embedded view, and the broken Operations Workspace iframe has been removed, so the page loads cleanly.
+- **Embedded Operations Workspace in the app**: You can now access the Operations Workspace directly within the interface via an embedded view, eliminating the need to switch to a separate window.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
