@@ -48,6 +48,11 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-23
+
+- **Project Schedule Command Center now available**: You can now open the Project Schedule Command Center from the Operations Workspace to view, edit, and track project timelines all in one place.
+
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
