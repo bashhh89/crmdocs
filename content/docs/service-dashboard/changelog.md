@@ -68,6 +68,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Print address autofill enabled**: When you print a document, the address fields are now automatically filled in, so you don’t have to enter them manually.
 - **Venue tricode tagging added to request workflows**: You can now tag venues with their three‑letter codes when creating or managing design and print requests, making it easier to identify locations throughout the workflow.
 - **Design dashboard refined; status columns restored**: We've tightened up the design dashboard layout and brought back the missing status columns, so you can view and manage designs more clearly.
+- **New content schedule templates and streamlined statuses**: You can now create reusable content schedule templates and apply them with a single click, making it faster to set up recurring campaigns. We also removed the old status fields to simplify the scheduling workflow.
 ## 2026-06-21
 
 - **Live National Operations Showcase Page**: You can now view a live showcase of national operations directly in the Operations Workspace. The new /live page displays real‑time data for all national sites, giving you instant insight into current activity.
