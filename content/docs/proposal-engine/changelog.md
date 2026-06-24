@@ -35,6 +35,12 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-06-24
+
+- **Responsibility Matrix auto‑added to workbooks & PDFs**: The ANC master Responsibility Matrix is now baked into every tab of the Operations Workspace workbook and automatically appears in the proposal PDF. You no longer need to run the wizard to insert it.
+- **Enhanced Excel Export with Cover Pages & Updated Intake Form**: You can now download Excel reports that include a cover‑page section, and the old Excel‑only export option has been removed in favor of a unified export format. The training intake form has been upgraded to version 2, offering a smoother data entry experience.
+
 ## 2026-06-18
 
 - **Excel‑Only Export Hidden in Mirror Mode**: In Mirror Mode the Excel‑Only audit‑workbook export option is no longer displayed, so you won’t see that button by mistake. Use the regular export choices for your data needs.
