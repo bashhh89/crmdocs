@@ -59,6 +59,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **OCR PDF processing error resolved**: PDFs with OCR now process correctly in the Operations Workspace, eliminating the previous error that prevented some uploads.
 - **Auto-create submittals from uploaded drawings**: You can now upload a drawing and the system will automatically extract the relevant data and create a submittal for you, removing the need for manual entry.
 - **Dropdown selection for display types in schedule**: You can now pick a display type from a dropdown when creating or editing a schedule. All ANC display types and any custom options appear in the list.
+- **Ticket distribution emails now reliably sent via SendGrid**: Ticket distribution emails are now sent through SendGrid, fixing the silent failure that prevented some messages from reaching you. You’ll receive all ticket notifications as expected.
 ## 2026-06-23
 
 - **Project Schedule Command Center now available**: You can now open the Project Schedule Command Center from the Operations Workspace to view, edit, and track project timelines all in one place.
