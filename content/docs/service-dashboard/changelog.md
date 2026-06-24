@@ -61,6 +61,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Dropdown selection for display types in schedule**: You can now pick a display type from a dropdown when creating or editing a schedule. All ANC display types and any custom options appear in the list.
 - **Ticket distribution emails now reliably sent via SendGrid**: Ticket distribution emails are now sent through SendGrid, fixing the silent failure that prevented some messages from reaching you. You’ll receive all ticket notifications as expected.
 - **Alexis Dashboard Enhancements: Linked Codes, Auto‑Shipping, and More**: You can now link design, CG, content, and print codes directly from the Alexis dashboard, see total hours rolled up, and have shipping addresses auto‑filled on print requests. Content statuses are displayed clearly and print fields are now consistent across the board. Newsletter deliveries are fixed and login security is strengthened with bcrypt protection.
+- **Cancelled status and soft‑delete for requests**: You can now cancel design, print, and CG requests, which moves them to a hidden Cancelled status and removes them from your active list. You can also soft‑delete requests and content schedules, taking them out of view while preserving the data.
 ## 2026-06-23
 
 - **Project Schedule Command Center now available**: You can now open the Project Schedule Command Center from the Operations Workspace to view, edit, and track project timelines all in one place.
