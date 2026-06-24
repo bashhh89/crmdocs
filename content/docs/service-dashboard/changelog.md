@@ -54,6 +54,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 - **Global Style panel and test‑send added to Newsletter editor**: You can now edit global styles for your newsletter from a dedicated panel, and you can send a test email through SendGrid to preview the newsletter before it goes live.
 
+- **Editable submittal register and deployment package items**: You can now edit entries in the submittal register directly from the Project Schedule, and add, update, or remove deployment package items as needed.
 ## 2026-06-23
 
 - **Project Schedule Command Center now available**: You can now open the Project Schedule Command Center from the Operations Workspace to view, edit, and track project timelines all in one place.
