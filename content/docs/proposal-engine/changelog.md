@@ -36,6 +36,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-06-25
+
+- **Default responsibility matrix added to proposal exports**: When you export a proposal, it now automatically includes a default responsibility matrix, giving you a ready‑made view of who’s responsible for each item.
+
 ## 2026-06-24
 
 - **Responsibility Matrix auto‑added to workbooks & PDFs**: The ANC master Responsibility Matrix is now baked into every tab of the Operations Workspace workbook and automatically appears in the proposal PDF. You no longer need to run the wizard to insert it.
