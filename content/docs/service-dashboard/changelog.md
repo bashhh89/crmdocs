@@ -56,6 +56,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Codex inbox API now accessible via middleware**: You can now use the Codex inbox API through the middleware, enabling direct inbox interactions from the Operations Workspace. This adds a new integration point for your workflows.
 - **Slack Codex request inbox added**: You can now submit Codex requests directly from Slack and see them appear in the Operations Workspace inbox. This makes it easier to track and manage requests without leaving Slack.
 
+- **Slack capture stays active when assistant muted**: When you mute the assistant, Slack message capture continues to work. You’ll still see Codex activity in the Operations Workspace even while the assistant is silent.
 ## 2026-06-24
 
 - **Global Style panel and test‑send added to Newsletter editor**: You can now edit global styles for your newsletter from a dedicated panel, and you can send a test email through SendGrid to preview the newsletter before it goes live.
