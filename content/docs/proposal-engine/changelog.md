@@ -43,6 +43,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Online Responsibility Matrix Editor Added**: You can now edit the responsibility matrix directly in the Operations Workspace. This online editor lets you assign and update responsibilities without leaving the platform.
 - **Deal titles now save correctly**: When you create a new deal, the title you enter will now persist and appear as expected, fixing the issue where titles were previously lost.
+- **Fast Cleaned Forecast Export Added**: You can now quickly export a cleaned forecast file directly from the Operations Workspace. The new export provides up‑to‑date sales predictions in a ready‑to‑use format, saving you time on data preparation.
 ## 2026-06-24
 
 - **Responsibility Matrix auto‑added to workbooks & PDFs**: The ANC master Responsibility Matrix is now baked into every tab of the Operations Workspace workbook and automatically appears in the proposal PDF. You no longer need to run the wizard to insert it.
