@@ -57,6 +57,7 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Slack Codex request inbox added**: You can now submit Codex requests directly from Slack and see them appear in the Operations Workspace inbox. This makes it easier to track and manage requests without leaving Slack.
 
 - **Slack capture stays active when assistant muted**: When you mute the assistant, Slack message capture continues to work. You’ll still see Codex activity in the Operations Workspace even while the assistant is silent.
+- **Feature voting page and public access enabled**: You can now visit the new Feature Voting page to up‑vote or down‑vote upcoming features. Additionally, certain public routes are now accessible without logging in, making it easier to view information.
 ## 2026-06-24
 
 - **Global Style panel and test‑send added to Newsletter editor**: You can now edit global styles for your newsletter from a dedicated panel, and you can send a test email through SendGrid to preview the newsletter before it goes live.
