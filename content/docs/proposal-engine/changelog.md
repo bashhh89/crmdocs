@@ -37,6 +37,11 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 
 
+
+## 2026-06-26
+
+- **Email Quote Requests Now Supported**: You can now send a quote request by email, and the system will automatically capture and process it in the Operations Workspace. This streamlines getting quotes without manual entry.
+
 ## 2026-06-25
 
 - **Default responsibility matrix added to proposal exports**: When you export a proposal, it now automatically includes a default responsibility matrix, giving you a ready‑made view of who’s responsible for each item.
