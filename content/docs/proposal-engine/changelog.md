@@ -42,6 +42,8 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Email Quote Requests Now Supported**: You can now send a quote request by email, and the system will automatically capture and process it in the Operations Workspace. This streamlines getting quotes without manual entry.
 
+- **Email intake now works through authentication gate**: You can now submit emails through the authenticated gateway, allowing the Operations Workspace to accept inbound messages after you log in.
+- **Email intake parser route now available**: You can now send emails to the Operations Workspace and have them automatically parsed, making it easier to capture data from email communications.
 ## 2026-06-25
 
 - **Default responsibility matrix added to proposal exports**: When you export a proposal, it now automatically includes a default responsibility matrix, giving you a ready‑made view of who’s responsible for each item.
