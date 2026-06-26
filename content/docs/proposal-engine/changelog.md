@@ -47,6 +47,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 - **Email Quote Intake Tool Added**: You can now email quote requests and have them automatically turned into quotes in the Operations Workspace. This streamlines the quoting process for sales reps.
 - **AI review added to email quote intake**: When you submit a quote request via email, the system now runs an AI review first, helping catch errors and improve quote accuracy. You’ll see the AI‑generated feedback before the quote is finalized.
 - **Email intake fields are now editable**: You can now edit the email intake fields directly in the Operations Workspace, letting you correct or update information before a quote is generated.
+- **Add streaming AI review for email intake**: You can now stream incoming emails through the AI review service, giving you real‑time analysis and insights before they are turned into quotes.
 ## 2026-06-25
 
 - **Default responsibility matrix added to proposal exports**: When you export a proposal, it now automatically includes a default responsibility matrix, giving you a ready‑made view of who’s responsible for each item.
