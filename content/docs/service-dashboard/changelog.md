@@ -58,6 +58,8 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 - **Closed‑won email alerts trigger per deal on bid status**: Now, when a bid reaches a won status, the Operations Workspace sends an email alert for each individual deal instead of waiting for a stage change. You’ll receive immediate notifications for every winning bid.
 
 - **Closed‑won email notifications now work reliably**: We've fixed the webhook verification so closed‑won email alerts are delivered successfully instead of being blocked.
+- **Ticket replies show actual venue contacts**: When replying to a ticket, the recipient list now displays the real venue contacts instead of a generic contact, so you can see exactly who will receive your message.
+- **Ticket replies now go to venue contacts**: When you reply to a ticket, the email is now sent to the venue’s distribution list and the original correspondent instead of the generic company contact, ensuring the right people receive your response.
 ## 2026-06-25
 
 - **Codex inbox API now accessible via middleware**: You can now use the Codex inbox API through the middleware, enabling direct inbox interactions from the Operations Workspace. This adds a new integration point for your workflows.
