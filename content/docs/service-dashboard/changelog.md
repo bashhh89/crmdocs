@@ -51,6 +51,12 @@ description: Auto-generated record of changes shipped to services.ancsports.net 
 
 
 
+
+## 2026-06-26
+
+- **Ticket replies now sent from support@anc.com**: When you reply to a ticket, the response will now be sent using the support@anc.com address, providing consistent branding and more reliable email delivery.
+- **Closed‑won email alerts trigger per deal on bid status**: Now, when a bid reaches a won status, the Operations Workspace sends an email alert for each individual deal instead of waiting for a stage change. You’ll receive immediate notifications for every winning bid.
+
 ## 2026-06-25
 
 - **Codex inbox API now accessible via middleware**: You can now use the Codex inbox API through the middleware, enabling direct inbox interactions from the Operations Workspace. This adds a new integration point for your workflows.
