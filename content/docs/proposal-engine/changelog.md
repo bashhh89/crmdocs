@@ -44,6 +44,7 @@ description: Auto-generated record of changes shipped to proposals.anc.com (rag2
 
 - **Email intake now works through authentication gate**: You can now submit emails through the authenticated gateway, allowing the Operations Workspace to accept inbound messages after you log in.
 - **Email intake parser route now available**: You can now send emails to the Operations Workspace and have them automatically parsed, making it easier to capture data from email communications.
+- **Email Quote Intake Tool Added**: You can now email quote requests and have them automatically turned into quotes in the Operations Workspace. This streamlines the quoting process for sales reps.
 ## 2026-06-25
 
 - **Default responsibility matrix added to proposal exports**: When you export a proposal, it now automatically includes a default responsibility matrix, giving you a ready‑made view of who’s responsible for each item.
