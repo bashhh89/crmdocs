@@ -1,0 +1,135 @@
+---
+title: June 2026 CRM Release Brief
+description: The Twenty v2.15 and v2.16 changes that matter most for ANC.
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+# June 2026 CRM Release Brief
+
+ANC is currently running a custom v2.14.3-based CRM image in production. The latest upstream image available for the next safe-upgrade path is **v2.16.1**. The upgrade is worth staging, but it should not be cut directly into production because the release train touches search metadata, workflows, apps, AI tools, and email/calendar sync.
+
+<Callout title="Current ANC decision">
+Prepare and test the v2.16.1 image in staging first. Production stays on the current custom image until a restored staging copy passes migrations, login, search, object pages, saved views, files, mobile shell, app extensions, and Scout.
+</Callout>
+
+## Source Screenshots
+
+<img src="/img/screenshots/twenty-releases/releases-overview.png" alt="Twenty public releases page" />
+
+<img src="/img/screenshots/twenty-releases/github-v2160-release.png" alt="Twenty v2.16.0 GitHub release notes" />
+
+## Most Relevant Changes For ANC
+
+### Security and Dependency Fixes
+
+The v2.15 and v2.16 releases include a long run of dependency remediation across packages such as email, proxy, markdown, archive handling, websocket, and build tooling. For ANC, this is the strongest reason to keep moving: the CRM is internet-facing, handles contacts, emails, files, and operational records, and should not sit too long on an older image.
+
+Sources: [v2.15 release notes](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.15.0), [v2.16 release notes](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.16.0).
+
+### AI and Scout Improvements
+
+The releases include AI/tool fixes that map directly to the way ANC uses Scout:
+
+- Better workflow tool output display.
+- Better dynamic-tool message persistence.
+- More useful tool discovery when a tool name is close but not exact.
+- Tool execution metrics.
+- Large tool-output handling and navigation tools.
+- Humanized tool-call status messages.
+- Workflow-run list/inspection tools.
+- Fixes around AI agent output schema validation and strict currency handling.
+
+ANC impact: Scout should become less brittle when answering dashboard, workflow, enrichment, and reporting questions, but the ANC custom prompt and tool patches still have to be re-verified in the custom image.
+
+### Apps, CLI, and CRM Extensions
+
+This train improves the app platform that ANC is now using for custom behavior:
+
+- Command menu override persistence and reset behavior.
+- App logic function nodes showing app identity more clearly.
+- Logic function error handling returning cleaner user-level errors.
+- Logic function handler validation.
+- Server-exposed logic functions running in the owner workspace.
+- Logic function key-value store documentation.
+- Third-party app command menu loading-state fixes.
+- CLI expired-token detection and interactive re-auth.
+
+ANC impact: this supports the "build extensions instead of forking the CRM" path for custom tabs, widgets, command actions, and logic functions.
+
+### Workflow Improvements
+
+Workflow changes are especially relevant for CRM automation and future no-code admin flows:
+
+- Manual-trigger payload and metadata surfaced in runtime and variable picker.
+- Expected output schema for runtime output steps.
+- Record-updated trigger filtering.
+- Pick Record actions with random, round-robin, and load-balanced strategies.
+- Better workflow field visibility, disabled-state explanation, and record trigger object search.
+- Workflow listing through MCP.
+
+ANC impact: this strengthens future automations like intake routing, renewal reminders, closed-won digests, and assignment/load-balancing flows.
+
+### Email, Calendar, and Timeline Improvements
+
+Relevant fixes include:
+
+- Gmail, Calendar, and Microsoft webhook push sync.
+- Real-time email and calendar tabs on record pages.
+- ID-first chunked import for Google and CalDAV.
+- Timeline relation fixes, default visibility handling, and email timeline relation traversal.
+- Reply composer infinite-render fix.
+- IMAP/SMTP encryption handling.
+
+ANC impact: account and opportunity pages should become more useful as activity hubs, but Microsoft and Google sync must be smoke-tested in staging because ANC has had worker-side email/calendar env issues before.
+
+### Search, Filters, Views, and Tables
+
+ANC depends heavily on saved views, dashboards, and record tables. The release train includes:
+
+- Search field metadata wiring and cross-version upgrade fixes.
+- Relation traversal filter fixes.
+- Chart filter sanitization on save.
+- Dashboard widget filter isolation on duplicate.
+- Filtered view navigation and table column-order fixes.
+- Record table header drag-and-drop.
+- Record table footer visibility fixes.
+- Resizable kanban columns.
+- New sidebar item search.
+- Advanced relation fields in field widget selector.
+
+ANC impact: this is useful for Jireh's dashboards, Natalia's proposal views, and list-heavy account work. It is also the riskiest migration area, so staging must verify saved views, dashboard filters, and object search.
+
+### Multi-Workspace and Domain Handling
+
+The releases include workspace signup/onboarding and domain fixes:
+
+- User-selectable workspace subdomain during signup.
+- Better custom-domain DNS record and activation status display.
+- Email verification and workspace-creation flow fixes.
+
+ANC impact: this overlaps with the recent multi-workspace/domain work on `crm.ancsports.net`. Staging must verify that the main ANC workspace stays on the canonical CRM domain and that new workspace subdomains route correctly.
+
+## What We Do Before Production
+
+1. Restore the fresh production backup into staging.
+2. Run the v2.16.1 candidate web and worker images against that restored copy.
+3. Let migrations finish and keep migration logs.
+4. Smoke-test:
+   - login and signup gates
+   - global search
+   - Companies, People, Opportunities, Tasks, Notes
+   - saved views and dashboard filters
+   - file previews and attachments
+   - mobile shell
+   - Scout and AI tools
+   - app tabs, widgets, command actions, and logic functions
+   - email/calendar sync surfaces
+5. Cut production only after staging passes and rollback is ready.
+
+## Official References
+
+- [Twenty public release page](https://twenty.com/releases)
+- [Twenty v2.15.0 release notes](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.15.0)
+- [Twenty v2.16.0 release notes](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.16.0)
+- [Twenty v2.16.1 Docker image tag](https://hub.docker.com/r/twentycrm/twenty/tags?name=v2.16.1)

@@ -1,0 +1,76 @@
+---
+title: "What's New: June 2026 CRM Update"
+description: A plain-English training note for the next CRM update.
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+# What's New: June 2026 CRM Update
+
+The next CRM update is being prepared carefully in staging before production changes. You do not need to learn a new CRM. The useful changes are mostly behind the scenes: smoother tables, better search, stronger assistant behavior, cleaner workflows, and more stable email/calendar activity.
+
+<Callout title="Nothing changes for users yet">
+Production is not on this update yet. This page explains what the team is testing and what users should notice after the safe rollout.
+</Callout>
+
+## What You Should Notice
+
+### Search and Lists Should Feel Cleaner
+
+Saved views, filters, record tables, and search metadata received fixes upstream. For ANC, this matters because most day-to-day work happens in filtered views like proposal pipeline, active opportunities, account lists, and dashboard drilldowns.
+
+After rollout, users should still open the same pages, but lists should be less fragile when filtering, sorting, or moving columns.
+
+### Scout Should Be More Reliable
+
+The update includes fixes around AI tools, workflow runs, large tool outputs, tool-call status, and strict number handling. This should help Scout with reporting and operational tasks.
+
+Good things to ask after rollout:
+
+- "Show me my open opportunities."
+- "Which proposals are due this week?"
+- "Give me the top open deals by value."
+- "Enrich this contact, but only update sourced fields."
+
+### Workflows Get Stronger
+
+The platform added workflow improvements around manual triggers, record selection, output schemas, and assignment strategies. That gives the operations team more room to build clean automations later without changing how users work.
+
+Examples this can support:
+
+- routing new deals
+- renewal reminders
+- closed-won digests
+- load-balanced assignments
+- intake follow-up
+
+### Email and Calendar Activity Should Be Better
+
+The release notes include Gmail, Calendar, Microsoft, and timeline fixes. For users, the goal is simple: account and opportunity pages should show more useful activity context with fewer sync surprises.
+
+## What Is Being Tested Before Release
+
+The team is checking:
+
+1. Login
+2. Search
+3. Company, Person, and Opportunity pages
+4. Saved views
+5. Dashboards
+6. File previews
+7. Mobile loading
+8. Scout answers
+9. App widgets and command actions
+10. Email and calendar activity
+
+## Source Screenshots
+
+<img src="/img/screenshots/twenty-releases/releases-overview.png" alt="Twenty public release page" />
+
+<img src="/img/screenshots/twenty-releases/github-v2160-release.png" alt="Twenty v2.16.0 release notes" />
+
+## For Admins
+
+The full ANC release brief is here: **[June 2026 CRM Release Brief](/docs/twenty-crm/release-brief-june-2026)**.
+
+Do not announce the update as live until staging and production verification are complete.
