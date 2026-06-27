@@ -19,6 +19,27 @@ Prepare and test the v2.16.1 image in staging first. Production stays on the cur
 
 <img src="/img/screenshots/twenty-releases/github-v2160-release.png" alt="Twenty v2.16.0 GitHub release notes" />
 
+## ANC Pages And Training Updates Already Live
+
+The production CRM now includes a restored and branded ANC Pages renderer on the current v2.14.3 custom image. This is separate from the v2.16.1 upgrade candidate, so users get the client-page improvements without waiting for the full platform upgrade.
+
+Live behavior:
+
+- Public client-safe Pages render at `/pages/{slug}` only when the Page is published, client-safe, and marked for client-safe audience.
+- Internal Pages render at `/internal-pages/{slug}/{viewToken}` and require the exact token.
+- Draft public Pages return `403`, and missing Pages return `404`.
+- The page header now shows ANC branding on the left and client branding on the right.
+- Pages read `pageData.clientLogoUrl` when available and fall back to client initials when a logo has not been stored yet.
+- The Copy Link button, section navigation, collapsible sections, tables, metric cards, and mobile layout were verified after deployment.
+
+<img src="/img/screenshots/twenty-crm/pages-red-sox-branded-desktop.png" alt="Branded ANC client page on desktop" />
+
+<img src="/img/screenshots/twenty-crm/pages-red-sox-branded-mobile.png" alt="Branded ANC client page on mobile" />
+
+The in-CRM training launcher was also returned to a side-rail placement so it sits beside the app instead of behaving like a floating bottom widget.
+
+<img src="/img/screenshots/twenty-crm/openanc-guide-side-rail.png" alt="ANC Guide side rail in the CRM" />
+
 ## Most Relevant Changes For ANC
 
 ### Security and Dependency Fixes
@@ -56,6 +77,21 @@ This train improves the app platform that ANC is now using for custom behavior:
 - CLI expired-token detection and interactive re-auth.
 
 ANC impact: this supports the "build extensions instead of forking the CRM" path for custom tabs, widgets, command actions, and logic functions.
+
+### Client Experience Enhancements To Build Next
+
+The Pages renderer now gives ANC a stable client-facing surface. The most valuable next layer is direct client interaction inside those Pages:
+
+1. **Client approval buttons**: Approve Creative, Request Changes, and Add Comment actions that create CRM tasks/workflow alerts and preserve an approval trail.
+2. **In-page comments**: Section-level comment threads so client questions stay attached to the proposal/status area instead of scattering across email.
+3. **Document downloads**: Attach spec sheets, proposal workbooks, case studies, and other files from CRM records, with download tracking.
+4. **View analytics dashboard**: Track views, unique visitors, last viewed time, viewed sections, and likely forwarding behavior.
+5. **Expiry countdowns**: Show proposal expiration and later support reminder workflows.
+6. **Side-by-side comparisons**: Let clients compare options or scenarios and record the preferred option.
+7. **Progress tracker**: Show project-stage completion for design, permits, installation, and approvals.
+8. **Real-time viewing signal**: Useful for sales follow-up, but should come after the audit/logging model is clear.
+
+Recommended build order: approvals, comments, downloads, analytics, then urgency/comparison/progress layers. The real-time viewing signal is powerful but needs careful privacy and logging decisions before it becomes client-visible.
 
 ### Workflow Improvements
 
