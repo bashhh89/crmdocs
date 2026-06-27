@@ -38,7 +38,7 @@ Drop in a client's RFP PDF. The Analyzer:
 3. Drafts a structured response with a compliance matrix
 4. Generates a scoping workbook ready to share
 
-This was tested across many real ANC RFPs and is locked in production. Every output also lands in the CRM under the deal.
+This was tested across many real ANC RFPs and follows the approved response format. Every output also lands in the CRM under the deal.
 
 ## Quick estimates from the CRM
 
@@ -54,14 +54,14 @@ Proposals can be priced in USD, CAD, EUR, or GBP. Pick the currency once at the 
 
 ## Things that exist but aren't yet enabled
 
-A few capabilities are fully built and tested but waiting on a billing decision before being switched on:
+A few capabilities are fully built and tested but not yet enabled for day-to-day use:
 
 - **Intelligence Mode** — preset margin tiers (Aggressive / Standard / Premium / Strategic) with a full audit table and P&L breakdown
 - **Strategic Match Badge** — a "17/20 Strategic Match" badge on proposals
 - **Client Requests Portal** — a share link so clients can submit change requests directly
 - **Verification Studio** — side-by-side Excel-vs-PDF comparison
 
-When Ahmad flips them on, they appear in the workflow with no extra setup needed.
+When the team enables them, they appear in the workflow with no extra setup needed.
 
 ## See also
 

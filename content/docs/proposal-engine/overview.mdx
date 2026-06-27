@@ -40,7 +40,7 @@ Every active opportunity grouped by stage. The classic kanban — drag a card ac
 - Filter by account exec, vertical, league, deal value
 - Group by something other than stage (account exec, owner, vertical)
 
-**This view writes back into Twenty CRM** — the Opportunity in the CRM updates in real time as you move cards here. Same record, two surfaces.
+**This view writes back into the CRM** — the Opportunity updates in real time as you move cards here. Same record, two surfaces.
 
 Deep dive: [Pipeline](/docs/proposal-engine/features/pipeline)
 
@@ -57,7 +57,7 @@ The core pricing tool. Take a requirement, turn it into a priced line-item list,
 - Toggle pitch (3.9mm / 2.9mm) and size cards for courtside tables and stanchions — dimensions auto-populate from the product database
 - Save revisions as you iterate; compare any two revisions side-by-side
 - Export as Excel (Univer format — Natalia's preferred) or PDF
-- Every export attaches automatically to the Opportunity in Twenty
+- Every export attaches automatically to the Opportunity in the CRM
 
 **Important:** If the rate card changes, you re-pull current pricing — the estimator never silently overrides what you've already typed.
 
@@ -76,9 +76,9 @@ Drop a client's RFP document, get back a compliance matrix and a draft response.
 - AI extracts: scope items, mandatory requirements, evaluation criteria, deadlines
 - For each requirement, the tool proposes an ANC response based on prior winning proposals
 - Output: compliance matrix + first-draft proposal structure
-- Every analysis is saved at `/tools/rfp-analyzer/history/[id]` — revisit later
+- Every analysis is saved in RFP history so you can revisit it later
 
-> The RFP Analyzer is **frozen** as of 2026-04-02 — production-approved, identical behavior required. No edits without explicit approval.
+The RFP Analyzer follows ANC's approved response format so proposal outputs stay consistent.
 
 Deep dive: [RFP Analyzer](/docs/proposal-engine/features/rfp-analyzer)
 
@@ -157,7 +157,7 @@ Pipeline  →  Estimator  →  SOW Builder  →  Proposal Detail  →  Sent
                                                   ↓
                                           Universal CRM Push
                                                   ↓
-                                            Twenty CRM
+                                                CRM
                                           (PDF + activity)
 ```
 
@@ -171,4 +171,4 @@ In parallel:
 - **First proposal end-to-end:** [Draft a proposal from scratch](/docs/proposal-engine/how-tos#draft-a-proposal-from-scratch)
 - **Inbound RFP:** [Respond to a client's RFP](/docs/proposal-engine/how-tos#respond-to-a-clients-rfp)
 - **AI agents in the engine:** [AI Agents](/docs/proposal-engine/features/ai-agents)
-- **How exports land in Twenty:** [Universal CRM Push](/docs/proposal-engine/features/universal-crm-push)
+- **How exports land in the CRM:** [Universal CRM Push](/docs/proposal-engine/features/universal-crm-push)

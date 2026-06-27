@@ -15,7 +15,7 @@ Open from an Opportunity detail page, or go to `/estimator` for the full list.
 - **Rate card integration** — pulls current pricing from `/admin/rate-card` so numbers are always up-to-date
 - **Multi-alternate support** — Alt 1 / Alt 2 / Alt 3 pricing shown side-by-side
 - **Revisions** — every saved estimate creates a revision; the revision compare tool shows exactly what changed between two versions
-- **Excel export (Univer format)** — Natalia's preferred handoff format; lives at `/api/estimator/export-unified`
+- **Excel export** — Natalia's preferred handoff format
 - **AI reasoning** — "why is this line item priced this way?" the estimator explains the math behind each figure
 - **AI chat** — natural-language estimating ("give me pricing for a 10-panel 4mm videowall with full install")
 
@@ -25,7 +25,7 @@ Open from an Opportunity detail page, or go to `/estimator` for the full list.
 2. Click "New Estimate" — starts a fresh estimate pre-populated with known requirements
 3. Add or adjust line items; AI chat helps you fill gaps
 4. Compare revisions as you iterate
-5. Export as Excel or PDF — export automatically attaches to the Opportunity in Twenty
+5. Export as Excel or PDF — export automatically attaches to the Opportunity in the CRM
 6. Client receives the doc; you track their signature back in the Pipeline
 
 ## Cleanup and bulk actions
@@ -35,4 +35,4 @@ The estimator list supports bulk selection and deletion for stale drafts. Mark c
 ## See also
 
 - [SOW Generation](./sow-generation) — once pricing is locked, generate the Installation or Premium SOW
-- [Universal CRM Push](./universal-crm-push) — how every export lands in Twenty automatically
+- [Universal CRM Push](./universal-crm-push) — how every export lands in the CRM automatically

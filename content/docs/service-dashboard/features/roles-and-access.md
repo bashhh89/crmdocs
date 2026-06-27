@@ -18,8 +18,8 @@ The dashboard has four roles, each progressively more restricted:
 
 Full control. Can:
 - Create and delete staff, venues, shifts, service types
-- Change system settings (cron jobs, bot name, report schedules, league budgets)
-- Run destructive operations (seed, wipe, discovery log clear)
+- Change system settings such as report schedules, league budgets, and assistant settings
+- Manage controlled admin maintenance actions
 - Manage everyone's roles and venue links
 
 ## Tech Support
@@ -32,7 +32,7 @@ Designed for Chris DeBernardis and his team. Same data visibility as admin, plus
 - Shift templates
 - Hours budgets
 
-But **blocked** from: user management, system settings, cron config, service-type config, venue creation, and destructive ops. Tech Support can run the day-to-day without being able to break the platform.
+But **blocked** from: user management, system settings, service-type configuration, venue creation, and admin maintenance actions. Tech Support can run the day-to-day without being able to break the platform.
 
 ## Manager
 

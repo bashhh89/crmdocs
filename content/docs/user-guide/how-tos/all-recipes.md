@@ -55,7 +55,7 @@ For advertising deals that spread across multiple teams:
 3. **+ New Allocation** — set `team` (Company), `fiscalYear`, `revenue`, `cost`, `margin`
 4. Repeat for each team
 
-See [Team Allocations](/docs/data-model/capabilities/team-allocations) for the data model.
+This is mainly for media deals with multiple team placements. If the allocation setup is missing, ask a CRM admin to add it to the deal.
 
 ### How to find overdue deals
 **Assistant:**
@@ -96,7 +96,7 @@ Open the Company → use the tabs. Every linked object is there: Opportunities, 
 3. Save
 
 ### How to import a contact list
-Use the CRM import flow or ask an admin to run a controlled import. See [Data Migration — Imports](/docs/data-migration/capabilities/imports).
+Use the CRM import flow or ask an admin to run a controlled import. Always search for the company first so the list does not create duplicate contacts.
 
 ---
 
@@ -154,7 +154,7 @@ Open the view → right-side options → Export → CSV.
 Export the target view, review the rows, then ask an admin to run a controlled bulk update.
 
 ### How to backfill a new field from Salesforce
-See [Data Migration — Salesforce Field Map](/docs/data-migration/capabilities/salesforce-field-map) for the mapping table, then ask an admin to run the backfill.
+Ask a CRM admin to review the old field, confirm the matching CRM field, test a small sample, then run the backfill.
 
 ---
 

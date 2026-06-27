@@ -11,20 +11,20 @@ A practical walkthrough for someone opening the ANC CRM for the first time. By t
 
 1. Go to **[crm.ancsports.net](https://crm.ancsports.net)**
 2. **Sign in with Google** — use your ANC email
-3. If it's your first time, the workspace owner (Ahmad) needs to have invited you. If you see "no workspace found", message Ahmad in Slack with your email.
+3. If it's your first time, an admin needs to invite you. If you see "no workspace found", ask your manager or CRM admin to add your ANC email.
 
 ## 2. Switch to the ANC app
 
 This is the most common stumble for new users.
 
-The CRM has two workspace apps:
+The CRM has two workspace areas:
 
-- **Standard** — Twenty's default empty starter app
+- **Standard** — the default starter area
 - **ANC** — every dashboard, view, and folder ANC actually uses
 
 Top-left of the screen is the **app switcher** (it shows the current app name). If it says "Standard", click it and pick **ANC**. The CRM remembers your choice — you only do this once.
 
-> If you bookmark a URL while in the Standard app, the bookmark won't show ANC content. Always copy URLs from inside the ANC app.
+If you bookmark a URL while in the Standard area, the bookmark will not show ANC content. Always copy URLs from inside the ANC area.
 
 ## 3. Tour the sidebar
 
@@ -55,7 +55,7 @@ Things to try:
 - **Click a widget title** to drill into the underlying records
 - **Switch between fiscal years** using the year filter at the top
 
-If a widget shows a wrong count, the filter on it likely needs a JSON-stringified array (`"[\"WON\"]"`, not `"WON"`). See [How to build a new widget](/docs/user-guide/how-tos/all-recipes#how-to-build-a-new-widget).
+If a widget shows a count that does not look right, ask a CRM admin to review the dashboard filter. Do not rebuild the dashboard yourself.
 
 ## 5. Open an Opportunity
 
@@ -66,7 +66,7 @@ You're looking at the deal detail page. It has:
 - **Header** — name, value, stage, owner
 - **Tabs along the top** — Notes, Tasks, Files, Activity Timeline
 - **Linked records on the right** — Company, People involved, Revenue Splits, Estimates, Service Tickets, Design Requests
-- **Fields on the right panel** — every field on the Opportunity object. 17 ANC-specific fields were added on top of Twenty's base set (probability, proposalDueDate, paidAmount, accountExecutive, margin, revenue2026, etc.)
+- **Fields on the right panel** — the key deal details ANC tracks, including probability, proposal due date, paid amount, account executive, margin, and yearly revenue.
 
 Edit any field inline by clicking it.
 
@@ -159,9 +159,9 @@ Open each → click the **star** icon → it goes into Favorites.
 
 ## 10. When something looks wrong
 
-- **Empty page with no familiar dashboards?** → You're on the Standard app. Switch to ANC.
+- **Empty page with no familiar dashboards?** → You're in the Standard area. Switch to ANC.
 - **A view shows zero rows?** → A filter has accidentally AND'd to impossible. Remove filters one at a time.
-- **A widget shows the wrong count?** → Filter values must be JSON-stringified. See [Build a widget](/docs/user-guide/how-tos/all-recipes#how-to-build-a-new-widget).
+- **A widget shows the wrong count?** → Ask a CRM admin to check the dashboard filter.
 - **Scout picked the wrong skill?** → Force it: *"use the `pipeline-tracker` skill: ..."*.
 - **You created a duplicate Company?** → [Merge duplicates](/docs/user-guide/how-tos/all-recipes#how-to-merge-duplicate-companies).
 
@@ -169,4 +169,3 @@ Open each → click the **star** icon → it goes into Favorites.
 
 - **The full how-to library:** [How-Tos](/docs/user-guide/how-tos/all-recipes)
 - **Every Scout skill with example prompts:** [Scout Skills](/docs/user-guide/capabilities/scout-skills)
-- **The data model:** [Data Model — Overview](/docs/data-model/overview)

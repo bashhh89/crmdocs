@@ -14,7 +14,7 @@ Short, recipe-style guides for the things proposal teams do most often.
 3. Click into the Opportunity → **New Estimate**
 4. Use **AI Quick** to seed line items, or chat: *"give me pricing for a 10-panel 4mm videowall with full install"*
 5. Iterate pricing; save revisions as you go
-6. Export PDF — it attaches to the Twenty Opportunity automatically
+6. Export PDF — it attaches to the CRM Opportunity automatically
 7. Send the PDF link to the client
 
 ## Respond to a client's RFP
@@ -32,7 +32,7 @@ Short, recipe-style guides for the things proposal teams do most often.
 3. Click **Generate Installation SOW**
 4. AI drafts the doc using line items + venue context + uploaded drawings
 5. Review, tweak, download PDF + Word versions
-6. Both versions attach to the Opportunity in Twenty automatically
+6. Both versions attach to the Opportunity in the CRM automatically
 
 ## Generate a Premium SOW
 
@@ -41,7 +41,7 @@ Short, recipe-style guides for the things proposal teams do most often.
 3. Add the high-touch sections: creative scope, content production, training schedule, ongoing support SLA
 4. AI drafts using the priced line items + the additional context
 5. Download branded PDF
-6. Auto-attaches to the Opportunity in Twenty
+6. Auto-attaches to the Opportunity in the CRM
 
 ## Compare two estimate revisions
 
@@ -95,7 +95,7 @@ The estimator never silently overrides what you've already typed — you always 
 3. The proposal locks (no more edits)
 4. Send-date is stamped
 5. Universal CRM Push fires:
-   - PDF attaches to the Opportunity in Twenty
+   - PDF attaches to the Opportunity in the CRM
    - Timeline activity logged
    - Slack notification posted
 
@@ -103,7 +103,7 @@ The estimator never silently overrides what you've already typed — you always 
 
 1. Open the Opportunity
 2. Files tab — every generated SOW for this Opportunity is listed with timestamps
-3. Or hit the SOW history endpoint at `/api/sow/history?opportunityId=...`
+3. Or use the SOW history list in the proposal workspace.
 
 Every SOW ever generated is archived; nothing gets garbage-collected.
 

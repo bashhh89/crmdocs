@@ -5,7 +5,7 @@ description: Spreadsheet-style operations workspace for venue hardware, walkthro
 
 # IoT Operations Workspace
 
-The **IoT Operations Workspace** is the spreadsheet-style workspace inside the Service Dashboard. Open **Field Ops -> Operations Workspace** or go to `/operations`.
+The **IoT Operations Workspace** is the spreadsheet-style workspace inside the Service Dashboard. Open **Field Ops -> Operations Workspace**.
 
 Use it for the physical side of the venue: displays, locations, rack equipment, IP notes, walkthrough logs, maintenance records, forms, and operational documents.
 
@@ -47,7 +47,7 @@ Use **Venues** when you are changing the venue record itself: address, timezone,
 The Service Dashboard assistant can work with the operations tables when your role allows it. It can:
 
 - List available operations tables
-- Show a table schema before creating or updating rows
+- Show the available fields before creating or updating rows
 - Query records with filters
 - Count matching records
 - Create or update rows in bulk
@@ -65,7 +65,7 @@ Count open maintenance rows for Prudential Center.
 ```
 
 ```text
-Show the schema for the Walkthrough Log before I add a new record.
+Show the fields for the Walkthrough Log before I add a new record.
 ```
 
 ```text
@@ -76,7 +76,7 @@ Draft a short SOP document for checking a ribbon board before doors open.
 
 - The workspace is for operational tables and documents, not sales pipeline or pricing.
 - Tickets still live in `/tickets`; walkthrough observations do not automatically become support tickets unless the team intentionally opens one.
-- CRM leadership views still live in Twenty CRM. The workspace is where the ops team keeps the table-level truth current.
+- CRM leadership views still live in the CRM. The workspace is where the ops team keeps the table-level truth current.
 - If a venue's operational records are not lining up with CRM data, check the venue name and Service Dashboard ID first.
 
 ## See also

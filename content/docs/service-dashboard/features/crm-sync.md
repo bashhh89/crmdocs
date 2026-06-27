@@ -41,6 +41,6 @@ The sync looks up the matching CRM venue by name. If a venue is called "Madison 
 
 ## See also
 
-- [The bigger picture: how all three tools talk](/docs/architecture)
+- [CRM overview](/docs/crm/overview)
 - [Workflows](./workflows) — the state machine that fires sync on each step
 - [Tickets](./tickets) — what triggers a sync when a ticket changes

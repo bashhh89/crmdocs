@@ -173,14 +173,14 @@ show me all designers with more than 40 logged hours last week
 ---
 
 ### `print-request-assistant` — print routing
-Helps route print requests to the right vendor based on size, material, venue.
+Helps route print requests to the right print partner based on size, material, venue.
 
 **Try:**
 ```
 where do I send a 20ft vinyl banner for the Knicks
 ```
 ```
-recommend a vendor for 50 acrylic signs for Dodgers
+recommend a print partner for 50 acrylic signs for Dodgers
 ```
 
 ---

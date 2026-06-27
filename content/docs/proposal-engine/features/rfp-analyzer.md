@@ -5,7 +5,7 @@ description: Drop a client RFP, get back a compliance matrix and draft response.
 
 # RFP Analyzer
 
-The RFP Analyzer (`/tools/rfp-analyzer`) turns a client-issued Request for Proposal into an actionable ANC response draft.
+The RFP Analyzer turns a client-issued Request for Proposal into an actionable ANC response draft.
 
 ## What happens when you upload an RFP
 
@@ -16,7 +16,7 @@ The RFP Analyzer (`/tools/rfp-analyzer`) turns a client-issued Request for Propo
 
 ## History
 
-Every analyzed RFP is saved at `/tools/rfp-analyzer/history/[id]`. You can revisit past analyses to compare: "what did client X ask for last year vs. this year?"
+Every analyzed RFP is saved in RFP history. You can revisit past analyses to compare: "what did client X ask for last year vs. this year?"
 
 ## Typical use case
 

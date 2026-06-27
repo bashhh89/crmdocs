@@ -14,9 +14,9 @@ The Pipeline view (`/pipeline`) is the default landing view for Sales. It shows 
 - **Search** — by account name, opportunity title, or city
 - **Weighted revenue** — each deal's value × probability, summed across the stage
 
-## How it stays in sync with Twenty
+## How it stays in sync with the CRM
 
-Every time an opportunity is created or updated here, the change pushes to Twenty CRM automatically. The reverse is also true — if an opportunity is created directly in Twenty, it shows up in the Pipeline within minutes. There's no "export to CRM" step — everything is already there.
+Every time an opportunity is created or updated here, the change pushes to the CRM automatically. The reverse is also true — if an opportunity is created directly in the CRM, it shows up in the Pipeline within minutes. There's no "export to CRM" step — everything is already there.
 
 ## How to use it
 
@@ -28,4 +28,4 @@ Every time an opportunity is created or updated here, the change pushes to Twent
 ## See also
 
 - [Estimator](./estimator) — pricing and line items live inside the Opportunity detail
-- [Universal CRM Push](./universal-crm-push) — how and when data flows back to Twenty
+- [Universal CRM Push](./universal-crm-push) — how and when data flows back to the CRM

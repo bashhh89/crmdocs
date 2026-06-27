@@ -46,6 +46,6 @@ This gives sales a 30-second ballpark path that doesn't require opening the full
 
 ## See also
 
-- [The bigger picture: how all three tools talk](/docs/architecture)
+- [CRM overview](/docs/crm/overview)
 - [AI inside the Proposal Engine](./ai-agents)
 - [RFP Analyzer](./rfp-analyzer)

@@ -11,7 +11,7 @@ Two flavors of SOW live in the Proposal Engine, both AI-assisted:
 
 For when ANC is doing the install. Covers: site prep, structural requirements, rigging points, cable paths, network drops, crew size, site visits, timeline, acceptance criteria.
 
-- Entry point: `/api/sow/generate-installation` (called from Estimator UI)
+- Start it from the Estimator UI
 - Pulls: line items from the estimate, venue info from CRM, any uploaded venue drawings
 - Output: branded PDF + Word (.docx) — both attach automatically to the Opportunity
 
@@ -19,17 +19,17 @@ For when ANC is doing the install. Covers: site prep, structural requirements, r
 
 For high-touch engagements — AV integration, content production, ongoing service. Longer, more detailed than Installation SOW.
 
-- Entry point: `/api/sow/generate-premium`
+- Start it from the SOW tools in the proposal workspace
 - Adds: creative/design scope, content production line items, training schedule, ongoing support SLA
 - Output: branded PDF attached to the Opportunity
 
 ## History
 
-Every generated SOW is saved at `/api/sow/history` and viewable per-project. If a client comes back six months later and asks "what did we scope last time?", you have the exact file.
+Every generated SOW is saved in the project history. If a client comes back six months later and asks "what did we scope last time?", you have the exact file.
 
 ## Scan for content
 
-The `/api/sow/scan` endpoint lets you drop an existing SOW (e.g., a client's RFP) and get back a structured summary — what's in scope, what's out of scope, what acceptance criteria the client expects.
+The SOW scanner lets you drop an existing SOW, such as a client's RFP, and get back a structured summary: what's in scope, what's out of scope, and what acceptance criteria the client expects.
 
 ## See also
 

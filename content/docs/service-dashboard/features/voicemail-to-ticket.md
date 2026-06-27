@@ -11,8 +11,8 @@ When a client calls the ANC Tech Support line and leaves a voicemail, a ticket i
 
 1. Client dials the support line → routes to Zoom's auto-receptionist → voicemail extension
 2. Client leaves message, hangs up
-3. Zoom Phone emails the voicemail notification (with audio attachment + auto-transcript) to a Zapier Email Parser
-4. Zapier parses the caller number, formats it, and POSTs to the Service Dashboard's voicemail endpoint
+3. The phone system sends the voicemail notification with audio and transcript to the automation
+4. The automation reads the caller number, formats it, and sends the details to the Service Dashboard
 5. Dashboard creates the ticket with:
    - **Source:** voicemail
    - **Category:** voicemail
@@ -24,7 +24,7 @@ When a client calls the ANC Tech Support line and leaves a voicemail, a ticket i
 
 ## Caller info extraction
 
-If Zapier's parser doesn't have an explicit "caller number" field for a given mailbox template, the dashboard falls back to regex-extracting the phone number and name directly from the transcription text ("My name is X, callback number Y"). So even messages where the parser misses the structured fields still land with proper identification.
+If the automation does not receive a clean caller-number field, the dashboard reads the phone number and name from the transcription text, such as "My name is X, callback number Y." So even messy messages still land with useful caller information.
 
 ## Dual-write during transition
 

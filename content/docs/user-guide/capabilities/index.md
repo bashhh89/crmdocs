@@ -11,7 +11,7 @@ description: What the CRM can do out of the box and what was built specifically 
 - Table, Kanban, Calendar views with filter/sort
 - Native email + calendar sync (Microsoft 365 / Google)
 - Dashboards with bar, pie, gauge, number, and line widgets
-- REST and GraphQL APIs
+- Admin-managed integrations
 - Custom agents (Helper is the default)
 - File storage
 
@@ -35,9 +35,9 @@ description: What the CRM can do out of the box and what was built specifically 
 | `bidStatus` | RFP_RECEIVED → WON / LOST / NO_BID |
 
 ### Custom objects
-- **`opportunityRevenueSplit`** — per-fiscal-year INSTALL / SERVICE / LICENSING / OTHER splits
-- **`opportunityTeamAllocation`** — per-team sale price and expense for advertising-style deals (the Hankook-MLB pattern across 9 teams)
-- **`serviceTicket`**, **`designRequest`**, **`estimate`**, **`rfpAnalysis`** — linked to both Company and Opportunity
+- **Revenue splits** — per-fiscal-year INSTALL / SERVICE / LICENSING / OTHER splits
+- **Team allocations** — per-team sale price and expense for advertising-style deals
+- **Service tickets, design requests, estimates, and RFP analyses** — linked to both Company and Opportunity
 
 ### Custom views
 Views tailored to the proposal and executive reporting workflows — see [Views](./views) for the full list and what each one sorts by.

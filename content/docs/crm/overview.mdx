@@ -1,27 +1,27 @@
 ---
-title: Twenty CRM Overview
+title: CRM Overview
 description: What the ANC CRM is, how to log in, and a tour of every surface you'll actually use.
 ---
 
-# Twenty CRM Overview
+# CRM Overview
 
 The ANC CRM is the system of record for every account, contact, deal, and activity at ANC Sports. It replaced Salesforce in April 2026. Live at **[crm.ancsports.net](https://crm.ancsports.net)**.
 
 If you remember one thing: everything is account-centric. Every ticket, opportunity, person, venue, estimate, and design request shows up on the **Company** page for that account. Open the Company, see everything.
 
-For the full architecture picture — how the CRM connects to the Proposal Engine and Service Dashboard — see **[How the three ANC tools fit together](/docs/architecture)**.
+The CRM connects with the Proposal Engine and Service Dashboard so account, deal, proposal, ticket, and venue activity stay in one place.
 
 ## Logging in
 
 1. Go to **[crm.ancsports.net](https://crm.ancsports.net)**
 2. Sign in with your ANC email (Google SSO)
-3. Top-left, the **app switcher** must say **ANC** — not "Standard". If it says Standard, click it and pick **ANC**. All ANC dashboards, views, and folders only show inside the ANC app.
+3. Top-left, the **app switcher** must say **ANC**. If it says Standard, click it and pick **ANC**. All ANC dashboards, views, and folders only show inside the ANC area.
 
-If you land on a blank "Standard" page with no familiar dashboards, that's why. Switch the app once and the CRM remembers it.
+If you land on a blank Standard page with no familiar dashboards, switch to ANC once and the CRM remembers it.
 
 ## Companies
 
-<img src="/img/screenshots/twenty-crm/01-companies.png" alt="Twenty CRM companies list" />
+<img src="/img/screenshots/crm/01-companies.png" alt="CRM companies list" />
 
 The account ledger — every client, venue, and partner organization. 3,730 records.
 
@@ -29,11 +29,11 @@ The account ledger — every client, venue, and partner organization. 3,730 reco
 - **Search before creating.** Type the name in the search box at the top before clicking "+ New". 20+ duplicates have been merged so far.
 - **Open a Company to see everything.** The detail page has tabs for Opportunities, Revenue Splits, Tickets, Estimates, Design Requests, RFP Analyses, Team Allocations, and Venues. This is the fastest way to answer "what's the full picture on this account?"
 - **Filter by vertical.** The `revenueType` field tags each company as `TECHNOLOGY`, `VENUE_SERVICES`, or `MEDIA_SPONSORSHIP`. Use the column filter in list view.
-- **Bulk-merge duplicates.** Select multiple rows in list view, use the bulk action menu. For programmatic merges, see [Merge duplicate Companies](/docs/user-guide/how-tos/all-recipes#how-to-merge-duplicate-companies).
+- **Bulk-merge duplicates.** Select multiple rows in list view, then use the bulk action menu. See [Merge duplicate Companies](/docs/user-guide/how-tos/all-recipes#how-to-merge-duplicate-companies).
 
 ## Opportunities
 
-<img src="/img/screenshots/twenty-crm/02-opportunities.png" alt="Twenty CRM opportunities kanban" />
+<img src="/img/screenshots/crm/02-opportunities.png" alt="CRM opportunities kanban" />
 
 Every deal in flight — RFPs, sales leads, budgeted projects. 8,360 records.
 
@@ -48,7 +48,7 @@ The full lifecycle, fields, and reporting model: [Opportunities](/docs/user-guid
 
 ## People
 
-<img src="/img/screenshots/twenty-crm/03-people.png" alt="Twenty CRM people list" />
+<img src="/img/screenshots/crm/03-people.png" alt="CRM people list" />
 
 Contacts — both client-side and internal. 19,966 records.
 
@@ -60,7 +60,7 @@ Contacts — both client-side and internal. 19,966 records.
 
 ## Tasks
 
-<img src="/img/screenshots/twenty-crm/04-tasks.png" alt="Twenty CRM tasks view" />
+<img src="/img/screenshots/crm/04-tasks.png" alt="CRM tasks view" />
 
 The shared activity queue — follow-ups, prep work, hand-offs.
 
@@ -72,7 +72,7 @@ The shared activity queue — follow-ups, prep work, hand-offs.
 
 ## Notes
 
-<img src="/img/screenshots/twenty-crm/05-notes.png" alt="Twenty CRM notes view" />
+<img src="/img/screenshots/crm/05-notes.png" alt="CRM notes view" />
 
 Long-form context — meeting notes, account history, decision logs.
 
@@ -83,7 +83,7 @@ Long-form context — meeting notes, account history, decision logs.
 
 ## Settings
 
-<img src="/img/screenshots/twenty-crm/06-settings.png" alt="Twenty CRM settings view" />
+<img src="/img/screenshots/crm/06-settings.png" alt="CRM settings view" />
 
 Workspace structure: members, roles, objects, fields, and integrations.
 
@@ -93,7 +93,7 @@ Workspace structure: members, roles, objects, fields, and integrations.
 - **Integrations** — connect approved systems through admin-managed access.
 - **Custom Skills** — Scout custom agent skills (the AI assistant's brain). 30 skills wired so far. See [Scout Skills](/docs/user-guide/capabilities/scout-skills).
 
-Most users won't need Settings. Admins (Ahmad, Jireh, Natalia) live in there.
+Most users will not need Settings. CRM admins manage those areas.
 
 ## The AI assistant — Scout
 
@@ -111,4 +111,3 @@ Full skill reference: [Scout Skills](/docs/user-guide/capabilities/scout-skills)
 
 - **First time on the CRM?** Read [Discover ANC CRM](/docs/user-guide/introduction) for the wider picture, then come back.
 - **Ready to log a deal?** [How to log a new RFP](/docs/user-guide/how-tos/all-recipes#how-to-log-a-new-rfp).
-- **Need the data model?** [Data Model — Overview](/docs/data-model/overview).

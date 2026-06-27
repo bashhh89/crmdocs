@@ -34,7 +34,7 @@ const TRACKS: Track[] = [
     href: "/docs/training/core",
     accent: "from-blue-500 to-blue-700",
     icon: Compass,
-    shot: "/img/screenshots/twenty-crm/02-opportunities.png",
+    shot: "/img/screenshots/crm/02-opportunities.png",
   },
   {
     key: "technology",
@@ -46,7 +46,7 @@ const TRACKS: Track[] = [
     href: "/docs/training/technology",
     accent: "from-indigo-500 to-blue-700",
     icon: Cpu,
-    shot: "/img/screenshots/twenty-crm/01-companies.png",
+    shot: "/img/screenshots/crm/01-companies.png",
   },
   {
     key: "venue-services",
@@ -58,7 +58,7 @@ const TRACKS: Track[] = [
     href: "/docs/training/venue-services",
     accent: "from-emerald-500 to-teal-700",
     icon: Wrench,
-    shot: "/img/screenshots/twenty-crm/04-tasks.png",
+    shot: "/img/screenshots/crm/04-tasks.png",
   },
   {
     key: "media-sponsorship",
@@ -70,7 +70,7 @@ const TRACKS: Track[] = [
     href: "/docs/training/media-sponsorship",
     accent: "from-violet-500 to-purple-700",
     icon: Megaphone,
-    shot: "/img/screenshots/twenty-crm/03-people.png",
+    shot: "/img/screenshots/crm/03-people.png",
   },
   {
     key: "leadership",
@@ -82,7 +82,7 @@ const TRACKS: Track[] = [
     href: "/docs/training/leadership",
     accent: "from-amber-500 to-orange-600",
     icon: LineChart,
-    shot: "/img/screenshots/twenty-crm/05-notes.png",
+    shot: "/img/screenshots/crm/05-notes.png",
   },
 ];
 
@@ -197,7 +197,7 @@ export default function AcademyCatalog({ display }: { display: string }) {
                 </span>
               </div>
               <Image
-                src="/img/screenshots/twenty-crm/02-opportunities.png"
+                src="/img/screenshots/crm/02-opportunities.png"
                 alt="The CRM — Opportunities view"
                 width={2880}
                 height={1800}

@@ -1,15 +1,10 @@
 {
   "title": "Docs",
   "pages": [
-    "---How Things Connect---",
-    "architecture",
-    "whats-possible",
     "---ANC CRM---",
-    "twenty-crm",
-    "user-guide",
     "training",
-    "data-model",
-    "data-migration",
+    "user-guide",
+    "crm",
     "---Proposal Engine---",
     "proposal-engine",
     "---Service Dashboard---",
