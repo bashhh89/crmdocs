@@ -26,7 +26,7 @@ The production CRM now includes a restored and branded ANC Pages renderer on the
 Live behavior:
 
 - Public client-safe Pages render at `/pages/{slug}` only when the Page is published, client-safe, and marked for client-safe audience.
-- Internal Pages render at `/internal-pages/{slug}/{viewToken}` and require the exact token.
+- Internal Pages require the exact private access link.
 - Draft public Pages return `403`, and missing Pages return `404`.
 - The page header now shows ANC branding on the left and client branding on the right.
 - Pages read `pageData.clientLogoUrl` when available and fall back to client initials when a logo has not been stored yet.
@@ -168,4 +168,3 @@ ANC impact: this overlaps with the recent multi-workspace/domain work on `crm.an
 - [Twenty public release page](https://twenty.com/releases)
 - [Twenty v2.15.0 release notes](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.15.0)
 - [Twenty v2.16.0 release notes](https://github.com/twentyhq/twenty/releases/tag/twenty%2Fv2.16.0)
-- [Twenty v2.16.1 Docker image tag](https://hub.docker.com/r/twentycrm/twenty/tags?name=v2.16.1)

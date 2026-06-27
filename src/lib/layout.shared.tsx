@@ -1,5 +1,5 @@
 import type {BaseLayoutProps} from 'fumadocs-ui/layouts/shared';
-import {appName, gitConfig} from './shared';
+import {appName} from './shared';
 
 export function baseOptions(): BaseLayoutProps {
   return {
@@ -11,7 +11,6 @@ export function baseOptions(): BaseLayoutProps {
       ),
       transparentMode: 'top',
     },
-    githubUrl: `https://github.com/${gitConfig.user}/${gitConfig.repo}`,
     links: [
       {
         text: 'CRM',
@@ -28,10 +27,6 @@ export function baseOptions(): BaseLayoutProps {
       {
         text: 'Service Dashboard',
         url: '/docs/service-dashboard/introduction',
-      },
-      {
-        text: 'Developers',
-        url: '/docs/operators/overview',
       },
       {
         type: 'button',

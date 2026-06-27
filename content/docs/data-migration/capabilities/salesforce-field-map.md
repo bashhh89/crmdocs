@@ -75,7 +75,7 @@ SF `Revenue_Tracker__c` rows where `Account != parent opp's Account` are treated
 
 ## Service Ticket, Design Request, Venue
 
-Migrated with SF field names mapped to camelCase equivalents in the CRM. For full per-field detail, check the SF schema dumps at `/root/twenty-backups/sf-schema/`.
+Migrated with SF field names mapped to CRM equivalents. Admins can review the full schema archive when deeper field detail is needed.
 
 ## Fields NOT migrated
 
@@ -91,4 +91,4 @@ Migrated with SF field names mapped to camelCase equivalents in the CRM. For ful
 3. **Opportunity → Company link:** via parent AccountId already matched in step 1
 4. **Revenue Tracker → Opportunity split:** exact parent opp match
 
-Unmatched records logged. See `/root/twenty-backups/` for full match + exception reports.
+Unmatched records were logged in the migration archive for follow-up review.

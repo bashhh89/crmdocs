@@ -5,7 +5,7 @@ description: Per-venue client-facing page with tickets, live workflow, and servi
 
 # Client Portal
 
-Every venue has a unique client-facing portal link (`/portal/[token]`). The portal is read-only from the client's side for most things, but they can open tickets with AI assistance and see real-time workflow status.
+Every venue can have a unique client-facing portal link. The portal is read-only from the client's side for most things, but they can open tickets with AI assistance and see real-time workflow status.
 
 ## What clients see
 
@@ -22,15 +22,15 @@ When a client opens a ticket from the portal, an AI intake assistant asks 2-3 di
 
 ## AI chat widget
 
-Each venue portal has its own AnythingLLM workspace that's pre-loaded with that venue's manuals, KB articles, and service history. Clients can ask "how do I reset the processor?" and get a venue-specific answer without waiting for support.
+Each venue portal can include an AI help widget pre-loaded with that venue's manuals, KB articles, and service history. Clients can ask "how do I reset the processor?" and get a venue-specific answer without waiting for support.
 
 ## Managing portals
 
-Admins use the **Client Portals** page (`/portals`) to see which venues have portals, get shareable links, and reset tokens if one leaks.
+Admins use the **Client Portals** page to see which venues have portals, get shareable links, and rotate a link if needed.
 
 ![Client Portals management](/img/screenshots/service-dashboard/08-portals.png)
 
 ## See also
 
-- [Venues](./venues) — where the portal token lives
+- [Venues](./venues) — where portal access is managed
 - [Tickets](./tickets) — where client-opened tickets land

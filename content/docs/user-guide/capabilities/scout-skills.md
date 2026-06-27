@@ -472,11 +472,9 @@ use the quick-estimator skill: 4 4mm LED boards 8x4ft each
 with the sow-generator skill, draft a SOW for opportunity 12345
 ```
 
-## Skill IDs (for API / advanced)
+## Skill Management
 
-- **Scout agent id:** `c73dcdc4-5b5b-442a-bad2-2b1e50bb1df2`
-- **Designer-AI skill id:** `df5f5790-857d-4dc3-adda-239652d8adbb`
-- List all skills: `query { agents { id name prompt } }` against the CRM GraphQL endpoint. See [Operators — API Access](/docs/operators/api-access).
+Admins can add, tune, or retire skills from CRM settings. Day-to-day users do not need skill IDs or technical setup details.
 
 <br />
 

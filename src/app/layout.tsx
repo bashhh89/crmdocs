@@ -11,21 +11,6 @@ export default function Layout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <head>
-        <Script
-          src="https://abc-umami.izcgmb.easypanel.host/script.js"
-          data-website-id="f26fd606-215f-4a41-a237-4e769a59a5ff"
-          strategy="afterInteractive"
-          defer
-        />
-        <Script
-          src="https://abc-umami.izcgmb.easypanel.host/recorder.js"
-          data-website-id="f26fd606-215f-4a41-a237-4e769a59a5ff"
-          data-sample-rate="1"
-          data-mask-level="moderate"
-          data-max-duration="300000"
-          strategy="afterInteractive"
-          defer
-        />
         {/* PostHog Analytics (no-op until NEXT_PUBLIC_POSTHOG_KEY is set) */}
         {process.env.NEXT_PUBLIC_POSTHOG_KEY ? (
           <Script

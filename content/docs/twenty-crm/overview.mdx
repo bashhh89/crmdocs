@@ -55,7 +55,7 @@ Contacts — both client-side and internal. 19,966 records.
 **What to do here:**
 - **Always link `company` first.** Don't create a contact floating without an account — the relationship is what makes the CRM useful.
 - **Search by email or phone.** Both are first-class fields, both are indexed.
-- **Bulk-import a contact list.** Use GraphQL `createPeople(data: [...])` in 50-row chunks. See [Imports](/docs/data-migration/capabilities/imports).
+- **Bulk-import a contact list.** Use the CRM import flow or ask an admin to run a controlled import.
 - **Tasks tab on a Person.** Logs every follow-up tied to that contact. Useful for tracking outreach cadence.
 
 ## Tasks
@@ -85,12 +85,12 @@ Long-form context — meeting notes, account history, decision logs.
 
 <img src="/img/screenshots/twenty-crm/06-settings.png" alt="Twenty CRM settings view" />
 
-Workspace structure: members, roles, objects, fields, API keys, integrations.
+Workspace structure: members, roles, objects, fields, and integrations.
 
 **What to do here:**
 - **Members & Roles** — invite new users, set role-based permissions.
-- **Objects** — add custom objects, custom fields, change pickup options. The CRM auto-generates the columns and exposes them through REST + GraphQL.
-- **API Keys** — generate JWTs for integrations. See [API Access](/docs/operators/api-access).
+- **Objects** — add custom objects, custom fields, and pickup options.
+- **Integrations** — connect approved systems through admin-managed access.
 - **Custom Skills** — Scout custom agent skills (the AI assistant's brain). 30 skills wired so far. See [Scout Skills](/docs/user-guide/capabilities/scout-skills).
 
 Most users won't need Settings. Admins (Ahmad, Jireh, Natalia) live in there.
@@ -112,4 +112,3 @@ Full skill reference: [Scout Skills](/docs/user-guide/capabilities/scout-skills)
 - **First time on the CRM?** Read [Discover ANC CRM](/docs/user-guide/introduction) for the wider picture, then come back.
 - **Ready to log a deal?** [How to log a new RFP](/docs/user-guide/how-tos/all-recipes#how-to-log-a-new-rfp).
 - **Need the data model?** [Data Model — Overview](/docs/data-model/overview).
-- **Building against the API?** [Operators — API Access](/docs/operators/api-access).

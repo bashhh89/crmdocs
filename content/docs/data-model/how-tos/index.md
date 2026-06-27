@@ -4,50 +4,22 @@ title: How-Tos
 
 # Data Model — How-Tos
 
-Recipes for querying and modifying the data model.
+Recipes for understanding and safely updating the data model.
 
-## Look up a field ID
+## Look up a field
 
-```graphql
-query {
-  object(input: {id: "c779922d-cf25-4a5e-9382-23eb1c02199e"}) {
-    fields { id name type options { value label } }
-  }
-}
-```
-
-Substitute any object ID — see [Opportunity fields](/docs/data-model/capabilities/opportunity-fields) for the opportunity UUID, or [Field IDs Reference](/docs/operators/field-ids-reference) for the full table.
+Open Settings, choose the object, and review the field list. Use the field label and purpose from [Opportunity fields](/docs/data-model/capabilities/opportunity-fields) before changing any dashboard or import mapping.
 
 ## Add a new field to Opportunity
 
-Via GraphQL metadata:
+Use Settings → Objects → Opportunity → Fields. Add the field, confirm its type, then test it on one record before using it in reports or imports.
 
-```graphql
-mutation {
-  createOneField(input: {
-    objectMetadataId: "c779922d-cf25-4a5e-9382-23eb1c02199e",
-    name: "newFieldName",
-    label: "New Field Label",
-    type: TEXT
-  }) { id }
-}
-```
-
-The CRM auto-generates the column and exposes it through REST + GraphQL.
+The CRM handles the underlying column and form placement after the field is saved.
 
 ## Add a tab to a record detail page
 
-Use the pattern described in [field reference](/docs/operators/field-ids-reference) — a FIELD-type widget with `fieldDisplayMode: VIEW` pointing at the reverse-relation field ID.
+Ask an admin to add the tab from the record layout settings, then verify it on an Opportunity with real linked data.
 
 ## Bulk update a field across many records
 
-```graphql
-mutation {
-  updateOpportunities(
-    data: {probability: 75},
-    filter: {bidStatus: {eq: "SHORTLISTED"}}
-  ) { affectedCount }
-}
-```
-
-Cap: 200 records per call. For more, chunk. See [Rate Limits](/docs/operators/rate-limits).
+Export the target records, review the change with the owner, then ask an admin to run a controlled bulk update. Always spot-check a sample before and after the update.

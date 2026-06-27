@@ -109,7 +109,7 @@ Every SOW ever generated is archived; nothing gets garbage-collected.
 
 ## Scan a client's existing SOW
 
-1. Tools → **SOW Scan** (or hit `/api/sow/scan`)
+1. Tools → **SOW Scan**
 2. Drop the client's SOW (PDF, Word)
 3. Get back a structured summary:
    - In-scope items
@@ -128,13 +128,13 @@ Every SOW ever generated is archived; nothing gets garbage-collected.
    - Installation requirements from the SOW
 4. Output: single PDF the installer can hand to the venue
 
-## Switch the AI provider for an estimate
+## Change the AI mode for an estimate
 
-1. Settings → **AI Providers**
-2. Pick: Gemini, OpenAI, Mercury, Z.AI, NVIDIA, or local Ollama
-3. Save — the next estimate uses the new provider
+1. Settings → **AI**
+2. Pick the approved mode for the estimate
+3. Save — the next estimate uses the selected mode
 
-Each provider has its own key format: Gemini `AIza...`, Mercury `sk_...`, Z.AI UUID-style, NVIDIA `nvapi-...`. Keys are set in EasyPanel env vars, not in the UI.
+Admins manage provider credentials outside the user interface.
 
 ## Restore a deleted estimate
 
@@ -147,13 +147,13 @@ Soft-delete is the default for bulk actions. Estimates are kept in trash for 14 
 ## Troubleshooting
 
 ### The estimate export is missing line items
-The Excel export uses Univer format — check the `/api/estimator/export-unified` log for warnings. Most often: a line item without a unit price gets silently dropped to avoid `$0` lines hitting the client. Fix the price; re-export.
+Most often: a line item without a unit price gets held back to avoid `$0` lines hitting the client. Fix the price, then re-export.
 
 ### The SOW generation timed out
-Premium SOWs with 30+ line items can take 60-90 seconds. If it actually times out (>120s), check the AI provider — Gemini and OpenAI handle the load fine; Mercury can be slower under heavy use.
+Premium SOWs with 30+ line items can take 60-90 seconds. If it actually times out, retry once and then ask an admin to check the AI service health.
 
 ### The PDF didn't attach to the Opportunity
-Universal CRM Push uses fire-and-forget. The push log is at `/api/crm-push/log?opportunityId=...`. Most common failure: the Opportunity in Twenty was deleted between estimate save and export.
+Most common cause: the Opportunity was deleted or archived between estimate save and export. Restore or recreate the Opportunity, then export again.
 
 ### "Rate card not found" on a new estimate
 You're looking at a stale tab. Refresh — the rate card is loaded once per session.

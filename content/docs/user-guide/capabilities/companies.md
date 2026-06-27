@@ -41,7 +41,7 @@ Companies are the object most likely to accumulate duplicate records (team vs. t
 
 1. Note both IDs
 2. Pick the canonical record (usually the one with more linked opps/people)
-3. Bulk-reassign linked objects using the GraphQL cheat-sheet in [Operators — API Access](/docs/operators/api-access)
+3. Ask an admin to reassign linked records before archiving the duplicate
 4. Soft-delete the duplicate (reversible via `restoreCompany(id)`)
 
 20 duplicates have been merged so far (Apr 2026). When in doubt, ask the assistant: *"are there duplicate companies for Red Sox"*.

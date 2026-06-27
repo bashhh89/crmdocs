@@ -125,11 +125,11 @@ Admin only:
 
 ### A voicemail ticket has no caller info
 
-Most often: Zapier's parser didn't have an explicit "caller number" field for that mailbox template. The dashboard falls back to regex-extracting the number from the transcription. If both fail, you can edit `Contact phone` directly on the ticket.
+Most often: the voicemail parser did not detect a caller number. If the fallback detection also misses it, you can edit `Contact phone` directly on the ticket.
 
 ### Stop voicemails from creating tickets
 
-Don't. This is a critical pipeline. If you need to disable it temporarily, talk to Ahmad — there's a feature flag, not a button.
+This is a critical pipeline. If it needs to be paused temporarily, ask an admin to disable it through platform settings.
 
 ## Venues
 
@@ -229,7 +229,7 @@ Don't. This is a critical pipeline. If you need to disable it temporarily, talk 
 
 ### Slack isn't firing on new tickets
 
-Check `SLACK_BOT_TOKEN` in EasyPanel env vars on the `anc-services` service. If the token is valid but messages don't appear, the venue's Slack channel may have been archived or renamed — check the venue detail page for the channel field.
+Ask an admin to verify the notification integration. If messages still do not appear, the venue's channel may have been archived or renamed — check the venue detail page for the channel field.
 
 ### Event discovery returned nothing
 

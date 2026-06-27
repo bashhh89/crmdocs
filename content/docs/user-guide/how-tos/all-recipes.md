@@ -79,21 +79,9 @@ which deals have proposalDueDate in the past and bidStatus is not WON or LOST
 
 ### How to merge duplicate Companies
 1. Identify canonical record (the one with more linked opps/people)
-2. Bulk-reassign linked records. For Opportunities:
-   ```graphql
-   mutation {
-     updateOpportunities(
-       data: {companyId: "CANONICAL_UUID"},
-       filter: {companyId: {eq: "DUPLICATE_UUID"}}
-     ) { affectedCount }
-   }
-   ```
-3. Same pattern for People, Venues
-4. For ServiceTickets use `companyIdId` (note the double-Id)
-5. Soft-delete the duplicate: `deleteCompanies(filter: {id: {in: ["DUPLICATE_UUID"]}})`
-6. Reversible via `restoreCompany(id)`
-
-See [Operators — API Access](/docs/operators/api-access) for the full cheat-sheet.
+2. Ask an admin to reassign linked records before archiving the duplicate
+3. Confirm Opportunities, People, Venues, and Service Tickets point to the canonical record
+4. Archive the duplicate instead of deleting it permanently
 
 ### How to see everything for one account
 Open the Company → use the tabs. Every linked object is there: Opportunities, Revenue Splits, Tickets, Estimates, Design Requests, RFP Analyses, Team Allocations, Venues.
@@ -108,7 +96,7 @@ Open the Company → use the tabs. Every linked object is there: Opportunities, 
 3. Save
 
 ### How to import a contact list
-Use GraphQL `createPeople(data: [...])` in 50-row chunks. See [Data Migration — Imports](/docs/data-migration/capabilities/imports).
+Use the CRM import flow or ask an admin to run a controlled import. See [Data Migration — Imports](/docs/data-migration/capabilities/imports).
 
 ---
 
@@ -126,13 +114,8 @@ Open the view → copy the URL. URLs include the view ID so the recipient lands 
 ### How to build a new widget
 1. Open a dashboard → Edit
 2. Add widget → pick type (bar, pie, number, gauge, line)
-3. Filter JSON — SELECT values are JSON-stringified arrays:
-   ```json
-   {"operator":"AND","children":[
-     {"fieldMetadataId":"<uuid>","operand":"IS_NOT","value":"[\"WON\"]"}
-   ]}
-   ```
-4. For numeric: `"operand":"GREATER_THAN_OR_EQUAL","value":"50"` (string-encoded)
+3. Pick the object, fields, filters, and display style
+4. Save and confirm the count matches the source view
 
 **Assistant shortcut:**
 ```
@@ -168,10 +151,10 @@ learn this: our default payment terms are 50/50 on projects over $500K
 Open the view → right-side options → Export → CSV.
 
 ### How to bulk update 1,000 opportunities
-Use GraphQL `updateOpportunities(data, filter)` — capped at 200 per call. For per-record unique updates, REST PATCH at ~1.5/s. See [Rate Limits](/docs/operators/rate-limits).
+Export the target view, review the rows, then ask an admin to run a controlled bulk update.
 
 ### How to backfill a new field from Salesforce
-See [Data Migration — Salesforce Field Map](/docs/data-migration/capabilities/salesforce-field-map) for the mapping table + pickle file locations.
+See [Data Migration — Salesforce Field Map](/docs/data-migration/capabilities/salesforce-field-map) for the mapping table, then ask an admin to run the backfill.
 
 ---
 
@@ -194,10 +177,10 @@ Force it: *"use the `pipeline-tracker` skill: ..."*.
 Check filters haven't accidentally AND'd to impossible. Remove filters one at a time.
 
 ### Design AI didn't generate
-The fallback worker (`designer-ai.service`) polls every 15s — give it a minute. If still nothing, check `aiPrompt` was actually saved and `GOOGLE_API_KEY` env var is present on the CRM server.
+Give it a minute, then confirm the prompt was saved. If it still does not generate, ask an admin to check the image-generation service.
 
 ### Dashboard widget shows wrong count
-Widget filter values must be JSON-stringified — `"[\"WON\"]"` not `"WON"`. Numeric values must be string-encoded — `"50"` not `50`.
+Check whether the widget filters match the source view, especially status filters and probability thresholds.
 
 ### Stakeholder lands on empty "Standard" app
 They need to switch to the **ANC** app (top-left). Or send them a direct-view URL — those include the app path.

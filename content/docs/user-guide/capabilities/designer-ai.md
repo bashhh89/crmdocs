@@ -27,29 +27,24 @@ The assistant enriches with team palette, venue motifs, and broadcast vocabulary
 2. Fill `aiPrompt`
 3. Save — the worker picks it up and fills `generatedImage` within ~20 seconds
 
-## Under the hood
+## How it works
 
-- **Model:** `gemini-3-pro-image-preview` (Google)
-- **Logic function:** `generate-design-image` (id `30ab8a08-1d16-4603-bd9b-4e7925e3adfb`) — Node22 runtime, tool-enabled
-- **Flow:**
-  1. Prompt → Gemini API
-  2. Generated image uploaded to the CRM's file storage via `uploadFilesFieldFile`
-  3. New Design Request record created with `generatedImage` FILES field populated
-  4. Returns `{url, designRequestId, markdownToEmbed}` for inline embed
+1. The assistant turns your prompt into a venue-aware creative brief.
+2. The image is generated and saved to the Design Request.
+3. The result appears inline so the team can review, revise, or share it.
 
 ## Auto-follow-on: proof share link
 
-When a Design Request flips to `STATUS_CLIENT_REVIEW`, the workflow **Auto-Generate Proof Share Link on Client Review** (id `fdd500af`) fires:
+When a Design Request moves to client review, the proof workflow runs:
 
-1. HTTP call generates a proof URL
-2. Updates `proofShareUrl`
-3. Emails `proofClientEmail`
-4. Proof review flow kicks off
+1. A proof link is generated.
+2. The Design Request is updated.
+3. The client review flow kicks off.
 
 ## Safety net
 
-A Python worker at `scripts/designer_ai_worker.py` (systemd service `designer-ai.service`, 15s poll) also processes any record where `aiPrompt` is set but `generatedImage` is null. Redundancy for when the logic function is unavailable.
+A background safety check also picks up requests if the primary automation is delayed.
 
 ## Tested on
 
-Reference record `45fe8bf7-047e-4211-aa6d-490cfb7cc1fb` — **"Celtics TD Garden – 3 Boards"**. Image generated in 20s, URL populated, Design Request created.
+Reference test: **"Celtics TD Garden – 3 Boards"**. Image generated in about 20 seconds and attached to a Design Request.

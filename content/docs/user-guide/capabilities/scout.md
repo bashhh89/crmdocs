@@ -70,4 +70,4 @@ Natural language → action. Examples:
 
 ## Keeping Scout current
 
-When the CRM gets a new field, view, or widget, Scout's system prompt should be updated so it knows to use it. See [Operators — API Access](/docs/operators/api-access) for the `updateOneAgent` call.
+When the CRM gets a new field, view, or widget, Scout's instructions should be updated so it knows to use it.

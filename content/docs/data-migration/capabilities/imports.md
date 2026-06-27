@@ -16,59 +16,27 @@ Two ways to import: CSV through the UI, or API calls.
 
 Best for: one-time data loads, user-driven imports, under 5,000 rows.
 
-## API import (GraphQL)
+## Admin import
 
-For programmatic or larger imports.
+For programmatic or larger imports, ask an admin to run a controlled import.
 
 ### Companies
-```graphql
-mutation {
-  createCompanies(data: [
-    {name: "Acme Corp", league: "NFL", revenueType: "TECHNOLOGY"},
-    {name: "Beta Inc",  league: "NBA", revenueType: "VENUE_SERVICES"}
-  ]) { id name }
-}
-```
-Chunk size: 50 rows per call.
+Admins should test a small sample first, then run the full import in reviewed batches.
 
 ### People
-```graphql
-mutation {
-  createPeople(data: [
-    {firstName: "Alice", lastName: "Smith", email: "a@acme.com", companyId: "company-uuid"},
-    ...
-  ]) { id }
-}
-```
+Always match each Person to an existing Company before import.
 
 ### Opportunities
-```graphql
-mutation {
-  createOpportunities(data: [
-    {name: "Acme 2026 RFP", companyId: "uuid", stage: "PROPOSAL", bidStatus: "RFP_RECEIVED", dealValue: 500000},
-    ...
-  ]) { id }
-}
-```
+Always match each Opportunity to the canonical Company before import.
 
 ### Revenue splits
-```graphql
-mutation {
-  createOpportunityRevenueSplits(data: [
-    {opportunityId: "uuid", fiscalYear: 2026, allocatedAmount: 300000, splitType: "INSTALL"},
-    ...
-  ]) { id }
-}
-```
+Revenue splits should only be imported after the parent Opportunities are confirmed.
 
 ## Rate limits
 
-- **100 API calls / 60 seconds** (REST and GraphQL share this quota)
-- **Bulk updates:** `updateOpportunities(data, filter)` capped at **200 records per call**
-- **Bulk creates:** use **50-row chunks** for safety
-- **Per-record PATCH:** REST, paced at **0.65s (~1.5/s)** with exponential backoff on 429
-
-See [Rate Limits](/docs/operators/rate-limits) for detail.
+- Run imports in reviewed batches.
+- Spot-check a sample before and after import.
+- Pause if errors or duplicate Companies appear.
 
 ## Critical: don't create duplicate Companies
 
@@ -91,6 +59,6 @@ For SF → CRM imports, see the [Salesforce Field Map](./salesforce-field-map) t
 
 After every bulk import:
 
-1. Count via GraphQL: `query { opportunities { totalCount } }`
-2. Spot-check 5 random records via UI
-3. Run Scout: *"any opportunities with null company in the last 24 hours"* — catches broken links
+1. Compare counts before and after import.
+2. Spot-check 5 random records in the CRM.
+3. Run Scout: *"any opportunities with null company in the last 24 hours"* — catches broken links.

@@ -96,8 +96,8 @@ AI-assisted Scope of Work generation. Two flavors — Installation SOW and Premi
 **What you can do:**
 - Click "Generate Installation SOW" on any Opportunity with a finalized estimate
 - AI drafts the doc using line items + venue context + uploaded drawings
-- Output is branded PDF + Word (.docx) — both attach to the Opportunity in Twenty automatically
-- Drop a client's existing SOW into `/api/sow/scan` to get back a structured summary of in-scope / out-of-scope / acceptance criteria
+- Output is branded PDF + Word (.docx) — both attach to the Opportunity automatically
+- Drop a client's existing SOW into the scanner to get back a structured summary of included items, excluded items, acceptance criteria, and timeline
 
 Deep dive: [SOW Generation](/docs/proposal-engine/features/sow-generation)
 
@@ -122,13 +122,13 @@ The Submittal Compiler pulls from this library when assembling packages — you 
 
 Account-level controls that shape how proposals are generated and presented.
 
-**When to use it:** Onboarding a new team member, updating company branding, swapping the default SOW template, adjusting AI provider keys.
+**When to use it:** Onboarding a new team member, updating company branding, swapping the default SOW template, or adjusting approved AI settings.
 
 **What you can do:**
 - Manage users and roles
 - Update branding (logo, colors, default header/footer)
 - Swap SOW templates (Premium SOW default, Installation SOW default)
-- Configure AI providers (Gemini, OpenAI, Mercury, Z.AI, NVIDIA — each has its own key format)
+- Configure approved AI settings
 - Set rate card preferences
 
 Most users won't need this. Admins live here.

@@ -30,7 +30,7 @@ The 81% gap represents SF revenue rows where the Account didn't match a Company 
 ## Cleanups performed during migration
 
 ### 1. 607 stale opportunities soft-deleted
-Criteria: `stage=CUSTOMER + bidStatus IN (LOST, NO_BID) + dealValue IS NULL`. These were zombie records with no business value. Recovery file: `/root/twenty-backups/junk-deleted-opps-1776448037.txt`. Reversible.
+Criteria: customer-stage records with lost/no-bid status and no deal value. These were stale records with no business value. The cleanup is reversible from the migration archive.
 
 ### 2. 20 duplicate Companies merged
 Team + team-with-venue pairs. Canonical record kept; linked opps, people, venues moved; duplicate soft-deleted. Merges include: Pacers, Penguins, Cavaliers, 76ers, Stars, Cyclones, Brewers, Trail Blazers, Commanders, Pelicans, Bruins, Tigers, Royals, Liverpool FC, Dodgers, Rainiers, Rays, Temple, Nationals, Montana.
@@ -53,7 +53,7 @@ SF maintained 5 RecordTypes. The CRM rolls them up into the three verticals the 
 
 ## Salesforce access (read-only, ongoing)
 
-Salesforce is **read-only** for cross-reference only. Never create, update, or delete records there. Credentials at `/root/.sf-creds`.
+Salesforce is **read-only** for cross-reference only. Never create, update, or delete records there. Admins manage access.
 
 Typical use: verify a count, look up a record that didn't migrate, check a field that wasn't mapped yet.
 
@@ -61,5 +61,5 @@ Typical use: verify a count, look up a record that didn't migrate, check a field
 
 - Pre-2021 cutoff deletion (pending final year decision)
 - 223 venues still unlinked to a Company (81/374 → 152/374 linked so far)
-- Email → Opportunity workflow with Company existence check (Phase 2, ~1 week)
-- Accounting integration + probability-weighted forecasting (Phase 2, ~2 days)
+- Email to Opportunity workflow with Company existence check
+- Accounting integration and probability-weighted forecasting

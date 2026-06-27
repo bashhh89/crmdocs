@@ -38,6 +38,6 @@ This rule exists because duplicate accounts dilute revenue reporting. It's the s
 
 ## Bulk operations
 
-For per-person bulk updates, use REST PATCH paced at ~1.5/s — see [Rate Limits](/docs/operators/rate-limits).
+For per-person bulk updates, ask an admin to run a controlled update.
 
-For bulk creates (importing a contact list), use GraphQL `createPeople(data: [...])` in 50-row chunks.
+For bulk creates, use the CRM import flow or ask an admin to run a controlled import.
