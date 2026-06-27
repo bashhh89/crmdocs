@@ -181,7 +181,7 @@ export async function POST(req: Request) {
     toolChoice: 'auto',
   });
 
-  return result.toUIMessageStreamResponse();
+  return result.toUIMessageStreamResponse({sendReasoning: false});
 }
 
 export type SearchTool = typeof searchTool;
