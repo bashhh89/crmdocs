@@ -1,0 +1,80 @@
+---
+title: What's Possible — and What Takes a Build
+description: A plain-English guide to what the CRM can do today, what can be custom-built, and what isn't how the platform works — so you know before you ask.
+---
+
+import {Cards, Card} from 'fumadocs-ui/components/card';
+import {Callout} from 'fumadocs-ui/components/callout';
+import {Settings, Hammer, Ban} from 'lucide-react';
+
+<AudioPlayer src="/audio/training/core-whats-possible.mp3" />
+
+**After this lesson** you'll be able to look at almost any idea and know which of three buckets it falls into — before anyone spends time on it.
+
+When someone asks *"can the CRM do this?"*, the answer is almost always **yes** — the only real question is *how much it takes.* Every request lands in one of three buckets, and knowing which one saves everybody time.
+
+<Cards>
+  <Card icon={<Settings />} title="✅ Configuration" description="A setting we adjust. Fast — often same day. No build required." />
+  <Card icon={<Hammer />} title="🛠️ A Build" description="The platform fully supports it, but it's custom work that takes real effort and time." />
+  <Card icon={<Ban />} title="⛔ Not how it works" description="Rare. The idea fights the way the platform is designed — better to rethink the approach." />
+</Cards>
+
+<Callout title="The honest headline">
+Most things are possible. The question is almost never *can we* — it's *is this a quick setting, or a build?* This page helps you tell the difference at a glance.
+</Callout>
+
+## ✅ Bucket 1 — Configuration (fast)
+
+These are settings. They don't need a build, and they usually happen quickly.
+
+| You want to… | Example |
+|---|---|
+| Add a new field or dropdown | "Add a 'Renewal Date' field to opportunities" |
+| Add an option to an existing dropdown | "Add 'business dev' to the category list" |
+| Add or hide a column on a list | "Show contract value on the pipeline view" |
+| Build a new saved view or filter | "A view of just my open deals over $1M" |
+| Add a dashboard chart | "Won revenue by division for 2026" |
+| Rename a field, reorder a record's page | "Move the status fields to the top" |
+| Pin something to your sidebar | "Keep my proposal pipeline one click away" |
+| Tweak what the AI assistant knows or does | "Have the assistant pull renewals coming up" |
+
+If your idea looks like one of these, it's almost certainly a same-day setting.
+
+## 🛠️ Bucket 2 — A Build (doable, takes effort)
+
+The platform supports all of these — they're real custom work, not a setting, so they take time and planning. But the answer is still **yes**.
+
+| You want to… | What it actually is |
+|---|---|
+| A brand-new *type* of record | A new object — like adding "Sponsorship Placements" alongside Accounts and Deals |
+| A custom screen, button, or widget | A purpose-built piece of interface inside the CRM |
+| Something to happen automatically | An automation — "when a deal is won, alert the channel and email the team" |
+| A new AI skill or assistant that does real work | A custom assistant trained on a specific job |
+| Connect the CRM to an outside tool | A connection to another service's data |
+| A guided, multi-step workflow | A custom flow built on top of the records |
+
+<Callout type="info">
+Bucket 2 is where "can we do this?" most often surprises people. The answer is yes — just budget for a build, not a flip of a switch. Flagging it early as a build (rather than assuming it's a quick setting) is what keeps timelines honest.
+</Callout>
+
+## ⛔ Bucket 3 — Not how it works (rare)
+
+A small set of ideas push against how the platform is built — for example, asking each person to have a fundamentally different app structure, or changing core record behavior the platform doesn't expose. These are uncommon, and there's almost always a better-fitting way to get the same outcome.
+
+When something lands here, the move isn't "no" — it's "let's reshape the idea to fit how the platform actually works," which usually gets you 90% of what you wanted without fighting the tool.
+
+## How to size up your own ask
+
+Ask yourself, in order:
+
+1. **Is it a field, view, column, filter, dashboard, or sidebar item?** → Bucket 1, configuration. Quick.
+2. **Is it a new record type, a custom screen/button, an automation, an AI agent, or an outside connection?** → Bucket 2, a build. Doable, but plan for it.
+3. **Does it require the platform to behave in a way nothing else does?** → Bucket 3. Let's rethink the approach.
+
+## When in doubt, just ask
+
+You don't have to get the bucket right — that's the point of asking early. Describe what you're trying to *accomplish* (not how you think it should be built), and we'll tell you which bucket it's in and what it takes.
+
+The worst outcome is assuming something is a quick setting, building a whole workflow around that assumption, and only then finding out it was a build. This page exists so that never happens.
+
+👉 **[Open the CRM](https://crm.ancsports.net)**
