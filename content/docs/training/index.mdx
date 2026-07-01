@@ -1,70 +1,86 @@
 ---
 title: CRM Training — Start Here
-description: A short, self-paced course to get comfortable in the CRM. Do Core first, then your vertical.
+description: A role-based CRM training program for working cleanly, finding records fast, and keeping pipeline data reliable.
 ---
 
 import {Cards, Card} from 'fumadocs-ui/components/card';
 import {Callout} from 'fumadocs-ui/components/callout';
-import {Rocket, Cpu, Wrench, Megaphone, LineChart} from 'lucide-react';
+import {Rocket, Cpu, Wrench, Megaphone, LineChart, ClipboardCheck} from 'lucide-react';
 
-Welcome 👋 This is a short, self-paced course to get you comfortable in the CRM — at your own speed, on any device. No prior experience needed, and there are no wrong answers.
+This training is the operating manual for using the CRM as the shared source of truth across Technology, Venue Services, Media & Sponsorship, and Leadership.
 
-## How it works
+The goal is not just to learn where buttons are. The goal is to make sure every account, opportunity, ticket, placement, forecast, and follow-up can be found, trusted, and acted on by the next person who opens it.
 
-**Two simple steps:**
+<Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Start with the full picture: dashboards, pipeline, records, and owner-level follow-up all connect back to the same CRM data." />
 
-1. **Do _Core_ first** — it's for everyone. Logging in, finding your way around, the day-to-day basics, and how to just *ask* the assistant to do things for you.
-2. **Then do your vertical** — the part built around how *your* side of the business actually works.
+## The standard
 
-<Callout title="Not sure where to start?">
-Take the 2-minute intro chat first — it asks a few friendly questions and points you straight to the lessons that fit you. (Your personal link comes from Natalia.)
+Use the CRM with the same standard you would use for a client-facing proposal or an internal revenue review:
+
+- **Find the right record before creating a new one.** Duplicate accounts create bad history, bad reporting, and wasted follow-up.
+- **Keep status fields current.** Stage, owner, close date, amount, bid status, service status, and next step drive dashboards.
+- **Write notes that someone else can use.** A good note says what happened, what changed, and what happens next.
+- **Use views instead of personal spreadsheets.** If the information belongs to the team, it belongs in a shared CRM view or dashboard.
+- **Ask the assistant for speed, then verify important numbers.** The assistant is excellent for finding, summarizing, and drafting. For revenue, dates, and client commitments, check the source record.
+
+<Callout title="Training order">
+Do **Core** first. Then complete the vertical that matches your day-to-day work. Leadership users should complete Core plus Leadership, then skim the verticals they oversee.
 </Callout>
 
-## Start with Core
+## Start here
 
 <Cards>
   <Card
     icon={<Rocket />}
     title="Core — for everyone"
     href="/docs/training/core"
-    description="Logging in, the layout, the daily basics, and meeting the assistant. Start here."
+    description="Navigation, record hygiene, daily workflows, the assistant, account cleanup, and CRM numbers."
+  />
+  <Card
+    icon={<ClipboardCheck />}
+    title="Working Standard"
+    href="/docs/training/core/working-standard"
+    description="The baseline rules for clean records, clean ownership, reliable notes, and trustworthy dashboards."
   />
 </Cards>
 
-## Then your vertical
+## Then choose your role
 
 <Cards>
   <Card
     icon={<Cpu />}
     title="Technology"
     href="/docs/training/technology"
-    description="Your pipeline, estimation and proposals, and the deals you run day to day."
+    description="Proposal pipeline, due dates, estimation, proposal handoff, dashboard review, and owner-level deal management."
   />
   <Card
     icon={<Wrench />}
     title="Venue Services"
     href="/docs/training/venue-services"
-    description="Service tickets, the account view, and your day-to-day workflow."
+    description="Account context, service tickets, venue activity, client history, and the day-to-day operating rhythm."
   />
   <Card
     icon={<Megaphone />}
     title="Media & Sponsorship"
     href="/docs/training/media-sponsorship"
-    description="Placements, Nielsen verification, sponsor contracts, and your dashboards."
+    description="Placements, Nielsen verification, sponsor contracts, campaign history, and sponsorship dashboards."
   />
   <Card
     icon={<LineChart />}
     title="Leadership"
     href="/docs/training/leadership"
-    description="Cross-vertical dashboards, forecasts, and win/loss at a glance."
+    description="Cross-vertical dashboards, forecasts, pipeline quality, win/loss, export discipline, and AI-assisted review."
   />
 </Cards>
 
-## What each lesson looks like
+## What each lesson gives you
 
-Every lesson is short and shows you the same thing two ways:
+Each lesson is built around real work:
 
-- **Click it** — the step-by-step path on screen.
-- **Or just ask** — the same thing, done by typing a plain-English request to the assistant.
+- **What you are trying to accomplish** - the business reason behind the workflow.
+- **Where to look** - the exact CRM area, view, dashboard, or account page.
+- **How to do it by clicking** - the repeatable path for normal use.
+- **How to ask the assistant** - the same action in plain English.
+- **What good looks like** - the record quality standard before you move on.
 
-Pick whichever feels easier. Both get you to the same place.
+<Shot src="/img/screenshots/crm/t-all-deals.png" caption="Most workflows start from a list view: filter the list, open the right record, update the source fields, then use dashboards to review the rollup." />
