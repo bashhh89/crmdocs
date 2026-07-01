@@ -1,25 +1,53 @@
 ---
-title: CRM Training — Start Here
+title: "ANC Training: Choose your path to productivity"
 description: A role-based CRM training program for working cleanly, finding records fast, and keeping pipeline data reliable.
 ---
 
 import {Cards, Card} from 'fumadocs-ui/components/card';
 import {Callout} from 'fumadocs-ui/components/callout';
-import {Rocket, Cpu, Wrench, Megaphone, LineChart, ClipboardCheck} from 'lucide-react';
+import {Rocket, Cpu, Wrench, Megaphone, LineChart, ClipboardCheck, Route} from 'lucide-react';
 
 <AudioPlayer src="/audio/training/training-start-here.mp3" />
 
-This training is the operating manual for using the CRM as the shared source of truth across Technology, Venue Services, Media & Sponsorship, and Leadership.
+This training is the operating manual for using the CRM as the shared source of truth across Technology, Venue Services, Media & Sponsorship, Proposals, and Leadership.
 
-The goal is not just to learn where buttons are. The goal is to make sure every account, opportunity, ticket, placement, forecast, and follow-up can be found, trusted, and acted on by the next person who opens it.
+The goal is not just to learn where buttons are. The goal is to make sure every Company, opportunity, ticket, placement, forecast, and follow-up can be found, trusted, and acted on by the next person who opens it.
 
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Start with the full picture: dashboards, pipeline, records, and owner-level follow-up all connect back to the same CRM data." />
+
+<div className="my-4 rounded-lg border p-4">
+  <div className="mb-2 text-sm font-semibold">Track your progress</div>
+  <div className="text-sm text-slate-600">0/3 modules complete</div>
+  <div className="mt-2 flex gap-2">
+    <span className="h-3 w-3 rounded-full border border-slate-300" />
+    <span className="h-3 w-3 rounded-full border border-slate-300" />
+    <span className="h-3 w-3 rounded-full border border-slate-300" />
+  </div>
+</div>
+
+## Start With The Situation
+
+Pick the path by the problem in front of you:
+
+- **A client asks for pricing.** Open the deal, check the Company, confirm <abbr title="Where the deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr>, and move into proposal work.
+- **A venue has an issue before an event.** Open the Company, check tickets and recent activity, then use the service track.
+- **An RFP lands with a deadline.** Triage the RFP, price the deal, generate the SOW, and make sure the files attach back to the CRM opportunity.
+- **Leadership asks for a number.** Ask the assistant, then open the records behind the answer before sharing it.
+
+<Cards>
+  <Card
+    icon={<Route />}
+    title="Choose Your Track"
+    href="/docs/training/choose-your-track"
+    description="A decision tree for Sales, Services, Proposals, record cleanup, and leadership reporting."
+  />
+</Cards>
 
 ## The standard
 
 Use the CRM with the same standard you would use for a client-facing proposal or an internal revenue review:
 
-- **Find the right record before creating a new one.** Duplicate accounts create bad history, bad reporting, and wasted follow-up.
+- **Find the right record before creating a new one.** Duplicate Companies create bad history, bad reporting, and wasted follow-up.
 - **Keep status fields current.** Stage, owner, close date, amount, bid status, service status, and next step drive dashboards.
 - **Write notes that someone else can use.** A good note says what happened, what changed, and what happens next.
 - **Use views instead of personal spreadsheets.** If the information belongs to the team, it belongs in a shared CRM view or dashboard.
@@ -36,7 +64,7 @@ Do **Core** first. Then complete the vertical that matches your day-to-day work.
     icon={<Rocket />}
     title="Core — for everyone"
     href="/docs/training/core"
-    description="Navigation, record hygiene, daily workflows, the assistant, account cleanup, and CRM numbers."
+    description="Navigation, record hygiene, daily workflows, the assistant, Company cleanup, and CRM numbers."
   />
   <Card
     icon={<ClipboardCheck />}
@@ -51,15 +79,21 @@ Do **Core** first. Then complete the vertical that matches your day-to-day work.
 <Cards>
   <Card
     icon={<Cpu />}
-    title="Technology"
-    href="/docs/training/technology"
-    description="Proposal pipeline, due dates, estimation, proposal handoff, dashboard review, and owner-level deal management."
+    title="I own relationships and revenue"
+    href="/docs/training/tracks/sales-crm"
+    description="Sell the work: pipeline, pricing status, estimates, proposals, handoff, dashboards, and owner-level deal management."
+  />
+  <Card
+    icon={<ClipboardCheck />}
+    title="I price deals and build SOWs"
+    href="/docs/training/tracks/proposals"
+    description="Use Mirror Mode, generate one-pagers, track Pricing Complete, and manage the RFP queue."
   />
   <Card
     icon={<Wrench />}
-    title="Venue Services"
-    href="/docs/training/venue-services"
-    description="Account context, service tickets, venue activity, client history, and the day-to-day operating rhythm."
+    title="I keep venues running"
+    href="/docs/training/tracks/services"
+    description="Track the work: Company context, tickets, venue activity, service history, and the day-to-day operating rhythm."
   />
   <Card
     icon={<Megaphone />}
@@ -69,22 +103,58 @@ Do **Core** first. Then complete the vertical that matches your day-to-day work.
   />
   <Card
     icon={<LineChart />}
-    title="Leadership"
-    href="/docs/training/leadership"
+    title="Quick Start for Leadership"
+    href="/docs/training/tracks/leadership"
     description="Cross-vertical dashboards, forecasts, pipeline quality, win/loss, export discipline, and AI-assisted review."
   />
 </Cards>
+
+## Common Questions
+
+<details>
+  <summary>Which app do I use?</summary>
+  <p>Use the ANC app, not Standard. If dashboards or views look missing, check the top-left app switcher.</p>
+</details>
+
+<details>
+  <summary>Where do I log an RFP?</summary>
+  <p>Log it on the CRM Opportunity with Bid Status set to RFP Received.</p>
+</details>
+
+<details>
+  <summary>How do I mark pricing done?</summary>
+  <p>Use Pricing Complete on the CRM opportunity, or generate the one-pager in the Proposal Engine when that workflow applies.</p>
+</details>
+
+<details>
+  <summary>Where do tickets live?</summary>
+  <p>Service Dashboard creates and manages tickets. The CRM shows linked ticket history for Company context.</p>
+</details>
+
+## Scout Prompts Cheat Sheet
+
+```text
+My open deals sorted by proposal due date.
+```
+
+```text
+Deals in Scoping this week.
+```
+
+```text
+RFPs received this week sorted by league.
+```
 
 ## What each lesson gives you
 
 Each lesson is built around real work:
 
 - **What you are trying to accomplish** - the business reason behind the workflow.
-- **Where to look** - the exact CRM area, view, dashboard, or account page.
+- **Where to look** - the exact CRM area, view, dashboard, or Company page.
 - **How to do it by clicking** - the repeatable path for normal use.
 - **How to ask the assistant** - the same action in plain English.
 - **What good looks like** - the record quality standard before you move on.
 
 <Shot src="/img/screenshots/crm/t-all-deals.png" caption="Most workflows start from a list view: filter the list, open the right record, update the source fields, then use dashboards to review the rollup." />
 
-<Shot src="/img/screenshots/crm/t-account.png" caption="A clean account view gives the team one place to understand the relationship, related work, contacts, notes, and service history." />
+<Shot src="/img/screenshots/crm/t-account.png" caption="A clean Company view gives the team one place to understand the relationship, related work, contacts, notes, and service history." />

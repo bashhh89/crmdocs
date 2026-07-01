@@ -1,0 +1,76 @@
+---
+title: Leadership
+description: "For leadership: read dashboards, forecast quality, win/loss, exports, and assistant-backed numbers."
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+# Leadership
+
+<span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
+<span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
+
+It is Monday morning. You need to know what moved, what is forecasted, which deals are stale, and whether the number in front of you can be trusted.
+
+<div className="my-4 rounded-lg border p-4">
+  <div className="mb-2 text-sm font-semibold">Track progress</div>
+  <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+    <div className="h-full w-1/3 rounded-full bg-violet-500" />
+  </div>
+  <div className="mt-2 text-sm text-slate-600">Day 1: read dashboard totals. Day 30: challenge forecast quality and verify the records behind the number.</div>
+</div>
+
+<Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Leadership starts from the rollup, then drills into the records behind the number." />
+
+## What You Are Trying To Do
+
+This track is for reading the business, not entering every record.
+
+You are learning how to:
+
+1. **Read the rollup** - pipeline, won, forecast, and vertical-level dashboards.
+2. **Check forecast quality** - stages, dates, values, stale deals, and missing next steps.
+3. **Understand win/loss** - RFP outcomes by league, time period, and business area.
+4. **Ask for a number and verify it** - use the assistant, then inspect the records behind the answer.
+
+<Callout title="Where this lives">
+Dashboards and source records live in the CRM. The assistant can summarize and calculate, but leadership numbers should be verified against the records included in the answer.
+</Callout>
+
+## Day 1 / Day 30 / Reference
+
+- **Day 1:** read dashboard totals by vertical and open the records behind one number.
+- **Day 30:** identify stale deals, missing dates, weak forecast assumptions, and win/loss patterns.
+- **Reference as needed:** exports, assistant prompts, monthly dashboard review, board-level summaries.
+
+## Scout Prompts
+
+```text
+Show me this quarter's open pipeline by vertical, grouped by stage, and flag missing close dates.
+```
+
+```text
+Which high-value opportunities look stale or have no next step?
+```
+
+```text
+Show me the records behind this forecast total so I can verify the number.
+```
+
+## What You'll Learn Here
+
+1. **[Read dashboards](/docs/training/leadership/dashboards)** - pipeline, won, and forecast across the business or by vertical.
+2. **[Check forecast and pipeline](/docs/training/leadership/forecasting-and-pipeline)** - how the forecast is built, why you can trust it, and filtering to likely deals.
+3. **[Review win/loss](/docs/training/leadership/win-loss)** - RFP win rates by league and over time.
+4. **[Export and ask](/docs/training/leadership/exporting-and-asking-the-assistant)** - pinning what you care about, exporting, and getting any number in one line.
+
+<Shot src="/img/screenshots/crm/t-dashboard-technology.png" caption="A dashboard is a starting point. The standard is to drill into the records behind a number before sharing it." />
+
+## Quick Glossary
+
+- <abbr title="The higher-level lifecycle stage on a deal, such as New, Screening, Meeting, Proposal, or Customer.">Stage</abbr> - lifecycle stage on a deal.
+- <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr> - bid-flow status.
+- <abbr title="Fiscal Year. ANC uses calendar year fiscal tracking.">FY</abbr> - fiscal year.
+- <abbr title="Request For Proposal: the client's document asking ANC to bid on work.">RFP</abbr> - client bid request.
+
+Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

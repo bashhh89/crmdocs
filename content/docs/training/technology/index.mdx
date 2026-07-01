@@ -1,0 +1,79 @@
+---
+title: Sales / Technology
+description: "For deal owners and Technology users: price work, keep pipeline clean, manage proposals, and read the dashboard."
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+# Sales / Technology
+
+<span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
+<span className="inline-flex rounded-full bg-sky-100 px-2 py-1 text-xs font-semibold text-sky-800">PROPOSALS</span>{' '}
+<span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
+
+It is Thursday. The Hornets ask for budget direction on a new LED board, and the RFP follow-up is due Monday. You need to know whether the Company exists, what stage the deal is in, whether pricing is complete, and what proposal work is already attached.
+
+<div className="my-4 rounded-lg border p-4">
+  <div className="mb-2 text-sm font-semibold">Track progress</div>
+  <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+    <div className="h-full w-1/3 rounded-full bg-emerald-500" />
+  </div>
+  <div className="mt-2 text-sm text-slate-600">Day 1: find the Company and open the deal. Day 30: manage pricing, forecast, and proposal handoff without side tracking.</div>
+</div>
+
+<Shot src="/img/screenshots/crm/t-pipeline.png" caption="Start from the working queue: open deals, due dates, stages, bid status, and next actions." />
+
+## What You Are Trying To Do
+
+This track is for everyone who owns or supports Technology deals: LED displays, LiveSync, processing, products, pricing, and proposal movement.
+
+You are learning how to:
+
+1. **Find the Company before creating anything new** - avoid duplicate Companies and split history.
+2. **Keep pipeline clean** - make stage, owner, close date, amount, and next step obvious.
+3. **Price a deal** - move from CRM opportunity to estimate/proposal work.
+4. **Prepare a client-facing package** - understand where one-pagers, SOWs, and proposal artifacts attach.
+5. **Read your dashboard** - know what is booked, forecasted, stale, or missing.
+
+<Callout title="Where this lives">
+The opportunity, Company, owner, stage, <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr>, and dashboard live in the CRM. Pricing and proposal generation live in the Proposal Engine. Generated files attach back to the CRM opportunity.
+</Callout>
+
+## Day 1 / Day 30 / Reference
+
+- **Day 1:** find a Company, open an opportunity, understand stage, owner, amount, close date, and next step.
+- **Day 30:** keep your pipeline clean, know which deals need pricing, and explain what changed this week.
+- **Reference as needed:** proposal artifacts, SOW handoff, dashboard interpretation, win/loss cleanup.
+
+## Scout Prompts
+
+```text
+Open the Hornets Company and show me open Technology opportunities.
+```
+
+```text
+Which of my open Technology deals are missing close date, amount, next step, or Bid Status?
+```
+
+```text
+Show me deals where Pricing Complete is missing but the proposal due date is within 7 days.
+```
+
+## What You'll Learn Here
+
+1. **[Keep the pipeline clean](/docs/training/technology/pipeline)** - the views you live in, and moving a deal from lead to won.
+2. **[Price a deal](/docs/training/technology/estimation-and-proposals)** - the estimation flow and finding your estimates.
+3. **[Manage deal status](/docs/training/technology/managing-your-deals)** - stages vs. <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr>, won/lost/no-bid, probability, and handoffs.
+4. **[Stay ahead of proposal deadlines](/docs/training/technology/proposals-and-due-dates)** - due dates, pricing complete, and proposal movement.
+5. **[Read your numbers](/docs/training/technology/your-dashboard)** - revenue, margin, forecast, and biggest deals at a glance.
+
+<Shot src="/img/screenshots/crm/t-estimation.png" caption="Pricing work should connect back to the deal, not drift into a separate offline trail." />
+
+## Quick Glossary
+
+- <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr> - where the deal sits in the bid flow.
+- <abbr title="A flag that means proposal pricing has been generated and is ready for review or client movement.">Pricing Complete</abbr> - the deal has generated pricing output.
+- <abbr title="Scope of Work: the document defining what ANC will deliver.">SOW</abbr> - what ANC will deliver.
+- <abbr title="Request For Proposal: the client's document asking ANC to bid on work.">RFP</abbr> - the client's bid request.
+
+Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

@@ -1,0 +1,86 @@
+---
+title: Sales & Account Management
+description: "Move deals from RFP to won, manage Company records, and keep forecast numbers accurate."
+---
+
+# Sales & Account Management
+
+<ToolBadge tool="crm" />
+
+Move deals from RFP to won, manage Company records, and keep forecast numbers accurate.
+
+<Shot src="/img/screenshots/crm/t-pipeline.png" caption="Sales starts from the pipeline: Company, opportunity, stage, Bid Status, due date, value, and next step." />
+
+## Scenario 1: The RFP Just Landed
+
+<ToolBadge tool="crm" />
+
+> *It is 9 AM. Your AE forwards an RFP from Louisville Athletics for a stadium LED install. Due date is April 30. You need to log this before the 10 AM standup.*
+
+### Step 1: Check If The Company Exists
+
+Open CRM -> Companies -> search **Louisville Athletics**.
+
+<WhereThisLives tool="crm" path="Companies -> Search" />
+
+**Why this matters:** creating duplicates creates merge work and splits history across multiple records.
+
+**Scout shortcut:**
+
+```text
+Log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [your name].
+```
+
+### Step 2: Create The Opportunity
+
+If the Company exists, open it -> Opportunities tab -> New.
+
+Set:
+
+- stage = PROPOSAL
+- bidStatus = RFP_RECEIVED
+- businessUnit = TECHNOLOGY
+- proposalDueDate = April 30
+- league = NCAA
+
+**Common mistake:** leaving stage as New instead of Proposal. The deal may not show where the team expects it in the bid flow.
+
+### Step 3: Verify It Appears In Bid Tracker
+
+Open Bid Tracker and confirm the opportunity appears in the RFP Received column.
+
+<WhereThisLives tool="crm" path="Views -> Bid Tracker" />
+
+## Scenario 2: Moving To Pricing
+
+<ToolBadge tool="connected" />
+
+> *The scope is finalized. You have told the estimator the requirements. Now you need to mark this ready for pricing.*
+
+Open the Opportunity and confirm <GlossaryTerm term="pricingComplete" /> is set when pricing output is generated or ready for proposal movement.
+
+**What happens:** the pricing status and proposal due date help Natalia's estimation/proposal queue stay clean.
+
+**Scout check:**
+
+```text
+Show deals where Pricing Complete is false and proposal due date is this week.
+```
+
+<WhereThisLives tool="crm" path="Opportunity -> Pricing Complete / Proposal Due Date" />
+
+## Scenario 3: The Deal Won
+
+<ToolBadge tool="crm" />
+
+> *Client signed. Now you need the revenue and forecast fields to reflect the win.*
+
+Record the value, close date, owner, and stage. If the deal splits across fiscal years, confirm how the revenue split should be captured before reporting it.
+
+**Finance note:** multi-year or mid-year split deals need extra care before leadership uses the number.
+
+<OhShit
+  symptom="I'm in Standard app and see no dashboards"
+  fix="Use the top-left app switcher and choose ANC. The CRM remembers this choice."
+  prevention="Always check the app switcher says ANC before you assume a view is missing."
+/>

@@ -1,0 +1,89 @@
+---
+title: Services & Operations
+description: "Triage tickets, staff events, use IoT Operations Workspace, and log walkthroughs."
+---
+
+# Services & Operations
+
+<ToolBadge tool="services" />
+
+Triage tickets, staff events, use <GlossaryTerm term="iotOperationsWorkspace" />, and log walkthroughs.
+
+<Shot src="/img/screenshots/service-dashboard/03-tickets-list.png" caption="Service Dashboard is the working surface for tickets, assignments, events, and operations queues." />
+
+## Scenario 1: The Flickering Display
+
+<ToolBadge tool="services" />
+
+> *Section 110, display 3 is flickering. Two hours to tip-off. The client just called it in.*
+
+Log the ticket in Service Dashboard.
+
+Fields to set:
+
+- venue = venue name
+- priority = HIGH for game-day issues
+- description = Display 3 section 110 flickering
+- category = HARDWARE
+
+**What happens automatically:** the ticket appears on the CRM Company record in about a second through <GlossaryTerm term="realTimeCrmSync" />.
+
+<WhereThisLives tool="services" path="Service Dashboard -> Tickets -> New Ticket" />
+
+## Scenario 2: IoT Operations Workspace
+
+<ToolBadge tool="services" />
+
+> *You need the IP address for the main rack and the walkthrough log from last month.*
+
+Open Service Dashboard -> Venues -> venue -> <GlossaryTerm term="iotOperationsWorkspace" />.
+
+What is there:
+
+- Displays grid
+- Rack/device notes with IP addresses
+- Walkthrough logs
+- Maintenance schedule rows
+- Forms and operational documents
+
+**CRM link:** this data can surface on the Company record, but editing happens in the Service Dashboard.
+
+## Scenario 3: Event Staffing Workflow
+
+<ToolBadge tool="services" />
+
+> *Tonight's game needs a technician. You need to assign and track the workflow.*
+
+Open Service Dashboard -> Events -> event -> Assign Technician.
+
+The workflow:
+
+1. Check-in: tech arrives on-site.
+2. Game-ready: equipment checked, boards operational.
+3. Post-game report: event ended, issues logged.
+
+**Scout status check:**
+
+```text
+Show events today needing technicians.
+```
+
+## Cross-Tool Handoff
+
+```text
+Ticket created in Service Dashboard
+  -> Surfaces in CRM Company record for context
+  -> Sales sees ticket history before renewal conversations
+  -> Resolved in Service Dashboard
+  -> CRM timestamp updates automatically
+```
+
+<OhShit
+  symptom="Ticket is not showing in CRM"
+  fix="Check that you are in the ANC app, not Standard. Service history syncs to the ANC app."
+/>
+
+<OhShit
+  symptom="Can't find the venue IP schema"
+  fix="Open IoT Operations Workspace -> Rack Notes, not the general venue info."
+/>

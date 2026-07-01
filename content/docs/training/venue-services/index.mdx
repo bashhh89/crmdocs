@@ -1,0 +1,77 @@
+---
+title: Services
+description: "For service and field operations users: track tickets, events, venue health, and Company history."
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+# Services
+
+<span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span>{' '}
+<span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
+<span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
+
+It is game week. A venue has an open display issue, a scheduled event, and a client asking whether the site is ready. You need the Company, tickets, recent activity, and service notes in one place.
+
+<div className="my-4 rounded-lg border p-4">
+  <div className="mb-2 text-sm font-semibold">Track progress</div>
+  <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+    <div className="h-full w-1/3 rounded-full bg-orange-500" />
+  </div>
+  <div className="mt-2 text-sm text-slate-600">Day 1: open the Company and ticket queue. Day 30: read venue health across tickets, events, activity, and service history.</div>
+</div>
+
+<Shot src="/img/screenshots/crm/t-tickets.png" caption="Service work starts from what is open, what is assigned, what is due, and what still needs resolution." />
+
+## What You Are Trying To Do
+
+This track is for service contracts, maintenance, field operations, and venue support.
+
+You are learning how to:
+
+1. **Track what's broken** - create, assign, escalate, and close tickets.
+2. **See the full venue story** - Company, contacts, contracts, opportunities, tickets, notes, and history.
+3. **Check venue health** - recent activity, recurring service, event context, and outstanding issues.
+4. **Keep the handoff clean** - make sure the next person can see status without hunting.
+
+<Callout title="Where this lives">
+The Company relationship and service history live in the CRM. Day-to-day tickets, events, technician work, and venue operations live in the Service Dashboard. Synced history comes back to the CRM Company view.
+</Callout>
+
+## Day 1 / Day 30 / Reference
+
+- **Day 1:** open the Company, find open tickets, check event context, and read the latest note.
+- **Day 30:** spot venue health patterns, overdue issues, repeated failures, and handoff gaps.
+- **Reference as needed:** IoT Operations Workspace, walkthroughs, maintenance records, reports, portals.
+
+## Scout Prompts
+
+```text
+Open this venue's Company record and summarize open tickets, recent events, and unresolved service notes.
+```
+
+```text
+Which service tickets are overdue or missing an owner?
+```
+
+```text
+Show me venue activity from the last 30 days and call out anything that needs follow-up.
+```
+
+## What You'll Learn Here
+
+1. **[Track service tickets](/docs/training/venue-services/service-tickets)** - creating, assigning, tracking, and escalating tickets, and how they tie to the Company.
+2. **[Read the Company view](/docs/training/venue-services/the-account-view)** - seeing every venue, contact, contract, and open item in one place.
+3. **[Check venue activity](/docs/training/venue-services/venue-activity)** - history, logging site visits, and recurring service.
+4. **[Run the day-to-day queue](/docs/training/venue-services/your-day-to-day)** - the views and habits that keep nothing falling through the cracks.
+
+<Shot src="/img/screenshots/service-dashboard/03-tickets-list.png" caption="The Service Dashboard is the working surface for tickets and operations queues." />
+
+## Quick Glossary
+
+- <abbr title="An issue raised against a venue and tracked until assigned, resolved, and closed.">Service Ticket</abbr> - an issue tied to a venue or Company.
+- <abbr title="A game, concert, or service event at a venue.">Event</abbr> - scheduled venue activity.
+- <abbr title="A venue site visit by an ANC technician, usually with issues, notes, or readiness checks.">Walkthrough</abbr> - a site visit or readiness check.
+- <abbr title="The spreadsheet-style Field Ops workspace for physical venue data, displays, rack/device notes, walkthrough logs, maintenance rows, forms, and operational documents.">IoT Operations Workspace</abbr> - the structured operations workspace for venue data.
+
+Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

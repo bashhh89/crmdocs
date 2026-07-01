@@ -5,14 +5,25 @@ description: The foundation everyone needs before their vertical track. Three sh
 
 # Core — Start Here
 
-This is the foundation. Everyone does these three short lessons first, no matter which side of the business you're on. Then you move on to your vertical.
+This is the foundation. Everyone does this first, no matter which side of the business you're on. Then you move on to your role track.
 
-It takes about 20 minutes total, and you can stop and come back any time.
+Scenario: someone asks you for an account update, a pipeline number, or a service status. You should know where to look, what to trust, and how to ask the assistant without creating duplicate records or bad data.
 
-## The three lessons
+It takes about 30 minutes total, and you can stop and come back any time.
 
-1. **[Getting Around](/docs/training/core/orientation)** — logging in, what's on the screen, and where everything lives.
-2. **[The Daily Basics](/docs/training/core/daily-basics)** — the handful of things you'll actually do every day, each shown two ways.
-3. **[Meet the Assistant](/docs/training/core/meet-the-ai)** — how to get the CRM to do things for you just by asking.
+## What You Learn First
 
-When you've done these, head to your vertical: [Technology](/docs/training/technology), [Venue Services](/docs/training/venue-services), [Media & Sponsorship](/docs/training/media-sponsorship), or [Leadership](/docs/training/leadership).
+1. **[Get oriented](/docs/training/core/orientation)** - log in, read the screen, understand records, lists, views, and dashboards.
+2. **[Work to the standard](/docs/training/core/working-standard)** - prevent duplicates, keep ownership clear, write usable notes, and verify important numbers.
+3. **[Run the daily basics](/docs/training/core/daily-basics)** - create, find, update, favorite, filter, note, and review stale work.
+4. **[Use the assistant](/docs/training/core/meet-the-ai)** - ask for searches, summaries, missing-field checks, notes, and numbers.
+
+## Choose What Comes Next
+
+- If you sell or support Technology deals, go to [Sales / Technology](/docs/training/technology).
+- If you handle service or venue operations, go to [Services](/docs/training/venue-services).
+- If you handle sponsorship placements, go to [Media & Sponsorship](/docs/training/media-sponsorship).
+- If you read the business, go to [Leadership](/docs/training/leadership).
+- If you are not sure, use [Choose Your Track](/docs/training/choose-your-track).
+
+Where this lives: Core happens in the CRM and applies to every other tool.

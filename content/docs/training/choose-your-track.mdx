@@ -1,0 +1,188 @@
+---
+title: Choose Your Track
+description: A role-based decision tree for getting to the right CRM, service, and proposal training fast.
+---
+
+import {Cards, Card} from 'fumadocs-ui/components/card';
+import {Callout} from 'fumadocs-ui/components/callout';
+import {BadgeDollarSign, ClipboardCheck, FileText, Wrench, BarChart3} from 'lucide-react';
+
+# Choose Your Track
+
+Start with the work in front of you. Then jump to the training that matches it.
+
+<Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="The training tracks all connect back to one operating picture: Companies, deals, service work, proposals, and dashboards." />
+
+## Start Here
+
+<div className="grid gap-4 md:grid-cols-3">
+  <a className="flex flex-col rounded-xl border p-5 no-underline transition hover:bg-slate-50" href="/docs/training/tracks/sales-crm">
+    <div className="text-2xl">🎯</div>
+    <div className="mt-3 text-lg font-semibold">I own relationships and revenue</div>
+    <div className="mt-2 text-sm text-slate-600">Move deals from RFP to won, manage Company records, forecast accurately.</div>
+    <div className="mt-3 text-sm italic text-slate-600">It is Thursday. Hornets game in 48 hours. You just received an RFP for a new LED ribbon board. What do you open first?</div>
+    <div className="mt-4 text-xs font-semibold text-slate-500">25 minutes</div>
+    <span className="mt-4 inline-flex w-fit rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white">Start this track</span>
+  </a>
+  <a className="flex flex-col rounded-xl border p-5 no-underline transition hover:bg-slate-50" href="/docs/training/tracks/proposals">
+    <div className="text-2xl">📄</div>
+    <div className="mt-3 text-lg font-semibold">I price deals and build SOWs</div>
+    <div className="mt-2 text-sm text-slate-600">Use Mirror Mode, generate one-pagers, track Pricing Complete, manage the RFP queue.</div>
+    <div className="mt-3 text-sm italic text-slate-600">Natalia needs this Excel pricing turned into a client-ready PDF by noon. Which button do you click?</div>
+    <div className="mt-4 text-xs font-semibold text-slate-500">30 minutes</div>
+    <span className="mt-4 inline-flex w-fit rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white">Start this track</span>
+  </a>
+  <a className="flex flex-col rounded-xl border p-5 no-underline transition hover:bg-slate-50" href="/docs/training/tracks/services">
+    <div className="text-2xl">🔧</div>
+    <div className="mt-3 text-lg font-semibold">I keep venues running</div>
+    <div className="mt-2 text-sm text-slate-600">Triage tickets, staff events, use IoT Operations Workspace, log walkthroughs.</div>
+    <div className="mt-3 text-sm italic text-slate-600">Section 110 display is flickering two hours before tip-off. Where do you log this?</div>
+    <div className="mt-4 text-xs font-semibold text-slate-500">20 minutes</div>
+    <span className="mt-4 inline-flex w-fit rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white">Start this track</span>
+  </a>
+</div>
+
+## Badge System
+
+Use these badges to know where the work happens:
+
+| Badge | Means | Color |
+|---|---|---|
+| <span className="inline-flex rounded-full bg-sky-100 px-2 py-1 text-xs font-semibold text-sky-800">PROPOSALS</span> | Proposal Engine work: estimates, one-pagers, SOWs, RFP triage, proposal files | Blue |
+| <span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span> | CRM work: Companies, Opportunities, People, views, notes, dashboards | Green |
+| <span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span> | Service Dashboard work: tickets, events, venue operations, technician flow | Orange |
+| <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span> | Cross-tool handoff: work starts in one place and syncs or attaches to another | Purple |
+
+## Decision Tree
+
+### Q1: What is your first task tomorrow?
+
+<div className="grid gap-3">
+  <a className="rounded-lg border p-4 no-underline transition hover:bg-slate-50" href="/docs/proposal-engine/introduction">
+    <div className="font-semibold">Respond to an RFP</div>
+    <div className="text-sm text-slate-600">Go to the Proposals path: RFP triage, estimating, SOW, Mirror Mode, and CRM auto-attach.</div>
+  </a>
+  <a className="rounded-lg border p-4 no-underline transition hover:bg-slate-50" href="/docs/training/venue-services">
+    <div className="font-semibold">Check why a display is down</div>
+    <div className="text-sm text-slate-600">Go to Services: tickets, venue activity, events, and Company history.</div>
+  </a>
+  <a className="rounded-lg border p-4 no-underline transition hover:bg-slate-50" href="/docs/training/technology">
+    <div className="font-semibold">Update forecast numbers</div>
+    <div className="text-sm text-slate-600">Go to Sales / Technology: Company, opportunity, pipeline hygiene, and forecast fields.</div>
+  </a>
+  <a className="rounded-lg border p-4 no-underline transition hover:bg-slate-50" href="/docs/training/core/working-standard">
+    <div className="font-semibold">Clean up records before a review</div>
+    <div className="text-sm text-slate-600">Go to Working Standard: duplicates, ownership, notes, missing fields, and number verification.</div>
+  </a>
+</div>
+
+### Q2: Are you trying to do work or read work?
+
+- **Do work:** pick Sales / Technology, Services, Media & Sponsorship, or Proposal Engine.
+- **Read work:** pick Leadership or dashboards.
+- **Clean work:** pick Working Standard first.
+
+### Q3: Is the answer client-facing?
+
+- **Yes:** verify the source records before sending.
+- **No:** use the assistant for speed, then clean the record if you find a gap.
+
+<Cards>
+  <Card
+    icon={<BadgeDollarSign />}
+    title="I need to sell, price, or move a deal"
+    href="/docs/training/tracks/sales-crm"
+    description="Start with the Sales / Technology track. Learn Companies, pipeline hygiene, pricing status, proposal handoff, and dashboards."
+  />
+  <Card
+    icon={<Wrench />}
+    title="I need to track what's broken or happening at a venue"
+    href="/docs/training/tracks/services"
+    description="Start with the Services track. Learn tickets, events, venue activity, Company history, and venue health checks."
+  />
+  <Card
+    icon={<FileText />}
+    title="I need to build or review proposal work"
+    href="/docs/training/tracks/proposals"
+    description="Start with the Proposals path. Learn RFP triage, estimates, SOW generation, Mirror Mode, and CRM auto-attach."
+  />
+  <Card
+    icon={<ClipboardCheck />}
+    title="I need to keep records clean"
+    href="/docs/training/core/working-standard"
+    description="Start with Working Standard. Learn duplicate prevention, ownership, notes, source-record updates, views, and verification."
+  />
+  <Card
+    icon={<BarChart3 />}
+    title="I need to read the numbers"
+    href="/docs/training/tracks/leadership"
+    description="Start with Leadership. Learn dashboards, forecasts, win/loss, exports, and assistant-supported reporting."
+  />
+</Cards>
+
+## Real Scenarios
+
+### Sales Scenario
+
+It is Thursday. A team asks for an LED board budget before Monday. You need to know whether the Company already exists, what similar work is on file, whether pricing is complete, and what the next proposal step is.
+
+Open:
+
+1. [Core: Finding Anything Fast](/docs/training/core/finding-anything)
+2. [Sales & Account Management](/docs/training/tracks/sales-crm)
+3. [Technology: Your Pipeline](/docs/training/technology/pipeline)
+4. [Proposal Engine: Estimator](/docs/proposal-engine/features/estimator)
+
+<Callout title="Where this lives">
+Company history and pipeline status live in the CRM. Pricing and proposal work live in the Proposal Engine. Finished proposal artifacts attach back to the CRM record.
+</Callout>
+
+### Services Scenario
+
+It is game week. A venue has an open display issue, a scheduled event, and a client asking whether the site is ready. You need the Company, tickets, event activity, and recent service notes in one place.
+
+Open:
+
+1. [Core: Getting Around](/docs/training/core/orientation)
+2. [Services & Operations](/docs/training/tracks/services)
+3. [Venue Services: Service Tickets](/docs/training/venue-services/service-tickets)
+4. [Service Dashboard: Tickets](/docs/service-dashboard/features/tickets)
+
+<Callout title="Where this lives">
+Client and Company context live in the CRM. Day-to-day service work lives in the Service Dashboard. Synced ticket and event history rolls back into the CRM Company view.
+</Callout>
+
+### Proposal Scenario
+
+An RFP lands with a tight deadline. You need to triage the document, price the deal, generate the SOW, and make sure the final files are attached to the right CRM opportunity.
+
+Open:
+
+1. [Core: Working Standard](/docs/training/core/working-standard)
+2. [Proposals & Estimation](/docs/training/tracks/proposals)
+3. [Proposal Engine: RFP Analyzer](/docs/proposal-engine/features/rfp-analyzer)
+4. [Proposal Engine: SOW Generation](/docs/proposal-engine/features/sow-generation)
+5. [Proposal Engine: Universal CRM Push](/docs/proposal-engine/features/universal-crm-push)
+
+<Callout title="Glossary">
+<abbr title="Scope of Work: the document defining what ANC will deliver.">SOW</abbr>, <abbr title="Request For Proposal: the client's document asking ANC to bid on work.">RFP</abbr>, <abbr title="Exact-fidelity Excel-to-PDF proposal output.">Mirror Mode</abbr>, and <abbr title="Auto-attach behavior that places generated proposal files on the right CRM deal.">Universal CRM Push</abbr> are defined in the [glossary](/docs/glossary).
+</Callout>
+
+## Before / After
+
+The goal of training is not more clicks. It is cleaner work.
+
+<Shot src="/img/screenshots/crm/t-all-deals.png" caption="Before: a list can show many open records, but it is only useful if the rows have current owners, dates, stages, values, and next steps." />
+
+<Shot src="/img/screenshots/crm/t-account.png" caption="After: a clean Company view gives the next person the relationship, opportunities, contacts, notes, and service history in one place." />
+
+## Outcome Labels
+
+When you are not sure which product name to search for, search by outcome:
+
+- **Price a deal** -> Proposal Engine estimator and Technology proposal lessons.
+- **Build a one-pager** -> Proposal Engine projects and CRM opportunity handoff.
+- **Track what's broken** -> Service Dashboard tickets and Venue Services Company view.
+- **Check venue health** -> Service Dashboard venue pages and CRM Company history.
+- **Clean a record** -> Core Working Standard and account cleanup.
+- **Read the business** -> Leadership dashboards and CRM reporting.

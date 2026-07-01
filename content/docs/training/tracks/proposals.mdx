@@ -1,0 +1,98 @@
+---
+title: Proposals & Estimation
+description: "Use Mirror Mode, generate one-pagers, track Pricing Complete, and manage the RFP queue."
+---
+
+# Proposals & Estimation
+
+<ToolBadge tool="proposals" />
+
+Use <GlossaryTerm term="mirrorMode" />, generate one-pagers, track <GlossaryTerm term="pricingComplete" />, and manage the RFP queue.
+
+<Shot src="/img/screenshots/proposal-engine/03-estimator.png" caption="Proposal work starts from the project/deal context, then moves into estimation, one-pagers, SOWs, and attached files." />
+
+## Scenario 1: RFP Queue Triage
+
+<ToolBadge tool="crm" />
+
+> *Monday morning. Twelve RFPs came in over the weekend. You need to prioritize by league and due date.*
+
+Review RFPs in the Estimation & Proposals view. Group by pricing status, due date, league, and business unit.
+
+Before pricing, verify:
+
+- businessUnit
+- proposalDueDate
+- accountExecutive
+- league
+- linked Company
+
+**Scout shortcut:**
+
+```text
+Show RFPs received this week sorted by league and proposal due date.
+```
+
+<WhereThisLives tool="crm" path="Views -> Estimation & Proposals" />
+
+## Scenario 2: Excel To PDF With Mirror Mode
+
+<ToolBadge tool="proposals" />
+
+> *Natalia has pricing perfect in Excel. The PDF must match character-for-character.*
+
+Open Proposal Engine -> linked deal -> Generate One-Pager -> select <GlossaryTerm term="mirrorMode" />.
+
+**What happens automatically:** the proposal output attaches back to the CRM opportunity through <GlossaryTerm term="universalCrmPush" />.
+
+Timing:
+
+- Standard deals: about 5 seconds.
+- Complex multi-year deals: about 30 seconds.
+
+<WhereThisLives tool="proposals" path="Proposal Engine -> Deal -> Generate One-Pager -> Mirror Mode" />
+
+## Scenario 3: Building The SOW
+
+<ToolBadge tool="proposals" />
+
+> *Pricing is approved. Now you need the Scope of Work document.*
+
+Generate the SOW from the linked deal.
+
+Two flavors:
+
+- Premium SOW: client-facing.
+- Installation SOW: technician-facing.
+
+**Auto-attach:** the SOW appears in CRM -> Deal -> Files after generation.
+
+**Scout check:**
+
+```text
+Show deals where Bid Status is Bid Submitted and proposal due date was last week.
+```
+
+## Cross-Tool Handoff
+
+```text
+RFP Analysis
+  -> Pricing in Excel
+  -> Mirror Mode in Proposal Engine
+  -> One-Pager Generated
+  -> Pricing Complete = TRUE in CRM
+  -> SOW Created
+  -> SOW auto-attaches to Deal in CRM
+  -> Move to Bid Submitted in Bid Tracker
+```
+
+<OhShit
+  symptom="PDF does not match my Excel exactly"
+  fix="Regenerate with Mirror Mode selected."
+  prevention="Use Mirror Mode whenever the Excel file is the source of truth."
+/>
+
+<OhShit
+  symptom="Proposal is not showing in CRM"
+  fix="Wait 10 seconds, then check Deal -> Files. Universal CRM Push is usually instant but can lag briefly."
+/>
