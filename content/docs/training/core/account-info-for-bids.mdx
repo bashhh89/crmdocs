@@ -13,6 +13,23 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 A lot of bid and pre-qual work is the same question: *what have we done that proves we can do this, and who do we point to?* The CRM already holds the answer.
 
+<WorkflowMap
+  title="Bid reference build"
+  steps={[
+    "Start with the Company or project type.",
+    "Pull contacts, won work, scope, year, and value.",
+    "Shape the result into a clean reference list.",
+    "Verify anything going into a formal bid response."
+  ]}
+  accent="crm"
+/>
+
+<PromptCard
+  title="Starter prompt"
+  prompt="Give me five recent won projects at outdoor stadiums with venue, year, scope, contract value, and the primary contact if we have one."
+  accent="crm"
+/>
+
 ## What the CRM can give you
 
 For any account or project type, the assistant can pull:

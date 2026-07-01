@@ -15,6 +15,17 @@ Start with the work in front of you. Then jump to the training that matches it.
 
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="The training tracks all connect back to one operating picture: Companies, deals, service work, proposals, and dashboards." />
 
+<DecisionTree
+  title="Fast route"
+  branches={[
+    { if: "Your first task is an RFP, one-pager, SOW, or pricing package", then: "Start with Proposals, then connect the output back to the CRM." },
+    { if: "Your first task is pipeline, forecast, Company history, or deal ownership", then: "Start with Sales / CRM." },
+    { if: "Your first task is a venue issue, ticket, event, or display readiness check", then: "Start with Services." },
+    { if: "Your first task is a number, board update, or stale-deal review", then: "Start with Leadership." }
+  ]}
+  accent="connected"
+/>
+
 ## Start Here
 
 <div className="grid gap-4 md:grid-cols-3">

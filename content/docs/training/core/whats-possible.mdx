@@ -13,6 +13,28 @@ import {Settings, Hammer, Ban} from 'lucide-react';
 
 When someone asks *"can the CRM do this?"*, the answer is almost always **yes** — the only real question is *how much it takes.* Every request lands in one of three buckets, and knowing which one saves everybody time.
 
+<DecisionTree
+  title="Size the ask"
+  branches={[
+    { if: "The field, view, label, filter, or dashboard already exists", then: "This is probably configuration and can usually move fast." },
+    { if: "The request needs a new workflow, automation, imported data, or a custom screen", then: "Treat it as a build and define the user path clearly." },
+    { if: "The request fights the way records relate to each other", then: "Pause and ask what outcome the user really needs." },
+    { if: "The change affects reports or leadership numbers", then: "Verify the source fields before changing the display." }
+  ]}
+  accent="connected"
+/>
+
+<PracticeChecklist
+  title="Before you ask for a CRM change"
+  items={[
+    "Name the user who needs it.",
+    "Name the decision or task it supports.",
+    "Point to the current screen that is painful.",
+    "Say whether this is daily use, weekly review, or one-time cleanup."
+  ]}
+  accent="connected"
+/>
+
 <Cards>
   <Card icon={<Settings />} title="✅ Configuration" description="A setting we adjust. Fast — often same day. No build required." />
   <Card icon={<Hammer />} title="🛠️ A Build" description="The platform fully supports it, but it's custom work that takes real effort and time." />

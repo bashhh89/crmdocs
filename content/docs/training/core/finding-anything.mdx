@@ -13,6 +13,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 Everything in the CRM is findable. The trick is knowing the two doors in, and when to use each.
 
+<DecisionTree
+  title="Search or ask?"
+  branches={[
+    { if: "You know the exact Company, person, opportunity name, or opportunity number", then: "Use the search bar and jump straight to the record." },
+    { if: "You need context around the record", then: "Ask the assistant to open it, summarize it, or show related deals." },
+    { if: "You only need a link for Slack or email", then: "Ask for the direct CRM link by name or number." },
+    { if: "Search returns too many results", then: "Add the venue, league, city, or opportunity number to narrow it." }
+  ]}
+  accent="crm"
+/>
+
 ## Door 1 — the search bar (when you know what you want)
 
 The fastest way to a specific record.
@@ -35,6 +46,15 @@ The assistant finds it, opens it, and can keep going — "now show me their open
 <Callout type="info">
 Rule of thumb: **search** when you know the exact record, **ask** when you want the picture around it.
 </Callout>
+
+## Need a shareable link to a record?
+
+If you just want the **link** to a record — to paste into Slack or an email — ask the assistant (or **@ANC** in Slack) for it by its number or name:
+
+- *"Give me the link for opportunity 201356."*
+- *"What's the CRM link for the Arizona Coyotes account?"*
+
+It hands back the direct record URL. No need to open it and copy from the address bar.
 
 ## Now you try →
 

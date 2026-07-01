@@ -11,6 +11,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 **After this lesson** you'll be able to use the assistant for common CRM work: finding records, summarizing accounts, checking missing fields, drafting notes, pulling numbers, and getting to the records behind a report.
 
+<DecisionTree
+  title="What to ask Scout"
+  branches={[
+    { if: "You need to find something", then: "Ask it to open the Company, opportunity, person, ticket, or view." },
+    { if: "You need to clean data", then: "Ask it to find missing owners, stale deals, duplicate Companies, or incomplete notes." },
+    { if: "You need a number", then: "Ask for the number and the records behind it." },
+    { if: "You need to change a record", then: "Ask clearly, then verify the record changed." }
+  ]}
+  accent="crm"
+/>
+
 ## The big idea
 
 The CRM has a built-in assistant called **Scout**. Here's the only thing you need to believe:

@@ -12,6 +12,16 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 **After this lesson** you'll be able to see what a sponsor was contracted for, compare it to what's actually running, and catch anyone falling behind.
 
+<DecisionTree
+  title="Contract versus actual"
+  branches={[
+    { if: "The sponsor is on pace", then: "Keep the placement status current and keep verifying monthly." },
+    { if: "Actual placements trail contracted games", then: "Flag the gap early while make-good inventory still exists." },
+    { if: "A placement ran but is not tied to the sponsor", then: "Link it back to the sponsor Company before reporting." },
+    { if: "The contract count looks wrong", then: "Open the source contract before changing the dashboard number." }
+  ]}
+  accent="connected"
+/>
 
 ## What contracts hold
 

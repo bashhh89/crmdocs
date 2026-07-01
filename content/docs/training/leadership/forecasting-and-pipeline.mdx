@@ -12,6 +12,16 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 **After this lesson** you'll understand how the forecast is calculated, when to trust it, and how to focus on the realistic pipeline.
 
+<DecisionTree
+  title="Forecast confidence"
+  branches={[
+    { if: "Stage, amount, close date, and probability are current", then: "Treat the forecast as usable." },
+    { if: "High-value deals have no next step", then: "Treat the forecast as soft until owners update them." },
+    { if: "Probability is under 50%", then: "Separate it from the realistic close view." },
+    { if: "A number is going into a meeting", then: "Open the source records before presenting it." }
+  ]}
+  accent="leadership"
+/>
 
 ## How the forecast works
 

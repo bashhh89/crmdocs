@@ -13,6 +13,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 The dashboards and views are there when you want to browse. But when you have one specific number in mind, asking is faster.
 
+<DecisionTree
+  title="How to ask for numbers"
+  branches={[
+    { if: "You need a quick directional figure", then: "Ask the assistant, then read the records it used." },
+    { if: "The number is going into a proposal, client note, or leadership meeting", then: "Ask first, then open the matching dashboard or view and confirm." },
+    { if: "The answer looks surprising", then: "Ask for the record list behind the total before repeating it." },
+    { if: "You need a repeatable weekly view", then: "Use or create the saved dashboard/view instead of re-asking from scratch." }
+  ]}
+  accent="leadership"
+/>
+
 ## Numbers you can just ask for
 
 - *"What's our largest job currently under contract — amount, account, and scope?"*

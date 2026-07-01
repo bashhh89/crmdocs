@@ -11,6 +11,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 **After this lesson** you'll be able to find duplicate and empty accounts, merge the duplicates without losing anything, and know the one move to never make.
 
+<DecisionTree
+  title="Cleanup safety rule"
+  branches={[
+    { if: "The assistant finds likely duplicates", then: "Use that list as a work queue, then review each pair yourself." },
+    { if: "Two records both have useful history", then: "Use the CRM merge flow one pair at a time." },
+    { if: "A record has no opportunities, people, tickets, notes, or activity", then: "Confirm it visually before deleting." },
+    { if: "Someone asks to merge everything in bulk", then: "Stop. Finding can be automated; merging stays human-reviewed." }
+  ]}
+  accent="crm"
+/>
+
 ## The golden rule
 
 There are two jobs here, and keeping them separate is the whole game:

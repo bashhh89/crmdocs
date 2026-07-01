@@ -11,6 +11,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 **After this lesson** you'll know how a deal moves, the difference between its stage and its bid status, and how to keep both honest so everyone's numbers stay right.
 
+<DecisionTree
+  title="Which field changes?"
+  branches={[
+    { if: "The relationship moved forward in the sales process", then: "Update Stage." },
+    { if: "The RFP was submitted, shortlisted, won, lost, or no-bid", then: "Update Bid Status." },
+    { if: "Your confidence changed", then: "Update Probability and leave the reason in a note." },
+    { if: "Someone else now owns the next step", then: "Change owner and write the handoff note." }
+  ]}
+  accent="crm"
+/>
+
 ## Stage vs. bid status — two different things
 
 Every opportunity carries two trackers, and they answer different questions:

@@ -12,6 +12,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 **After this lesson** you'll be able to read your Technology numbers without opening a spreadsheet — and pull any of them with a single question.
 
+<DecisionTree
+  title="Read the dashboard"
+  branches={[
+    { if: "Booked revenue moved", then: "Open the closed-won records behind the number." },
+    { if: "Forecast looks too high", then: "Filter open deals by probability and stale next steps." },
+    { if: "Margin looks off", then: "Open the related estimate/proposal record before repeating it." },
+    { if: "Leadership asks why the number changed", then: "Use the dashboard, then cite the source opportunities." }
+  ]}
+  accent="leadership"
+/>
+
 
 ## Your tab on the dashboard
 
