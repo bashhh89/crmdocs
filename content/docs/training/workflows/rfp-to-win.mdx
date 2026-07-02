@@ -157,6 +157,39 @@ No Bid is a legitimate exit at any point before submission. A deal that is out o
   prevention="Sweep Bid Submitted deals weekly; anything past its decision window gets a follow-up call and a status update the same day."
 />
 
+## Prove It Under Pressure
+
+<ScenarioSim
+  title="Run the full flow"
+  intro="A metropolitan transit authority releases an RFP for platform display systems. Due in 21 days. You own it end to end."
+  steps={[
+    {
+      situation: "Day 1. The RFP is in your inbox. What makes it real?",
+      options: [
+        { label: "Find or verify the Company, create the opportunity, set Bid Status to RFP Received with the due date and owner.", quality: "best", outcome: "The deal now exists where the team works: Bid Tracker, due-date queue, dashboards. Everything downstream keys off this minute of setup." },
+        { label: "Forward it to the estimation team so pricing starts immediately.", quality: "ok", outcome: "Pricing starts fast, but against no record — their work has nowhere to land, and the RFP is invisible to every view until someone logs it." },
+        { label: "Read it thoroughly first; log it once you understand the scope.", quality: "bad", outcome: "Understanding can happen after logging. Unlogged, the clock runs and nobody else even knows the RFP exists." }
+      ]
+    },
+    {
+      situation: "Day 12. Pricing is approved and the proposal PDF is generated. What just happened to the CRM record on its own?",
+      options: [
+        { label: "The files attached to the opportunity and the bid status advanced — verify, do not re-enter.", quality: "best", outcome: "The platform moves the record when the work happens: outputs attach automatically and the status follows the proposal. Your job is a quick verify, not data entry." },
+        { label: "Nothing — CRM records only change when someone edits them.", quality: "bad", outcome: "This platform is not passive. Re-entering what it already did creates duplicates and drift between record and reality." },
+        { label: "The files attached, but you still need to update every status field by hand.", quality: "ok", outcome: "Half right — attachments are automatic, and the proposal also advances the bid status. Check before you touch." }
+      ]
+    },
+    {
+      situation: "Day 20. Submitted. The client says decision in three weeks. What does the record show meanwhile?",
+      options: [
+        { label: "Bid Submitted, a note with the decision timeline, and a follow-up date you will actually hit.", quality: "best", outcome: "Anyone opening this deal in the next three weeks knows exactly where it stands and when it moves next. That is the standard." },
+        { label: "Bid Submitted — the rest lives in your head until the decision lands.", quality: "ok", outcome: "The status is honest but the silence is not: three weeks of nobody-else-knows is how deals get double-touched or forgotten." },
+        { label: "Move it to Won early — the meeting went great.", quality: "bad", outcome: "Optimism is not a stage. A premature Won poisons the forecast and turns into a public walk-back if the decision goes the other way." }
+      ]
+    }
+  ]}
+/>
+
 ## Keep Going
 
 - [Sales & Account Management track](/docs/training/tracks/sales-crm) — steps 1, 4, and 5 in depth.

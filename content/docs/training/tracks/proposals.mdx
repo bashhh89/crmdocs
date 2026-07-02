@@ -126,6 +126,39 @@ Notice what you never do in this flow: upload a file to the CRM, or update the p
   prevention="Check the deal name in the Proposal Engine header before clicking generate, especially when a Company has multiple open deals."
 />
 
+## Prove It Under Pressure
+
+<ScenarioSim
+  title="Three RFPs, one afternoon"
+  intro="Tuesday after lunch. Three RFPs sit in the queue, a client wants their proposal PDF today, and someone just asked which deals are priced."
+  steps={[
+    {
+      situation: "Three RFPs in the queue. Which one first?",
+      options: [
+        { label: "Sort the queue by proposal due date and take the nearest deadline.", quality: "best", outcome: "Due date is the only ordering that protects you from a missed submission. The views are already sorted this way for a reason." },
+        { label: "The biggest deal — highest value gets the attention.", quality: "ok", outcome: "Value matters, but a small RFP due tomorrow beats a large one due in three weeks. Deadline first, then size." },
+        { label: "The one from the client who emails the most.", quality: "bad", outcome: "Loudest-client-first means the quiet deadline slips. Missed RFP deadlines do not offer second chances." }
+      ]
+    },
+    {
+      situation: "The pricing workbook is approved. The client needs the proposal document now. What is the move?",
+      options: [
+        { label: "Run it through Mirror Mode — the PDF reproduces the workbook exactly, no recalculation.", quality: "best", outcome: "Exact fidelity is the whole point. What was approved in the workbook is what the client sees, character for character." },
+        { label: "Rebuild the numbers in a document by hand so the layout looks nicer.", quality: "bad", outcome: "Every manual retype is a chance for a wrong number in front of a client. Fidelity beats decoration every time." },
+        { label: "Send the raw workbook to the client as-is.", quality: "ok", outcome: "The numbers are right, but you have shipped internal formatting and working tabs to a client. The generated proposal exists for this." }
+      ]
+    },
+    {
+      situation: "Proposal generated. Now someone asks: did you mark the deal as priced and attach the file to the CRM?",
+      options: [
+        { label: "Neither — the one-pager already set Pricing Complete, and the files attached to the opportunity automatically.", quality: "best", outcome: "Right. Generation flips Pricing Complete with the date stamped, and every output lands on the deal record on its own. Verify, do not duplicate." },
+        { label: "Manually flip Pricing Complete and upload the PDF to be safe.", quality: "ok", outcome: "The state ends up correct, but you did work the platform already did — and manual uploads drift from the generated versions over time." },
+        { label: "Add a note saying pricing is done and move to the next RFP.", quality: "bad", outcome: "A note is not a status. Anyone filtering on Pricing Complete will miss this deal, and the due-date views will still show it as open work." }
+      ]
+    }
+  ]}
+/>
+
 ## Keep Going
 
 - [Technology: Estimation & Proposals](/docs/training/technology/estimation-and-proposals) — the vertical lesson on the pricing queue.

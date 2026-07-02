@@ -120,6 +120,39 @@ Record the value, close date, owner, and stage, and move Bid Status to Won. If t
   prevention="Set the completion date before changing the status. Won without a completion date is always reverted."
 />
 
+## Prove It Under Pressure
+
+<ScenarioSim
+  title="A live deal, start to finish"
+  intro="Friday, 4:50 PM. An email lands: a university athletics department wants LED pricing for their basketball arena, and their RFP is attached. Everyone else has left for the weekend."
+  steps={[
+    {
+      situation: "First move with the RFP in hand?",
+      options: [
+        { label: "Search Companies for the university — full name and short name — before touching anything else.", quality: "best", outcome: "Two searches, ten seconds, and you know whether history exists. Every later step gets easier because you started on the right record." },
+        { label: "Create a fresh Company so you can log the opportunity quickly and clean it up Monday.", quality: "bad", outcome: "Monday cleanup rarely happens. You just split the relationship history in two, and the duplicate will surface in someone's report before it surfaces in yours." },
+        { label: "Reply to the email first and log the CRM record after the weekend.", quality: "ok", outcome: "The client hears back fast, which is good — but an unlogged RFP is invisible to the team and the Bid Tracker all weekend." }
+      ]
+    },
+    {
+      situation: "The Company exists. You create the opportunity. Which fields cannot wait?",
+      options: [
+        { label: "Stage, Bid Status set to RFP Received, business unit, proposal due date, and owner.", quality: "best", outcome: "That single minute of field discipline puts the deal on the Bid Tracker, the due-date views, and the right dashboard rollups immediately." },
+        { label: "Name and amount — the rest can fill in as the deal develops.", quality: "bad", outcome: "Without bid status and due date, the deal is invisible to the RFP queue. The proposal team cannot triage what they cannot see." },
+        { label: "Everything you know, including fields you are guessing at.", quality: "ok", outcome: "Complete beats empty, but guessed values read as facts to everyone downstream. Fill what you know; leave what you do not." }
+      ]
+    },
+    {
+      situation: "Weeks later — the client signs. You set the deal to Won and move on. The stage quietly reverts. What happened?",
+      options: [
+        { label: "A Won deal needs its completion date — fill it, then set Won again.", quality: "best", outcome: "Exactly. The platform protects revenue reporting by refusing a Won without a completion date. Date first, then Won sticks." },
+        { label: "Someone on the team must have changed it back — ask around.", quality: "bad", outcome: "Nobody touched it. While you ask around, the deal sits in the wrong stage and the win is missing from every report." },
+        { label: "Set it to Won a second time and see if it holds.", quality: "ok", outcome: "It will revert again. The rule is not random — it wants the completion date before it accepts the win." }
+      ]
+    }
+  ]}
+/>
+
 ## Keep Going
 
 - [Technology: Your Pipeline](/docs/training/technology/pipeline) — the vertical-specific pipeline lesson.

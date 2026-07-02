@@ -4,6 +4,7 @@ import { AudioPlayer } from '@/components/audio-player';
 import { GlossaryTerm } from '@/components/glossary-term';
 import { GuidedSim } from '@/components/guided-sim';
 import { OhShit } from '@/components/oh-shit';
+import { ScenarioSim } from '@/components/scenario-sim';
 import { Shot } from '@/components/shot';
 import { DecisionTree, KeyTakeaways, KnowledgeCheck, LessonMeta, PracticeChecklist, PromptCard, ScenarioBoard, WorkflowMap } from '@/components/training-visual';
 import { ToolBadge, WhereThisLives } from '@/components/tool-badge';
@@ -22,6 +23,7 @@ export function getMDXComponents(components?: MDXComponents) {
     PracticeChecklist,
     PromptCard,
     ScenarioBoard,
+    ScenarioSim,
     Shot,
     ToolBadge,
     WorkflowMap,

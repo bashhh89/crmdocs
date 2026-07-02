@@ -89,6 +89,39 @@ Before any renewal conversation, open the account's Company record. The service 
   prevention="When you share a number, name its filter gate so others can reproduce it instead of pulling a differently-filtered cousin."
 />
 
+## Prove It Under Pressure
+
+<ScenarioSim
+  title="The number goes to the board"
+  intro="Thursday, 8 AM. The board meets at noon and wants pipeline, forecast, and the win rate for one league. You have four hours."
+  steps={[
+    {
+      situation: "You need the pipeline number fast. How do you get it?",
+      options: [
+        { label: "Ask the assistant for the number, then open the view behind it and spot-check the biggest deals.", quality: "best", outcome: "Speed plus verification. The assistant finds it in seconds; the two-minute source check is what makes it board-safe." },
+        { label: "Ask the assistant and use the answer as-is — that is what it is for.", quality: "ok", outcome: "Usually fine, and always fast — but a stale stage or a duplicate deal flows straight into the board deck unchecked." },
+        { label: "Pull last month's deck and adjust the number by feel.", quality: "bad", outcome: "A number nobody can reproduce is worse than no number. The first sharp question at the table unravels it." }
+      ]
+    },
+    {
+      situation: "The forecast looks high. Before challenging the team, what do you check?",
+      options: [
+        { label: "Which deals sit at or above the 50% probability line — and whether their stages and dates are actually current.", quality: "best", outcome: "The forecast is only as honest as the records under it. Stale close dates and optimistic stages are found here, not in the meeting." },
+        { label: "Send the number back to the team and ask them to confirm it.", quality: "ok", outcome: "Reasonable, but slower — and it trains the team that dashboards are your job to question and theirs to defend. Check the source first, then ask sharper questions." },
+        { label: "Trim a percentage off the top based on experience.", quality: "bad", outcome: "Invisible haircuts make the CRM and the board deck disagree forever after. Fix the records, not the number." }
+      ]
+    },
+    {
+      situation: "The win-rate slide is ready. How does the number travel to the board?",
+      options: [
+        { label: "From the shared win/loss view, with the deal count next to the percentage.", quality: "best", outcome: "Reproducible source, honest denominator. An 80% rate on five deals reads very differently than on fifty — and now the board knows which it is." },
+        { label: "A screenshot of the dashboard widget pasted into the deck.", quality: "ok", outcome: "The number is real today, but the screenshot is dead the moment a deal closes. Anyone re-checking gets a different number than the deck." },
+        { label: "The percentage alone — clean slides win board meetings.", quality: "bad", outcome: "A percentage without its denominator invites the one question you cannot answer from memory. Small samples swing hard." }
+      ]
+    }
+  ]}
+/>
+
 ## Keep Going
 
 - [Leadership: Dashboards](/docs/training/leadership/dashboards) — reading the rollups in depth.

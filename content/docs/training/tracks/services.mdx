@@ -123,6 +123,39 @@ The post-game report matters more than it looks. It stays editable for roughly a
   prevention="Hardware detail lives in the Operations Workspace; the venue record only holds venue-level settings."
 />
 
+## Prove It Under Pressure
+
+<ScenarioSim
+  title="Game day minus six hours"
+  intro="Saturday morning. A venue contact texts: the ribbon board on the east side is flickering, and doors open at 6 PM."
+  steps={[
+    {
+      situation: "Where does this problem get recorded?",
+      options: [
+        { label: "A ticket in the Service Dashboard — priority reflecting the game tonight.", quality: "best", outcome: "The ticket is the working record: assignable, trackable, and synced to the CRM Company page in about a second. Everyone can see it, nobody has to re-report it." },
+        { label: "A note on the CRM Company so account history is captured.", quality: "bad", outcome: "A note captures history but assigns nobody and tracks nothing. At 6 PM the board is still flickering and the note is still just a note." },
+        { label: "A message to the technician you trust with this venue.", quality: "ok", outcome: "The right person may hear about it fast — but if they are off today, the problem lives in a text thread nobody else can see. Ticket first, then the heads-up." }
+      ]
+    },
+    {
+      situation: "Before you call the venue contact back, what do you check?",
+      options: [
+        { label: "The CRM Company page — open tickets, recent events, and who else has touched this venue lately.", quality: "best", outcome: "Two minutes of reading and you sound like the whole company: you know the history, the open work, and the last visit before they say a word." },
+        { label: "Nothing — speed matters more than context on game day.", quality: "bad", outcome: "Fast and blind means asking questions the venue already answered someone else. That reads as a company that does not talk to itself." },
+        { label: "Your own memory of the venue from past visits.", quality: "ok", outcome: "Memory helps, but the Company page knows what happened while you were elsewhere. Read the record, then trust your experience." }
+      ]
+    },
+    {
+      situation: "The technician replaces a failing part at 3 PM. The board is stable. What closes the loop?",
+      options: [
+        { label: "Resolution note on the ticket — what was found, what was replaced, what to watch — then close it.", quality: "best", outcome: "The next person at this venue inherits what was learned, and the CRM company history shows a clean, complete story automatically." },
+        { label: "Close the ticket — the fix speaks for itself.", quality: "ok", outcome: "Closed is better than dangling, but a bare close throws away the diagnosis. Next flicker, someone starts from zero." },
+        { label: "Leave the ticket open a few days in case it flickers again.", quality: "bad", outcome: "An open ticket after a completed fix is noise in every queue and report. Close it with a good note — reopen if it recurs." }
+      ]
+    }
+  ]}
+/>
+
 ## Keep Going
 
 - [Venue Services: Service Tickets](/docs/training/venue-services/service-tickets) — ticket handling in depth.
