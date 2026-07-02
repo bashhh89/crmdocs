@@ -7,9 +7,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/venue-services-your-day-to-day.mp3" />
 
-<Shot src="/img/screenshots/crm/t-pipeline.png" caption="Your daily queue — what's open and what needs you today." />
+<LessonMeta time="10 min" audience="Venue Services team" level="Core" accent="services" />
+
+<Shot src="/img/screenshots/crm/t-pipeline.png" caption="Your daily queue — what’s open and what needs you today." />
 
 **After this lesson** you'll have a single view of all your venues and a 30-second daily habit that keeps everything from slipping.
+
+This is the lesson that turns the other three into a system. Knowing how tickets work, how the account view reads, and how activity gets logged is capability. Running the same short check every morning is *reliability* — and reliability is the whole product in venue services. Clients do not remember the ninety-nine quiet days; they remember the one issue that sat unowned for a week. The daily habit exists to make that day impossible.
+
+<ScenarioBoard
+  title="Monday, three venues, one game week"
+  situation="You cover several venues. One has a game Saturday, one had a weekend voicemail ticket land automatically, and one has a ticket that has not moved in five days."
+  goal="In one pass on your saved view, see all three situations, put an owner on the voicemail ticket, nudge the stale one, and confirm nothing is open in front of Saturday."
+  proof="By the first coffee, every open item across your venues has an owner and a current status — and you found all of it in one view, not three inboxes."
+  accent="connected"
+/>
 
 <WorkflowMap
   title="30-second morning check"
@@ -30,7 +42,11 @@ Set up a view filtered to **your venues** and make it your default landing spot.
 2. Add a filter for the venues you cover.
 3. Save it as your own view and **star** it.
 
-**Or just ask:** *"Show me my venues."*
+<WhereThisLives tool="crm" path="CRM → Companies → filter to your venues → save + star the view" />
+
+<PromptCard accent="services" title="Your venues, one line" prompt="Show me my venues." />
+
+You build this once. From then on, "where do things stand?" is a single click, every day, on data that is already live — tickets and events flow in from the Service Dashboard through <GlossaryTerm term="realTimeCrmSync" />, so the view is current the moment you open it.
 
 ## The daily habit
 
@@ -39,15 +55,48 @@ Because everything for a venue ties to its account, open items stay visible inst
 - **Each morning:** check what's open or overdue across your venues.
 - **As you work:** keep the venue you touched current — a quick note or status update.
 
-**Or just ask:** *"What's open or overdue across my venues?"*
+<PromptCard accent="services" title="The morning question" prompt="What’s open or overdue across my venues?" />
+
+When the morning pass surfaces something, triage it on the spot instead of leaving it for "later":
+
+<DecisionTree
+  title="Morning pass triage"
+  accent="connected"
+  branches={[
+    { if: "An open item has no owner", then: "Assign it now — to yourself or the right tech. Unowned work is the number one way things slip." },
+    { if: "A ticket has not moved in days", then: "Open it. Either the work stalled (nudge or escalate) or it finished off the record (update and close it properly)." },
+    { if: "An event is coming up with an open issue in front of it", then: "Raise the priority to match the date and confirm the owner knows the deadline just changed." },
+    { if: "Everything is owned and moving", then: "You are done — the check should take 30 seconds on a clean day. That is the point." }
+  ]}
+/>
 
 <Callout title="The whole point">
 Nothing falls through the cracks because nothing lives in your inbox anymore — it lives on the account, where you and the whole team can see it. Keep the accounts current and the system does the remembering for you.
 </Callout>
 
+## The weekly pass
+
+Once a week, zoom out from the daily check and read your venues the way the [account view lesson](/docs/training/venue-services/the-account-view) taught: not "what is open today" but "how is each venue trending." Repeat failures, recurring service coming due, thin activity trails, upcoming event clusters. Ten minutes, once a week, and you stop being surprised by your own venues.
+
+<PromptCard accent="services" title="Weekly health scan" prompt="Show me venue activity from the last 30 days across my venues and call out anything that needs follow-up." />
+
+## Common mistakes
+
+<OhShit
+  symptom="You skipped the morning check for a busy week, and a client escalated a ticket you never saw — it arrived automatically from a voicemail and sat unowned."
+  fix="Own the miss, assign it, resolve it, and reply with status and next step. Then run the full pass — where one item slipped, others usually did too."
+  prevention="The check is 30 seconds precisely so busy weeks cannot kill it. Chain it to something you already do every morning — first coffee, first sit-down — so it survives game weeks."
+/>
+
+The subtler failure: doing the check but not acting on it. Reading "unowned ticket, 4 days old" and moving on is worse than not looking — you had the information and left the risk standing. The pass is check *and* touch: every red flag gets an owner, a nudge, or an escalation before you close the view.
+
 ## You only learn your part
 
-You don't need the sales or media workflows — just Venue Services. Everyone does the same Core basics, then only the track that fits their work.
+You don't need the sales or media workflows — just Venue Services. Everyone does the same Core basics, then only the track that fits their work. Your daily view, your venues, your queue.
+
+## What good looks like
+
+The habit is working when three things are true. Your morning check genuinely takes under a minute most days, because the previous days left nothing to clean up. Nobody has to ask you for status, because the record already says it. And when you take a day off, the venue does not go dark — anyone can open your view and see exactly where everything stands. That last one is the real test: the system remembers, so no single person has to.
 
 ## Now you try →
 
@@ -55,4 +104,33 @@ Build your "my venues" view, star it, and run your morning check: anything open 
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
+## Related lessons
+
+- **[Service Tickets](/docs/training/venue-services/service-tickets)** — what to do with the open items your morning pass surfaces.
+- **[The Account View](/docs/training/venue-services/the-account-view)** — the deeper read behind the weekly pass.
+- **[Venue Activity](/docs/training/venue-services/venue-activity)** — keeping the trail current as you work.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "One saved, starred view of your venues — built once, opened every day.",
+    "The morning pass is check and touch: every flag gets an owner, a nudge, or an escalation before you close the view.",
+    "Tickets arrive on their own (voicemail, email, portal) — the daily check is how you catch what you did not create.",
+    "A weekly ten-minute health scan catches trends the daily pass is too zoomed-in to see.",
+    "The real test: you take a day off and the venue does not go dark."
+  ]}
+/>
+
 That's the Venue Services track. Anything you forget, just ask the assistant.
+
+<KnowledgeCheck
+  accent="services"
+  question="Your morning pass shows a ticket with no owner that arrived overnight from a client voicemail. What is the right move?"
+  options={[
+    "Leave it — auto-created tickets get picked up by whoever handles that venue next",
+    "Note it mentally and come back after your first site visit",
+    "Assign it now — to yourself or the right tech — before closing the view"
+  ]}
+  answer={2}
+  explanation="Unowned work is the number one way things slip, and tickets that arrive automatically have no human who knows about them yet. The pass is check and touch: nothing unowned survives the morning view."
+/>

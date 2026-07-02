@@ -7,9 +7,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/technology-pipeline.mp3" />
 
+<LessonMeta time="10 min" audience="Technology team" level="Core" accent="proposals" />
+
 <Shot src="/img/screenshots/crm/t-pipeline.png" caption="Your Proposal Pipeline — every open deal, sorted by what's due." />
 
 **After this lesson** you'll be able to find your Technology deals, move one through its stages to won, and read your dashboard at a glance.
+
+Here is why this lesson exists: the pipeline views are not a reporting formality. They are the working surface the whole business reads. The proposal team decides what to price next from these views. Leadership reads the forecast from these views. When a deal of yours sits with a stale stage or a blank close date, it is not a private mess — it is a wrong number on somebody else's screen. Keeping your slice of the pipeline current is the single highest-leverage habit on this desk, and it costs about ten minutes a day.
 
 <WorkflowMap
   title="Pipeline habit"
@@ -22,40 +26,124 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="proposals"
 />
 
+<ScenarioBoard
+  title="Monday morning, leadership wants the read"
+  accent="connected"
+  situation="It is Monday at 8:45. Leadership asks what is moving in Technology this week and which bids are due. You have not opened the CRM since Thursday."
+  goal="Answer from the Proposal Pipeline view in under two minutes — what is due, what moved, what is stuck — without building anything."
+  proof="You name the three deals due this week with their bid status, and every one of them has a current stage and next step when someone clicks in."
+/>
+
 ## Where your deals live
 
 Your work sits in a few saved views. Open the **view dropdown** at the top of the Opportunities list and you'll find:
 
-- **Proposal Pipeline** — the active queue, sorted by what's due.
-- **Bid Tracker** — a board view of bids by status (received → submitted → won/lost).
-- **Pipeline by Business Unit** — everything rolled up by vertical, so you can isolate Technology.
+- **Proposal Pipeline** — the active queue, sorted by proposal due date. This is your morning landing spot: the top of the list is literally your day.
+- **Bid Tracker** — a board view of bids grouped by <GlossaryTerm term="bidStatus" />, so you can see the whole flow at once: RFP Received → Scoping → Bid Submitted → Shortlisted → Won / Lost / No Bid. Drag a card to move a deal.
+- **Pipeline by Business Unit** — everything rolled up by vertical, so you can isolate Technology from Venue Services and Media & Sponsorship.
+- **Top Open Deals** — open deals sorted by value, for when you need to know where the money is concentrated.
 
-**Or just ask:** *"Show me the Technology pipeline."*
+<WhereThisLives tool="crm" path="Opportunities → view dropdown → Proposal Pipeline" />
+
+Grouped views also carry live totals: each group header shows a record count and a revenue sum, and the footer totals the whole view. When you filter, the totals recompute. That means the view itself answers "how much is in Scoping right now" without exporting anything.
+
+<PromptCard
+  accent="proposals"
+  title="Skip the clicking"
+  prompt="Show me the Technology pipeline."
+/>
 
 ## Moving a deal forward
 
 As a deal progresses, keep its **stage** and **bid status** current — that's what keeps everyone's dashboards accurate.
 
 1. Open the opportunity.
-2. Update the **Stage** as it moves (e.g. Meeting → Proposal).
-3. When it lands, set **bid status** to **Won** and fill in the close details.
+2. Update the **Stage** as the relationship moves (e.g. Meeting → Proposal).
+3. Update **Bid Status** as the bid itself moves (e.g. Scoping → Bid Submitted).
+4. When it lands, set Bid Status to **Won** and fill in the close details — including the completion date, which the platform requires on a win.
 
-**Or just ask:** *"Move the Suns scoreboard deal to won."*
+<PromptCard
+  accent="crm"
+  title="Move a deal by asking"
+  prompt="Move the Suns scoreboard deal to won."
+/>
+
+One nuance worth knowing early: some status changes happen for you. When a proposal PDF goes out from the Proposal Engine, the deal's bid status moves to **Bid Submitted** automatically. So if a deal looks like it jumped forward on its own, check the attached documents — the system recorded real work. The full stage-versus-bid-status picture is in [Managing Your Deals](/docs/training/technology/managing-your-deals).
 
 <Callout title="Why this matters">
-The leadership dashboards and forecasts are built straight from these fields. Keeping your stage current is the single most useful habit — it means no one has to chase you for a status update.
+The leadership dashboards and forecasts are built straight from these fields. Keeping your stage current is the single most useful habit — it means no one has to chase you for a status update, and your deals never get miscounted in a forecast conversation you are not in the room for.
 </Callout>
+
+## Common mistakes
+
+<OhShit
+  symptom="A deal you know is active is not showing in the Proposal Pipeline view."
+  fix="Open the deal directly (search the Company, then the opportunity) and check two fields: the proposal due date and the business unit. A blank due date drops the deal out of a due-date-sorted queue, and a missing Technology business unit drops it out of vertical rollups. Fill them in and the deal reappears."
+  prevention="When a new deal is created, set business unit and proposal due date in the same sitting. A deal without those two fields is invisible to the views everyone works from."
+/>
+
+Two more habits to avoid:
+
+- **Letting a dead deal sit open.** If a bid is not happening, mark it **No Bid** or **Lost** the day you know. Open-but-dead deals inflate the forecast and waste the proposal team's attention.
+- **Updating stage but not bid status (or the reverse).** They answer different questions and both feed reporting. Touch the deal once, update both.
 
 ## Your dashboard tab
 
-The **ANC 2026 Company Dashboard** has tabs by vertical. Open the **Technology** tab to see your booked revenue, margin, and forecast in one place — no spreadsheet needed.
+The **ANC 2026 Company Dashboard** has tabs by vertical. Open the **Technology** tab to see your booked revenue, margin, and forecast in one place — no spreadsheet needed. After your morning pipeline pass, one glance here confirms your updates rolled up.
 
-**Or just ask:** *"How much Technology revenue have we booked this year?"*
+<PromptCard
+  accent="proposals"
+  title="Pull the number directly"
+  prompt="How much Technology revenue have we booked this year?"
+/>
+
+## What good looks like
+
+Before you consider your pipeline "clean," every open deal of yours should pass this bar:
+
+<PracticeChecklist
+  title="Clean pipeline bar"
+  accent="proposals"
+  items={[
+    "Every open deal has an owner, an amount, a close date, and a next step.",
+    "Stage and bid status both match reality as of this morning.",
+    "Anything dead is marked Lost or No Bid — nothing open is secretly over.",
+    "The Technology dashboard tab reflects your changes without surprises."
+  ]}
+/>
+
+If you can hit that bar daily, status meetings about your deals become read-outs instead of interrogations.
 
 ## Now you try →
 
-Open your **Proposal Pipeline** view, pick one deal, and move its stage forward one step. Then open the **Technology** dashboard tab.
+Open your **Proposal Pipeline** view, pick one deal, and move its stage forward one step. Then open the **Technology** dashboard tab and watch the rollup.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Estimation & Proposals](/docs/training/technology/estimation-and-proposals)**.
+Related lessons:
+
+- [Managing Your Deals](/docs/training/technology/managing-your-deals) — stage vs. bid status in depth, and closing deals honestly.
+- [Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates) — the due-date discipline that drives this queue.
+- [Reading Your Dashboard](/docs/training/technology/your-dashboard) — the numbers your pipeline hygiene feeds.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Proposal Pipeline, Bid Tracker, Pipeline by Business Unit, and Top Open Deals are the four views this desk lives in.",
+    "Stage tracks the sales relationship; bid status tracks the bid flow — keep both current in the same touch.",
+    "A deal missing its due date or business unit is invisible to the views everyone else works from.",
+    "The dashboards are built straight from these fields — clean pipeline in, credible forecast out."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="proposals"
+  question="A deal you know is live is missing from the Proposal Pipeline view. What is the most likely cause?"
+  options={[
+    "The CRM archives deals automatically after 30 days",
+    "The proposal due date or business unit field is blank, so the deal drops out of the sorted queue",
+    "Someone else opened the deal and locked it"
+  ]}
+  answer={1}
+  explanation="Proposal Pipeline is driven by the fields on the record. A blank proposal due date or missing Technology business unit drops the deal out of the queue everyone works from — fill those two fields and it reappears."
+/>

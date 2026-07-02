@@ -1,38 +1,66 @@
 ---
-title: "ANC Training: Choose your path to productivity"
+title: "ANC CRM Training"
 description: A role-based CRM training program for working cleanly, finding records fast, and keeping pipeline data reliable.
 ---
 
 import {Cards, Card} from 'fumadocs-ui/components/card';
 import {Callout} from 'fumadocs-ui/components/callout';
-import {Rocket, Cpu, Wrench, Megaphone, LineChart, ClipboardCheck, Route} from 'lucide-react';
+import {Rocket, Cpu, Wrench, Megaphone, LineChart, ClipboardCheck, Route, Headphones, BookOpenCheck, MessageSquareText, Layers} from 'lucide-react';
 
 <AudioPlayer src="/audio/training/training-start-here.mp3" />
 
-This training is the operating manual for using the CRM as the shared source of truth across Technology, Venue Services, Media & Sponsorship, Proposals, and Leadership.
-
-The goal is not just to learn where buttons are. The goal is to make sure every Company, opportunity, ticket, placement, forecast, and follow-up can be found, trusted, and acted on by the next person who opens it.
-
-<Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Start with the full picture: dashboards, pipeline, records, and owner-level follow-up all connect back to the same CRM data." />
-
-<div className="my-4 rounded-lg border p-4">
-  <div className="mb-2 text-sm font-semibold">Track your progress</div>
-  <div className="text-sm text-slate-600">0/3 modules complete</div>
-  <div className="mt-2 flex gap-2">
-    <span className="h-3 w-3 rounded-full border border-slate-300" />
-    <span className="h-3 w-3 rounded-full border border-slate-300" />
-    <span className="h-3 w-3 rounded-full border border-slate-300" />
+<div className="not-prose my-6 overflow-hidden rounded-2xl border border-fd-border bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950 p-8 text-white shadow-lg">
+  <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-300">ANC CRM Training</p>
+  <h2 className="mt-3 max-w-2xl text-3xl font-bold leading-tight">One CRM. One standard. Every deal, venue, placement, and number you can trust.</h2>
+  <p className="mt-4 max-w-2xl text-[15px] leading-7 text-slate-300">
+    This is the operating manual for using the CRM as the shared source of truth across Technology,
+    Venue Services, Media &amp; Sponsorship, Proposals, and Leadership. Not where the buttons are —
+    how to work so the next person who opens a record can trust what they see.
+  </p>
+  <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
+    <div className="rounded-lg bg-white/5 p-3 ring-1 ring-white/10">
+      <p className="text-2xl font-bold text-emerald-300">40+</p>
+      <p className="text-xs font-medium text-slate-300">hands-on lessons</p>
+    </div>
+    <div className="rounded-lg bg-white/5 p-3 ring-1 ring-white/10">
+      <p className="text-2xl font-bold text-emerald-300">5</p>
+      <p className="text-xs font-medium text-slate-300">role tracks</p>
+    </div>
+    <div className="rounded-lg bg-white/5 p-3 ring-1 ring-white/10">
+      <p className="text-2xl font-bold text-emerald-300">100%</p>
+      <p className="text-xs font-medium text-slate-300">audio narrated</p>
+    </div>
+    <div className="rounded-lg bg-white/5 p-3 ring-1 ring-white/10">
+      <p className="text-2xl font-bold text-emerald-300">60+</p>
+      <p className="text-xs font-medium text-slate-300">copy-ready AI prompts</p>
+    </div>
   </div>
 </div>
 
-## Start With The Situation
+<WorkflowMap
+  title="How the program works"
+  accent="connected"
+  steps={[
+    "Do Core first — navigation, record hygiene, the assistant, and the working standard everyone shares.",
+    "Complete the track that matches your role — Sales, Proposals, Services, Media & Sponsorship, or Leadership.",
+    "Use the workflow guides and prompt cheat sheets as your day-to-day reference after training."
+  ]}
+/>
+
+## Start with the situation
 
 Pick the path by the problem in front of you:
 
-- **A client asks for pricing.** Open the deal, check the Company, confirm <abbr title="Where the deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr>, and move into proposal work.
-- **A venue has an issue before an event.** Open the Company, check tickets and recent activity, then use the service track.
-- **An RFP lands with a deadline.** Triage the RFP, price the deal, generate the SOW, and make sure the files attach back to the CRM opportunity.
-- **Leadership asks for a number.** Ask the assistant, then open the records behind the answer before sharing it.
+<DecisionTree
+  title="What landed on your desk?"
+  accent="crm"
+  branches={[
+    { if: "A client asks for pricing", then: "Open the deal, check the Company, confirm Bid Status, and move into proposal work." },
+    { if: "A venue has an issue before an event", then: "Open the Company, check tickets and recent activity, then use the Services track." },
+    { if: "An RFP lands with a deadline", then: "Triage the RFP, price the deal, generate the SOW, and make sure the files attach back to the CRM opportunity." },
+    { if: "Leadership asks for a number", then: "Ask the assistant, then open the records behind the answer before sharing it." }
+  ]}
+/>
 
 <Cards>
   <Card
@@ -43,15 +71,23 @@ Pick the path by the problem in front of you:
   />
 </Cards>
 
+<Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Start with the full picture: dashboards, pipeline, records, and owner-level follow-up all connect back to the same CRM data." />
+
 ## The standard
 
 Use the CRM with the same standard you would use for a client-facing proposal or an internal revenue review:
 
-- **Find the right record before creating a new one.** Duplicate Companies create bad history, bad reporting, and wasted follow-up.
-- **Keep status fields current.** Stage, owner, close date, amount, bid status, service status, and next step drive dashboards.
-- **Write notes that someone else can use.** A good note says what happened, what changed, and what happens next.
-- **Use views instead of personal spreadsheets.** If the information belongs to the team, it belongs in a shared CRM view or dashboard.
-- **Ask the assistant for speed, then verify important numbers.** The assistant is excellent for finding, summarizing, and drafting. For revenue, dates, and client commitments, check the source record.
+<PracticeChecklist
+  title="The five rules every lesson reinforces"
+  accent="crm"
+  items={[
+    "Find the right record before creating a new one — duplicates create bad history and wasted follow-up.",
+    "Keep status fields current — stage, owner, close date, amount, bid status, and next step drive every dashboard.",
+    "Write notes someone else can use — what happened, what changed, what happens next.",
+    "Use shared views instead of personal spreadsheets — team information belongs in a team surface.",
+    "Ask the assistant for speed, then verify important numbers at the source record."
+  ]}
+/>
 
 <Callout title="Training order">
 Do **Core** first. Then complete the vertical that matches your day-to-day work. Leadership users should complete Core plus Leadership, then skim the verticals they oversee.
@@ -109,7 +145,28 @@ Do **Core** first. Then complete the vertical that matches your day-to-day work.
   />
 </Cards>
 
-## Common Questions
+## What each lesson gives you
+
+<div className="not-prose my-6 grid gap-3 md:grid-cols-2">
+  <div className="rounded-lg border border-fd-border bg-fd-card p-4">
+    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-fd-foreground"><span className="rounded-md bg-emerald-100 p-1.5 text-emerald-700 dark:bg-emerald-900/60 dark:text-emerald-300"><svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>A real scenario</div>
+    <p className="text-sm leading-6 text-fd-muted-foreground">Every lesson starts from actual work — an RFP landing, a venue issue, a board number — not an abstract feature tour.</p>
+  </div>
+  <div className="rounded-lg border border-fd-border bg-fd-card p-4">
+    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-fd-foreground"><span className="rounded-md bg-blue-100 p-1.5 text-blue-700 dark:bg-blue-900/60 dark:text-blue-300"><svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3h18v18H3z"/><path d="M9 9h6v6H9z"/></svg></span>The click path and the ask path</div>
+    <p className="text-sm leading-6 text-fd-muted-foreground">Each workflow shows the repeatable click path in the CRM and the same action asked of the assistant in plain English.</p>
+  </div>
+  <div className="rounded-lg border border-fd-border bg-fd-card p-4">
+    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-fd-foreground"><span className="rounded-md bg-orange-100 p-1.5 text-orange-700 dark:bg-orange-900/60 dark:text-orange-300"><svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg></span>Common mistakes and emergencies</div>
+    <p className="text-sm leading-6 text-fd-muted-foreground">The mistakes that actually happen — duplicates, stale stages, wrong app — with the fix and the prevention.</p>
+  </div>
+  <div className="rounded-lg border border-fd-border bg-fd-card p-4">
+    <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-fd-foreground"><span className="rounded-md bg-violet-100 p-1.5 text-violet-700 dark:bg-violet-900/60 dark:text-violet-300"><svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg></span>A knowledge check</div>
+    <p className="text-sm leading-6 text-fd-muted-foreground">A quick self-test at the end of each lesson so you know the workflow stuck before you move on.</p>
+  </div>
+</div>
+
+## Common questions
 
 <details>
   <summary>Which app do I use?</summary>
@@ -131,29 +188,13 @@ Do **Core** first. Then complete the vertical that matches your day-to-day work.
   <p>Service Dashboard creates and manages tickets. The CRM shows linked ticket history for Company context.</p>
 </details>
 
-## Scout Prompts Cheat Sheet
+## Prompt cheat sheet
 
-```text
-My open deals sorted by proposal due date.
-```
+<PromptCard accent="crm" title="Pipeline at a glance" prompt="My open deals sorted by proposal due date." />
 
-```text
-Deals in Scoping this week.
-```
+<PromptCard accent="proposals" title="This week's estimation queue" prompt="Deals in Scoping this week." />
 
-```text
-RFPs received this week sorted by league.
-```
-
-## What each lesson gives you
-
-Each lesson is built around real work:
-
-- **What you are trying to accomplish** - the business reason behind the workflow.
-- **Where to look** - the exact CRM area, view, dashboard, or Company page.
-- **How to do it by clicking** - the repeatable path for normal use.
-- **How to ask the assistant** - the same action in plain English.
-- **What good looks like** - the record quality standard before you move on.
+<PromptCard accent="connected" title="RFP triage" prompt="RFPs received this week sorted by league." />
 
 <Shot src="/img/screenshots/crm/t-all-deals.png" caption="Most workflows start from a list view: filter the list, open the right record, update the source fields, then use dashboards to review the rollup." />
 

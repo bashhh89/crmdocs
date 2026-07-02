@@ -7,9 +7,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/venue-services-the-account-view.mp3" />
 
+<LessonMeta time="10 min" audience="Venue Services team" level="Core" accent="services" />
+
 <Shot src="/img/screenshots/crm/t-account.png" caption="The account page — pipeline, lifetime value, and recent activity for one venue." />
 
 **After this lesson** you'll be able to open any venue and see its whole picture — service, people, scope — before a call or a visit.
+
+The whole platform is built account-first for exactly this reason: relationships, activity, tickets, and revenue all roll up to the <GlossaryTerm term="company" />, so one page answers what would otherwise take four systems and three colleagues. For Venue Services, that page is your pre-contact ritual. You never walk into a call, a site visit, or an escalation cold — two minutes on the Company record and you know more than the person asking expects you to.
 
 <ScenarioBoard
   title="Before a venue call"
@@ -21,29 +25,64 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 ## Everything for a venue, in one place
 
-Open the venue's **company** record and you see it all: its service activity, its open tickets, its contacts, and its history — together, not scattered.
+Open the venue's **company** record and you see it all: its service activity, its open tickets, its contacts, and its history — together, not scattered. The page is organized into tabs, and for service work four of them carry most of the weight:
 
-**Or just ask:** *"Show me everything on Madison Square Garden."*
+- **Tickets** — every service ticket linked to the account, live from the Service Dashboard via <GlossaryTerm term="realTimeCrmSync" />. What is open, who owns it, what got resolved.
+- **Events** — every game, concert, and service event at the venue, including the live game-day workflow status.
+- **Opportunities** — the deals behind the relationship: what was sold, what is in motion.
+- **People** — the contacts on the account, with roles.
+
+You do not maintain any of the ticket or event data here — it flows in from the Service Dashboard in about a second. The Company page is where you *read* it in context.
+
+<WhereThisLives tool="crm" path="CRM → Companies → open the venue’s Company" />
+
+### The click path
+
+1. Open **Companies** (or search the venue name from the top bar).
+2. Click the venue's Company record.
+3. Scan in this order: open **Tickets** first (what is live), then **Events** (what is coming), then the latest **notes** (what happened recently), then **People** (who you are talking to).
+4. If the conversation touches scope or money, open **Opportunities** last.
+
+That scan takes two minutes once it is a habit, and it is the difference between reacting to a client and briefing one.
+
+<PromptCard accent="services" title="Full account picture" prompt="Show me everything on Madison Square Garden." />
 
 ## The people you work with
 
-The venue's **people** are listed right on its account — contacts, roles, the works. Handy before you reach out about a follow-up.
+The venue's **people** are listed right on its account — contacts, roles, the works. Handy before you reach out about a follow-up, and essential when the usual contact is out and you need to know who else is real at that account. If you meet someone new on site, make sure they exist on the account — future-you will need them.
 
-**Or just ask:** *"Who are the contacts at TD Garden?"*
+<PromptCard accent="services" title="Who to call" prompt="Who are the contacts at TD Garden?" />
 
 ## The scope behind the service
 
-The service work ties to the venue's account, where the related **deal and scope** live — so you can connect what you're doing on the ground to what was actually sold.
+The service work ties to the venue's account, where the related **deal and scope** live — so you can connect what you're doing on the ground to what was actually sold. This matters most in the awkward moments: a client asks for something and you need to know whether it is covered work or new work. The answer lives on the account, not in anyone's memory.
 
-**Or just ask:** *"Pull up the account for TD Garden before my visit."*
+<PromptCard accent="services" title="Pre-visit briefing" prompt="Pull up the account for TD Garden before my visit." />
 
 ## One company, multiple venues
 
-A company can have **more than one venue or site** associated with it, and the service activity ties to the right one. So a multi-property client still rolls up cleanly under the account.
+A company can have **more than one venue or site** associated with it, and the service activity ties to the right one. So a multi-property client still rolls up cleanly under the account: you can read the whole relationship at the company level, then drill into the specific venue when you are working a site.
 
 <Callout title="Picking up new work">
-When a deal is won for a venue you cover, it ties to that account — so the new work shows up right where you're already looking. The account carries it from the sales side straight to you.
+When a deal is won for a venue you cover, it ties to that account — so the new work shows up right where you're already looking. The account carries it from the sales side straight to you. No handoff meeting required: the record *is* the handoff.
 </Callout>
+
+## Common mistakes
+
+<OhShit
+  symptom="You gave a client a confident status on a call — then found out on the Company page afterward that a second ticket was open and escalated."
+  fix="Correct it fast and plainly: one message with the accurate status and the next step. Speed beats spin."
+  prevention="Make the two-minute Company scan a hard pre-contact rule. Tickets tab first, every time — the data is live, so what you see is what is true."
+/>
+
+Two more traps worth naming:
+
+- **Reading only the ticket you came for.** The client remembers every open issue, not just yours. Scan the whole Tickets tab before you engage.
+- **Trusting an old note over the live tabs.** Notes are context; the Tickets and Events tabs are current state. When they disagree, the tabs win — and the note needs updating.
+
+## What good looks like
+
+You are at standard on this lesson when, for any account you cover, you can walk into contact with four things already in hand: every open item and its owner, the next event on the calendar, the last meaningful thing that happened on the account, and the scope behind the work. If a colleague could take your venue call using only what is on the Company page, the record is where it should be.
 
 ## Now you try →
 
@@ -51,4 +90,31 @@ Open one of your venues and find three things on it: an open item, a contact, an
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Venue Activity](/docs/training/venue-services/venue-activity)**.
+## Related lessons
+
+- **[Service Tickets](/docs/training/venue-services/service-tickets)** — the open items you just read: where they come from and how to keep them clean.
+- **[Venue Activity](/docs/training/venue-services/venue-activity)** — the history layer: events, visits, and notes over time.
+- **[Your Day-to-Day](/docs/training/venue-services/your-day-to-day)** — turning this scan into a standing daily habit.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The Company page is the pre-contact ritual — never walk into a call or visit cold.",
+    "Scan in order: Tickets, Events, notes, People — then Opportunities if scope or money comes up.",
+    "Ticket and event data flows in live from the Service Dashboard; the Company page is where you read it in context.",
+    "Multi-venue clients roll up under one account, so the relationship reads at company level and the work drills to the site.",
+    "When a note and a live tab disagree, the tab wins — and the note gets fixed."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="services"
+  question="A venue contact asks for a service update on a call in five minutes. What is the right preparation?"
+  options={[
+    "Ask a colleague on the ops side what they remember about the venue",
+    "Open the venue's Company page and scan Tickets, Events, recent notes, and People",
+    "Search your email for the last thread about that venue"
+  ]}
+  answer={1}
+  explanation="The Company page carries the live state — tickets and events sync from the Service Dashboard in about a second, so the tabs are current. Email and memory are exactly the scattered sources the account view replaces."
+/>

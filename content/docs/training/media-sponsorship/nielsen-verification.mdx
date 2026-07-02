@@ -8,9 +8,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/media-sponsorship-nielsen-verification.mp3" />
 
+<LessonMeta time="12 min" audience="Media & Sponsorship team" level="Core" accent="connected" />
+
 <Shot src="/img/screenshots/crm/t-nielsen.png" caption="The Verification Grid — each placement and whether it's been verified." />
 
-**After this lesson** you'll be able to run the monthly verification round and always know what's confirmed versus what's still outstanding.
+**After this lesson** you'll be able to run the monthly verification round end to end and always know what's confirmed versus what's still outstanding.
+
+Verification is where the Media & Sponsorship record earns trust. Placements say what *we* believe ran; the monthly verification pass confirms it against the independent reporting. When a sponsor questions delivery, the verification trail is the answer — a clean, dated, per-sponsor record of what was checked, when, by whom, and what (if anything) did not match. Without it, every delivery conversation becomes memory versus memory. With it, the conversation is thirty seconds long.
+
+<ScenarioBoard
+  title="Month-end close"
+  situation="It is the first week of the month. Last month's games are done, the reporting is in, and each active sponsor needs its delivery confirmed before anyone reports numbers outward."
+  goal="Work through every verification record for the month, mark each correct or incorrect, and note every discrepancy."
+  proof="The pending filter for last month comes back empty, and every incorrect record carries a note explaining what did not match."
+  accent="connected"
+/>
 
 <PracticeChecklist
   title="Monthly verification pass"
@@ -25,32 +37,74 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 ## How verification is tracked
 
-Verification lives as its **own records** — by sponsor, by league, by month — so the whole trail sits in one organized place instead of a side spreadsheet.
+Verification lives as its **own records** — one per sponsor, per league, per month — so the whole trail sits in one organized place instead of a side spreadsheet. Each record carries:
+
+- The **sponsor** (linked to their Company) and the **league**.
+- The **month and year** it covers.
+- A **correct / incorrect** flag — the verdict.
+- The **verified date** and who verified it — so the trail is auditable, not anonymous.
+- **Discrepancy notes** — what did not match, when the verdict is incorrect.
+
+Newer verification records can also carry the **team**, which tightens the granularity from "this sponsor's league delivery checked out" to "this sponsor's games at this specific team checked out." Older records cover the league as a whole; both live in the same list.
+
+Records are named so a list reads cleanly at a glance — sponsor, league, and month right in the title.
 
 ## The monthly routine
 
+<WhereThisLives tool="crm" path="Media & Sponsorships → All Nielsen Verifications" />
+
 Each month there's a verification record per active sponsor and league to confirm:
 
-1. Open the list of this month's verifications.
-2. Work down it, sponsor by sponsor.
-3. Mark each **correct** or **incorrect** (with a note if something was off).
-4. The outstanding ones stay visible until they're done.
+1. Open **Media & Sponsorships → All Nielsen Verifications** and filter to the current month.
+2. Work down the list, sponsor by sponsor. For each one, compare the placement records against the independent reporting for those games.
+3. Mark each **correct** or **incorrect** — and when it's incorrect, write the discrepancy note *while the mismatch is in front of you*.
+4. The outstanding ones stay visible until they're done. Nothing quietly disappears.
 
-**Or just ask:** *"What verifications are still pending this month?"*
+<PromptCard accent="connected" title="What is left this month" prompt="What verifications are still pending this month?" />
 
-<Callout title="It can remind you">
-The system can prompt the monthly round so it doesn't get forgotten — so the verification work comes to you instead of relying on someone to remember it.
+<Callout title="It comes to you">
+At the start of each month, the platform creates a verification task for every active sponsor and league combination, due mid-month and linked to the matching verification record. The monthly round arrives as a task list — it does not depend on anyone remembering to start it.
 </Callout>
 
 ## Mark correct or incorrect
 
-Open the verification record and set whether it's **correct**, adding a note if something didn't check out. That keeps a clean, auditable trail of what passed and what didn't.
+Open the verification record and set the verdict:
+
+- **Correct** — the reporting matches what the placement records say ran. Set the flag, and the verified date and verifier go on the record.
+- **Incorrect** — something did not match. Set the flag *and write the discrepancy note*: which game, which position, what the reporting showed versus what was logged. An incorrect verdict without a note is half a verification — the next person (including future you) has to redo the comparison to find out what was wrong.
+
+An incorrect verdict usually points back at one of two things: the placement record is wrong (fix the status or details in [Placements](/docs/training/media-sponsorship/placements)), or delivery genuinely fell short (which feeds the contract-versus-actual conversation in [Sponsor Contracts](/docs/training/media-sponsorship/sponsor-contracts)). Either way, the note is what makes the follow-up possible.
 
 ## See verified vs. pending
 
-The verification records show the status per sponsor and month. Filter to what's **outstanding** so nothing gets missed.
+The verification records show the status per sponsor and month. Filter to what's **outstanding** so nothing gets missed — the month is not closed until that filter comes back empty.
 
-**Or just ask:** *"Which sponsors still need verifying for this month?"*
+<PromptCard accent="connected" title="Sponsor-level pending check" prompt="Which sponsors still need verifying for this month?" />
+
+<PromptCard accent="connected" title="Discrepancy review" prompt="Show me the verifications marked incorrect this year and their discrepancy notes." />
+
+## Common mistakes
+
+<OhShit
+  symptom="A sponsor disputes delivery from three months ago, and the verification record for that month says correct — but nobody remembers actually checking it."
+  fix="Re-run the comparison now against the placement records and the reporting for that month, and correct the record with a note explaining the re-check."
+  prevention="Never mark correct as a default or to clear the list. Correct means compared and confirmed — the flag is only worth what the check behind it was."
+/>
+
+<OhShit
+  symptom="A verification is marked incorrect, but the discrepancy note is empty — and now nobody knows what was wrong."
+  fix="Open the month's placements for that sponsor, redo the comparison, and write the note you should have written the first time."
+  prevention="Verdict and note travel together. If it is incorrect, the note goes in before you move to the next sponsor — no exceptions."
+/>
+
+## What good looks like
+
+A month is verifiably closed when:
+
+- Every active sponsor and league combination for the month has a verdict — the pending filter is empty.
+- Every **incorrect** verdict has a discrepancy note specific enough that someone else could act on it.
+- Every discrepancy has a follow-up: a corrected placement record, or a flagged delivery gap on the sponsor's account.
+- The verified dates fall inside the month's verification window, not in a panic the day before a sponsor review.
 
 ## Now you try →
 
@@ -58,4 +112,26 @@ Open this month's verifications, mark one as correct, and filter the list to see
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Sponsor Contracts](/docs/training/media-sponsorship/sponsor-contracts)**.
+Related lessons: [Placements](/docs/training/media-sponsorship/placements) is the record you're verifying against; [Sponsor Contracts](/docs/training/media-sponsorship/sponsor-contracts) is where confirmed delivery gaps go next; [Your Dashboards](/docs/training/media-sponsorship/dashboards) rolls the verification status into the sponsor readout.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Verification records are the auditable trail — one per sponsor, league, and month, with verdict, date, verifier, and notes.",
+    "The monthly round is created for you as tasks at the start of each month; your job is to clear it, not to remember it.",
+    "Correct means compared and confirmed — never a default. Incorrect always travels with a discrepancy note.",
+    "The month is closed when the pending filter is empty and every discrepancy has a follow-up."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="connected"
+  question="During the monthly pass you find a mismatch between the reporting and a placement record. What is the complete action?"
+  options={[
+    "Mark the verification incorrect and move on to the next sponsor",
+    "Fix the placement record quietly and mark the verification correct",
+    "Mark it incorrect, write the discrepancy note, and follow up on the placement or delivery gap it points to"
+  ]}
+  answer={2}
+  explanation="The verdict, the note, and the follow-up are one unit. Marking incorrect without a note loses the finding; silently fixing the placement and marking correct erases the trail. Record what did not match, then act on it."
+/>

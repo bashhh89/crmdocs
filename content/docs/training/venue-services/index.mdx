@@ -5,15 +5,18 @@ description: "For service and field operations users: track tickets, events, ven
 
 import {Callout} from 'fumadocs-ui/components/callout';
 
-# Services
 
 <AudioPlayer src="/audio/training/venue-services-index.mp3" />
+
+<LessonMeta time="12 min" audience="Venue Services team" level="Core" accent="services" />
 
 <span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span>{' '}
 <span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
 <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
 
-It is game week. A venue has an open display issue, a scheduled event, and a client asking whether the site is ready. You need the Company, tickets, recent activity, and service notes in one place.
+It is game week. A venue has an open display issue, a scheduled event, and a client asking whether the site is ready. You need the Company, tickets, recent activity, and service notes in one place — and you need them before the client calls, not after.
+
+That is what this track teaches: the working rhythm that keeps every venue you cover readable at a glance, so readiness is something you *know*, not something you go find out.
 
 <div className="my-4 rounded-lg border p-4">
   <div className="mb-2 text-sm font-semibold">Track progress</div>
@@ -47,29 +50,42 @@ You are learning how to:
 3. **Check venue health** - recent activity, recurring service, event context, and outstanding issues.
 4. **Keep the handoff clean** - make sure the next person can see status without hunting.
 
+None of these are new skills — you already do this work. What changes is *where the record lives*. When status lives on the venue instead of in your inbox, a colleague can cover your venue mid-shift, leadership can answer a client without pinging you, and nothing depends on you remembering it.
+
+## Two surfaces, one story
+
+You work across two connected surfaces, and knowing which one is "home" for each kind of work is half the track:
+
+- **The Service Dashboard** is the working surface — tickets, events, staffing, game-day workflows, and field operations live here. When something breaks, gets scheduled, or gets fixed, this is where it happens.
+- **The CRM** is the relationship surface — the Company record, contacts, deals, contract scope, and the full account history live here. This is where you read a venue before a call or a visit.
+
+The bridge between them is <GlossaryTerm term="realTimeCrmSync" />. When a ticket is opened, updated, or closed in the Service Dashboard — or an event is scheduled, or a technician moves through the game-day workflow — the change appears on the CRM Company page in about a second. You never copy anything across, and you never wonder which version is current. Work where the work lives; read where the relationship lives.
+
+<Shot src="/img/screenshots/service-dashboard/03-tickets-list.png" caption="The Service Dashboard is the working surface for tickets and operations queues." />
+
 <Callout title="Where this lives">
-The Company relationship and service history live in the CRM. Day-to-day tickets, events, technician work, and venue operations live in the Service Dashboard. Synced history comes back to the CRM Company view.
+The Company relationship and service history live in the CRM. Day-to-day tickets, events, technician work, and venue operations live in the Service Dashboard. Synced history comes back to the CRM Company view automatically — in about a second, with no extra step from you.
 </Callout>
 
 ## Day 1 / Day 30 / Reference
 
 - **Day 1:** open the Company, find open tickets, check event context, and read the latest note.
 - **Day 30:** spot venue health patterns, overdue issues, repeated failures, and handoff gaps.
-- **Reference as needed:** IoT Operations Workspace, walkthroughs, maintenance records, reports, portals.
+- **Reference as needed:** <GlossaryTerm term="iotOperationsWorkspace" />, walkthroughs, maintenance records, reports, portals.
 
-## Scout Prompts
+The Day 30 skill is the one that matters. Anyone can read one ticket. The operator-level skill is reading a *venue*: the same display failing three times in two months, a ticket that has sat unowned since last week, an event on Saturday with an unresolved issue in front of it. That pattern reading is what this track builds toward.
 
-```text
-Open this venue's Company record and summarize open tickets, recent events, and unresolved service notes.
-```
+## Ask the assistant
 
-```text
-Which service tickets are overdue or missing an owner?
-```
+Every lesson in this track shows two paths — the click path and the ask path. Scout can pull the same picture for you in one line:
 
-```text
-Show me venue activity from the last 30 days and call out anything that needs follow-up.
-```
+<PromptCard accent="services" title="Venue summary before contact" prompt="Open this venue’s Company record and summarize open tickets, recent events, and unresolved service notes." />
+
+<PromptCard accent="services" title="Find the gaps in the queue" prompt="Which service tickets are overdue or missing an owner?" />
+
+<PromptCard accent="services" title="Venue health scan" prompt="Show me venue activity from the last 30 days and call out anything that needs follow-up." />
+
+Use whichever path is faster in the moment. Field crews on a phone tend to ask; anyone already in a list view tends to click. Both read the same live data.
 
 ## What You'll Learn Here
 
@@ -78,7 +94,18 @@ Show me venue activity from the last 30 days and call out anything that needs fo
 3. **[Check venue activity](/docs/training/venue-services/venue-activity)** - history, logging site visits, and recurring service.
 4. **[Run the day-to-day queue](/docs/training/venue-services/your-day-to-day)** - the views and habits that keep nothing falling through the cracks.
 
-<Shot src="/img/screenshots/service-dashboard/03-tickets-list.png" caption="The Service Dashboard is the working surface for tickets and operations queues." />
+Take them in order the first time — tickets are the raw material, the Company view is where they become a story, activity is how the story stays current, and the day-to-day lesson turns all of it into a habit. After that, each page stands alone as a reference.
+
+## The quality bar
+
+You are done with this track when, for any venue you cover, you can answer four questions in under a minute without asking anyone:
+
+1. What is open right now, and who owns each item?
+2. What is happening at the venue this week?
+3. What happened the last time we were on site?
+4. What did ANC sell this account, and who are the people we deal with?
+
+If any answer requires digging through email or memory, the record is not current — and fixing that is the job.
 
 ## Quick Glossary
 
@@ -86,5 +113,15 @@ Show me venue activity from the last 30 days and call out anything that needs fo
 - <abbr title="A game, concert, or service event at a venue.">Event</abbr> - scheduled venue activity.
 - <abbr title="A venue site visit by an ANC technician, usually with issues, notes, or readiness checks.">Walkthrough</abbr> - a site visit or readiness check.
 - <abbr title="The spreadsheet-style Field Ops workspace for physical venue data, displays, rack/device notes, walkthrough logs, maintenance rows, forms, and operational documents.">IoT Operations Workspace</abbr> - the structured operations workspace for venue data.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Tickets, events, and field work live in the Service Dashboard; the relationship and history live on the CRM Company page.",
+    "Real-time sync moves every operational change to the CRM in about a second — you never copy status across.",
+    "The Day 30 skill is pattern reading: repeated failures, unowned work, and events with open issues in front of them.",
+    "The quality bar: four questions about any venue, answered in under a minute, without asking anyone."
+  ]}
+/>
 
 Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

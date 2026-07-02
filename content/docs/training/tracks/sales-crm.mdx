@@ -3,15 +3,28 @@ title: Sales & Account Management
 description: "Move deals from RFP to won, manage Company records, and keep forecast numbers accurate."
 ---
 
-# Sales & Account Management
 
 <AudioPlayer src="/audio/training/track-sales-crm.mp3" />
 
+<LessonMeta time="25 min" audience="Sales & Account Management" level="Core" accent="crm" />
+
 <ToolBadge tool="crm" />
 
-Move deals from RFP to won, manage Company records, and keep forecast numbers accurate.
+Move deals from RFP to won, manage Company records, and keep forecast numbers accurate. Everything in this track happens in the CRM — but the work you do here feeds the estimation queue, the leadership dashboards, and the renewal conversations that follow. A deal that is logged cleanly on day one stays easy for the next six months. A deal that is logged sloppily generates cleanup work for four other people.
 
 <Shot src="/img/screenshots/crm/t-pipeline.png" caption="Sales starts from the pipeline: Company, opportunity, stage, Bid Status, due date, value, and next step." />
+
+<WorkflowMap
+  title="The bid flow you are driving"
+  accent="crm"
+  steps={[
+    "RFP Received — logged, linked to the right Company, due date set.",
+    "Scoping — requirements confirmed, estimation team engaged.",
+    "Bid Submitted — proposal out the door, files attached to the deal.",
+    "Shortlisted — client narrowed the field; deal deserves extra attention.",
+    "Won, Lost, or No Bid — the honest outcome that keeps reporting true."
+  ]}
+/>
 
 ## Scenario 1: The RFP Just Landed
 
@@ -25,17 +38,17 @@ Open CRM -> Companies -> search **Louisville Athletics**.
 
 <WhereThisLives tool="crm" path="Companies -> Search" />
 
-**Why this matters:** creating duplicates creates merge work and splits history across multiple records.
+**Why this matters:** creating duplicates creates merge work and splits history across multiple records. ANC has years of relationship history in the CRM — past deals, service tickets, contacts, notes. A duplicate <GlossaryTerm term="company" /> cuts the new deal off from all of it, which means the estimator prices blind and the AE walks into the room without the account story.
+
+Search loosely before you conclude the Company is new. Try the short name, the venue name, and the university name — "Louisville", "Cardinals", "L&N Stadium" — before creating anything.
 
 **Scout shortcut:**
 
-```text
-Log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [your name].
-```
+<PromptCard accent="crm" title="Log the RFP in one line" prompt="Log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [your name]." />
 
 ### Step 2: Create The Opportunity
 
-If the Company exists, open it -> Opportunities tab -> New.
+If the Company exists, open it -> Opportunities tab -> New. Creating the opportunity from inside the Company record links it automatically — no manual relinking later.
 
 Set:
 
@@ -45,11 +58,15 @@ Set:
 - proposalDueDate = April 30
 - league = NCAA
 
+Each of these fields drives something downstream. <GlossaryTerm term="bidStatus" /> places the deal on the Bid Tracker board. The business unit routes it to the right vertical rollup — Technology, Venue Services, or Media & Sponsorship. The proposal due date is what the estimation queue sorts by, so a missing due date means the deal silently falls to the bottom of the pricing list. League is what powers win/loss analysis and case-study pulls later.
+
 **Common mistake:** leaving stage as New instead of Proposal. The deal may not show where the team expects it in the bid flow.
+
+**What good looks like:** the opportunity has a Company link, an owner, a due date, a business unit, and a league — before standup, not after. If you only have time for five fields, those are the five.
 
 ### Step 3: Verify It Appears In Bid Tracker
 
-Open Bid Tracker and confirm the opportunity appears in the RFP Received column.
+Open Bid Tracker and confirm the opportunity appears in the RFP Received column. Bid Tracker is the kanban view built on Bid Status — it is where the whole team reads the state of every live pursuit. If your deal is not on the board, it does not exist as far as the Monday pipeline review is concerned.
 
 <WhereThisLives tool="crm" path="Views -> Bid Tracker" />
 
@@ -59,17 +76,21 @@ Open Bid Tracker and confirm the opportunity appears in the RFP Received column.
 
 > *The scope is finalized. You have told the estimator the requirements. Now you need to mark this ready for pricing.*
 
-Open the Opportunity and confirm <GlossaryTerm term="pricingComplete" /> is set when pricing output is generated or ready for proposal movement.
+Move the deal's Bid Status to Scoping once requirements are being confirmed with the client, and hand the pricing work to the estimation team through the CRM — not through a hallway conversation. The estimation team works from the Estimation & Proposals view, which is driven by the fields on your opportunity. If the deal is not flagged for estimation with a due date, it is invisible to them.
 
-**What happens:** the pricing status and proposal due date help Natalia's estimation/proposal queue stay clean.
+Open the Opportunity and confirm <GlossaryTerm term="pricingComplete" /> is set when pricing output is generated or ready for proposal movement. In practice you rarely set this by hand: when the one-pager is generated in the Proposal Engine, the deal is marked Pricing Complete automatically, with the date stamped. Your job is to verify it happened, not to type it.
+
+**What happens:** the pricing status and proposal due date keep the estimation and proposal queue clean. When Pricing Complete flips to true, the deal drops out of the "waiting on pricing" list and everyone can see the bid is ready to move.
 
 **Scout check:**
 
-```text
-Show deals where Pricing Complete is false and proposal due date is this week.
-```
+<PromptCard accent="crm" title="Find deals stuck before pricing" prompt="Show deals where Pricing Complete is false and proposal due date is this week." />
+
+Run that check every Monday. Anything on the list with a due date inside five days is a fire — either the estimator does not know about it, or the scope is stuck. Both are your problem to unstick.
 
 <WhereThisLives tool="crm" path="Opportunity -> Pricing Complete / Proposal Due Date" />
+
+**Common mistake:** treating the CRM as a diary you update after the fact. The estimation queue, the Bid Tracker, and the leadership dashboards all read live from the opportunity record. Update the record when the state changes, not at the end of the week.
 
 ## Scenario 3: The Deal Won
 
@@ -77,12 +98,67 @@ Show deals where Pricing Complete is false and proposal due date is this week.
 
 > *Client signed. Now you need the revenue and forecast fields to reflect the win.*
 
-Record the value, close date, owner, and stage. If the deal splits across fiscal years, confirm how the revenue split should be captured before reporting it.
+Record the value, close date, owner, and stage, and move Bid Status to Won. If the deal splits across fiscal years, confirm how the revenue split should be captured before reporting it — ANC's fiscal year is the calendar year, and multi-year deals carry their revenue in per-year split fields, not just a single total.
 
-**Finance note:** multi-year or mid-year split deals need extra care before leadership uses the number.
+**The completion-date rule:** a deal cannot be marked Won without a contract completion date. If you flip Bid Status to Won and the completion date is empty, the platform reverts the status and sends a notification explaining why. This is deliberate — the completion date is what drives the backlog report and the renewals pipeline. Set the date first, then mark it Won.
+
+**Finance note:** multi-year or mid-year split deals need extra care before leadership uses the number. A stadium install that books in November but delivers across two seasons is not a single-year number, and forecasting it as one inflates the current year.
+
+**What good looks like:** the won deal has a completion date, a clean revenue figure, the right per-year split, and the proposal and SOW files already attached from the Proposal Engine. Anyone opening the Company a year from now should be able to reconstruct the deal without asking you.
+
+<PromptCard accent="crm" title="Verify the win landed cleanly" prompt="Show this opportunity with its revenue, margin, completion date, and attached files so I can confirm the won deal is complete." />
 
 <OhShit
   symptom="I'm in Standard app and see no dashboards"
   fix="Use the top-left app switcher and choose ANC. The CRM remembers this choice."
   prevention="Always check the app switcher says ANC before you assume a view is missing."
+/>
+
+<OhShit
+  symptom="I marked the deal Won and it flipped back on its own"
+  fix="The contract completion date was empty. Fill in the completion date, then set Bid Status to Won again."
+  prevention="Set the completion date before changing the status. Won without a completion date is always reverted."
+/>
+
+## Keep Going
+
+- [Technology: Your Pipeline](/docs/training/technology/pipeline) — the vertical-specific pipeline lesson.
+- [Technology: Managing Your Deals](/docs/training/technology/managing-your-deals) — deal hygiene in depth.
+- [Core: Finding Anything Fast](/docs/training/core/finding-anything) — search patterns that prevent duplicates.
+- [RFP to Win Workflow](/docs/training/workflows/rfp-to-win) — the full cross-tool map from RFP to outcome.
+- [Proposals & Estimation track](/docs/training/tracks/proposals) — what happens on the other side of the pricing handoff.
+
+<PracticeChecklist
+  title="Prove it to yourself"
+  accent="crm"
+  items={[
+    "Search an existing Company three different ways before opening a new one.",
+    "Create a test-safe opportunity with stage, Bid Status, business unit, due date, and league set.",
+    "Find your deal on the Bid Tracker board and move it one column.",
+    "Run the Pricing Complete Scout check and read the result.",
+    "Open a won deal and confirm it has a completion date and attached proposal files."
+  ]}
+/>
+
+<KeyTakeaways
+  accent="crm"
+  items={[
+    "Search before you create — a duplicate Company cuts the deal off from years of account history.",
+    "Five fields make a deal real: Company link, owner, due date, business unit, league.",
+    "The estimation queue reads your opportunity fields — a missing due date means the deal never gets priced.",
+    "Pricing Complete is set automatically when the one-pager is generated; verify it, do not retype it.",
+    "Won requires a contract completion date — the platform reverts the status without it."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="You flip a deal to Won and the status reverts itself a few seconds later. What happened?"
+  options={[
+    "The CRM is briefly out of sync and will catch up",
+    "The contract completion date was empty, so the platform reverted the status",
+    "Someone else moved the deal back at the same time"
+  ]}
+  answer={1}
+  explanation="Won deals require a contract completion date because it drives the backlog and renewals reporting. Set the date first, then mark the deal Won."
 />

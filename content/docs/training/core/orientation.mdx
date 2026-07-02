@@ -3,11 +3,25 @@ title: Getting Around
 description: Log in, understand the CRM layout, and learn how records, lists, views, and dashboards fit together.
 ---
 
+import {Callout} from 'fumadocs-ui/components/callout';
+
 <AudioPlayer src="/audio/training/core-orientation.mp3" />
+
+<LessonMeta time="10 min" audience="Everyone" level="Core" accent="crm" />
 
 <Shot src="/img/screenshots/crm/t-all-deals.png" caption="The CRM at a glance — left navigation, your list of records, and the columns across the top." />
 
 **After this lesson** you'll be able to log in, recognize everything on the screen, open a record, move between views, understand where dashboards get their numbers, and find the assistant.
+
+Why this matters: ANC's business is long-cycle venue work — an LED display project at an NFL stadium or an NBA arena can run from first conversation to substantial completion across years, with sales, estimating, installation, and service all touching the same account. The CRM is the one place that whole story lives. If you can move around it confidently, you can answer almost any "where does this stand?" question in under a minute. If you can't, you're asking someone else — and they're looking it up in the same place.
+
+<ScenarioBoard
+  title="First week on the job"
+  situation="A teammate pings you: a client at a major arena is asking about their renewal, and the person who owns the account is traveling."
+  goal="Open the Company record, see the open opportunities, find the right contact, and read the last note — without asking anyone where to click."
+  proof="You can say who owns the account, what stage the renewal is in, and what the last activity was."
+  accent="crm"
+/>
 
 <WorkflowMap
   title="How the CRM is laid out"
@@ -26,6 +40,8 @@ description: Log in, understand the CRM layout, and learn how records, lists, vi
 2. Sign in with your work email.
 3. If you land on a plain, empty-looking screen, look at the **top-left** and switch to the **ANC** workspace — that's where all your views and folders live.
 
+<WhereThisLives tool="crm" path="crm.ancsports.net → top-left workspace switcher → ANC" />
+
 ## 2. The layout
 
 Once you're in, here's what you're looking at:
@@ -41,11 +57,13 @@ That's the whole shape of it: **menu on the left, a list in the middle, columns 
 
 You will see the same few record types again and again:
 
-- **Companies** - accounts, venues, teams, partners, sponsors, and client organizations.
-- **People** - contacts tied to those companies.
-- **Opportunities** - deals, bids, renewals, pipeline items, and booked work.
-- **Tasks** - follow-ups, reminders, and assigned next actions.
-- **Notes** - the written history of what happened, what changed, and what should happen next.
+- **Companies** — accounts, venues, teams, partners, sponsors, and client organizations. In ANC's world a <GlossaryTerm term="company" /> is usually a team, a venue operator, or a sponsor.
+- **People** — contacts tied to those companies.
+- **Opportunities** — deals, bids, renewals, pipeline items, and booked work.
+- **Tasks** — follow-ups, reminders, and assigned next actions.
+- **Notes** — the written history of what happened, what changed, and what should happen next.
+
+How they connect is the important part: **a Company holds everything.** Open a Company and you'll see its People, its Opportunities, its tickets, and its notes as related sections on the same page. That's deliberate — leadership thinks account-first ("what's our whole relationship with this organization?"), so the Company page is built to answer that in one screen.
 
 <Shot src="/img/screenshots/crm/01-companies.png" caption="Companies are the account layer. Start here when you need the full client or venue story." />
 
@@ -61,13 +79,13 @@ What the old system called **Opportunities** is shown here the same way — **Op
 
 The CRM has three working levels:
 
-- **Lists** help you find and sort records.
-- **Records** are where the truth lives.
-- **Dashboards** summarize the records.
+- **Lists** help you find and sort records. A list can be sliced into **saved views** — the same records, pre-filtered for a job: your pipeline, this week's proposals, won work awaiting handoff.
+- **Records** are where the truth lives. Every field on a record — stage, owner, close date, amount, <GlossaryTerm term="bidStatus" /> — feeds everything above it.
+- **Dashboards** summarize the records. They're read-only rollups of whatever the records say.
 
-If a dashboard number looks wrong, do not fix the dashboard. Open the records behind it and fix the source fields.
+If a dashboard number looks wrong, do not fix the dashboard. Open the records behind it and fix the source fields. A forecast chart showing a deal in the wrong vertical means one field on one opportunity is wrong — fix that field and the chart fixes itself.
 
-**Or just ask:** *"Show me the records behind this dashboard number."*
+<PromptCard accent="crm" title="See behind a dashboard number" prompt="Show me the records behind this dashboard number." />
 
 ## 5. Make it yours — favorites
 
@@ -77,7 +95,19 @@ You don't have to hunt for the same things every day:
 2. Click the **star** to add it to your **Favorites**.
 3. It now sits at the top of your menu — one click away, every time.
 
-**Or just ask:** type *"add this to my favorites"* to the assistant.
+<PromptCard accent="crm" title="Pin without clicking" prompt="Add this to my favorites." />
+
+## Common mistakes in week one
+
+<Callout type="warn" title="The three early habits to avoid">
+1. **Editing in a view and assuming it's cosmetic.** Views show live fields — changing a value in a list changes the record for everyone.
+2. **Creating a record before searching.** If the Company already exists under a slightly different name, you've just split its history in two. Search first, always.
+3. **Trusting a dashboard over the record.** The record is the source; the dashboard is the mirror. When they disagree, the record wins — and usually one of its fields needs fixing.
+</Callout>
+
+## What good looks like
+
+You're done with this lesson when, without help, you can: log in and land in the ANC workspace; name what the left menu, the list, and a record page each do; open a Company and point at its related opportunities, people, and notes; switch between two saved views on Opportunities; explain in one sentence why you fix records instead of dashboards; and find the Ask AI button.
 
 ## Now you try →
 
@@ -85,4 +115,26 @@ Open the CRM, switch to the ANC workspace, click into **Opportunities**, open an
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-When you're comfortable here, go to **[Working Standard](/docs/training/core/working-standard)**.
+Related lessons: [Working Standard](/docs/training/core/working-standard) · [The Daily Basics](/docs/training/core/daily-basics) · [Finding Anything Fast](/docs/training/core/finding-anything)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Menu on the left, list in the middle, record page for the truth — every area works the same way.",
+    "The Company page is the account hub: opportunities, people, tickets, and notes in one place.",
+    "Dashboards mirror records. Fix the source field, never the chart.",
+    "Star what you use daily; the Ask AI button is always there when clicking is slower."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="A dashboard shows a deal counted under the wrong business unit. What do you do?"
+  options={[
+    "Ask for the dashboard to be corrected",
+    "Open the opportunity record and fix the field driving the rollup",
+    "Ignore it — dashboards refresh on their own"
+  ]}
+  answer={1}
+  explanation="Dashboards are read-only rollups of record fields. When a number looks wrong, the fix is always on the source record — correct the field there and every view and chart built on it updates."
+/>

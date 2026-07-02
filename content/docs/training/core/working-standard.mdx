@@ -7,11 +7,23 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-working-standard.mp3" />
 
+<LessonMeta time="12 min" audience="Everyone" level="Core" accent="crm" />
+
 <Shot src="/img/screenshots/crm/t-account.png" caption="A good account record should tell the full story: company details, related opportunities, contacts, notes, tickets, and recent activity." />
 
 **After this lesson** you will know the minimum standard every record should meet before you rely on it, share it, forecast from it, or hand it to another team.
 
 The CRM is only useful when the next person can trust what they see. This standard keeps the system clean enough for sales follow-up, service work, sponsorship reporting, bid references, leadership dashboards, and account history.
+
+Here's the stakes in ANC terms. A single stadium project passes through many hands: the account executive who opened the conversation, the estimator who priced the display, the proposal lead who packaged the bid, the operations team who installs and services it. Each handoff runs on what the previous person left in the record. Leadership reads the same records rolled up into forecast and performance dashboards — and pipeline reporting works off probability and stage, so one stale field quietly reshapes the number the whole company plans around. The working standard isn't bureaucracy; it's what makes the handoffs and the numbers real.
+
+<ScenarioBoard
+  title="The handoff test"
+  situation="You won a display deal at an MLS venue and you are going on leave. A teammate picks up the account cold on Monday."
+  goal="They open the record and know the value, the stage, the client contact, the next step, and what was promised — without calling you."
+  proof="The record passes the checklist below with nothing missing and no duplicate account splitting the story."
+  accent="crm"
+/>
 
 <PracticeChecklist
   title="Minimum standard before you trust a record"
@@ -39,7 +51,9 @@ Examples:
 - Search **New York Knicks**, then **Knicks**.
 - Search **Fenway Sports Group**, then **Red Sox** if the work is tied to the venue or team.
 
-**Or just ask:** *"Find any accounts that might already exist for MSG or Madison Square Garden."*
+Sports accounts are especially duplicate-prone because the same organization has several legitimate names — the team, the venue, the ownership group, the operating entity. Pick the existing record even if its name isn't the one you'd have chosen; a rename later is trivial, a merge is work.
+
+<PromptCard accent="crm" title="Duplicate check before creating" prompt="Find any accounts that might already exist for MSG or Madison Square Garden." />
 
 <Shot src="/img/screenshots/crm/01-companies.png" caption="Search the company/account layer before creating anything new. This is where duplicate prevention starts." />
 
@@ -53,15 +67,15 @@ Every important record should make it clear who owns the next action.
 
 Check these fields whenever you open a record:
 
-- **Owner** - who is accountable for the record.
-- **Stage or status** - where the work stands now.
-- **Next step** - what has to happen next.
-- **Due date or close date** - when the next decision or deliverable is expected.
-- **Amount or value** - the current best known value, if the record is financial.
+- **Owner** — who is accountable for the record.
+- **Stage or status** — where the work stands now.
+- **Next step** — what has to happen next.
+- **Due date or close date** — when the next decision or deliverable is expected.
+- **Amount or value** — the current best known value, if the record is financial.
 
-If one of these is missing, fill it in or ask the owner before using the record in a report.
+If one of these is missing, fill it in or ask the owner before using the record in a report. A record with no owner is a record nobody is accountable for — and it will sit untouched until a client asks why.
 
-**Or just ask:** *"Show me my open opportunities that are missing next steps or close dates."*
+<PromptCard accent="crm" title="Find your ownership gaps" prompt="Show me my open opportunities that are missing next steps or close dates." />
 
 <Shot src="/img/screenshots/crm/02-opportunities.png" caption="Opportunity views should make ownership, stage, value, date, and next action easy to inspect." />
 
@@ -84,7 +98,9 @@ Next step: [who does what by when].
 Risk or note: [anything leadership/service/sales should know].
 ```
 
-**Or just ask:** *"Summarize this call into a clean CRM note with current status, next step, and risk."*
+The test of a note is simple: could someone who wasn't on the call act on it? "Good call, they're interested" fails the test. "They want revised pricing on the ribbon boards by Friday; Sarah owns the revision; decision expected at their board meeting on the 20th" passes it.
+
+<PromptCard accent="crm" title="Turn a call into a clean note" prompt="Summarize this call into a clean CRM note with current status, next step, and risk." />
 
 <Shot src="/img/screenshots/crm/05-notes.png" caption="Notes are the handoff layer. Write them so the next person can understand status without chasing context." />
 
@@ -95,7 +111,7 @@ Dashboards are summaries. They are not where the truth begins.
 If a dashboard looks wrong, go back to the source record and check the fields driving it:
 
 - Opportunity stage
-- Bid status
+- <GlossaryTerm term="bidStatus" />
 - Close date
 - Amount
 - Business unit
@@ -104,9 +120,11 @@ If a dashboard looks wrong, go back to the source record and check the fields dr
 - Placement or verification status
 - Service ticket status
 
+The business-unit field deserves a special mention: ANC reports revenue in three verticals — Technology, Venue Services, and Media/Sponsorship — and leadership reads performance broken out that way. A deal filed under the wrong vertical is invisible in the report where people are looking for it.
+
 <Shot src="/img/screenshots/crm/t-dashboard-technology.png" caption="Dashboards become useful when source records are clean: stages, values, dates, owners, and business unit fields need to be current." />
 
-**Or just ask:** *"Why is this deal showing in the Technology forecast, and what fields are driving that?"*
+<PromptCard accent="crm" title="Trace a number to its fields" prompt="Why is this deal showing in the Technology forecast, and what fields are driving that?" />
 
 ## 5. Use views as working queues
 
@@ -123,9 +141,11 @@ Use views for:
 - Won deals needing handoff
 - Accounts with no recent activity
 
+Several of these already exist as shared views — the proposal team runs its week out of a pipeline view sorted by proposal due date, and there are dedicated views for backlog and win/loss review. Check the view dropdown before building your own.
+
 If you find yourself exporting the same spreadsheet every week, that probably belongs as a saved view.
 
-**Or just ask:** *"Create a view of my open opportunities closing this quarter, sorted by close date."*
+<PromptCard accent="crm" title="Turn a repeated export into a view" prompt="Create a view of my open opportunities closing this quarter, sorted by close date." />
 
 <Shot src="/img/screenshots/crm/t-pipeline.png" caption="Saved views turn the CRM into a working queue: what is open, what is due, what is stale, and what needs action." />
 
@@ -146,7 +166,13 @@ Always verify before sending or presenting:
 
 Use the assistant to get to the answer, then click into the records behind it.
 
-**Or just ask:** *"Show me the records behind that total so I can verify the number."*
+<PromptCard accent="crm" title="Verify before you quote" prompt="Show me the records behind that total so I can verify the number." />
+
+<OhShit
+  symptom="You quoted a pipeline total in a meeting and someone points out it includes a dead deal."
+  fix="Open the view behind the number, find the dead record, correct its stage and bid status, then re-run the total and send the corrected figure with a one-line note."
+  prevention="Always ask for the record list behind a total before presenting it. Ten seconds of scanning the list catches the deal everyone knows is dead but nobody closed out."
+/>
 
 ## What good looks like
 
@@ -163,10 +189,34 @@ Before you move on, make sure the record has:
 - Notes that explain the last meaningful activity
 - No obvious duplicate sitting nearby
 
+Hold yourself to this bar every time you touch a record and you will never have to do a painful cleanup later — the standard maintains itself in thirty-second increments.
+
 ## Now you try
 
 Open one account you use often and review it against the standard above. Fix one missing field, add one useful note, and check whether a duplicate exists.
 
 [Open the CRM](https://crm.ancsports.net)
 
-Next: [The Daily Basics](/docs/training/core/daily-basics).
+Related lessons: [The Daily Basics](/docs/training/core/daily-basics) · [Cleaning Up Accounts](/docs/training/core/account-cleanup) · [Asking the CRM for Numbers](/docs/training/core/asking-for-numbers)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Search twice before creating anything — exact name, then abbreviation or team/venue name.",
+    "Owner, stage, next step, date, value: if one is missing, the record is not ready to be trusted.",
+    "Notes are for the next person — status, next step, and risk they can act on without calling you.",
+    "Fix source records, not dashboards; verify any number before it goes in front of someone."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="You need to log a new opportunity for work at Madison Square Garden. What is the correct first move?"
+  options={[
+    "Create the opportunity and attach a new MSG company record",
+    "Search for the existing account under both the full name and the abbreviation, then attach to the existing record",
+    "Add a note to your own task list and create the record later"
+  ]}
+  answer={1}
+  explanation="Sports accounts often exist under multiple names — venue, team, ownership group. Two searches (exact name plus abbreviation) catch the existing record and keep the account history in one place. Creating first is how duplicates are born."
+/>

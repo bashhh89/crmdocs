@@ -7,11 +7,23 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-asking-for-numbers.mp3" />
 
+<LessonMeta time="8 min" audience="Everyone" level="Core" accent="crm" />
+
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="The dashboards hold the numbers — but you can also just ask for them in plain English." />
 
 **After this lesson** you'll be able to get most figures you'd need by asking, instead of hunting through reports.
 
 The dashboards and views are there when you want to browse. But when you have one specific number in mind, asking is faster.
+
+Numbers carry weight at ANC because so much of the business is bid-driven and multi-year. A stadium display deal doesn't just have "an amount" — it has a contract value, revenue split across fiscal years, margin, and a paid-versus-unpaid balance. Win rates get read by league. Pipeline gets read by vertical — Technology, Venue Services, Media/Sponsorship. When you ask for a number, knowing *which* number you mean is half the skill; this lesson gives you both halves.
+
+<ScenarioBoard
+  title="The hallway question"
+  situation="A leader stops you: they are walking into a partner meeting and want to know what ANC has under contract for next year and the biggest job currently in flight."
+  goal="Give both figures within a couple of minutes, from live data, with the confidence to say where they come from."
+  proof="You can name the records behind each figure if anyone asks a follow-up."
+  accent="leadership"
+/>
 
 <DecisionTree
   title="How to ask for numbers"
@@ -32,7 +44,21 @@ The dashboards and views are there when you want to browse. But when you have on
 - *"What's the open pipeline by business unit right now?"*
 - *"What closed won this month?"*
 
+<PromptCard accent="leadership" title="Revenue under contract" prompt="What is our total revenue under contract for 2026, and which accounts make up the top five?" />
+
+<PromptCard accent="leadership" title="Win/loss by league" prompt="How many deals did we win versus lose this year, broken out by league?" />
+
 The assistant pulls the figure from live data and shows its work, so you see which records it counted.
+
+## Ask precisely — the words change the number
+
+Two figures can both be "true" and differ by a lot, because they answer different questions:
+
+- **Pipeline vs. under contract.** Pipeline is open deals that may close; under contract is won work. "How much do we have with NBA arenas?" is ambiguous — say *open pipeline* or *under contract*.
+- **This year's revenue vs. total deal value.** Multi-year projects split revenue across fiscal years. A big install can be worth one amount in total and a different amount *this* year. Say which year you mean.
+- **Won this year vs. closing this year.** A deal won in December that completes next season counts differently depending on the question.
+
+The fix is cheap: put the scope in the sentence. *"Open Technology pipeline closing in 2026"* gets one clean answer. *"How's Technology doing?"* gets a guess.
 
 ## Trust, then verify the big ones
 
@@ -40,10 +66,51 @@ The assistant pulls the figure from live data and shows its work, so you see whi
 For any number you're about to put in front of someone, open the matching view or dashboard and confirm it. The assistant is accurate, but a 10-second check on a figure that's going into a proposal or a meeting is always worth it.
 </Callout>
 
-To verify, ask the assistant to show you the records behind the number — *"show me the deals that make up that total"* — or open the related view and read the footer total.
+To verify, ask the assistant to show you the records behind the number — or open the related view and read the footer total.
+
+<PromptCard accent="leadership" title="Show the evidence" prompt="Show me the deals that make up that total." />
+
+This habit has a second benefit: the record list is where bad data reveals itself. A dead deal still marked open, a duplicate inflating an account's total, a misfiled business unit — you'll spot them in the list behind a surprising number. Fix the record (see [Working Standard](/docs/training/core/working-standard)) and the number is right for everyone, permanently.
+
+## Common mistakes
+
+<Callout type="warn" title="Where number requests go wrong">
+- **Repeating a surprising figure without looking behind it.** Surprise is a signal — ask for the record list first, then decide if the number or the data is wrong.
+- **Asking for "revenue" on multi-year work without naming the year.** You'll get a correct answer to a question you didn't mean to ask.
+- **Re-asking the same question every Monday.** A number you need weekly belongs in a saved view or dashboard — ask once for the view, then just open it.
+- **Comparing your asked number to a dashboard with different filters.** If they disagree, check what each one includes before assuming either is broken.
+</Callout>
+
+## What good looks like
+
+You're quoting numbers well when: every ask names its scope (year, vertical, open vs. won, mine vs. everyone's); every figure headed to a client, proposal, or leadership got its records-behind-it check; surprising answers trigger investigation, not forwarding; and your recurring questions have graduated into saved views. That's the standard: fast to the figure, certain of its source.
 
 ## Now you try →
 
-Ask one number question — *"what's our revenue under contract for 2026?"* — then open the related dashboard and confirm the figure matches. That habit, ask then verify, is how you quote numbers with confidence.
+Ask one number question — *"what's our revenue under contract for 2026?"* — then open the related dashboard and confirm the figure matches. Then re-ask it with a tighter scope (one vertical, or one league) and watch how the answer sharpens. That habit, ask then verify, is how you quote numbers with confidence.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
+
+Related lessons: [Meet the Assistant](/docs/training/core/meet-the-ai) · [Pulling Account Info for References &amp; Bids](/docs/training/core/account-info-for-bids) · [Working Standard](/docs/training/core/working-standard)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Most figures are one plain-English ask away — no report building required.",
+    "Scope the ask: year, vertical, open vs. under contract. The words change the number.",
+    "Any figure going in front of someone gets the records-behind-it check first.",
+    "Surprising numbers are data-quality signals — investigate the list, fix the source record."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="You ask for total revenue with a major arena account and the figure looks far too high. What do you do before repeating it?"
+  options={[
+    "Round it down to be safe",
+    "Ask for the records behind the total and scan for dead deals, duplicates, or multi-year values counted in the wrong year",
+    "Use the number — the assistant reads live data, so it must be right"
+  ]}
+  answer={1}
+  explanation="A surprising total is a prompt to look at the evidence, not to forward or fudge the figure. The record list reveals whether the number is genuinely right or whether a stale deal, duplicate account, or misfiled year is inflating it — and fixing that record corrects the number for everyone."
+/>

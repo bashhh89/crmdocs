@@ -9,9 +9,21 @@ import {Settings, Hammer, Ban} from 'lucide-react';
 
 <AudioPlayer src="/audio/training/core-whats-possible.mp3" />
 
+<LessonMeta time="12 min" audience="Everyone" level="Core" accent="connected" />
+
 **After this lesson** you'll be able to look at almost any idea and know which of three buckets it falls into — before anyone spends time on it.
 
 When someone asks *"can the CRM do this?"*, the answer is almost always **yes** — the only real question is *how much it takes.* Every request lands in one of three buckets, and knowing which one saves everybody time.
+
+This matters because the platform was chosen precisely so it could keep evolving with the business. The CRM you're using has already grown this way: sponsorship placement tracking, bid pipelines, account dashboards, custom assistant skills — each started as someone on the team saying "could it do X?" The teams that get the most out of it are the ones who keep asking. This page makes you a better asker: you'll bring ideas in the shape they can actually be evaluated, and you'll know roughly what you're asking for before you ask.
+
+<ScenarioBoard
+  title="The Monday idea"
+  situation="After a week of chasing renewal dates by hand, you think: the CRM should just show me every contract expiring in the next six months, and remind the owner a quarter out."
+  goal="Recognize that this is really two asks — a saved view (configuration, fast) and an automated reminder (a build) — and raise both with the outcome described, not the implementation."
+  proof="The view exists within days; the automation gets scoped honestly instead of being assumed to be a switch-flip."
+  accent="connected"
+/>
 
 <DecisionTree
   title="Size the ask"
@@ -62,6 +74,8 @@ These are settings. They don't need a build, and they usually happen quickly.
 
 If your idea looks like one of these, it's almost certainly a same-day setting.
 
+Real examples from this CRM's own history: the deal record gained fields for proposal due dates, site-visit dates, and per-year revenue when the proposal team needed them; a one-click document link was added to opportunities when the team wanted a straight path from a deal to its files; searching by opportunity number was switched on when people kept referencing deals by number. All configuration. All fast — because the requests came in as "here's the task this supports."
+
 ## 🛠️ Bucket 2 — A Build (doable, takes effort)
 
 The platform supports all of these — they're real custom work, not a setting, so they take time and planning. But the answer is still **yes**.
@@ -75,6 +89,8 @@ The platform supports all of these — they're real custom work, not a setting, 
 | Connect the CRM to an outside tool | A connection to another service's data |
 | A guided, multi-step workflow | A custom flow built on top of the records |
 
+The "Sponsorship Placements" example isn't hypothetical — the Media &amp; Sponsorship side of the business got exactly that: game-level placement records, monthly verification tracking, and per-team contract records, all as new record types with their own views and exports. It took real scoping and build time, and it works because the team described their actual workflow (which games, which sponsors, what needs verifying monthly) rather than requesting screens.
+
 <Callout type="info">
 Bucket 2 is where "can we do this?" most often surprises people. The answer is yes — just budget for a build, not a flip of a switch. Flagging it early as a build (rather than assuming it's a quick setting) is what keeps timelines honest.
 </Callout>
@@ -83,7 +99,7 @@ Bucket 2 is where "can we do this?" most often surprises people. The answer is y
 
 A small set of ideas push against how the platform is built — for example, asking each person to have a fundamentally different app structure, or changing core record behavior the platform doesn't expose. These are uncommon, and there's almost always a better-fitting way to get the same outcome.
 
-When something lands here, the move isn't "no" — it's "let's reshape the idea to fit how the platform actually works," which usually gets you 90% of what you wanted without fighting the tool.
+When something lands here, the move isn't "no" — it's "let's reshape the idea to fit how the platform actually works," which usually gets you 90% of what you wanted without fighting the tool. Example: "I want my own private copy of the data nobody else can touch" fights the shared-truth design — but "a view filtered to my accounts, plus field-level protection on the sensitive fields" gets the real outcome (focus and safety) without breaking the one thing a CRM must be: a single shared record of the business.
 
 ## How to size up your own ask
 
@@ -93,10 +109,53 @@ Ask yourself, in order:
 2. **Is it a new record type, a custom screen/button, an automation, an AI agent, or an outside connection?** → Bucket 2, a build. Doable, but plan for it.
 3. **Does it require the platform to behave in a way nothing else does?** → Bucket 3. Let's rethink the approach.
 
+One more habit: **split compound asks.** Most real ideas are a Bucket 1 piece plus a Bucket 2 piece ("show me expiring contracts" = view; "remind owners automatically" = automation). Splitting them means the fast part ships this week while the build gets scoped properly.
+
+## Common mistakes
+
+<Callout type="warn" title="How good ideas get stuck">
+- **Describing the implementation instead of the outcome.** "Add a button that does X" locks the conversation to one design. "I need to get from A to B without the six clicks" opens better options.
+- **Assuming a build is a setting.** Then a workflow gets planned around a same-day expectation, and the timeline breaks. When in doubt, ask which bucket first.
+- **Assuming a setting is impossible.** People quietly suffer a missing column for months. If it bugs you weekly, it's worth thirty seconds to ask.
+- **Not naming the user and the decision.** "It would be cool if…" can't be prioritized. "The proposal team loses an hour a week doing X by hand" can.
+</Callout>
+
 ## When in doubt, just ask
 
 You don't have to get the bucket right — that's the point of asking early. Describe what you're trying to *accomplish* (not how you think it should be built), and we'll tell you which bucket it's in and what it takes.
 
+You can even rehearse the ask with the assistant first:
+
+<PromptCard accent="connected" title="Rehearse the request" prompt="I want to track contract renewal dates and see everything expiring in the next six months. What fields and views already exist that could do this?" />
+
 The worst outcome is assuming something is a quick setting, building a whole workflow around that assumption, and only then finding out it was a build. This page exists so that never happens.
 
+## What good looks like
+
+You've internalized this lesson when your change requests arrive with: the user, the task or decision it supports, the painful current path, and the frequency — and with compound ideas already split into their fast piece and their build piece. Requests shaped like that get evaluated in minutes and built in the right order.
+
 👉 **[Open the CRM](https://crm.ancsports.net)**
+
+Related lessons: [Meet the Assistant](/docs/training/core/meet-the-ai) · [What's New: June 2026](/docs/training/core/whats-new-june-2026) · [Working Standard](/docs/training/core/working-standard)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Almost everything is possible — the real question is configuration, build, or rethink.",
+    "Fields, views, columns, dashboards, sidebar items: configuration, often same-day.",
+    "New record types, automations, custom screens, integrations: a build — yes, but plan for it.",
+    "Describe the outcome and the user, not the implementation — and split compound asks."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="You want the CRM to alert the team channel automatically whenever a deal is marked won. Which bucket is that, and why does it matter?"
+  options={[
+    "Configuration — it is just a notification setting",
+    "A build — it is an automation, so it is fully doable but needs to be scoped and planned",
+    "Not how the platform works — CRMs cannot trigger outside alerts"
+  ]}
+  answer={1}
+  explanation="Anything that happens automatically in response to a record change is an automation — Bucket 2. The platform fully supports it, but it is custom work, not a switch. Flagging it as a build early keeps the timeline honest; assuming it is a setting is how plans break."
+/>

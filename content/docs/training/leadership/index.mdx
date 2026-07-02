@@ -5,14 +5,17 @@ description: "For leadership: read dashboards, forecast quality, win/loss, expor
 
 import {Callout} from 'fumadocs-ui/components/callout';
 
-# Leadership
 
 <AudioPlayer src="/audio/training/leadership-index.mp3" />
+
+<LessonMeta time="10 min" audience="Leadership" level="Core" accent="leadership" />
 
 <span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
 <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
 
-It is Monday morning. You need to know what moved, what is forecasted, which deals are stale, and whether the number in front of you can be trusted.
+It is Monday morning. You need to know what moved, what is forecasted, which deals are stale, and whether the number in front of you can be trusted. This track teaches you to answer all four in minutes — and, more importantly, to know when a number is solid enough to say out loud in front of a board.
+
+The rest of the company uses the CRM to *run* deals. Leadership uses it to *read* them — across all three verticals at once, without asking anyone to build a report. That is a different skill, and it has one governing rule: **a dashboard total is a claim, not a fact, until you have seen the records behind it.**
 
 <div className="my-4 rounded-lg border p-4">
   <div className="mb-2 text-sm font-semibold">Track progress</div>
@@ -46,6 +49,14 @@ You are learning how to:
 3. **Understand win/loss** - RFP outcomes by league, time period, and business area.
 4. **Ask for a number and verify it** - use the assistant, then inspect the records behind the answer.
 
+Each of those maps to one lesson. None of them require you to create or edit records — the verticals own their data. Your job is to read it, question it, and send it back for repair when it is not board-grade.
+
+## Why the read pattern matters
+
+Every number on a dashboard is an aggregate of individual deal records maintained by the team. When those records are current — right stage, right <GlossaryTerm term="bidStatus" />, real close dates, honest values — the rollup is trustworthy. When they drift, the rollup drifts with them, silently. Nothing on a dashboard warns you that a $4M deal has had no activity in ninety days; you find that by drilling in.
+
+That is why this track drills one habit above all others: **ask fast, verify before you present.** The assistant will give you any number in one line. The dashboard will give it to you in one glance. Neither replaces opening the top five records behind a total before that total goes into a deck. Speed for exploration, records for evidence.
+
 <Callout title="Where this lives">
 Dashboards and source records live in the CRM. The assistant can summarize and calculate, but leadership numbers should be verified against the records included in the answer.
 </Callout>
@@ -53,29 +64,25 @@ Dashboards and source records live in the CRM. The assistant can summarize and c
 ## Day 1 / Day 30 / Reference
 
 - **Day 1:** read dashboard totals by vertical and open the records behind one number.
-- **Day 30:** identify stale deals, missing dates, weak forecast assumptions, and win/loss patterns.
+- **Day 30:** identify stale deals, missing dates, weak forecast assumptions, and win/loss patterns — and route them back to the owning team as specific asks, not general complaints.
 - **Reference as needed:** exports, assistant prompts, monthly dashboard review, board-level summaries.
 
 ## Scout Prompts
 
-```text
-Show me this quarter's open pipeline by vertical, grouped by stage, and flag missing close dates.
-```
+These three cover most of a leadership review. Copy them as-is, then adjust the vertical or period.
 
-```text
-Which high-value opportunities look stale or have no next step?
-```
+<PromptCard accent="leadership" title="Pipeline by vertical" prompt="Show me this quarter’s open pipeline by vertical, grouped by stage, and flag missing close dates." />
 
-```text
-Show me the records behind this forecast total so I can verify the number.
-```
+<PromptCard accent="leadership" title="Stale deal sweep" prompt="Which high-value opportunities look stale or have no next step?" />
+
+<PromptCard accent="leadership" title="Verify the total" prompt="Show me the records behind this forecast total so I can verify the number." />
 
 ## What You'll Learn Here
 
-1. **[Read dashboards](/docs/training/leadership/dashboards)** - pipeline, won, and forecast across the business or by vertical.
-2. **[Check forecast and pipeline](/docs/training/leadership/forecasting-and-pipeline)** - how the forecast is built, why you can trust it, and filtering to likely deals.
-3. **[Review win/loss](/docs/training/leadership/win-loss)** - RFP win rates by league and over time.
-4. **[Export and ask](/docs/training/leadership/exporting-and-asking-the-assistant)** - pinning what you care about, exporting, and getting any number in one line.
+1. **[Read dashboards](/docs/training/leadership/dashboards)** - pipeline, won, and forecast across the business or by vertical, using the ANC 2026 Company Dashboard and its per-vertical tabs.
+2. **[Check forecast and pipeline](/docs/training/leadership/forecasting-and-pipeline)** - how the forecast is built, the 50%-probability convention, and how to separate the realistic pipeline from the long shots.
+3. **[Review win/loss](/docs/training/leadership/win-loss)** - RFP win rates by league and over time, and how to pull won deals as references for a live pitch.
+4. **[Export and ask](/docs/training/leadership/exporting-and-asking-the-assistant)** - pinning what you care about, exporting from shared views so numbers are reproducible, and getting any figure in one line.
 
 <Shot src="/img/screenshots/crm/t-dashboard-technology.png" caption="A dashboard is a starting point. The standard is to drill into the records behind a number before sharing it." />
 
@@ -85,5 +92,26 @@ Show me the records behind this forecast total so I can verify the number.
 - <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr> - bid-flow status.
 - <abbr title="Fiscal Year. ANC uses calendar year fiscal tracking.">FY</abbr> - fiscal year.
 - <abbr title="Request For Proposal: the client's document asking ANC to bid on work.">RFP</abbr> - client bid request.
+
+<PracticeChecklist
+  title="Before your first Monday review"
+  accent="leadership"
+  items={[
+    "Open the company dashboard and read pipeline, won, and forecast without asking anyone.",
+    "Switch to one vertical tab and note what changed since last week.",
+    "Ask the assistant one number question, then open two of the records behind the answer.",
+    "Spot one stale or date-missing deal and name the owner who should fix it."
+  ]}
+/>
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Leadership reads the business top-down: rollup first, then one vertical, then the records.",
+    "A dashboard total is a claim until you have opened the records behind it.",
+    "The assistant is for speed; source records are for evidence. Use both, in that order.",
+    "Data quality problems get routed back to the owning vertical as specific, named asks."
+  ]}
+/>
 
 Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

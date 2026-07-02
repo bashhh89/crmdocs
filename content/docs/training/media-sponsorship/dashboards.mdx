@@ -8,9 +8,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/media-sponsorship-dashboards.mp3" />
 
+<LessonMeta time="10 min" audience="Media & Sponsorship team" level="Core" accent="connected" />
+
 <Shot src="/img/screenshots/crm/t-dashboard-mns.png" caption="Your Media & Sponsorship tab — pipeline, accounts, and the game schedule." />
 
-**After this lesson** you'll be able to see your side's activity at a glance and pull up a sponsor's entire relationship in one shot.
+**After this lesson** you'll be able to see your side's activity at a glance, pull up a sponsor's entire relationship in one shot, and run a monthly readout without opening a single spreadsheet.
+
+The previous three lessons built the pieces: placements (what ran), verification (what's confirmed), and contracts (what was promised). This lesson is where they pay off together. The dashboard and account views exist so that the questions you get asked constantly — by sponsors, by sales, by leadership — have answers that take seconds, and so those answers are all reading from the same live records instead of three files that drifted apart.
 
 <ScenarioBoard
   title="Monthly sponsor readout"
@@ -22,28 +26,76 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 ## Your tab on the dashboard
 
-There's a **Media & Sponsorship** view on the dashboards that rolls up your side's activity and performance — so you're looking at your world, not the whole company's.
+There's a **Media & Sponsorship** view on the dashboards that rolls up your side's activity and performance — deals, accounts, and the game schedule — so you're looking at your world, not the whole company's. Media & Sponsorship deals are tagged with your business unit, which is what keeps the pipeline views and totals scoped to your vertical.
 
-**Or just ask:** *"Show me the Media & Sponsorship numbers."*
+The grouped deal views total up as you filter — change the filter, and the group counts and revenue sums recompute live. That means the number you read off a filtered view *is* the number, current as of now, not as of the last time someone refreshed an export.
+
+<PromptCard accent="connected" title="Your side at a glance" prompt="Show me the Media & Sponsorship numbers." />
 
 ## The whole sponsor relationship in one place
 
-This is the part that beats three separate spreadsheets. Open the **sponsor's account** and you see their placements, their verification, and their contracts together.
+<WhereThisLives tool="crm" path="Companies → sponsor Company → Media & Sponsorship tab" />
 
-**Or just ask:** *"Give me everything on Tire Rack."*
+This is the part that beats three separate spreadsheets. Open the **sponsor's account** and you see their placements, their verification records, and their contracts together:
+
+1. Find the sponsor's **Company record**.
+2. The **Home tab** leads with the active-sponsor picture — who's committed and for how many games.
+3. The **Media & Sponsorship tab** carries the detail: placements and contracts, side by side.
+4. Verification records for the sponsor sit on the same account, so the confirmed-versus-pending status is one click away.
+
+<PromptCard accent="connected" title="Full relationship pull" prompt="Give me everything on Tire Rack." />
+
+<Callout title="Two directions, same views">
+The account views work from both sides of the business. Open a **team's** Company and you see every sponsor placed at that property — the full board picture for the venue. Open a **sponsor's** Company and you see everything that sponsor runs across all teams. Same records, two perspectives; which widgets populate depends on which side of the relationship you opened.
+</Callout>
 
 ## A few questions you'll ask all the time
 
-- *"What's running tonight?"*
-- *"Which sponsors are behind their contracted games?"*
-- *"What verifications are still pending this month?"*
-- *"Show me everything [sponsor] has running this season."*
+<PromptCard accent="connected" title="Tonight" prompt="What's running tonight?" />
 
-Because it all connects — a placement knows its sponsor, account, verification, and the deal it came from — the answers are instant and current.
+<PromptCard accent="connected" title="Contract pace" prompt="Which sponsors are behind their contracted games?" />
+
+<PromptCard accent="connected" title="Verification status" prompt="What verifications are still pending this month?" />
+
+<PromptCard accent="connected" title="Season view" prompt="Show me everything [sponsor] has running this season." />
+
+Because it all connects — a placement knows its sponsor, account, verification, and the deal it came from — the answers are instant and current. There's no export step, no "let me check the latest version of the file," no reconciling two numbers that should have been one.
+
+## Running the monthly readout
+
+Put the pieces together in this order and the sponsor conversation writes itself:
+
+1. **What ran** — the sponsor's placements for the month, statuses honest ([Placements](/docs/training/media-sponsorship/placements)).
+2. **What's confirmed** — the month's verification verdicts and any discrepancy notes ([Nielsen Verification](/docs/training/media-sponsorship/nielsen-verification)).
+3. **Where the contract stands** — executed count against contracted games, per team ([Sponsor Contracts](/docs/training/media-sponsorship/sponsor-contracts)).
+4. **What's next** — pending verifications, make-good needs, and follow-ups, flagged on the account.
+
+That's the full readout: delivery, proof, pace, and plan — all from one account page.
+
+## Common mistakes
+
+<OhShit
+  symptom="The dashboard number doesn't match what you expected, and the instinct is to distrust the dashboard."
+  fix="Drill into the underlying records — the dashboard is a rollup, so a wrong-looking number almost always traces to a placement missing its sponsor link, a stale status, or a deal missing its business unit tag."
+  prevention="Treat dashboards as mirrors, not sources. When the mirror looks wrong, fix the records it reflects — never pencil-correct the readout in a slide and move on."
+/>
+
+<OhShit
+  symptom="A sponsor readout gets assembled by exporting three views into a spreadsheet and stitching them together by hand."
+  fix="Open the sponsor's account instead — placements, verification, and contracts are already joined there, live."
+  prevention="If you find yourself rebuilding a join in a spreadsheet, stop: the account page is the join. The manual version goes stale the moment you save it."
+/>
+
+## What good looks like
+
+- You answer "what's running tonight," "who's behind contract," and "what's pending verification" from the platform in under a minute each.
+- Monthly sponsor readouts come straight off the account page — no side spreadsheets, no stitched exports.
+- When a dashboard number surprises you, your reflex is to drill into records, not to distrust or overwrite the rollup.
+- The team reads the same live numbers you do — one source, zero version drift.
 
 ## You only learn your part
 
-You don't need the technology or service workflows — just Media & Sponsorship. Everyone does the same Core basics, then only their own track.
+You don't need the technology or service workflows — just Media & Sponsorship. Everyone does the same [Core basics](/docs/training/core), then only their own track.
 
 ## Now you try →
 
@@ -51,4 +103,26 @@ Open one sponsor's account and find all three on it: a placement, a verification
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The Media & Sponsorship dashboard tab scopes pipeline, accounts, and schedule to your vertical — and its totals recompute live as you filter.",
+    "The sponsor's account page is the join: placements, verification, and contracts together, from both the sponsor side and the team side.",
+    "The monthly readout is a four-step read off one page: what ran, what's confirmed, where the contract stands, what's next.",
+    "Dashboards are mirrors of the records — when a number looks wrong, fix the underlying record, never the readout."
+  ]}
+/>
+
 That's the Media & Sponsorship track. Anything you forget, just ask the assistant.
+
+<KnowledgeCheck
+  accent="connected"
+  question="A dashboard total for a sponsor looks lower than expected. What is the right response?"
+  options={[
+    "Correct the number manually in your readout slide and flag the dashboard as unreliable",
+    "Drill into the underlying records — look for unlinked placements, stale statuses, or missing tags — and fix what you find",
+    "Rebuild the number in a spreadsheet from exports so you control the math"
+  ]}
+  answer={1}
+  explanation="Dashboards mirror the records underneath them. A surprising rollup almost always traces to a fixable record issue — an unlinked placement, a stale status, a missing business-unit tag. Fix the record and the dashboard, the account page, and everyone else's view all correct at once. Manual overrides and spreadsheet rebuilds just fork the truth."
+/>

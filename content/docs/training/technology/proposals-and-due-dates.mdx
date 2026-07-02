@@ -7,9 +7,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/technology-proposals-and-due-dates.mp3" />
 
+<LessonMeta time="10 min" audience="Technology team" level="Core" accent="proposals" />
+
 <Shot src="/img/screenshots/crm/t-estimation.png" caption="Proposals by stage and due date, so nothing slips through." />
 
 **After this lesson** you'll never be surprised by a proposal deadline, and you'll know how to signal when a deal's pricing is done.
+
+Proposal deadlines are the hardest constraint on this desk. A stage can slip a week and recover; a bid submitted a day late is simply gone, along with everything the team spent pricing it. The system is built so that no deadline lives in anyone's memory — every one lives on the record, and the views sort by it. Your job is to feed the system two things honestly: the **due date** when a deal comes in, and the **pricing complete** signal when the numbers are done. Everything else follows.
 
 <PracticeChecklist
   title="Proposal deadline check"
@@ -22,34 +26,99 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="proposals"
 />
 
+<ScenarioBoard
+  title="The Tuesday BAFO"
+  accent="connected"
+  situation="Friday afternoon: the client requests a Best And Final Offer, due Tuesday at noon. Three other proposals are already in flight for next week."
+  goal="Get the BAFO into the queue so the proposal team sees it Monday morning ranked ahead of everything due later — without a single Slack message or hallway grab."
+  proof="The deal shows the Tuesday due date, its proposal stage reads BAFO, and it sits at the top of the Proposal Pipeline view on Monday."
+/>
+
 ## Where deadlines live
 
-Every opportunity has a **proposal due date**, and there are views that sort by what's coming up — so deadlines are in front of you instead of relying on memory.
+Every opportunity has a **proposal due date**, and the working views sort by it — so deadlines are in front of you instead of relying on memory.
 
 1. Open the **view dropdown** at the top of the Opportunities list.
 2. Pick **Proposal Pipeline** — it's sorted by what's due.
 3. Make that your landing spot each morning.
 
-**Or just ask:** *"What proposals are due this week?"*
+<WhereThisLives tool="crm" path="Opportunities → view dropdown → Proposal Pipeline" />
+
+<PromptCard
+  accent="proposals"
+  title="The morning question"
+  prompt="What proposals are due this week?"
+/>
 
 <Callout title="Start your day here">
-If you make the due-date view your home screen, the system carries the reminders so you don't have to. One glance tells you what needs attention today.
+If you make the due-date view your home screen, the system carries the reminders so you don't have to. One glance tells you what needs attention today. The corollary is unforgiving: a deal with a blank due date is invisible to this queue — set the date the day the deal comes in, not the week the panic starts.
 </Callout>
+
+## Proposal stage and priority
+
+Alongside the due date, two fields tell the team what kind of deadline they are looking at:
+
+- **Proposal Stage** — what the work actually is: **RFP** (inbound bid, scoping), **Sales Lead** (proactive outreach), **BAFO** (best and final offer requested), **LOI** (letter of intent received), or **Existing Client Budget** (renewal or expansion already budgeted).
+- **Priority** — how it ranks this week: **Priority 1 — RFP** for the top of the stack, **Best And Final** when a BAFO is in flight, and **Pricing Complete** once the numbers are done.
+
+A BAFO due Tuesday and a budget renewal due Tuesday are not the same Tuesday. Keeping these fields honest is what lets the proposal team triage the queue without calling every deal owner.
 
 ## Marking pricing complete
 
-When a deal's pricing is finished, set the **pricing complete** field on the opportunity. That's the signal the proposal team watches — it moves the deal into the "ready" views so everyone knows it's cleared to go.
+When a deal's pricing is finished, the <GlossaryTerm term="pricingComplete" /> field on the opportunity flips to done. That's the signal the proposal team watches — it moves the deal into the "ready" views so everyone knows it's cleared to go.
 
-**Or just ask:** *"Mark pricing complete on the Rangers deal."*
+Here is the part worth knowing: most of the time, **you do not set it by hand**. When the Proposal Engine generates a one-pager for a deal, the deal is marked Pricing Complete automatically, stamped with the date. That is <GlossaryTerm term="universalCrmPush" /> keeping the CRM in sync with the actual pricing work. Set it manually only when pricing was finished outside the normal generation flow — and never set it early to make a queue look healthier than it is.
+
+<PromptCard
+  accent="proposals"
+  title="Flip the signal"
+  prompt="Mark pricing complete on the Rangers deal."
+/>
+
+<OhShit
+  symptom="A proposal deadline blindsided the team — the deal never showed in the due-this-week views."
+  fix="Open the deal and check the proposal due date field. Nine times out of ten it was never set, so a due-date-sorted queue had nothing to sort. Set the date and the deal takes its correct place in the queue immediately."
+  prevention="Treat the due date as part of deal intake: the day an RFP arrives, the due date goes on the record before anything else happens. A deadline that only exists in an email thread does not exist."
+/>
 
 ## The home base for proposal work
 
-The **Estimation & Proposals** view mirrors the whole workflow — what's being scoped, what's priced, what's ready — at a glance. It's the daily base for the proposal side. (More on the flow itself in [Estimation & Proposals](/docs/training/technology/estimation-and-proposals).)
+The **Estimation & Proposals** view mirrors the whole workflow — what's being scoped, what's priced, what's ready — with the columns the proposal team triages by: proposal stage, priority, due date, and pricing status. It's the daily base for the proposal side, and it's how the estimations team decides what to work next. (More on the flow itself in [Estimation & Proposals](/docs/training/technology/estimation-and-proposals).)
+
+## What good looks like
+
+The bar before you move on: every deal you own that has proposal work in flight shows a due date, an honest proposal stage, and a pricing status that matches reality. Anyone — the proposal team, leadership, a teammate covering for you — can open the queue and know exactly where your deals stand without messaging you. That is what "the system carries the reminders" actually means: you did the ten seconds of data entry, and nobody ever has to chase you.
 
 ## Now you try →
 
-Open **Proposal Pipeline**, find the next proposal due, and on one deal that's ready, set **pricing complete**.
+Open **Proposal Pipeline**, find the next proposal due, and on one deal that's ready, confirm **pricing complete** reflects reality.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Reading Your Dashboard](/docs/training/technology/your-dashboard)**.
+Related lessons:
+
+- [Estimation & Proposals](/docs/training/technology/estimation-and-proposals) — the pricing flow these signals feed.
+- [Your Pipeline](/docs/training/technology/pipeline) — the wider queue the due dates sort.
+- [Managing Your Deals](/docs/training/technology/managing-your-deals) — the status fields that travel with the deadline.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The proposal due date drives every queue — set it the day the deal comes in.",
+    "Proposal stage (RFP / Sales Lead / BAFO / LOI / Existing Client Budget) tells the team what kind of deadline it is.",
+    "Pricing Complete is usually set automatically when the one-pager is generated — set it by hand only for out-of-flow pricing, never early.",
+    "A deadline that only exists in an email thread does not exist."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="proposals"
+  question="When is Pricing Complete normally set on a deal?"
+  options={[
+    "Manually by the deal owner at the start of pricing, so the team knows it is in progress",
+    "Automatically when the Proposal Engine generates the one-pager, stamped with the date",
+    "By leadership during the weekly pipeline review"
+  ]}
+  answer={1}
+  explanation="Pricing Complete is a done signal, not an in-progress flag. When the Proposal Engine generates the one-pager, the deal is marked Pricing Complete automatically with the date. Manual setting is the exception, for pricing finished outside the normal flow."
+/>

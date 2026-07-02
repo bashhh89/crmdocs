@@ -3,13 +3,14 @@ title: RFP to Win Workflow
 description: "A cross-tool workflow map from RFP received through proposal, SOW, CRM attachment, and won/lost status."
 ---
 
-# RFP To Win Workflow
 
 <AudioPlayer src="/audio/training/workflow-rfp-to-win.mp3" />
 
+<LessonMeta time="15 min" audience="Everyone" level="Core" accent="connected" />
+
 <ToolBadge tool="connected" />
 
-This is the cross-tool flow from a client RFP to a won or lost CRM outcome.
+This is the cross-tool flow from a client RFP to a won or lost CRM outcome. Every deal ANC pursues travels this exact path, and every role touches part of it: sales logs and owns the deal, estimation prices it, proposals packages it, and leadership reads the honest outcome at the end. The connective tissue is automatic — files attach themselves, statuses stamp themselves — so the flow only breaks when a human skips a handoff, not when someone forgets an upload.
 
 <WorkflowMap
   title="RFP to win at a glance"
@@ -101,19 +102,87 @@ CRM
   Mark WON or LOST
 ```
 
+## Stage By Stage
+
+### 1. RFP Received — sales owns it
+
+The clock starts when the RFP is logged, not when it arrives in an inbox. Search the <GlossaryTerm term="company" /> first so the deal links to the account's real history, then create the opportunity with stage, <GlossaryTerm term="bidStatus" />, business unit, league, and — non-negotiable — the proposal due date. The due date is what the estimation queue sorts by; without it, the deal is invisible to the people who need to price it. Confirm the deal shows up on the Bid Tracker board before calling this step done.
+
+### 2. Scoping — requirements get real
+
+Scoping is where ambiguity dies. The RFP Analyzer turns the client's document into a compliance matrix — requirement by requirement, with a proposed ANC response — so nothing on page 34 gets discovered the night before submission. Questions back to the client happen now, while there is still time for answers. Move the deal's Bid Status to Scoping so the board reflects reality.
+
+### 3. Pricing and packaging — estimation and proposals own it
+
+Pricing is built in Excel, and the client-facing one-pager is generated with <GlossaryTerm term="mirrorMode" /> so the PDF reproduces the spreadsheet exactly. The moment the one-pager generates, two things happen in the CRM without anyone touching it: the file attaches to the deal through <GlossaryTerm term="universalCrmPush" />, and <GlossaryTerm term="pricingComplete" /> flips to true with the date stamped. The SOW follows — Premium for the client, Installation for the field — and both attach the same way, each leaving a timeline note on the deal.
+
+### 4. Bid Submitted — back to sales
+
+When the package goes to the client, move the deal to Bid Submitted. From here the discipline is follow-up: a bid sitting in Bid Submitted for weeks with no touch recorded is a decision you have not heard about yet. If the client narrows the field, Shortlisted signals the deal deserves extra attention — reference calls, exec involvement, sharpened pricing.
+
+### 5. Won, Lost, or No Bid — everyone benefits
+
+Every pursuit ends in one of three honest states. Won requires a contract completion date — the platform reverts the status without one, because that date drives the backlog and renewal reporting. Lost and No Bid are not failures to hide; they are the data points that make the win/loss-by-league analysis mean something. A deal left open forever is the only truly bad outcome, because it corrupts both the pipeline and the win rate.
+
 ## Time Indicators
 
 <WhereThisLives tool="connected" path="Universal CRM Push: proposal and SOW files usually attach in 5-10 seconds" />
 
 <WhereThisLives tool="connected" path="Real-time CRM Sync: service ticket and event changes usually appear in CRM in about 1 second" />
 
-## Decision Point
+## Decision Points
 
-Is this a Venue Services deal?
+**Is this a Venue Services deal?**
 
-- **Yes:** include Service Dashboard fulfillment, event staffing, tickets, and venue operations.
+- **Yes:** include Service Dashboard fulfillment, event staffing, tickets, and venue operations. The won deal becomes an operating account, and its service history syncs back onto the CRM Company from day one.
 - **No:** continue through CRM and Proposal Engine only.
 
-```text
-Analyze this RFP and extract requirements, due date, league, business unit, and missing information.
-```
+**Should ANC bid at all?**
+
+No Bid is a legitimate exit at any point before submission. A deal that is out of footprint, unwinnable on timeline, or strategically wrong costs less as an early No Bid than as a Lost after two weeks of estimation work. Record it — a deliberate No Bid keeps the win rate honest and the estimation queue focused.
+
+<PromptCard accent="connected" title="Kick off the analysis" prompt="Analyze this RFP and extract requirements, due date, league, business unit, and missing information." />
+
+<PromptCard accent="connected" title="Audit the flow for stuck deals" prompt="Show open opportunities by Bid Status with proposal due date, flagging any past due or unchanged for 30 days." />
+
+<OhShit
+  symptom="A deal went all the way to submission but the files are not on the CRM opportunity"
+  fix="Check Deal -> Files after a few seconds; if still empty, the proposal work was probably generated against a different deal. Open the correct deal in the Proposal Engine and regenerate."
+  prevention="Confirm the deal context in the Proposal Engine header before generating — files attach to whatever deal you launched from."
+/>
+
+<OhShit
+  symptom="The bid was decided weeks ago but the CRM still shows Bid Submitted"
+  fix="Mark it Won (with a completion date), Lost, or No Bid now — late is better than never for the win-rate data."
+  prevention="Sweep Bid Submitted deals weekly; anything past its decision window gets a follow-up call and a status update the same day."
+/>
+
+## Keep Going
+
+- [Sales & Account Management track](/docs/training/tracks/sales-crm) — steps 1, 4, and 5 in depth.
+- [Proposals & Estimation track](/docs/training/tracks/proposals) — steps 2 and 3 in depth.
+- [Services & Operations track](/docs/training/tracks/services) — the fulfillment path for Venue Services wins.
+- [Executive Summary track](/docs/training/tracks/leadership) — how leadership reads the outcomes this flow produces.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "One flow, four owners: sales logs and closes, estimation prices, proposals packages, leadership reads.",
+    "The due date set at logging drives the entire estimation queue — it is the single highest-leverage field in the flow.",
+    "Files and pricing status move to the CRM automatically; humans move the Bid Status.",
+    "Won demands a completion date, and Lost or No Bid are honest data, not embarrassments.",
+    "The only bad outcome is a deal left open forever — it corrupts pipeline and win rate at the same time."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="connected"
+  question="An RFP is out of footprint and unwinnable on timeline. What is the right move?"
+  options={[
+    "Leave the opportunity open in case things change",
+    "Delete the opportunity so it does not clutter the pipeline",
+    "Mark it No Bid so the exit is recorded and reporting stays honest"
+  ]}
+  answer={2}
+  explanation="No Bid is a legitimate, deliberate exit. It frees the estimation queue, keeps the pipeline truthful, and preserves the data point for win/loss analysis. Deleting or abandoning the record does neither."
+/>

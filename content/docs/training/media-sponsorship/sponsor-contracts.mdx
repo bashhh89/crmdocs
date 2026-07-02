@@ -8,9 +8,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/media-sponsorship-sponsor-contracts.mp3" />
 
+<LessonMeta time="12 min" audience="Media & Sponsorship team" level="Core" accent="connected" />
+
 <Shot src="/img/screenshots/crm/t-account.png" caption="A sponsor's account — their contracts and placements together." />
 
-**After this lesson** you'll be able to see what a sponsor was contracted for, compare it to what's actually running, and catch anyone falling behind.
+**After this lesson** you'll be able to see what a sponsor was contracted for, compare it to what's actually running, and catch anyone falling behind — while there is still season left to fix it.
+
+Contracts are the promise; placements are the delivery. The entire value of tracking them side by side is timing: an under-delivery you catch in June is a make-good plan, and an under-delivery you discover in October is a refund conversation. This lesson is about reading the gap early enough that it stays the first kind.
+
+<ScenarioBoard
+  title="Mid-season pace check"
+  situation="Halfway through the season, leadership asks whether every sponsor is on pace against their contracted games — and specifically whether anyone needs make-goods scheduled."
+  goal="Compare each sponsor's contracted game count against executed placements, per team, and name who is ahead, on pace, or behind."
+  proof="You can list every sponsor behind pace, by how many games, and which teams the gap sits on — with make-good inventory still available."
+  accent="connected"
+/>
 
 <DecisionTree
   title="Contract versus actual"
@@ -25,27 +37,71 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 ## What contracts hold
 
-Sponsor contracts are tracked and tied to the **sponsor and team**, so you can see what was committed — a full season, a partial, or a minimum number of games — right alongside what's actually running.
+Each sponsor contract is its own record, tied to the **sponsor and the team** — one contract per sponsor, per team, per season. The record carries:
 
-**Or just ask:** *"How many games is Tire Rack contracted for with the Red Sox?"*
+- **Sponsor** and **team**, both linked to their Company records.
+- **League and season** the commitment covers.
+- **Contracted games** — the number the comparison runs against.
+- **Contract label** — the human-readable shape of the deal: a full season, a half season, or a minimum-games commitment like "Minimum of 35 Games."
+- **Notes** — anything about the deal that a number can't carry.
+
+A sponsor with commitments across multiple teams has one contract record per team — so "Tire Rack at the Red Sox" and "Tire Rack at the Nationals" each get their own count, and the sponsor's account shows all of them together. Record names read cleanly in a list: sponsor, team, season, and game count right in the title.
+
+<PromptCard accent="connected" title="Read one commitment" prompt="How many games is Tire Rack contracted for with the Red Sox?" />
 
 ## Contracted vs. actual
 
-This is the payoff. The **contract** records hold what was committed; the **placement** records hold what's actually running. Compare them on the sponsor's account to see the gap.
+<WhereThisLives tool="crm" path="Companies → sponsor Company → Media & Sponsorship tab" />
 
-**Or just ask:** *"Show me contracted versus actual for Bigelow."*
+This is the payoff. The **contract** records hold what was committed; the **placement** records hold what's actually running. Because both link to the same sponsor Company, the comparison happens on the account itself:
+
+1. Open the **sponsor's Company record**.
+2. Open the **Media & Sponsorship tab** — sponsor placements and sponsor contracts sit there together.
+3. Read the contract's game count per team, then count the **executed** placements against it.
+4. The difference is the gap — per team, not just in total, so you know exactly where the shortfall sits.
+
+<PromptCard accent="connected" title="The gap in one question" prompt="Show me contracted versus actual for Bigelow." />
+
+<Callout title="Executed is what counts">
+Compare against **executed** placements, not everything scheduled. A sponsor with 30 contracted games, 28 scheduled, and 19 executed is behind — the scheduled number flatters the picture. This is why placement statuses (from the [Placements](/docs/training/media-sponsorship/placements) lesson) have to stay current: the contract read is only as honest as the statuses underneath it.
+</Callout>
 
 ## Spotting an under-delivering sponsor
 
-Compare contracted games to what's actually run — the gap tells you who's behind, while there's still time to make it right.
+Run the comparison across sponsors, not just one at a time. The gap between contracted and executed tells you who's behind while there's still time to make it right — scheduling make-good placements in remaining games instead of negotiating after the season ends.
 
-**Or just ask:** *"Which sponsors are behind their contracted games?"*
+<PromptCard accent="connected" title="Who is behind" prompt="Which sponsors are behind their contracted games?" />
+
+When you find a gap, do two things: confirm it's real (were placements run but left as scheduled? run but not linked to the sponsor?), and then flag it on the account so the make-good conversation starts from the record, not from memory.
 
 ## Adding a new sponsor
 
-Add the sponsor as a **company**, then their placements and contracts tie to that account.
+1. Add the sponsor as a **Company** — that account becomes the anchor for everything.
+2. Create a **contract record** per team they've committed to, with the season, contracted games, and label.
+3. As placements get logged with that sponsor, they tie to the same account automatically — the contracted-versus-actual view builds itself from there.
 
-**Or just ask:** *"Add a new sponsor called [name]."*
+<PromptCard accent="connected" title="New sponsor setup" prompt="Add a new sponsor called [name]." />
+
+## Common mistakes
+
+<OhShit
+  symptom="A sponsor looks badly under-delivered on the account, but you know their placements ran."
+  fix="Check for placements still marked scheduled after their game date, and for placements missing the sponsor link — fix both, then re-read the gap."
+  prevention="Treat a surprising gap as a data question before a delivery question. Verify statuses and sponsor links first; only then call it real under-delivery."
+/>
+
+<OhShit
+  symptom="Two people quote different contracted game counts for the same sponsor in the same meeting."
+  fix="Open the source contract, confirm the committed number, and correct the contract record — then the record is the single answer for everyone."
+  prevention="The contract record is the working truth, but the signed contract is the source of truth. Never edit the count from memory; change it only against the document."
+/>
+
+## What good looks like
+
+- Every active sponsor has a contract record per team and season, with a count and a label — no commitments living only in someone's inbox.
+- Contract counts match the signed documents, and any correction was made against the source.
+- Gaps are read against **executed** placements, and every real gap has a flagged follow-up on the account.
+- Pace checks happen mid-season on a rhythm — not once, at the end, when nothing can be fixed.
 
 ## Now you try →
 
@@ -53,4 +109,26 @@ Pick a sponsor, open their account, and check their contracted count against wha
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Your Dashboards](/docs/training/media-sponsorship/dashboards)**.
+Related lessons: [Placements](/docs/training/media-sponsorship/placements) keeps the actual side of the comparison honest; [Nielsen Verification](/docs/training/media-sponsorship/nielsen-verification) confirms the executed numbers you're comparing against; [Your Dashboards](/docs/training/media-sponsorship/dashboards) rolls contract pace into the full sponsor readout.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "One contract record per sponsor, per team, per season — with contracted games, a label, and links to both Companies.",
+    "The gap is read on the sponsor's account: contracted games versus executed placements, per team.",
+    "Compare against executed, not scheduled — the read is only as honest as the placement statuses underneath it.",
+    "A gap caught mid-season is a make-good plan; a gap found at season end is a refund conversation. Check pace on a rhythm."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="connected"
+  question="A sponsor's account shows them 9 games behind their contracted count. What is the first move?"
+  options={[
+    "Verify the data — check for stale scheduled statuses and unlinked placements before calling the gap real",
+    "Email the sponsor an apology and offer make-goods immediately",
+    "Lower the contracted count so the account looks on pace"
+  ]}
+  answer={0}
+  explanation="A surprising gap is a data question before it is a delivery question. Stale statuses and missing sponsor links create phantom gaps; confirm the records first, then flag the real remainder for a make-good plan. Editing the contracted count to hide a gap is never the move."
+/>

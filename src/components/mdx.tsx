@@ -5,7 +5,7 @@ import { GlossaryTerm } from '@/components/glossary-term';
 import { GuidedSim } from '@/components/guided-sim';
 import { OhShit } from '@/components/oh-shit';
 import { Shot } from '@/components/shot';
-import { DecisionTree, PracticeChecklist, PromptCard, ScenarioBoard, WorkflowMap } from '@/components/training-visual';
+import { DecisionTree, KeyTakeaways, KnowledgeCheck, LessonMeta, PracticeChecklist, PromptCard, ScenarioBoard, WorkflowMap } from '@/components/training-visual';
 import { ToolBadge, WhereThisLives } from '@/components/tool-badge';
 
 export function getMDXComponents(components?: MDXComponents) {
@@ -16,6 +16,9 @@ export function getMDXComponents(components?: MDXComponents) {
     GuidedSim,
     OhShit,
     DecisionTree,
+    KeyTakeaways,
+    KnowledgeCheck,
+    LessonMeta,
     PracticeChecklist,
     PromptCard,
     ScenarioBoard,

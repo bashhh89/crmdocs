@@ -8,9 +8,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/leadership-dashboards.mp3" />
 
+<LessonMeta time="12 min" audience="Leadership" level="Core" accent="leadership" />
+
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="The company dashboard — booked revenue, margin, and forecast right up top." />
 
-**After this lesson** you'll be able to read the big picture, drill into any one vertical, and surface your biggest and most at-risk deals.
+**After this lesson** you'll be able to read the big picture, drill into any one vertical, and surface your biggest and most at-risk deals — in the same five-minute pass, every week, without asking anyone to build you a report.
+
+Dashboards are where leadership review starts, but they are not where it ends. Every widget is an aggregate of live deal records; the dashboard is only as honest as the records feeding it. This lesson teaches the read pattern that catches problems before they reach a board deck.
 
 <WorkflowMap
   title="Dashboard review pattern"
@@ -23,29 +27,92 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="leadership"
 />
 
-## The big picture
+## A realistic Monday
 
-The dashboards roll everything up — **pipeline, won business, forecast** — and they update as the team works, so the picture is always current.
+<ScenarioBoard
+  title="The Monday pass"
+  accent="connected"
+  situation="It is 8:40 on Monday. Leadership sync is at 9:00. You need what moved last week, what the forecast says, and whether anything big is slipping."
+  goal="Walk into the sync with three specifics: the headline numbers, the one vertical that moved most, and the two deals that need a push this week."
+  proof="You can name the deals behind every number you quote — because you opened them before the meeting, not after someone challenged you."
+/>
 
-**Or just ask:** *"What's our pipeline versus won this quarter?"*
+## The click path
 
-## By vertical
+<WhereThisLives tool="crm" path="ANC app → Dashboards → ANC 2026 — Company Dashboard" />
 
-The data is organized by the **three sides of the business** — Technology, Venue Services, and Media & Sponsorship. Pick a vertical's tab to narrow everything to that side, or see the combined total. It mirrors how the business is actually structured.
+1. Open the CRM. If the sidebar shows the Standard app, use the app switcher (top-left) and pick **ANC** — the dashboards sit at the top of the sidebar. The platform remembers your choice.
+2. Open the **ANC 2026 — Company Dashboard**. The **Company Overview** tab is the rollup: booked revenue, margin, forecast, pipeline by stage, and top deals.
+3. Read left to right, top to bottom: won so far, forecast, then pipeline. Note anything that moved sharply since last week.
+4. Switch tabs to drill into one vertical — **Technology**, **Venue Services**, or **Media & Sponsorship**. Same widgets, scoped to that side of the business, mirroring how the company is actually structured.
+5. Click into any widget number that matters. That opens the underlying deal list — this is the step that separates reading a dashboard from trusting one.
 
-**Or just ask:** *"Show me the Technology numbers."* · *"Compare revenue and margin by vertical."*
+## The ask path
+
+You can get the same picture conversationally. Use the dashboard for the scan, the assistant for the specific follow-up question the dashboard raises.
+
+<PromptCard accent="leadership" title="Headline read" prompt="What is our pipeline versus won this quarter?" />
+
+<PromptCard accent="leadership" title="One vertical" prompt="Show me the Technology numbers — pipeline, won, and forecast — and how they compare to last quarter." />
+
+<PromptCard accent="leadership" title="Compare verticals" prompt="Compare revenue and margin by vertical for this year." />
 
 ## Biggest and at-risk deals
 
-- **Biggest:** there's a top-open-deals view, and you can sort the pipeline by value.
-- **At-risk:** filter to deals that have gone quiet or are past a due date — the ones that need a nudge before they slip.
+Two lists close out the pass:
 
-**Or just ask:** *"What are our biggest open opportunities?"* · *"What's overdue or stalled?"*
+- **Biggest:** the **Top Open Deals** view is sorted by deal value — your concentration risk in one screen. If the top three deals are half the pipeline, the forecast lives or dies on them.
+- **At-risk:** filter to deals that have gone quiet or are past a due date — the ones that need a nudge before they slip a quarter.
+
+<PromptCard accent="leadership" title="Risk sweep" prompt="What are our biggest open opportunities, and which of them are overdue or have gone quiet?" />
+
+## Common mistakes
+
+<OhShit
+  symptom="A total on the dashboard looks wrong — too big, too small, or it moved when nothing should have."
+  fix="Click into the widget and scan the underlying deal list. Nine times out of ten one record explains it: a duplicate, a deal in the wrong stage, or a value entered at the wrong magnitude. Name the record, send it to the owning team."
+  prevention="Never debate a dashboard number in the abstract. Every disagreement about a total resolves at the record level in under two minutes."
+/>
+
+<Callout title="The screenshot trap">
+Screenshotting a widget into a deck freezes a live number. Dashboards update as the team works, so by the time the deck is presented the screenshot can already disagree with the system. Quote the number with its as-of date, or export the underlying view — the next lessons cover both.
+</Callout>
+
+## What good looks like
+
+Before you move on, the bar is:
+
+- You can complete the full pass — rollup, one vertical, records — in under five minutes.
+- Every number you would say in a meeting, you can attach to the two or three deals that drive it.
+- You noticed at least one hygiene issue (stale deal, missing date, suspicious value) and know who owns it.
+- You are reading the same dashboard everyone else sees — no private spreadsheet on the side.
 
 ## Now you try →
 
-Open the company dashboard, switch to one vertical's tab, then ask the assistant for your biggest open deal in that vertical.
+Open the company dashboard, switch to one vertical's tab, click into one widget, and ask the assistant for your biggest open deal in that vertical. Compare the two answers.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Forecasting & Pipeline](/docs/training/leadership/forecasting-and-pipeline)**.
+Related lessons: [Forecasting & Pipeline](/docs/training/leadership/forecasting-and-pipeline) · [Win/Loss](/docs/training/leadership/win-loss) · [Asking for Numbers (Core)](/docs/training/core/asking-for-numbers)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The ANC 2026 Company Dashboard is the rollup; the vertical tabs are the drill-down.",
+    "Widgets are aggregates of live deal records — click through before you trust a total.",
+    "Top Open Deals is your concentration-risk read; quiet or overdue deals are your slippage read.",
+    "A five-minute weekly pass beats a monthly deep-dive that arrives too late to act on."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="leadership"
+  question="A pipeline widget on the company dashboard shows a total that looks too high. What is the correct first move?"
+  options={[
+    "Screenshot it and raise it at the next leadership sync",
+    "Click into the widget and scan the underlying deal records for the one driving the jump",
+    "Ask the team to rebuild the dashboard"
+  ]}
+  answer={1}
+  explanation="Dashboard totals are aggregates of live records. Disagreements about a number resolve at the record level — usually one deal in the wrong stage or with a wrong value explains the whole gap."
+/>

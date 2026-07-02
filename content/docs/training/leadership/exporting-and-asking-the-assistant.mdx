@@ -8,9 +8,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/leadership-exporting-and-asking-the-assistant.mp3" />
 
+<LessonMeta time="12 min" audience="Leadership" level="Core" accent="leadership" />
+
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Any view or dashboard exports to Excel — or just ask the assistant for the number." />
 
-**After this lesson** you'll be able to build your own at-a-glance picture, get numbers out for a board deck, and pull any figure by just asking.
+**After this lesson** you'll be able to build your own at-a-glance picture, get numbers out for a board deck, and pull any figure by just asking — with a clear rule for when each path is the right one.
+
+This is the lesson where the leadership track becomes a daily habit. The previous lessons taught you what to read; this one is about how numbers leave the system — into a deck, an email, a finance handoff — without losing their connection to the records that back them. The governing principle: **exports come from shared views, so anyone can reopen the same view and get the same number.** Reproducibility is what makes a number defensible.
 
 <DecisionTree
   title="Export or ask?"
@@ -23,42 +27,98 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="leadership"
 />
 
+## A realistic scenario
+
+<ScenarioBoard
+  title="The board pack"
+  accent="connected"
+  situation="The quarterly board pack needs pipeline, forecast, and win/loss numbers. Last quarter, two directors compared notes and found two different pipeline totals — one from a screenshot, one from an old spreadsheet."
+  goal="Every number in this quarter’s pack comes from a named shared view, exported the same day, so any question traces back to one source."
+  proof="When someone challenges the pipeline figure, you name the view it came from and reopen it live — same filter, same records, same total."
+/>
+
 ## Pin what you care about
 
-Pin the views and KPIs you check often so they're **one click away**. You build your own at-a-glance picture instead of hunting for the same reports each time.
+Pin the views and KPIs you check often so they are **one click away**. Open any dashboard or view and click the star — it lands at the top of your sidebar. You build your own at-a-glance picture instead of hunting for the same reports each time.
+
+Two views are already pinned for everyone by default — **Active Pricing Priority List** and **Pipeline by Business Unit** — so the whole team starts from the same picture. Add your own on top: for most leadership readers, that means the company dashboard, the forecast view, and the win/loss view.
 
 ## Board-ready views
 
-The dashboards give clean roll-ups — pipeline, won, forecast, win/loss by league, by vertical — that work for a leadership or board conversation. Pin the ones you present from so they're ready when you need them.
+The dashboards give clean roll-ups — pipeline, won, forecast, win/loss by league, by vertical — that work for a leadership or board conversation. Pin the ones you present from so they are ready when you need them, and present from the **same shared views every quarter**. Consistency is half the credibility: when the board sees the same cut of the data each time, quarter-over-quarter movement is real movement, not a change in methodology.
 
-## Exporting and sharing outside the system
+## The click path: exporting
+
+<WhereThisLives tool="crm" path="ANC app → any saved view → Export" />
 
 When you need to hand numbers to someone outside the CRM:
 
-- **Export a view to a spreadsheet** — the data comes out clean in a format people already use.
-- Or pull the figure via the assistant and drop it straight into an email or deck.
+1. Open the **saved view** that matches the question — not an ad-hoc filter you built on the fly. Saved views are the shared, reproducible cut.
+2. **Export the view to a spreadsheet.** The data comes out clean, in a format finance and the board already work in.
+3. Label the export with the view name and the date. That one habit ends every "which number is right" debate before it starts.
+4. To hand a colleague the live version instead, copy the view's URL — anyone with CRM access lands in the exact same saved view.
 
-**Or just ask:** *"Export this view to Excel."*
+## The ask path: just ask for the number
 
-## Just ask for the number
+Often the fastest path is no report at all — the assistant pulls answers directly from the live data, no navigating required.
 
-Often the fastest path is no report at all — just ask:
+<PromptCard accent="leadership" title="Won this quarter" prompt="What have we won this quarter?" />
 
-- *"What have we won this quarter?"*
-- *"What's the forecast for Technology this year?"*
-- *"Compare pipeline this quarter to last."*
-- *"Which sponsors are behind their contracted games?"*
+<PromptCard accent="leadership" title="Vertical forecast" prompt="What is the forecast for Technology this year?" />
 
-The assistant pulls the answer directly from the live data — no navigating required.
+<PromptCard accent="leadership" title="Period comparison" prompt="Compare pipeline this quarter to last." />
+
+<PromptCard accent="leadership" title="Export via assistant" prompt="Export this view to Excel." />
+
+The discipline from the rest of this track still applies: for exploration, the assistant's answer is enough. For anything headed to a board deck, ask for the records behind the number and open the biggest two or three before it ships.
 
 <Callout title="How current is all of this?">
-Live. As the team updates opportunities, the dashboards and forecasts move with them — so what you're looking at reflects where things stand right now, not last month's export.
+Live. As the team updates opportunities, the dashboards and forecasts move with them — so what you're looking at reflects where things stand right now, not last month's export. Which is also why every export needs a date on it: the system moves on the moment the file is saved.
 </Callout>
+
+## Common mistakes
+
+<OhShit
+  symptom="Two people quote different totals for the same metric in the same meeting."
+  fix="Trace both numbers to their source. Almost always one came from a saved view and one from an ad-hoc filter, an undated export, or a stale screenshot. Reopen the shared view together — that total is the number."
+  prevention="One metric, one named view. Export only from shared views, date every file, and retire private side-spreadsheets — they fork the truth."
+/>
+
+## What good looks like
+
+- Your sidebar has the three or four views you actually present from, pinned and one click away.
+- Every exported file traces to a named shared view and carries its export date.
+- You reach for the assistant first for speed, and for the records behind the answer before anything goes external.
+- Nobody in your meetings maintains a parallel spreadsheet version of the pipeline.
 
 ## Now you try →
 
-Pin one view you'll present from, then ask the assistant for a single number you'd normally build a report to find.
+Pin one view you'll present from, export it to a spreadsheet, then ask the assistant for a single number you'd normally build a report to find — and compare it against the export.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
+
+Related lessons: [The Dashboards](/docs/training/leadership/dashboards) · [Forecasting & Pipeline](/docs/training/leadership/forecasting-and-pipeline) · [Asking for Numbers (Core)](/docs/training/core/asking-for-numbers)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Ask the assistant for speed; export from shared views for anything that leaves the system.",
+    "Reproducibility is the standard — a defensible number is one anyone can regenerate from the same named view.",
+    "Pin your presenting views once; the universal pins keep the whole team starting from the same picture.",
+    "Date every export. The system is live; the file is a snapshot."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="leadership"
+  question="You need a pipeline figure for the quarterly board pack. Which source makes the number most defensible?"
+  options={[
+    "A screenshot of the dashboard widget taken sometime this week",
+    "A dated export from the named shared view the team presents from every quarter",
+    "The total from your personal tracking spreadsheet"
+  ]}
+  answer={1}
+  explanation="A dated export from a shared saved view is reproducible — anyone can reopen the same view and get the same cut of the data. Screenshots freeze an unlabeled moment, and private spreadsheets fork the truth."
+/>
 
 That's the Leadership track — the whole business, readable in a glance or a question.

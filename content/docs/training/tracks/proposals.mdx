@@ -3,13 +3,14 @@ title: Proposals & Estimation
 description: "Use Mirror Mode, generate one-pagers, track Pricing Complete, and manage the RFP queue."
 ---
 
-# Proposals & Estimation
 
 <AudioPlayer src="/audio/training/track-proposals.mp3" />
 
+<LessonMeta time="30 min" audience="Estimation & Proposals" level="Core" accent="proposals" />
+
 <ToolBadge tool="proposals" />
 
-Use <GlossaryTerm term="mirrorMode" />, generate one-pagers, track <GlossaryTerm term="pricingComplete" />, and manage the RFP queue.
+Use <GlossaryTerm term="mirrorMode" />, generate one-pagers, track <GlossaryTerm term="pricingComplete" />, and manage the RFP queue. This track covers the middle of the deal — the stretch between "an RFP exists" and "a bid is out the door." It is where deals are won on speed and lost on sloppy handoffs, and it is the one part of the flow that touches both tools: the queue lives in the CRM, the output is built in the Proposal Engine, and the finished files land back on the CRM deal without anyone uploading anything.
 
 <Shot src="/img/screenshots/proposal-engine/03-estimator.png" caption="Proposal work starts from the project/deal context, then moves into estimation, one-pagers, SOWs, and attached files." />
 
@@ -19,7 +20,7 @@ Use <GlossaryTerm term="mirrorMode" />, generate one-pagers, track <GlossaryTerm
 
 > *Monday morning. Twelve RFPs came in over the weekend. You need to prioritize by league and due date.*
 
-Review RFPs in the Estimation & Proposals view. Group by pricing status, due date, league, and business unit.
+Review RFPs in the Estimation & Proposals view. This is the working queue for pricing — it is sorted around due dates and pricing status, so the deal at the top is the deal that needs you first. Group by pricing status, due date, league, and business unit.
 
 Before pricing, verify:
 
@@ -29,13 +30,19 @@ Before pricing, verify:
 - league
 - linked Company
 
+**Why the checklist matters:** each missing field breaks something specific. No due date and the deal sorts to the bottom of the queue while its real deadline burns down. No linked <GlossaryTerm term="company" /> and you price without the account history — past installs, past pricing, service record. No AE and there is nobody to answer scope questions when you hit an ambiguity at 4 PM the day before the bid is due. Send incomplete records back to the deal owner before you start pricing, not after.
+
 **Scout shortcut:**
 
-```text
-Show RFPs received this week sorted by league and proposal due date.
-```
+<PromptCard accent="crm" title="Sort the weekend intake" prompt="Show RFPs received this week sorted by league and proposal due date." />
+
+<PromptCard accent="crm" title="Catch the queue gaps" prompt="Show open RFPs with no proposal due date or no linked Company." />
 
 <WhereThisLives tool="crm" path="Views -> Estimation & Proposals" />
+
+**What good looks like:** by 10 AM the twelve RFPs are ranked, each has an owner and a due date, and the two with missing scope details have questions already sent back to the AE. Triage is not pricing — it is making sure nothing dies quietly in the queue.
+
+**Common mistake:** pricing in intake order instead of due-date order. The RFP that arrived Saturday night is not automatically more urgent than the one from Friday with a Wednesday deadline.
 
 ## Scenario 2: Excel To PDF With Mirror Mode
 
@@ -45,7 +52,9 @@ Show RFPs received this week sorted by league and proposal due date.
 
 Open Proposal Engine -> linked deal -> Generate One-Pager -> select <GlossaryTerm term="mirrorMode" />.
 
-**What happens automatically:** the proposal output attaches back to the CRM opportunity through <GlossaryTerm term="universalCrmPush" />.
+Mirror Mode exists for exactly one reason: when the Excel file is the source of truth, the client-facing PDF must reproduce it exactly — the numbers, the layout, the formatting. No recalculation, no reformatting, no rounding. If a total in the Excel says one thing and the PDF says another, the proposal is wrong, full stop. Mirror Mode is the guarantee that never happens.
+
+**What happens automatically:** the proposal output attaches back to the CRM opportunity through <GlossaryTerm term="universalCrmPush" />, and the deal is marked <GlossaryTerm term="pricingComplete" /> with today's date. A timeline note lands on the deal too — who generated what, when, with a link to the file. Nobody has to remember to upload anything, and nobody has to update the pricing status by hand.
 
 Timing:
 
@@ -53,6 +62,10 @@ Timing:
 - Complex multi-year deals: about 30 seconds.
 
 <WhereThisLives tool="proposals" path="Proposal Engine -> Deal -> Generate One-Pager -> Mirror Mode" />
+
+**What good looks like:** open the generated PDF next to the source Excel and spot-check the totals and the line items before it goes anywhere near a client. Exact-fidelity output still deserves a human glance — the thirty seconds of checking is cheaper than a re-send.
+
+**Common mistake:** generating from the wrong deal. The output attaches to whatever opportunity you launched from. If two deals for the same Company are open, confirm you are on the right one before you click generate.
 
 ## Scenario 3: Building The SOW
 
@@ -64,29 +77,36 @@ Generate the SOW from the linked deal.
 
 Two flavors:
 
-- Premium SOW: client-facing.
-- Installation SOW: technician-facing.
+- **Premium SOW: client-facing.** The high-touch scope document — creative and design scope, content production, training, ongoing support. This is what the client signs against.
+- **Installation SOW: technician-facing.** Site prep, structural requirements, rigging, cable paths, crew size, timeline, acceptance criteria. This is what the field team builds against.
 
-**Auto-attach:** the SOW appears in CRM -> Deal -> Files after generation.
+Pick by audience, not by habit. Sending an Installation SOW to a client buries the commercial story under rigging details; sending a Premium SOW to an install crew leaves them without the site facts they need.
+
+**Auto-attach:** the SOW appears in CRM -> Deal -> Files after generation, with a timeline note. Every generated SOW is also kept in the project history — when a client comes back months later asking what was scoped last time, the exact file is one click away.
 
 **Scout check:**
 
-```text
-Show deals where Bid Status is Bid Submitted and proposal due date was last week.
-```
+<PromptCard accent="crm" title="Chase the submitted bids" prompt="Show deals where Bid Status is Bid Submitted and proposal due date was last week." />
+
+Run this weekly. A bid that has been out for a week with no status change is a follow-up call waiting to happen — and moving it to Shortlisted, Won, Lost, or No Bid is what keeps the win-rate reporting honest.
 
 ## Cross-Tool Handoff
 
-```text
-RFP Analysis
-  -> Pricing in Excel
-  -> Mirror Mode in Proposal Engine
-  -> One-Pager Generated
-  -> Pricing Complete = TRUE in CRM
-  -> SOW Created
-  -> SOW auto-attaches to Deal in CRM
-  -> Move to Bid Submitted in Bid Tracker
-```
+<WorkflowMap
+  title="From analysis to submitted bid"
+  accent="connected"
+  steps={[
+    "RFP analyzed — requirements, deadlines, and evaluation criteria extracted.",
+    "Pricing built in Excel — the estimation source of truth.",
+    "Mirror Mode one-pager generated in the Proposal Engine.",
+    "Deal marked Pricing Complete in the CRM, automatically, with the date.",
+    "SOW generated — Premium for the client, Installation for the field.",
+    "Files auto-attach to the CRM deal with timeline notes.",
+    "Deal moves to Bid Submitted on the Bid Tracker."
+  ]}
+/>
+
+Notice what you never do in this flow: upload a file to the CRM, or update the pricing status by hand. The handoffs are automatic. Your judgment goes into the pricing and the scope — the bookkeeping is the platform's job.
 
 <OhShit
   symptom="PDF does not match my Excel exactly"
@@ -97,4 +117,54 @@ RFP Analysis
 <OhShit
   symptom="Proposal is not showing in CRM"
   fix="Wait 10 seconds, then check Deal -> Files. Universal CRM Push is usually instant but can lag briefly."
+  prevention="If the CRM was briefly unreachable, the file still attaches automatically once it is back — nothing is lost and nothing needs re-uploading."
+/>
+
+<OhShit
+  symptom="My files attached to the wrong opportunity"
+  fix="You generated from the wrong deal context. Open the correct deal in the Proposal Engine and regenerate — then remove the stray files from the wrong deal."
+  prevention="Check the deal name in the Proposal Engine header before clicking generate, especially when a Company has multiple open deals."
+/>
+
+## Keep Going
+
+- [Technology: Estimation & Proposals](/docs/training/technology/estimation-and-proposals) — the vertical lesson on the pricing queue.
+- [Technology: Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates) — due-date discipline in depth.
+- [Proposal Engine: RFP Analyzer](/docs/proposal-engine/features/rfp-analyzer) — compliance matrix and draft response from an uploaded RFP.
+- [Proposal Engine: SOW Generation](/docs/proposal-engine/features/sow-generation) — both SOW flavors in detail.
+- [RFP to Win Workflow](/docs/training/workflows/rfp-to-win) — the full cross-tool map this track fits inside.
+
+<PracticeChecklist
+  title="Prove it to yourself"
+  accent="proposals"
+  items={[
+    "Open the Estimation & Proposals view and rank this week's queue by due date.",
+    "Verify one queued RFP has all five triage fields before touching pricing.",
+    "Generate a Mirror Mode one-pager on a test-safe deal and spot-check it against the Excel.",
+    "Confirm the file and the Pricing Complete flag appeared on the CRM deal by themselves.",
+    "Generate one SOW and say out loud who the audience is before you pick the flavor."
+  ]}
+/>
+
+<KeyTakeaways
+  accent="proposals"
+  items={[
+    "Triage before pricing — every RFP needs a due date, an owner, and a linked Company or it dies quietly in the queue.",
+    "Mirror Mode reproduces the Excel exactly; use it whenever the spreadsheet is the source of truth, and still spot-check the output.",
+    "Generating the one-pager marks the deal Pricing Complete automatically — verify, do not retype.",
+    "Premium SOW is for the client, Installation SOW is for the field — pick by audience.",
+    "Files attach to whichever deal you generated from, so confirm the deal context before clicking."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="proposals"
+  question="You generate a Mirror Mode one-pager. What updates in the CRM without anyone touching it?"
+  options={[
+    "Nothing — the CRM is updated manually after the client responds",
+    "The file attaches to the deal and Pricing Complete is set with the date",
+    "The deal is marked Won"
+  ]}
+  answer={1}
+  explanation="Universal CRM Push attaches the generated file to the linked opportunity and flips Pricing Complete with a date stamp, plus a timeline note. Won status is a human decision made after the client decides."
 />

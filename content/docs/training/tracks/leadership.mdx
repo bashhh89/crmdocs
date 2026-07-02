@@ -3,13 +3,14 @@ title: Executive Summary
 description: "Quick-start path for leadership and finance users who need dashboards, forecast quality, and verified numbers."
 ---
 
-# Executive Summary
 
 <AudioPlayer src="/audio/training/track-leadership.mp3" />
 
+<LessonMeta time="20 min" audience="Leadership & Finance" level="Core" accent="leadership" />
+
 <ToolBadge tool="crm" />
 
-Use this path when you need the number, the records behind it, and the confidence to share it.
+Use this path when you need the number, the records behind it, and the confidence to share it. Leadership work in the CRM is a reading discipline, not a data-entry discipline: the sales team writes the records, the Proposal Engine and Service Dashboard feed them automatically, and your job is to read the rollup, verify it against the records underneath, and only then let the number leave the building. A dashboard total you cannot trace to records is not a number — it is a guess with formatting.
 
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Leadership reads the rollup, then drills into the records that create the number." />
 
@@ -20,12 +21,113 @@ Use this path when you need the number, the records behind it, and the confidenc
 3. Ask Scout for the record list behind the number.
 4. Open the records and verify stage, amount, close date, owner, and Bid Status.
 
-```text
-Show this quarter's open pipeline by vertical, grouped by stage, and flag missing close dates.
-```
+<PromptCard accent="leadership" title="Read the quarter" prompt="Show this quarter's open pipeline by vertical, grouped by stage, and flag missing close dates." />
 
-```text
-Show the records behind this forecast total so I can verify the number.
-```
+<PromptCard accent="leadership" title="Trace a total to its records" prompt="Show the records behind this forecast total so I can verify the number." />
 
 <WhereThisLives tool="crm" path="Dashboards -> source records -> verified report" />
+
+## Scenario 1: The Monday Number
+
+<ToolBadge tool="crm" />
+
+> *Board call at 11. You need open pipeline by vertical — Technology, Venue Services, Media & Sponsorship — and you need to trust it.*
+
+Start with the dashboard, not with a request to the sales team. The rollups read live from the same opportunity records the reps maintain, so the dashboard is already as current as the CRM itself. Filter to the current year and the vertical in question, then do the one thing that separates a verified number from a hopeful one: drill into the records.
+
+Open the list behind the total and scan for the four hygiene failures that inflate or deflate a pipeline number:
+
+- **Missing close dates** — deals that never expire and never convert, padding the pipeline forever.
+- **Stale Bid Status** — a bid submitted five weeks ago with no follow-up recorded is probably decided; the record just does not know it yet.
+- **No owner** — an unowned deal is nobody's forecast and nobody's follow-up.
+- **Wrong-year revenue** — multi-year deals carry per-year splits; a total that ignores the split books next year's delivery into this year's number.
+
+<PromptCard accent="leadership" title="Pre-meeting hygiene sweep" prompt="Show open opportunities this year with missing close dates, missing owners, or a Bid Status that has not changed in 30 days." />
+
+**What good looks like:** you walk into the call able to say what the number is, what is in it, and which two or three records you already discounted. That last part is what makes the rest credible.
+
+**Common mistake:** quoting the dashboard without opening a single record. The rollup is honest about the data it has — it cannot be honest about the data the team forgot to update.
+
+## Scenario 2: The Forecast Question
+
+<ToolBadge tool="crm" />
+
+> *Finance asks what is realistically landing this year. Pipeline is not forecast — you need the probability-weighted view.*
+
+ANC's forecast convention is to take deals at 50% probability and above seriously and treat the rest as early pipeline. Probability is set automatically from Bid Status as a deal moves through the flow — RFP Received and Scoping sit low, Bid Submitted and Shortlisted climb, Won is certainty. On top of that, reps can record their own judgment in a separate confidence field, which is deliberately distinct: the automatic number reflects where the deal *is*, the rep's confidence reflects what they *believe*. When the two disagree sharply, that is a conversation, not a data error.
+
+Two more rules keep the forecast honest:
+
+- **Fiscal year equals calendar year.** No off-cycle mental math.
+- **Multi-year deals split by year.** A stadium build that delivers across two seasons contributes each year's share to each year's forecast — never the whole contract to the year it was signed.
+
+<PromptCard accent="leadership" title="The realistic-forecast pull" prompt="Show open opportunities at 50 percent probability or higher, grouped by business unit, with this year's revenue share and close date." />
+
+For the delivered-but-not-done view, use the backlog: won deals with their completion dates and unpaid balances. Won and backlog are different questions — one is bookings, one is money still in motion — and mixing them in a single number is how boards get surprised.
+
+**What good looks like:** the forecast you give finance names its gate ("50%-plus probability, current-year splits only") so the number is reproducible by anyone who pulls the same view next week.
+
+## Scenario 3: Win/Loss Before The Renewal Push
+
+<ToolBadge tool="crm" />
+
+> *Renewal season is coming. You want to know where ANC wins, where it loses, and which accounts are up next.*
+
+Open the win/loss view: every deal marked Won, Lost, or No Bid, with league attached. Cutting it by league answers the questions that shape bid strategy — where the win rate justifies aggressive bidding, where losses cluster, and which leagues supply the case studies for the next pursuit. This only works because the sales team closes the loop on every bid: a deal left open forever never becomes a data point, which is why stale Bid Status is a leadership problem, not just a hygiene nit.
+
+For the renewal runway, use the renewals view — won deals approaching their contract completion dates in the next 90 days. Completion dates are enforced at the moment a deal is marked Won precisely so this view stays complete: if the date were optional, the renewal radar would have holes exactly where the biggest deals are.
+
+<PromptCard accent="leadership" title="Win rate by league" prompt="Show win, loss, and no-bid counts by league for the last fiscal year." />
+
+<PromptCard accent="leadership" title="Renewal radar" prompt="Show won deals with completion dates in the next 90 days, with account, business unit, and contract value." />
+
+Before any renewal conversation, open the account's Company record. The service tickets, event history, and past proposals are all attached — a renewal pitch that references the account's actual year lands very differently from a generic one.
+
+<OhShit
+  symptom="Two dashboards show different totals for what looks like the same question"
+  fix="Open the record list behind each and compare their filters — different probability gates, date ranges, or included statuses. The records are the truth; the difference is almost always the filter definition."
+  prevention="When you share a number, name its filter gate so others can reproduce it instead of pulling a differently-filtered cousin."
+/>
+
+## Keep Going
+
+- [Leadership: Dashboards](/docs/training/leadership/dashboards) — reading the rollups in depth.
+- [Leadership: Forecasting & Pipeline](/docs/training/leadership/forecasting-and-pipeline) — the probability and split model.
+- [Leadership: Win/Loss](/docs/training/leadership/win-loss) — win-rate analysis by league and vertical.
+- [Leadership: Exporting & Asking the Assistant](/docs/training/leadership/exporting-and-asking-the-assistant) — turning any view into a shareable file.
+- [Core: Asking for Numbers](/docs/training/core/asking-for-numbers) — prompt patterns that return verifiable answers.
+
+<PracticeChecklist
+  title="Prove it to yourself"
+  accent="leadership"
+  items={[
+    "Open a dashboard total and drill into the record list behind it.",
+    "Run the hygiene sweep and identify one record that would distort the number.",
+    "Pull the 50-percent-plus forecast and confirm multi-year deals show per-year shares.",
+    "Open the renewals view and pick the next account conversation from it.",
+    "Share one number internally with its filter gate named."
+  ]}
+/>
+
+<KeyTakeaways
+  accent="leadership"
+  items={[
+    "Never quote a rollup you have not drilled into — verify stage, amount, close date, owner, and Bid Status on the records underneath.",
+    "Forecast means 50-percent-plus probability with current-year revenue splits; pipeline is everything else.",
+    "Fiscal year equals calendar year, and multi-year deals contribute per-year shares, never the whole contract at signing.",
+    "Won requires a completion date by design — that is what keeps the backlog and renewal views complete.",
+    "Name the filter gate whenever you share a number, so the number is reproducible."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="leadership"
+  question="A dashboard shows a large open-pipeline total. What do you do before quoting it to the board?"
+  options={[
+    "Quote it — dashboards read live data",
+    "Ask the sales team to confirm the total by email",
+    "Drill into the records behind it and check close dates, owners, Bid Status, and revenue-year splits"
+  ]}
+  answer={2}
+  explanation="The rollup is only as honest as the records under it. Drilling in catches missing close dates, stale statuses, unowned deals, and multi-year revenue booked into the wrong year — the four classic distortions."
+/>

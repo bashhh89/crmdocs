@@ -7,11 +7,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-finding-anything.mp3" />
 
+<LessonMeta time="8 min" audience="Everyone" level="Core" accent="crm" />
+
 <Shot src="/img/screenshots/crm/t-all-deals.png" caption="Every account, deal, and contact is one search — or one question — away." />
 
 **After this lesson** you'll be able to land on any record in the CRM in a couple of seconds, two different ways.
 
-Everything in the CRM is findable. The trick is knowing the two doors in, and when to use each.
+Everything in the CRM is findable. The trick is knowing the two doors in, and when to use each. This matters more at ANC than at most companies: account names overlap constantly — the team, the venue, the ownership group, the sponsor activating at that venue can all be separate records with similar names. Knowing how to cut through that in seconds is the difference between answering on the spot and saying "let me get back to you."
+
+<ScenarioBoard
+  title="Mid-meeting lookup"
+  situation="On a call, a colleague mentions an opportunity by its number and asks where it stands. You have never touched that deal."
+  goal="Land on the exact record in under ten seconds, read the stage and owner, and answer while the conversation is still on that topic."
+  proof="You answered from the live record, not from memory or a promise to follow up."
+  accent="crm"
+/>
 
 <DecisionTree
   title="Search or ask?"
@@ -31,6 +41,13 @@ The fastest way to a specific record.
 - **Click it:** the **search bar** at the top → type a company name, a person's name, or an **opportunity number** like `109288`. It searches all of them at once.
 - Best for: "I know exactly which account/deal I want, take me there."
 
+<WhereThisLives tool="crm" path="Top of any page → search bar" />
+
+Two habits make search dramatically better:
+
+- **Opportunity numbers are gold.** Every opportunity has one, and it is unique. When someone references a deal in a thread or a meeting, ask for the number once — from then on you can jump straight to it, no guessing between similarly named deals.
+- **Search shortest distinctive word first.** "Knicks" beats "New York Knicks Basketball" — shorter terms surface the whole family of related records so you can pick the right one, which also tells you whether duplicates exist.
+
 ## Door 2 — just ask (when you want it pulled together)
 
 The assistant is better when you want context, not just a record.
@@ -43,21 +60,71 @@ The assistant is better when you want context, not just a record.
 
 The assistant finds it, opens it, and can keep going — "now show me their open opportunities" — without you clicking once.
 
+<PromptCard accent="crm" title="Find plus context in one ask" prompt="Open the Portland Trail Blazers account and summarize the open opportunities and the last activity." />
+
 <Callout type="info">
 Rule of thumb: **search** when you know the exact record, **ask** when you want the picture around it.
 </Callout>
+
+## When you don't know the name at all
+
+Sometimes you only have a fragment — a venue, a league, a rough timeframe. That's an ask, not a search:
+
+- *"Find the account for the arena the Hornets play in."*
+- *"Which NCAA accounts have open opportunities right now?"*
+- *"Find the deal we won at an MLS stadium last year involving ribbon boards."*
+
+Describe what you remember; the assistant triangulates. You will usually get a shortlist to pick from — faster than scrolling any list.
 
 ## Need a shareable link to a record?
 
 If you just want the **link** to a record — to paste into Slack or an email — ask the assistant (or **@ANC** in Slack) for it by its number or name:
 
-- *"Give me the link for opportunity 201356."*
+<PromptCard accent="crm" title="Get a paste-ready link" prompt="Give me the link for opportunity 201356." />
+
 - *"What's the CRM link for the Arizona Coyotes account?"*
 
 It hands back the direct record URL. No need to open it and copy from the address bar.
 
+## Common mistakes
+
+<Callout type="warn" title="Search habits that waste time">
+- **Concluding a record does not exist after one search.** Try the abbreviation, the venue name, or the team name before deciding — and definitely before creating a new record.
+- **Scrolling a list to find one record.** If you are scrolling, you should be searching or asking. Lists are for working queues, not lookups.
+- **Retyping a deal description when you have its number.** The number takes you straight there, every time, with zero ambiguity.
+- **Opening a record when you actually wanted a link.** Ask for the link directly and skip the round trip.
+</Callout>
+
+## What good looks like
+
+You're fast enough when: a named record takes you under ten seconds via search; a fuzzy memory ("that stadium deal from last spring") becomes a shortlist via one ask; you use opportunity numbers whenever they exist; and you never create a record just because your first search came up empty.
+
 ## Now you try →
 
-Find the same account both ways — type its name in the search bar, then ask the assistant *"open [that account] for me."* Notice which one felt faster for what you were doing.
+Find the same account both ways — type its name in the search bar, then ask the assistant *"open [that account] for me."* Then try one fuzzy lookup: describe a deal you half-remember and see what the assistant surfaces. Notice which door felt faster for each job.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
+
+Related lessons: [Meet the Assistant](/docs/training/core/meet-the-ai) · [The Daily Basics](/docs/training/core/daily-basics) · [Working Standard](/docs/training/core/working-standard)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Two doors in: the search bar for exact records, the assistant for context and fuzzy lookups.",
+    "Search covers companies, people, and opportunity numbers all at once — numbers are the fastest path of all.",
+    "One empty search never means the record does not exist; try the abbreviation or venue name.",
+    "Need a link for Slack or email? Ask for it directly by name or number."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="A colleague mentions 'the ribbon-board deal at that MLS stadium from last year' but no name or number. What is the fastest move?"
+  options={[
+    "Scroll the opportunities list sorted by date until something looks right",
+    "Describe the fragment to the assistant and pick from the shortlist it returns",
+    "Ask the colleague to go find the record themselves"
+  ]}
+  answer={1}
+  explanation="Fuzzy fragments are exactly what the ask path is for — describe the venue type, league, timeframe, and scope you remember, and the assistant triangulates a shortlist. Scrolling lists is the slowest possible lookup."
+/>

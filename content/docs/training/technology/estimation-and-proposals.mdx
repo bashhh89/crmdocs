@@ -7,9 +7,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/technology-estimation-and-proposals.mp3" />
 
+<LessonMeta time="12 min" audience="Technology team" level="Core" accent="proposals" />
+
 <Shot src="/img/screenshots/crm/t-estimation.png" caption="The Estimation & Proposals view — what's in for pricing, grouped by stage." />
 
 **After this lesson** you'll be able to see what's due this week, track a proposal through its stages, and find the estimate attached to any deal.
+
+Pricing is where a Technology deal becomes real. Up to this point the deal is a conversation; after this point it is a number the client can sign. The estimation flow exists so that pricing work is never a private spreadsheet on someone's laptop — it lives on the deal, moves through visible stages, and every file it produces lands where the whole team can find it. This lesson covers both sides: the CRM view where the queue lives, and the Proposal Engine where the numbers get built.
 
 <WorkflowMap
   title="Estimate to proposal"
@@ -22,38 +26,110 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="proposals"
 />
 
+<ScenarioBoard
+  title="A new RFP hits the desk"
+  accent="connected"
+  situation="An NCAA arena RFP lands: new center-hung display plus ribbon boards, bid due in twelve days. The deal exists in the CRM but nothing has been priced."
+  goal="Get the deal into the estimation queue with its due date and stage set, get pricing built in the Proposal Engine, and have the finished numbers attached to the deal — visible to the whole team — before the review."
+  proof="The deal shows in Estimation & Proposals with the right due date, the estimate is attached to the opportunity, and the deal reads Pricing Complete with a date stamp."
+/>
+
 ## What's due this week
 
-Your home base for proposal work is the **Estimation & Proposals** view. It shows the deals that need attention, sorted by **proposal due date**, with the columns that matter — stage, priority, pricing status.
+Your home base for proposal work is the **Estimation & Proposals** view. It shows the deals that need attention, sorted by **proposal due date**, with the columns that matter — proposal stage, priority, pricing status, who is estimating, and when the bid is due.
 
-- **Click it:** Opportunities → view dropdown → **Estimation & Proposals**.
-- **Or just ask:** *"What proposals are due this week?"*
+<WhereThisLives tool="crm" path="Opportunities → view dropdown → Estimation & Proposals" />
+
+<PromptCard
+  accent="proposals"
+  title="The queue in one question"
+  prompt="What proposals are due this week?"
+/>
+
+A deal enters this queue when it is **submitted to the estimations team** — the record carries who the assigned estimator is, when it was submitted, and even the bid due *time* when a deadline is same-day sharp ("5pm CT" matters when the upload portal closes at 5:01). If your deal needs pricing and it is not in this view, it has not actually been queued — no one is working on it, however urgent it feels.
 
 ## Proposal stages
 
-Each deal moves through proposal stages (RFP → pricing → proposal → and so on). Keep the **Proposal Stage** field current so the view stays accurate and nothing slips.
+Each deal moves through proposal stages — **RFP**, **Sales Lead**, **BAFO**, **LOI**, **Existing Client Budget** — and the view groups and triages by them. Keep the **Proposal Stage** field current so the view stays accurate and nothing slips.
 
-- **Click it:** open the opportunity → set **Proposal Stage**. When pricing is finished, mark **Pricing Complete**.
-- **Or just ask:** *"Mark pricing complete on the Rice University deal."*
+- **Click it:** open the opportunity → set **Proposal Stage**. When pricing is finished, the deal shows <GlossaryTerm term="pricingComplete" /> — usually set automatically (see below).
+
+<PromptCard
+  accent="proposals"
+  title="Close out the pricing signal"
+  prompt="Mark pricing complete on the Rice University deal."
+/>
+
+## Where the pricing actually happens
+
+The numbers get built in the **Proposal Engine**. The working loop looks like this:
+
+1. Start an estimate from the deal — line items for the displays, hardware, install, spares, the lot.
+2. Iterate. Every save creates a **revision**, so you can compare versions and see exactly what changed between rounds. Alternates (Alt 1 / Alt 2 / Alt 3) can be priced side by side when the client wants options.
+3. Export — Excel cost sheet, one-pager, proposal PDF, or SOW.
+
+Here is the part that keeps everything connected: every export **attaches itself to the CRM opportunity automatically** — that is <GlossaryTerm term="universalCrmPush" />. Generating the one-pager also marks the deal <GlossaryTerm term="pricingComplete" /> with the date, and sending the proposal PDF moves the bid status to Bid Submitted. When the pricing document must reproduce a source workbook exactly, line for line, that is <GlossaryTerm term="mirrorMode" /> — exact-fidelity output, no recalculated surprises.
+
+For a fast ballpark before full pricing starts, ask Scout — the assistant has a quick-estimate skill that returns a rough figure in chat. It is a sanity check, not a bid: real proposals still go through the Proposal Engine.
 
 ## Finding the estimate or proposal
 
-Each opportunity gathers its related work on its own page — so the estimate, documents, and links live with the deal, not in a separate folder.
+Each opportunity gathers its related work on its own page — so the estimate, documents, and links live with the deal, not in a separate folder or an email thread.
 
 1. Open the opportunity.
 2. Scroll its page to the related sections (estimates, documents, links).
-3. Open what you need right there.
+3. Open what you need right there — every generated file also leaves a timeline note saying who generated what and when.
 
-**Or just ask:** *"Show me the estimate on this deal."*
+<PromptCard
+  accent="proposals"
+  title="Find attached pricing"
+  prompt="Show me the estimate on this deal."
+/>
 
 <Callout title="Tip">
 Proposal due dates drive the whole view's sort order. Setting an accurate due date when a deal comes in is what keeps "what's due this week" actually correct.
 </Callout>
 
+<OhShit
+  symptom="You priced a deal, but the proposal team says they cannot find the estimate."
+  fix="Open the opportunity and check its related sections and timeline. If the estimate is not attached, it was built detached from the deal — re-generate the export from the estimate linked to the opportunity so it lands on the record automatically."
+  prevention="Always start pricing from the deal, not from a blank estimate. Work that starts on the opportunity stays attached to it; work that starts nowhere ends up nowhere."
+/>
+
+## What good looks like
+
+The bar: every deal you own with pricing in flight shows the correct proposal stage and due date in Estimation & Proposals, has its estimate attached to the record, and flips to Pricing Complete the moment the one-pager exists. A teammate should be able to pick up your deal cold and find every number and document from the opportunity page alone.
+
 ## Now you try →
 
-Open the **Estimation & Proposals** view, pick a deal with an upcoming due date, and confirm its proposal stage is current.
+Open the **Estimation & Proposals** view, pick a deal with an upcoming due date, and confirm its proposal stage is current and its estimate is attached.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-That's the Technology track's first lessons. More (LiveSync & processing pricing) are being added.
+Related lessons:
+
+- [Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates) — the deadline discipline that ranks this queue.
+- [Your Pipeline](/docs/training/technology/pipeline) — the wider views around the estimation queue.
+- [Managing Your Deals](/docs/training/technology/managing-your-deals) — what happens to the deal once pricing goes out.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Estimation & Proposals is the pricing queue — sorted by due date, triaged by proposal stage and priority.",
+    "Pricing happens in the Proposal Engine; every export attaches to the CRM deal automatically.",
+    "Generating the one-pager marks the deal Pricing Complete with a date; the proposal PDF moves bid status to Bid Submitted.",
+    "Start pricing from the deal so everything stays attached — detached work is invisible work."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="proposals"
+  question="You export a cost sheet from the Proposal Engine for a deal. What do you need to do to get it into the CRM?"
+  options={[
+    "Download it and upload it to the opportunity manually",
+    "Email it to the proposal team so they can file it",
+    "Nothing — it attaches to the matching opportunity automatically, with a timeline note"
+  ]}
+  answer={2}
+  explanation="Every file generated in the Proposal Engine lands on the matching CRM opportunity by itself, with a timeline note recording who generated it and when. The only way to break this is to build the estimate detached from the deal — which is why pricing always starts from the opportunity."
+/>

@@ -8,9 +8,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/venue-services-service-tickets.mp3" />
 
+<LessonMeta time="10 min" audience="Venue Services team" level="Core" accent="services" />
+
 <Shot src="/img/screenshots/crm/t-tickets.png" caption="Service Tickets — every reported issue across your venues, in one list." />
 
 **After this lesson** you'll be able to raise a ticket, assign it, track it to done, and escalate when needed — with everything tied to the right venue.
+
+A ticket is not paperwork. It is the one place where an issue, its owner, its urgency, and its resolution live together — visible to the field, to leadership, and to the client-facing side of the business at the same time. A venue with clean tickets is a venue anyone can cover. A venue with issues living in text threads is a venue only one person can cover, and that person is always you.
+
+<ScenarioBoard
+  title="The ribbon board call"
+  situation="A venue contact calls: a section of the ribbon board is dark, and there is a game in three days. Two other people at the venue have already emailed about it."
+  goal="One ticket on the right venue, an owner assigned, priority set to match the game date, and the duplicate reports folded in."
+  proof="Anyone who opens the venue — in the Service Dashboard or on the CRM Company page — sees one issue, one owner, one status. Nobody works it twice."
+  accent="connected"
+/>
 
 <WorkflowMap
   title="Ticket lifecycle"
@@ -27,33 +39,71 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 Service tickets are **tied back to their account** — so when you open a venue, you see what's been raised, what's open, and what's handled. You're not hunting across systems to figure out the state of a venue.
 
+Every ticket carries the same core anatomy: a title and description, a **priority** (low, medium, high, critical), a **status** that moves from new through in progress to closed, a **category** (hardware, software, content, operational), the **venue** it belongs to, and an **assigned owner**. Priority is not decoration — it drives the response and resolution deadlines the team is measured against, so set it to match reality: a dark board with a game in three days is not "low."
+
+Tickets also arrive on their own. A client emailing the support address, calling the support line and leaving a voicemail, or submitting from their portal page all become tickets automatically — they land in the same list and behave the same way as one you create by hand. Your job on those is triage: confirm the venue is right, set the priority, and get an owner on it.
+
+<WhereThisLives tool="services" path="Service Dashboard → Tickets" />
+
 ## Create a ticket
 
 1. Make a **new ticket**.
 2. Link it to the **venue's account** — that's what keeps everything for the venue together.
-3. Add the issue and any detail.
+3. Add the issue and enough detail that someone else could act on it: what is affected, what the client reported, and any deadline pressure (an event date changes everything).
 
-**Or just ask:** *"Open a ticket for TD Garden about the ribbon board."*
+<PromptCard accent="services" title="Create a ticket by asking" prompt="Open a ticket for TD Garden about the ribbon board." />
 
 ## Assign it
 
-Set the **owner** on the ticket so it's clear who's handling it. Nothing sits unowned, and anyone looking at the venue can see who's on it.
+Set the **owner** on the ticket so it's clear who's handling it. Nothing sits unowned, and anyone looking at the venue can see who's on it. Some tickets get auto-assigned by rule when they arrive; anything the rules don't catch lands in the **unassigned** queue — that queue should be empty by the end of every triage pass.
 
 ## Track its status
 
-Each ticket has a **status** as it moves from open to resolved. Filter your view to **open** to see what's outstanding.
+Each ticket has a **status** as it moves from open to resolved. Move it as the work actually progresses — status is how the rest of the business reads the venue without calling you. Because of <GlossaryTerm term="realTimeCrmSync" />, every status change you make shows up on the CRM Company page in about a second.
 
-**Or just ask:** *"What's still open at TD Garden?"*
+<PromptCard accent="services" title="Check a venue’s open work" prompt="What’s still open at TD Garden?" />
 
 ## See overdue or aging work
 
-Filter your venue view to what's open and sort by age — the open items stay visible instead of slipping.
+Filter your venue view to what's open and sort by age — the open items stay visible instead of slipping. An old open ticket is one of two things: work that stalled, or work that finished without the record being closed. Both need the same fix — open it and make the record match reality.
 
-**Or just ask:** *"What's overdue across my venues?"*
+<PromptCard accent="services" title="Find what’s slipping" prompt="What’s overdue across my venues?" />
 
 ## Escalate
 
-Raise it on the ticket and assign or note it to the right person, so the escalation is **on the record** — not just a hallway conversation. Everyone looking at the venue sees it's been escalated.
+Raise it on the ticket and assign or note it to the right person, so the escalation is **on the record** — not just a hallway conversation. Everyone looking at the venue sees it's been escalated, and if the issue resurfaces in a client conversation, the timeline is already written.
+
+## Close it properly
+
+Closing is where most ticket hygiene dies. A closed ticket with no resolution note is a hole in the venue's history — six months later, when the same display fails again, "what did we do last time?" has no answer. Before you close: state what the fix was, in one or two lines. That sentence is the cheapest documentation you will ever write.
+
+## Common mistakes
+
+<OhShit
+  symptom="The same issue has two or three tickets — the client called, then emailed, then someone on site raised it again."
+  fix="Merge the duplicates into one primary ticket so there is one owner and one thread. The duplicates close automatically and point back to the primary."
+  prevention="Before creating a ticket, glance at the venue’s open list. If the issue is already there, add to it instead of duplicating it."
+/>
+
+<Callout title="Ticket not showing on the Company page?">
+The sync matches by venue. If a ticket's venue doesn't line up with the CRM venue record, its tickets can stop appearing on the Company page. Don't work around it — flag it, and an admin fixes the match on the CRM venue record once. After that, everything flows.
+</Callout>
+
+## What good looks like
+
+Before you move on, your tickets should pass this bar:
+
+<PracticeChecklist
+  title="Ticket quality bar"
+  items={[
+    "Every ticket is linked to the right venue — no orphans.",
+    "Every open ticket has an owner. The unassigned queue is empty after triage.",
+    "Priority matches reality, especially when an event date is in play.",
+    "Status reflects where the work actually is, not where it was last week.",
+    "Closed tickets carry a one-line resolution someone can use next time."
+  ]}
+  accent="services"
+/>
 
 ## Now you try →
 
@@ -61,4 +111,31 @@ Open a venue, create a test ticket linked to it, assign it to yourself, then fil
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[The Account View](/docs/training/venue-services/the-account-view)**.
+## Related lessons
+
+- **[The Account View](/docs/training/venue-services/the-account-view)** — where these tickets appear in the venue's full story.
+- **[Venue Activity](/docs/training/venue-services/venue-activity)** — logging what happened on site, beyond the ticket itself.
+- **[Your Day-to-Day](/docs/training/venue-services/your-day-to-day)** — the daily pass that keeps the queue honest.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "One issue, one ticket, one owner — merge duplicates instead of working them twice.",
+    "Priority drives deadlines; set it to match reality, especially near event dates.",
+    "Tickets arrive on their own too (email, voicemail, portal) — triage them into the same standard.",
+    "A closed ticket without a resolution note is a hole in the venue's history.",
+    "Every ticket change appears on the CRM Company page in about a second — status is how the business reads the venue."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="services"
+  question="A client calls about a dark display, then emails about the same issue an hour later, and a second ticket gets created. What is the right move?"
+  options={[
+    "Work both tickets in parallel so nothing gets missed",
+    "Merge them into one primary ticket with one owner, so there is a single thread",
+    "Close the newer ticket silently and keep the older one"
+  ]}
+  answer={1}
+  explanation="Duplicates split the story and risk two people working the same issue. Merging keeps one owner and one thread, and the duplicate closes automatically with a link back to the primary."
+/>

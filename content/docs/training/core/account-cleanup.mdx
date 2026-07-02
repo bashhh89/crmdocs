@@ -7,9 +7,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-account-cleanup.mp3" />
 
+<LessonMeta time="12 min" audience="Everyone" level="Core" accent="crm" />
+
 <Shot src="/img/screenshots/crm/01-companies.png" caption="The Companies list — this is where you'll spot, review, and merge duplicate accounts." />
 
 **After this lesson** you'll be able to find duplicate and empty accounts, merge the duplicates without losing anything, and know the one move to never make.
+
+Why this lesson exists: years of venue business — migrated history from the legacy CRM, imports, and hand-entered records — leave any account base with look-alikes. The same organization can appear as the team, the venue, and the ownership group, each holding a slice of the real history. That split history has teeth: a bid team pulling references sees half the past projects, a dashboard undercounts an account's value, and two salespeople work the "same" client without knowing it. Cleanup is how the account layer stays worth trusting.
+
+<ScenarioBoard
+  title="The split account"
+  situation="Preparing for a renewal conversation, you notice two Company records for the same arena — one holds the original install opportunity, the other holds the service tickets and the current contacts."
+  goal="Merge them into one keeper record so the full relationship — deals, people, tickets, notes — reads in one place before the renewal call."
+  proof="The keeper account shows both records' opportunities, contacts, and tickets, and the duplicate is gone."
+  accent="crm"
+/>
 
 <DecisionTree
   title="Cleanup safety rule"
@@ -37,12 +49,17 @@ Never ask the AI to merge or "condense" accounts for you in one go. Finding is s
 
 Open the assistant and ask in plain English. Good prompts to copy:
 
-- *"List companies that look like duplicates of each other — same team or venue, slightly different names."*
-- *"Show me every account named something like 'Red Sox' so I can see the duplicates."*
-- *"Which accounts have no opportunities, no contacts, and no tickets?"* (those are your empties)
-- *"Find accounts whose names start with 'OLD' or 'TEST' or are blank."*
+<PromptCard accent="crm" title="Duplicate sweep" prompt="List companies that look like duplicates of each other — same team or venue, slightly different names." />
+
+<PromptCard accent="crm" title="One family of look-alikes" prompt="Show me every account named something like Red Sox so I can see the duplicates." />
+
+<PromptCard accent="crm" title="Find the empties" prompt="Which accounts have no opportunities, no contacts, and no tickets?" />
+
+<PromptCard accent="crm" title="Find the junk names" prompt="Find accounts whose names start with OLD or TEST or are blank." />
 
 The AI gives you a clean list. That list is your worklist — work it top to bottom.
+
+Not everything that looks like a duplicate is one. A team and its venue can legitimately be **separate** accounts (different organizations, different contacts, different contracts). The tell for a true duplicate is the same organization with overlapping history — same contacts appearing on both, deals that obviously belong to one relationship. When in doubt, open both and read before merging.
 
 ## Step 2 — Merge a duplicate, one at a time
 
@@ -54,7 +71,11 @@ This uses the CRM's built-in **Merge** — it keeps one record and folds everyth
 4. The CRM shows the records side by side. **Pick the keeper** — the most complete, correctly-named one — and confirm.
 5. The keeper now holds all the opportunities, people, and tickets from both. The duplicate is removed.
 
+<WhereThisLives tool="crm" path="Companies → select rows → ⋮ menu → Merge" />
+
 <Shot src="/img/screenshots/crm/t-account.png" caption="After a merge, the keeper account holds every opportunity, contact, and ticket from both records — nothing is lost." />
+
+Choosing the keeper: prefer the record with the correct official name, the most complete fields (owner, league, city), and the deeper history. Everything from the other record moves over anyway — you're choosing which name and field set survives.
 
 Then move to the next pair on your list. One at a time is the right speed — it's how you stay sure.
 
@@ -64,6 +85,8 @@ For accounts the AI flagged as truly empty (no opportunities, no people, no tick
 
 1. Open the account and **confirm with your own eyes** that it's genuinely empty.
 2. If it is, delete it from the record's actions menu. Deletes are recoverable for a window, so a mistake isn't fatal — but check first anyway.
+
+An account that is empty **today** isn't automatically junk — it might be a prospect someone just created. If the name looks intentional and recent, ask around before deleting. The confident deletes are the obvious ones: test entries, blanks, and long-dead imports.
 
 ## How to be sure nothing was lost
 
@@ -75,14 +98,48 @@ After a merge, open the keeper and glance at its tabs:
 
 A 10-second check after each merge is all it takes to work with total confidence.
 
+<OhShit
+  symptom="After a merge, the keeper seems to be missing an opportunity you know existed on the duplicate."
+  fix="Do not merge anything else. Search for the opportunity by name or number — it may have been attached to a third look-alike account you have not merged yet. If it is genuinely gone, deletes and merges are recoverable for a window; flag it immediately so it can be restored."
+  prevention="Before merging, note the opportunity and contact counts on both records. After merging, confirm the keeper's counts add up. Ten seconds of arithmetic beats an hour of reconstruction."
+/>
+
 ## The one rule you never break
 
 <Callout type="warn">
 Use the AI to **find**, never to **merge in bulk**. "Condense all the duplicates" is the one command that can quietly damage real records. You stay in control of every merge — that's what keeps the CRM clean *and* safe.
 </Callout>
 
+## What good looks like
+
+A finished cleanup pass means: the assistant's duplicate list is worked to zero or parked with reasons; every merge got its 10-second count check; empty-account deletes were confirmed visually first; and no bulk merge was ever run. The account layer now reads one organization = one record — which is exactly what [bid reference pulls](/docs/training/core/account-info-for-bids) and account-level reporting depend on.
+
 ## Now you try →
 
 Ask the assistant for one set of look-alike accounts, then merge a single pair using the steps above — and do the 10-second check after. That's the whole loop. Once it feels natural, you can work down a full list.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
+
+Related lessons: [Working Standard](/docs/training/core/working-standard) · [Pulling Account Info for References &amp; Bids](/docs/training/core/account-info-for-bids) · [Meet the Assistant](/docs/training/core/meet-the-ai)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The AI finds; you decide. Detection is automated, merging is always human-reviewed.",
+    "Merge one pair at a time with the built-in Merge — the keeper absorbs everything, nothing is lost.",
+    "Verify after every merge: opportunity, people, and ticket counts should add up.",
+    "A team and its venue can be legitimately separate accounts — read before you merge."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="The assistant returns a list of 15 likely duplicate account pairs. What is the correct next move?"
+  options={[
+    "Tell the assistant to merge them all so the list is cleared quickly",
+    "Review each pair yourself and merge them one at a time with the count check after each",
+    "Delete the newer record in each pair since the older one has more history"
+  ]}
+  answer={1}
+  explanation="Finding is automated, merging is human. Each pair gets opened, read, and merged individually — with a 10-second count check after. Bulk merging (or blind deleting) is exactly how legitimate records and their history get damaged."
+/>

@@ -7,11 +7,14 @@ import {Cards, Card} from 'fumadocs-ui/components/card';
 import {Callout} from 'fumadocs-ui/components/callout';
 import {BadgeDollarSign, ClipboardCheck, FileText, Wrench, BarChart3} from 'lucide-react';
 
-# Choose Your Track
 
 <AudioPlayer src="/audio/training/choose-your-track.mp3" />
 
+<LessonMeta time="10 min" audience="Everyone" level="Starter" accent="connected" />
+
 Start with the work in front of you. Then jump to the training that matches it.
+
+Three tools carry the whole operation, and each track teaches one of them plus the seams between them. The **CRM** holds Companies, opportunities, and the pipeline — it is where deals live and where every other system reports back to. The **Proposal Engine** is where RFPs get analyzed, priced, and packaged into one-pagers and SOWs — and everything it generates attaches itself to the right CRM deal automatically. The **Service Dashboard** runs the field — tickets, events, technicians, venue hardware — and mirrors into the CRM in about a second. You do not need to learn all three. You need to learn yours, plus where your work hands off to the next person's.
 
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="The training tracks all connect back to one operating picture: Companies, deals, service work, proposals, and dashboards." />
 
@@ -54,6 +57,26 @@ Start with the work in front of you. Then jump to the training that matches it.
     <span className="mt-4 inline-flex w-fit rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white">Start this track</span>
   </a>
 </div>
+
+Reading the business rather than working a deal? There is a fourth path: the [Executive Summary track](/docs/training/tracks/leadership) teaches dashboards, forecast quality, win/loss reading, and the habit that separates leadership users from everyone else — never quoting a rollup without drilling into the records underneath it. It takes about 20 minutes and assumes nothing.
+
+## How The Work Flows Between Tools
+
+Before picking a track, it helps to see the one flow every track plugs into:
+
+<WorkflowMap
+  title="The connected flow"
+  accent="connected"
+  steps={[
+    "A deal is logged in the CRM — Company, owner, due date, bid status.",
+    "The RFP is analyzed and priced in the Proposal Engine; outputs attach back to the CRM deal automatically.",
+    "The bid goes out, and the deal moves through the Bid Tracker to Won, Lost, or No Bid.",
+    "Won service work runs in the Service Dashboard and mirrors into the CRM in about a second.",
+    "Leadership reads the dashboards that all of the above feeds — without asking anyone for status."
+  ]}
+/>
+
+Every track on this page is a slice of that flow. Sales owns the ends, proposals owns the middle, services owns fulfillment, and leadership reads the whole thing.
 
 ## Badge System
 
@@ -99,6 +122,8 @@ Use these badges to know where the work happens:
 
 - **Yes:** verify the source records before sending.
 - **No:** use the assistant for speed, then clean the record if you find a gap.
+
+The distinction matters because the cost of being wrong is different. An internal number that is slightly off costs a correction in a meeting. A client-facing number that is off costs trust. When the output leaves the building — a proposal figure, a service status, a renewal quote — open the records behind it first. When it stays internal, move fast and fix the data as you go.
 
 <Cards>
   <Card
@@ -181,6 +206,21 @@ Open:
 <abbr title="Scope of Work: the document defining what ANC will deliver.">SOW</abbr>, <abbr title="Request For Proposal: the client's document asking ANC to bid on work.">RFP</abbr>, <abbr title="Exact-fidelity Excel-to-PDF proposal output.">Mirror Mode</abbr>, and <abbr title="Auto-attach behavior that places generated proposal files on the right CRM deal.">Universal CRM Push</abbr> are defined in the [glossary](/docs/glossary).
 </Callout>
 
+### Leadership Scenario
+
+Board call in two hours. You need open pipeline by vertical, this year's realistic forecast, and the renewal runway — and each number has to survive a follow-up question. The dashboards give the rollups; the discipline is drilling into the records behind each one before quoting it.
+
+Open:
+
+1. [Executive Summary](/docs/training/tracks/leadership)
+2. [Leadership: Dashboards](/docs/training/leadership/dashboards)
+3. [Leadership: Forecasting & Pipeline](/docs/training/leadership/forecasting-and-pipeline)
+4. [Core: Asking for Numbers](/docs/training/core/asking-for-numbers)
+
+<Callout title="Where this lives">
+The rollups live on the CRM dashboards. The records that create them live on Companies and opportunities. The verification habit lives in you.
+</Callout>
+
 ## Before / After
 
 The goal of training is not more clicks. It is cleaner work.
@@ -189,13 +229,45 @@ The goal of training is not more clicks. It is cleaner work.
 
 <Shot src="/img/screenshots/crm/t-account.png" caption="After: a clean Company view gives the next person the relationship, opportunities, contacts, notes, and service history in one place." />
 
+That contrast is the whole point of every track on this page. The tools are already connected — proposals attach themselves, service work syncs itself, dashboards read live. What training adds is the human half: records created in the right place, linked to the right Company, updated when the state changes. Ten clean records beat a hundred stale ones, because clean records are the only ones anyone downstream can act on.
+
 ## Outcome Labels
 
 When you are not sure which product name to search for, search by outcome:
 
 - **Price a deal** -> Proposal Engine estimator and Technology proposal lessons.
 - **Build a one-pager** -> Proposal Engine projects and CRM opportunity handoff.
+- **Respond to an RFP end-to-end** -> the [RFP to Win workflow](/docs/training/workflows/rfp-to-win) map.
 - **Track what's broken** -> Service Dashboard tickets and Venue Services Company view.
 - **Check venue health** -> Service Dashboard venue pages and CRM Company history.
+- **Staff tonight's game** -> Service Dashboard events and the technician workflow.
 - **Clean a record** -> Core Working Standard and account cleanup.
 - **Read the business** -> Leadership dashboards and CRM reporting.
+- **Prep a renewal conversation** -> Leadership win/loss plus the Company's service history.
+
+## Your First Week
+
+However you route, the first week looks the same for everyone:
+
+<PracticeChecklist
+  title="Week one, any role"
+  accent="connected"
+  items={[
+    "Finish your track — 20 to 30 minutes, once, properly.",
+    "Do the real version of your track's first scenario on live work.",
+    "Find one record your role depends on and verify it is clean: owner, dates, links.",
+    "Ask Scout one question you would normally ask a colleague, and check the answer against the records.",
+    "Walk one handoff past your own tool — open the CRM deal your proposal attached to, or the Company page your ticket synced to."
+  ]}
+/>
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Pick the track that matches tomorrow morning's task, not your job title.",
+    "The three tools are already wired together — training teaches your slice plus the handoffs.",
+    "Client-facing answers get verified against source records; internal answers optimize for speed.",
+    "The badge colors tell you where work happens: blue proposals, green CRM, orange services, purple handoffs.",
+    "Clean records are the deliverable — every track ends in the same working standard."
+  ]}
+/>

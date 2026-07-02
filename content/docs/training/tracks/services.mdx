@@ -3,13 +3,14 @@ title: Services & Operations
 description: "Triage tickets, staff events, use IoT Operations Workspace, and log walkthroughs."
 ---
 
-# Services & Operations
 
 <AudioPlayer src="/audio/training/track-services.mp3" />
 
+<LessonMeta time="20 min" audience="Service & Operations" level="Core" accent="services" />
+
 <ToolBadge tool="services" />
 
-Triage tickets, staff events, use <GlossaryTerm term="iotOperationsWorkspace" />, and log walkthroughs.
+Triage tickets, staff events, use <GlossaryTerm term="iotOperationsWorkspace" />, and log walkthroughs. The Service Dashboard is where the field actually runs — tickets, events, technicians, venue hardware. The CRM reads from it, about a second behind, so leadership and sales always see live operational truth without ever pinging the ops team. Your rule of thumb: do the work in the Service Dashboard, let the CRM catch up on its own.
 
 <Shot src="/img/screenshots/service-dashboard/03-tickets-list.png" caption="Service Dashboard is the working surface for tickets, assignments, events, and operations queues." />
 
@@ -28,9 +29,17 @@ Fields to set:
 - description = Display 3 section 110 flickering
 - category = HARDWARE
 
-**What happens automatically:** the ticket appears on the CRM Company record in about a second through <GlossaryTerm term="realTimeCrmSync" />.
+**Why each field matters:** priority is not decoration — it drives the response and resolution deadlines on the ticket, so a high-priority game-day issue gets a tighter clock than a Tuesday cosmetic fix. Category routes the ticket: when an auto-assignment rule matches the category and venue, the ticket lands on the right technician without a dispatcher touching it. If no rule matches, it goes to the Unassigned queue — which someone must be watching on game day.
+
+Write the description for the technician who has not seen the display: what is wrong, where exactly, since when, and what the client already tried. "Board broken" costs a phone call; "Display 3, section 110, flickering intermittently since doors, power-cycled once by venue staff" does not.
+
+**What happens automatically:** the ticket appears on the CRM Company record in about a second through <GlossaryTerm term="realTimeCrmSync" />. Every later change — status, assignment, resolution — syncs the same way. Sales sees the full service history before the next renewal conversation, and nobody ever forwards a ticket screenshot to leadership.
+
+<PromptCard accent="services" title="Check the open load on a venue" prompt="Show open tickets for this venue sorted by priority, with assignee and status." />
 
 <WhereThisLives tool="services" path="Service Dashboard -> Tickets -> New Ticket" />
+
+**Common mistake:** working the issue and logging the ticket afterward. If it is not in the system, there is no deadline clock, no assignment, and no record on the account when someone asks in June what happened in February. Log first, fix second.
 
 ## Scenario 2: IoT Operations Workspace
 
@@ -42,13 +51,19 @@ Open Service Dashboard -> Venues -> venue -> <GlossaryTerm term="iotOperationsWo
 
 What is there:
 
-- Displays grid
+- Displays grid — installed displays, physical locations, model details, status
 - Rack/device notes with IP addresses
-- Walkthrough logs
-- Maintenance schedule rows
+- Walkthrough logs — inspection visits, results, follow-up status
+- Maintenance schedule rows — affected equipment, assigned techs, resolution notes
 - Forms and operational documents
 
-**CRM link:** this data can surface on the Company record, but editing happens in the Service Dashboard.
+**Which surface for which job:** the Operations Workspace is for table-first operational records — what hardware exists, where it is, what state it is in, what the field team observed. Tickets are for support cases with a deadline, a client, and a resolution. Venue settings are for the venue record itself. If you are logging a walkthrough, that is the workspace. If the walkthrough found a dead display that needs fixing this week, that finding becomes a ticket too — the walkthrough row is the observation, the ticket is the action.
+
+**CRM link:** this data can surface on the Company record, but editing happens in the Service Dashboard. Never try to fix an operational record from the CRM side — the dashboard is the source of truth and the CRM is the mirror.
+
+**What good looks like:** every venue visit leaves a walkthrough row the same day, with follow-up status set. Six months of consistent walkthrough logs is what turns "I think that rack has been flaky" into a documented pattern the client will pay to fix.
+
+<WhereThisLives tool="services" path="Field Ops -> Operations Workspace" />
 
 ## Scenario 3: Event Staffing Workflow
 
@@ -61,31 +76,92 @@ Open Service Dashboard -> Events -> event -> Assign Technician.
 The workflow:
 
 1. Check-in: tech arrives on-site.
-2. Game-ready: equipment checked, boards operational.
-3. Post-game report: event ended, issues logged.
+2. Game-ready: equipment checked, boards operational, content loaded.
+3. Post-game report: event ended, issues logged, equipment status recorded.
+
+The platform runs the follow-up for you. Assigned techs get an automatic reminder hours before the event; if the tech has not checked in as the event approaches, the reminders escalate to managers, and a missing check-in at start time raises a critical alert. You do not need to babysit the board — you need to react when an escalation actually fires.
+
+The post-game report matters more than it looks. It stays editable for roughly a day after submission, then locks and becomes the canonical record of the event. If a display failed during the third quarter and the report does not say so, that failure never happened as far as the account history is concerned.
 
 **Scout status check:**
 
-```text
-Show events today needing technicians.
-```
+<PromptCard accent="services" title="Find tonight's gaps" prompt="Show events today needing technicians." />
+
+<PromptCard accent="services" title="Check workflow status before tip-off" prompt="Show tonight's events with technician assignment and workflow status." />
+
+**Common mistake:** assigning the tech and considering the job done. Assignment is step zero — the workflow statuses are what tell you the venue is actually covered, ready, and reported on.
 
 ## Cross-Tool Handoff
 
-```text
-Ticket created in Service Dashboard
-  -> Surfaces in CRM Company record for context
-  -> Sales sees ticket history before renewal conversations
-  -> Resolved in Service Dashboard
-  -> CRM timestamp updates automatically
-```
+<WorkflowMap
+  title="How field work becomes account history"
+  accent="connected"
+  steps={[
+    "Ticket or event created in the Service Dashboard.",
+    "It appears on the CRM Company record in about a second.",
+    "Sales and leadership read live status without asking the ops team.",
+    "Work is resolved in the Service Dashboard — never edited from the CRM side.",
+    "The resolved history compounds into the account story used at renewal time."
+  ]}
+/>
 
 <OhShit
   symptom="Ticket is not showing in CRM"
   fix="Check that you are in the ANC app, not Standard. Service history syncs to the ANC app."
+  prevention="Confirm the app switcher says ANC before concluding data is missing."
+/>
+
+<OhShit
+  symptom="A venue's tickets and events never appear on its CRM Company"
+  fix="The venue names do not match between the two systems, so the sync cannot pair them. Fix it on the CRM side: open the venue record and fill in its Service Dashboard ID — that is the explicit match key."
+  prevention="When a new venue is set up, verify one test ticket lands on the CRM Company before game day."
 />
 
 <OhShit
   symptom="Can't find the venue IP schema"
   fix="Open IoT Operations Workspace -> Rack Notes, not the general venue info."
+  prevention="Hardware detail lives in the Operations Workspace; the venue record only holds venue-level settings."
+/>
+
+## Keep Going
+
+- [Venue Services: Service Tickets](/docs/training/venue-services/service-tickets) — ticket handling in depth.
+- [Venue Services: Your Day-to-Day](/docs/training/venue-services/your-day-to-day) — the daily operating rhythm.
+- [Venue Services: The Account View](/docs/training/venue-services/the-account-view) — how your work reads from the CRM side.
+- [Service Dashboard: Workflows](/docs/service-dashboard/features/workflows) — the check-in flow and reminder tiers in detail.
+- [Service Dashboard: IoT Operations Workspace](/docs/service-dashboard/features/iot-operations-workspace) — full workspace reference.
+
+<PracticeChecklist
+  title="Prove it to yourself"
+  accent="services"
+  items={[
+    "Create a test-safe ticket with venue, priority, category, and a description a stranger could act on.",
+    "Open the venue's CRM Company record and watch the ticket appear.",
+    "Find the rack notes and last walkthrough row for one venue in the Operations Workspace.",
+    "Assign a technician to an event and walk the three workflow statuses.",
+    "Run the events-needing-technicians prompt and read tonight's coverage."
+  ]}
+/>
+
+<KeyTakeaways
+  accent="services"
+  items={[
+    "Log first, fix second — an unlogged issue has no clock, no owner, and no account history.",
+    "Priority drives deadlines and category drives auto-assignment; set both deliberately.",
+    "Operations Workspace is for observations and hardware records; tickets are for actions with deadlines.",
+    "Everything syncs to the CRM in about a second — but editing always happens in the Service Dashboard.",
+    "The post-game report locks after about a day and becomes the permanent record — write it like it will be read at renewal time."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="services"
+  question="A walkthrough finds a dead display that must be fixed before Saturday. Where does that work get tracked?"
+  options={[
+    "Only in the walkthrough log — it is already recorded there",
+    "In a ticket, with the walkthrough row kept as the observation record",
+    "In the CRM, on the Company page"
+  ]}
+  answer={1}
+  explanation="The walkthrough row records what was observed; a ticket creates the deadline, assignment, and resolution tracking. The CRM mirrors both automatically — it is never the editing surface."
 />

@@ -7,13 +7,23 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-whats-new-june-2026.mp3" />
 
-# What's New: June 2026
+<LessonMeta time="8 min" audience="Everyone" level="Core" accent="connected" />
 
 You do not need to learn a new CRM. The useful changes are mostly small quality-of-life improvements: smoother tables, better search, stronger assistant behavior, cleaner workflows, and more stable email/calendar activity.
+
+Why we publish these notes at all: the platform gets improved continuously, and most updates should be invisible — things simply feel faster and break less. But a few changes are worth two minutes of your attention, either because a label changed, because something you share with clients looks different, or because a capability you asked for quietly arrived. This page is that two minutes for June.
 
 <Callout title="Same workflow">
 Keep using the same pages, views, and dashboards. This page is just a heads-up on what should feel better.
 </Callout>
+
+<ScenarioBoard
+  title="After the update"
+  situation="You log in Monday after an update note went out. A client page link is scheduled to go to a team partner this week, and your saved views are your working queue."
+  goal="Spend two minutes confirming your daily surfaces — views, search, client pages, the assistant — behave the way you expect, before the week leans on them."
+  proof="You know what changed, nothing in your routine surprised you, and the client-facing page went out looking right."
+  accent="connected"
+/>
 
 <PracticeChecklist
   title="What to check after the update"
@@ -28,6 +38,10 @@ Keep using the same pages, views, and dashboards. This page is just a heads-up o
 
 ## What You Should Notice
 
+### "Deals" Now Read "Opportunities"
+
+The label on deal records was aligned with the word everyone actually uses: **Opportunities** — same as the legacy system everyone came from. Navigation, record pages, and search results all show the new label. Nothing else changed: the records, fields, views, and history are identical, and every saved view still works. If you see an older saved view still named with "Deals," it points at the same records — only the object label was updated.
+
 ### Client Pages Look Like ANC Pages Now
 
 Client-facing Pages now use ANC branding consistently. The page header shows ANC on the left and the client/account identity on the right. If a client logo is stored on the Page, it can render there; if not, the Page shows clean initials based on the account name.
@@ -40,6 +54,8 @@ What this means for users:
 - Copy Link still works.
 - Sections still expand and collapse.
 - Mobile viewing has been checked.
+
+This is worth caring about because Pages travel outside the building — a shared proposal or account page might be the most-seen ANC surface a client touches between meetings. Open one of yours on your phone before sending it; that's the view the client is most likely to have.
 
 <Shot src="/img/screenshots/crm/pages-red-sox-branded-desktop.png" caption="Desktop client page with ANC branding and account identity visible in the header." />
 
@@ -55,7 +71,7 @@ The in-CRM guide launcher now sits as a side rail beside the app instead of a bo
 
 Saved views, filters, record tables, and search received improvements. For ANC, this matters because most day-to-day work happens in filtered views like proposal pipeline, active opportunities, account lists, and dashboard drilldowns.
 
-Users should still open the same pages, but lists should feel less fragile when filtering, sorting, or moving columns.
+Users should still open the same pages, but lists should feel less fragile when filtering, sorting, or moving columns. Searching by opportunity number (for example a deal referenced as `107607` in an email) continues to work alongside name search — if you haven't built that habit yet, [Finding Anything Fast](/docs/training/core/finding-anything) covers it.
 
 <Shot src="/img/screenshots/crm/t-all-deals.png" caption="Cleaner lists matter because most CRM work starts from filtered record views like all deals, active opportunities, and owner-specific queues." />
 
@@ -65,10 +81,15 @@ The update includes assistant reliability improvements. This should help Scout w
 
 Good things to ask after rollout:
 
-- "Show me my open opportunities."
+<PromptCard accent="crm" title="Post-update smoke test" prompt="Show me my open opportunities." />
+
 - "Which proposals are due this week?"
 - "Give me the top open deals by value."
 - "Enrich this contact, but only update sourced fields."
+
+If an answer ever looks off after an update, the check is the same as always — ask for the records behind it:
+
+<PromptCard accent="crm" title="Verify an answer" prompt="Show me the source records behind that answer." />
 
 <Shot src="/img/screenshots/crm/openanc-guide-side-rail.png" caption="Assistant and guide surfaces support the same goal: get users to the right record, action, or answer faster." />
 
@@ -83,6 +104,8 @@ Examples this can support:
 - closed-won digests
 - load-balanced assignments
 - intake follow-up
+
+If one of those sounds like something your team needs, that's a Bucket 2 ask — see [What's Possible](/docs/training/core/whats-possible) for how to raise it well.
 
 ### Email and Calendar Activity Should Be Better
 
@@ -103,6 +126,14 @@ Before changes are announced as ready, the team checks:
 9. App widgets and command actions
 10. Email and calendar activity
 
+That list is why "what's new" notes stay short: the update is verified against the real daily surfaces before anyone is told about it. Your job after an update is small — run your own two-minute version of the same check on the views and pages *you* rely on.
+
+## If Something Looks Wrong
+
+<Callout type="warn" title="Report it with the specifics">
+If a view, page, or assistant answer misbehaves after an update, don't work around it silently — report it with the record link, what you expected, and what you saw. One good report gets an issue fixed for everyone; a quiet workaround leaves it broken for the next person. And remember the standing rule: if a *number* looks wrong, check the source records first — data issues and platform issues look identical until you open the record.
+</Callout>
+
 ## Client Page Ideas Being Considered
 
 These are not all live yet. They are the next client-experience layer the team is evaluating for Pages:
@@ -115,3 +146,29 @@ These are not all live yet. They are the next client-experience layer the team i
 6. Side-by-side option comparisons.
 7. Project progress trackers.
 8. Real-time viewing signals after privacy and logging rules are defined.
+
+If one of these would change how you work with clients, say so — the order this list gets built in is driven by who asks for what, with which account in hand.
+
+Related lessons: [What's Possible](/docs/training/core/whats-possible) · [Finding Anything Fast](/docs/training/core/finding-anything) · [Meet the Assistant](/docs/training/core/meet-the-ai)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "No new CRM to learn — same pages, views, and dashboards, mostly feeling smoother.",
+    "Deal records are now labeled Opportunities; the records and views underneath are unchanged.",
+    "Client-facing Pages carry consistent ANC branding — check yours on mobile before sharing.",
+    "After any update, run your own two-minute check on the views and surfaces you rely on, and report issues with specifics."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="After the June update, a saved view you use is still named with the old word 'Deals'. What does that mean?"
+  options={[
+    "The view is broken and its records were lost in the update",
+    "Only the object label changed — the view points at the same Opportunity records and works as before",
+    "You must rebuild the view from scratch under the new name"
+  ]}
+  answer={1}
+  explanation="The June change was a relabel: deal records now display as Opportunities everywhere, but the underlying records, fields, and saved views are untouched. An older view name is cosmetic — it still opens the same working list."
+/>

@@ -5,15 +5,16 @@ description: "For deal owners and Technology users: price work, keep pipeline cl
 
 import {Callout} from 'fumadocs-ui/components/callout';
 
-# Sales / Technology
 
 <AudioPlayer src="/audio/training/technology-index.mp3" />
+
+<LessonMeta time="8 min" audience="Technology team" level="Starter" accent="proposals" />
 
 <span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
 <span className="inline-flex rounded-full bg-sky-100 px-2 py-1 text-xs font-semibold text-sky-800">PROPOSALS</span>{' '}
 <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
 
-It is Thursday. The Hornets ask for budget direction on a new LED board, and the RFP follow-up is due Monday. You need to know whether the Company exists, what stage the deal is in, whether pricing is complete, and what proposal work is already attached.
+It is Thursday. The Hornets ask for budget direction on a new LED board, and the RFP follow-up is due Monday. You need to know whether the Company exists, what stage the deal is in, whether pricing is complete, and what proposal work is already attached. If you can answer those four questions in under two minutes, you are operating at the level this track trains for. If any of them sends you into an email search or a shared drive, this track will pay for itself in the first week.
 
 <div className="my-4 rounded-lg border p-4">
   <div className="mb-2 text-sm font-semibold">Track progress</div>
@@ -49,28 +50,60 @@ You are learning how to:
 5. **Read your dashboard** - know what is booked, forecasted, stale, or missing.
 
 <Callout title="Where this lives">
-The opportunity, Company, owner, stage, <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr>, and dashboard live in the CRM. Pricing and proposal generation live in the Proposal Engine. Generated files attach back to the CRM opportunity.
+The opportunity, Company, owner, stage, <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr>, and dashboard live in the CRM. Pricing and proposal generation live in the Proposal Engine. Generated files attach back to the CRM opportunity automatically.
 </Callout>
+
+## How a Technology deal actually flows
+
+Every deal on this desk moves through the same bid flow, and the whole company reads its position from one field — <GlossaryTerm term="bidStatus" />:
+
+**RFP Received → Scoping → Bid Submitted → Shortlisted → Won / Lost / No Bid**
+
+Two systems carry the deal through that flow, and the handoff between them is the part most new team members get wrong:
+
+- **The CRM** holds the record of truth: the Company, the opportunity, the owner, the amounts, the due dates, and every document that has ever gone to the client.
+- **The Proposal Engine** is where pricing happens: estimates, one-pagers, SOWs, and full proposals. When you generate a file there, it attaches itself to the matching CRM opportunity — that is <GlossaryTerm term="universalCrmPush" /> doing its job. Nobody uploads anything by hand.
+
+The practical consequence: if your CRM record is clean, everything downstream — the proposal queue, the forecast, the leadership dashboard — is clean too. If your record is stale, you are the reason a number on someone else's screen is wrong. That is the whole discipline of this track in one sentence.
 
 ## Day 1 / Day 30 / Reference
 
 - **Day 1:** find a Company, open an opportunity, understand stage, owner, amount, close date, and next step.
-- **Day 30:** keep your pipeline clean, know which deals need pricing, and explain what changed this week.
+- **Day 30:** keep your pipeline clean, know which deals need pricing, and explain what changed this week without preparing anything.
 - **Reference as needed:** proposal artifacts, SOW handoff, dashboard interpretation, win/loss cleanup.
 
-## Scout Prompts
+## The daily ten minutes
 
-```text
-Open the Hornets Company and show me open Technology opportunities.
-```
+The habit that separates a clean operator from someone who gets chased for status updates is a short, fixed pass every morning:
 
-```text
-Which of my open Technology deals are missing close date, amount, next step, or Bid Status?
-```
+1. Open **Proposal Pipeline** — it is sorted by what is due, so the top of the list is your day.
+2. Scan your deals for anything missing: owner, close date, amount, next step, Bid Status.
+3. Fix what you see. A blank due date or a stale stage takes ten seconds to correct and hours to chase later.
+4. Glance at the **Technology** tab of the company dashboard to confirm your changes rolled up.
 
-```text
-Show me deals where Pricing Complete is missing but the proposal due date is within 7 days.
-```
+Ten minutes. That is the whole tax. Everything else in this track builds on that pass.
+
+## Ask instead of clicking
+
+Every number and record in this track can also be pulled by asking Scout, the assistant inside the CRM:
+
+<PromptCard
+  accent="proposals"
+  title="Open a Company’s Technology deals"
+  prompt="Open the Hornets Company and show me open Technology opportunities."
+/>
+
+<PromptCard
+  accent="proposals"
+  title="Find the gaps in your own pipeline"
+  prompt="Which of my open Technology deals are missing close date, amount, next step, or Bid Status?"
+/>
+
+<PromptCard
+  accent="proposals"
+  title="Catch pricing that is about to be late"
+  prompt="Show me deals where Pricing Complete is missing but the proposal due date is within 7 days."
+/>
 
 ## What You'll Learn Here
 
@@ -84,9 +117,21 @@ Show me deals where Pricing Complete is missing but the proposal due date is wit
 
 ## Quick Glossary
 
-- <abbr title="Where a deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.">Bid Status</abbr> - where the deal sits in the bid flow.
-- <abbr title="A flag that means proposal pricing has been generated and is ready for review or client movement.">Pricing Complete</abbr> - the deal has generated pricing output.
+- <GlossaryTerm term="bidStatus" /> - where the deal sits in the bid flow: RFP Received, Scoping, Bid Submitted, Shortlisted, Won, Lost, or No Bid.
+- <GlossaryTerm term="pricingComplete" /> - the deal has generated pricing output, ready for review or client movement.
+- <GlossaryTerm term="mirrorMode" /> - the Proposal Engine mode that reproduces pricing documents exactly, line for line.
+- <GlossaryTerm term="universalCrmPush" /> - generated files land on the right CRM deal automatically, no manual upload.
 - <abbr title="Scope of Work: the document defining what ANC will deliver.">SOW</abbr> - what ANC will deliver.
 - <abbr title="Request For Proposal: the client's document asking ANC to bid on work.">RFP</abbr> - the client's bid request.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The CRM is the record of truth; the Proposal Engine is where pricing happens; generated files attach back to the deal by themselves.",
+    "Bid Status is the one field the whole company reads: RFP Received through Won, Lost, or No Bid.",
+    "A ten-minute morning pass over Proposal Pipeline keeps you off everyone's chase list.",
+    "Every lookup in this track has an ask-the-assistant version — clicking is optional, accuracy is not."
+  ]}
+/>
 
 Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

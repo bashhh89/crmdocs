@@ -8,9 +8,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/technology-your-dashboard.mp3" />
 
+<LessonMeta time="10 min" audience="Technology team" level="Core" accent="proposals" />
+
 <Shot src="/img/screenshots/crm/t-dashboard-technology.png" caption="Your Technology tab — pipeline value, deal count, and win rate at a glance." />
 
 **After this lesson** you'll be able to read your Technology numbers without opening a spreadsheet — and pull any of them with a single question.
+
+The dashboard is where all the discipline from the earlier lessons pays out. Every stage you kept current, every won deal you closed properly, every due date you set — it all rolls up here into numbers leadership actually plans against. Reading the dashboard well means two things: knowing where each number comes from, and knowing how to check the records behind it before you repeat it in a meeting. A number you can defend is worth ten you can only quote.
 
 <DecisionTree
   title="Read the dashboard"
@@ -23,33 +27,100 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="leadership"
 />
 
+<ScenarioBoard
+  title="The quarter-end question"
+  accent="connected"
+  situation="Quarter close is Friday. Your lead asks: where does Technology stand on booked revenue, what is still forecast to land, and which two open deals matter most?"
+  goal="Answer all three from the Technology dashboard tab and the top-deals view in under five minutes, and be ready to open the underlying records if anyone pushes on a number."
+  proof="You give booked, forecast, and the two biggest open deals — and when someone questions the forecast, you open the deals behind it instead of guessing."
+/>
 
 ## Your tab on the dashboard
 
-The **ANC 2026 Company Dashboard** has a tab per vertical. Open the **Technology** tab and you see your booked revenue, margin, and forecast — your side only, not the whole company's.
+The **ANC 2026 Company Dashboard** has a tab per vertical — Company Overview, then Technology, Venue Services, and Media & Sponsorship. Open the **Technology** tab and you see your booked revenue, margin, and forecast — your side only, not the whole company's.
 
-**Or just ask:** *"How much Technology revenue have we booked this year?"*
+<WhereThisLives tool="crm" path="Dashboards → ANC 2026 Company Dashboard → Technology tab" />
+
+Know what feeds each number: **booked** comes from deals marked Won, **forecast** comes from open deals weighted by their probability, and margin comes from the pricing on the records. Deals often span fiscal years, so revenue and margin are tracked per year on each deal — which is why a single win can move more than one year's line.
+
+<PromptCard
+  accent="proposals"
+  title="Booked, in one question"
+  prompt="How much Technology revenue have we booked this year?"
+/>
 
 ## Your biggest open deals
 
-There's a **top open deals** view, and you can sort your pipeline by value. Use it to make sure the deals that matter most are getting your attention.
+There's a **top open deals** view, and you can sort your pipeline by value. Use it to make sure the deals that matter most are getting your attention — the top five open deals usually carry more weight than the next dozen combined. Grouped pipeline views also show live counts and revenue sums per group, with a totals row that recomputes as you filter — so "how much is sitting in Scoping" is a glance, not an export.
 
-**Or just ask:** *"What are my biggest open opportunities right now?"*
+<PromptCard
+  accent="proposals"
+  title="Where the money is"
+  prompt="What are my biggest open opportunities right now?"
+/>
 
 ## Comparing how you're tracking
 
-The dashboards let you look across periods, so you can see the trend — not just today's snapshot.
+The dashboards let you look across periods, so you can see the trend — not just today's snapshot. Win/loss reporting can also be cut by **league** — every deal carries one, inherited from its Company — which is how you answer "how do we do in NBA arenas versus NCAA" with data instead of anecdotes.
 
-**Or just ask:** *"Compare this quarter's Technology pipeline to last quarter."*
+<PromptCard
+  accent="proposals"
+  title="Trend, not snapshot"
+  prompt="Compare this quarter’s Technology pipeline to last quarter."
+/>
 
 <Callout title="The fastest way to any number">
 You rarely need to hunt for a report. Ask the assistant — *"how much have I won this quarter?"* or *"what's the Technology forecast for this year?"* — and it pulls the figure straight from the live data.
 </Callout>
 
+## When a number looks wrong
+
+Do not repeat a surprising number and do not silently distrust it — open the records behind it.
+
+<OhShit
+  symptom="The Technology rollup looks lower than the deals you know are out there."
+  fix="Check for deals missing their business unit. A deal without Technology set on it exists, but it rolls up into no vertical — it is invisible to your tab. Filter open deals for a blank business unit, fix yours, and watch the rollup correct itself."
+  prevention="Set the business unit at deal creation, every time. The dashboard can only sum what the records declare."
+/>
+
+The same logic applies to a forecast that looks too rich: it is usually stale open deals that should have been marked Lost or No Bid, or probabilities nobody has honestly revisited. The dashboard is never wrong on its own — it is an exact mirror of the records. Fix the records and the number fixes itself.
+
+## What good looks like
+
+The bar for this lesson: you can state booked, forecast, and your two biggest open deals from memory of this morning's glance; you know which records feed each number; and when a figure surprises you, your reflex is to open the deals behind it — not to guess, and not to quote it anyway. That reflex is what makes you the person whose numbers the room trusts.
+
 ## Now you try →
 
-Open the **Technology** dashboard tab, then ask the assistant for one number you'd normally dig for.
+Open the **Technology** dashboard tab, then ask the assistant for one number you'd normally dig for — and open one record behind it to see the connection.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
+Related lessons:
+
+- [Your Pipeline](/docs/training/technology/pipeline) — the hygiene that keeps these numbers true.
+- [Managing Your Deals](/docs/training/technology/managing-your-deals) — why honest statuses make honest dashboards.
+- [Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates) — the queue feeding next quarter's booked line.
+
 That's the Technology track. Anything you forget, the assistant has your back — just ask.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The Technology tab shows your vertical only: booked from won deals, forecast from open deals weighted by probability.",
+    "Top open deals deserve disproportionate attention — sort by value and check them daily.",
+    "The dashboard mirrors the records exactly — when a number looks wrong, fix the records, not the chart.",
+    "Any figure on the dashboard can be pulled by asking the assistant, straight from live data."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="proposals"
+  question="The Technology booked-revenue number looks too low, but you know the wins are real. What is the first thing to check?"
+  options={[
+    "Whether the dashboard needs to be rebuilt for the new quarter",
+    "Whether some won deals are missing their Technology business unit, so they roll up into no vertical",
+    "Whether the forecast weighting changed"
+  ]}
+  answer={1}
+  explanation="The dashboard is an exact mirror of the records. A won deal without its business unit set exists but rolls up into no vertical tab — fix the field on the records and the number corrects itself. Booked revenue comes from won deals; forecast weighting has nothing to do with it."
+/>

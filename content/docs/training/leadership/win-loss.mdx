@@ -8,9 +8,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/leadership-win-loss.mp3" />
 
+<LessonMeta time="10 min" audience="Leadership" level="Core" accent="leadership" />
+
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Won revenue and margin — the same dashboard, read for results." />
 
-**After this lesson** you'll be able to read win rates by league, spot where you're strong, and pull references for a pitch.
+**After this lesson** you'll be able to read win rates by league, spot where the business is strong, and pull comparable past wins as references for a live pitch.
+
+Pipeline tells you what might happen; win/loss tells you what actually did. It is the closest thing leadership has to a scoreboard on bid strategy: where the company wins, where it loses, and where it walks away. Read regularly, it answers questions that pipeline never can — should we keep bidding in this league, is our win rate trending the right way, and what does a winnable deal look like for us.
 
 <WorkflowMap
   title="Win/loss read"
@@ -23,26 +27,81 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="leadership"
 />
 
-## Win/Loss by league
+## A realistic scenario
 
-There's a **win-and-loss view by league**, so you can see win rates and patterns across MLB, NBA, NFL, NCAA, and the rest — useful both for spotting where you're strongest and for case-study pulls.
+<ScenarioBoard
+  title="The reference pull"
+  accent="connected"
+  situation="The team is pitching a major NBA arena next month. The prospect asks the standard question: who else like us have you done this for?"
+  goal="Pull the comparable won NBA deals — similar scale, similar scope — and hand the pitch team two or three named references with real numbers behind them."
+  proof="The references come from won records in the system, with values and dates you can stand behind, not from memory of what someone thinks we won."
+/>
 
-**Or just ask:** *"What's our RFP win rate by league this year?"*
+## The click path
+
+<WhereThisLives tool="crm" path="ANC app → Views → Win/Loss by League" />
+
+1. Open the **Win/Loss by League** view. It holds resolved deals — won, lost, and no-bid — with the league on every row, so you can read outcomes across MLB, NBA, NFL, NCAA, and the rest.
+2. Filter by fiscal year to read one period, or compare periods to see the trend. A win rate is only meaningful against time.
+3. Read the three outcomes separately. **Won versus lost** is your competitive win rate. **No-bid** is a different signal — it is deliberate selectivity, and folding it into the loss column understates how well the team competes.
+4. Drill into losses in any league where the rate looks weak. The records show which deals, at what value, against what scope — that is where the pattern lives.
+5. For references, filter to won deals in the relevant league and sort by value.
+
+## The ask path
+
+<PromptCard accent="leadership" title="Win rate by league" prompt="What is our RFP win rate by league this year?" />
+
+<PromptCard accent="leadership" title="Trend read" prompt="Compare our win rate this fiscal year to last — by league, and flag any league that moved sharply." />
+
+<PromptCard accent="leadership" title="Reference pull" prompt="Show me our won NBA deals over $1M." />
 
 ## Why it stays accurate
 
-This only works if deals are marked **won / lost / no-bid** as they resolve — which is the habit the vertical teams learn in their tracks. When that's kept current, the win/loss picture is real, not guesswork.
+This only works if deals are marked **won / lost / no-bid** as they resolve — the <GlossaryTerm term="bidStatus" /> habit the vertical teams learn in their tracks. When that is kept current, the win/loss picture is real, not guesswork. When it is not, the picture skews in a predictable direction: wins get recorded (someone has to invoice them), losses linger as open deals — so an inflated open pipeline and a flattering win rate are two symptoms of the same hygiene problem.
 
-## Pulling a reference
+<OhShit
+  symptom="The win rate looks implausibly high, or the number of resolved deals looks thin for the period."
+  fix="Check for aging open deals that were actually decided months ago. Ask the assistant for open opportunities with past close dates and no activity — those are usually unrecorded losses. Route them to the owning teams to resolve."
+  prevention="Make outcome-marking part of the deal-close ritual in every vertical, and spot-check the resolved count against what you know went out the door each quarter."
+/>
 
-Filter won deals by league or type to find comparable past wins — handy when you need a reference or a case study for a new pitch.
+<Callout title="Small denominators">
+A league with four resolved bids this year does not have a meaningful win rate — one deal swings it 25 points. Before quoting a percentage, glance at the count behind it. For thin leagues, talk in deals, not percentages.
+</Callout>
 
-**Or just ask:** *"Show me our won NBA deals over $1M."*
+## What good looks like
+
+- You can quote the win rate for the top leagues and say whether it is trending up or down.
+- You read no-bid as strategy, not failure — and you notice if the team stops saying no.
+- Any percentage you present comes with its denominator; thin samples get framed as counts.
+- When a pitch needs a reference, the pull takes five minutes and every name on it is backed by a won record.
 
 ## Now you try →
 
-Open the win/loss view, pick a league, and read the win rate — then ask the assistant for the won deals behind it.
+Open the win/loss view, pick a league, and read the win rate — then ask the assistant for the won deals behind it, and check the count before you trust the percentage.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Exporting & Asking](/docs/training/leadership/exporting-and-asking-the-assistant)**.
+Related lessons: [The Dashboards](/docs/training/leadership/dashboards) · [Exporting & Asking](/docs/training/leadership/exporting-and-asking-the-assistant) · [RFP to Win (Workflow)](/docs/training/workflows/rfp-to-win)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Win/loss is the scoreboard on bid strategy: read it by league and by period, not as one lifetime number.",
+    "Won, lost, and no-bid are three different signals — no-bid is selectivity, not failure.",
+    "A win rate is only as honest as the outcome-marking habit behind it; unrecorded losses flatter the number.",
+    "Won records double as your reference library — filter by league and value when a pitch needs proof."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="leadership"
+  question="A league shows a 75% win rate this fiscal year, based on four resolved bids. How should you present that?"
+  options={[
+    "Quote the 75% — the system calculated it from real records",
+    "Say we won three of four bids in that league — the sample is too small for a percentage to carry weight",
+    "Exclude the league from the review entirely"
+  ]}
+  answer={1}
+  explanation="With four resolved bids, a single deal moves the rate by 25 points. Small denominators get framed as counts, not percentages — the data is real, but the percentage overstates its precision."
+/>

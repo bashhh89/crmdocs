@@ -3,19 +3,19 @@ type Tool = 'proposals' | 'crm' | 'services' | 'connected';
 const styles: Record<Tool, { label: string; className: string }> = {
   proposals: {
     label: 'PROPOSALS',
-    className: 'bg-[#dbeafe] text-[#1e40af]',
+    className: 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200',
   },
   crm: {
     label: 'CRM',
-    className: 'bg-[#dcfce7] text-[#166534]',
+    className: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200',
   },
   services: {
     label: 'SERVICES',
-    className: 'bg-[#ffedd5] text-[#9a3412]',
+    className: 'bg-orange-100 text-orange-800 dark:bg-orange-900/60 dark:text-orange-200',
   },
   connected: {
     label: 'CONNECTED',
-    className: 'bg-[#f3e8ff] text-[#7c3aed]',
+    className: 'bg-violet-100 text-violet-800 dark:bg-violet-900/60 dark:text-violet-200',
   },
 };
 

@@ -7,9 +7,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/venue-services-venue-activity.mp3" />
 
-<Shot src="/img/screenshots/crm/t-all-deals.png" caption="Deals across every venue — filter down to the activity that's yours." />
+<LessonMeta time="10 min" audience="Venue Services team" level="Core" accent="services" />
+
+<Shot src="/img/screenshots/crm/t-all-deals.png" caption="Deals across every venue — filter down to the activity that’s yours." />
 
 **After this lesson** you'll be able to read a venue's history, log what happened on a visit, and make sure recurring service never quietly drops off.
+
+Tickets tell you what is broken. Activity tells you what is *happening* — the events on the calendar, the visits your team made, the maintenance that keeps failures from happening in the first place. A venue with a rich activity trail is a venue whose next problem you can often see coming. A venue with a thin one is a venue where every incident is a surprise.
+
+<ScenarioBoard
+  title="The repeat failure"
+  situation="A display at a venue fails. It feels familiar, but nobody on shift today was there the last time."
+  goal="Read the venue’s activity trail — past tickets, walkthrough notes, and maintenance history — before deciding on the fix."
+  proof="You find the same display failed twice before, spot what was tried, and escalate a permanent fix instead of applying the same patch a third time."
+  accent="connected"
+/>
 
 <PracticeChecklist
   title="Good activity note"
@@ -24,9 +36,17 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 ## The history of a venue
 
-Open the venue's account and you'll see its **activity and past service** in one place — so you can tell what's been done, and by whom.
+Open the venue's account and you'll see its **activity and past service** in one place — so you can tell what's been done, and by whom. The Company page carries the trail: the Tickets tab holds every issue and its resolution, the Events tab holds every game and service event, and the notes hold the human context in between. Because the operational side flows in through <GlossaryTerm term="realTimeCrmSync" />, the history you read is the same history the field generated — not a summary someone typed later.
 
-**Or just ask:** *"What's the recent history on TD Garden?"*
+Read it for patterns, not just facts: the same category of ticket recurring at one venue, gaps where a busy season produced no notes, or an issue that closed without a resolution ever being written down.
+
+<PromptCard accent="services" title="Read the trail" prompt="What’s the recent history on TD Garden?" />
+
+## Events are activity too
+
+Games, concerts, and service events at your venues sit on the Events tab — including what is coming up. Before an event, that is your readiness context: an open ticket sitting in front of a Saturday game reads very differently from the same ticket in a quiet month. On event days, the game-day workflow itself becomes visible activity — technician check-in, game-ready confirmation, and the post-game report each move the event's status, and that status syncs through to the account in about a second.
+
+<PromptCard accent="services" title="Event lookahead" prompt="What events are coming up at my venues in the next two weeks?" />
 
 ## Log a site visit from the field
 
@@ -36,15 +56,47 @@ Don't let what happened on a visit live only in your head:
 2. Add a **note** with what you found or did.
 3. It saves immediately — the record now reflects the visit.
 
-**Or just ask:** *"Log a note on TD Garden: replaced the failed power supply on the north ribbon."*
+<WhereThisLives tool="crm" path="CRM → Companies → venue’s Company → Notes" />
+
+<PromptCard accent="services" title="Log a visit note" prompt="Log a note on TD Garden: replaced the failed power supply on the north ribbon." />
 
 <Callout title="Works on your phone">
-This all works in a browser on your phone — so you can log the visit before you leave the site, while it's fresh. The assistant works there too.
+This all works in a browser on your phone — so you can log the visit before you leave the site, while it's fresh. The assistant works there too. A note written in the truck is worth three written from memory the next morning.
 </Callout>
+
+### Where does this record belong?
+
+Not everything from a visit is a note. Use the right container so the next person finds it where they expect it:
+
+<DecisionTree
+  title="Visit output — where it goes"
+  accent="connected"
+  branches={[
+    { if: "You found or fixed a client-facing issue that needs tracking to resolution", then: "It is a ticket — create or update it in the Service Dashboard, and it syncs to the account." },
+    { if: "You did a structured inspection — walkthrough results, display checks, maintenance rows", then: "Log it in the IoT Operations Workspace under Field Ops, where the physical venue data lives." },
+    { if: "You have context the next person needs — what you saw, what the client said, what to watch", then: "Add a note on the venue's account (or on the ticket it relates to)." }
+  ]}
+/>
+
+The <GlossaryTerm term="iotOperationsWorkspace" /> is the home for the physical layer — installed displays, rack and device details, walkthrough logs, and maintenance records. Tickets are for issues with an owner and a resolution. Notes are for relationship context. One visit can produce all three, and that is normal.
 
 ## Recurring or scheduled service
 
-Track recurring work on the venue's account so it's **visible alongside everything else**, and nothing recurring quietly drops off. Keep the status current as each cycle is handled.
+Track recurring work on the venue's account so it's **visible alongside everything else**, and nothing recurring quietly drops off. Keep the status current as each cycle is handled. Recurring service is the easiest thing in this track to lose — it has no client shouting about it and no event date forcing it — which is exactly why it lives on the record instead of in someone's calendar memory.
+
+## Common mistakes
+
+<OhShit
+  symptom="A venue had three visits this quarter, but the account shows nothing — the knowledge left the site in three different heads."
+  fix="Reconstruct what you can now: one catch-up note per visit with date, what was done, and anything unresolved. Partial history beats none."
+  prevention="Make the note part of leaving the site — logged from your phone before you pull out of the parking lot, not from memory next week."
+/>
+
+The other classic: writing notes for yourself instead of the reader. "Checked board, all fine" helps nobody in six months. Which board? Fine compared to what? Follow the checklist at the top — what you saw, what you did, what is still open, who owns it.
+
+## What good looks like
+
+A venue's activity trail is at standard when a technician who has never been on site can read the account and arrive knowing the venue: what tends to fail, what was done about it, what is scheduled, and what to watch. Every visit leaves a trace, every recurring cycle has a current status, and no closed issue is missing its resolution.
 
 ## Now you try →
 
@@ -52,4 +104,31 @@ Open a venue you visited recently, read its activity, and log a one-line note ab
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Your Day-to-Day](/docs/training/venue-services/your-day-to-day)**.
+## Related lessons
+
+- **[The Account View](/docs/training/venue-services/the-account-view)** — where the activity trail lives in the venue's full picture.
+- **[Service Tickets](/docs/training/venue-services/service-tickets)** — the issue-tracking half of the trail.
+- **[Your Day-to-Day](/docs/training/venue-services/your-day-to-day)** — the daily rhythm that keeps activity current without extra effort.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Read activity for patterns — repeat failures, quiet gaps, unresolved closes — not just individual facts.",
+    "Log the visit before you leave the site; a note from the truck beats a reconstruction from memory.",
+    "One visit can produce a ticket, a workspace row, and a note — each belongs in its own container.",
+    "Recurring service has no one shouting about it, so it lives on the record, not in calendar memory.",
+    "The trail is at standard when a first-time visitor can arrive already knowing the venue."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="services"
+  question="On a site visit you fix a failed power supply, complete a walkthrough of the concourse displays, and the client mentions they are worried about the aging control room. Where does each item go?"
+  options={[
+    "All three go into one note on the account so nothing is lost",
+    "Ticket for the power supply fix, walkthrough log in the operations workspace, note on the account for the client's concern",
+    "Ticket for everything, since tickets are the most visible record"
+  ]}
+  answer={1}
+  explanation="Each output has a home: client-facing issues are tickets, structured inspections belong in the IoT Operations Workspace, and relationship context goes in a note on the account. One visit producing all three is normal."
+/>

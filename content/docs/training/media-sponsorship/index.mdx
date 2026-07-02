@@ -5,14 +5,17 @@ description: "For media and sponsorship users: track placements, verification, c
 
 import {Callout} from 'fumadocs-ui/components/callout';
 
-# Media & Sponsorship
 
 <AudioPlayer src="/audio/training/media-sponsorship-index.mp3" />
+
+<LessonMeta time="8 min" audience="Media & Sponsorship team" level="Starter" accent="connected" />
 
 <span className="inline-flex rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-800">CRM</span>{' '}
 <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">CONNECTED</span>
 
-It is the end of the month. A sponsor asks what ran, what still needs verification, and whether the contracted games match the actual placements. You need the sponsor, placement history, verification trail, and dashboard in one place.
+It is the end of the month. A sponsor asks what ran, what still needs verification, and whether the contracted games match the actual placements. You need the sponsor, placement history, verification trail, and dashboard in one place — and you need the answer in minutes, not after a day of spreadsheet archaeology.
+
+That is exactly what this track teaches. The Media & Sponsorship side of the business runs on four connected pieces inside the CRM: **placement records** (game-by-game, sponsor-by-sponsor), **verification records** (the monthly confirm-what-ran routine), **sponsor contracts** (what was committed per team and season), and **dashboards** (the whole relationship rolled up). Each lesson in this track covers one of those pieces; together they replace the pile of per-team spreadsheets that used to hold this world together.
 
 <div className="my-4 rounded-lg border p-4">
   <div className="mb-2 text-sm font-semibold">Track progress</div>
@@ -41,42 +44,52 @@ This track is for ad sales, graphics, content, feeds, sponsor relationships, and
 
 You are learning how to:
 
-1. **Track what ran** - placement records by sponsor, game, team, and Company.
-2. **Verify what was promised** - monthly Nielsen and verification routines.
-3. **Match contract to reality** - contracted games versus actual placements.
-4. **Read sponsor health** - dashboard review across the relationship.
+1. **Track what ran** — placement records by sponsor, game, team, and <GlossaryTerm term="company" />. Every game a sponsor appears on the board is its own record, with a position, a date, and an execution status.
+2. **Verify what was promised** — the monthly Nielsen and verification routine, tracked as records instead of a side spreadsheet, so nothing stays silently pending.
+3. **Match contract to reality** — contracted games versus actual placements, per sponsor and per team, so under-delivery gets caught while there is still make-good inventory in the season.
+4. **Read sponsor health** — the dashboard review across the whole relationship: placements, verification status, and contract pace in one view.
 
 <Callout title="Where this lives">
-Sponsor relationships, Companies, opportunities, placements, and dashboards live in the CRM. Supporting creative or operations activity may connect back through the Company record.
+Sponsor relationships, Companies, opportunities, placements, verifications, contracts, and dashboards all live in the CRM under the **Media & Sponsorships** section of the left navigation. Supporting creative or operations activity connects back through the Company record, so the account is always the anchor.
 </Callout>
+
+## Why the connections matter
+
+The reason this beats spreadsheets is not the individual records — it is the links between them. A placement knows its sponsor, its home and away team, its position, and the opportunity it was sold on. A verification record knows its sponsor, league, and month. A contract knows its sponsor, team, and season. Because everything ties back to the same Company records, one question — "how is this sponsor doing?" — pulls the whole picture instead of three partial answers from three different files.
 
 ## Day 1 / Day 30 / Reference
 
-- **Day 1:** find a sponsor, open placements, and identify what ran.
-- **Day 30:** reconcile contracted games, actual placements, verification, and dashboard totals.
-- **Reference as needed:** Nielsen verification, sponsor contracts, dashboard review, creative/support context.
+- **Day 1:** find a sponsor, open placements, and identify what ran at last night's game.
+- **Day 30:** reconcile contracted games, actual placements, verification status, and dashboard totals for a full monthly sponsor readout.
+- **Reference as needed:** Nielsen verification routine, sponsor contract reads, dashboard review, creative and support context on the account.
 
-## Scout Prompts
+## Ask the assistant
 
-```text
-Show me placements for this sponsor this month and separate verified from unverified.
-```
+Scout answers Media & Sponsorship questions directly — these three cover most of the daily work:
 
-```text
-Find sponsor placements missing game, team, verification status, or linked opportunity.
-```
+<PromptCard accent="connected" title="Verified vs unverified" prompt="Show me placements for this sponsor this month and separate verified from unverified." />
 
-```text
-Summarize this sponsor relationship for a monthly review.
-```
+<PromptCard accent="connected" title="Data hygiene sweep" prompt="Find sponsor placements missing game, team, verification status, or linked opportunity." />
+
+<PromptCard accent="connected" title="Monthly relationship summary" prompt="Summarize this sponsor relationship for a monthly review." />
 
 ## What You'll Learn Here
 
-1. **[Track placements](/docs/training/media-sponsorship/placements)** - finding and logging sponsor placements by game, sponsor, and team.
-2. **[Verify performance](/docs/training/media-sponsorship/nielsen-verification)** - the monthly verification routine and keeping the trail clean.
-3. **[Review sponsor contracts](/docs/training/media-sponsorship/sponsor-contracts)** - contracted games versus what's actually running.
-4. **[Read sponsorship dashboards](/docs/training/media-sponsorship/dashboards)** - the whole sponsor relationship in one place.
+1. **[Track placements](/docs/training/media-sponsorship/placements)** — finding and logging sponsor placements by game, sponsor, and team, and keeping execution status honest.
+2. **[Verify performance](/docs/training/media-sponsorship/nielsen-verification)** — the monthly verification routine and keeping the trail clean and auditable.
+3. **[Review sponsor contracts](/docs/training/media-sponsorship/sponsor-contracts)** — contracted games versus what's actually running, and spotting the gap early.
+4. **[Read sponsorship dashboards](/docs/training/media-sponsorship/dashboards)** — the whole sponsor relationship in one place, team-side and sponsor-side.
 
 <Shot src="/img/screenshots/crm/t-nielsen.png" caption="Verification work becomes easier when the sponsor, Company, placement, and evidence trail stay connected." />
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The Media & Sponsorship world runs on four connected record types: placements, verifications, contracts, and the dashboards that roll them up.",
+    "Everything anchors to the Company record — sponsor questions get one complete answer, not three partial spreadsheets.",
+    "Day 1 is finding what ran; Day 30 is reconciling contract, delivery, and verification for a full sponsor readout.",
+    "Scout can answer most daily questions in plain English — verified vs pending, who is behind contract, what runs tonight."
+  ]}
+/>
 
 Haven't done Core yet? Start there first: [Core — Start Here](/docs/training/core).

@@ -3,15 +3,29 @@ title: The Daily Basics
 description: The daily CRM workflows that keep accounts, pipeline, follow-up, and reporting clean.
 ---
 
+import {Callout} from 'fumadocs-ui/components/callout';
+
 <AudioPlayer src="/audio/training/core-daily-basics.mp3" />
+
+<LessonMeta time="15 min" audience="Everyone" level="Core" accent="crm" />
 
 <Shot src="/img/screenshots/crm/t-pipeline.png" caption="A pipeline view — the everyday list of deals you'll create, find, and update." />
 
 **After this lesson** you'll be able to do the daily CRM tasks that keep the business moving: create records, find accounts, update stages, add notes, manage follow-up, and keep your work visible to the team.
 
+These ten moves are the whole day-to-day. Master them and the CRM stops being a chore and becomes the fastest way to know where anything stands — an arena renewal, a stadium display bid, a service escalation. Skip them and the record of a multi-year venue relationship lives in your inbox, which helps nobody at proposal time.
+
 Every task below is shown **two ways**. Use whichever feels easier — both get you to the same result.
 
 That list above is where most days start. Everything below is just acting on it.
+
+<ScenarioBoard
+  title="Tuesday morning"
+  situation="You have back-to-back calls: a new display inquiry from an NCAA athletic department, a stage change on an NBA arena bid, and a client conversation that produced three action items."
+  goal="By end of day: one new opportunity created against the right account, one stage updated with its next step, and one note that captures the call for the whole team."
+  proof="A teammate scanning the pipeline view tonight sees current stages, real dates, and knows what happens next on each deal."
+  accent="crm"
+/>
 
 <PracticeChecklist
   title="Daily clean-record check"
@@ -36,64 +50,86 @@ Use this rhythm at the start and end of the day:
 6. Review anything due this week.
 7. Ask the assistant for anything missing, stale, or overdue.
 
-**Or just ask:** *"Show me my open work that needs attention today."*
+<PromptCard accent="crm" title="Start-of-day sweep" prompt="Show me my open work that needs attention today." />
 
 ## 1. Create an opportunity
 
 - **Click it:** open **Opportunities** → press **New record** (top right) → fill in the name, account, owner, amount, stage, close date, and business unit → it saves automatically.
-- **Or just ask:** *"Create a new opportunity for the Boston Red Sox."*
+- **Or just ask:**
 
-**Good record check:** a new opportunity should not be just a name. It should have the account, owner, stage, date, and enough context for another person to understand it.
+<PromptCard accent="crm" title="Create a record by asking" prompt="Create a new opportunity for the Boston Red Sox." />
+
+**Good record check:** a new opportunity should not be just a name. It should have the account, owner, stage, date, and enough context for another person to understand it. The business unit matters more than it looks — it decides which vertical (Technology, Venue Services, or Media/Sponsorship) the deal reports under.
+
+<WhereThisLives tool="crm" path="Opportunities → New record" />
 
 ## 2. Find a record
 
 - **Click it:** use the **search bar** at the top — type a company name, contact, opportunity name, venue, team, or opportunity number.
-- **Or just ask:** *"Open the Dodgers account for me."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Open an account by asking" prompt="Open the Dodgers account for me." />
 
 If the search returns more than one possible match, open the account with the right relationship, recent activity, owner, or linked opportunity. Do not create a new record until you check for duplicates.
 
 ## 3. Open an account
 
 - **Click it:** go to **Companies** → click the company → its page shows every opportunity, contact, ticket, and note in one place.
-- **Or just ask:** *"Show me everything on Madison Square Garden."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Full account picture" prompt="Show me everything on Madison Square Garden." />
 
 <Shot src="/img/screenshots/crm/t-account.png" caption="The account view is the safest place to understand the relationship before you change a deal, contact, ticket, or note." />
+
+Make this your reflex before any client conversation: two minutes on the Company page tells you every open deal, the last note, and any open service ticket — so you never walk into a call blind on something another team is handling.
 
 ## 4. Update a stage or status
 
 - **Click it:** open the opportunity → change the **Stage** field to the new step.
-- **Or just ask:** *"Move this deal to proposal stage."*
+- **Or just ask:**
 
-When you change a stage, update the next step at the same time. Stage tells the team where the deal sits; next step tells them what happens next.
+<PromptCard accent="crm" title="Move a deal forward" prompt="Move this deal to proposal stage." />
+
+When you change a stage, update the next step at the same time. Stage tells the team where the deal sits; next step tells them what happens next. On bid work, keep <GlossaryTerm term="bidStatus" /> current too — win/loss reporting is built from it.
 
 ## 5. Edit a field
 
 - **Click it:** open the record → click straight into the field you want (close date, amount, etc.) → type → it saves.
-- **Or just ask:** *"Set the close date on this to March 15."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Set a field by asking" prompt="Set the close date on this to March 15." />
 
 For financial or client-facing fields, verify the source before changing the value. If the amount came from a proposal, bid tab, contract, or client message, make sure the CRM value matches it.
 
 ## 6. Save to favorites
 
 - **Click it:** open a record or view → click the **star** → it pins to the top of your menu.
-- **Or just ask:** *"Add this to my favorites."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Pin it" prompt="Add this to my favorites." />
 
 ## 7. Switch between views
 
 - **Click it:** at the top of any list, open the **view dropdown** (e.g. "All Opportunities") and pick a saved view — Pipeline, Backlog, and others.
-- **Or just ask:** *"Show me the proposal pipeline."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Jump to a saved view" prompt="Show me the proposal pipeline." />
 
 <Shot src="/img/screenshots/crm/t-dashboard-overview.png" caption="Views are for the working list. Dashboards are for the rollup. Use both: update the record, then review the dashboard." />
 
 ## 8. See only your accounts
 
 - **Click it:** open a list → add a **filter** for owner = you → save it as your own view. Now you only see your accounts, not everyone's.
-- **Or just ask:** *"Show me only my open opportunities."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Just your book" prompt="Show me only my open opportunities." />
 
 ## 9. Add a useful note
 
 - **Click it:** open the account or opportunity → add a note with what happened, who was involved, and what happens next.
-- **Or just ask:** *"Turn this call summary into a clean CRM note with next steps."*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Draft the note for you" prompt="Turn this call summary into a clean CRM note with next steps." />
 
 Use this structure:
 
@@ -109,9 +145,24 @@ Risk or blocker:
 ## 10. Review what is stale
 
 - **Click it:** open your pipeline view → sort by last activity or close date → open anything that looks old, overdue, or missing next step.
-- **Or just ask:** *"Which of my open opportunities look stale or need an update?"*
+- **Or just ask:**
+
+<PromptCard accent="crm" title="Find the stale work" prompt="Which of my open opportunities look stale or need an update?" />
 
 Stale records are not harmless. They distort the forecast, create surprise follow-up, and make handoffs harder.
+
+## Common mistakes
+
+<Callout type="warn" title="The habits that undo the day">
+- **Updating the stage but not the next step.** The team knows where the deal sits but not what happens next — which is the question they actually had.
+- **Saving the note in your head.** "I'll log it after the next call" is how a month of account history evaporates. Log it the same day, even as two lines.
+- **Typing an amount from memory.** Financial fields come from a source — the proposal, the contract, the client's email. Match the source, every time.
+- **Creating instead of searching.** One duplicate account created in a hurry costs someone a merge later. Search first (see [Working Standard](/docs/training/core/working-standard)).
+</Callout>
+
+## What good looks like
+
+Your daily basics are solid when: your open opportunities all have a current stage, a next step, and a realistic date; every meaningful conversation from this week has a note; your main view is starred and you start the day from it; and you can do any task on this page both ways — clicking and asking — without looking it up.
 
 ## Now you try →
 
@@ -119,4 +170,26 @@ Pick five from this list and do them in the real CRM. Do at least two by clickin
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next up: **[Meet the Assistant](/docs/training/core/meet-the-ai)** — the easy button for all of this.
+Related lessons: [Meet the Assistant](/docs/training/core/meet-the-ai) · [Finding Anything Fast](/docs/training/core/finding-anything) · [Working Standard](/docs/training/core/working-standard)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Ten moves cover the whole working day — and every one has a click path and an ask path.",
+    "Stage plus next step travel together; one without the other is half an update.",
+    "Notes written the same day are the account history; notes written next week are fiction.",
+    "Sweep for stale records regularly — they quietly distort the forecast everyone plans from."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="You just moved an opportunity to the proposal stage after a client call. What completes the update?"
+  options={[
+    "Nothing — the stage change is the update",
+    "Set the next step and date, and add a note covering what was agreed",
+    "Email your manager so they know the stage changed"
+  ]}
+  answer={1}
+  explanation="Stage says where the deal sits; next step and the note say what happens next and why. Without them the team sees movement but has no idea what was agreed or who acts next — which forces the follow-up questions the CRM exists to prevent."
+/>

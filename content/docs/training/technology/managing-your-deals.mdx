@@ -7,9 +7,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/technology-managing-your-deals.mp3" />
 
+<LessonMeta time="12 min" audience="Technology deal owners" level="Core" accent="crm" />
+
 <Shot src="/img/screenshots/crm/t-account.png" caption="An account page — the full picture of a client and all their deals." />
 
 **After this lesson** you'll know how a deal moves, the difference between its stage and its bid status, and how to keep both honest so everyone's numbers stay right.
+
+This is the lesson that decides whether the company's win/loss numbers mean anything. Every forecast conversation, every win-rate review, every "why did we lose that one" retro is built on the two status fields you are about to master. Get them right as a habit and the reporting takes care of itself. Get them wrong and someone upstream makes a decision on a pipeline that does not exist.
 
 <DecisionTree
   title="Which field changes?"
@@ -22,45 +26,88 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="crm"
 />
 
+<ScenarioBoard
+  title="The Friday-afternoon win"
+  accent="connected"
+  situation="The client calls at 4:50 on Friday: you won the video board project. You want to mark it, send the good news, and start the weekend."
+  goal="Close the deal properly in one pass — bid status to Won, close details filled in, completion date set — so the win counts in every report from Monday onward."
+  proof="The deal shows Won with a completion date, the automatic win notification went out to the team, and the account page shows the won work for the service side to pick up."
+/>
+
 ## Stage vs. bid status — two different things
 
 Every opportunity carries two trackers, and they answer different questions:
 
-- **Stage** — where the deal is in your *sales process* (early lead → screening → proposal → negotiation → won/lost).
-- **Bid status** — the *RFP outcome* specifically: received, submitted, shortlisted, won, lost, no-bid.
+- **Stage** — where the deal is in your *sales process*: New → Screening → Meeting → Proposal → Customer.
+- <GlossaryTerm term="bidStatus" /> — the *bid outcome* specifically: RFP Received → Scoping → Bid Submitted → Shortlisted → Won / Lost / No Bid.
 
-Together they give a complete read — a deal can be mid-process *and* already submitted on the bid side. Keep both current.
+Together they give a complete read — a deal can be mid-process *and* already submitted on the bid side. In day-to-day practice, the team reads **bid status** first; it is what the Bid Tracker board and the win/loss reporting run on. But keep both current: stage tells the relationship story, bid status tells the bid story, and different people rely on each.
 
 ## Moving a deal forward
 
 1. Open the opportunity.
 2. Update the **Stage** as it progresses.
 3. Update **bid status** as the RFP side moves.
+4. Leave a one-line note when something meaningful changed — the next person to open the deal should not have to call you.
 
-**Or just ask:** *"Move the Suns scoreboard deal to proposal stage."*
+<PromptCard
+  accent="crm"
+  title="Move a deal by asking"
+  prompt="Move the Suns scoreboard deal to proposal stage."
+/>
+
+Note that one transition happens automatically: when a proposal PDF is generated in the Proposal Engine, the deal's bid status moves to **Bid Submitted** on its own, and the PDF attaches to the deal. That is <GlossaryTerm term="universalCrmPush" /> recording real work — do not "correct" it backward.
 
 ## Marking won, lost, or no-bid
 
 When a deal lands — or doesn't — set it straight away:
 
-- **Won** → set bid status to **Won** and fill in the close details.
-- **Lost** or **No-bid** → set the status so the pipeline stays honest and win/loss reporting is accurate.
+- **Won** → set bid status to **Won** and fill in the close details, including the **Completion / Contract End Date**. The platform enforces this one: a win without a completion date gets reverted and you get a notification explaining why. Fill in the date, then set Won again.
+- **Lost** or **No Bid** → set the status the day you know, so the pipeline stays honest and win/loss reporting is accurate. If you know why you lost, put it in a note — that is the raw material for every future win-rate conversation.
 
-It takes a second and it keeps everyone's forecast real. A pipeline full of stale "open" deals helps no one.
+It takes a second and it keeps everyone's forecast real. A pipeline full of stale "open" deals helps no one — and it quietly inflates the number leadership plans against.
 
-**Or just ask:** *"Mark the Marlins ribbon board as no-bid."*
+<PromptCard
+  accent="crm"
+  title="Close one out"
+  prompt="Mark the Marlins ribbon board as no-bid."
+/>
+
+<WhereThisLives tool="crm" path="Opportunities → open the deal → Bid Status" />
+
+<OhShit
+  symptom="You set a deal to Won and a minute later it flipped back to its previous status."
+  fix="That is the platform protecting the reporting, not a glitch. A win needs a Completion / Contract End Date. Open the deal, fill in the completion date, then set Won again — it sticks."
+  prevention="Make the completion date part of your closing motion: when the client confirms, you should know the contract timeline anyway. Fill status and date in the same save."
+/>
 
 ## Probability
 
-Probability is a rough read on how likely a deal is to land. It weights the forecast and lets leadership filter to the deals most likely to close. Nudge it up or down as your confidence changes.
+Probability is a rough read on how likely a deal is to land, on a 0–100 scale. It weights the forecast and lets leadership filter to the deals most likely to close. Nudge it up or down as your confidence changes, and leave the reason in a note — "probability moved to 70 after the site visit went well" is worth more than the number alone. The discipline is honesty, not optimism: an inflated probability does not make a deal more likely to close, it just makes the forecast wrong in your name.
 
 ## Handing a deal off
 
-Update **who's responsible** on the opportunity and leave a **note** with the context. Because everything lives on the record, the next person walks in with the full picture — nothing gets lost in a hallway conversation or a buried email.
+Update **who's responsible** on the opportunity and leave a **note** with the context: where the deal stands, what was promised, what the next step is and when. Because everything lives on the record — documents, estimates, timeline, contacts — the next person walks in with the full picture. Nothing gets lost in a hallway conversation or a buried email. A good handoff note takes ninety seconds and saves the receiver a week of reconstruction.
 
 <Callout title="What happens after we win">
-Winning is marked on the opportunity, and the **account** is the connective tissue — so the service team can see the won work tied to that company. The account carries the relationship from sale into service automatically.
+Winning is marked on the opportunity, and an automatic win notification goes out to the team — so a properly-marked win announces itself. The **account** is the connective tissue: the service team sees the won work tied to that Company, and the relationship carries from sale into service automatically. This is also why wins must be marked promptly — the downstream teams are literally waiting on the signal.
 </Callout>
+
+## What good looks like
+
+Before you move on, the quality bar for deal management:
+
+<PracticeChecklist
+  title="Honest deal bar"
+  accent="crm"
+  items={[
+    "Stage and bid status both match reality — not last week's reality.",
+    "Every won deal has close details and a completion date.",
+    "Every dead deal is marked Lost or No Bid with a one-line reason.",
+    "Probability reflects your honest read, with the why in a note.",
+    "Any deal you handed off has a new owner and a context note."
+  ]}
+/>
 
 ## Now you try →
 
@@ -68,4 +115,30 @@ Open one of your deals, check its stage and bid status are both current, and set
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates)**.
+Related lessons:
+
+- [Your Pipeline](/docs/training/technology/pipeline) — the views where these status changes show up.
+- [Proposals & Due Dates](/docs/training/technology/proposals-and-due-dates) — the deadline side of the same records.
+- [Reading Your Dashboard](/docs/training/technology/your-dashboard) — where honest statuses turn into credible numbers.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Stage tracks the sales process; bid status tracks the bid flow — the team reads bid status first.",
+    "A win needs a completion date or the platform reverts it — close status and date in the same save.",
+    "Mark Lost and No Bid the day you know; stale open deals inflate everyone's forecast.",
+    "Handoffs are an owner change plus a context note — the record carries everything else."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="The RFP for your deal was just submitted, but the sales relationship has not changed. What do you update?"
+  options={[
+    "Stage — every deal event moves the stage",
+    "Bid Status — the bid flow moved to Bid Submitted, while Stage stays where it is",
+    "Nothing — the CRM tracks submissions on its own in every case"
+  ]}
+  answer={1}
+  explanation="Stage and bid status answer different questions. Submitting the bid is a bid-flow event, so Bid Status moves to Bid Submitted. Stage only moves when the sales process itself advances. (When the proposal PDF goes out through the Proposal Engine, this particular transition is recorded for you.)"
+/>

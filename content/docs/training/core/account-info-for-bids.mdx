@@ -7,11 +7,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-account-info-for-bids.mp3" />
 
+<LessonMeta time="10 min" audience="Everyone" level="Core" accent="crm" />
+
 <Shot src="/img/screenshots/crm/t-account.png" caption="An account page holds everything you'd cite on a bid — contacts, every past project, scope, and contract value." />
 
 **After this lesson** you'll be able to assemble the pieces of a bid or pre-qualification — contacts, reference projects, and contract values — in minutes instead of digging.
 
-A lot of bid and pre-qual work is the same question: *what have we done that proves we can do this, and who do we point to?* The CRM already holds the answer.
+A lot of bid and pre-qual work is the same question: *what have we done that proves we can do this, and who do we point to?* In ANC's world that means past LED display installs at comparable venues — the NFL stadium that proves you can handle an NFL stadium, the arena scoreboard that anchors an arena bid. RFPs ask for it in nearly the same shape every time: project, venue, year, scope, value, reference contact. The CRM already holds the answer; this lesson is about pulling it out fast and getting it right.
+
+<ScenarioBoard
+  title="Pre-qual due Friday"
+  situation="A pre-qualification form for a college stadium project asks for five comparable projects with year, scope, contract value, and a client reference for each."
+  goal="Assemble a credible, accurate reference list from won work at similar venues — in one working session, not a week of asking around."
+  proof="Five real projects, each with a verified value and a named contact, shaped into the format the form asks for."
+  accent="crm"
+/>
 
 <WorkflowMap
   title="Bid reference build"
@@ -38,17 +48,32 @@ For any account or project type, the assistant can pull:
 - **Reference projects** — completed, won work you can cite, with the year, scope, and value.
 - **Contract values** — what a job was worth, your largest jobs, totals under contract.
 
+The underlying data lives on won opportunities: the account, the value, the close and completion dates, and the linked contacts. Which is why the [Working Standard](/docs/training/core/working-standard) matters here — a won deal logged with a real value and the right contacts becomes a usable bid reference forever; a bare-bones one is a research project every time someone needs it.
+
 ## Prompts that do the work
 
 Copy and adapt these:
 
-- *"List our completed projects at NFL stadiums in the last five years, with the year, scope, and value."*
-- *"What's the largest contract we've ever completed — year, project name, scope, and amount?"*
+<PromptCard accent="crm" title="Comparable projects by venue type" prompt="List our completed projects at NFL stadiums in the last five years, with the year, scope, and value." />
+
+<PromptCard accent="crm" title="Largest completed contract" prompt="What is the largest contract we have ever completed — year, project name, scope, and amount?" />
+
 - *"Give me five recent won projects at outdoor stadiums I can use as references."*
 - *"Who's the primary contact on the Portland Trail Blazers account?"*
 - *"Show me everything we've done with Monumental Sports."*
 
 The assistant returns a clean list. That list is the backbone of your reference section.
+
+Two refinement moves worth knowing:
+
+- **Match the buyer.** If the RFP is from a university, ask for NCAA venue work; league accounts carry a league field, so "won work at NCAA venues" is an answerable question.
+- **Iterate in the same conversation.** Follow up with "swap the third one for something more recent" or "only projects over a certain size" — you're curating a shortlist, not accepting the first answer.
+
+## Verify before it goes in the response
+
+<Callout type="warn" title="A bid is a formal document">
+Everything you cite can be checked by the client. Before a project goes into a formal response: open the opportunity behind it and confirm the value matches the contract, confirm the year is the completion year (not the sale year, if the form asks for completion), and confirm the reference contact is still at that organization — people move, especially in sports. The assistant assembles; you certify.
+</Callout>
 
 <Callout type="info">
 The CRM is your source for **what ANC has done** — projects, scope, values, contacts. For outside facts a bid form asks for that aren't ANC's own work, check with your supervisor on where those come from.
@@ -58,11 +83,42 @@ The CRM is your source for **what ANC has done** — projects, scope, values, co
 
 Once you have the list, ask the assistant to shape it:
 
-- *"Put those five projects into a short reference list with venue, year, and scope."*
+<PromptCard accent="crm" title="Shape the reference list" prompt="Put those five projects into a short reference list with venue, year, and scope." />
+
 - *"Summarize our work with this account into a few sentences I can use in a proposal."*
+
+Match the output to what the form actually asks for — if it wants completion dates and contact phone numbers, ask for exactly those columns, and fill gaps from the records themselves.
+
+## What good looks like
+
+A reference section is ready when: every project on it is real, won, and comparable to what's being bid; every value was checked against its opportunity record; every named contact was sanity-checked as current; and the formatting matches the form's requested shape, not your default one. If a great reference project turned out to have a missing value or contact in the CRM — fix the record while you're there. The next bid inherits your cleanup.
 
 ## Now you try →
 
-Pick a project type you're working a bid for, and ask the assistant for **five reference projects with year, scope, and value.** That's your reference section, started.
+Pick a project type you're working a bid for, and ask the assistant for **five reference projects with year, scope, and value.** Then open one of the five and verify its value against the record. That's your reference section, started — and certified.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
+
+Related lessons: [Asking the CRM for Numbers](/docs/training/core/asking-for-numbers) · [Cleaning Up Accounts](/docs/training/core/account-cleanup) · [Working Standard](/docs/training/core/working-standard)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Bid references are a question the CRM already answers: won work, comparable venue, year, scope, value, contact.",
+    "Ask for the list, then curate it — swap, filter, and match the buyer's league or venue type.",
+    "Everything in a formal response gets verified against the source record first.",
+    "Clean won-deal records today are effortless references tomorrow — fix gaps as you find them."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="The assistant returns five reference projects for a stadium bid. Before they go into the formal response, what must happen?"
+  options={[
+    "Nothing — the assistant pulled them from live CRM data",
+    "Open the records to verify values, dates, and that the reference contacts are current",
+    "Add three more projects so the list looks stronger"
+  ]}
+  answer={1}
+  explanation="A bid is a formal document the client can check. The assistant assembles the shortlist fast, but values get confirmed against the opportunity record, dates get matched to what the form asks for, and contacts get sanity-checked — people move between organizations constantly in sports."
+/>

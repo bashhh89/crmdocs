@@ -8,9 +8,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/media-sponsorship-placements.mp3" />
 
+<LessonMeta time="12 min" audience="Media & Sponsorship team" level="Core" accent="connected" />
+
 <Shot src="/img/screenshots/crm/t-placements.png" caption="Media placements — every sponsor, game, and board position in one grid." />
 
-**After this lesson** you'll be able to pull up any night's placements, log a new one, and mark what actually ran.
+**After this lesson** you'll be able to pull up any night's placements, log a new one correctly the first time, and mark what actually ran — so the record matches reality game by game.
+
+Placements are the ground truth of the Media & Sponsorship business. Every contract read, every verification pass, every dashboard number downstream is only as good as the placement records underneath it. If a game runs and nobody logs it — or nobody flips the status afterward — the sponsor readout at the end of the month is wrong, and you find out at the worst possible moment: in front of the sponsor.
+
+<ScenarioBoard
+  title="Game-night prep"
+  situation="It is 3 PM before a home game. Sales wants to know exactly which sponsors run on the board tonight and in which positions, because a prospect will be in the building."
+  goal="Filter placements to tonight's game and read sponsor, position, and status straight off the grid."
+  proof="You can name every sponsor and position for tonight in under a minute, without opening a spreadsheet."
+  accent="connected"
+/>
 
 <WorkflowMap
   title="Placement record flow"
@@ -23,42 +35,100 @@ import {Callout} from 'fumadocs-ui/components/callout';
   accent="connected"
 />
 
-## How placements work
+## What a placement record holds
 
-Each placement is its **own record** — the game, the sponsor, the position — tied to the sponsor and the account. So you can see everything a sponsor has running *and* everything happening at a given property, without rebuilding it in a spreadsheet.
+Each placement is its **own record** — one sponsor, in one position, at one game. That granularity is the whole point: it lets you see everything a sponsor has running *and* everything happening at a given property, without rebuilding either view in a spreadsheet.
+
+The record carries the full context of the game:
+
+- **Game date and time**, plus the **home team** and **away team** (both linked to their Company records).
+- **Sponsor** — linked to the sponsor's Company, so the account always reflects what's running.
+- **Position** — which board slot: homeplate full, homeplate half, small homeplate, or other.
+- **League and season** — MLB, NBA, NHL, MLS, NFL, NCAA — so season-level filtering and reporting stay clean.
+- **TV coverage detail** — home, away, and national network fields, which is what makes national-versus-local reporting possible later.
+- **Execution status** — scheduled, executed, not executed, national game, or postponed.
+- **Notes** — anything unusual about the game or the run.
+
+Records are named so you can read them at a glance in any list — date, matchup, sponsor, and position all in the title.
 
 ## Finding placements
 
-There's a placements view you can slice any way you need:
+<WhereThisLives tool="crm" path="Media & Sponsorships → All Media Placements" />
 
-- **By month:** filter to the month — *"show me this month's placements."*
-- **By game or date:** *"what's running at tonight's game?"*
-- **By sponsor:** *"show me everything Bigelow has running."*
-- **By team:** filter to the property you're prepping for.
+The placements view slices any way you need:
 
-**Or just ask** the assistant any of the above in plain English.
+1. Open **Media & Sponsorships** in the left navigation, then **All Media Placements**.
+2. **By month:** filter the game date to the month you're working.
+3. **By game or date:** filter to tonight's date to see the full board for one game.
+4. **By sponsor:** filter the sponsor column — everything Bigelow has running, in one list.
+5. **By team:** filter home team to the property you're prepping for.
+
+Or skip the clicks entirely:
+
+<PromptCard accent="connected" title="Tonight's board" prompt="What placements are running at tonight's game?" />
+
+<PromptCard accent="connected" title="One sponsor, full picture" prompt="Show me everything Bigelow has running this month." />
 
 ## Logging a new placement
 
-1. Create a **placement record**.
-2. Set its **game, sponsor, and position**.
-3. It links to the sponsor's account automatically.
+1. From **All Media Placements**, create a new **placement record**.
+2. Set the **game date, home team, and away team**.
+3. Set the **sponsor** and the **position**.
+4. Set **league and season**, and add TV network detail if you have it.
+5. Leave status as **scheduled** — it changes only after the game.
 
-**Or just ask:** *"Log a homeplate placement for Tire Rack at the Red Sox game on the 12th."*
+The placement links to the sponsor's account automatically once the sponsor is set, so the Company record picks it up with no extra step.
+
+<PromptCard accent="connected" title="Log it in one line" prompt="Log a homeplate placement for Tire Rack at the Red Sox game on the 12th." />
 
 ## Marking what actually ran
 
-Each placement has a **status** — scheduled, executed, not executed, and so on. Set it as things run. That status is what lets you tell what actually aired versus what was planned.
+Each placement has a **status** — scheduled, executed, not executed, national game, postponed. Set it as things run. That status is the difference between "what we planned" and "what actually aired" — and it is what verification and contract tracking read downstream.
 
-**Or just ask:** *"Mark the Bigelow placement on the 12th as executed."*
+- **Executed** — it ran as planned.
+- **Not executed** — it was scheduled and did not run. This is a flag, not a failure to hide: it is exactly what surfaces make-good conversations early.
+- **National game** — coverage changed the picture; the record keeps that distinction so national and local never get lumped together in reporting.
+- **Postponed** — the game moved. Keep the record; update the date when the makeup game is set.
+
+<PromptCard accent="connected" title="Close out a run" prompt="Mark the Bigelow placement on the 12th as executed." />
 
 <Callout title="National vs. local">
-The placement record captures the relevant TV/coverage detail, so national versus local is on the record — which lets you report and verify them correctly instead of lumping them together.
+The placement record captures the TV and coverage detail, so national versus local lives on the record itself — which lets you report and verify each correctly instead of averaging them together.
 </Callout>
+
+## Common mistakes
+
+<OhShit
+  symptom="A sponsor's account shows fewer placements than you know ran this month."
+  fix="Find the orphaned placements — filter All Media Placements by date and look for rows with a blank sponsor — and link each one to the correct sponsor Company."
+  prevention="Set the sponsor at creation time, every time. A placement without a sponsor link is invisible to every account view, dashboard, and contract comparison downstream."
+/>
+
+<OhShit
+  symptom="It is verification week and half the month's placements still say scheduled."
+  fix="Work through the month game by game and flip each status to what actually happened — executed, not executed, national game, or postponed."
+  prevention="Update statuses within a day or two of each game, while you still remember what ran. Month-end bulk updates are where accuracy dies."
+/>
+
+## What good looks like
+
+Before you move on, your placement work should pass this bar:
+
+<PracticeChecklist
+  title="Placement quality bar"
+  items={[
+    "Every placement has a sponsor, home team, game date, and position — no blanks.",
+    "No placement older than a few days still says scheduled.",
+    "National games are marked as such, not left as executed.",
+    "Postponed games carry a note about the makeup date.",
+    "Placements that came from a sold deal link back to their opportunity."
+  ]}
+  accent="connected"
+/>
 
 ## It all ties together
 
-Every placement links to the **sponsor's account** (so the account reflects what's running) and can link back to the **opportunity** it came from (so sold-versus-delivered stays connected end to end).
+Every placement links to the **sponsor's account** (so the account reflects what's running) and can link back to the **opportunity** it came from (so sold-versus-delivered stays connected end to end). Those links are what power the next two lessons: [Nielsen Verification](/docs/training/media-sponsorship/nielsen-verification) confirms what the placement records claim, and [Sponsor Contracts](/docs/training/media-sponsorship/sponsor-contracts) compares them to what was committed. The rollups all land in [Your Dashboards](/docs/training/media-sponsorship/dashboards).
 
 ## Now you try →
 
@@ -66,4 +136,24 @@ Filter placements to this month, then open one and check its status reflects whe
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Nielsen Verification](/docs/training/media-sponsorship/nielsen-verification)**.
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "One placement record = one sponsor, one position, one game — that granularity powers every downstream view.",
+    "The sponsor link is load-bearing: an unlinked placement is invisible to accounts, contracts, and dashboards.",
+    "Execution status is the honest record of what ran — update it within days of the game, not at month end.",
+    "National, not-executed, and postponed are distinct statuses for a reason; use them instead of forcing everything into executed."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="connected"
+  question="A placement was scheduled for last night's game but never made it onto the board. What do you do?"
+  options={[
+    "Delete the placement record so the numbers stay clean",
+    "Mark it not executed — the gap is exactly what surfaces make-good conversations early",
+    "Leave it as scheduled until someone asks about it"
+  ]}
+  answer={1}
+  explanation="Not executed is a signal, not a blemish. Deleting the record or leaving it scheduled hides the delivery gap — marking it honestly is what lets contract tracking catch under-delivery while there is still season left to make it good."
+/>

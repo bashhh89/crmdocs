@@ -8,9 +8,13 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/leadership-forecasting-and-pipeline.mp3" />
 
+<LessonMeta time="12 min" audience="Leadership" level="Core" accent="leadership" />
+
 <Shot src="/img/screenshots/crm/t-all-deals.png" caption="Open pipeline by business unit — what's forecast to land." />
 
-**After this lesson** you'll understand how the forecast is calculated, when to trust it, and how to focus on the realistic pipeline.
+**After this lesson** you'll understand how the forecast is calculated, when to trust it, and how to focus on the realistic pipeline instead of the wish list.
+
+A forecast is the most consequential number leadership touches — it drives hiring, cash planning, and what gets promised upward. It is also the easiest number to get quietly wrong, because it fails through record drift, not through math. This lesson is about knowing the difference between a forecast you can present and one you need to send back for repair.
 
 <DecisionTree
   title="Forecast confidence"
@@ -25,30 +29,89 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 ## How the forecast works
 
-The forecast rolls up **expected revenue across the live opportunities**, weighted by where deals stand. Because it's tied to live deal data, it stays current as deals move — it's not a stale snapshot someone exported last month.
+The forecast rolls up **expected revenue across the live opportunities**, weighted by where deals stand. Every deal carries a probability, and the forecast widgets follow the same convention the business has always used: **deals at 50% probability and above count as the realistic forecast**. Because the rollup is tied to live deal data, it stays current as deals move — it is not a stale snapshot someone exported last month.
 
-**Or just ask:** *"What's the forecast for Technology this year?"*
+That means the forecast has exactly four inputs per deal, and they are all human-maintained: stage, value, close date, and probability. When those four are honest, the forecast is honest. There is no fifth ingredient.
+
+<PromptCard accent="leadership" title="Vertical forecast" prompt="What is the forecast for Technology this year?" />
 
 <Callout title="Can you trust it?">
-It's as current as the team's last update. It reflects the real pipeline rather than a guess — so the honest rule is: keep the deals current and the forecast is honest. Garbage-in still applies, which is exactly why stage/status discipline matters across the team.
+It's as current as the team's last update. It reflects the real pipeline rather than a guess — so the honest rule is: keep the deals current and the forecast is honest. Garbage-in still applies, which is exactly why stage and <GlossaryTerm term="bidStatus" /> discipline matters across the team.
 </Callout>
 
-## Filtering to likely deals
+## A realistic scenario
 
-You can filter by **probability** — for example to **50% and above** — so you're looking at the realistic pipeline rather than every long shot. That mirrors how the team has always weighted the forecast.
+<ScenarioBoard
+  title="The board number"
+  accent="connected"
+  situation="Quarter-end board meeting is Thursday. The forecast widget says a strong number, but two of the largest deals in it have close dates that already passed and no recent activity."
+  goal="Present a forecast you can defend: the headline, minus the deals whose inputs are stale, with a one-line note on what moved them out."
+  proof="If a board member asks what is behind the number, you can name the top five deals, their probabilities, and their close dates — from memory of having opened them."
+/>
 
-**Or just ask:** *"Show me the pipeline at 50% probability and up."*
+## The click path
 
-## Comparing periods
+<WhereThisLives tool="crm" path="ANC app → Views → Revenue Forecast / Pipeline by Business Unit" />
 
-The dashboards let you look across periods, so you see the **trend**, not just a single snapshot.
+1. Open the **Revenue Forecast** view — it is already filtered to opportunities at **50%+ probability**, the realistic pipeline.
+2. Sort by close date. Anything with a close date in the past is a stale input inflating the forecast right now.
+3. Scan the largest deals first. On each, check the four inputs: stage, value, close date, probability. A big deal with a stale close date matters more than ten small ones.
+4. Open **Pipeline by Business Unit** to see how the forecast distributes across Technology, Venue Services, and Media & Sponsorship — concentration in one vertical is a risk worth naming.
+5. Route problems back to owners as specific asks: "these three deals need current close dates before Thursday" beats "please clean up the pipeline."
 
-**Or just ask:** *"Compare this quarter to last."*
+## The ask path
+
+<PromptCard accent="leadership" title="Realistic pipeline" prompt="Show me the pipeline at 50% probability and up, sorted by close date." />
+
+<PromptCard accent="leadership" title="Stale input sweep" prompt="Which forecasted deals have close dates in the past or no recent activity?" />
+
+<PromptCard accent="leadership" title="Trend read" prompt="Compare this quarter’s pipeline to last quarter." />
+
+Comparing periods is where the dashboards earn their keep: you see the **trend**, not just a snapshot. A flat headline can hide a pipeline that is churning underneath — new deals replacing slipped ones at the same total.
+
+## Common mistakes
+
+<OhShit
+  symptom="The forecast dropped sharply overnight and nobody knows why."
+  fix="Ask the assistant which deals changed stage, probability, or close date in the last week, then open those records. A single large deal moved below 50% or pushed to next quarter usually explains the whole swing."
+  prevention="Review the largest forecasted deals weekly, not at quarter-end. Swings you watch weekly are movements; swings you discover at quarter-end are surprises."
+/>
+
+Two more habits to avoid: quoting the **unfiltered** pipeline as if it were the forecast (that includes every long shot), and treating a probability number as truth because it is precise. Probability is the owner's judgment encoded as a number — challenge it on big deals the same way you would challenge it in conversation.
+
+## What good looks like
+
+- You know the current realistic forecast per vertical and roughly what drives it.
+- No deal above 50% probability has a close date in the past — or you know exactly which ones do and have asked for fixes.
+- You can explain the gap between the unfiltered pipeline and the 50%+ view: that gap is your long-shot exposure.
+- The number you present is the number in the system — no private adjustments in a side spreadsheet.
 
 ## Now you try →
 
-Open the forecast, filter the pipeline to 50%+ probability, and compare it to the unfiltered number — that gap is your long-shot exposure.
+Open the forecast, filter the pipeline to 50%+ probability, and compare it to the unfiltered number — that gap is your long-shot exposure. Then find one forecasted deal with a past close date and note who owns it.
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-Next: **[Win/Loss](/docs/training/leadership/win-loss)**.
+Related lessons: [The Dashboards](/docs/training/leadership/dashboards) · [Win/Loss](/docs/training/leadership/win-loss) · [RFP to Win (Workflow)](/docs/training/workflows/rfp-to-win)
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "The forecast has four inputs per deal — stage, value, close date, probability — all human-maintained.",
+    "The 50%+ probability view is the realistic pipeline; the unfiltered view includes every long shot.",
+    "A forecasted deal with a past close date is inflating the number right now.",
+    "Forecast problems are routed back to deal owners as specific, named asks — not general cleanup requests."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="leadership"
+  question="The forecast widget looks strong, but a $3M deal inside it shows a close date that passed three weeks ago. What does that mean?"
+  options={[
+    "Nothing — the system will adjust the forecast automatically",
+    "The forecast is overstated until the owner updates the close date or the deal's status",
+    "The deal has probably closed and finance forgot to log it"
+  ]}
+  answer={1}
+  explanation="Forecast inputs are human-maintained. A past close date on a live forecasted deal is a stale input — the deal either slipped, closed, or died, and until the record says which, the forecast is quietly wrong."
+/>

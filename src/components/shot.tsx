@@ -12,7 +12,7 @@ export function Shot({ src, caption, alt }: { src: string; caption?: string; alt
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="group relative block w-full overflow-hidden rounded-xl border border-slate-200 shadow-sm transition hover:shadow-md"
+        className="group relative block w-full overflow-hidden rounded-xl border border-fd-border shadow-sm transition hover:shadow-md"
         aria-label="Enlarge screenshot"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -21,7 +21,7 @@ export function Shot({ src, caption, alt }: { src: string; caption?: string; alt
           <ZoomIn className="h-3.5 w-3.5" /> Click to enlarge
         </span>
       </button>
-      {caption && <figcaption className="mt-2 text-center text-[13px] text-slate-500">{caption}</figcaption>}
+      {caption && <figcaption className="mt-2 text-center text-[13px] text-fd-muted-foreground">{caption}</figcaption>}
 
       {open && (
         <div

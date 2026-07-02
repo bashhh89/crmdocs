@@ -7,9 +7,21 @@ import {Callout} from 'fumadocs-ui/components/callout';
 
 <AudioPlayer src="/audio/training/core-meet-the-ai.mp3" />
 
+<LessonMeta time="12 min" audience="Everyone" level="Core" accent="crm" />
+
 <GuidedSim />
 
 **After this lesson** you'll be able to use the assistant for common CRM work: finding records, summarizing accounts, checking missing fields, drafting notes, pulling numbers, and getting to the records behind a report.
+
+Why it matters here: ANC's account base spans thousands of organizations — teams, venues, sponsors, athletic departments — and years of deal history behind them. Nobody navigates that by memory. The assistant is how one person answers account questions at the speed the business moves: before a client call, mid-meeting when someone asks "what have we done with them?", or at the end of the week when the pipeline needs a scrub.
+
+<ScenarioBoard
+  title="Five minutes before the call"
+  situation="You are about to join a call with an NHL arena client you have never spoken to. The account has years of history across displays, service, and a sponsorship deal."
+  goal="Walk in knowing the open opportunities, the primary contact, the last meaningful activity, and any open issues — assembled in one ask, not dozens of clicks."
+  proof="You reference the current state of the relationship on the call and nothing surprises you."
+  accent="crm"
+/>
 
 <DecisionTree
   title="What to ask Scout"
@@ -34,6 +46,8 @@ You don't learn commands. You don't memorize anything. You type what you want in
 
 Look for the **Ask AI** button (top of the screen). Click it, type your request, hit enter.
 
+<WhereThisLives tool="crm" path="Any page → Ask AI button (top of screen)" />
+
 ## What the assistant is best at
 
 Use the assistant when you want speed across the CRM:
@@ -51,6 +65,8 @@ Use the assistant when you want speed across the CRM:
 
 It opens the record, makes the change, or pulls the number — right there in the sidebar.
 
+<PromptCard accent="crm" title="Pre-call account brief" prompt="Summarize this account for me before a client call: open opportunities, primary contact, last activity, and anything overdue." />
+
 <Shot src="/img/screenshots/crm/openanc-guide-side-rail.png" caption="Use the assistant as a side rail while you work: ask it to find, summarize, check, or prepare the next action without leaving the record." />
 
 ## The one rule to remember
@@ -63,31 +79,19 @@ You can't break anything by asking a question. If a request isn't clear, the ass
 
 ## Ask better questions
 
-Good prompts include the record, the action, and the output you want.
+Good prompts include the record, the action, and the output you want. Compare:
 
-Weak:
+Weak: *"Show me pipeline."*
 
-```text
-Show me pipeline.
-```
+<PromptCard accent="crm" title="Better — scoped pipeline ask" prompt="Show me my open Technology opportunities closing this quarter, grouped by stage, and list any missing close dates." />
 
-Better:
+Weak: *"Clean this account."*
 
-```text
-Show me my open Technology opportunities closing this quarter, grouped by stage, and list any missing close dates.
-```
+<PromptCard accent="crm" title="Better — specific cleanup ask" prompt="Review this account for duplicate companies, missing contacts, stale opportunities, missing owner fields, and notes without next steps." />
 
-Weak:
+The pattern behind both: name the **scope** (mine, this quarter, this account), the **object** (opportunities, contacts, notes), and the **output** (grouped by stage, a list of gaps). Vague in, vague out — specific in, done.
 
-```text
-Clean this account.
-```
-
-Better:
-
-```text
-Review this account for duplicate companies, missing contacts, stale opportunities, missing owner fields, and notes without next steps.
-```
+And you can keep going. The assistant holds context inside a conversation, so follow-ups work naturally: *"now just the ones over a million"*, *"who owns the ones with no close date?"*, *"draft a note on the first one."* You refine, it narrows.
 
 ## Use it for quality control
 
@@ -102,6 +106,8 @@ Try these checks:
 - *"Find closed-won deals with missing contract value."*
 - *"Summarize this account for a leadership review."*
 
+Run one of these at the end of each week and your records stay at the [Working Standard](/docs/training/core/working-standard) without a dedicated cleanup day.
+
 ## Use it for numbers, then verify
 
 For reporting, use this pattern:
@@ -112,11 +118,24 @@ For reporting, use this pattern:
 4. Check dates, amount, status, and business unit.
 5. Only then send or present the number.
 
-**Example:** *"How much Technology revenue is booked this year, and show me the opportunities included in that total."*
+<PromptCard accent="crm" title="Number plus its evidence" prompt="How much Technology revenue is booked this year, and show me the opportunities included in that total." />
 
 <Callout title="Important">
 The assistant can get you to an answer quickly. For revenue, contract values, dates, client promises, and forecast calls, always verify the records behind the answer before sharing it.
 </Callout>
+
+## Common mistakes
+
+<Callout type="warn" title="Where new users go wrong with the assistant">
+- **Asking without scope.** "Show me deals" returns everything. Say whose, which status, and what timeframe.
+- **Forwarding a number unchecked.** The assistant shows its work — read the record list before the figure goes into a proposal or a meeting.
+- **Not verifying a change landed.** If you asked it to update a record, glance at the record afterward. Trust, then confirm — same as you would with a colleague.
+- **Giving up after one vague answer.** A follow-up sentence ("only mine", "just this quarter", "as a table") usually gets exactly what you wanted.
+</Callout>
+
+## What good looks like
+
+You've got this lesson when: you reach for Ask AI for anything that would take more than three clicks; your prompts name the scope, object, and output; you ask for the records behind any number before quoting it; and you verify record changes after asking for them. That's the whole discipline — speed from the assistant, confidence from the check.
 
 ## Now you try →
 
@@ -124,4 +143,28 @@ Open the assistant and ask it five things: one search, one summary, one missing-
 
 👉 **[Open the CRM](https://crm.ancsports.net)**
 
-When you're comfortable here, continue to **[What's Possible](/docs/training/core/whats-possible)** or head to your vertical: **[Technology](/docs/training/technology)**, **[Venue Services](/docs/training/venue-services)**, **[Media & Sponsorship](/docs/training/media-sponsorship)**, or **[Leadership](/docs/training/leadership)**.
+Related lessons: [Finding Anything Fast](/docs/training/core/finding-anything) · [Asking the CRM for Numbers](/docs/training/core/asking-for-numbers) · [Cleaning Up Accounts](/docs/training/core/account-cleanup)
+
+When you're comfortable here, continue to **[What's Possible](/docs/training/core/whats-possible)** or head to your vertical: **[Technology](/docs/training/technology)**, **[Venue Services](/docs/training/venue-services)**, **[Media &amp; Sponsorship](/docs/training/media-sponsorship)**, or **[Leadership](/docs/training/leadership)**.
+
+<KeyTakeaways
+  accent="connected"
+  items={[
+    "Scout lives behind the Ask AI button — plain English in, work done in the sidebar.",
+    "Anything you can click, you can ask. Learn both; reach for the faster one.",
+    "Good prompts name scope, object, and output; follow-ups refine the answer.",
+    "For important numbers: ask, see the records behind it, verify, then share."
+  ]}
+/>
+
+<KnowledgeCheck
+  accent="crm"
+  question="The assistant gives you a quarterly revenue figure you are about to paste into a leadership update. What is the missing step?"
+  options={[
+    "Nothing — the assistant pulls from live data",
+    "Ask which records were included and check them before sharing",
+    "Round the number so precision does not matter"
+  ]}
+  answer={1}
+  explanation="The assistant is fast and shows its work — but a number headed to leadership or a client always gets the record-list check first. Ask what was counted, scan the list for anything that should not be there, then share it with confidence."
+/>
