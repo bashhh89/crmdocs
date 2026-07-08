@@ -1,31 +1,45 @@
 ---
 title: Projects
-description: Where won deals live during execution.
+description: View proposal, mirror, intelligence, and estimate records in one operating list.
 ---
 
 # Projects
 
-When a deal closes Won, it becomes a Project (`/projects`). This is where the execution happens — submittal tracking, install scheduling, site visits, acceptance testing.
+Projects is the main operating list for Proposal Engine work. It shows proposal, mirror, intelligence, and estimate records in one searchable workspace.
 
-## What a Project page shows
+Open it at [proposals.anc.com/projects](https://proposals.anc.com/projects).
 
-- The Opportunity it came from (link back to the Pipeline record)
-- The final scope (estimator line items, signed SOW)
-- Submittal status — what's been compiled, what's been approved
-- Install milestones and dates
-- Site visit log
-- Handoff date to the Service Dashboard (when LED panels go live and become a service venue)
+## When to use it
 
-## Creating and scheduling
+- You need to find an existing proposal, estimate, budget, short form, or contract.
+- You want to see draft, approved, and signed work in one place.
+- You need to reopen a project workspace for edits, export, SOW work, or review.
+- You want to clean up stale drafts or bulk-manage old records.
 
-- `/projects/new` — spin up a new Project manually (most are created automatically when an Opportunity closes Won)
-- `/projects/[id]` — individual project detail with timeline and activity log
+## What you can do
 
-## Handoff to Service Dashboard
+- Search by client, venue, or project details.
+- Filter by status: **Overview**, **Drafts**, **Approved**, or **Signed**.
+- Filter by type: **Budgets**, **Proposals**, **Short Forms**, and **Contracts**.
+- Open a record to continue editing, exporting, or reviewing.
+- Create a new project from the page header.
+- Use dashboard insights to spot stale drafts and high-value active work.
 
-When a project reaches "Live" status, the venue, screen specs, and client record all flow into the [Service Dashboard](../../service-dashboard/introduction). The service team doesn't need to re-enter anything — they inherit everything Sales + Execution already captured.
+## Typical workflow
+
+1. Open [Projects](https://proposals.anc.com/projects).
+2. Search or filter to find the record.
+3. Open the record.
+4. Continue the next action: edit scope, export, generate a PDF, build a SOW, or review activity.
+5. Archive or delete only when you are sure the draft is no longer needed.
+
+## How it connects
+
+Projects is the workspace layer. Pipeline shows the deal movement; Estimator builds pricing; SOW Builder creates scope documents; CRM keeps the customer and opportunity record.
 
 ## See also
 
-- [Submittal Compiler](./submittal-compiler) — generates the spec package submittals depend on
-- [Service Dashboard](../../service-dashboard/introduction) — the downstream tool for "now we operate it"
+- [Pipeline](./pipeline)
+- [Estimator](./estimator)
+- [SOW Generation](./sow-generation)
+- [Everything Lands in the CRM Automatically](./universal-crm-push)

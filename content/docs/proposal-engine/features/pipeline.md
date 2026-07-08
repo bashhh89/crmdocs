@@ -1,31 +1,44 @@
 ---
 title: Pipeline
-description: The live deal list — every active, won, and lost opportunity in one place.
+description: Track proposal stages, approvals, and deal movement.
 ---
 
 # Pipeline
 
-The Pipeline view (`/pipeline`) is the default landing view for Sales. It shows every opportunity currently in play, grouped by stage, with win probability, estimated close, and expected revenue.
+Pipeline is the kanban-style view for active proposal work. It shows records by stage and gives the team a quick way to see what is moving, what is blocked, and what needs attention.
+
+Open it at [proposals.anc.com/pipeline](https://proposals.anc.com/pipeline).
+
+## When to use it
+
+- You want a stage-based view of active proposal work.
+- You need to review what is in draft, approved, signed, won, or blocked status.
+- You want to open the right proposal or estimate from a board view.
+- You are preparing for a pipeline review.
 
 ## What you see
 
-- **Stage columns** — Discovery → Qualified → Proposal → Negotiation → Closed (Won/Lost)
-- **Owner filter** — toggle to only see the deals you own
-- **Search** — by account name, opportunity title, or city
-- **Weighted revenue** — each deal's value × probability, summed across the stage
-
-## How it stays in sync with the CRM
-
-Every time an opportunity is created or updated here, the change pushes to the CRM automatically. The reverse is also true — if an opportunity is created directly in the CRM, it shows up in the Pipeline within minutes. There's no "export to CRM" step — everything is already there.
+- Cards for active proposal and estimate records.
+- Client, venue, city, document mode, screen count, and total value where available.
+- Stage columns based on proposal status.
+- Quick navigation into the full project or estimator workspace.
 
 ## How to use it
 
-1. Open [/pipeline](https://proposals.anc.com/pipeline)
-2. Filter by your owner name (top-right)
-3. Click any deal to open the Opportunity detail — you'll see the estimator, proposals, and project status for that deal in one place
-4. Move a deal between stages by dragging between columns
+1. Open [Pipeline](https://proposals.anc.com/pipeline).
+2. Review each stage column.
+3. Open a card to see the project or estimate.
+4. Move work forward from the underlying workspace: update scope, pricing, SOW, or final export.
+
+## What to check during a review
+
+- Which proposals are still drafts.
+- Which records have not been updated recently.
+- Which estimates need a next action.
+- Which signed or approved items should be handed off.
 
 ## See also
 
-- [Estimator](./estimator) — pricing and line items live inside the Opportunity detail
-- [Universal CRM Push](./universal-crm-push) — how and when data flows back to the CRM
+- [Projects](./projects)
+- [Estimator](./estimator)
+- [Everything Lands in the CRM Automatically](./universal-crm-push)

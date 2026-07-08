@@ -1,37 +1,50 @@
 ---
-title: SOW Generation
-description: AI-assisted Installation and Premium Scope of Work documents.
+title: SOW Builder
+description: Generate scopes of work from project, pricing, venue, and uploaded source details.
 ---
 
-# SOW Generation
+# SOW Builder
 
-Two flavors of SOW live in the Proposal Engine, both AI-assisted:
+SOW Builder creates Scope of Work documents for proposal and installation handoff. It can start from an existing project, a selected estimate, or uploaded source material.
 
-## Installation SOW
+Open it at [proposals.anc.com/tools/sow-generator](https://proposals.anc.com/tools/sow-generator).
 
-For when ANC is doing the install. Covers: site prep, structural requirements, rigging points, cable paths, network drops, crew size, site visits, timeline, acceptance criteria.
+## When to use it
 
-- Start it from the Estimator UI
-- Pulls: line items from the estimate, venue info from CRM, any uploaded venue drawings
-- Output: branded PDF + Word (.docx) — both attach automatically to the Opportunity
+- Pricing is mostly locked and you need a client-facing scope.
+- You need an Installation SOW for deployment work.
+- You need a Premium SOW for a broader managed or high-touch engagement.
+- You need to scan an existing SOW and summarize scope, exclusions, or acceptance criteria.
 
-## Premium SOW
+## What it produces
 
-For high-touch engagements — AV integration, content production, ongoing service. Longer, more detailed than Installation SOW.
+- Installation scope language.
+- Premium SOW language.
+- Structured scope sections by responsibility.
+- Drafts that can be reviewed, edited, exported, and saved to history.
 
-- Start it from the SOW tools in the proposal workspace
-- Adds: creative/design scope, content production line items, training schedule, ongoing support SLA
-- Output: branded PDF attached to the Opportunity
+## Typical workflow
+
+1. Open [SOW Builder](https://proposals.anc.com/tools/sow-generator).
+2. Choose or search for the related project.
+3. Pick the SOW type.
+4. Add source notes or upload supporting files if needed.
+5. Generate the SOW.
+6. Review and edit before sharing or attaching to the opportunity.
 
 ## History
 
-Every generated SOW is saved in the project history. If a client comes back six months later and asks "what did we scope last time?", you have the exact file.
+Every generated SOW is saved in SOW history. Use history when a client asks what was scoped previously or when you need to reload a draft.
 
-## Scan for content
+## Review rules
 
-The SOW scanner lets you drop an existing SOW, such as a client's RFP, and get back a structured summary: what's in scope, what's out of scope, and what acceptance criteria the client expects.
+- Do not send generated language without review.
+- Check exclusions and assumptions carefully.
+- Confirm whether installation, electrical, structural, creative, and support responsibilities are ANC-owned or client-owned.
+- Confirm dates and acceptance criteria before client delivery.
 
 ## See also
 
-- [Submittal Compiler](./submittal-compiler) — assembles the spec package that actually goes to the installer
-- [RFP Analyzer](./rfp-analyzer) — the matching tool for *inbound* RFPs (client sends us one; we respond)
+- [Estimator](./estimator)
+- [Projects](./projects)
+- [RFP Analyzer](./rfp-analyzer)

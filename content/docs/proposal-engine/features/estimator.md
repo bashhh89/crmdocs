@@ -1,38 +1,52 @@
 ---
 title: Estimator
-description: Price deals, generate Excel workbooks, handle revisions and alternates.
+description: Build budgets, swap products, review pricing, and export scoping workbooks.
 ---
 
 # Estimator
 
-The Estimator is the core pricing tool. Take a requirement, turn it into a priced line-item list, ship it to the client as a branded Excel or PDF.
+Estimator is the pricing workspace for ANC proposal work. Use it to build budgets, review product selections, compare revisions, and export the scoping workbook used for proposal review.
 
-Open from an Opportunity detail page, or go to `/estimator` for the full list.
+Open it at [proposals.anc.com/estimator](https://proposals.anc.com/estimator).
+
+## When to use it
+
+- You need to create a new estimate.
+- You need to revise an existing estimate.
+- You need to price LED screens, courtside tables, stanchions, control system items, services, or alternates.
+- You need to export a scoping workbook.
 
 ## What the Estimator does
 
-- **Line items** — pixels, modules, hardware, spares, install, travel, everything
-- **Rate card integration** — pulls current pricing from `/admin/rate-card` so numbers are always up-to-date
-- **Multi-alternate support** — Alt 1 / Alt 2 / Alt 3 pricing shown side-by-side
-- **Revisions** — every saved estimate creates a revision; the revision compare tool shows exactly what changed between two versions
-- **Excel export** — Natalia's preferred handoff format
-- **AI reasoning** — "why is this line item priced this way?" the estimator explains the math behind each figure
-- **AI chat** — natural-language estimating ("give me pricing for a 10-panel 4mm videowall with full install")
+- Creates new estimate projects.
+- Lists existing estimates with client, venue, status, value, owner, and last activity.
+- Supports search and cleanup of stale drafts.
+- Opens each estimate in the detailed Estimator Studio.
+- Uses product/catalog data for known display products.
+- Exports the scoping workbook when the estimate is ready.
 
 ## Typical workflow
 
-1. Open the Opportunity in the pipeline
-2. Click "New Estimate" — starts a fresh estimate pre-populated with known requirements
-3. Add or adjust line items; AI chat helps you fill gaps
-4. Compare revisions as you iterate
-5. Export as Excel or PDF — export automatically attaches to the Opportunity in the CRM
-6. Client receives the doc; you track their signature back in the Pipeline
+1. Open [Estimator](https://proposals.anc.com/estimator).
+2. Click **New Estimate** or open an existing estimate.
+3. Enter client, venue, display, product, and service details.
+4. Review product selection, dimensions, pricing, and assumptions.
+5. Export the scoping workbook.
+6. Move to SOW Builder or Project review when pricing is ready.
 
 ## Cleanup and bulk actions
 
-The estimator list supports bulk selection and deletion for stale drafts. Mark cleanup status on any estimate to flag it for archive. Helpful when the list gets long and you want to retire old revisions in bulk.
+The estimator list supports selecting drafts and deleting stale work. Use **Select Safe** only for drafts that have been marked safe to remove.
+
+## Important notes
+
+- Do not overwrite a manually reviewed estimate without confirming the change.
+- If source requirements came from an RFP or email, keep the original source attached or linked.
+- Product swaps can change dimensions, resolution, power, and pricing; review the workbook before sending.
 
 ## See also
 
-- [SOW Generation](./sow-generation) — once pricing is locked, generate the Installation or Premium SOW
-- [Universal CRM Push](./universal-crm-push) — how every export lands in the CRM automatically
+- [SOW Builder](./sow-generation)
+- [Spec Sheets](./spec-sheets)
+- [Control System](./control-system)
+- [Everything Lands in the CRM Automatically](./universal-crm-push)

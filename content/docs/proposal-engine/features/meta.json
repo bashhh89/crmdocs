@@ -2,12 +2,18 @@
   "title": "Features",
   "defaultOpen": true,
   "pages": [
+    "anc-hub",
     "pipeline",
     "estimator",
     "proposals",
     "sow-generation",
     "projects",
     "rfp-analyzer",
+    "spec-sheets",
+    "email-intake",
+    "meeting-capture",
+    "control-system",
+    "email-to-crm",
     "submittal-compiler",
     "universal-crm-push",
     "ai-agents"
