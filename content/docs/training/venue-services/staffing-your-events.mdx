@@ -1,0 +1,108 @@
+---
+title: Staffing Your Events
+description: For managers and venue leads — assign your events, approve what belongs on the schedule, and see the workflow land.
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+<LessonMeta time="10 min" audience="Managers and venue leads" level="Core" accent="services" />
+
+<span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span>{' '}
+<span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">LEADS</span>
+
+**After this lesson** you'll be able to staff a week of events in one pass, decide what belongs on your venue's schedule, and tell at a glance which of tonight's events are actually covered.
+
+Staffing is the part of this job that is invisible when it works. Nobody thanks you for a fully covered Saturday; everybody notices the one event that went out unassigned. This lesson is the routine that makes the second thing not happen.
+
+<ScenarioBoard
+  title="Thursday, planning the weekend"
+  situation="Your venues have six events between Friday and Sunday. Two are unassigned, one has a concert on the schedule that ANC is not covering, and one tech has picked up more hours than the rest."
+  goal="Assign the two open events, take the concert off the schedule, and spread the load before the weekend starts."
+  proof="Friday morning, every event that needs staff has a name against it, and the schedule shows only work ANC is actually doing."
+  accent="services"
+/>
+
+## What lands on your schedule, and what waits for you
+
+Home sporting events for your venue's teams go onto the master schedule automatically. Anything else the venue calendar carries — concerts, private hires, one-off bookings — does **not**. It waits for you under **Suggested**.
+
+<WhereThisLives tool="services" path="Service Dashboard → Events → Suggested" />
+
+<WorkflowMap
+  title="Deciding on a suggestion"
+  steps={[
+    "Open Events and switch to the Suggested tab.",
+    "Read what the event is and when it is.",
+    "Add to schedule if ANC is covering it.",
+    "Reject if we are not — it will not come back.",
+  ]}
+  accent="services"
+/>
+
+<Callout type="info">
+You are notified when suggestions arrive for a venue you lead. Approving puts the event on the master schedule exactly as if it had always been there — you can then staff it normally. Rejecting removes it for good, so the same concert will not reappear every time the calendar syncs.
+</Callout>
+
+<Callout type="warn">
+Only the lead for that venue can make this call. If you cannot see the buttons on a suggestion, that venue is led by someone else — which is deliberate. It stops anyone quietly adding work to a building they do not run.
+</Callout>
+
+## Staffing an event
+
+1. Open **Events** and filter to the week ahead.
+2. Sort or filter to **Needs Staffing** — these are the events with nobody on them.
+3. Open an event and assign the tech or techs covering it.
+4. Check the assignment landed — the event should now show the names.
+
+<WhereThisLives tool="services" path="Service Dashboard → Events → Needs Staffing → open the event → assign" />
+
+<Callout type="warn">
+Not every event needs staff. Warranty-only venues are covered without an assignment, and those events are marked as such — do not chase names for them. Chasing coverage on events that never needed it is the fastest way to stop trusting the unassigned count.
+</Callout>
+
+## Watching the workflow land
+
+Once an event is staffed, you get told as each step happens: the tech checks in, marks game ready, and files the post-event report. The post-event notification tells you straight away whether an incident was reported.
+
+You are still alerted when a step is **missed** — that has not changed. What is new is that you also see the steps that go right, so a quiet night reads as confirmed rather than unknown.
+
+<PracticeChecklist
+  title="The Thursday routine"
+  items={[
+    "Open Events, filter to the coming week.",
+    "Clear the Suggested tab — approve what ANC covers, reject the rest.",
+    "Filter to Needs Staffing and assign every open event.",
+    "Check nobody is carrying a disproportionate share of the weekend.",
+    "Confirm every event that needs staff now shows names.",
+  ]}
+  accent="services"
+/>
+
+<KnowledgeCheck
+  question="A concert appears under Suggested for your venue. ANC is not providing any service for it. What is the right action?"
+  options={[
+    "Approve it so the schedule is a complete picture of the building.",
+    "Reject it — the master schedule is ANC's work, not the venue's diary.",
+    "Leave it in Suggested so there is a record of it.",
+  ]}
+  answer={1}
+  explanation="The master schedule exists to show the work ANC is doing, which is what staffing, coverage and the client portal are all built on. A concert nobody is covering inflates every one of those numbers. Reject it and it will not come back on the next sync."
+  accent="services"
+/>
+
+<KeyTakeaways
+  items={[
+    "Home sporting events schedule themselves; everything else waits under Suggested.",
+    "Only the venue's lead can approve or reject its suggestions.",
+    "Rejecting is permanent — the event will not reappear on the next sync.",
+    "Needs Staffing is the list that matters; warranty-only events are not on it.",
+    "You now see completed workflow steps, not only missed ones.",
+  ]}
+  accent="services"
+/>
+
+## Related lessons
+
+- [Your Game Day Workflow](/docs/training/venue-services/game-day-workflow)
+- [Your Day-to-Day](/docs/training/venue-services/your-day-to-day)
+- [Venue Activity](/docs/training/venue-services/venue-activity)
