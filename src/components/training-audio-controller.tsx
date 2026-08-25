@@ -224,6 +224,20 @@ export function TrainingAudioController() {
   }, []);
 
   useEffect(() => {
+    const keepOneNarrationPlaying = (event: Event) => {
+      const activeMedia = event.target;
+      if (!(activeMedia instanceof HTMLAudioElement) && !(activeMedia instanceof HTMLVideoElement)) return;
+
+      document.querySelectorAll<HTMLAudioElement | HTMLVideoElement>("audio, video").forEach((media) => {
+        if (media !== activeMedia && !media.paused) media.pause();
+      });
+    };
+
+    document.addEventListener("play", keepOneNarrationPlaying, true);
+    return () => document.removeEventListener("play", keepOneNarrationPlaying, true);
+  }, []);
+
+  useEffect(() => {
     if (currentRouteAudio) {
       setActive((previous) => previous ?? currentRouteAudio);
       setVisible(true);
