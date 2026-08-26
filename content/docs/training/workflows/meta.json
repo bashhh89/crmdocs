@@ -1,4 +1,7 @@
 {
   "title": "Workflows",
-  "pages": ["rfp-to-win"]
+  "pages": [
+    "rfp-to-win",
+    "client-presentations"
+  ]
 }
