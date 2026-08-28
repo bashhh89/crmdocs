@@ -1,67 +1,98 @@
 ---
 title: Client Presentations
-description: Build a branded presentation from ANC templates, add pop-ups, share a tracked client link, print it as a PDF, and see who actually read it.
+description: Build, personalize, animate, prove, and send a premium ANC presentation from one workspace.
 ---
 
 import {Callout} from 'fumadocs-ui/components/callout';
 
-<LessonMeta time="6 min" audience="Anyone sending a client presentation" level="Core" accent="crm" />
+<LessonMeta time="5 min" audience="Anyone preparing or sending a client presentation" level="Core" accent="crm" />
 
-**After this lesson** you'll be able to build a presentation from ANC's own page templates, open a pop-up on any tile, send a tracked client link, print the whole deck as a PDF, and check who opened it and how far they got.
+**After this lesson** you'll be able to assemble an ANC presentation, add controlled motion and venue visuals, personalize approved partner surfaces, preview the cinematic experience, prove the published version, and send a client link that can capture a decision.
 
-## Watch it first
+## Watch the full workflow
 
-The walkthrough covers the client-facing pages and the back end, end to end, in under two minutes.
+This walkthrough uses the live ANC presentation workspace from the builder through the client Decision Room.
 
 <figure className="not-prose my-6">
   <video
     controls
     preload="metadata"
-    poster="https://indigo-harbor-a7wm.here.now/poster.jpg"
-    className="block w-full rounded-xl border border-fd-border shadow-sm"
+    poster="/img/academy/anc-premium-presentations-poster.jpg"
+    className="block w-full rounded-xl border border-fd-border bg-black shadow-sm"
   >
-    <source src="https://indigo-harbor-a7wm.here.now/anc-deck-templates-walkthrough.mp4" type="video/mp4" />
+    <source src="/videos/training/anc-premium-presentations.mp4" type="video/mp4" />
     <track
       kind="captions"
       srcLang="en"
       label="English"
-      src="https://indigo-harbor-a7wm.here.now/anc-deck-templates-walkthrough.srt"
+      src="/videos/training/anc-premium-presentations.vtt"
+      default
     />
     Your browser cannot play this video.
   </video>
   <figcaption className="mt-2 text-center text-[13px] text-fd-muted-foreground">
-    Cover, contents, team, capabilities, services, pop-ups, the builder, the editor and the dashboard.
+    Builder, Selective Spatial 3D, Motion Director, DealDeck Agent, Partner Lens, Cinematic mode, Preflight, and Decision Room.
   </figcaption>
 </figure>
 
-## The pages you start from
+## Build the story in one canvas
 
-Every presentation is assembled from finished ANC page templates — you pick the pages, you don't design them.
+Open **Presentations**, start from the ANC slide library, and arrange the finished pages in the order the client should experience them. The top bar keeps the authoring and delivery controls together, while the slide library remains available on the left.
 
-- **Cover** — the client's name and venue over an ANC photograph.
-- **Contents** — the chapter list. Click any chapter and the deck jumps straight to it. The same chapters sit across the top of every page.
-- **Your Team** — the people accountable for the project. Each portrait opens their bio in place.
-- **Text and images** — a capability list beside a photo set that pages through without leaving the page.
-- **Pop-up page** — tiles that open for the detail.
+- Use **Client / Venue** once to update the deck title and cover.
+- Drag slides to reorder the narrative.
+- Use **Media** to place approved images and video into supported slide areas.
+- Select **Save** before switching workflows or leaving the builder.
 
-## Pop-ups
+## Use spatial assets selectively
 
-A pop-up can be **plain text**, **text with an image**, **an image on its own**, **a video**, or **a PDF**. They exist so a page can stay clean and still carry the depth a client asks for in the room.
+Select **Spatial** when a flagship venue visual will materially strengthen the pitch. The library contains reusable arena, stadium, and ribbon-display assets with controlled viewing and approved artwork surfaces.
 
-Press Escape or the close button to come back to the page you were on.
-
-## Sharing and printing
-
-Publishing a deck produces a **tracked client link**. The link is the deliverable — it keeps working, and it records who opened it.
-
-The **Print** button at the top of every page produces the whole deck as a PDF, one slide per sheet. It is the same PDF whether you print it from inside the app or a client prints it from the link you sent.
+Choose the asset, select the display surface, add partner artwork, review the result, then select **Apply to slide**. The same scene has a deterministic fallback for environments where the interactive view is unavailable and for printed output.
 
 <Callout type="info">
-  The client link and the PDF always reflect the version you published — not whatever you happen to be editing. Publish again when you want the client to see your latest changes.
+  Spatial is a premium emphasis tool, not a requirement for every page. Use it where rotation, scale, or branded placement helps the client understand the opportunity.
 </Callout>
 
-## Seeing who read it
+## Direct the room's pace
 
-Every deck has an analytics page: how many people opened it, where from, how far they got, how long they stayed, and a recording of each viewing you can play back.
+Select **Motion** to open Motion Director. Preview any of the seven curated motion styles on the real presentation before applying it.
 
-That is the whole loop — build, share, and see who read it.
+- **Apply to this slide** keeps the effect local.
+- **Apply to full deck** gives the presentation one consistent pace.
+- **Replay** lets you judge the transition again before committing.
+
+Select **Cinematic** to preview the same deck as a scroll-driven room experience. It uses the same slides and published content, so there is no second version to maintain.
+
+## Personalize without breaking ANC
+
+Open **Partner** to use Partner Lens. Enter the prospect website or choose an approved logo from the media library. Prospect branding is restricted to Partner pages and approved scoreboard, ribbon, or signage zones; ANC navigation and typography remain ANC.
+
+This keeps personalization useful and controlled instead of recoloring the entire presentation.
+
+## Ask the agent to operate the workspace
+
+Open **Agent** and describe the outcome in plain language. The assistant understands the presentation tools and can build, edit, reorder, strengthen copy, apply motion, or open the correct feature.
+
+Publishing and sharing remain deliberate user actions. The assistant can prepare the work, but the final client delivery stays under your control.
+
+## Publish only after proof
+
+Select **Share** to save and publish the current deck and create a tracked client link. Then open **Preflight** and select **Run preflight**.
+
+**Ready to send** means all six checks passed against the published version:
+
+- the saved builder matches the published version;
+- the frozen client copy is intact;
+- a valid client link points to the deck;
+- every referenced image, video, and PDF loads correctly;
+- every slide opens cleanly on desktop and phone;
+- the published PDF has one page per slide.
+
+If any check is blocked, fix the reported item, publish again, and rerun Preflight. Do not send a stale or blocked result.
+
+## Give the client a Decision Room
+
+The shared presentation is not a passive attachment. The Decision Bar lets the client **Request revision**, **Ask question**, or **Approve / advance** without leaving the deck. Those actions return to the presentation owner alongside the normal viewing analytics.
+
+The operating sequence is simple: build, personalize, direct the motion, preview, publish, prove, then send.
