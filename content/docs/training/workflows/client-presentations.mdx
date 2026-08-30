@@ -78,13 +78,14 @@ After each request, read the execution receipts to see exactly what changed and 
 
 ## Publish only after proof
 
-Select **Share** to save and publish the current deck and create a tracked client link. Then open **Preflight** and select **Run preflight**.
+Select **Share** to name a client link, decide whether viewers must identify themselves, and take the deck live — the full flow is in [Tracked Client Links](/docs/training/workflows/tracked-client-link). Then open **Preflight check** from the **⋯** menu and select **Run preflight**.
 
-**Ready to send** means all six checks passed against the published version:
+**Ready to send** means all seven checks passed against the published version:
 
 - the saved builder matches the published version;
 - the frozen client copy is intact;
 - a valid client link points to the deck;
+- the content is client-ready — a client name is set and no template placeholders remain;
 - every referenced image, video, and PDF loads correctly;
 - every slide opens cleanly on desktop and phone;
 - the published PDF has one page per slide.

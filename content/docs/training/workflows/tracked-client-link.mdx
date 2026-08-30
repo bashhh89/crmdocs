@@ -1,0 +1,79 @@
+---
+title: Tracked Client Links
+description: Share a presentation through a named, revocable client link, prove it with Preflight, and read who opened it and how far they got.
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+<LessonMeta time="3 min" audience="Anyone sending a presentation to a client" level="Core" accent="crm" />
+
+**After this lesson** you'll be able to take a finished presentation live, hand the client a named link you control, prove the link before it goes out, and read the opens, depth, drop-off and decisions that come back.
+
+## Watch the workflow
+
+This walkthrough uses the live ANC presentation workspace from the dashboard through the client's Decision Room and back to analytics.
+
+<figure className="not-prose my-6">
+  <video
+    controls
+    preload="metadata"
+    poster="/img/academy/anc-tracked-client-link-poster.jpg"
+    className="block w-full rounded-xl border border-fd-border bg-black shadow-sm"
+  >
+    <source src="/videos/training/anc-tracked-client-link.mp4" type="video/mp4" />
+    <track
+      kind="captions"
+      srcLang="en"
+      label="English"
+      src="/videos/training/anc-tracked-client-link.vtt"
+      default
+    />
+    Your browser cannot play this video.
+  </video>
+  <figcaption className="mt-2 text-center text-[13px] text-fd-muted-foreground">
+    Dashboard, Share, the content check, a named link with viewer identity, Preflight, the client's view, and analytics.
+  </figcaption>
+</figure>
+
+## A client never gets the file
+
+Open the deck in the builder and select **Share** at the top. The client receives a link, not an attachment: the link is yours to name, watch and revoke, and the deck behind it is the frozen published copy, so later edits never change what they already opened.
+
+## Share checks the deck first
+
+Before anything goes out, Share reads every page. If template text or another client's name is still on a slide, it names the slide and stops. Fix the page, then come back. The same check runs inside Preflight as **Client-ready content**.
+
+## Name the link, decide on identity
+
+- **Link name** — say who it is for (`Riverside Arena — GM review`). One deck can carry several links, each with its own analytics.
+- **Ask viewers for name and email** — switch it on when you need to know exactly who opened the deck. The client enters their name, work email and company once; every page they reach and every decision they take is tied to that name.
+
+Select **Go live, create link and copy**. The deck is published, the link is created, and it is already on your clipboard. Every link appears under **Existing links** with **Copy**, open and **Revoke**.
+
+<Callout type="info">
+  Revoke is immediate. A revoked link shows the client a branded "this link isn't valid" page and nothing else; the deck itself stays live for every other link.
+</Callout>
+
+## Prove it with Preflight
+
+Open the **⋯** menu and select **Preflight check**, then **Run preflight**. **Ready to send** means all seven checks passed against the published version:
+
+- the saved builder matches the published version;
+- the frozen client copy is intact;
+- a valid client link points to the deck;
+- the content is client-ready — a client name is set and no template placeholders remain;
+- every referenced image, video and PDF loads;
+- every slide opens cleanly on desktop and on a phone;
+- the published PDF has one page per slide.
+
+If a check is blocked, fix the reported item, Share again to republish, and rerun Preflight.
+
+## What the client sees
+
+With identity on, the link opens on the Decision Room gate: name, work email, company, then **Open Decision Room**. The deck runs in the browser with chapter navigation, and the **Respond** bar lets the client approve, ask a question or request a revision without leaving the presentation.
+
+## Read the analytics
+
+From the dashboard row select the analytics icon, or use **Analytics** in the builder's **⋯** menu. The page shows viewers, average time, who reached the end, the biggest drop-off, devices, and decisions, with a bar per page showing how far each viewer actually got. **Export analytics CSV** on the dashboard row gives you the same data as a spreadsheet with the viewer's name and company on every row.
+
+Your own opens are never counted, so checking the link yourself does not inflate the client's numbers.
