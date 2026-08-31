@@ -1,4 +1,13 @@
 {
   "title": "CRM Training",
-  "pages": ["index", "choose-your-track", "tracks", "workflows", "core", "technology", "venue-services", "media-sponsorship", "leadership"]
+  "pages": [
+    "index",
+    "choose-your-track",
+    "tracks",
+    "core",
+    "technology",
+    "venue-services",
+    "media-sponsorship",
+    "leadership"
+  ]
 }

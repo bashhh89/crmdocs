@@ -162,7 +162,7 @@ const TRAINING_AUDIO: Record<string, TrainingAudio> = {
     src: "/audio/training/venue-services-your-day-to-day.mp3",
     title: "Your Day-to-Day",
   },
-  "/docs/training/workflows/rfp-to-win": {
+  "/docs/workflows/rfp-to-win": {
     src: "/audio/training/workflow-rfp-to-win.mp3",
     title: "RFP to Win Workflow",
   },
