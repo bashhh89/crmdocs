@@ -146,6 +146,10 @@ const TRAINING_AUDIO: Record<string, TrainingAudio> = {
     src: "/audio/training/venue-services-index.mp3",
     title: "Services",
   },
+  "/docs/training/venue-services/operations-workspace-and-scheduling": {
+    src: "/audio/training/venue-services-operations-workspace-inventory-shifts.mp3",
+    title: "Operations Workspace, Inventory & Shifts",
+  },
   "/docs/training/venue-services/service-tickets": {
     src: "/audio/training/venue-services-service-tickets.mp3",
     title: "Service Tickets",
