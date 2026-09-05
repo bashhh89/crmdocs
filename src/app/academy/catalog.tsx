@@ -244,6 +244,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
         </Link>
       </section>
 
+      <section className="border-b border-slate-200 bg-white">
+        <Link href="/docs/workflows/inside-the-work" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
+          <Image src="/img/academy/inside-the-work-poster.jpg" alt="Inside the Work — ANC design exhibition stadium" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
+          <div className="flex-1">
+            <h2 className="text-2xl font-semibold text-slate-900">Explore Inside the Work</h2>
+            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Tour six design exhibits, compare real creative, and keep useful observations for your next discussion.</p>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the stadium walkthrough <ArrowRight className="h-4 w-4" /></span>
+          </div>
+        </Link>
+      </section>
+
       {/* How it works */}
       <section className="border-b border-slate-200/70 bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14">
