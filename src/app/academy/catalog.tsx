@@ -255,6 +255,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
         </Link>
       </section>
 
+      <section className="border-b border-slate-200 bg-white">
+        <Link href="/docs/workflows/shared-client-brief" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
+          <Image src="/img/academy/anc-client-briefs-poster.jpg" alt="Shared ANC client brief and handoff stages" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
+          <div className="flex-1">
+            <h2 className="text-2xl font-semibold text-slate-900">One shared client brief and handoff</h2>
+            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Connect the opportunity, presentation, showroom and assets. Assign deliverables, approve the current material, and give sales the client links.</p>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the workflow <ArrowRight className="h-4 w-4" /></span>
+          </div>
+        </Link>
+      </section>
+
       {/* How it works */}
       <section className="border-b border-slate-200/70 bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14">
