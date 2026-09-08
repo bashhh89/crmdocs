@@ -1,0 +1,133 @@
+---
+title: Who's On — Today's Support Schedule
+description: Open the published support-tech schedule, read the day card and the two-week grid, and jump between the board and your own availability.
+---
+
+import {Callout} from 'fumadocs-ui/components/callout';
+
+<AudioPlayer src="/audio/training/venue-services-whos-on.mp3" />
+
+<video
+  controls
+  preload="metadata"
+  playsInline
+  poster="/img/screenshots/services/whos-on-poster.jpg"
+  style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}
+>
+  <source src="/videos/training/whos-on.mp4" type="video/mp4" />
+  <track
+    kind="captions"
+    src="/videos/training/whos-on.vtt"
+    srcLang="en"
+    label="English"
+    default
+  />
+</video>
+
+<LessonMeta time="3 min" audience="Support technicians and the support-schedule manager" level="Core" accent="services" />
+
+<span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span>{' '}
+<span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">SCHEDULE</span>
+
+**After this lesson** you will know where the published support-tech schedule lives, how to read who is on for any day, and how to get from the board to your own availability and back.
+
+<ScenarioBoard
+  title="Who is on tonight?"
+  situation="The two-week support schedule has just been published. You want to know who is covering the late line on Thursday, and whether you are on the board that week."
+  goal="Open Who's On, step to Thursday, and read the answer straight off the day card."
+  proof="You can name the person on each shift line for that day without asking anyone or waiting for a screenshot."
+  accent="services"
+/>
+
+## Open Who's On
+
+1. In the sidebar, open **Events & Schedule**.
+2. Choose **Who's On**.
+
+The page opens on the schedule that is out, with the day card set to today when today is covered, or to the schedule's first day when it is not.
+
+<WhereThisLives tool="services" path="Services dashboard → Events & Schedule → Who's On" />
+
+<Callout type="info">
+The top line names the schedule that is out and the day it was published. If today is not covered yet, it says so and tells you when the schedule starts.
+</Callout>
+
+## Read the day card
+
+The day card shows one day at a time — one row per shift line, with the name on it:
+
+- the day lines (TS 8am-4pm, TS 10am-6pm, TS 2pm-10pm) and the night line for that day of the week;
+- **Field Ops Travel**, with the location beside the name;
+- **Vacation**, so you can see who is out.
+
+Use the **‹ ›** arrows to move a day at a time. If a line still needs someone, it shows how many spots are open. Once today is on the schedule, **Back to today** returns you to it.
+
+<WorkflowMap
+  title="Reading a day"
+  steps={[
+    "Check the top line for the schedule that is out.",
+    "Read the day card: one shift line per row, the name beside it.",
+    "Step with the arrows, or click a day header in the grid.",
+    "Look for your own name — it is highlighted when you are on the board.",
+  ]}
+  accent="services"
+/>
+
+## Read the two-week grid
+
+Below the day card is the full two-week grid: one row per shift line, one column per day. It is the same picture the team used to receive as a screenshot, except it is live.
+
+- Click any **day header** in the grid and the day card jumps to that day.
+- Your own name is highlighted wherever you appear, so you can find yourself at a glance.
+
+<WhereThisLives tool="services" path="Who's On → Week 1 / Week 2 → click a day header" />
+
+## Go to your availability and back
+
+- **My availability** in the corner takes you to your own yes-or-no page.
+- On that page, pick the schedule that is out and a **See who's on** link brings you straight back to the board.
+
+<Callout type="warn">
+Nothing on Who's On can be edited. It is the published schedule, read-only, and it updates the moment the board changes. Availability is still answered on My Availability, and the schedule itself is built and published by the support-schedule manager.
+</Callout>
+
+<PracticeChecklist
+  title="Run it once"
+  items={[
+    "Open Who's On from Events & Schedule and confirm the schedule that is out.",
+    "Step forward two days with the › arrow and read every shift line.",
+    "Click a day header in the Week 2 grid and confirm the day card follows.",
+    "Find your own name on the board, or confirm you are not on it that week.",
+    "Open My availability, pick the published schedule, and use See who's on to return.",
+  ]}
+  accent="services"
+/>
+
+<KnowledgeCheck
+  question="You open Who's On and it says 'Nothing is out for today yet — this schedule starts Sunday Sep 13.' What does that mean?"
+  options={[
+    "The schedule failed to load and you should ask for a screenshot.",
+    "A schedule is published, but today falls before it starts; the day card opens on its first day.",
+    "You are not on the board, so nothing is shown.",
+  ]}
+  answer={1}
+  explanation="The page always shows the schedule that is out. When today is outside its dates it tells you so and opens on the first day it covers."
+  accent="services"
+/>
+
+<KeyTakeaways
+  items={[
+    "Who's On sits under Events & Schedule and every technician can open it.",
+    "The day card shows one day at a time; the arrows and the grid's day headers move it.",
+    "The two-week grid is the published board, live, with your own name highlighted.",
+    "My availability and See who's on link the two pages in both directions.",
+    "The page is read-only and updates the moment the board changes.",
+  ]}
+  accent="services"
+/>
+
+## Related lessons
+
+- [Operations Workspace, Inventory & Shifts](/docs/training/venue-services/operations-workspace-and-scheduling)
+- [Staffing Your Events](/docs/training/venue-services/staffing-your-events)
+- [Your Day-to-Day](/docs/training/venue-services/your-day-to-day)
