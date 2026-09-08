@@ -1,6 +1,6 @@
 ---
 title: Who's On — Today's Support Schedule
-description: Open the published support-tech schedule, read the day card and the two-week grid, and jump between the board and your own availability.
+description: Open the published support-tech schedule, read the day card and the two-week grid, put your own shifts in Outlook once, and see at a glance which availability days you still have to answer.
 ---
 
 import {Callout} from 'fumadocs-ui/components/callout';
@@ -24,18 +24,22 @@ import {Callout} from 'fumadocs-ui/components/callout';
   />
 </video>
 
-<LessonMeta time="3 min" audience="Support technicians and the support-schedule manager" level="Core" accent="services" />
+<LessonMeta time="4 min" audience="Support technicians and the support-schedule manager" level="Core" accent="services" />
 
 <span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span>{' '}
 <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">SCHEDULE</span>
 
-**After this lesson** you will know where the published support-tech schedule lives, how to read who is on for any day, and how to get from the board to your own availability and back.
+**After this lesson** you will know where the published support-tech schedule lives, how to read who is on for any day, how to put your own shifts into Outlook once so every future schedule lands there on its own, and how to tell at a glance which availability days you still have to answer.
+
+<Callout type="info">
+Updated September 8, 2026. This version adds two things the team asked for: **Add to Outlook** on Who's On, and an answered day changing colour on My Availability. Everything else works exactly as before.
+</Callout>
 
 <ScenarioBoard
-  title="Who is on tonight?"
-  situation="The two-week support schedule has just been published. You want to know who is covering the late line on Thursday, and whether you are on the board that week."
-  goal="Open Who's On, step to Thursday, and read the answer straight off the day card."
-  proof="You can name the person on each shift line for that day without asking anyone or waiting for a screenshot."
+  title="Who is on tonight — and is it in my calendar?"
+  situation="The two-week support schedule has just been published. You want to know who is covering the late line on Thursday, whether you are on the board that week, and you would rather see your own shifts in Outlook than keep opening the page."
+  goal="Open Who's On, step to Thursday, read the answer off the day card, then subscribe your calendar once with Add to Outlook."
+  proof="You can name the person on each shift line for that day without asking anyone, and your own shifts appear in your calendar without re-adding anything."
   accent="services"
 />
 
@@ -82,10 +86,51 @@ Below the day card is the full two-week grid: one row per shift line, one column
 
 <WhereThisLives tool="services" path="Who's On → Week 1 / Week 2 → click a day header" />
 
+## Put your shifts in Outlook
+
+In the top corner of Who's On, beside **My availability**, is **Add to Outlook**. Click it and a panel opens with a calendar link that is yours alone. You subscribe once; every schedule that goes out after that shows up in your calendar on its own, with nothing to re-add.
+
+1. In Outlook, open the calendar and choose **Add calendar → Subscribe from web** (in the desktop app: **Open Calendar → From Internet**).
+2. Back on Who's On, click **Copy link**, paste it into Outlook, and call the calendar **ANC Tech Support**.
+
+Under the link box:
+
+- **Open in my calendar app** hands the link straight to your calendar app.
+- **Download this schedule (.ics)** gives you a one-off file. It will not update — use the subscription for that.
+- **Reset link** makes a new link and the old one stops working. Use it if your link ever gets shared.
+
+The link shows only your own shifts on published schedules: a day shift as a timed event, a night line ending after midnight, and Travel or Vacation days as all-day entries with the location.
+
+<WhereThisLives tool="services" path="Who's On → Add to Outlook → Copy link" />
+
+<WorkflowMap
+  title="Subscribing once"
+  steps={[
+    "On Who's On, click Add to Outlook.",
+    "Click Copy link.",
+    "In Outlook: Add calendar → Subscribe from web, paste the link, name it ANC Tech Support.",
+    "Done — every published schedule from now on lands in that calendar by itself.",
+  ]}
+  accent="services"
+/>
+
 ## Go to your availability and back
 
 - **My availability** in the corner takes you to your own yes-or-no page.
 - On that page, pick the schedule that is out and a **See who's on** link brings you straight back to the board.
+
+### Your answered days change colour
+
+On My Availability, a day changes colour the moment you answer it, so what is left to fill is visible at a glance:
+
+- **green** when you said Available;
+- **grey** when you said Off;
+- a **lighter green** when only some of the lines on that day have an answer;
+- **white** when nothing has been said yet.
+
+The count at the top of the page keeps score — "3 of 7 days answered" — so you can see when you are done.
+
+<WhereThisLives tool="services" path="Services dashboard → Events & Schedule → My Availability" />
 
 <Callout type="warn">
 Nothing on Who's On can be edited. It is the published schedule, read-only, and it updates the moment the board changes. Availability is still answered on My Availability, and the schedule itself is built and published by the support-schedule manager.
@@ -98,7 +143,9 @@ Nothing on Who's On can be edited. It is the published schedule, read-only, and 
     "Step forward two days with the › arrow and read every shift line.",
     "Click a day header in the Week 2 grid and confirm the day card follows.",
     "Find your own name on the board, or confirm you are not on it that week.",
-    "Open My availability, pick the published schedule, and use See who's on to return.",
+    "Click Add to Outlook, copy the link, and subscribe in Outlook as ANC Tech Support.",
+    "Open My availability, answer one day, and watch it change colour.",
+    "Pick the published schedule and use See who's on to return to the board.",
   ]}
   accent="services"
 />
@@ -115,11 +162,25 @@ Nothing on Who's On can be edited. It is the published schedule, read-only, and 
   accent="services"
 />
 
+<KnowledgeCheck
+  question="You want next month's schedule to appear in Outlook without doing anything. Which option under Add to Outlook do you use?"
+  options={[
+    "Download this schedule (.ics) — it is a copy of the current schedule.",
+    "Copy link, then Subscribe from web in Outlook — every published schedule shows up on its own.",
+    "Reset link — it refreshes the calendar.",
+  ]}
+  answer={1}
+  explanation="A downloaded file is a one-off copy and will not update. Subscribing to the link is what keeps the calendar current; Reset link only replaces a link that has been shared."
+  accent="services"
+/>
+
 <KeyTakeaways
   items={[
     "Who's On sits under Events & Schedule and every technician can open it.",
     "The day card shows one day at a time; the arrows and the grid's day headers move it.",
     "The two-week grid is the published board, live, with your own name highlighted.",
+    "Add to Outlook gives you a personal calendar link: subscribe once and every published schedule lands in your calendar by itself.",
+    "On My Availability an answered day turns green (Available), grey (Off), or lighter green (partly answered) — white days still need you.",
     "My availability and See who's on link the two pages in both directions.",
     "The page is read-only and updates the moment the board changes.",
   ]}
