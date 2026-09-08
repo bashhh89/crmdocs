@@ -1,0 +1,32 @@
+1
+00:00:00,250 --> 00:00:09,210
+Open Design in ANC Studio. Choose campaign artwork, a venue concept, or a board package. Start with the kind of asset you need.
+
+2
+00:00:09,810 --> 00:00:19,475
+Write a clear brief, including the exact words and visual direction. Choose the format, then upload the logo or source images that should guide the design.
+
+3
+00:00:20,075 --> 00:00:30,550
+To use an image already in the content library, select Choose from FTP. Open the folder and select Use reference. The chosen image returns to your design.
+
+4
+00:00:31,150 --> 00:00:41,208
+Generate the design and review the finished image. The brief, references and output stay together, so you can reopen your saved work later.
+
+5
+00:00:41,808 --> 00:00:51,342
+Select an image version and describe the change you want. Create revision makes a new version while keeping the previous files available for comparison.
+
+6
+00:00:51,942 --> 00:01:01,190
+To add motion, select an image and describe what should move. Choose Make motion clip, play the result, and download the MP4 when it meets your brief.
+
+7
+00:01:01,790 --> 00:01:10,959
+For an LED board package, review the proof and the display dimensions. Correct any flagged details, then review the credit total before approving final rendering.
+
+8
+00:01:11,559 --> 00:01:23,444
+Download the final file at the required board dimensions. Before sharing, check the copy, logos and visual accuracy. You stay in control of the version you use.
+
