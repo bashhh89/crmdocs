@@ -222,73 +222,7 @@ export default function AcademyCatalog({ display }: { display: string }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-white">
-        <Link href="/docs/workflows/venue-showroom" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
-          <Image src="/img/academy/venue-showroom-poster.jpg" alt="The Venue Vision showroom" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-900">Prepare, present, and share a venue</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Save the creative team’s venue experience, then give sales a presentation link with the media ready to play.</p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the showroom walkthrough <ArrowRight className="h-4 w-4" /></span>
-          </div>
-        </Link>
-      </section>
-
-      <section className="border-b border-slate-200 bg-white">
-        <Link href="/docs/workflows/anc-sales-kits" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
-          <Image src="/img/academy/anc-sales-kits-poster.jpg" alt="ANC sales kit in the Content library" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-900">Build a presentation from an ANC sales kit</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Personalize prepared venue material, choose the relevant sections, and bring a private talk track to the meeting.</p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the sales kit walkthrough <ArrowRight className="h-4 w-4" /></span>
-          </div>
-        </Link>
-      </section>
-
-      <section className="border-b border-slate-200 bg-white">
-        <Link href="/docs/workflows/inside-the-work" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
-          <Image src="/img/academy/inside-the-work-poster.jpg" alt="Inside the Work — ANC design exhibition stadium" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-900">Explore Inside the Work</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Tour six design exhibits, compare real creative, and keep useful observations for your next discussion.</p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the stadium walkthrough <ArrowRight className="h-4 w-4" /></span>
-          </div>
-        </Link>
-      </section>
-
-      <section className="border-b border-slate-200 bg-white">
-        <Link href="/docs/workflows/shared-client-brief" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
-          <Image src="/img/academy/anc-client-briefs-poster.jpg" alt="Shared ANC client brief and handoff stages" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-900">One shared client brief and handoff</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Connect the opportunity, presentation, showroom and assets. Assign deliverables, approve the current material, and give sales the client links.</p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the workflow <ArrowRight className="h-4 w-4" /></span>
-          </div>
-        </Link>
-      </section>
-
-      <section className="border-b border-slate-200 bg-white">
-        <Link href="/docs/workflows/classroom-proposal" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
-          <Image src="/img/academy/classroom-creation-proposal.jpg" alt="ANC Studio estimate PDF and client delivery" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-900">Create a client proposal in ANC Studio</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Use the familiar creation flow to turn an RFP into a client presentation, verified estimate PDF and optional client link.</p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the Proposal walkthrough <ArrowRight className="h-4 w-4" /></span>
-          </div>
-        </Link>
-      </section>
-
       {/* How it works */}
-      <section className="border-b border-slate-200 bg-white">
-        <Link href="/docs/workflows/classroom-design" className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center">
-          <Image src="/img/academy/classroom-creation-design.jpg" alt="ANC Studio Design artwork and saved versions" width={480} height={270} className="h-auto w-full rounded-lg md:w-64" />
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-900">Create designs in ANC Studio</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">Describe the designs in the familiar brief box, add uploads or visual references, then browse, refine and download the results on the canvas.</p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-700">Watch the Design walkthrough <ArrowRight className="h-4 w-4" /></span>
-          </div>
-        </Link>
-      </section>
-
       <section className="border-b border-slate-200/70 bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14">
           <div className="grid gap-10 sm:grid-cols-3">
