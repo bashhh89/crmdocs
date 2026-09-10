@@ -245,6 +245,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link href="/docs/workflows/anc-sales-website"
+          data-umami-event="academy-anc-sales-website"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/academy/anc-sales-website-poster.jpg" alt="The sales-first ANC website opening experience" width={480} height={300} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · ANC website</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Explore the sales-first ANC website</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Move from one connected venue promise to sourced proof, clear buyer routes, and a focused project brief.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <Link href="/docs/workflows/video-library"
           data-umami-event="academy-video-library-lesson"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
