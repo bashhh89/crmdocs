@@ -245,6 +245,19 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link
+          href="/docs/workflows/bid-workspace"
+          data-umami-event="academy-bid-workspace-lesson"
+          className="mb-12 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"
+        >
+          <Image src="/img/screenshots/proposals/bid-workspace-poster.jpg" alt="Bid Intake review queue and selected training email" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Technology</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Review Bid Intake &amp; Bid Alerts</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Find the next email, check deadline evidence, and understand what happened to an alert.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900" style={displayStyle}>

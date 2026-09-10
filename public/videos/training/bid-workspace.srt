@@ -1,0 +1,101 @@
+1
+00:00:00,350 --> 00:00:03,920
+Bid Intake brings incoming bid emails into one
+review queue.
+
+2
+00:00:03,920 --> 00:00:05,705
+This walkthrough uses training examples.
+
+3
+00:00:05,705 --> 00:00:09,632
+Start with Needs review, switch to Due soon for
+approaching deadlines,
+
+4
+00:00:09,632 --> 00:00:11,417
+or search for a venue.
+
+5
+00:00:11,417 --> 00:00:15,344
+Select a bid to keep its next action beside the
+evidence.
+
+6
+00:00:16,444 --> 00:00:21,281
+Summary and dates shows the request, the deadline,
+and the exact words supporting it.
+
+7
+00:00:21,281 --> 00:00:23,699
+Check that evidence before changing a deal.
+
+8
+00:00:23,699 --> 00:00:26,463
+Open Original email to read the full message,
+
+9
+00:00:26,463 --> 00:00:30,263
+then return to the summary when you are ready to
+decide.
+
+10
+00:00:31,363 --> 00:00:34,476
+Choose the matching opportunity and review the
+confirmation.
+
+11
+00:00:34,476 --> 00:00:36,422
+The current deadline stays visible.
+
+12
+00:00:36,422 --> 00:00:42,259
+Clear the deadline checkbox when you want to keep
+the dates already in the CRM.
+
+13
+00:00:42,259 --> 00:00:44,594
+Confirm and apply saves the decision.
+
+14
+00:00:44,594 --> 00:00:46,540
+Cancel returns you to review.
+
+15
+00:00:47,640 --> 00:00:51,512
+For a message you need to add yourself, open Process
+an email.
+
+16
+00:00:51,512 --> 00:00:56,029
+Enter the subject and sender, then paste the full
+message, including the deadline wording.
+
+17
+00:00:56,029 --> 00:00:59,578
+Extract and match prepares it for review in the same
+queue.
+
+18
+00:01:00,678 --> 00:01:03,749
+Bid Alerts explains what happened after an email was
+checked.
+
+19
+00:01:03,749 --> 00:01:08,048
+Filter by outcome, open an entry, and read why it
+was held or announced.
+
+20
+00:01:08,048 --> 00:01:09,276
+Tests stay clearly labeled.
+
+21
+00:01:09,276 --> 00:01:12,347
+Review source email takes you back to the original
+bid,
+
+22
+00:01:12,347 --> 00:01:15,725
+so you can check the evidence and choose the next
+action.

@@ -1,0 +1,72 @@
+---
+title: Review Bid Intake & Bid Alerts
+description: Find the next bid to review, check the original email and deadline evidence, choose the right opportunity, and understand each alert outcome.
+---
+
+<LessonMeta time="3 min" audience="Estimators and bid reviewers" level="Core" accent="proposals" />
+
+<AudioPlayer src="/audio/training/bid-workspace.mp3" />
+
+Use **Bid Intake** to decide what happens to an incoming bid email. Use **Bid Alerts** to understand what was announced, held, or stopped.
+
+<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/bid-workspace-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/bid-workspace.mp4" type="video/mp4" />
+  <track kind="captions" src="/videos/training/bid-workspace.vtt" srcLang="en" label="English" default />
+</video>
+
+The recording shows the current interface with clearly labeled training examples. No client records are shown or changed.
+
+[Open Bid Intake](https://proposals.anc.com/admin/email-to-crm) · [Open Bid Alerts](https://proposals.anc.com/admin/email-to-crm/alerts) · [Download the walkthrough](/videos/training/bid-workspace.mp4)
+
+## Start with the work that needs you
+
+In the Proposal Engine sidebar, open **Bid Intake**. The queue groups related messages into the same pursuit.
+
+- **Needs review** puts outstanding decisions in front of you.
+- **Due soon** shows verified bid deadlines within the next 14 days.
+- **Read failures** brings together messages that need to be read again.
+- **Completed** shows emails already dealt with.
+- **All mail** includes the remaining correspondence.
+
+Search by venue, project, or email. Select a queue row to open its details beside the list. On a phone, the details fill the screen; **Back to queue** returns you to the same row.
+
+## Check the evidence before deciding
+
+Read the bid deadline and **Next action** at the top of the selected email. In **Summary & dates**, each extracted date appears beside the sender's words and its evidence label. Open **Original email** to check the full message.
+
+When a pursuit contains multiple emails, use the message selector to read the relevant message. Attachment names are references; open the source email to access the files.
+
+## Choose the opportunity and review the dates
+
+Select **Choose opportunity** beside the correct match. If the right opportunity is not listed, open **Not one of these? Assign to a different opportunity** and search for it.
+
+The confirmation shows the selected opportunity and its current proposal deadline when available. Review **Also apply verified bid and RFI deadlines from this email** carefully. Leave it unchecked to preserve the CRM's current deadlines.
+
+**Confirm & apply** adds the email summary to the opportunity's timeline and applies the chosen date option. **Cancel** returns to review without applying the choice. If no opportunity exists, review **Draft new opportunity** instead.
+
+## Add an email yourself
+
+Open **Process an email**. Add the subject and sender, then paste the full message into **Email message**, including the deadline wording. Use **Extract & match** to prepare it for review in the queue.
+
+## Understand an alert outcome
+
+Open **Bid Alerts** from the shared tabs. Choose the time window, search for the venue, or filter by **Announced**, **Held for review**, **Not announced**, or **Tests**.
+
+Select an entry to read its outcome and reason. **Latest alert** opens the latest actual announcement in the loaded time window, excluding tests. **Review source email** returns to the corresponding intake email.
+
+Reviewing an alert does not resend it. Bid Intake decisions update the CRM; the intake page does not send Slack alerts.
+
+<PracticeChecklist
+  title="Try the review flow"
+  items={[
+    "Open Needs review and find a bid by venue.",
+    "Read its Summary & dates, then check Original email.",
+    "Review an opportunity match and the deadline checkbox before applying anything.",
+    "Open a Bid Alerts entry, read the reason, and follow Review source email.",
+  ]}
+  accent="proposals"
+/>
+
+<PromptCard accent="proposals" title="Prepare your review" prompt="Help me review this bid email. Identify the venue, project, explicit proposal and question deadlines, and the exact words supporting each date. Flag anything unclear before I update the opportunity." />
+
+Related: [Proposal deadlines](/docs/training/technology/proposals-and-due-dates) · [Estimation and proposals](/docs/training/technology/estimation-and-proposals)
