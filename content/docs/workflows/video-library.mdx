@@ -1,26 +1,49 @@
 ---
 title: Find, watch & collect ANC videos
-description: Search the ANC video library, save a video, build a playlist, and share the moment that matters.
+description: Read what is inside before watching, search spoken and visible content, jump to a moment, and collect useful videos.
 ---
 
 <LessonMeta time="3 min" audience="Everyone at ANC" level="Core" accent="connected" />
 
-<AudioPlayer src="/audio/training/video-library.mp3" />
+<AudioPlayer src="/audio/training/video-library-content.mp3" />
 
 The [ANC video library](https://videos.basheer.app/) brings finished films, walkthroughs, Academy lessons, venue experiences, and approved source footage into one place.
+
+<video controls preload="metadata" playsInline poster="/img/academy/video-library-content.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/video-library-content.mp4" type="video/mp4" />
+  <track kind="captions" src="/videos/training/video-library-content.vtt" srcLang="en" label="English" default />
+</video>
+
+[Open the video library](https://videos.basheer.app/) · [Download the content-search walkthrough](/videos/training/video-library-content.mp4)
+
+## Know what is inside before you watch
+
+Each card describes what is actually shown or explained in that recording. Select **Details** to read the fuller overview and browse its chapters before playback. Choose **Watch video** to start at the beginning, or select a chapter to start there.
+
+Descriptions, transcripts, and scene notes are generated from the recording. Wording and timings may be approximate; use the original video to confirm a detail.
+
+## Find a moment without remembering the title
+
+Use the search field at the top. Describe what you need, such as **connect the support schedule to my Outlook calendar**, **approve a suggested concert booking**, or **check in and get game ready**. Press **Enter**, select **Search**, or pause after typing.
+
+Search matches what is said and shown inside the recordings, alongside their descriptions and titles. A result can include a timed excerpt. Select that excerpt to start at the matching moment, or select the poster to watch normally. When there is no strong match, the library labels the closest available videos.
+
+Use the length filter or change the sort order to narrow the results. **All videos** shows the complete catalog, and the category links in the left sidebar let you browse one kind of video at a time. On a phone, open the menu to find the same navigation.
+
+## Read the transcript and explore scenes
+
+Below the player, **Inside this video** contains the chapters, **Transcript**, and **Scenes**. Enter a word in **Find in this video** to filter the selected view. Select a line or chapter to seek and play from that timestamp.
+
+Videos with speech also offer captions in the player and **Download captions** below the transcript. For music-only or silent films, use **Scenes** to read what is visible; there is no invented spoken transcript.
+
+## Library basics walkthrough
+
+This companion walkthrough covers saving, playlists, the watch queue, playback settings, and tracked sharing.
 
 <video controls preload="metadata" playsInline poster="/img/academy/video-library.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
   <source src="/videos/training/video-library.mp4" type="video/mp4" />
   <track kind="captions" src="/videos/training/video-library.vtt" srcLang="en" label="English" default />
 </video>
-
-[Open the video library](https://videos.basheer.app/) · [Download the walkthrough](/videos/training/video-library.mp4)
-
-## Find a video without remembering its name
-
-Use the search field at the top of the library. Enter a topic, a workflow, or an idea, such as **who is covering the venue today**, **stadium LED screens**, or **build a presentation for a client**.
-
-Search matches meaning, topics, and titles. Use the length filter or change the sort order to narrow the results. **All videos** shows the complete catalog, and the category links in the left sidebar let you browse one kind of video at a time. On a phone, open the menu to find the same navigation.
 
 ## Watch and return to your place
 
@@ -51,7 +74,9 @@ Shared links include viewing attribution. **Viewing analytics** at the bottom of
 <PracticeChecklist
   title="Make the library yours"
   items={[
-    "Search by a topic rather than an exact title.",
+    "Read a video description and open Details before watching.",
+    "Search for a spoken or visible detail and play its matching moment.",
+    "Filter a transcript or scene list and jump to a line.",
     "Save one useful video and find it under Saved videos.",
     "Create a playlist and add a second video.",
     "Queue a collection and change the running order.",
