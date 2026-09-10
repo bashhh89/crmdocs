@@ -1,0 +1,35 @@
+{
+  "lang": "English",
+  "speed": 1,
+  "model": "speech-2.8-hd",
+  "voice_id": "English_ManWithDeepVoice",
+  "pronunciations": {
+    "ANC": "A N C"
+  },
+  "lines": [
+    {
+      "id": "s1",
+      "text": "On Who's on, open Add to Outlook. Your personal calendar contains your own shifts. If you have schedule access, you can also choose the master schedule."
+    },
+    {
+      "id": "s2",
+      "text": "Choose Master schedule, everyone's shifts. This calendar includes every published assignment, with each technician's name. Draft schedules and availability responses stay off the calendar."
+    },
+    {
+      "id": "s3",
+      "text": "Select Copy link. In Outlook on the web, open Add calendar, then Subscribe from web. Paste your link, and name the calendar ANC Tech Support, Master Schedule."
+    },
+    {
+      "id": "s4",
+      "text": "Subscribe once and future published shifts arrive through the same link. Outlook controls refresh timing, and changes can take more than twenty-four hours. Who's on always shows the latest published schedule."
+    },
+    {
+      "id": "s5",
+      "text": "My shifts keeps its own link. Switching this selector does not change an existing subscription. Reset link replaces only the calendar link you have selected, so the other subscription stays intact."
+    },
+    {
+      "id": "s6",
+      "text": "From the Support Tech Schedule board, Master schedule to Outlook opens this panel directly. Keep the link private. Once you subscribe in Outlook, you can see everyone's published shifts in one calendar."
+    }
+  ]
+}

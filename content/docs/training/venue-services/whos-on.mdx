@@ -1,6 +1,6 @@
 ---
 title: Who's On — Today's Support Schedule
-description: Open the published support-tech schedule, read the day card and the two-week grid, put your own shifts in Outlook once, and see at a glance which availability days you still have to answer.
+description: Open the published support-tech schedule, read the day card and the two-week grid, put your own shifts or the master schedule in Outlook, and see at a glance which availability days you still have to answer.
 ---
 
 import {Callout} from 'fumadocs-ui/components/callout';
@@ -32,7 +32,7 @@ import {Callout} from 'fumadocs-ui/components/callout';
 **After this lesson** you will know where the published support-tech schedule lives, how to read who is on for any day, how to put your own shifts into Outlook once so every future schedule lands there on its own, and how to tell at a glance which availability days you still have to answer.
 
 <Callout type="info">
-Updated September 8, 2026. This version adds two things the team asked for: **Add to Outlook** on Who's On, and an answered day changing colour on My Availability. Everything else works exactly as before.
+Updated September 10, 2026. Schedule managers can now choose **Master schedule — everyone’s shifts** under **Add to Outlook**. The new walkthrough below covers the master subscription; the first walkthrough covers the technician’s daily workflow.
 </Callout>
 
 <ScenarioBoard
@@ -113,6 +113,37 @@ The link shows only your own shifts on published schedules: a day shift as a tim
   ]}
   accent="services"
 />
+
+## Master schedule in Outlook
+
+Schedule managers can subscribe to **everyone’s published shifts**, with the technician’s name on each entry. Your personal subscription keeps its own link.
+
+<video controls preload="metadata" playsInline poster="/img/screenshots/services/master-outlook-poster.png" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/master-outlook.mp4" type="video/mp4" />
+  <track kind="captions" src="/videos/training/master-outlook.vtt" srcLang="en" label="English" default />
+</video>
+
+1. On **Who’s on**, open **Add to Outlook**.
+2. In **Calendar**, choose **Master schedule — everyone’s shifts**.
+3. Select **Copy link**.
+4. In Outlook on the web, choose **Add calendar → Subscribe from web**. Paste the link, name it **ANC Tech Support — Master Schedule**, and subscribe.
+
+From the **Support Tech Schedule** board, **Master schedule to Outlook** opens this panel directly.
+
+<WhereThisLives tool="services" path="Support Tech Schedule → Master schedule to Outlook" />
+
+<Callout type="info">
+**Published shifts only.** Draft schedules and availability responses are excluded. Outlook controls refresh timing, and updates can take more than 24 hours; check Who’s on for the latest published changes. Downloading a file gives you a one-off copy rather than a subscription.
+</Callout>
+
+Keep the link private. It works while your account is active and you have schedule access. **Reset link** replaces only the selected calendar’s link, and Outlook will need that new link. Your other subscription is unaffected. Switching the Calendar selector does not change a subscription already added to Outlook.
+
+<PracticeChecklist title="Subscribe to the master schedule" items={[
+  "Choose Master schedule — everyone’s shifts and copy its link.",
+  "Subscribe from web in Outlook and name the calendar ANC Tech Support — Master Schedule.",
+  "Check that the entries include technician names.",
+  "Use Who’s on when you need the latest published change immediately.",
+]} accent="services" />
 
 ## Go to your availability and back
 
