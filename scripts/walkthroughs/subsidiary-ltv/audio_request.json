@@ -1,0 +1,27 @@
+{
+  "lang": "English",
+  "speed": 1,
+  "model": "speech-2.8-hd",
+  "voice_id": "English_ManWithDeepVoice",
+  "pronunciations": {
+    "LTV": "L T V"
+  },
+  "lines": [
+    {
+      "id": "s1",
+      "text": "Start with the parent Company record. In the Fields panel on the left, expand Business to find subsidiary lifetime value."
+    },
+    {
+      "id": "s2",
+      "text": "The four Subsidiary LTV fields are together here, in this order: Revenue, Margin, Won Deals, and Last Rollup."
+    },
+    {
+      "id": "s3",
+      "text": "Revenue and Margin are currency totals. Won Deals is a count. Last Rollup shows the date and time the figures were last refreshed."
+    },
+    {
+      "id": "s4",
+      "text": "This placement is shared across Company records. You do not need to save a separate layout for each company. Check Last Rollup before using the figures in an account review."
+    }
+  ]
+}

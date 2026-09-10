@@ -1,0 +1,30 @@
+const { chromium } = require('/tmp/node_modules/playwright');
+const fs = require('node:fs');
+const root = __dirname;
+const credentials = Object.fromEntries(fs.readFileSync('/root/.crm-creds','utf8').split('\n').filter(l=>l.trim()&&!l.startsWith('#')&&l.includes('=')).map(l=>{const i=l.indexOf('=');return [l.slice(0,i).trim(),l.slice(i+1).trim().replace(/^['"]|['"]$/g,'')]}));
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+ const context=await browser.newContext({viewport:{width:1920,height:1080},deviceScaleFactor:1});
+ const page=await context.newPage();
+ await page.goto('https://crm.ancsports.net',{waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:/continue with email/i}).first().click();
+ await page.waitForTimeout(2000);
+ await page.locator('input[type=email],input[name=email],input[autocomplete=email]').first().fill(credentials.CRM_EMAIL);
+ await page.keyboard.press('Enter');
+ await page.locator('input[type=password]').waitFor();
+ await page.locator('input[type=password]').fill(credentials.CRM_PASSWORD);
+ await page.keyboard.press('Enter');
+ await page.waitForURL(/\/objects?\//,{timeout:60000,waitUntil:'domcontentloaded'});
+ await context.storageState({path:root+'/private/auth.json'});
+ fs.chmodSync(root+'/private/auth.json',0o600);
+ await page.goto('https://crm.ancsports.net/object/company/68a366db-2630-40ea-a706-472a0a0a6ec9',{waitUntil:'domcontentloaded'});
+ await page.waitForTimeout(10000);
+ await page.screenshot({path:root+'/review/initial.png'});
+ const dom=await page.evaluate(()=>{
+  const e=Array.from(document.querySelectorAll('*')).find(e=>e.textContent==='Subsidiary LTV (Revenue)');
+  return {ancestor:e?.parentElement?.parentElement?.parentElement?.outerHTML,handles:Array.from(document.querySelectorAll('[role=separator], [data-testid]')).map(e=>({role:e.getAttribute('role'),testid:e.getAttribute('data-testid'),rect:e.getBoundingClientRect().toJSON()})).filter(e=>/resiz|split|field|record/.test(e.testid||e.role||''))};
+ });
+ fs.writeFileSync(root+'/review/dom.json',JSON.stringify(dom,null,2));
+ console.log('Authenticated record captured; DOM and safe session saved.');
+ await browser.close();
+})().catch(e=>{console.error(e.message);process.exit(1)});

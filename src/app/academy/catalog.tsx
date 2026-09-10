@@ -291,6 +291,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
             <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
           </div>
         </Link>
+        <Link href="/docs/training/core/subsidiary-ltv"
+          data-umami-event="academy-subsidiary-ltv"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/screenshots/crm/subsidiary-ltv-poster.jpg" alt="The four Subsidiary LTV fields in the Company Business section" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Core</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Find subsidiary lifetime value</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Read Revenue, Margin, Won Deals, and Last Rollup together in the Company Business section.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900" style={displayStyle}>

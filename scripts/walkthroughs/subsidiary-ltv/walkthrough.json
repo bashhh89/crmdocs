@@ -1,0 +1,34 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "hold_after": 0.65,
+  "audio_delay": 0.25,
+  "output": "output/subsidiary-ltv.mp4",
+  "scenes": [
+    {
+      "id": "s1",
+      "image": "frames/scene-1.png",
+      "audio": "voice/s1.mp3",
+      "motion": false
+    },
+    {
+      "id": "s2",
+      "image": "frames/scene-2.png",
+      "audio": "voice/s2.mp3",
+      "motion": false
+    },
+    {
+      "id": "s3",
+      "image": "frames/scene-3.png",
+      "audio": "voice/s3.mp3",
+      "motion": false
+    },
+    {
+      "id": "s4",
+      "image": "frames/scene-4.png",
+      "audio": "voice/s4.mp3",
+      "motion": false
+    }
+  ]
+}

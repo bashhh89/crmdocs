@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.250 --> 00:00:04.576
+Start with the parent Company record. In the Fields panel on the
+
+2
+00:00:04.576 --> 00:00:07.460
+left, expand Business to find subsidiary lifetime value.
+
+3
+00:00:08.110 --> 00:00:13.961
+The four Subsidiary LTV fields are together here, in this order: Revenue,
+
+4
+00:00:13.961 --> 00:00:16.887
+Margin, Won Deals, and Last Rollup.
+
+5
+00:00:17.537 --> 00:00:22.403
+Revenue and Margin are currency totals. Won Deals is a count. Last
+
+6
+00:00:22.403 --> 00:00:26.863
+Rollup shows the date and time the figures were last refreshed.
+
+7
+00:00:27.513 --> 00:00:31.264
+This placement is shared across Company records. You do not need to
+
+8
+00:00:31.264 --> 00:00:35.015
+save a separate layout for each company. Check Last Rollup before using
+
+9
+00:00:35.015 --> 00:00:36.891
+the figures in an account review.
