@@ -1,0 +1,8 @@
+{
+  "verdict": "pass",
+  "full_transcript": "Use edit role when a company's responsibility changes, and save the updated role. Clicking the company name opens its existing account directly. Back on the project, remove asks you to confirm before removing that relationship. The company account stays available for other projects.",
+  "audio_quality": "The voiceover is clear, professional, and well-paced. There are no clipped words, background noise, or awkward silences.",
+  "visual_quality": "The interface is highly readable, and the video transitions smoothly between screens. The actions shown match the narration perfectly.",
+  "privacy": "No real client data or credentials are shown. The records are clearly labeled as QA training data, and a watermark is visible throughout.",
+  "issues": []
+}

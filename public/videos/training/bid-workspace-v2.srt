@@ -1,0 +1,150 @@
+1
+00:00:00,350 --> 00:00:04,878
+Here is the full path from an incoming email to its
+opportunity.
+
+2
+00:00:04,878 --> 00:00:07,142
+This walkthrough uses labeled training records.
+
+3
+00:00:07,142 --> 00:00:10,915
+In Bid Intake, select the message and open Original
+email.
+
+4
+00:00:10,915 --> 00:00:14,688
+Read what the sender actually wrote, then return to
+Summary
+
+5
+00:00:14,688 --> 00:00:17,330
+and dates to check the deadline evidence.
+
+6
+00:00:18,430 --> 00:00:22,434
+Check the project as well as the venue before
+choosing an opportunity.
+
+7
+00:00:22,434 --> 00:00:27,107
+Use the suggestions for a new email, or search for
+the opportunity by name
+
+8
+00:00:27,107 --> 00:00:29,109
+when you need a different match.
+
+9
+00:00:29,109 --> 00:00:32,112
+Choose the right result, then review the deadline
+checkbox.
+
+10
+00:00:32,112 --> 00:00:34,782
+Clear it if the current dates should stay.
+
+11
+00:00:35,882 --> 00:00:39,380
+Confirm and apply saves your decision and shows the
+result.
+
+12
+00:00:39,380 --> 00:00:42,528
+The receipt names the opportunity, explains which
+deadlines changed,
+
+13
+00:00:42,528 --> 00:00:45,326
+and shows whether a new alert was posted.
+
+14
+00:00:45,326 --> 00:00:50,223
+Open the opportunity from this receipt to check the
+saved information in the CRM.
+
+15
+00:00:51,323 --> 00:00:53,550
+On the opportunity, open Bid emails.
+
+16
+00:00:53,550 --> 00:00:57,631
+Each confirmed message appears here with its summary
+and review result.
+
+17
+00:00:57,631 --> 00:01:00,971
+Read original email expands the full message in
+place.
+
+18
+00:01:00,971 --> 00:01:05,053
+Review in Bid Intake takes you back to that exact
+email
+
+19
+00:01:05,053 --> 00:01:07,650
+when you need to inspect the decision.
+
+20
+00:01:08,750 --> 00:01:13,385
+If the inquiry is a new project and no existing
+opportunity fits,
+
+21
+00:01:13,385 --> 00:01:14,930
+select Draft new opportunity.
+
+22
+00:01:14,930 --> 00:01:19,952
+The result opens an Unassigned draft for review
+before an estimator is assigned.
+
+23
+00:01:19,952 --> 00:01:24,974
+Its source email stays connected, so the team can
+review the inquiry together
+
+24
+00:01:24,974 --> 00:01:26,905
+and decide the next step.
+
+25
+00:01:28,005 --> 00:01:31,281
+Project team shows the companies involved in the
+opportunity.
+
+26
+00:01:31,281 --> 00:01:34,557
+Choose Add company and search for its existing
+account.
+
+27
+00:01:34,557 --> 00:01:39,653
+Select the company, enter its role on this project,
+then choose Add to project.
+
+28
+00:01:39,653 --> 00:01:44,750
+The company now appears with its role beside it,
+without creating another company account.
+
+29
+00:01:45,850 --> 00:01:51,117
+Use Edit role when a company’s responsibility
+changes, and save the updated role.
+
+30
+00:01:51,117 --> 00:01:54,764
+Clicking the company name opens its existing account
+directly.
+
+31
+00:01:54,764 --> 00:02:00,032
+Back on the project, Remove asks you to confirm
+before removing that relationship.
+
+32
+00:02:00,032 --> 00:02:03,273
+The company account stays available for other
+projects.

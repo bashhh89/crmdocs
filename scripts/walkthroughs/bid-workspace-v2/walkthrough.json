@@ -1,0 +1,66 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "hold_after": 1.1,
+  "audio_delay": 0.35,
+  "output": "output/bid-workspace.mp4",
+  "scenes": [
+    {
+      "id": "s1",
+      "video": "recordings/s1.mp4",
+      "audio": "voice/s1.mp3",
+      "clip_start": 1.844,
+      "motion": false,
+      "hold_after": 1.1
+    },
+    {
+      "id": "s2",
+      "video": "recordings/s2.mp4",
+      "audio": "voice/s2.mp3",
+      "clip_start": 30.353,
+      "motion": false,
+      "hold_after": 1.1
+    },
+    {
+      "id": "s3",
+      "video": "recordings/s3.mp4",
+      "audio": "voice/s3.mp3",
+      "clip_start": 21.916,
+      "motion": false,
+      "hold_after": 1.1
+    },
+    {
+      "id": "s4",
+      "video": "recordings/s4.mp4",
+      "audio": "voice/s4.mp3",
+      "clip_start": 13.989,
+      "motion": false,
+      "hold_after": 1.1
+    },
+    {
+      "id": "s5",
+      "video": "recordings/s5.mp4",
+      "audio": "voice/s5.mp3",
+      "clip_start": 2.587,
+      "motion": false,
+      "hold_after": 1.1
+    },
+    {
+      "id": "s6",
+      "video": "recordings/s6.mp4",
+      "audio": "voice/s6.mp3",
+      "clip_start": 17.711,
+      "motion": false,
+      "hold_after": 1.1
+    },
+    {
+      "id": "s7",
+      "video": "recordings/s7-edited.mp4",
+      "audio": "voice/s7.mp3",
+      "clip_start": 0,
+      "motion": false,
+      "hold_after": 1.1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "file": "/root/anc-walkthroughs/jireh-workflows/output/bid-workspace.mp4",
+  "duration_s": 124.105664,
+  "size_bytes": 10118490,
+  "video": {
+    "codec": "h264",
+    "profile": "Main",
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "yuv420p",
+    "frame_rate": "30/1"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "mean_db": -16.7,
+    "peak_db": -1.4
+  },
+  "first_frame_yavg": 229.066,
+  "full_decode": "pass"
+}

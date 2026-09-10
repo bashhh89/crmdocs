@@ -1,0 +1,17 @@
+{
+  "verdict": "pass",
+  "full_transcript": "Here is the full path from an incoming email to its opportunity. This walkthrough uses labeled training records. In bid intake, select the message and open original email. Read what the sender actually wrote, then return to summary and dates to check the deadline evidence. Check the project as well as the venue before choosing an opportunity. Use the suggestions for a new email, or search for the opportunity by name when you need a different match. Choose the right result, then review the deadline checkbox. Clear it if the current date should stay. Confirm and apply saves your decision and shows the result. The receipt names the opportunity, explains which deadlines changed, and shows whether a new alert was posted. Open the opportunity from this receipt to check the saved information in the CRM. On the opportunity, open bid emails. Each confirmed message appears here with its summary and review result. Read original email expands the full message in place. Review in bid intake takes you back to that exact email when you need to inspect the decision. If the inquiry is a new project and no existing opportunity fits, select draft new opportunity. The result opens an unassigned draft for review before an estimator is assigned. Its source email stays connected, so the team can review the inquiry together and decide the next step. Project team shows the companies involved in the opportunity. Choose add company and search for its existing account. Select the company, enter its role on this project, then choose add to project. The company now appears with its role beside it, without creating another company account. Use edit role when a company's responsibility changes, and save the updated role. Clicking the company name opens its existing account directly. Back on the project, remove asks you to confirm before removing that relationship. The company account stays available for other projects.",
+  "audio_quality": {
+    "rating": 4,
+    "explanation": "The voiceover is clear, professional, and highly intelligible with no background noise or clipped words."
+  },
+  "visual_quality": {
+    "rating": 4,
+    "explanation": "The interface is highly readable, transitions are smooth, and narrated controls are highlighted at the correct times."
+  },
+  "privacy": {
+    "rating": 4,
+    "explanation": "No real client data or credentials are shown. All records are clearly labeled as training data."
+  },
+  "issues": []
+}
