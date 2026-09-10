@@ -1,6 +1,6 @@
 ---
 title: Who's On — Today's Support Schedule
-description: Open the published support-tech schedule, read the day card and the two-week grid, put your own shifts or the master schedule in Outlook, and see at a glance which availability days you still have to answer.
+description: Read the published support schedule, plan and review drafts, manage swaps and time off, receive technician updates, and subscribe to master or individual Outlook calendars.
 ---
 
 import {Callout} from 'fumadocs-ui/components/callout';
@@ -24,7 +24,7 @@ import {Callout} from 'fumadocs-ui/components/callout';
   />
 </video>
 
-<LessonMeta time="4 min" audience="Support technicians and the support-schedule manager" level="Core" accent="services" />
+<LessonMeta time="8 min" audience="Support technicians and the support-schedule manager" level="Core" accent="services" />
 
 <span className="inline-flex rounded-full bg-orange-100 px-2 py-1 text-xs font-semibold text-orange-800">SERVICES</span>{' '}
 <span className="inline-flex rounded-full bg-violet-100 px-2 py-1 text-xs font-semibold text-violet-800">SCHEDULE</span>
@@ -32,7 +32,7 @@ import {Callout} from 'fumadocs-ui/components/callout';
 **After this lesson** you will know where the published support-tech schedule lives, how to read who is on for any day, how to put your own shifts into Outlook once so every future schedule lands there on its own, and how to tell at a glance which availability days you still have to answer.
 
 <Callout type="info">
-Updated September 10, 2026. Schedule managers can now choose **Master schedule — everyone’s shifts** under **Add to Outlook**. The new walkthrough below covers the master subscription; the first walkthrough covers the technician’s daily workflow.
+Updated September 10, 2026. The scheduling tools now include month views, individual technician calendars, draft copying, availability reminders, publishing review, requests, and notifications. The first walkthrough covers the technician’s daily workflow; the later chapters cover Outlook and the complete scheduling workflow.
 </Callout>
 
 <ScenarioBoard
@@ -217,6 +217,98 @@ Nothing on Who's On can be edited. It is the published schedule, read-only, and 
   ]}
   accent="services"
 />
+
+## Planning, requests and notifications
+
+The scheduling tools cover the full planning cycle: collect availability, build a draft,
+review coverage, publish, and manage later changes. Open the tools from the links above
+the board, Who’s on, or My availability.
+
+<video controls preload="metadata" playsInline poster="/img/screenshots/services/scheduling-batch-poster.png" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/scheduling-batch.mp4" type="video/mp4" />
+  <track kind="captions" src="/videos/training/scheduling-batch.vtt" srcLang="en" label="English" default />
+</video>
+
+### See the whole month
+
+Open **Month calendar**, choose a month, and filter by technician, shift, or assignment
+location. Published assignments are blue. Schedule builders also see amber draft
+assignments; technicians see published schedules only. On a phone, the month becomes
+a readable day-by-day list.
+
+For separate Outlook calendars, open **Who’s on → Add to Outlook** and choose a named
+technician. Copy their link and subscribe from web in Outlook. Add each technician
+separately, then use Outlook’s calendar list to show or hide them. Each subscription
+has its own link, and resetting one leaves the others unchanged.
+
+### Start a draft from the previous schedule
+
+Choose **+ New schedule**, set the first date and length, and select a previous schedule
+under **Start from**. Leave it on **Blank schedule** to start fresh.
+
+The new draft checks the technician’s latest availability, active crew and shift settings,
+and weekly limits. Unanswered availability carries into the draft with a publishing warning,
+so you can collect responses after opening the schedule. Known unavailability and rule
+conflicts stay open. Locations are left blank for rechecking. **Change history & acknowledgments** retains the
+copy results and reasons, so you can see what needs attention before publishing.
+
+### Set an availability deadline
+
+Open **Availability deadline & reminders**, choose the deadline, and select **Save deadline**.
+The deadline is the end of that day in Eastern time.
+
+With **Automatic reminders** enabled, reminders run at **9am Eastern**, beginning the day
+before the deadline. Only technicians with unanswered days receive them. Partial responses
+remain incomplete; reminders stop when the technician finishes or the schedule is published.
+**Remind missing respondents** sends a reminder on demand. Both options share a limit of one
+reminder per person, per schedule, per day.
+
+### Review before publishing
+
+**Review & publish** opens **Workload & publishing review**. It shows each technician’s hours,
+days, untimed entries, and days per week. Untimed travel or vacation entries do not count as
+24 worked hours. These are planning totals, not payroll calculations.
+
+Resolve assignment conflicts before publishing. Review any open coverage and availability
+warnings, confirm that you have considered them, then choose **Publish reviewed schedule**.
+If the schedule changes after your review, review the latest version before publishing.
+
+### Handle time off and swaps
+
+Technicians open **Requests & approvals → Submit a request**, choose **Time off** or **Shift swap**,
+fill the dates or both published shifts, and include a reason.
+
+A swap first goes to the other technician. After they choose **Accept swap**, a schedule builder
+can approve it. The shifts and both technicians’ availability and weekly limits are checked
+again before the exchange. A changed shift requires a fresh request.
+
+For time off, the approval step shows how many assigned shifts would be removed. Confirm that
+impact before approval; the removed coverage becomes open. Approved time off cannot be
+replaced by an availability response. A builder can cancel approved time off with a reason;
+previously removed assignments stay open until they are deliberately reassigned.
+
+### Receive notifications from technicians
+
+Open **Scheduling inbox** from the schedule tools or the sidebar. Availability changes and
+approval requests go to the schedule builders. Changes to published shifts go to the affected
+technicians, who can choose **Acknowledge change**.
+
+Turn on **Email alerts** to receive new updates at your account email. Emails are grouped and
+checked every five minutes. The scheduling inbox retains updates whether email is on or off;
+email is initially off for each person.
+
+On the board, **Change history & acknowledgments** records the previous and current shifts,
+who changed them, and each technician’s acknowledgment. Reading an update and acknowledging
+a shift change are separate actions.
+
+<PracticeChecklist title="Prepare the next schedule" items={[
+  "Open Month calendar and filter to a technician or shift.",
+  "Create a draft from an earlier schedule and inspect the copy results.",
+  "Set the availability deadline and review who still has unanswered days.",
+  "Review hours, coverage and warnings before publishing.",
+  "Open Requests & approvals to review pending decisions.",
+  "Open Scheduling inbox and choose whether to enable Email alerts.",
+]} accent="services" />
 
 ## Related lessons
 

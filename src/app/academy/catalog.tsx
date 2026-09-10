@@ -245,6 +245,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link href="/docs/training/venue-services/whos-on#planning-requests-and-notifications"
+          data-umami-event="academy-support-scheduling"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/screenshots/services/scheduling-batch-poster.png" alt="Support schedule planning and review" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Venue Services</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Plan the support schedule &amp; manage technician updates</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Month calendars, repeatable drafts, availability reminders, publishing review, shift swaps, time off, and notifications.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <Link
           href="/docs/workflows/bid-workspace"
           data-umami-event="academy-bid-workspace-lesson"
