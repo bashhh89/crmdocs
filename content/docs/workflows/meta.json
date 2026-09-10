@@ -3,6 +3,7 @@
   "pages": [
     "rfp-to-win",
     "bid-workspace",
-    "pipeline-attention"
+    "pipeline-attention",
+    "video-library"
   ]
 }

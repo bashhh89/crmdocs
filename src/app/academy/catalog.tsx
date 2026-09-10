@@ -245,6 +245,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link href="/docs/workflows/video-library"
+          data-umami-event="academy-video-library-lesson"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/academy/video-library.jpg" alt="The ANC video library and its featured stadium screen" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Video library</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Find, watch &amp; collect ANC videos</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Search by idea, build a playlist, pick up where you left off, and share the exact moment.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <Link href="/docs/workflows/pipeline-attention"
           data-umami-event="academy-pipeline-attention-lesson"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
