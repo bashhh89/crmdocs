@@ -1,34 +1,34 @@
 ---
 title: Pipeline
-description: Track proposal stages, approvals, and deal movement.
+description: See bid owners, deadlines, blockers, and next actions alongside your document board.
 ---
 
 # Pipeline
 
-Pipeline is the kanban-style view for active proposal work. It shows records by stage and gives the team a quick way to see what is moving, what is blocked, and what needs attention.
+Pipeline connects active bids to their responsible person, proposal deadline, pricing status, and linked documents. **Needs attention** opens first for bid-team users; **Document board** keeps the stage-based view of proposal work one click away.
 
 Open it at [proposals.anc.com/pipeline](https://proposals.anc.com/pipeline).
 
-## When to use it
+## Start with Needs attention
 
-- You want a stage-based view of active proposal work.
-- You need to review what is in draft, approved, signed, won, or blocked status.
-- You want to open the right proposal or estimate from a board view.
-- You are preparing for a pipeline review.
+Use **Due in 7 days** to focus on approaching proposal deadlines, **No owner** to find responsibility gaps, or **Assigned to me** in the Owner filter. Search by bid, owner, or blocker, then select a row to see the recommended next action and its source.
 
-## What you see
+The responsible person is the assigned estimator when available, otherwise the account owner. The view labels which assignment it is using. Dates, bid status, and pricing come from the CRM; related proposals appear only when explicitly linked to that opportunity.
+
+**Review old dates** separates open, unsubmitted bids whose recorded deadline is more than 30 days past. Submitted bids are not marked overdue because their original deadline passed. Confirm the opportunity's current status before changing a date.
+
+Use the action link to update the underlying opportunity or open its linked document, then return and select **Refresh**. Unconfirmed emails remain in **Bid Intake** for review.
+
+[Watch the Needs attention walkthrough](/docs/workflows/pipeline-attention).
+
+## Use the Document board
 
 - Cards for active proposal and estimate records.
 - Client, venue, city, document mode, screen count, and total value where available.
 - Stage columns based on proposal status.
 - Quick navigation into the full project or estimator workspace.
 
-## How to use it
-
-1. Open [Pipeline](https://proposals.anc.com/pipeline).
-2. Review each stage column.
-3. Open a card to see the project or estimate.
-4. Move work forward from the underlying workspace: update scope, pricing, SOW, or final export.
+Open **Document board** from the shared Pipeline tabs. It starts with recently updated documents; use **All history** to include older records. Review document stages, search and filter the records, or switch between board and list. Open the project or estimator from the relevant document, and use its CRM link to reach the connected opportunity. Unlinked documents remain visible here even when they do not appear as a bid in Needs attention.
 
 ## What to check during a review
 
