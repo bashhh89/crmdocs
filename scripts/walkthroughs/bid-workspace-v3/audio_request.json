@@ -1,0 +1,49 @@
+{
+  "lang": "English",
+  "speed": 1,
+  "model": "speech-2.8-hd",
+  "voice_id": "English_ManWithDeepVoice",
+  "pronunciations": {
+    "ANC": "A N C",
+    "CRM": "C R M",
+    "RFI": "R F I"
+  },
+  "lines": [
+    {
+      "id": "s1",
+      "text": "Here is the full path from an incoming email to its opportunity. This walkthrough uses labeled training records. In Bid Intake, select the message and open Original email. Read what the sender actually wrote, then return to Summary and dates to check the deadline evidence."
+    },
+    {
+      "id": "s2",
+      "text": "Check the project as well as the venue before choosing an opportunity. Use the suggestions for a new email, or search for the opportunity by name when you need a different match. Choose the right result, then review the deadline checkbox. Clear it if the current dates should stay."
+    },
+    {
+      "id": "s3",
+      "text": "Confirm and apply saves your decision and shows the result. The receipt names the opportunity, explains which deadlines changed, and shows whether a new alert was posted. Open the opportunity from this receipt to check the saved information in the CRM."
+    },
+    {
+      "id": "s4",
+      "text": "On the opportunity, open Bid emails. Each confirmed message appears here with its summary and review result. Read original email expands the full message in place. Review in Bid Intake takes you back to that exact email when you need to inspect the decision."
+    },
+    {
+      "id": "s5",
+      "text": "If the inquiry is a new project and no existing opportunity fits, select Draft new opportunity. The result opens an Unassigned draft for review before an estimator is assigned. Its source email stays connected, so the team can review the inquiry together and decide the next step."
+    },
+    {
+      "id": "s6",
+      "text": "Project partners brings the main owner or team, the architect, and other project companies into one table. Every company name opens an existing account. Here, an explicit architect named in the source email was added automatically. The source link stays beside it."
+    },
+    {
+      "id": "s7",
+      "text": "To add another partner, choose Add partner and start typing the existing company name. Select the account, choose a role from the list, and add any useful notes. Add to project saves the relationship. It does not create another company account."
+    },
+    {
+      "id": "s8",
+      "text": "An abbreviated or uncertain name stays under Suggested partners. Read the quoted sentence, choose the correct existing account, and check its role. Apply suggestion adds the company to the table. The suggestion then leaves the review list, including after you reload."
+    },
+    {
+      "id": "s9",
+      "text": "Use Edit to change a role or its notes, then Save. Remove asks you to confirm before removing the company from this project. The account stays available elsewhere. Clear matches can save manual work; uncertain matches remain your decision."
+    }
+  ]
+}

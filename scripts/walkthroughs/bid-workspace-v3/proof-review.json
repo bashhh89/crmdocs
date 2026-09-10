@@ -1,0 +1,17 @@
+{
+  "verdict": "pass",
+  "full_transcript": "An abbreviated or uncertain name stays under suggested partners. Read the quoted sentence, choose the correct existing account, and check its role. Apply suggestion adds the company to the table. The suggestion then leaves the review list, including after you reload.",
+  "audio_quality": {
+    "rating": 4,
+    "rationale": "The narration is clear, well-paced, and free of background noise or clipping."
+  },
+  "visual_quality": {
+    "rating": 4,
+    "rationale": "The interface is highly readable, and the actions align perfectly with the audio instructions."
+  },
+  "privacy": {
+    "status": "pass",
+    "details": "No sensitive client data is exposed; all visible accounts are designated for QA training."
+  },
+  "issues": []
+}

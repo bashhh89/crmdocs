@@ -1,22 +1,22 @@
 ---
-title: Connect bid emails, opportunities & project teams
+title: Connect bid emails, opportunities & project partners
 description: Match an incoming email to the right opportunity, verify saved changes, review its original message in the CRM, and manage project companies and roles.
 ---
 
 <LessonMeta time="3 min" audience="Estimators and bid reviewers" level="Core" accent="proposals" />
 
-<AudioPlayer src="/audio/training/bid-workspace-v2.mp3" />
+<AudioPlayer src="/audio/training/bid-workspace-v3.mp3" />
 
-Use **Bid Intake** to connect an incoming email to the right opportunity. Its saved result shows what changed. On the opportunity, **Bid emails** keeps the original messages within reach, and **Project team** shows the companies involved.
+Use **Bid Intake** to connect an incoming email to the right opportunity. Its saved result shows what changed. On the opportunity, **Bid emails** keeps the original messages within reach, and **Project partners** shows the companies involved.
 
-<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/bid-workspace-v2-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
-  <source src="/videos/training/bid-workspace-v2.mp4" type="video/mp4" />
-  <track kind="captions" src="/videos/training/bid-workspace-v2.vtt" srcLang="en" label="English" default />
+<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/bid-workspace-v3-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/bid-workspace-v3.mp4" type="video/mp4" />
+  <track kind="captions" src="/videos/training/bid-workspace-v3.vtt" srcLang="en" label="English" default />
 </video>
 
 The recording shows the current interface with clearly labeled training examples. The actions use dedicated training records; no client records are shown or changed.
 
-[Open Bid Intake](https://proposals.anc.com/admin/email-to-crm) · [Open Bid Alerts](https://proposals.anc.com/admin/email-to-crm/alerts) · [Download the walkthrough](/videos/training/bid-workspace-v2.mp4)
+[Open Bid Intake](https://proposals.anc.com/admin/email-to-crm) · [Open Bid Alerts](https://proposals.anc.com/admin/email-to-crm/alerts) · [Download the walkthrough](/videos/training/bid-workspace-v3.mp4)
 
 ## Start with the work that needs you
 
@@ -56,14 +56,26 @@ Unconfirmed suggestions do not appear as confirmed emails on an opportunity.
 
 ## Show the companies involved
 
-Open **Project team** on the opportunity. Each entry shows the company’s existing account and its role on this project.
+Open **Project partners** on the opportunity. One table shows **Role**, **Company (Account)**, and **Notes**. The main opportunity account appears as **Owner / Team**.
 
-1. Select **Add company**, search its existing account name, and choose the company.
-2. Enter its role, such as architect, contractor, or owner’s representative, then select **Add to project**.
-3. Use **Edit role** and **Save role** to update its project role.
-4. Click the company name to open its existing account directly.
+1. Select **Add partner** and start typing the existing account name.
+2. Choose the account, then select **Architect**, **Owner’s Rep**, **General Contractor**, **Consultant**, **Other**, or **Owner / Team**.
+3. Add optional notes, such as “Lead design” or “Phase 1 only,” and select **Add to project**.
+4. Use **Edit** and **Save** to change the role or notes. Click the company name to open its account.
 
-**Remove** asks you to confirm removal of that project relationship. The company account remains available. A company already on the project is edited in place rather than added again.
+This section links existing accounts. Create a genuinely new company through the standard Accounts page first. A company already linked to the project is edited in place rather than added again.
+
+**Remove** asks you to confirm removal of that project relationship. The company account remains available for other projects. The main Owner / Team account is managed on the opportunity itself.
+
+## Review partners found in emails
+
+When a confirmed bid email explicitly names a project company and its role, the assistant checks existing accounts. A clear role statement and a unique, unambiguous account match can add the partner automatically. **Source email** beside the company lets you inspect the evidence.
+
+Abbreviations, fuzzy matches, and uncertain names remain under **Suggested partners**. Read the quoted sentence, choose the correct existing account, check the role, then select **Apply suggestion**. If needed, use **Search another account**. The saved partner appears in the table and leaves the review list. If the account is already linked with that role, select **Use existing partner** to confirm the match without adding another relationship.
+
+The assistant does not create company accounts or overwrite a role you have edited. Repeated emails do not create another link for the same company. If an email is reassigned, untouched partners created solely from that source are removed from its previous opportunity; human-managed links are preserved.
+
+Older confirmed emails have been checked for review-only suggestions. Their previously saved deadlines and review decisions remain intact.
 
 ## Add an email yourself
 
@@ -84,7 +96,8 @@ Reviewing an alert does not resend it. Confirming an email in Bid Intake can run
     "Read its Summary & dates, then check Original email.",
     "Review an opportunity match and the deadline checkbox before applying anything.",
     "Open the saved opportunity and read its original message under Bid emails.",
-    "Add an existing company under Project team and record its role.",
+    "Add an existing account under Project partners, choose a role, and save a note.",
+    "Read a suggested partner’s source quote and confirm the matching account.",
     "Open a Bid Alerts entry, read the reason, and follow Review source email.",
   ]}
   accent="proposals"

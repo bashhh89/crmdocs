@@ -283,11 +283,11 @@ export default function AcademyCatalog({ display }: { display: string }) {
           data-umami-event="academy-bid-workspace-lesson"
           className="mb-12 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"
         >
-          <Image src="/img/screenshots/proposals/bid-workspace-v2-poster.jpg" alt="Bid Intake review queue and selected training email" width={480} height={270} className="h-full w-full object-cover" />
+          <Image src="/img/screenshots/proposals/bid-workspace-v3-poster.jpg" alt="Bid Intake review queue and selected training email" width={480} height={270} className="h-full w-full object-cover" />
           <div className="flex flex-col justify-center p-6">
             <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Technology</span>
-            <h2 className="mt-2 text-xl font-semibold text-slate-900">Connect bid emails, opportunities &amp; project teams</h2>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">Choose the right opportunity, check saved changes, read the original email in the CRM, and manage project companies and roles.</p>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Connect bid emails, opportunities &amp; project partners</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Choose the right opportunity, check saved changes, read the original email in the CRM, and confirm project partners with existing accounts, fixed roles, and source quotes.</p>
             <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
           </div>
         </Link>

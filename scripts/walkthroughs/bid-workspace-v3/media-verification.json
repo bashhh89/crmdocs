@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "file": "/root/anc-walkthroughs/project-partners/output/bid-workspace-v3.mp4",
+  "duration_s": 152.394661,
+  "size_bytes": 12609585,
+  "video": {
+    "codec": "h264",
+    "profile": "Main",
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "yuv420p",
+    "frame_rate": "30/1"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1,
+    "mean_db": -16.6,
+    "peak_db": -1.3
+  },
+  "first_frame_yavg": 229.066,
+  "full_decode": "pass"
+}
