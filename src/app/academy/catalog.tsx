@@ -245,6 +245,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link href="/docs/workflows/anc-one"
+          data-umami-event="academy-anc-one"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/academy/anc-one-poster.jpg" alt="The connected ANC One chat workspace" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · ANC One</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">From a request to finished work</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Five real chat workflows, with the estimate, proposal, design proofs, CRM update and operations report shown and ready to inspect.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <Link href="/docs/proposal-engine/features/control-system"
           data-umami-event="academy-cms-workflow"
           className="mb-6 grid overflow-hidden rounded-lg border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">

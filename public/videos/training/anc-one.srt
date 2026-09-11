@@ -1,0 +1,264 @@
+1
+00:00:00,300 --> 00:00:06,713
+This is ANC One. Start with a request, then follow it all the way to the
+
+2
+00:00:06,713 --> 00:00:11,121
+finished work. We'll create an estimate, prepare a proposal, review a
+
+3
+00:00:11,121 --> 00:00:14,328
+design, update the CRM, and check service operations.
+
+4
+00:00:15,533 --> 00:00:20,996
+For the estimate, describe the display and the job. Here we're using a
+
+5
+00:00:20,996 --> 00:00:26,038
+sixteen by nine foot indoor wall. The margin, contingency, and tax are
+
+6
+00:00:26,038 --> 00:00:30,240
+stated explicitly. This is training material, not a customer quote.
+
+7
+00:00:31,467 --> 00:00:35,749
+The answer includes the editable workbook, the cost breakdown, and the
+
+8
+00:00:35,749 --> 00:00:40,031
+training sell total. It also explains the tax convention. Those assumptions
+
+9
+00:00:40,031 --> 00:00:43,535
+stay visible instead of disappearing behind a single number.
+
+10
+00:00:44,767 --> 00:00:49,723
+Open the actual Excel file. The training summary puts the scope, rates, and
+
+11
+00:00:49,723 --> 00:00:53,916
+assumptions together. Yellow cells identify the inputs. Scroll down to see
+
+12
+00:00:53,916 --> 00:00:56,966
+how the direct cost becomes the selling price.
+
+13
+00:00:58,167 --> 00:01:03,101
+The margin analysis carries the same figures. These are working formulas,
+
+14
+00:01:03,101 --> 00:01:08,036
+not a flattened table. In this workbook, all two hundred eighty-nine
+
+15
+00:01:08,036 --> 00:01:11,176
+formulas were recalculated and checked without errors.
+
+16
+00:01:12,400 --> 00:01:18,142
+Stay in the same conversation and ask for the budget proposal. ANC One
+
+17
+00:01:18,142 --> 00:01:23,443
+carries the estimate forward, with the same scope and numbers. For this
+
+18
+00:01:23,443 --> 00:01:26,976
+example, acceptance, signatures, and sending are explicitly excluded.
+
+19
+00:01:28,200 --> 00:01:32,174
+The finished response gives you the proposal file. The important check is
+
+20
+00:01:32,174 --> 00:01:36,148
+that its total agrees with the estimate. Generating a document is only
+
+21
+00:01:36,148 --> 00:01:38,466
+useful when the figures survive the handoff.
+
+22
+00:01:39,667 --> 00:01:45,542
+Here is the actual proposal PDF. Review the scope, the pricing schedule, and
+
+23
+00:01:45,542 --> 00:01:50,061
+the training assumptions. The total is two hundred twenty-four thousand,
+
+24
+00:01:50,061 --> 00:01:53,224
+eight hundred thirty-one dollars and thirty-six cents.
+
+25
+00:01:54,433 --> 00:01:58,651
+The specifications show the display dimensions and pixel pitch. This remains
+
+26
+00:01:58,651 --> 00:02:03,252
+a budget exercise, clearly marked training only and not for acceptance. A
+
+27
+00:02:03,252 --> 00:02:06,319
+real proposal still needs the appropriate commercial review.
+
+28
+00:02:07,533 --> 00:02:11,531
+For design, provide the exact words, dimensions, colors, and treatment. Here
+
+29
+00:02:11,531 --> 00:02:16,619
+the request names one main board and one ribbon. It also asks for free
+
+30
+00:02:16,619 --> 00:02:19,889
+proofs only, with no paid final rendering or approval.
+
+31
+00:02:21,100 --> 00:02:25,440
+The result is actual artwork you can open and review. Check each board
+
+32
+00:02:25,440 --> 00:02:29,447
+against the request, especially its dimensions and copy. A proof is a
+
+33
+00:02:29,447 --> 00:02:31,784
+reviewable output, not an approved production delivery.
+
+34
+00:02:33,000 --> 00:02:37,262
+Open the main-board proof and inspect the full composition. The headline,
+
+35
+00:02:37,262 --> 00:02:41,137
+training label, and navy-and-blue treatment come from the brief. Nothing
+
+36
+00:02:41,137 --> 00:02:44,624
+here is being presented as a real sponsor campaign.
+
+37
+00:02:45,833 --> 00:02:50,697
+Now inspect the ribbon. A long display needs its own layout and readability
+
+38
+00:02:50,697 --> 00:02:54,438
+check. Review the proof before approval; producing paid, native-size final
+
+39
+00:02:54,438 --> 00:02:56,308
+files is a separate step.
+
+40
+00:02:57,533 --> 00:03:02,517
+The CRM example starts with one clearly labelled training note, unrelated to
+
+41
+00:03:02,517 --> 00:03:07,917
+any customer or opportunity. Ask for the record to be created, then read
+
+42
+00:03:07,917 --> 00:03:09,994
+back. No notification is needed.
+
+43
+00:03:11,200 --> 00:03:15,809
+A follow-up changes that same note. You don't need to identify it again.
+
+44
+00:03:15,809 --> 00:03:20,417
+Here we update the title and add a final checklist line, leaving other
+
+45
+00:03:20,417 --> 00:03:21,127
+records untouched.
+
+46
+00:03:22,333 --> 00:03:26,985
+Open the CRM record itself. The updated title and the additional line are
+
+47
+00:03:26,985 --> 00:03:31,636
+saved here, not just described in the chat. This is the difference between
+
+48
+00:03:31,636 --> 00:03:34,141
+drafting a change and actually making one.
+
+49
+00:03:35,367 --> 00:03:39,042
+The same conversation can also produce a downloadable copy. This PDF
+
+50
+00:03:39,042 --> 00:03:43,386
+contains the verified training note and a link back to its CRM record.
+
+51
+00:03:44,600 --> 00:03:49,244
+For service operations, ask for a live, read-only snapshot. This request
+
+52
+00:03:49,244 --> 00:03:53,888
+limits the result to aggregate counts and excludes personal information. It
+
+53
+00:03:53,888 --> 00:03:57,687
+does not create tickets, assign staff, or send messages.
+
+54
+00:03:58,900 --> 00:04:03,000
+ANC One returns the report and a link to the Service Dashboard. The report
+
+55
+00:04:03,000 --> 00:04:07,101
+is an output of the live lookup, with its retrieval time recorded so you
+
+56
+00:04:07,101 --> 00:04:08,565
+know when it was current.
+
+57
+00:04:09,767 --> 00:04:13,945
+Open the one-page snapshot. Venues, events, assignments, tickets, and
+
+58
+00:04:13,945 --> 00:04:18,123
+maintenance each have an explanation. Notice the distinction between
+
+59
+00:04:18,123 --> 00:04:22,765
+recorded assignments and fully staffed events. These numbers describe stored
+
+60
+00:04:22,765 --> 00:04:26,015
+activity; they are not a performance score.
+
+61
+00:04:27,233 --> 00:04:31,790
+Five workflows, with the outputs shown: the editable estimate, the budget
+
+62
+00:04:31,790 --> 00:04:36,761
+proposal, the design proofs, the saved CRM note, and the operations report.
+
+63
+00:04:36,761 --> 00:04:41,731
+The lesson includes the example files so you can inspect them yourself.
+
+64
+00:04:42,933 --> 00:04:48,236
+Start with the outcome you need. State the scope and any limits, then ask
+
+65
+00:04:48,236 --> 00:04:52,781
+for the finished file or verified change. Review the result before sending,
+
+66
+00:04:52,781 --> 00:04:55,054
+approving, or putting it into production.
+
