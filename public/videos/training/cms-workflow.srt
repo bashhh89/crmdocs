@@ -1,0 +1,130 @@
+1
+00:00:00,350 --> 00:00:04,395
+Here is the estimator workflow, reproduced
+with an anonymized saved
+
+2
+00:00:04,395 --> 00:00:08,441
+estimate. The fifteen thousand dollars is a
+CMS cost allowance.
+
+3
+00:00:08,441 --> 00:00:13,295
+It is not the itemized Control System
+calculation, and it does not
+
+4
+00:00:13,295 --> 00:00:15,318
+increase automatically with pixel count.
+
+5
+00:00:16,450 --> 00:00:21,092
+The estimator now identifies that allowance
+and links to Control System.
+
+6
+00:00:21,092 --> 00:00:25,312
+Open it, then search under Load from an
+estimated job.
+
+7
+00:00:25,312 --> 00:00:29,955
+The saved-job connection is fixed: this
+example loads both LED displays
+
+8
+00:00:29,955 --> 00:00:35,441
+at their actual pixel sizes. The TV is
+excluded from LED pixel sizing.
+
+9
+00:00:36,550 --> 00:00:41,061
+To check the reported scale separately, here
+are two test displays
+
+10
+00:00:41,061 --> 00:00:44,341
+totaling thirteen point eight two four
+million pixels.
+
+11
+00:00:44,341 --> 00:00:48,442
+These are test dimensions, not confirmed as
+Matt's original inputs.
+
+12
+00:00:48,442 --> 00:00:52,132
+Review live video, outdoor, sports venue,
+professional stadium, and
+
+13
+00:00:52,132 --> 00:00:54,183
+software license settings before building.
+
+14
+00:00:55,283 --> 00:00:59,905
+Select Build estimate. The Control System
+now shows an itemized package
+
+15
+00:00:59,905 --> 00:01:02,847
+using Jackson's existing rules and catalog
+prices.
+
+16
+00:01:02,847 --> 00:01:07,048
+This test configuration comes to two hundred
+eighteen thousand, three
+
+17
+00:01:07,048 --> 00:01:10,830
+hundred ninety-six dollars and twenty-six
+cents in selling price.
+
+18
+00:01:10,830 --> 00:01:15,032
+That is a test result, not an approved job
+quote.
+
+19
+00:01:16,150 --> 00:01:20,140
+Review the equipment quantities, costs,
+margins, and selling prices.
+
+20
+00:01:20,140 --> 00:01:23,244
+Export Excel to keep the full breakdown.
+
+21
+00:01:23,244 --> 00:01:28,121
+This is the calculated CMS package to
+review, rather than treating
+
+22
+00:01:28,121 --> 00:01:31,668
+the estimator's fifteen-thousand-dollar
+allowance as the finished Control
+
+23
+00:01:31,668 --> 00:01:32,555
+System price.
+
+24
+00:01:33,683 --> 00:01:37,270
+Processing is separate. The processing
+section still states that it
+
+25
+00:01:37,270 --> 00:01:41,216
+carries no price, so this is not a complete
+processing quote.
+
+26
+00:01:41,216 --> 00:01:45,521
+The confirmed fix is the saved-job
+connection and the clear route from
+
+27
+00:01:45,521 --> 00:01:48,390
+the estimator allowance to the calculated
+CMS breakdown.
