@@ -248,11 +248,11 @@ export default function AcademyCatalog({ display }: { display: string }) {
         <Link href="/docs/proposal-engine/features/control-system"
           data-umami-event="academy-cms-workflow"
           className="mb-6 grid overflow-hidden rounded-lg border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
-          <Image src="/img/screenshots/proposals/cms-workflow-poster.jpg" alt="The calculated Control System package for a labeled training example" width={480} height={300} className="h-full w-full object-cover" />
+          <Image src="/img/screenshots/proposals/cms-auto-poster.jpg" alt="Automatic CMS calculation in an estimator training example" width={480} height={300} className="h-full w-full object-cover" />
           <div className="flex flex-col justify-center p-6">
             <span className="text-xs font-semibold uppercase text-blue-700">Updated walkthrough · Technology</span>
-            <h2 className="mt-2 text-xl font-semibold text-slate-900">From CMS allowance to Control System pricing</h2>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">Load saved display sizes, review the system requirements, build the itemized package, and distinguish CMS from unpriced processing.</p>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Automatic CMS pricing in the estimator</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Select CMS, review the automatically calculated package, adjust requirements and export the full breakdown. Processing pricing remains separate.</p>
             <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
           </div>
         </Link>

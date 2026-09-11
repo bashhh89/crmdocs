@@ -1,41 +1,42 @@
 ---
 title: Control System
-description: Move from the estimator's CMS allowance to a calculated Control System breakdown using saved display sizes.
+description: Select CMS in the estimator to calculate an itemized Control System package automatically.
 ---
 
 <LessonMeta time="2 min" audience="Estimators and control-system reviewers" level="Core" accent="proposals" />
 
-The estimator's **CMS Cost Allowance** is a budget amount, not the calculated Control System package. Open **Control System**, load the saved job's LED displays, review the requirements, and build the itemized breakdown.
+Select **Yes** for **CMS (Content Management)** in the estimator. The Control System package calculates automatically from the LED display sizes using the existing selection rules and catalog prices. No manual allowance or separate calculation is required.
 
-<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/cms-workflow-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
-  <source src="/videos/training/cms-workflow.mp4" type="video/mp4" />
-  <track kind="captions" src="/videos/training/cms-workflow.vtt" srcLang="en" label="English" default />
+<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/cms-auto-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/cms-workflow.mp4?v=automatic-20260911" type="video/mp4" />
+  <track kind="captions" src="/videos/training/cms-workflow.vtt?v=automatic-20260911" srcLang="en" label="English" default />
 </video>
 
-This recording reproduces the workflow with a dedicated training estimate and anonymized display inputs. The separate 13.824-million-pixel test is illustrative, not a replay of a user's original session or an approved job quote. No client records are shown or changed.
+The opening shows the previous automatic default. The corrected workflow uses a dedicated two-display training estimate with 13,639,680 pixels after cabinet sizing. This is a separate test, not a replay of Matt's original session or an approved job quote. No client records are shown or changed.
 
-[Open Control System](https://proposals.anc.com/admin/livesync-calculator) · [Download the walkthrough](/videos/training/cms-workflow.mp4)
+[Open Estimator](https://proposals.anc.com/estimator) · [Download the walkthrough](/videos/training/cms-workflow.mp4?v=automatic-20260911)
 
 ## What changed
 
-Current saved estimator jobs now load their LED displays into Control System at the calculated pixel dimensions, including cabinet sizing and quantities. TVs are excluded from LED pixel sizing with an explicit note. The estimator identifies its CMS amount as a budget allowance and links directly to Control System.
+Previously, selecting CMS inserted a fixed allowance automatically. The estimator now calculates the actual equipment and services instead. The CMS tab, estimate summaries and Excel export use that itemized package. Existing saved estimates recalculate when opened; their old allowance is not the pricing basis.
 
 The control-system selection rules and catalog prices have not changed as part of this correction.
 
-## Load and review the job
+## Estimate and review CMS
 
-1. In the estimator, follow **Control System** beside **CMS pricing basis: budget allowance**, or open it from the sidebar.
-2. Under **Load from an estimated job**, search for the client, project, or venue. Choose the correct saved estimate when names repeat.
-3. Check the loaded pixel width, pixel height, physical width, and any exclusion notes. Name the system so its result and export are recognizable.
-4. Review **Live video** and **Outdoor** for each screen. Check **Sports venue**, **Professional stadium**, and **Include software license** against the actual scope.
-5. Select **Build estimate**. Review the screen plans, equipment quantities, unit costs, selling prices, margins, assumptions, and warnings.
-6. Select **Export Excel** to download the itemized Control System workbook for review.
+1. Enter the LED displays and select their products, dimensions and quantities.
+2. In the financial questions, select **Yes** for **CMS (Content Management)**.
+3. Open **CMS requirements** and confirm the scope. Sports venue is on by default; professional stadium, software license and per-display live video are off by default. Change them to match the job.
+4. Open the **CMS** worksheet to review the calculated equipment, quantities, unit costs, selling prices and selection reasons. Dimensions and requirement changes recalculate the package automatically.
+5. Review the **Budget Summary** and **Margin Analysis**, then select **Export .xlsx** for the itemized workbook.
 
-Loading a job does not settle its live-video requirements. Building a Control System package does not automatically replace the saved estimator allowance.
+TVs are excluded from LED pixel sizing. Invalid dimensions or missing CMS catalog items stop the calculation instead of substituting a fixed allowance. Review the assumptions and scope before sending a quote.
+
+The [standalone Control System](https://proposals.anc.com/admin/livesync-calculator) remains available for separate system studies and saved-job loading. It uses the same calculation and is not an extra step required for estimator CMS pricing.
 
 ## Processing is separate
 
-When **Processing (per screen)** says that processing carries no price, the displayed total covers the control system only. Processor classes, ports, and fiber-converter counts are design guidance, not a priced processing package. Do not treat that total as a complete processing quote.
+The automatic CMS amount covers the control system, not a complete processing package. Existing processor allowances elsewhere in the estimate are not confirmation of full processing pricing. Processor classes, ports and fiber-converter counts must not be treated as a verified processing quote. Processing pricing remains a separate open item.
 
 ## Access
 

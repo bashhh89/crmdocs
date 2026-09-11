@@ -1,105 +1,87 @@
 WEBVTT
 
-00:00:00.350 --> 00:00:04.395
-Here is the estimator workflow, reproduced
-with an anonymized saved
+00:00:00.350 --> 00:00:03.852
+Previously, selecting CMS inserted a fixed
+allowance automatically.
 
-00:00:04.395 --> 00:00:08.441
-estimate. The fifteen thousand dollars is a
-CMS cost allowance.
+00:00:03.852 --> 00:00:06.479
+Matt did not enter that amount.
 
-00:00:08.441 --> 00:00:13.295
-It is not the itemized Control System
-calculation, and it does not
+00:00:06.479 --> 00:00:10.857
+The fifteen thousand dollar default was not
+calculating the control
 
-00:00:13.295 --> 00:00:15.318
-increase automatically with pixel count.
+00:00:10.857 --> 00:00:13.046
+system from his display pixels.
 
-00:00:16.450 --> 00:00:21.092
-The estimator now identifies that allowance
-and links to Control System.
+00:00:14.150 --> 00:00:19.246
+Here is the corrected workflow, using a
+separate two-display test above
 
-00:00:21.092 --> 00:00:25.312
-Open it, then search under Load from an
-estimated job.
+00:00:19.246 --> 00:00:23.878
+thirteen million pixels. These are test
+inputs, not Matt's confirmed
 
-00:00:25.312 --> 00:00:29.955
-The saved-job connection is fixed: this
-example loads both LED displays
+00:00:23.878 --> 00:00:28.047
+original measurements. In the estimate,
+select Yes for CMS.
 
-00:00:29.955 --> 00:00:35.441
-at their actual pixel sizes. The TV is
-excluded from LED pixel sizing.
+00:00:29.150 --> 00:00:32.633
+The control-system package calculates
+automatically, right here in
 
-00:00:36.550 --> 00:00:41.061
-To check the reported scale separately, here
-are two test displays
+00:00:32.633 --> 00:00:37.422
+the estimate. Open the CMS tab to review the
+equipment, quantities,
 
-00:00:41.061 --> 00:00:44.341
-totaling thirteen point eight two four
-million pixels.
+00:00:37.422 --> 00:00:41.776
+costs and selling prices. The calculation
+uses Jackson's existing selection
 
-00:00:44.341 --> 00:00:48.442
-These are test dimensions, not confirmed as
-Matt's original inputs.
+00:00:41.776 --> 00:00:43.517
+rules and catalog prices.
 
-00:00:48.442 --> 00:00:52.132
-Review live video, outdoor, sports venue,
-professional stadium, and
+00:00:44.650 --> 00:00:47.662
+Open CMS requirements to check the scope.
 
-00:00:52.132 --> 00:00:54.183
-software license settings before building.
+00:00:47.662 --> 00:00:51.534
+Sports venue, professional stadium, software
+license and live video
 
-00:00:55.283 --> 00:00:59.905
-Select Build estimate. The Control System
-now shows an itemized package
+00:00:51.534 --> 00:00:55.406
+settings affect the package. Changing a
+requirement recalculates the
 
-00:00:59.905 --> 00:01:02.847
-using Jackson's existing rules and catalog
-prices.
+00:00:55.406 --> 00:00:59.279
+price automatically. Choose only what the
+actual job needs.
 
-00:01:02.847 --> 00:01:07.048
-This test configuration comes to two hundred
-eighteen thousand, three
+00:01:00.383 --> 00:01:04.398
+The calculated CMS price carries into the
+estimate summaries and the
 
-00:01:07.048 --> 00:01:10.830
-hundred ninety-six dollars and twenty-six
-cents in selling price.
+00:01:04.398 --> 00:01:08.048
+Excel download. Select Export to keep the
+full itemized workbook.
 
-00:01:10.830 --> 00:01:15.032
-That is a test result, not an approved job
-quote.
+00:01:08.048 --> 00:01:13.157
+There is no need to copy a price from the
+separate Control System tool.
 
-00:01:16.150 --> 00:01:20.140
-Review the equipment quantities, costs,
-margins, and selling prices.
+00:01:14.283 --> 00:01:18.572
+This fixes automatic CMS pricing in the
+estimator, not the separate
 
-00:01:20.140 --> 00:01:23.244
-Export Excel to keep the full breakdown.
+00:01:18.572 --> 00:01:21.691
+processing package. Processing pricing still
+needs verification before
 
-00:01:23.244 --> 00:01:28.121
-This is the calculated CMS package to
-review, rather than treating
+00:01:21.691 --> 00:01:24.420
+a complete quote goes to a client.
 
-00:01:28.121 --> 00:01:31.668
-the estimator's fifteen-thousand-dollar
-allowance as the finished Control
+00:01:24.420 --> 00:01:29.489
+The old fifteen thousand dollar default is
+no longer used for the CMS
 
-00:01:31.668 --> 00:01:32.555
-System price.
-
-00:01:33.683 --> 00:01:37.270
-Processing is separate. The processing
-section still states that it
-
-00:01:37.270 --> 00:01:41.216
-carries no price, so this is not a complete
-processing quote.
-
-00:01:41.216 --> 00:01:45.521
-The confirmed fix is the saved-job
-connection and the clear route from
-
-00:01:45.521 --> 00:01:48.390
-the estimator allowance to the calculated
-CMS breakdown.
+00:01:29.489 --> 00:01:29.878
+calculation.
