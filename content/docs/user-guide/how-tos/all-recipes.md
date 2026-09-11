@@ -16,12 +16,12 @@ Exact clicks for the tasks teams run every week. Where a recipe can be done with
 2. Sidebar → **Deals** → **+ New**
 3. Set `company` (search first — don't create a duplicate)
 4. Set `stage = PROPOSAL`, `bidStatus = RFP_RECEIVED`
-5. Fill `proposalDueDate`, `businessUnit`, `league`, `accountExecutive`
+5. Fill `proposalDueDate`, `businessUnit`, `league`, `owner` (Opportunity Owner)
 6. Save
 
 **Assistant shortcut:**
 ```
-log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [name]
+log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, owner [name]
 ```
 
 ### How to move a deal through the pipeline

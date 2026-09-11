@@ -360,14 +360,14 @@ build a pie chart of open deals grouped by league
 ---
 
 ### `performance-analytics` — team/league breakdowns
-Win/loss, revenue, margin breakdowns by team, league, vertical, or AE.
+Win/loss, revenue, margin breakdowns by team, league, vertical, or opportunity owner.
 
 **Try:**
 ```
 win rate by league for 2025
 ```
 ```
-which AE has the highest close rate
+which opportunity owner has the highest close rate
 ```
 ```
 margin by vertical year to date

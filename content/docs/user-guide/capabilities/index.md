@@ -24,7 +24,7 @@ description: What the CRM can do out of the box and what was built specifically 
 | `proposalDueDate` | Primary sort for the proposal pipeline |
 | `substantialCompletionDate` | Key date for the Backlog view |
 | `paidAmount` / `percentPaid` | Finance status |
-| `accountExecutive` / `accountExecutiveEmail` | Owner (TEXT — no workspace seat issued for every legacy seller) |
+| `owner` | Opportunity Owner (a CRM user). The Salesforce-era owner name is kept for history but hidden. |
 | `margin` / `revenue2026` / `margin2026` / `revenue2027` / `margin2027` | Per-year revenue and margin for executive dashboards |
 | `proposalStage` | RFP / SALES_LEAD / BAFO / LOI / EXISTING_CLIENT_BUDGET |
 | `priority` | PRIORITY_1_RFP / BEST_AND_FINAL / PRICING_COMPLETE |

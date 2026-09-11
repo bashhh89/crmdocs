@@ -39,7 +39,7 @@ The two "Estimation & Proposals" views look similar by name. The one with **"Rep
 | Pipeline Overview (Last 3 Months) | Recent activity snapshot |
 | Sales Pipeline Analytics | Stage / Bid Status breakdown with time-to-close |
 | Priority Clients Dashboard | Top accounts and open exposure |
-| My Pipeline (Current Quarter) | Per-user view for account executives |
+| My Pipeline (Current Quarter) | Per-user view for opportunity owners |
 | Activity & Performance Tracker | Wins, losses, conversion rates |
 | Operations Overview | Services and tickets summary |
 | Backlog | Won deals + substantial completion + percent unpaid |
@@ -72,7 +72,7 @@ Beyond the universal pins, each user has additional favorites for the dashboards
 | Executive (Jireh) | ANC 2026 Dashboard · Revenue Forecast · Top Open Deals |
 | Proposal Lead (Natalia) | Estimation & Proposals Report · Estimation & Proposals · Proposal Pipeline · Bid Tracker · ANC 2026 Dashboard |
 | Services (Alexis) | Proposal Pipeline · Bid Tracker · Active Pipeline |
-| Account Executive | ANC 2026 Dashboard · Proposal Pipeline |
+| Opportunity Owner | ANC 2026 Dashboard · Proposal Pipeline |
 
 Adjust your own: open any dashboard or view and click the star.
 

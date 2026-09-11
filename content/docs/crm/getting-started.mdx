@@ -66,7 +66,7 @@ You're looking at the deal detail page. It has:
 - **Header** — name, value, stage, owner
 - **Tabs along the top** — Notes, Tasks, Files, Activity Timeline
 - **Linked records on the right** — Company, People involved, Revenue Splits, Estimates, Service Tickets, Design Requests
-- **Fields on the right panel** — the key deal details ANC tracks, including probability, proposal due date, paid amount, account executive, margin, and yearly revenue.
+- **Fields on the right panel** — the key deal details ANC tracks, including probability, proposal due date, paid amount, opportunity owner, margin, and yearly revenue.
 
 Edit any field inline by clicking it.
 
@@ -111,12 +111,12 @@ Pick the flow that matches your role.
    - `stage` = `PROPOSAL`
    - `bidStatus` = `RFP_RECEIVED`
    - `proposalDueDate` — when the response is due
-   - `businessUnit`, `league`, `accountExecutive`
+   - `businessUnit`, `league`, `owner` — the Opportunity Owner
 4. Save
 
 Or just say it to Scout:
 ```
-log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, AE [name]
+log a new RFP: Louisville Athletics, TECHNOLOGY, due April 30, owner [name]
 ```
 
 ### Operations — log a new contact
