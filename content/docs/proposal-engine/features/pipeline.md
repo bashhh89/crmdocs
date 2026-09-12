@@ -17,7 +17,7 @@ The responsible person is the assigned estimator when available, otherwise the a
 
 **Review old dates** separates open, unsubmitted bids whose recorded deadline is more than 30 days past. Submitted bids are not marked overdue because their original deadline passed. Confirm the opportunity's current status before changing a date.
 
-Use the action link to update the underlying opportunity or open its linked document, then return and select **Refresh**. Unconfirmed emails remain in **Bid Intake** for review.
+Use the action link to update the underlying opportunity or open its linked document, then return and select **Refresh**. Unconfirmed emails remain in **CRM Intake** for review.
 
 [Watch the Needs attention walkthrough](/docs/workflows/pipeline-attention).
 
