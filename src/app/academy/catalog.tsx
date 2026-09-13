@@ -245,6 +245,10 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link href="/docs/proposal-engine/features/anc-hub" data-umami-event="academy-anc-hub-walkthrough" className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/academy/anc-hub-poster.jpg" alt="ANC Hub resource library and team workspace" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6"><span className="text-xs font-semibold uppercase tracking-wide text-blue-700">Complete walkthrough · ANC Hub</span><h2 className="mt-2 text-xl font-semibold text-slate-900">Your team workspace, from start to finish</h2><p className="mt-2 text-sm leading-relaxed text-slate-600">Resources, AI creation, editable pages, conversations, connected channels, activity, and owner controls. Choose a chapter and follow the real workflows.</p><span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span></div>
+        </Link>
         <Link href="/docs/workflows/anc-one"
           data-umami-event="academy-anc-one"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">

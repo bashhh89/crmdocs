@@ -1,0 +1,11 @@
+"use client";
+import {useRef, useState} from "react";
+type Chapter = {title:string; seconds:number};
+export default function LessonVideo({src,poster,captions,chapters,title}:{src:string;poster:string;captions:string;chapters:Chapter[];title:string}) {
+ const video=useRef<HTMLVideoElement>(null);const [active,setActive]=useState(0);
+ const track=(event:string,data:Record<string,string|number>={})=>(window as Window & {umami?:{track:(name:string,data:Record<string,string|number>)=>void}}).umami?.track(event,{lesson:title,...data});
+ function jump(chapter:Chapter){if(!video.current)return;video.current.currentTime=chapter.seconds;video.current.scrollIntoView({block:"center",behavior:"smooth"});void video.current.play().catch(()=>{});track("academy-video-chapter",{chapter:chapter.title,seconds:chapter.seconds});}
+ return <div className="not-prose my-7 overflow-hidden rounded-xl border border-fd-border bg-fd-card">
+ <video ref={video} controls playsInline preload="metadata" poster={poster} aria-label={title} className="block aspect-video w-full bg-black" onPlay={()=>track("academy-video-play")} onPause={()=>track("academy-video-pause",{seconds:Math.floor(video.current?.currentTime||0)})} onEnded={()=>track("academy-video-complete")} onTimeUpdate={()=>{const time=video.current?.currentTime||0;setActive(Math.max(0,chapters.findLastIndex(chapter=>chapter.seconds<=time)));}}><source src={src} type="video/mp4"/><track kind="captions" srcLang="en" label="English" src={captions}/></video>
+ <div className="p-5"><p className="mb-3 text-xs font-semibold uppercase tracking-wide text-fd-muted-foreground">Jump to a chapter</p><ol className="grid gap-1 sm:grid-cols-2">{chapters.map((chapter,index)=><li key={chapter.seconds}><button type="button" onClick={()=>jump(chapter)} aria-current={index===active?"step":undefined} className={`flex w-full items-start gap-3 rounded-md px-3 py-2 text-left text-sm transition hover:bg-fd-accent focus-visible:outline-2 focus-visible:outline-fd-primary ${index===active?"bg-fd-accent text-fd-accent-foreground":"text-fd-muted-foreground"}`}><span className="shrink-0 font-mono text-xs leading-5">{Math.floor(chapter.seconds/60)}:{String(Math.floor(chapter.seconds%60)).padStart(2,"0")}</span><span>{chapter.title}</span></button></li>)}</ol></div></div>;
+}
