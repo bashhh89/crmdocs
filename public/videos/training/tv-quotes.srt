@@ -1,0 +1,24 @@
+1
+00:00:00,350 --> 00:00:19,524
+TV Quotes lives in the Proposal Engine sidebar, under Build and estimate. It is for the jobs that are TVs rather than LED walls: a model, a quantity and a unit price. This walkthrough uses a training example, not a client record. Open TV Quotes and start a new quote.
+
+2
+00:00:20,624 --> 00:00:41,888
+Name the quote and the client, then add a TV. Pick the model off the LG price list and the description and unit cost fill in. Set the quantity and where the screens go. Add the mounts, the labor and the shipping the same way. The margin applies to every line unless you type your own price, and the totals on the right follow as you go.
+
+3
+00:00:42,988 --> 00:00:59,810
+When the numbers are right, send it. Excel workbook gives you the client quote sheet and the internal cost and margin sheet, with live formulas. Create the client document opens a proposal in the engine with the equipment table, the scope and the totals, ready to export as PDF or Word.
+
+4
+00:01:00,910 --> 00:01:12,248
+Then the purchase order. Fill in the vendor, who requested it, where it ships and when it is needed, and issue it. The number is assigned once and never changes, and the equipment lines go on at cost.
+
+5
+00:01:13,348 --> 00:01:24,476
+The PDF is the ANC purchase authorization form, ready to sign: the order number, the vendor, the delivery details, every unit at cost and the total for the order.
+
+6
+00:01:25,576 --> 00:01:46,500
+And this is the client document, in the standard ANC format, with the equipment table, the tax line and the grand total. Link the CRM deal at the top of the quote, and the PO value and the vendor land on that deal the moment the PO is issued, with a note on its timeline. Quote, client document and PO, from one set of lines.
+

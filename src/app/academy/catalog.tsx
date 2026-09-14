@@ -245,6 +245,19 @@ export default function AcademyCatalog({ display }: { display: string }) {
 
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
+        <Link
+          href="/docs/training/technology/tv-quotes"
+          data-umami-event="academy-tv-quotes-lesson"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"
+        >
+          <Image src="/img/screenshots/proposals/tv-quotes-poster.jpg" alt="The TV Quotes list in the Proposal Engine" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Technology</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Quote TVs per unit, send the document, issue the PO</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Pick the TVs off the LG price list, add mounts, labor and shipping, and get the client document, the cost workbook and the vendor purchase order from one quote — with the PO value landing on the CRM deal.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <Link href="/docs/proposal-engine/features/anc-hub" data-umami-event="academy-anc-hub-walkthrough" className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
           <Image src="/img/academy/anc-hub-navigation.jpg" alt="ANC Hub Pages library and grouped navigation" width={480} height={270} className="h-full w-full object-cover" />
           <div className="flex flex-col justify-center p-6"><span className="text-xs font-semibold uppercase tracking-wide text-blue-700">Complete walkthrough · ANC Hub</span><h2 className="mt-2 text-xl font-semibold text-slate-900">Your team workspace, from start to finish</h2><p className="mt-2 text-sm leading-relaxed text-slate-600">Updated navigation plus the complete workspace tour: pages, quick search, resources, AI creation, conversations, activity, and owner controls. Choose a chapter and follow the real workflows.</p><span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span></div>
