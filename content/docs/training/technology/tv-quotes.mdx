@@ -1,55 +1,80 @@
 ---
-title: TV Quotes — quote TVs per unit, send the document, issue the PO
-description: Quote commercial TVs per unit off the LG price list, add mounts, labor and shipping, then send the client document, the cost workbook and the vendor purchase order from one quote.
+title: TV Quotes — build, review and order a display package
+description: Browse commercial displays, reuse equipment packages, review client prices and issue purchase orders with retained revisions.
 ---
 
-<LessonMeta time="2 min" audience="Estimators and sales" level="Core" accent="proposals" />
+<LessonMeta time="3 min" audience="Estimators and sales" level="Core" accent="proposals" />
 
-<AudioPlayer src="/audio/training/tv-quotes.mp3" />
+<AudioPlayer src="/audio/training/tv-quotes.mp3?v=workspace-20260914" />
 
-Use **TV Quotes** for the jobs that are TVs rather than LED walls: a model, a quantity and a unit price. One quote gives you the client document, the cost workbook and the vendor purchase order, and the PO value lands on the linked CRM deal by itself.
+**TV Quotes** brings the equipment, client prices, internal workbook and vendor purchase order into one workspace. Build the package, review the figures and keep each issued order available when the estimate changes.
 
-<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/tv-quotes-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
-  <source src="/videos/training/tv-quotes.mp4" type="video/mp4" />
-  <track kind="captions" src="/videos/training/tv-quotes.vtt" srcLang="en" label="English" default />
+<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/tv-quotes-workspace-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/tv-quotes.mp4?v=workspace-20260914" type="video/mp4" />
+  <track kind="captions" src="/videos/training/tv-quotes.vtt?v=workspace-20260914" srcLang="en" label="English" default />
 </video>
 
-The recording shows the current interface on a clearly labeled training quote. No client records are shown or changed.
+The recording uses a clearly labeled training quote. No client records are shown or changed.
 
-[Open TV Quotes](https://proposals.anc.com/admin/tv-quotes) · [Download the walkthrough](/videos/training/tv-quotes.mp4)
+[Open TV Quotes](https://proposals.anc.com/admin/tv-quotes) · [Download the walkthrough](/videos/training/tv-quotes.mp4?v=workspace-20260914)
 
-## Start a quote
+## Start with the client and scope
 
-In the Proposal Engine sidebar, under **Build & estimate**, open **TV Quotes** and select **New TV quote**. Give the quote a title and the client, and add the venue and address if you have them — they carry into the document and the purchase order.
+Under **Build & estimate**, open **TV Quotes** and select **New TV quote**. Name the quote, then open **Client & terms**. Enter the client, venue, address, contact, quote expiry and lead time.
 
-## Add the TVs, mounts, labor and shipping
+Choose an existing **CRM deal** to fill available client details into empty fields. Information you have already entered stays in place. Check the resulting details and select **Save client & terms**.
 
-Select **+ TV** and pick the model off the list. The description and the unit cost fill in from the current LG price list; set the quantity and where the screens go. Add **Mount**, **Accessory**, **Labor**, **Shipping** or **Other** lines the same way and type their cost.
+The quote list supports search, stage filtering and **My quotes**. Use the duplicate action in a quote to start an independent draft from an existing package.
 
-- The **Default margin %** applies to every line. Type a margin on a line to change just that line, or type a **Unit sell** price to set it outright — a typed price shows in blue, and the arrow beside it returns to the margin price.
-- **Tax** marks the lines sales tax applies to; labor is untaxed by default. Enter the **Sales tax %** for the job.
-- **PO** marks the lines that go on the vendor purchase order. Equipment is on by default; ANC's own labor and shipping are off.
+## Choose equipment and set prices
 
-The totals on the right follow as you type: TVs, mounts and accessories, labor and services, shipping, the tax, the total, and underneath, your cost, the margin and what the vendor PO comes to. The quote saves itself.
+Select **Add TV**. Search the model, filter by size or environment, and compare up to three displays. Product pictures represent the manufacturer’s series; appearance can vary by screen size. Adding a model fills in its description and maintained unit cost.
 
-## Send it three ways
+Set the quantity, then expand the line’s details to assign a location. Add **Mount**, **Accessory**, **Labor**, **Shipping** or **Other** lines as needed. Lines can be duplicated, grouped by location or removed with an undo action.
 
-- **Excel workbook** downloads three sheets: the client **Quote**, the internal **Cost & Margin** sheet, and the **Purchase Order** sheet, all with live formulas.
-- **Create the client document** opens a proposal in the engine with the equipment table, the introduction and the scope of work already in place. Export it as PDF or Word from the usual export step. **Refresh the client document** rewrites the table after you change the lines.
-- **Issue PO** fills ANC's purchase authorization form from the equipment lines at cost. Enter the vendor, who requested it, the delivery address, when it is needed on site, the payment terms and the approver. The number is assigned once and never changes; **Update the PO** keeps it while you edit the details. **Download the purchase order PDF** is the signed-ready form.
+- **Default margin %** applies unless a line has its own margin. A typed **Unit sell** price overrides the margin calculation for that line.
+- **Tax** selects the lines that receive sales tax. Labor is untaxed by default; set the job’s **Sales tax %**.
+- **PO** selects what the vendor supplies. Display equipment is included by default; ANC labor and shipping are excluded by default.
 
-## Link the CRM deal
+Totals remain at the bottom while you work. Check cost, margin, vendor cost and the client total before exporting.
 
-Search the CRM by deal or account name in the **CRM deal** box and choose the deal. When the PO is issued, its value goes onto that deal as the **Technology Vendor PO Value**, the vendor is set, and a note lands on the deal's timeline with the order detail and a link back to the quote. Creating the client document posts a note too.
+## Reuse a package or paste rows
+
+Open **Packages** to save the current equipment as a reusable package. A package includes quantities, costs, margins and locations; client and purchase-order details remain with the quote.
+
+Set **Number of packages** and an optional **Apply location**, then select **Add package**. The multiplier applies to each saved quantity. Review the resulting lines and costs for the new job.
+
+**Paste from Excel** accepts six columns in order: **Kind**, **Model**, **Description**, **Location**, **Qty**, **Unit cost**. Select **Validate & add rows**, then check the imported lines.
+
+## Review the client document and workbook
+
+Open **Review & export** to inspect the client preview, quantities, scope, terms and total.
+
+- **Internal workbook** downloads the **Quote**, **Cost & Margin** and **Purchase Order** sheets. Keep the full workbook internal because it includes costs and margins.
+- **Prepare client document** creates the proposal. Use **Open PDF / Word document** to open it and export the client file. After changing the quote, **Refresh client document** updates the proposal.
+- Preparing a document sets the quote to **Prepared**. It does not send the document. Mark **Sent to client** after sharing it.
+
+## Issue and revise the purchase order
+
+Open **Purchasing** and review the vendor, requester, department, delivery address, needed-by information, payment terms and approver. **Issue purchase order** assigns an order number and retains the equipment and delivery details issued at that point.
+
+Later quote edits do not alter the issued PDF. **Issue new PO revision** captures the updated order under the same number. **Quote history** keeps the issued revisions available to download. The workbook’s **Purchase Order** sheet reflects the issued order; its quote and cost sheets reflect the current estimate.
+
+With a linked deal, the issued PO value and vendor are recorded on that deal with a timeline note. **Purchasing** shows the update status. If it needs attention, use **Retry CRM update** after checking the deal link.
+
+## Check saving before leaving
+
+Wait for **Saved** before leaving the quote. If saving fails, the draft remains in the editor and exports wait until saving succeeds. Retry the save or download a recovery copy. If another window has changed the quote, retain your draft and load the latest version before continuing.
 
 <PracticeChecklist
-  title="Before you send a TV quote"
+  title="Before sending or ordering"
   items={[
-    "Every TV line has the right model, quantity and location.",
-    "Mounts, labor and shipping are on the quote with a cost.",
-    "The margin or typed price on each line is what you mean to charge.",
-    "The lines marked PO are exactly what the vendor supplies.",
-    "The CRM deal is linked so the PO value lands on it."
+    "Client, location, contact and quote terms are correct.",
+    "Models, quantities, costs and prices match the job.",
+    "Reused packages and pasted rows have been reviewed.",
+    "Only vendor-supplied lines are marked PO.",
+    "The quote is saved and the final documents have been reviewed.",
+    "The correct CRM deal is linked and its update status has been checked."
   ]}
   accent="proposals"
 />

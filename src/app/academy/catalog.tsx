@@ -250,11 +250,11 @@ export default function AcademyCatalog({ display }: { display: string }) {
           data-umami-event="academy-tv-quotes-lesson"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"
         >
-          <Image src="/img/screenshots/proposals/tv-quotes-poster.jpg" alt="The TV Quotes list in the Proposal Engine" width={480} height={270} className="h-full w-full object-cover" />
+          <Image src="/img/screenshots/proposals/tv-quotes-workspace-poster.jpg" alt="The TV Quotes equipment workspace" width={480} height={270} className="h-full w-full object-cover" />
           <div className="flex flex-col justify-center p-6">
             <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Technology</span>
-            <h2 className="mt-2 text-xl font-semibold text-slate-900">Quote TVs per unit, send the document, issue the PO</h2>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">Pick the TVs off the LG price list, add mounts, labor and shipping, and get the client document, the cost workbook and the vendor purchase order from one quote — with the PO value landing on the CRM deal.</p>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Build, review and order a display package</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Browse and compare displays, reuse equipment packages, review client prices and keep issued purchase-order revisions available as the quote changes.</p>
             <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
           </div>
         </Link>

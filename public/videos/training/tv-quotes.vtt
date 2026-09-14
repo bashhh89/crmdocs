@@ -1,109 +1,131 @@
 WEBVTT
 
-00:00:00.350 --> 00:00:04.952
-TV Quotes lives in the Proposal Engine sidebar,
-under Build and estimate.
+00:00:00.350 --> 00:00:03.493
+Start in TV Quotes, under Build and estimate.
 
-00:00:04.952 --> 00:00:09.553
-It is for the jobs that are TVs rather than LED
-walls:
+00:00:03.493 --> 00:00:07.815
+The workspace keeps your equipment, selling price
+and purchase order together.
 
-00:00:09.553 --> 00:00:12.621
-a model, a quantity and a unit price.
+00:00:07.815 --> 00:00:09.779
+This is a training example.
 
-00:00:12.621 --> 00:00:16.456
-This walkthrough uses a training example, not a
-client record.
+00:00:09.779 --> 00:00:15.672
+Open Client and terms to enter the client, delivery
+location, quote expiry and lead time.
 
-00:00:16.456 --> 00:00:19.524
-Open TV Quotes and start a new quote.
+00:00:15.672 --> 00:00:19.994
+Linking an existing deal can fill in the available
+client details.
 
-00:00:20.624 --> 00:00:23.798
-Name the quote and the client, then add a TV.
+00:00:21.094 --> 00:00:24.213
+Choose Add TV to browse the display catalog.
 
-00:00:23.798 --> 00:00:26.337
-Pick the model off the LG price list
+00:00:24.213 --> 00:00:29.280
+Search a model, narrow the screen size, or compare
+up to three choices.
 
-00:00:26.337 --> 00:00:28.875
-and the description and unit cost fill in.
+00:00:29.280 --> 00:00:31.619
+The pictures represent each product series.
 
-00:00:28.875 --> 00:00:31.414
-Set the quantity and where the screens go.
+00:00:31.619 --> 00:00:34.348
+Choose a display, then enter the quantity.
 
-00:00:31.414 --> 00:00:34.905
-Add the mounts, the labor and the shipping the same
-way.
+00:00:34.348 --> 00:00:37.077
+Expand its details to assign a location.
 
-00:00:34.905 --> 00:00:38.714
-The margin applies to every line unless you type
-your own price,
+00:00:37.077 --> 00:00:41.365
+Unit cost, margin and selling price remain visible
+beside the line.
 
-00:00:38.714 --> 00:00:41.888
-and the totals on the right follow as you go.
+00:00:42.465 --> 00:00:45.433
+Add the mounts and services the job needs.
 
-00:00:42.988 --> 00:00:45.297
-When the numbers are right, send it.
+00:00:45.433 --> 00:00:50.999
+Enter their quantities and costs, and check which
+lines belong on the vendor purchase order.
 
-00:00:45.297 --> 00:00:47.935
-Excel workbook gives you the client quote sheet
+00:00:50.999 --> 00:00:54.338
+The totals stay at the bottom while you work.
 
-00:00:47.935 --> 00:00:51.234
-and the internal cost and margin sheet, with live
-formulas.
+00:00:54.338 --> 00:00:57.677
+For repeated installations, save this equipment as a
+package.
 
-00:00:51.234 --> 00:00:55.192
-Create the client document opens a proposal in the
-engine with the
+00:00:57.677 --> 00:01:01.016
+Apply it at another location with a quantity
+multiplier.
 
-00:00:55.192 --> 00:00:59.810
-equipment table, the scope and the totals, ready to
-export as PDF or Word.
+00:01:01.016 --> 00:01:03.613
+Paste from Excel adds several rows together.
 
-00:01:00.910 --> 00:01:02.104
-Then the purchase order.
+00:01:03.613 --> 00:01:06.210
+Review the quantities and prices before continuing.
 
-00:01:02.104 --> 00:01:05.087
-Fill in the vendor, who requested it, where it ships
+00:01:08.283 --> 00:01:10.924
+Review and export opens the client preview.
 
-00:01:05.087 --> 00:01:07.474
-and when it is needed, and issue it.
+00:01:10.924 --> 00:01:13.566
+Check the equipment, quantities, terms and total.
 
-00:01:07.474 --> 00:01:09.861
-The number is assigned once and never changes,
+00:01:13.566 --> 00:01:18.471
+The internal workbook contains the quote, cost and
+margin, and purchase order sheets.
 
-00:01:09.861 --> 00:01:12.248
-and the equipment lines go on at cost.
+00:01:18.471 --> 00:01:22.621
+Prepare client document creates the proposal for PDF
+or Word export.
 
-00:01:13.348 --> 00:01:17.952
-The PDF is the ANC purchase authorization form,
-ready to sign: the
+00:01:22.621 --> 00:01:24.885
+Preparing it does not send it.
 
-00:01:17.952 --> 00:01:22.173
-order number, the vendor, the delivery details,
-every unit at cost
+00:01:24.885 --> 00:01:28.659
+Mark it sent only after sharing it with the client.
 
-00:01:22.173 --> 00:01:24.476
-and the total for the order.
+00:01:30.115 --> 00:01:35.179
+Open Purchasing and check the vendor, requester,
+delivery address and payment terms.
 
-00:01:25.576 --> 00:01:29.439
-And this is the client document, in the standard ANC
-format, with
+00:01:35.179 --> 00:01:40.243
+Issue purchase order assigns a number and saves the
+equipment at cost.
 
-00:01:29.439 --> 00:01:32.658
-the equipment table, the tax line and the grand
-total.
+00:01:40.243 --> 00:01:45.307
+The issued PDF keeps those quantities, even when the
+quote changes later.
 
-00:01:32.658 --> 00:01:35.877
-Link the CRM deal at the top of the quote,
+00:01:45.307 --> 00:01:47.839
+Here, we increase the display quantity.
 
-00:01:35.877 --> 00:01:39.740
-and the PO value and the vendor land on that deal
-the
+00:01:47.839 --> 00:01:51.215
+The workspace flags that the equipment has changed.
 
-00:01:39.740 --> 00:01:43.281
-moment the PO is issued, with a note on its
-timeline.
+00:01:51.215 --> 00:01:55.013
+Issue a new revision when those changes are ready.
 
-00:01:43.281 --> 00:01:46.500
-Quote, client document and PO, from one set of
-lines.
+00:01:55.013 --> 00:02:00.078
+The order keeps its number, and the earlier revision
+remains in history.
+
+00:02:01.178 --> 00:02:05.225
+Quote history keeps the issued purchase order
+revisions available to download.
+
+00:02:05.225 --> 00:02:09.272
+With a linked deal, Purchasing shows whether the CRM
+update succeeded
+
+00:02:09.272 --> 00:02:11.480
+and provides a retry when needed.
+
+00:02:11.480 --> 00:02:14.423
+Before leaving, check that the quote says Saved.
+
+00:02:14.423 --> 00:02:18.102
+If a save fails, your draft stays in the editor
+
+00:02:18.102 --> 00:02:20.310
+and exports wait until saving succeeds.
+
+00:02:20.310 --> 00:02:22.885
+Review the final documents before sending them.
