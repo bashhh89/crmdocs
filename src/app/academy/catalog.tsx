@@ -246,6 +246,19 @@ export default function AcademyCatalog({ display }: { display: string }) {
       {/* Catalog */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Link
+          href="/docs/training/technology/project-checklists"
+          data-umami-event="academy-project-checklists-lesson"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"
+        >
+          <Image src="/img/screenshots/proposals/project-checklists-poster.jpg" alt="A project checklist built from a training proposal" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Technology</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">A project checklist for each job, built from its scope</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Pick a proposal or upload a scope of work and get a checklist by phase — who owns each item, the sentence it came from, and progress your whole team can tick off, with Excel and PDF.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
+        <Link
           href="/docs/training/technology/tv-quotes"
           data-umami-event="academy-tv-quotes-lesson"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"

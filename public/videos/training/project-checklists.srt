@@ -1,0 +1,135 @@
+1
+00:00:00,350 --> 00:00:04,800
+Project Checklists lives in the Proposal Engine
+sidebar, under Build and estimate.
+
+2
+00:00:04,800 --> 00:00:09,991
+It builds a checklist for one job from what that
+job's scope actually says.
+
+3
+00:00:09,991 --> 00:00:14,811
+Start from a proposal, upload a scope of work, or
+paste one in.
+
+4
+00:00:14,811 --> 00:00:18,519
+This walkthrough uses a training proposal, not a
+client record.
+
+5
+00:00:18,519 --> 00:00:20,002
+Search for the proposal.
+
+6
+00:00:20,002 --> 00:00:24,822
+Each result tells you what it holds, its displays
+and its responsibility lines.
+
+7
+00:00:24,822 --> 00:00:27,047
+Pick it and build the checklist.
+
+8
+00:00:28,147 --> 00:00:32,016
+The engine reads the whole proposal: the displays,
+the priced work under
+
+9
+00:00:32,016 --> 00:00:35,884
+each one, the responsibility matrix, the scope of
+work and the notes.
+
+10
+00:00:35,884 --> 00:00:40,398
+Every item is written as an action, grouped into
+phases from contract to closeout,
+
+11
+00:00:40,398 --> 00:00:42,977
+and tagged with the display it belongs to.
+
+12
+00:00:42,977 --> 00:00:47,490
+Open an item to see the exact sentence of the
+proposal it came from.
+
+13
+00:00:47,490 --> 00:00:51,681
+Where the responsibility matrix marks who does the
+work, that is the owner.
+
+14
+00:00:51,681 --> 00:00:55,550
+Filter by client to see everything the client owes
+on this job.
+
+15
+00:00:56,650 --> 00:00:59,154
+As the job moves, tick items off.
+
+16
+00:00:59,154 --> 00:01:02,374
+The checklist records who ticked each one and when,
+
+17
+00:01:02,374 --> 00:01:04,878
+and the progress on the left follows.
+
+18
+00:01:04,878 --> 00:01:09,529
+Change an owner, or add a step the proposal did not
+spell out.
+
+19
+00:01:09,529 --> 00:01:13,107
+Everything saves as you go, for everyone working the
+job.
+
+20
+00:01:14,207 --> 00:01:15,633
+Take it with you.
+
+21
+00:01:15,633 --> 00:01:18,841
+Excel gives your team a working sheet, with done
+
+22
+00:01:18,841 --> 00:01:21,337
+and owner dropdowns and a live count.
+
+23
+00:01:21,337 --> 00:01:26,328
+The PDF is the checklist phase by phase, with a box
+beside every item.
+
+24
+00:01:27,428 --> 00:01:31,597
+For a scope written for an installation
+subcontractor, upload the document instead,
+
+25
+00:01:31,597 --> 00:01:34,376
+say who it is written for, and build.
+
+26
+00:01:35,476 --> 00:01:39,253
+When a scope repeats the same work for several
+displays, each display
+
+27
+00:01:39,253 --> 00:01:40,512
+gets its own items.
+
+28
+00:01:40,512 --> 00:01:43,344
+Anything the scope excludes is listed as by others,
+
+29
+00:01:43,344 --> 00:01:45,862
+so you can confirm who is covering it.
+
+30
+00:01:45,862 --> 00:01:48,694
+One checklist per job, built from its own scope.
