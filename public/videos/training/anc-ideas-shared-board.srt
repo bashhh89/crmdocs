@@ -1,0 +1,24 @@
+1
+00:00:00,350 --> 00:00:12,331
+This is ANC Ideas, one shared space where our teams bring ideas to life. After signing in with your ANC account, you land straight on the idea board.
+
+2
+00:00:13,131 --> 00:00:26,947
+At the top, an open priority round asks the whole team one simple question: what should we build first? Pick your choice. You can change it any time while voting is open, and the percentages update live as teammates weigh in.
+
+3
+00:00:27,747 --> 00:00:40,240
+To share an idea, select Share an idea. Type the thought as it comes to you, add a title and a short explanation, and mark which team it helps. Everything stays private to you until you choose to share it.
+
+4
+00:00:41,040 --> 00:00:55,157
+Prefer to talk or show instead? Use the microphone to speak your idea, record your screen directly, or upload a file. The magic wand turns any of these into a structured idea page you can edit before sharing.
+
+5
+00:00:55,957 --> 00:01:06,232
+Ideas are organized by team. Sales, Technicians, Operations, Marketing, and Development each have their own view, and one idea can belong to more than one team.
+
+6
+00:01:07,032 --> 00:01:16,239
+The roadmap shows what happens next: considering, planned, building, and shipped. Team leads set the direction, and everyone can follow the progress.
+

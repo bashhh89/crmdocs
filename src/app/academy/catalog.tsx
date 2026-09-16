@@ -308,6 +308,17 @@ export default function AcademyCatalog({ display }: { display: string }) {
             <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
           </div>
         </Link>
+        <Link href="/docs/workflows/anc-ideas-shared-board"
+          data-umami-event="academy-anc-ideas-lesson"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
+          <Image src="/img/academy/anc-ideas-shared-board-poster.jpg" alt="The ANC Ideas shared board with the open priority round" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · ANC Ideas</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Share ideas and shape the roadmap</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Bring an idea by writing, speaking, or showing it. Vote on what we build first and follow every idea from considering to shipped.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
         <Link href="/docs/workflows/video-library"
           data-umami-event="academy-video-library-lesson"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]">
