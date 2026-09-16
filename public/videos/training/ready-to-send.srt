@@ -1,0 +1,138 @@
+1
+00:00:00,350 --> 00:00:04,102
+Every proposal, contract and service agreement now
+has a Ready to send
+
+2
+00:00:04,102 --> 00:00:06,603
+check at the top of its Review step.
+
+3
+00:00:06,603 --> 00:00:10,979
+This training document has two things wrong with it:
+a line with no price,
+
+4
+00:00:10,979 --> 00:00:13,480
+and a placeholder that was never filled in.
+
+5
+00:00:13,480 --> 00:00:17,232
+Each one says what the client would actually see on
+the page,
+
+6
+00:00:17,232 --> 00:00:19,733
+and the preview beside it shows exactly that.
+
+7
+00:00:20,833 --> 00:00:24,933
+Every line has a button that takes you to the field
+that fixes it.
+
+8
+00:00:24,933 --> 00:00:28,154
+This one lands on the table row with the empty
+amount.
+
+9
+00:00:28,154 --> 00:00:31,668
+Type the price, come back to Review, and that line
+is gone.
+
+10
+00:00:31,668 --> 00:00:34,889
+The check runs against the document as it stands on
+screen,
+
+11
+00:00:34,889 --> 00:00:37,525
+so you see the result before anything is saved.
+
+12
+00:00:38,625 --> 00:00:42,730
+It also reads what a contract says against who it is
+for.
+
+13
+00:00:42,730 --> 00:00:46,151
+This service contract names Maryland in its sales
+tax clause,
+
+14
+00:00:46,151 --> 00:00:48,203
+and the client is in Oregon.
+
+15
+00:00:48,203 --> 00:00:52,992
+Set the state in the contract details, and the
+document reads ready to send.
+
+16
+00:00:54,092 --> 00:00:56,258
+Underneath it is What changed.
+
+17
+00:00:56,258 --> 00:01:00,589
+It compares the document with the version the client
+received.
+
+18
+00:01:00,589 --> 00:01:05,787
+Exporting the PDF records that version, so straight
+after an export it
+
+19
+00:01:05,787 --> 00:01:07,519
+reads: nothing has changed.
+
+20
+00:01:08,619 --> 00:01:09,983
+Now change a price.
+
+21
+00:01:09,983 --> 00:01:14,074
+What changed lists it under Price: the line that
+moved, the table
+
+22
+00:01:14,074 --> 00:01:18,165
+it sits in and the document total, each with what it
+was,
+
+23
+00:01:18,165 --> 00:01:22,255
+what it is now, and the difference, and the summary
+carries the
+
+24
+00:01:22,255 --> 00:01:23,619
+move in the total.
+
+25
+00:01:23,619 --> 00:01:27,710
+Scope, quantities, price, margin and terms are read
+the same way, in
+
+26
+00:01:27,710 --> 00:01:29,073
+that order, every time.
+
+27
+00:01:30,173 --> 00:01:33,614
+Every export and share link becomes a version you
+can compare against.
+
+28
+00:01:33,614 --> 00:01:37,055
+If the one you emailed was not the latest, pick it
+here
+
+29
+00:01:37,055 --> 00:01:39,636
+and mark it as the one the client received.
+
+30
+00:01:39,636 --> 00:01:42,503
+The comparison then defaults to it until you say
+otherwise.

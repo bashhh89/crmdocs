@@ -259,6 +259,19 @@ export default function AcademyCatalog({ display }: { display: string }) {
           </div>
         </Link>
         <Link
+          href="/docs/training/technology/ready-to-send"
+          data-umami-event="academy-ready-to-send-lesson"
+          className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"
+        >
+          <Image src="/img/screenshots/proposals/ready-to-send-poster.jpg" alt="The Ready to send panel on a proposal's Review step" width={480} height={270} className="h-full w-full object-cover" />
+          <div className="flex flex-col justify-center p-6">
+            <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">New walkthrough · Proposal Engine</span>
+            <h2 className="mt-2 text-xl font-semibold text-slate-900">Ready to send, and what changed since the last version</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">Before a document goes out, see what is missing and jump to it. After an export, see exactly what changed since the version the client received — scope, quantities, price, margin and terms.</p>
+            <span className="mt-3 text-sm font-semibold text-blue-700">Watch the walkthrough →</span>
+          </div>
+        </Link>
+        <Link
           href="/docs/training/technology/tv-quotes"
           data-umami-event="academy-tv-quotes-lesson"
           className="mb-6 grid overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 sm:grid-cols-[240px_1fr]"

@@ -1,0 +1,52 @@
+---
+title: Ready to send, and what changed since the last version
+description: Before a document goes out, the Review step says what is missing and takes you to it; after an export, it shows exactly what changed since the version the client received.
+---
+
+<LessonMeta time="2 min" audience="Estimators and sales" level="Core" accent="proposals" />
+
+<AudioPlayer src="/audio/training/ready-to-send.mp3?v=20260916" />
+
+Two checks now sit at the top of every document's **Review** step. **Ready to send** answers whether the document can go out and puts you on whatever is stopping it. **What changed** compares the document on screen with the version the client received, by scope, quantities, price, margin and terms.
+
+<video controls preload="metadata" playsInline poster="/img/screenshots/proposals/ready-to-send-poster.jpg" style={{ width: '100%', borderRadius: '0.5rem', border: '1px solid var(--color-fd-border)' }}>
+  <source src="/videos/training/ready-to-send.mp4?v=20260916" type="video/mp4" />
+  <track kind="captions" src="/videos/training/ready-to-send.vtt?v=20260916" srcLang="en" label="English" default />
+</video>
+
+The recording uses two clearly labelled training documents. No client records are shown or changed.
+
+[Open the Proposal Engine](https://proposals.anc.com/projects) · [Download the walkthrough](/videos/training/ready-to-send.mp4?v=20260916)
+
+## Ready to send
+
+Open any proposal, contract or service agreement and go to **Review**. The panel at the top reads one of three ways: **Ready**, **Worth a look** (nothing blocks it, but something deserves a glance) or **Not ready** (something the client would see as a hole, a placeholder or another client's details).
+
+Findings are grouped the way you would check a document by hand:
+
+- **Pricing** — a line with no price, a table with no roll-up marked as the total, a fee schedule with no fees, a workbook that needs re-importing.
+- **Specifications** — a display with no name, size or pixel pitch; a value the AI filled in that nobody has confirmed.
+- **Client details** — a document addressed to nobody, a service contract with no address in its recital, a venue that is really the client's name.
+- **Document** — a placeholder such as `{{venueName}}` that would print as written, a contract term still on the template's dates, a sales-tax state that does not match where the client is.
+
+Every line has a button. It switches to the step that owns the fix and highlights the exact field. The check reads the document as it stands on screen, so the moment you fix something the line goes — no save, no reload.
+
+## What changed
+
+Every PDF export, Word export and share link records a version of the document as it left. **What changed**, just under Ready to send, compares the document on screen with that version:
+
+- **Scope** — a display added or removed, the scope of work, the responsibility matrix, a section switched on or off.
+- **Quantities** — a display's quantity, size or pixel pitch.
+- **Price** — every line, subtotal, tax, bond and grand total, the fee schedule on a service document, and the document total.
+- **Margin** — cost and margin per line and in total, where the document records them.
+- **Terms** — payment terms, completion date, warranty periods, the contract term and the states its clauses name.
+
+Each row shows what it was, what it is now and the difference. The summary line carries the move in the total.
+
+By default the comparison is against the version marked as sent to the client, else the latest export. Use **Compare with** to pick any earlier version, and **Mark as the one the client received** to make it the default. Exporting an unchanged document does not create a new version, so a document exported three times in a row still has one.
+
+## Good to know
+
+- A document with no history yet says so; the first export starts it.
+- Ready to send never raises a section that is switched off — it only ever describes what the client would see.
+- Sales-tax and governing-law states on a service contract are set in **Contract details** on the Review step. Left blank, they inherit the template's.
